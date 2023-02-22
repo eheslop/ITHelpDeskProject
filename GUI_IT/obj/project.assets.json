@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\annav\\source\\repos\\GUI_IT\\GUI_IT\\GUI_IT.csproj",
+      "projectUniqueName": "C:\\Users\\annav\\source\\repos\\SE361_ITHelpDesk_Spring2023\\GUI_IT\\GUI_IT.csproj",
       "projectName": "GUI_IT",
-      "projectPath": "C:\\Users\\annav\\source\\repos\\GUI_IT\\GUI_IT\\GUI_IT.csproj",
+      "projectPath": "C:\\Users\\annav\\source\\repos\\SE361_ITHelpDesk_Spring2023\\GUI_IT\\GUI_IT.csproj",
       "packagesPath": "C:\\Users\\annav\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\annav\\source\\repos\\GUI_IT\\GUI_IT\\obj\\",
+      "outputPath": "C:\\Users\\annav\\source\\repos\\SE361_ITHelpDesk_Spring2023\\GUI_IT\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\annav\\AppData\\Roaming\\NuGet\\NuGet.Config",
