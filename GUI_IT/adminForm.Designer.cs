@@ -253,9 +253,9 @@
             // 
             pictureBox3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             pictureBox3.BackColor = Color.Black;
-            pictureBox3.Location = new Point(3, 0);
+            pictureBox3.Location = new Point(-20, -2);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(373, 571);
+            pictureBox3.Size = new Size(418, 544);
             pictureBox3.TabIndex = 15;
             pictureBox3.TabStop = false;
             // 

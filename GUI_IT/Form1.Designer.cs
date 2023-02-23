@@ -240,7 +240,7 @@
             // 
             lblUserType.AutoSize = true;
             lblUserType.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblUserType.Location = new Point(247, 361);
+            lblUserType.Location = new Point(247, 385);
             lblUserType.Name = "lblUserType";
             lblUserType.Size = new Size(119, 32);
             lblUserType.TabIndex = 31;
@@ -251,7 +251,7 @@
             cboUserType.DropDownStyle = ComboBoxStyle.DropDownList;
             cboUserType.FormattingEnabled = true;
             cboUserType.Items.AddRange(new object[] { "Admin", "Project Member", "IT Support Team", "Report Manager" });
-            cboUserType.Location = new Point(369, 360);
+            cboUserType.Location = new Point(369, 384);
             cboUserType.Name = "cboUserType";
             cboUserType.Size = new Size(359, 33);
             cboUserType.TabIndex = 30;
@@ -262,7 +262,7 @@
             btnRegister.FlatStyle = FlatStyle.Flat;
             btnRegister.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnRegister.ForeColor = Color.White;
-            btnRegister.Location = new Point(441, 417);
+            btnRegister.Location = new Point(441, 441);
             btnRegister.Name = "btnRegister";
             btnRegister.Size = new Size(208, 70);
             btnRegister.TabIndex = 29;
@@ -274,7 +274,7 @@
             // 
             lblLastName.AutoSize = true;
             lblLastName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblLastName.Location = new Point(240, 312);
+            lblLastName.Location = new Point(240, 336);
             lblLastName.Name = "lblLastName";
             lblLastName.Size = new Size(126, 32);
             lblLastName.TabIndex = 28;
@@ -282,7 +282,7 @@
             // 
             // txtLastName
             // 
-            txtLastName.Location = new Point(369, 312);
+            txtLastName.Location = new Point(369, 336);
             txtLastName.Name = "txtLastName";
             txtLastName.PlaceholderText = "Enter Last Name";
             txtLastName.Size = new Size(359, 31);
@@ -318,7 +318,7 @@
             // 
             lblFirstName.AutoSize = true;
             lblFirstName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblFirstName.Location = new Point(237, 263);
+            lblFirstName.Location = new Point(237, 287);
             lblFirstName.Name = "lblFirstName";
             lblFirstName.Size = new Size(129, 32);
             lblFirstName.TabIndex = 21;
@@ -328,7 +328,7 @@
             // 
             lblEmail.AutoSize = true;
             lblEmail.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblEmail.Location = new Point(292, 217);
+            lblEmail.Location = new Point(292, 241);
             lblEmail.Name = "lblEmail";
             lblEmail.Size = new Size(71, 32);
             lblEmail.TabIndex = 20;
@@ -336,7 +336,7 @@
             // 
             // txtFirstName
             // 
-            txtFirstName.Location = new Point(369, 264);
+            txtFirstName.Location = new Point(369, 288);
             txtFirstName.Name = "txtFirstName";
             txtFirstName.PlaceholderText = "Enter First Name";
             txtFirstName.Size = new Size(359, 31);
@@ -344,7 +344,7 @@
             // 
             // txtEmail
             // 
-            txtEmail.Location = new Point(369, 218);
+            txtEmail.Location = new Point(369, 242);
             txtEmail.Name = "txtEmail";
             txtEmail.PlaceholderText = "Enter Email";
             txtEmail.Size = new Size(359, 31);
@@ -354,7 +354,7 @@
             // 
             lblRegister.AutoSize = true;
             lblRegister.Font = new Font("Segoe UI", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            lblRegister.Location = new Point(369, 166);
+            lblRegister.Location = new Point(369, 190);
             lblRegister.Name = "lblRegister";
             lblRegister.Size = new Size(359, 38);
             lblRegister.TabIndex = 17;
@@ -365,7 +365,7 @@
             pictureBox4.BackColor = Color.Transparent;
             pictureBox4.Image = Properties.Resources.redAgentsLogo;
             pictureBox4.InitialImage = (Image)resources.GetObject("pictureBox4.InitialImage");
-            pictureBox4.Location = new Point(464, 7);
+            pictureBox4.Location = new Point(464, 31);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(168, 155);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
