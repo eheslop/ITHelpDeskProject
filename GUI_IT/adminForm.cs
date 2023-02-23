@@ -26,26 +26,33 @@ namespace GUI_IT
         private void btnHome_Click(object sender, EventArgs e)
         {
             pnlMyAccount.Visible = false;
+
         }
 
         private void btnAccount_Click(object sender, EventArgs e)
         {
             pnlMyAccount.Visible = true;
+
         }
 
         private void btnRegistration_Click(object sender, EventArgs e)
         {
+            pnlMyAccount.Visible = false;
 
         }
 
         private void btnGenerate_Click(object sender, EventArgs e)
         {
+            pnlMyAccount.Visible = false;
 
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-
+            FrmLogin LoginScreen = new FrmLogin();
+            this.Hide();
+            LoginScreen.ShowDialog();
+            this.Close();
         }
     }
 }

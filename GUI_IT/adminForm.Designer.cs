@@ -96,7 +96,7 @@
             btnHome.FlatStyle = FlatStyle.Popup;
             btnHome.Font = new Font("Segoe UI", 10F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             btnHome.ForeColor = Color.White;
-            btnHome.Location = new Point(594, 60);
+            btnHome.Location = new Point(594, 58);
             btnHome.Margin = new Padding(4);
             btnHome.Name = "btnHome";
             btnHome.Size = new Size(86, 34);
@@ -170,7 +170,7 @@
             btnLogout.FlatStyle = FlatStyle.Popup;
             btnLogout.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
             btnLogout.ForeColor = Color.White;
-            btnLogout.Location = new Point(1046, 0);
+            btnLogout.Location = new Point(1051, 0);
             btnLogout.Margin = new Padding(2);
             btnLogout.Name = "btnLogout";
             btnLogout.Size = new Size(119, 41);
@@ -181,6 +181,7 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox1.BackColor = Color.FromArgb(64, 0, 0);
             pictureBox1.Location = new Point(-5, 0);
             pictureBox1.Margin = new Padding(2);
@@ -191,16 +192,18 @@
             // 
             // Rectangle2
             // 
+            Rectangle2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             Rectangle2.BackColor = Color.FromArgb(64, 0, 0);
             Rectangle2.Location = new Point(-2, 106);
             Rectangle2.Margin = new Padding(2);
             Rectangle2.Name = "Rectangle2";
-            Rectangle2.Size = new Size(1179, 188);
+            Rectangle2.Size = new Size(1179, 157);
             Rectangle2.TabIndex = 13;
             Rectangle2.TabStop = false;
             // 
             // Rectangle1
             // 
+            Rectangle1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             Rectangle1.BackColor = Color.Black;
             Rectangle1.Location = new Point(-5, 25);
             Rectangle1.Margin = new Padding(2);
@@ -215,9 +218,9 @@
             pnlMyAccount.Controls.Add(txtWelcomeAccount);
             pnlMyAccount.Controls.Add(pictureBox3);
             pnlMyAccount.Controls.Add(pictureBox4);
-            pnlMyAccount.Location = new Point(-5, 107);
+            pnlMyAccount.Location = new Point(2, 106);
             pnlMyAccount.Name = "pnlMyAccount";
-            pnlMyAccount.Size = new Size(1179, 541);
+            pnlMyAccount.Size = new Size(1175, 545);
             pnlMyAccount.TabIndex = 24;
             // 
             // pictureBox2
@@ -238,7 +241,7 @@
             txtWelcomeAccount.BorderStyle = BorderStyle.None;
             txtWelcomeAccount.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold, GraphicsUnit.Point);
             txtWelcomeAccount.ForeColor = Color.White;
-            txtWelcomeAccount.Location = new Point(505, 47);
+            txtWelcomeAccount.Location = new Point(506, 35);
             txtWelcomeAccount.Margin = new Padding(4);
             txtWelcomeAccount.Name = "txtWelcomeAccount";
             txtWelcomeAccount.ReadOnly = true;
@@ -248,20 +251,22 @@
             // 
             // pictureBox3
             // 
+            pictureBox3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             pictureBox3.BackColor = Color.Black;
             pictureBox3.Location = new Point(3, 0);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(373, 526);
+            pictureBox3.Size = new Size(373, 571);
             pictureBox3.TabIndex = 15;
             pictureBox3.TabStop = false;
             // 
             // pictureBox4
             // 
+            pictureBox4.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox4.BackColor = Color.FromArgb(64, 0, 0);
             pictureBox4.Location = new Point(0, 0);
             pictureBox4.Margin = new Padding(4);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(1175, 146);
+            pictureBox4.Size = new Size(1175, 166);
             pictureBox4.TabIndex = 14;
             pictureBox4.TabStop = false;
             // 
@@ -283,6 +288,7 @@
             Controls.Add(pictureBox1);
             Controls.Add(Rectangle2);
             Controls.Add(Rectangle1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmAdmin";
             Text = "IT Help Desk - Admin";
             Load += frmAdmin_Load;

@@ -44,6 +44,8 @@
             btnRegisterAccount = new Button();
             lblRegisterAccount = new Label();
             pnlSignUp = new Panel();
+            lblUserType = new Label();
+            cboUserType = new ComboBox();
             btnRegister = new Button();
             lblLastName = new Label();
             txtLastName = new TextBox();
@@ -51,7 +53,7 @@
             btnLoginForm = new Button();
             lblFirstName = new Label();
             lblEmail = new Label();
-            textBox1 = new TextBox();
+            txtFirstName = new TextBox();
             txtEmail = new TextBox();
             lblRegister = new Label();
             pictureBox4 = new PictureBox();
@@ -76,6 +78,7 @@
             // 
             // pictureBox2
             // 
+            pictureBox2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox2.BackColor = Color.FromArgb(64, 0, 0);
             pictureBox2.Location = new Point(-4, -1);
             pictureBox2.Name = "pictureBox2";
@@ -85,6 +88,7 @@
             // 
             // pictureBox3
             // 
+            pictureBox3.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox3.BackColor = Color.Black;
             pictureBox3.Location = new Point(-4, 61);
             pictureBox3.Name = "pictureBox3";
@@ -205,7 +209,7 @@
             // 
             lblRegisterAccount.AutoSize = true;
             lblRegisterAccount.Font = new Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point);
-            lblRegisterAccount.Location = new Point(770, 128);
+            lblRegisterAccount.Location = new Point(775, 128);
             lblRegisterAccount.Name = "lblRegisterAccount";
             lblRegisterAccount.Size = new Size(177, 21);
             lblRegisterAccount.TabIndex = 15;
@@ -214,6 +218,8 @@
             // pnlSignUp
             // 
             pnlSignUp.BackColor = Color.Transparent;
+            pnlSignUp.Controls.Add(lblUserType);
+            pnlSignUp.Controls.Add(cboUserType);
             pnlSignUp.Controls.Add(btnRegister);
             pnlSignUp.Controls.Add(lblLastName);
             pnlSignUp.Controls.Add(txtLastName);
@@ -221,14 +227,34 @@
             pnlSignUp.Controls.Add(btnLoginForm);
             pnlSignUp.Controls.Add(lblFirstName);
             pnlSignUp.Controls.Add(lblEmail);
-            pnlSignUp.Controls.Add(textBox1);
+            pnlSignUp.Controls.Add(txtFirstName);
             pnlSignUp.Controls.Add(txtEmail);
             pnlSignUp.Controls.Add(lblRegister);
             pnlSignUp.Controls.Add(pictureBox4);
-            pnlSignUp.Location = new Point(-4, 113);
+            pnlSignUp.Location = new Point(-4, 111);
             pnlSignUp.Name = "pnlSignUp";
-            pnlSignUp.Size = new Size(1125, 553);
+            pnlSignUp.Size = new Size(1125, 555);
             pnlSignUp.TabIndex = 16;
+            // 
+            // lblUserType
+            // 
+            lblUserType.AutoSize = true;
+            lblUserType.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblUserType.Location = new Point(247, 361);
+            lblUserType.Name = "lblUserType";
+            lblUserType.Size = new Size(119, 32);
+            lblUserType.TabIndex = 31;
+            lblUserType.Text = "User Type";
+            // 
+            // cboUserType
+            // 
+            cboUserType.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboUserType.FormattingEnabled = true;
+            cboUserType.Items.AddRange(new object[] { "Admin", "Project Member", "IT Support Team", "Report Manager" });
+            cboUserType.Location = new Point(369, 360);
+            cboUserType.Name = "cboUserType";
+            cboUserType.Size = new Size(359, 33);
+            cboUserType.TabIndex = 30;
             // 
             // btnRegister
             // 
@@ -236,7 +262,7 @@
             btnRegister.FlatStyle = FlatStyle.Flat;
             btnRegister.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnRegister.ForeColor = Color.White;
-            btnRegister.Location = new Point(452, 416);
+            btnRegister.Location = new Point(441, 417);
             btnRegister.Name = "btnRegister";
             btnRegister.Size = new Size(208, 70);
             btnRegister.TabIndex = 29;
@@ -248,7 +274,7 @@
             // 
             lblLastName.AutoSize = true;
             lblLastName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblLastName.Location = new Point(242, 360);
+            lblLastName.Location = new Point(240, 312);
             lblLastName.Name = "lblLastName";
             lblLastName.Size = new Size(126, 32);
             lblLastName.TabIndex = 28;
@@ -256,15 +282,15 @@
             // 
             // txtLastName
             // 
-            txtLastName.Location = new Point(369, 363);
+            txtLastName.Location = new Point(369, 312);
             txtLastName.Name = "txtLastName";
             txtLastName.PlaceholderText = "Enter Last Name";
             txtLastName.Size = new Size(359, 31);
             txtLastName.TabIndex = 27;
-            txtLastName.UseSystemPasswordChar = true;
             // 
             // lblSignIn
             // 
+            lblSignIn.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             lblSignIn.AutoSize = true;
             lblSignIn.Font = new Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point);
             lblSignIn.Location = new Point(764, 19);
@@ -275,6 +301,7 @@
             // 
             // btnLoginForm
             // 
+            btnLoginForm.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             btnLoginForm.BackColor = Color.FromArgb(64, 0, 0);
             btnLoginForm.FlatStyle = FlatStyle.Popup;
             btnLoginForm.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
@@ -291,7 +318,7 @@
             // 
             lblFirstName.AutoSize = true;
             lblFirstName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblFirstName.Location = new Point(242, 310);
+            lblFirstName.Location = new Point(237, 263);
             lblFirstName.Name = "lblFirstName";
             lblFirstName.Size = new Size(129, 32);
             lblFirstName.TabIndex = 21;
@@ -301,24 +328,23 @@
             // 
             lblEmail.AutoSize = true;
             lblEmail.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblEmail.Location = new Point(300, 255);
+            lblEmail.Location = new Point(292, 217);
             lblEmail.Name = "lblEmail";
             lblEmail.Size = new Size(71, 32);
             lblEmail.TabIndex = 20;
             lblEmail.Text = "Email";
             // 
-            // textBox1
+            // txtFirstName
             // 
-            textBox1.Location = new Point(369, 310);
-            textBox1.Name = "textBox1";
-            textBox1.PlaceholderText = "Enter First Name";
-            textBox1.Size = new Size(359, 31);
-            textBox1.TabIndex = 19;
-            textBox1.UseSystemPasswordChar = true;
+            txtFirstName.Location = new Point(369, 264);
+            txtFirstName.Name = "txtFirstName";
+            txtFirstName.PlaceholderText = "Enter First Name";
+            txtFirstName.Size = new Size(359, 31);
+            txtFirstName.TabIndex = 19;
             // 
             // txtEmail
             // 
-            txtEmail.Location = new Point(369, 255);
+            txtEmail.Location = new Point(369, 218);
             txtEmail.Name = "txtEmail";
             txtEmail.PlaceholderText = "Enter Email";
             txtEmail.Size = new Size(359, 31);
@@ -328,7 +354,7 @@
             // 
             lblRegister.AutoSize = true;
             lblRegister.Font = new Font("Segoe UI", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            lblRegister.Location = new Point(369, 196);
+            lblRegister.Location = new Point(369, 166);
             lblRegister.Name = "lblRegister";
             lblRegister.Size = new Size(359, 38);
             lblRegister.TabIndex = 17;
@@ -339,7 +365,7 @@
             pictureBox4.BackColor = Color.Transparent;
             pictureBox4.Image = Properties.Resources.redAgentsLogo;
             pictureBox4.InitialImage = (Image)resources.GetObject("pictureBox4.InitialImage");
-            pictureBox4.Location = new Point(469, 31);
+            pictureBox4.Location = new Point(464, 7);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(168, 155);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -367,6 +393,7 @@
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FrmLogin";
             Text = "IT Help Desk Login";
             Load += FrmLogin_Load;
@@ -401,12 +428,14 @@
         private Button btnLoginForm;
         private Label lblFirstName;
         private Label lblEmail;
-        private TextBox textBox1;
+        private TextBox txtFirstName;
         private TextBox txtEmail;
         private Label lblRegister;
         private PictureBox pictureBox4;
         private TextBox txtLastName;
         private Label lblLastName;
         private Button btnRegister;
+        private ComboBox cboUserType;
+        private Label lblUserType;
     }
 }

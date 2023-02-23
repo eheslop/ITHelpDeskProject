@@ -1,3 +1,5 @@
+using System.Windows.Forms;
+
 namespace GUI_IT
 {
     public partial class FrmLogin : Form
@@ -22,6 +24,13 @@ namespace GUI_IT
                 adminLogIn.ShowDialog();
                 this.Close();
             }
+            else if (txtUsername.Text == "projectMem" && txtPassword.Text == "member")
+            {
+                frmProjectMember projectMemberForm = new frmProjectMember();
+                this.Hide();
+                projectMemberForm.ShowDialog();
+                this.Close();
+            }
             else
             {
                 MessageBox.Show("Incorrect Login Information", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -36,11 +45,16 @@ namespace GUI_IT
         private void btnLoginForm_Click(object sender, EventArgs e)
         {
             pnlSignUp.Visible = false;
+            txtUsername.Text = String.Empty;
+            txtPassword.Text = String.Empty;
         }
 
         private void btnRegisterAccount_Click(object sender, EventArgs e)
         {
             pnlSignUp.Visible = true;
+            txtEmail.Text = String.Empty;
+            txtFirstName.Text = String.Empty;
+            txtLastName.Text = String.Empty;
         }
     }
 }
