@@ -65,5 +65,15 @@ namespace GUI_IT
             txtFirstName.Text = String.Empty;
             txtLastName.Text = String.Empty;
         }
+
+        private void lblRegisterAccount_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnlSignUp_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
