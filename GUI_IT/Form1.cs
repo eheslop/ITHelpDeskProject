@@ -1,4 +1,7 @@
 using System.Windows.Forms;
+using System;
+using Microsoft.Data.SqlClient;
+using System.Text;
 
 namespace GUI_IT
 {
@@ -41,14 +44,23 @@ namespace GUI_IT
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            regSession.Email= txtEmail.Text;
-            regSession.FirstName= txtFirstName.Text;
-            regSession.LastName= txtLastName.Text;
-            regSession.UserType= cboUserType.Text;
-            lblTestEmail.Text= regSession.Email;
-            lblTestFirstName.Text= regSession.FirstName;
-            lblTestLastName.Text= regSession.LastName;
-            lblTestUserType.Text= regSession.UserType;
+            SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
+            builder.DataSource = "redagents.database.windows.net";
+            builder.UserID = "kwekwe";
+            builder.Password = "Password1!";
+            builder.InitialCatalog = "red_Agents";
+            SqlConnection con = new SqlConnection(builder.ConnectionString);
+            con.Open();
+            string name = txtFirstName.Text.ToString();
+            string user = txtLastName.Text.ToString();
+            string email = txtEmail.Text.ToString();
+            string role =   cboUserType.Text.ToString();
+           // DateTime dt = DateTime.Now;
+
+           // string sDate = dt.ToShortDateString();
+            String query = "INSERT INTO Registration(Username, Name, Password, Email, Role) VALUES('"+user.ToString()+"', '"+name.ToString()+"', '12345', '"+email.ToString()+"', '"+ role.ToString()+"');";
+            SqlCommand cmd = new SqlCommand(query, con);
+            cmd.ExecuteNonQuery();
         }
 
         private void btnLoginForm_Click(object sender, EventArgs e)
