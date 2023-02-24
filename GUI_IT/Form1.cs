@@ -4,10 +4,12 @@ namespace GUI_IT
 {
     public partial class FrmLogin : Form
     {
+        private SessionRegister regSession;
         public FrmLogin()
         {
             InitializeComponent();
             pnlSignUp.Visible = false;
+            regSession = new SessionRegister();
         }
 
         private void FrmLogin_Load(object sender, EventArgs e)
@@ -39,7 +41,14 @@ namespace GUI_IT
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-
+            regSession.Email= txtEmail.Text;
+            regSession.FirstName= txtFirstName.Text;
+            regSession.LastName= txtLastName.Text;
+            regSession.UserType= cboUserType.Text;
+            lblTestEmail.Text= regSession.Email;
+            lblTestFirstName.Text= regSession.FirstName;
+            lblTestLastName.Text= regSession.LastName;
+            lblTestUserType.Text= regSession.UserType;
         }
 
         private void btnLoginForm_Click(object sender, EventArgs e)
@@ -55,6 +64,16 @@ namespace GUI_IT
             txtEmail.Text = String.Empty;
             txtFirstName.Text = String.Empty;
             txtLastName.Text = String.Empty;
+        }
+
+        private void lblRegisterAccount_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnlSignUp_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
