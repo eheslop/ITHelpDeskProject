@@ -263,10 +263,10 @@
             this.pnlSignUp.Controls.Add(this.txtEmail);
             this.pnlSignUp.Controls.Add(this.lblRegister);
             this.pnlSignUp.Controls.Add(this.pictureBox4);
-            this.pnlSignUp.Location = new System.Drawing.Point(-3, 83);
+            this.pnlSignUp.Location = new System.Drawing.Point(-3, 89);
             this.pnlSignUp.Margin = new System.Windows.Forms.Padding(2);
             this.pnlSignUp.Name = "pnlSignUp";
-            this.pnlSignUp.Size = new System.Drawing.Size(900, 411);
+            this.pnlSignUp.Size = new System.Drawing.Size(900, 442);
             this.pnlSignUp.TabIndex = 16;
             this.pnlSignUp.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlSignUp_Paint);
             // 
@@ -275,7 +275,7 @@
             this.lblUserType.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblUserType.AutoSize = true;
             this.lblUserType.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblUserType.Location = new System.Drawing.Point(198, 308);
+            this.lblUserType.Location = new System.Drawing.Point(198, 324);
             this.lblUserType.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblUserType.Name = "lblUserType";
             this.lblUserType.Size = new System.Drawing.Size(97, 28);
@@ -292,7 +292,7 @@
             "Project Member",
             "IT Support Team",
             "Report Manager"});
-            this.cboUserType.Location = new System.Drawing.Point(295, 307);
+            this.cboUserType.Location = new System.Drawing.Point(295, 323);
             this.cboUserType.Margin = new System.Windows.Forms.Padding(2);
             this.cboUserType.Name = "cboUserType";
             this.cboUserType.Size = new System.Drawing.Size(288, 28);
@@ -305,7 +305,7 @@
             this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegister.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnRegister.ForeColor = System.Drawing.Color.White;
-            this.btnRegister.Location = new System.Drawing.Point(353, 353);
+            this.btnRegister.Location = new System.Drawing.Point(353, 369);
             this.btnRegister.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(166, 56);
@@ -318,7 +318,7 @@
             this.lblLastName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblLastName.AutoSize = true;
             this.lblLastName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblLastName.Location = new System.Drawing.Point(192, 269);
+            this.lblLastName.Location = new System.Drawing.Point(192, 285);
             this.lblLastName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblLastName.Name = "lblLastName";
             this.lblLastName.Size = new System.Drawing.Size(103, 28);
@@ -328,7 +328,7 @@
             // txtLastName
             // 
             this.txtLastName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtLastName.Location = new System.Drawing.Point(295, 269);
+            this.txtLastName.Location = new System.Drawing.Point(295, 285);
             this.txtLastName.Margin = new System.Windows.Forms.Padding(2);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.PlaceholderText = "Enter Last Name";
@@ -368,7 +368,7 @@
             this.lblFirstName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblFirstName.AutoSize = true;
             this.lblFirstName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblFirstName.Location = new System.Drawing.Point(190, 230);
+            this.lblFirstName.Location = new System.Drawing.Point(190, 246);
             this.lblFirstName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFirstName.Name = "lblFirstName";
             this.lblFirstName.Size = new System.Drawing.Size(106, 28);
@@ -380,7 +380,7 @@
             this.lblEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblEmail.Location = new System.Drawing.Point(234, 193);
+            this.lblEmail.Location = new System.Drawing.Point(234, 209);
             this.lblEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(59, 28);
@@ -390,7 +390,7 @@
             // txtFirstName
             // 
             this.txtFirstName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtFirstName.Location = new System.Drawing.Point(295, 230);
+            this.txtFirstName.Location = new System.Drawing.Point(295, 246);
             this.txtFirstName.Margin = new System.Windows.Forms.Padding(2);
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.PlaceholderText = "Enter First Name";
@@ -400,7 +400,7 @@
             // txtEmail
             // 
             this.txtEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtEmail.Location = new System.Drawing.Point(295, 194);
+            this.txtEmail.Location = new System.Drawing.Point(295, 210);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.PlaceholderText = "Enter Email";
@@ -412,7 +412,7 @@
             this.lblRegister.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblRegister.AutoSize = true;
             this.lblRegister.Font = new System.Drawing.Font("Segoe UI", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.lblRegister.Location = new System.Drawing.Point(295, 152);
+            this.lblRegister.Location = new System.Drawing.Point(295, 168);
             this.lblRegister.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblRegister.Name = "lblRegister";
             this.lblRegister.Size = new System.Drawing.Size(306, 32);
@@ -425,7 +425,7 @@
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Image = global::GUI_IT.Properties.Resources.redAgentsLogo;
             this.pictureBox4.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.InitialImage")));
-            this.pictureBox4.Location = new System.Drawing.Point(371, 25);
+            this.pictureBox4.Location = new System.Drawing.Point(371, 41);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(134, 124);

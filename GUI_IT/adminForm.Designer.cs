@@ -29,280 +29,293 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAdmin));
-            pictureLogo = new PictureBox();
-            btnSearch = new Button();
-            txtSearch = new TextBox();
-            btnHome = new Button();
-            txtAdminHome = new TextBox();
-            btnGenerate = new Button();
-            btnRegistration = new Button();
-            btnAccount = new Button();
-            btnLogout = new Button();
-            pictureBox1 = new PictureBox();
-            Rectangle2 = new PictureBox();
-            Rectangle1 = new PictureBox();
-            pnlMyAccount = new Panel();
-            pictureBox2 = new PictureBox();
-            txtWelcomeAccount = new TextBox();
-            pictureBox3 = new PictureBox();
-            pictureBox4 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureLogo).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)Rectangle2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)Rectangle1).BeginInit();
-            pnlMyAccount.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            SuspendLayout();
+            this.pictureLogo = new System.Windows.Forms.PictureBox();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.btnHome = new System.Windows.Forms.Button();
+            this.txtAdminHome = new System.Windows.Forms.TextBox();
+            this.btnGenerate = new System.Windows.Forms.Button();
+            this.btnRegistration = new System.Windows.Forms.Button();
+            this.btnAccount = new System.Windows.Forms.Button();
+            this.btnLogout = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Rectangle2 = new System.Windows.Forms.PictureBox();
+            this.Rectangle1 = new System.Windows.Forms.PictureBox();
+            this.pnlMyAccount = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.txtWelcomeAccount = new System.Windows.Forms.TextBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Rectangle2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Rectangle1)).BeginInit();
+            this.pnlMyAccount.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.SuspendLayout();
             // 
             // pictureLogo
             // 
-            pictureLogo.BackColor = Color.Black;
-            pictureLogo.Image = Properties.Resources.redAgentsLogo;
-            pictureLogo.Location = new Point(11, 47);
-            pictureLogo.Margin = new Padding(2);
-            pictureLogo.Name = "pictureLogo";
-            pictureLogo.Size = new Size(62, 52);
-            pictureLogo.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureLogo.TabIndex = 23;
-            pictureLogo.TabStop = false;
+            this.pictureLogo.BackColor = System.Drawing.Color.Black;
+            this.pictureLogo.Image = global::GUI_IT.Properties.Resources.redAgentsLogo;
+            this.pictureLogo.Location = new System.Drawing.Point(9, 38);
+            this.pictureLogo.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureLogo.Name = "pictureLogo";
+            this.pictureLogo.Size = new System.Drawing.Size(50, 42);
+            this.pictureLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureLogo.TabIndex = 23;
+            this.pictureLogo.TabStop = false;
             // 
             // btnSearch
             // 
-            btnSearch.BackColor = Color.Black;
-            btnSearch.FlatStyle = FlatStyle.Popup;
-            btnSearch.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            btnSearch.ForeColor = Color.White;
-            btnSearch.Location = new Point(781, 179);
-            btnSearch.Margin = new Padding(2);
-            btnSearch.Name = "btnSearch";
-            btnSearch.Size = new Size(98, 34);
-            btnSearch.TabIndex = 22;
-            btnSearch.Text = "Search";
-            btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.BackColor = System.Drawing.Color.Black;
+            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnSearch.ForeColor = System.Drawing.Color.White;
+            this.btnSearch.Location = new System.Drawing.Point(625, 143);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(78, 27);
+            this.btnSearch.TabIndex = 22;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = false;
             // 
             // txtSearch
             // 
-            txtSearch.Location = new Point(327, 181);
-            txtSearch.Margin = new Padding(2);
-            txtSearch.Name = "txtSearch";
-            txtSearch.Size = new Size(461, 31);
-            txtSearch.TabIndex = 21;
+            this.txtSearch.Location = new System.Drawing.Point(262, 145);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(370, 27);
+            this.txtSearch.TabIndex = 21;
             // 
             // btnHome
             // 
-            btnHome.BackColor = Color.Black;
-            btnHome.FlatStyle = FlatStyle.Popup;
-            btnHome.Font = new Font("Segoe UI", 10F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            btnHome.ForeColor = Color.White;
-            btnHome.Location = new Point(594, 58);
-            btnHome.Margin = new Padding(4);
-            btnHome.Name = "btnHome";
-            btnHome.Size = new Size(86, 34);
-            btnHome.TabIndex = 20;
-            btnHome.Text = "Home";
-            btnHome.UseVisualStyleBackColor = false;
-            btnHome.Click += btnHome_Click;
+            this.btnHome.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnHome.BackColor = System.Drawing.Color.Black;
+            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnHome.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.btnHome.ForeColor = System.Drawing.Color.White;
+            this.btnHome.Location = new System.Drawing.Point(534, 46);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(69, 27);
+            this.btnHome.TabIndex = 20;
+            this.btnHome.Text = "Home";
+            this.btnHome.UseVisualStyleBackColor = false;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // txtAdminHome
             // 
-            txtAdminHome.BackColor = Color.FromArgb(64, 0, 0);
-            txtAdminHome.BorderStyle = BorderStyle.None;
-            txtAdminHome.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            txtAdminHome.ForeColor = Color.White;
-            txtAdminHome.Location = new Point(405, 132);
-            txtAdminHome.Margin = new Padding(2);
-            txtAdminHome.Name = "txtAdminHome";
-            txtAdminHome.ReadOnly = true;
-            txtAdminHome.Size = new Size(347, 41);
-            txtAdminHome.TabIndex = 19;
-            txtAdminHome.Text = "IT Help Desk Admin";
+            this.txtAdminHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.txtAdminHome.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtAdminHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtAdminHome.ForeColor = System.Drawing.Color.White;
+            this.txtAdminHome.Location = new System.Drawing.Point(324, 106);
+            this.txtAdminHome.Margin = new System.Windows.Forms.Padding(2);
+            this.txtAdminHome.Name = "txtAdminHome";
+            this.txtAdminHome.ReadOnly = true;
+            this.txtAdminHome.Size = new System.Drawing.Size(278, 34);
+            this.txtAdminHome.TabIndex = 19;
+            this.txtAdminHome.Text = "IT Help Desk Admin";
             // 
             // btnGenerate
             // 
-            btnGenerate.BackColor = Color.Black;
-            btnGenerate.FlatStyle = FlatStyle.Popup;
-            btnGenerate.Font = new Font("Segoe UI", 10F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            btnGenerate.ForeColor = Color.White;
-            btnGenerate.Location = new Point(948, 58);
-            btnGenerate.Margin = new Padding(2);
-            btnGenerate.Name = "btnGenerate";
-            btnGenerate.Size = new Size(209, 34);
-            btnGenerate.TabIndex = 18;
-            btnGenerate.Text = "Report Generation";
-            btnGenerate.UseVisualStyleBackColor = false;
-            btnGenerate.Click += btnGenerate_Click;
+            this.btnGenerate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnGenerate.BackColor = System.Drawing.Color.Black;
+            this.btnGenerate.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnGenerate.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.btnGenerate.ForeColor = System.Drawing.Color.White;
+            this.btnGenerate.Location = new System.Drawing.Point(817, 46);
+            this.btnGenerate.Margin = new System.Windows.Forms.Padding(2);
+            this.btnGenerate.Name = "btnGenerate";
+            this.btnGenerate.Size = new System.Drawing.Size(167, 27);
+            this.btnGenerate.TabIndex = 18;
+            this.btnGenerate.Text = "Report Generation";
+            this.btnGenerate.UseVisualStyleBackColor = false;
             // 
             // btnRegistration
             // 
-            btnRegistration.BackColor = Color.Black;
-            btnRegistration.FlatStyle = FlatStyle.Popup;
-            btnRegistration.Font = new Font("Segoe UI", 10F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            btnRegistration.ForeColor = Color.White;
-            btnRegistration.Location = new Point(810, 58);
-            btnRegistration.Margin = new Padding(2);
-            btnRegistration.Name = "btnRegistration";
-            btnRegistration.Size = new Size(149, 38);
-            btnRegistration.TabIndex = 17;
-            btnRegistration.Text = "Registration";
-            btnRegistration.UseVisualStyleBackColor = false;
-            btnRegistration.Click += btnRegistration_Click;
+            this.btnRegistration.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnRegistration.BackColor = System.Drawing.Color.Black;
+            this.btnRegistration.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnRegistration.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.btnRegistration.ForeColor = System.Drawing.Color.White;
+            this.btnRegistration.Location = new System.Drawing.Point(707, 46);
+            this.btnRegistration.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRegistration.Name = "btnRegistration";
+            this.btnRegistration.Size = new System.Drawing.Size(119, 30);
+            this.btnRegistration.TabIndex = 17;
+            this.btnRegistration.Text = "Registration";
+            this.btnRegistration.UseVisualStyleBackColor = false;
             // 
             // btnAccount
             // 
-            btnAccount.BackColor = Color.Black;
-            btnAccount.FlatStyle = FlatStyle.Popup;
-            btnAccount.Font = new Font("Segoe UI", 10F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            btnAccount.ForeColor = Color.White;
-            btnAccount.Location = new Point(677, 56);
-            btnAccount.Margin = new Padding(2);
-            btnAccount.Name = "btnAccount";
-            btnAccount.Size = new Size(142, 40);
-            btnAccount.TabIndex = 16;
-            btnAccount.Text = "My Account";
-            btnAccount.UseVisualStyleBackColor = false;
-            btnAccount.Click += btnAccount_Click;
+            this.btnAccount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAccount.BackColor = System.Drawing.Color.Black;
+            this.btnAccount.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAccount.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.btnAccount.ForeColor = System.Drawing.Color.White;
+            this.btnAccount.Location = new System.Drawing.Point(601, 45);
+            this.btnAccount.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAccount.Name = "btnAccount";
+            this.btnAccount.Size = new System.Drawing.Size(114, 32);
+            this.btnAccount.TabIndex = 16;
+            this.btnAccount.Text = "My Account";
+            this.btnAccount.UseVisualStyleBackColor = false;
+            this.btnAccount.Click += new System.EventHandler(this.btnAccount_Click);
             // 
             // btnLogout
             // 
-            btnLogout.BackColor = Color.FromArgb(64, 0, 0);
-            btnLogout.FlatStyle = FlatStyle.Popup;
-            btnLogout.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            btnLogout.ForeColor = Color.White;
-            btnLogout.Location = new Point(1051, 0);
-            btnLogout.Margin = new Padding(2);
-            btnLogout.Name = "btnLogout";
-            btnLogout.Size = new Size(119, 41);
-            btnLogout.TabIndex = 15;
-            btnLogout.Text = "Log Out";
-            btnLogout.UseVisualStyleBackColor = false;
-            btnLogout.Click += btnLogout_Click;
+            this.btnLogout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnLogout.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnLogout.ForeColor = System.Drawing.Color.White;
+            this.btnLogout.Location = new System.Drawing.Point(900, 0);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(95, 33);
+            this.btnLogout.TabIndex = 15;
+            this.btnLogout.Text = "Log Out";
+            this.btnLogout.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
-            pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            pictureBox1.BackColor = Color.FromArgb(64, 0, 0);
-            pictureBox1.Location = new Point(-5, 0);
-            pictureBox1.Margin = new Padding(2);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1179, 41);
-            pictureBox1.TabIndex = 14;
-            pictureBox1.TabStop = false;
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.pictureBox1.Location = new System.Drawing.Point(-4, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1002, 33);
+            this.pictureBox1.TabIndex = 14;
+            this.pictureBox1.TabStop = false;
             // 
             // Rectangle2
             // 
-            Rectangle2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            Rectangle2.BackColor = Color.FromArgb(64, 0, 0);
-            Rectangle2.Location = new Point(-2, 106);
-            Rectangle2.Margin = new Padding(2);
-            Rectangle2.Name = "Rectangle2";
-            Rectangle2.Size = new Size(1179, 157);
-            Rectangle2.TabIndex = 13;
-            Rectangle2.TabStop = false;
+            this.Rectangle2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Rectangle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Rectangle2.Location = new System.Drawing.Point(-2, 85);
+            this.Rectangle2.Margin = new System.Windows.Forms.Padding(2);
+            this.Rectangle2.Name = "Rectangle2";
+            this.Rectangle2.Size = new System.Drawing.Size(1002, 126);
+            this.Rectangle2.TabIndex = 13;
+            this.Rectangle2.TabStop = false;
             // 
             // Rectangle1
             // 
-            Rectangle1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            Rectangle1.BackColor = Color.Black;
-            Rectangle1.Location = new Point(-5, 25);
-            Rectangle1.Margin = new Padding(2);
-            Rectangle1.Name = "Rectangle1";
-            Rectangle1.Size = new Size(1179, 98);
-            Rectangle1.TabIndex = 12;
-            Rectangle1.TabStop = false;
+            this.Rectangle1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Rectangle1.BackColor = System.Drawing.Color.Black;
+            this.Rectangle1.Location = new System.Drawing.Point(-2, 0);
+            this.Rectangle1.Margin = new System.Windows.Forms.Padding(2);
+            this.Rectangle1.Name = "Rectangle1";
+            this.Rectangle1.Size = new System.Drawing.Size(993, 211);
+            this.Rectangle1.TabIndex = 12;
+            this.Rectangle1.TabStop = false;
+            this.Rectangle1.Click += new System.EventHandler(this.Rectangle1_Click);
             // 
             // pnlMyAccount
             // 
-            pnlMyAccount.Controls.Add(pictureBox2);
-            pnlMyAccount.Controls.Add(txtWelcomeAccount);
-            pnlMyAccount.Controls.Add(pictureBox3);
-            pnlMyAccount.Controls.Add(pictureBox4);
-            pnlMyAccount.Location = new Point(2, 106);
-            pnlMyAccount.Name = "pnlMyAccount";
-            pnlMyAccount.Size = new Size(1175, 545);
-            pnlMyAccount.TabIndex = 24;
+            this.pnlMyAccount.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlMyAccount.Controls.Add(this.pictureBox2);
+            this.pnlMyAccount.Controls.Add(this.txtWelcomeAccount);
+            this.pnlMyAccount.Controls.Add(this.pictureBox3);
+            this.pnlMyAccount.Controls.Add(this.pictureBox4);
+            this.pnlMyAccount.Location = new System.Drawing.Point(2, 85);
+            this.pnlMyAccount.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlMyAccount.Name = "pnlMyAccount";
+            this.pnlMyAccount.Size = new System.Drawing.Size(989, 436);
+            this.pnlMyAccount.TabIndex = 24;
+            this.pnlMyAccount.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlMyAccount_Paint);
             // 
             // pictureBox2
             // 
-            pictureBox2.BackColor = Color.Black;
-            pictureBox2.Image = Properties.Resources.Profile_Picture;
-            pictureBox2.InitialImage = (Image)resources.GetObject("pictureBox2.InitialImage");
-            pictureBox2.Location = new Point(29, 13);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(325, 258);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 21;
-            pictureBox2.TabStop = false;
+            this.pictureBox2.BackColor = System.Drawing.Color.Black;
+            this.pictureBox2.Image = global::GUI_IT.Properties.Resources.Profile_Picture;
+            this.pictureBox2.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.InitialImage")));
+            this.pictureBox2.Location = new System.Drawing.Point(23, 10);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(260, 206);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 21;
+            this.pictureBox2.TabStop = false;
             // 
             // txtWelcomeAccount
             // 
-            txtWelcomeAccount.BackColor = Color.FromArgb(64, 0, 0);
-            txtWelcomeAccount.BorderStyle = BorderStyle.None;
-            txtWelcomeAccount.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold, GraphicsUnit.Point);
-            txtWelcomeAccount.ForeColor = Color.White;
-            txtWelcomeAccount.Location = new Point(506, 35);
-            txtWelcomeAccount.Margin = new Padding(4);
-            txtWelcomeAccount.Name = "txtWelcomeAccount";
-            txtWelcomeAccount.ReadOnly = true;
-            txtWelcomeAccount.Size = new Size(559, 46);
-            txtWelcomeAccount.TabIndex = 20;
-            txtWelcomeAccount.Text = "Welcome to Your Account!";
+            this.txtWelcomeAccount.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtWelcomeAccount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.txtWelcomeAccount.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtWelcomeAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtWelcomeAccount.ForeColor = System.Drawing.Color.White;
+            this.txtWelcomeAccount.Location = new System.Drawing.Point(429, 28);
+            this.txtWelcomeAccount.Name = "txtWelcomeAccount";
+            this.txtWelcomeAccount.ReadOnly = true;
+            this.txtWelcomeAccount.Size = new System.Drawing.Size(447, 38);
+            this.txtWelcomeAccount.TabIndex = 20;
+            this.txtWelcomeAccount.Text = "Welcome to Your Account!";
             // 
             // pictureBox3
             // 
-            pictureBox3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            pictureBox3.BackColor = Color.Black;
-            pictureBox3.Location = new Point(-20, -2);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(418, 544);
-            pictureBox3.TabIndex = 15;
-            pictureBox3.TabStop = false;
+            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.pictureBox3.BackColor = System.Drawing.Color.Black;
+            this.pictureBox3.Location = new System.Drawing.Point(-16, -2);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(334, 435);
+            this.pictureBox3.TabIndex = 15;
+            this.pictureBox3.TabStop = false;
             // 
             // pictureBox4
             // 
-            pictureBox4.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            pictureBox4.BackColor = Color.FromArgb(64, 0, 0);
-            pictureBox4.Location = new Point(0, 0);
-            pictureBox4.Margin = new Padding(4);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(1175, 166);
-            pictureBox4.TabIndex = 14;
-            pictureBox4.TabStop = false;
+            this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.pictureBox4.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(989, 133);
+            this.pictureBox4.TabIndex = 14;
+            this.pictureBox4.TabStop = false;
             // 
             // frmAdmin
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1168, 641);
-            Controls.Add(pnlMyAccount);
-            Controls.Add(pictureLogo);
-            Controls.Add(btnSearch);
-            Controls.Add(txtSearch);
-            Controls.Add(btnHome);
-            Controls.Add(txtAdminHome);
-            Controls.Add(btnGenerate);
-            Controls.Add(btnRegistration);
-            Controls.Add(btnAccount);
-            Controls.Add(btnLogout);
-            Controls.Add(pictureBox1);
-            Controls.Add(Rectangle2);
-            Controls.Add(Rectangle1);
-            Icon = (Icon)resources.GetObject("$this.Icon");
-            Name = "frmAdmin";
-            Text = "IT Help Desk - Admin";
-            Load += frmAdmin_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureLogo).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)Rectangle2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)Rectangle1).EndInit();
-            pnlMyAccount.ResumeLayout(false);
-            pnlMyAccount.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(993, 523);
+            this.Controls.Add(this.pnlMyAccount);
+            this.Controls.Add(this.pictureLogo);
+            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.txtSearch);
+            this.Controls.Add(this.btnHome);
+            this.Controls.Add(this.txtAdminHome);
+            this.Controls.Add(this.btnGenerate);
+            this.Controls.Add(this.btnRegistration);
+            this.Controls.Add(this.btnAccount);
+            this.Controls.Add(this.btnLogout);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.Rectangle2);
+            this.Controls.Add(this.Rectangle1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "frmAdmin";
+            this.Text = "IT Help Desk - Admin";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Rectangle2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Rectangle1)).EndInit();
+            this.pnlMyAccount.ResumeLayout(false);
+            this.pnlMyAccount.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

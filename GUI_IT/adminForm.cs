@@ -54,5 +54,15 @@ namespace GUI_IT
             LoginScreen.ShowDialog();
             this.Close();
         }
+
+        private void Rectangle1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnlMyAccount_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
