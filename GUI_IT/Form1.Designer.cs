@@ -70,10 +70,10 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::GUI_IT.Properties.Resources.redAgentsLogo;
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(368, 114);
+            this.pictureBox1.Location = new System.Drawing.Point(325, 118);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(134, 124);
+            this.pictureBox1.Size = new System.Drawing.Size(107, 99);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -83,10 +83,10 @@
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.pictureBox2.Location = new System.Drawing.Point(-3, -1);
+            this.pictureBox2.Location = new System.Drawing.Point(-2, -1);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(900, 63);
+            this.pictureBox2.Size = new System.Drawing.Size(781, 50);
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
@@ -95,10 +95,10 @@
             this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox3.BackColor = System.Drawing.Color.Black;
-            this.pictureBox3.Location = new System.Drawing.Point(-3, 49);
+            this.pictureBox3.Location = new System.Drawing.Point(-2, 39);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(900, 41);
+            this.pictureBox3.Size = new System.Drawing.Size(781, 33);
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
             // 
@@ -108,7 +108,7 @@
             this.lblHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lblHeader.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblHeader.ForeColor = System.Drawing.Color.White;
-            this.lblHeader.Location = new System.Drawing.Point(10, 7);
+            this.lblHeader.Location = new System.Drawing.Point(8, 6);
             this.lblHeader.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblHeader.Name = "lblHeader";
             this.lblHeader.Size = new System.Drawing.Size(373, 36);
@@ -120,7 +120,7 @@
             this.lblLogin.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblLogin.AutoSize = true;
             this.lblLogin.Font = new System.Drawing.Font("Segoe UI", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.lblLogin.Location = new System.Drawing.Point(309, 252);
+            this.lblLogin.Location = new System.Drawing.Point(242, 219);
             this.lblLogin.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblLogin.Name = "lblLogin";
             this.lblLogin.Size = new System.Drawing.Size(268, 32);
@@ -130,21 +130,21 @@
             // txtUsername
             // 
             this.txtUsername.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtUsername.Location = new System.Drawing.Point(288, 293);
+            this.txtUsername.Location = new System.Drawing.Point(261, 262);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(2);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.PlaceholderText = "Enter Username";
-            this.txtUsername.Size = new System.Drawing.Size(288, 27);
+            this.txtUsername.Size = new System.Drawing.Size(231, 27);
             this.txtUsername.TabIndex = 5;
             // 
             // txtPassword
             // 
             this.txtPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtPassword.Location = new System.Drawing.Point(288, 336);
+            this.txtPassword.Location = new System.Drawing.Point(261, 296);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(2);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PlaceholderText = "Enter Password";
-            this.txtPassword.Size = new System.Drawing.Size(288, 27);
+            this.txtPassword.Size = new System.Drawing.Size(231, 27);
             this.txtPassword.TabIndex = 7;
             this.txtPassword.UseSystemPasswordChar = true;
             // 
@@ -153,7 +153,7 @@
             this.lblUsernameLogin.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblUsernameLogin.AutoSize = true;
             this.lblUsernameLogin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblUsernameLogin.Location = new System.Drawing.Point(186, 293);
+            this.lblUsernameLogin.Location = new System.Drawing.Point(154, 262);
             this.lblUsernameLogin.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblUsernameLogin.Name = "lblUsernameLogin";
             this.lblUsernameLogin.Size = new System.Drawing.Size(99, 28);
@@ -165,7 +165,7 @@
             this.lblFirstRegister.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblFirstRegister.AutoSize = true;
             this.lblFirstRegister.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblFirstRegister.Location = new System.Drawing.Point(194, 336);
+            this.lblFirstRegister.Location = new System.Drawing.Point(154, 295);
             this.lblFirstRegister.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFirstRegister.Name = "lblFirstRegister";
             this.lblFirstRegister.Size = new System.Drawing.Size(93, 28);
@@ -179,10 +179,10 @@
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(350, 377);
+            this.btnLogin.Location = new System.Drawing.Point(310, 329);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(166, 57);
+            this.btnLogin.Size = new System.Drawing.Size(133, 45);
             this.btnLogin.TabIndex = 10;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
@@ -193,7 +193,7 @@
             this.checkboxRemember.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkboxRemember.AutoSize = true;
             this.checkboxRemember.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkboxRemember.Location = new System.Drawing.Point(368, 438);
+            this.checkboxRemember.Location = new System.Drawing.Point(310, 377);
             this.checkboxRemember.Margin = new System.Windows.Forms.Padding(2);
             this.checkboxRemember.Name = "checkboxRemember";
             this.checkboxRemember.Size = new System.Drawing.Size(144, 27);
@@ -206,7 +206,7 @@
             this.linklblForgot.ActiveLinkColor = System.Drawing.Color.DarkMagenta;
             this.linklblForgot.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.linklblForgot.AutoSize = true;
-            this.linklblForgot.Location = new System.Drawing.Point(580, 338);
+            this.linklblForgot.Location = new System.Drawing.Point(494, 298);
             this.linklblForgot.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linklblForgot.Name = "linklblForgot";
             this.linklblForgot.Size = new System.Drawing.Size(125, 20);
@@ -221,12 +221,12 @@
             this.btnRegisterAccount.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnRegisterAccount.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnRegisterAccount.ForeColor = System.Drawing.Color.White;
-            this.btnRegisterAccount.Location = new System.Drawing.Point(762, 94);
+            this.btnRegisterAccount.Location = new System.Drawing.Point(650, 75);
             this.btnRegisterAccount.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegisterAccount.Name = "btnRegisterAccount";
-            this.btnRegisterAccount.Size = new System.Drawing.Size(119, 31);
+            this.btnRegisterAccount.Size = new System.Drawing.Size(115, 31);
             this.btnRegisterAccount.TabIndex = 14;
-            this.btnRegisterAccount.Text = "Register Here!";
+            this.btnRegisterAccount.Text = "Register";
             this.btnRegisterAccount.UseVisualStyleBackColor = false;
             this.btnRegisterAccount.Click += new System.EventHandler(this.btnRegisterAccount_Click);
             // 
@@ -235,13 +235,13 @@
             this.lblRegisterAccount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblRegisterAccount.AutoSize = true;
             this.lblRegisterAccount.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblRegisterAccount.Location = new System.Drawing.Point(580, 101);
+            this.lblRegisterAccount.Location = new System.Drawing.Point(477, 82);
             this.lblRegisterAccount.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblRegisterAccount.Name = "lblRegisterAccount";
             this.lblRegisterAccount.Size = new System.Drawing.Size(159, 19);
             this.lblRegisterAccount.TabIndex = 15;
             this.lblRegisterAccount.Text = "Don\'t Have An Account?";
-            this.lblRegisterAccount.Click += new System.EventHandler(this.lblRegisterAccount_Click);
+            this.lblRegisterAccount.Click += new System.EventHandler(this.lblRegisterAccount_Click_1);
             // 
             // pnlSignUp
             // 
@@ -263,19 +263,18 @@
             this.pnlSignUp.Controls.Add(this.txtEmail);
             this.pnlSignUp.Controls.Add(this.lblRegister);
             this.pnlSignUp.Controls.Add(this.pictureBox4);
-            this.pnlSignUp.Location = new System.Drawing.Point(-3, 89);
+            this.pnlSignUp.Location = new System.Drawing.Point(8, 75);
             this.pnlSignUp.Margin = new System.Windows.Forms.Padding(2);
             this.pnlSignUp.Name = "pnlSignUp";
-            this.pnlSignUp.Size = new System.Drawing.Size(900, 442);
+            this.pnlSignUp.Size = new System.Drawing.Size(757, 408);
             this.pnlSignUp.TabIndex = 16;
-            this.pnlSignUp.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlSignUp_Paint);
             // 
             // lblUserType
             // 
             this.lblUserType.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblUserType.AutoSize = true;
             this.lblUserType.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblUserType.Location = new System.Drawing.Point(198, 324);
+            this.lblUserType.Location = new System.Drawing.Point(156, 278);
             this.lblUserType.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblUserType.Name = "lblUserType";
             this.lblUserType.Size = new System.Drawing.Size(97, 28);
@@ -292,10 +291,10 @@
             "Project Member",
             "IT Support Team",
             "Report Manager"});
-            this.cboUserType.Location = new System.Drawing.Point(295, 323);
+            this.cboUserType.Location = new System.Drawing.Point(254, 277);
             this.cboUserType.Margin = new System.Windows.Forms.Padding(2);
             this.cboUserType.Name = "cboUserType";
-            this.cboUserType.Size = new System.Drawing.Size(288, 28);
+            this.cboUserType.Size = new System.Drawing.Size(231, 28);
             this.cboUserType.TabIndex = 30;
             // 
             // btnRegister
@@ -305,10 +304,10 @@
             this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegister.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnRegister.ForeColor = System.Drawing.Color.White;
-            this.btnRegister.Location = new System.Drawing.Point(353, 369);
+            this.btnRegister.Location = new System.Drawing.Point(300, 314);
             this.btnRegister.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(166, 56);
+            this.btnRegister.Size = new System.Drawing.Size(133, 45);
             this.btnRegister.TabIndex = 29;
             this.btnRegister.Text = "Register";
             this.btnRegister.UseVisualStyleBackColor = false;
@@ -318,7 +317,7 @@
             this.lblLastName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblLastName.AutoSize = true;
             this.lblLastName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblLastName.Location = new System.Drawing.Point(192, 285);
+            this.lblLastName.Location = new System.Drawing.Point(150, 247);
             this.lblLastName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblLastName.Name = "lblLastName";
             this.lblLastName.Size = new System.Drawing.Size(103, 28);
@@ -328,11 +327,11 @@
             // txtLastName
             // 
             this.txtLastName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtLastName.Location = new System.Drawing.Point(295, 285);
+            this.txtLastName.Location = new System.Drawing.Point(254, 247);
             this.txtLastName.Margin = new System.Windows.Forms.Padding(2);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.PlaceholderText = "Enter Last Name";
-            this.txtLastName.Size = new System.Drawing.Size(288, 27);
+            this.txtLastName.Size = new System.Drawing.Size(231, 27);
             this.txtLastName.TabIndex = 27;
             // 
             // lblSignIn
@@ -340,12 +339,13 @@
             this.lblSignIn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblSignIn.AutoSize = true;
             this.lblSignIn.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblSignIn.Location = new System.Drawing.Point(571, 19);
+            this.lblSignIn.Location = new System.Drawing.Point(469, 8);
             this.lblSignIn.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSignIn.Name = "lblSignIn";
             this.lblSignIn.Size = new System.Drawing.Size(171, 19);
             this.lblSignIn.TabIndex = 26;
             this.lblSignIn.Text = "Already Have An Account?";
+            this.lblSignIn.Click += new System.EventHandler(this.lblSignIn_Click);
             // 
             // btnLoginForm
             // 
@@ -354,10 +354,10 @@
             this.btnLoginForm.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLoginForm.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnLoginForm.ForeColor = System.Drawing.Color.White;
-            this.btnLoginForm.Location = new System.Drawing.Point(765, 12);
+            this.btnLoginForm.Location = new System.Drawing.Point(660, 2);
             this.btnLoginForm.Margin = new System.Windows.Forms.Padding(2);
             this.btnLoginForm.Name = "btnLoginForm";
-            this.btnLoginForm.Size = new System.Drawing.Size(119, 31);
+            this.btnLoginForm.Size = new System.Drawing.Size(95, 29);
             this.btnLoginForm.TabIndex = 25;
             this.btnLoginForm.Text = "Login Here!";
             this.btnLoginForm.UseVisualStyleBackColor = false;
@@ -368,7 +368,7 @@
             this.lblFirstName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblFirstName.AutoSize = true;
             this.lblFirstName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblFirstName.Location = new System.Drawing.Point(190, 246);
+            this.lblFirstName.Location = new System.Drawing.Point(150, 215);
             this.lblFirstName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFirstName.Name = "lblFirstName";
             this.lblFirstName.Size = new System.Drawing.Size(106, 28);
@@ -380,7 +380,7 @@
             this.lblEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblEmail.Location = new System.Drawing.Point(234, 209);
+            this.lblEmail.Location = new System.Drawing.Point(191, 187);
             this.lblEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(59, 28);
@@ -390,21 +390,21 @@
             // txtFirstName
             // 
             this.txtFirstName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtFirstName.Location = new System.Drawing.Point(295, 246);
+            this.txtFirstName.Location = new System.Drawing.Point(254, 215);
             this.txtFirstName.Margin = new System.Windows.Forms.Padding(2);
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.PlaceholderText = "Enter First Name";
-            this.txtFirstName.Size = new System.Drawing.Size(288, 27);
+            this.txtFirstName.Size = new System.Drawing.Size(231, 27);
             this.txtFirstName.TabIndex = 19;
             // 
             // txtEmail
             // 
             this.txtEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtEmail.Location = new System.Drawing.Point(295, 210);
+            this.txtEmail.Location = new System.Drawing.Point(254, 187);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.PlaceholderText = "Enter Email";
-            this.txtEmail.Size = new System.Drawing.Size(288, 27);
+            this.txtEmail.Size = new System.Drawing.Size(231, 27);
             this.txtEmail.TabIndex = 18;
             // 
             // lblRegister
@@ -412,7 +412,7 @@
             this.lblRegister.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblRegister.AutoSize = true;
             this.lblRegister.Font = new System.Drawing.Font("Segoe UI", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.lblRegister.Location = new System.Drawing.Point(295, 168);
+            this.lblRegister.Location = new System.Drawing.Point(210, 143);
             this.lblRegister.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblRegister.Name = "lblRegister";
             this.lblRegister.Size = new System.Drawing.Size(306, 32);
@@ -425,10 +425,10 @@
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Image = global::GUI_IT.Properties.Resources.redAgentsLogo;
             this.pictureBox4.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.InitialImage")));
-            this.pictureBox4.Location = new System.Drawing.Point(371, 41);
+            this.pictureBox4.Location = new System.Drawing.Point(315, 43);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(134, 124);
+            this.pictureBox4.Size = new System.Drawing.Size(107, 99);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 16;
             this.pictureBox4.TabStop = false;
@@ -438,7 +438,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(891, 542);
+            this.ClientSize = new System.Drawing.Size(774, 489);
             this.Controls.Add(this.pnlSignUp);
             this.Controls.Add(this.lblRegisterAccount);
             this.Controls.Add(this.btnRegisterAccount);
