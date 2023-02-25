@@ -54,11 +54,11 @@ namespace GUI_IT
             string name = txtFirstName.Text.ToString();
             string user = txtLastName.Text.ToString();
             string email = txtEmail.Text.ToString();
-            string role =   cboUserType.Text.ToString();
-           // DateTime dt = DateTime.Now;
+            string role = cboUserType.Text.ToString();
+            // DateTime dt = DateTime.Now;
 
-           // string sDate = dt.ToShortDateString();
-            String query = "INSERT INTO Registration(Username, Name, Password, Email, Role) VALUES('"+user.ToString()+"', '"+name.ToString()+"', '12345', '"+email.ToString()+"', '"+ role.ToString()+"');";
+            // string sDate = dt.ToShortDateString();
+            String query = "INSERT INTO Registration(Username, Name, Password, Email, Role) VALUES('" + user.ToString() + "', '" + name.ToString() + "', '12345', '" + email.ToString() + "', '" + role.ToString() + "');";
             SqlCommand cmd = new SqlCommand(query, con);
             cmd.ExecuteNonQuery();
         }
@@ -66,6 +66,7 @@ namespace GUI_IT
         private void btnLoginForm_Click(object sender, EventArgs e)
         {
             pnlSignUp.Visible = false;
+            this.Text = "IT Help Desk Login";
             txtUsername.Text = String.Empty;
             txtPassword.Text = String.Empty;
         }
@@ -73,6 +74,7 @@ namespace GUI_IT
         private void btnRegisterAccount_Click(object sender, EventArgs e)
         {
             pnlSignUp.Visible = true;
+            this.Text = "IT Help Desk Registration";
             txtEmail.Text = String.Empty;
             txtFirstName.Text = String.Empty;
             txtLastName.Text = String.Empty;

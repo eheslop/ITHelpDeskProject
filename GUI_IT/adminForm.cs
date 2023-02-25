@@ -15,7 +15,8 @@ namespace GUI_IT
         public frmAdmin()
         {
             InitializeComponent();
-            pnlMyAccount.Visible = false;
+            pnlRegistration.Visible = false;
+            pnlReportGenerate.Visible = false;
         }
 
         private void frmAdmin_Load(object sender, EventArgs e)
@@ -25,26 +26,22 @@ namespace GUI_IT
 
         private void btnHome_Click(object sender, EventArgs e)
         {
-            pnlMyAccount.Visible = false;
-
+            this.Text = "IT Help Desk Admin Homepage";
+            pnlRegistration.Visible = false;
+            pnlReportGenerate.Visible = false;
         }
-
-        private void btnAccount_Click(object sender, EventArgs e)
-        {
-            pnlMyAccount.Visible = true;
-
-        }
-
         private void btnRegistration_Click(object sender, EventArgs e)
         {
-            pnlMyAccount.Visible = false;
-
+            this.Text = "IT Help Desk Admin Registration";
+            pnlRegistration.Visible = true;
+            pnlReportGenerate.Visible = false;
         }
 
         private void btnGenerate_Click(object sender, EventArgs e)
         {
-            pnlMyAccount.Visible = false;
-
+            this.Text = "IT Help Desk Admin Report Generation";
+            pnlRegistration.Visible = false;
+            pnlReportGenerate.Visible = true;
         }
 
         private void btnLogout_Click(object sender, EventArgs e)

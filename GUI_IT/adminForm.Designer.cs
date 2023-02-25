@@ -30,30 +30,28 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAdmin));
             pictureLogo = new PictureBox();
-            btnSearch = new Button();
-            txtSearch = new TextBox();
             btnHome = new Button();
-            txtAdminHome = new TextBox();
             btnGenerate = new Button();
             btnRegistration = new Button();
-            btnAccount = new Button();
             btnLogout = new Button();
             pictureBox1 = new PictureBox();
             Rectangle2 = new PictureBox();
             Rectangle1 = new PictureBox();
-            pnlMyAccount = new Panel();
-            pictureBox2 = new PictureBox();
-            txtWelcomeAccount = new TextBox();
-            pictureBox3 = new PictureBox();
+            pnlRegistration = new Panel();
+            lblNewReg = new Label();
             pictureBox4 = new PictureBox();
+            pnlReportGenerate = new Panel();
+            lblReportGen = new Label();
+            pictureBox3 = new PictureBox();
+            lblHome = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureLogo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Rectangle2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Rectangle1).BeginInit();
-            pnlMyAccount.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            pnlRegistration.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            pnlReportGenerate.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
             // pictureLogo
@@ -68,35 +66,13 @@
             pictureLogo.TabIndex = 23;
             pictureLogo.TabStop = false;
             // 
-            // btnSearch
-            // 
-            btnSearch.BackColor = Color.Black;
-            btnSearch.FlatStyle = FlatStyle.Popup;
-            btnSearch.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            btnSearch.ForeColor = Color.White;
-            btnSearch.Location = new Point(781, 179);
-            btnSearch.Margin = new Padding(2);
-            btnSearch.Name = "btnSearch";
-            btnSearch.Size = new Size(98, 34);
-            btnSearch.TabIndex = 22;
-            btnSearch.Text = "Search";
-            btnSearch.UseVisualStyleBackColor = false;
-            // 
-            // txtSearch
-            // 
-            txtSearch.Location = new Point(327, 181);
-            txtSearch.Margin = new Padding(2);
-            txtSearch.Name = "txtSearch";
-            txtSearch.Size = new Size(461, 31);
-            txtSearch.TabIndex = 21;
-            // 
             // btnHome
             // 
             btnHome.BackColor = Color.Black;
             btnHome.FlatStyle = FlatStyle.Popup;
             btnHome.Font = new Font("Segoe UI", 10F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             btnHome.ForeColor = Color.White;
-            btnHome.Location = new Point(594, 58);
+            btnHome.Location = new Point(763, 60);
             btnHome.Margin = new Padding(4);
             btnHome.Name = "btnHome";
             btnHome.Size = new Size(86, 34);
@@ -105,32 +81,18 @@
             btnHome.UseVisualStyleBackColor = false;
             btnHome.Click += btnHome_Click;
             // 
-            // txtAdminHome
-            // 
-            txtAdminHome.BackColor = Color.FromArgb(64, 0, 0);
-            txtAdminHome.BorderStyle = BorderStyle.None;
-            txtAdminHome.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            txtAdminHome.ForeColor = Color.White;
-            txtAdminHome.Location = new Point(405, 132);
-            txtAdminHome.Margin = new Padding(2);
-            txtAdminHome.Name = "txtAdminHome";
-            txtAdminHome.ReadOnly = true;
-            txtAdminHome.Size = new Size(347, 41);
-            txtAdminHome.TabIndex = 19;
-            txtAdminHome.Text = "IT Help Desk Admin";
-            // 
             // btnGenerate
             // 
             btnGenerate.BackColor = Color.Black;
             btnGenerate.FlatStyle = FlatStyle.Popup;
             btnGenerate.Font = new Font("Segoe UI", 10F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             btnGenerate.ForeColor = Color.White;
-            btnGenerate.Location = new Point(948, 58);
+            btnGenerate.Location = new Point(985, 58);
             btnGenerate.Margin = new Padding(2);
             btnGenerate.Name = "btnGenerate";
-            btnGenerate.Size = new Size(209, 34);
+            btnGenerate.Size = new Size(185, 34);
             btnGenerate.TabIndex = 18;
-            btnGenerate.Text = "Report Generation";
+            btnGenerate.Text = "Generate Reports";
             btnGenerate.UseVisualStyleBackColor = false;
             btnGenerate.Click += btnGenerate_Click;
             // 
@@ -140,7 +102,7 @@
             btnRegistration.FlatStyle = FlatStyle.Popup;
             btnRegistration.Font = new Font("Segoe UI", 10F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             btnRegistration.ForeColor = Color.White;
-            btnRegistration.Location = new Point(810, 58);
+            btnRegistration.Location = new Point(842, 58);
             btnRegistration.Margin = new Padding(2);
             btnRegistration.Name = "btnRegistration";
             btnRegistration.Size = new Size(149, 38);
@@ -148,21 +110,6 @@
             btnRegistration.Text = "Registration";
             btnRegistration.UseVisualStyleBackColor = false;
             btnRegistration.Click += btnRegistration_Click;
-            // 
-            // btnAccount
-            // 
-            btnAccount.BackColor = Color.Black;
-            btnAccount.FlatStyle = FlatStyle.Popup;
-            btnAccount.Font = new Font("Segoe UI", 10F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            btnAccount.ForeColor = Color.White;
-            btnAccount.Location = new Point(677, 56);
-            btnAccount.Margin = new Padding(2);
-            btnAccount.Name = "btnAccount";
-            btnAccount.Size = new Size(142, 40);
-            btnAccount.TabIndex = 16;
-            btnAccount.Text = "My Account";
-            btnAccount.UseVisualStyleBackColor = false;
-            btnAccount.Click += btnAccount_Click;
             // 
             // btnLogout
             // 
@@ -197,7 +144,7 @@
             Rectangle2.Location = new Point(-2, 106);
             Rectangle2.Margin = new Padding(2);
             Rectangle2.Name = "Rectangle2";
-            Rectangle2.Size = new Size(1179, 157);
+            Rectangle2.Size = new Size(1179, 125);
             Rectangle2.TabIndex = 13;
             Rectangle2.TabStop = false;
             // 
@@ -212,95 +159,110 @@
             Rectangle1.TabIndex = 12;
             Rectangle1.TabStop = false;
             // 
-            // pnlMyAccount
+            // pnlRegistration
             // 
-            pnlMyAccount.Controls.Add(pictureBox2);
-            pnlMyAccount.Controls.Add(txtWelcomeAccount);
-            pnlMyAccount.Controls.Add(pictureBox3);
-            pnlMyAccount.Controls.Add(pictureBox4);
-            pnlMyAccount.Location = new Point(2, 106);
-            pnlMyAccount.Name = "pnlMyAccount";
-            pnlMyAccount.Size = new Size(1175, 545);
-            pnlMyAccount.TabIndex = 24;
+            pnlRegistration.Controls.Add(lblNewReg);
+            pnlRegistration.Controls.Add(pictureBox4);
+            pnlRegistration.Location = new Point(-2, 106);
+            pnlRegistration.Name = "pnlRegistration";
+            pnlRegistration.Size = new Size(1172, 539);
+            pnlRegistration.TabIndex = 24;
             // 
-            // pictureBox2
+            // lblNewReg
             // 
-            pictureBox2.BackColor = Color.Black;
-            pictureBox2.Image = Properties.Resources.Profile_Picture;
-            pictureBox2.InitialImage = (Image)resources.GetObject("pictureBox2.InitialImage");
-            pictureBox2.Location = new Point(29, 13);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(325, 258);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 21;
-            pictureBox2.TabStop = false;
-            // 
-            // txtWelcomeAccount
-            // 
-            txtWelcomeAccount.BackColor = Color.FromArgb(64, 0, 0);
-            txtWelcomeAccount.BorderStyle = BorderStyle.None;
-            txtWelcomeAccount.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold, GraphicsUnit.Point);
-            txtWelcomeAccount.ForeColor = Color.White;
-            txtWelcomeAccount.Location = new Point(506, 35);
-            txtWelcomeAccount.Margin = new Padding(4);
-            txtWelcomeAccount.Name = "txtWelcomeAccount";
-            txtWelcomeAccount.ReadOnly = true;
-            txtWelcomeAccount.Size = new Size(559, 46);
-            txtWelcomeAccount.TabIndex = 20;
-            txtWelcomeAccount.Text = "Welcome to Your Account!";
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            pictureBox3.BackColor = Color.Black;
-            pictureBox3.Location = new Point(-20, -2);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(418, 544);
-            pictureBox3.TabIndex = 15;
-            pictureBox3.TabStop = false;
+            lblNewReg.AutoSize = true;
+            lblNewReg.BackColor = Color.FromArgb(64, 0, 0);
+            lblNewReg.Font = new Font("Microsoft YaHei UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            lblNewReg.ForeColor = Color.White;
+            lblNewReg.Location = new Point(388, 19);
+            lblNewReg.Name = "lblNewReg";
+            lblNewReg.Size = new Size(430, 47);
+            lblNewReg.TabIndex = 18;
+            lblNewReg.Text = "New User Registration";
             // 
             // pictureBox4
             // 
-            pictureBox4.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox4.BackColor = Color.FromArgb(64, 0, 0);
-            pictureBox4.Location = new Point(0, 0);
-            pictureBox4.Margin = new Padding(4);
+            pictureBox4.Location = new Point(-3, -2);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(1175, 166);
-            pictureBox4.TabIndex = 14;
+            pictureBox4.Size = new Size(1179, 125);
+            pictureBox4.TabIndex = 17;
             pictureBox4.TabStop = false;
+            // 
+            // pnlReportGenerate
+            // 
+            pnlReportGenerate.Controls.Add(lblReportGen);
+            pnlReportGenerate.Controls.Add(pictureBox3);
+            pnlReportGenerate.Location = new Point(-5, 104);
+            pnlReportGenerate.Name = "pnlReportGenerate";
+            pnlReportGenerate.Size = new Size(1177, 538);
+            pnlReportGenerate.TabIndex = 15;
+            // 
+            // lblReportGen
+            // 
+            lblReportGen.AutoSize = true;
+            lblReportGen.BackColor = Color.FromArgb(64, 0, 0);
+            lblReportGen.Font = new Font("Microsoft YaHei UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            lblReportGen.ForeColor = Color.White;
+            lblReportGen.Location = new Point(421, 21);
+            lblReportGen.Name = "lblReportGen";
+            lblReportGen.Size = new Size(357, 47);
+            lblReportGen.TabIndex = 17;
+            lblReportGen.Text = "Report Generation";
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            pictureBox3.BackColor = Color.FromArgb(64, 0, 0);
+            pictureBox3.Location = new Point(-5, 0);
+            pictureBox3.Margin = new Padding(2);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(1180, 125);
+            pictureBox3.TabIndex = 15;
+            pictureBox3.TabStop = false;
+            // 
+            // lblHome
+            // 
+            lblHome.AutoSize = true;
+            lblHome.BackColor = Color.FromArgb(64, 0, 0);
+            lblHome.Font = new Font("Microsoft YaHei UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            lblHome.ForeColor = Color.White;
+            lblHome.Location = new Point(351, 125);
+            lblHome.Name = "lblHome";
+            lblHome.Size = new Size(465, 47);
+            lblHome.TabIndex = 16;
+            lblHome.Text = "Welcome Home, Admin!";
             // 
             // frmAdmin
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1168, 641);
-            Controls.Add(pnlMyAccount);
+            Controls.Add(pnlReportGenerate);
+            Controls.Add(pnlRegistration);
             Controls.Add(pictureLogo);
-            Controls.Add(btnSearch);
-            Controls.Add(txtSearch);
             Controls.Add(btnHome);
-            Controls.Add(txtAdminHome);
             Controls.Add(btnGenerate);
             Controls.Add(btnRegistration);
-            Controls.Add(btnAccount);
             Controls.Add(btnLogout);
+            Controls.Add(lblHome);
             Controls.Add(pictureBox1);
             Controls.Add(Rectangle2);
             Controls.Add(Rectangle1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmAdmin";
-            Text = "IT Help Desk - Admin";
+            Text = "IT Help Desk Admin Homepage";
             Load += frmAdmin_Load;
             ((System.ComponentModel.ISupportInitialize)pictureLogo).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)Rectangle2).EndInit();
             ((System.ComponentModel.ISupportInitialize)Rectangle1).EndInit();
-            pnlMyAccount.ResumeLayout(false);
-            pnlMyAccount.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            pnlRegistration.ResumeLayout(false);
+            pnlRegistration.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            pnlReportGenerate.ResumeLayout(false);
+            pnlReportGenerate.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -308,21 +270,19 @@
         #endregion
 
         private PictureBox pictureLogo;
-        private Button btnSearch;
-        private TextBox txtSearch;
         private Button btnHome;
-        private TextBox txtAdminHome;
         private Button btnGenerate;
         private Button btnRegistration;
-        private Button btnAccount;
         private Button btnLogout;
         private PictureBox pictureBox1;
         private PictureBox Rectangle2;
         private PictureBox Rectangle1;
-        private Panel pnlMyAccount;
-        private PictureBox pictureBox2;
-        private TextBox txtWelcomeAccount;
+        private Panel pnlRegistration;
+        private Panel pnlReportGenerate;
         private PictureBox pictureBox3;
         private PictureBox pictureBox4;
+        private Label lblNewReg;
+        private Label lblReportGen;
+        private Label lblHome;
     }
 }
