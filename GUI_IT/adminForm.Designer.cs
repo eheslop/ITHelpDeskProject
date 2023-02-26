@@ -74,7 +74,7 @@
             this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnHome.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.btnHome.ForeColor = System.Drawing.Color.White;
-            this.btnHome.Location = new System.Drawing.Point(704, 47);
+            this.btnHome.Location = new System.Drawing.Point(704, 46);
             this.btnHome.MaximumSize = new System.Drawing.Size(100, 100);
             this.btnHome.Name = "btnHome";
             this.btnHome.Size = new System.Drawing.Size(69, 33);
@@ -91,7 +91,7 @@
             this.btnGenerate.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnGenerate.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.btnGenerate.ForeColor = System.Drawing.Color.White;
-            this.btnGenerate.Location = new System.Drawing.Point(778, 46);
+            this.btnGenerate.Location = new System.Drawing.Point(779, 46);
             this.btnGenerate.Margin = new System.Windows.Forms.Padding(2);
             this.btnGenerate.Name = "btnGenerate";
             this.btnGenerate.Size = new System.Drawing.Size(157, 33);
@@ -215,10 +215,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlReportGenerate.Controls.Add(this.lblReportGen);
             this.pnlReportGenerate.Controls.Add(this.pictureBox3);
-            this.pnlReportGenerate.Location = new System.Drawing.Point(-4, 85);
+            this.pnlReportGenerate.Location = new System.Drawing.Point(-4, 87);
             this.pnlReportGenerate.Margin = new System.Windows.Forms.Padding(2);
             this.pnlReportGenerate.Name = "pnlReportGenerate";
-            this.pnlReportGenerate.Size = new System.Drawing.Size(939, 428);
+            this.pnlReportGenerate.Size = new System.Drawing.Size(939, 426);
             this.pnlReportGenerate.TabIndex = 15;
             this.pnlReportGenerate.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlReportGenerate_Paint);
             // 
