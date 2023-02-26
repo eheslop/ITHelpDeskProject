@@ -12,6 +12,7 @@ namespace GUI_IT
         {
             InitializeComponent();
             pnlSignUp.Visible = false;
+            pnlForgotPassword.Visible = false;
             regSession = new SessionRegister();
         }
 
@@ -61,6 +62,7 @@ namespace GUI_IT
         private void btnLoginForm_Click(object sender, EventArgs e)
         {
             pnlSignUp.Visible = false;
+            pnlForgotPassword.Visible = false;  
             this.Text = "IT Help Desk Login";
             txtUsername.Text = String.Empty;
             txtPassword.Text = String.Empty;
@@ -69,6 +71,7 @@ namespace GUI_IT
         private void btnRegisterAccount_Click(object sender, EventArgs e)
         {
             pnlSignUp.Visible = true;
+            pnlForgotPassword.Visible = false;
             this.Text = "IT Help Desk Registration";
             txtEmail.Text = String.Empty;
             txtFirstName.Text = String.Empty;
@@ -93,6 +96,18 @@ namespace GUI_IT
         private void lblRegisterAccount_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void linklblForgot_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            pnlForgotPassword.Visible = true;
+            pnlSignUp.Visible = false;
+            this.Text = "IT Help Desk Forgot Password";
         }
     }
 }

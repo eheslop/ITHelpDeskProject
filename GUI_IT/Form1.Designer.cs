@@ -57,11 +57,21 @@
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.lblRegister = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pnlForgotPassword = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblRememebr = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.btnBacktoLogin = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.pnlSignUp.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.pnlForgotPassword.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -108,7 +118,7 @@
             this.lblHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lblHeader.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblHeader.ForeColor = System.Drawing.Color.White;
-            this.lblHeader.Location = new System.Drawing.Point(8, 6);
+            this.lblHeader.Location = new System.Drawing.Point(8, -1);
             this.lblHeader.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblHeader.Name = "lblHeader";
             this.lblHeader.Size = new System.Drawing.Size(373, 36);
@@ -213,6 +223,7 @@
             this.linklblForgot.TabIndex = 12;
             this.linklblForgot.TabStop = true;
             this.linklblForgot.Text = "Forgot Password?";
+            this.linklblForgot.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linklblForgot_LinkClicked);
             // 
             // btnRegisterAccount
             // 
@@ -433,12 +444,111 @@
             this.pictureBox4.TabIndex = 16;
             this.pictureBox4.TabStop = false;
             // 
+            // pnlForgotPassword
+            // 
+            this.pnlForgotPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlForgotPassword.AutoSize = true;
+            this.pnlForgotPassword.Controls.Add(this.label2);
+            this.pnlForgotPassword.Controls.Add(this.lblRememebr);
+            this.pnlForgotPassword.Controls.Add(this.textBox1);
+            this.pnlForgotPassword.Controls.Add(this.pictureBox5);
+            this.pnlForgotPassword.Controls.Add(this.btnBacktoLogin);
+            this.pnlForgotPassword.Controls.Add(this.button1);
+            this.pnlForgotPassword.Controls.Add(this.label1);
+            this.pnlForgotPassword.Location = new System.Drawing.Point(8, 75);
+            this.pnlForgotPassword.Name = "pnlForgotPassword";
+            this.pnlForgotPassword.Size = new System.Drawing.Size(757, 408);
+            this.pnlForgotPassword.TabIndex = 17;
+            this.pnlForgotPassword.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(230, 143);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(286, 31);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Send a Verification Email";
+            // 
+            // lblRememebr
+            // 
+            this.lblRememebr.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblRememebr.AutoSize = true;
+            this.lblRememebr.Location = new System.Drawing.Point(500, 12);
+            this.lblRememebr.Name = "lblRememebr";
+            this.lblRememebr.Size = new System.Drawing.Size(154, 20);
+            this.lblRememebr.TabIndex = 5;
+            this.lblRememebr.Text = "Remember Password?";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox1.Location = new System.Drawing.Point(236, 183);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.PlaceholderText = "Email";
+            this.textBox1.Size = new System.Drawing.Size(266, 27);
+            this.textBox1.TabIndex = 4;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox5.BackgroundImage = global::GUI_IT.Properties.Resources.redAgentsLogo;
+            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox5.Location = new System.Drawing.Point(311, 34);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(111, 106);
+            this.pictureBox5.TabIndex = 3;
+            this.pictureBox5.TabStop = false;
+            // 
+            // btnBacktoLogin
+            // 
+            this.btnBacktoLogin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnBacktoLogin.AutoSize = true;
+            this.btnBacktoLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnBacktoLogin.ForeColor = System.Drawing.Color.White;
+            this.btnBacktoLogin.Location = new System.Drawing.Point(660, 3);
+            this.btnBacktoLogin.Name = "btnBacktoLogin";
+            this.btnBacktoLogin.Size = new System.Drawing.Size(94, 35);
+            this.btnBacktoLogin.TabIndex = 2;
+            this.btnBacktoLogin.Text = "Login";
+            this.btnBacktoLogin.UseVisualStyleBackColor = false;
+            this.btnBacktoLogin.Click += new System.EventHandler(this.btnLoginForm_Click);
+            // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button1.AutoSize = true;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(285, 219);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(161, 49);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Send Verification";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(121, 183);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(109, 28);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Enter Email";
+            // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(774, 489);
+            this.Controls.Add(this.pnlForgotPassword);
             this.Controls.Add(this.pnlSignUp);
             this.Controls.Add(this.lblRegisterAccount);
             this.Controls.Add(this.btnRegisterAccount);
@@ -464,6 +574,9 @@
             this.pnlSignUp.ResumeLayout(false);
             this.pnlSignUp.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.pnlForgotPassword.ResumeLayout(false);
+            this.pnlForgotPassword.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -499,5 +612,13 @@
         private Button btnRegister;
         private ComboBox cboUserType;
         private Label lblUserType;
+        private Panel pnlForgotPassword;
+        private Label lblRememebr;
+        private TextBox textBox1;
+        private PictureBox pictureBox5;
+        private Button btnBacktoLogin;
+        private Button button1;
+        private Label label1;
+        private Label label2;
     }
 }
