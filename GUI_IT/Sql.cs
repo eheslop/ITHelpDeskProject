@@ -27,10 +27,10 @@ namespace GUI_IT
             return con;
         }
 
-        public static void Register(string user, string name, string email, string role)
+        public static void Register(string user, string name, string pass, string email, string role)
         {
             SqlConnection con = Connect();
-            String query = "INSERT INTO Registration(Username, Name, Password, Email, Role) VALUES('" + user.ToString() + "', '" + name.ToString() + "', '12345', '" + email.ToString() + "', '" + role.ToString() + "');";
+            String query = "INSERT INTO Registration(Username, Name, Password, Email, Role) VALUES('" + user.ToString() + "', '" + name.ToString() + "', '" + pass.ToString() + "', '" + email.ToString() + "', '" + role.ToString() + "');";
             SqlCommand cmd = new SqlCommand(query, con);
             cmd.ExecuteNonQuery();
             con.Close();

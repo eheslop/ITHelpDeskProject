@@ -77,11 +77,21 @@ namespace GUI_IT
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            string name = txtFirstName.Text.ToString();
-            string user = txtLastName.Text.ToString();
+            string name = txtFirstName.Text.ToString() + " " + txtLastName.Text.ToString();
+            string user = name[0].ToString() + txtLastName.Text.ToString();
             string email = txtEmail.Text.ToString();
             string role = cboUserType.Text.ToString();
-            Sql.Register(name, user, email, role);
+            Random res = new Random();
+            String str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+            int size = 8;
+            String randomstring = "";
+            for (int i = 0; i < size; i++)
+            {
+                int x = res.Next(str.Length);
+                randomstring = randomstring + str[x];
+            }
+            string pass = randomstring.ToString();
+            Sql.Register(user, name, pass, email, role);
         }
 
         private void btnLoginForm_Click(object sender, EventArgs e)
