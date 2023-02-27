@@ -18,7 +18,43 @@ namespace GUI_IT
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (txtUsername.Text == "admin" && txtPassword.Text == "password")
+            string user = txtUsername.Text.ToString();
+            string password = txtPassword.Text.ToString();
+            int exists = Sql.Login(user, password);
+            MessageBox.Show(exists.ToString());
+            if(exists == 0)
+            {
+                string role = Sql.Role(user);
+                if (role == "Admin")
+                {
+                    frmAdmin adminLogIn = new frmAdmin();
+                    this.Hide();
+                    adminLogIn.ShowDialog();
+                    this.Close();
+                }
+                else if (role == "Project Member")
+                {
+                    frmProjectMember projectMemberForm = new frmProjectMember();
+                    this.Hide();
+                    projectMemberForm.ShowDialog();
+                    this.Close();
+                }
+                else if (role == "IT Support Team")
+                {
+                    // WIP
+                    MessageBox.Show("Work In Progress!");
+                }
+                else if (role == "Report Manager")
+                {
+                    // WIP
+                    MessageBox.Show("Work In Progress!");
+                }
+                else
+                    MessageBox.Show("Invalid Role! Contact System Administrator!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+            
+            /* if (txtUsername.Text == "admin" && txtPassword.Text == "password")
             {
                 frmAdmin adminLogIn = new frmAdmin();
                 this.Hide();
@@ -32,6 +68,7 @@ namespace GUI_IT
                 projectMemberForm.ShowDialog();
                 this.Close();
             }
+            */
             else
             {
                 MessageBox.Show("Incorrect Login Information", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);

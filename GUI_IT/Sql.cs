@@ -35,5 +35,36 @@ namespace GUI_IT
             cmd.ExecuteNonQuery();
             con.Close();
         }
+
+        public static int Login(string user, string password)
+        {
+            SqlConnection con = Connect();
+            String query = "SELECT 1 FROM Registration WHERE Username = '" + user.ToString() + "' AND Password = '" + password.ToString() + "';";
+            SqlCommand cmd = new SqlCommand(query, con);
+            object exists = cmd.ExecuteScalar();
+            con.Close();
+            if (exists == null)
+            {
+                return 1;
+            }
+            else
+            {
+                return 0;
+            }
+            // 1 == Does Not Exist
+            // 0 == Exists
+        }
+
+        public static string Role(string user)
+        {
+            SqlConnection con = Connect();
+            String query = "SELECT Role FROM Registration WHERE Username = '" + user.ToString() + "';";
+            SqlCommand cmd = new SqlCommand(query, con);
+            object role = cmd.ExecuteScalar();
+            if (role == null)
+                return "error";
+            else
+                return (string)role;
+        }
     }
 }
