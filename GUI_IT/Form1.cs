@@ -1,4 +1,7 @@
 using System.Windows.Forms;
+using System;
+using Microsoft.Data.SqlClient;
+using System.Text;
 
 namespace GUI_IT
 {
@@ -9,12 +12,8 @@ namespace GUI_IT
         {
             InitializeComponent();
             pnlSignUp.Visible = false;
+            pnlForgotPassword.Visible = false;
             regSession = new SessionRegister();
-        }
-
-        private void FrmLogin_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -41,19 +40,30 @@ namespace GUI_IT
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            regSession.Email= txtEmail.Text;
-            regSession.FirstName= txtFirstName.Text;
-            regSession.LastName= txtLastName.Text;
-            regSession.UserType= cboUserType.Text;
-            lblTestEmail.Text= regSession.Email;
-            lblTestFirstName.Text= regSession.FirstName;
-            lblTestLastName.Text= regSession.LastName;
-            lblTestUserType.Text= regSession.UserType;
+            SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
+            builder.DataSource = "redagents.database.windows.net";
+            builder.UserID = "kwekwe";
+            builder.Password = "Password1!";
+            builder.InitialCatalog = "red_Agents";
+            SqlConnection con = new SqlConnection(builder.ConnectionString);
+            con.Open();
+            string name = txtFirstName.Text.ToString();
+            string user = txtLastName.Text.ToString();
+            string email = txtEmail.Text.ToString();
+            string role = cboUserType.Text.ToString();
+            // DateTime dt = DateTime.Now;
+
+            // string sDate = dt.ToShortDateString();
+            String query = "INSERT INTO Registration(Username, Name, Password, Email, Role) VALUES('" + user.ToString() + "', '" + name.ToString() + "', '12345', '" + email.ToString() + "', '" + role.ToString() + "');";
+            SqlCommand cmd = new SqlCommand(query, con);
+            //cmd.ExecuteNonQuery();
         }
 
         private void btnLoginForm_Click(object sender, EventArgs e)
         {
             pnlSignUp.Visible = false;
+            pnlForgotPassword.Visible = false;  
+            this.Text = "IT Help Desk Login";
             txtUsername.Text = String.Empty;
             txtPassword.Text = String.Empty;
         }
@@ -61,6 +71,8 @@ namespace GUI_IT
         private void btnRegisterAccount_Click(object sender, EventArgs e)
         {
             pnlSignUp.Visible = true;
+            pnlForgotPassword.Visible = false;
+            this.Text = "IT Help Desk Registration";
             txtEmail.Text = String.Empty;
             txtFirstName.Text = String.Empty;
             txtLastName.Text = String.Empty;
@@ -74,6 +86,28 @@ namespace GUI_IT
         private void pnlSignUp_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void lblSignIn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblRegisterAccount_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void linklblForgot_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            pnlForgotPassword.Visible = true;
+            pnlSignUp.Visible = false;
+            this.Text = "IT Help Desk Forgot Password";
         }
     }
 }
