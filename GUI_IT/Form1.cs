@@ -21,7 +21,6 @@ namespace GUI_IT
             string user = txtUsername.Text.ToString();
             string password = txtPassword.Text.ToString();
             int exists = Sql.Login(user, password);
-            MessageBox.Show(exists.ToString());
             if(exists == 0)
             {
                 string role = Sql.Role(user);
@@ -78,20 +77,30 @@ namespace GUI_IT
         private void btnRegister_Click(object sender, EventArgs e)
         {
             string name = txtFirstName.Text.ToString() + " " + txtLastName.Text.ToString();
-            string user = name[0].ToString() + txtLastName.Text.ToString();
             string email = txtEmail.Text.ToString();
             string role = cboUserType.Text.ToString();
-            Random res = new Random();
-            String str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-            int size = 8;
-            String randomstring = "";
-            for (int i = 0; i < size; i++)
+            string user = name[0].ToString() + txtLastName.Text.ToString();
+
+            Boolean accountExists = Sql.Exists(user);
+            if (accountExists == false)
             {
-                int x = res.Next(str.Length);
-                randomstring = randomstring + str[x];
+                Random res = new Random();
+                String str = "ABCDEFGHIJOPQRSTUVWXsYZ0123489!@#$%^&*?><abcdefghijklmnopqrswxyz0123456789";
+                int size = 8;
+                String randomstring = "";
+                for (int i = 0; i < size; i++)
+                {
+                    int x = res.Next(str.Length);
+                    randomstring = randomstring + str[x];
+                }
+                string pass = randomstring.ToString();
+                Sql.Register(user, name, pass, email, role);
+                MessageBox.Show("Account Created!", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            string pass = randomstring.ToString();
-            Sql.Register(user, name, pass, email, role);
+            else
+            {
+                MessageBox.Show("Account Already Exists!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnLoginForm_Click(object sender, EventArgs e)

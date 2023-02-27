@@ -66,5 +66,17 @@ namespace GUI_IT
             else
                 return (string)role;
         }
+
+        public static Boolean Exists(string user)
+        {
+            SqlConnection con = Connect();
+            String query = "SELECT * FROM Registration WHERE Username = '" + user.ToString() + "';";
+            SqlCommand cmd = new SqlCommand(query, con);
+            object role = cmd.ExecuteScalar();
+            if (role == null)
+                return false;
+            else
+                return true;
+        }
     }
 }
