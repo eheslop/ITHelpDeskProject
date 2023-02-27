@@ -20,7 +20,42 @@ namespace GUI_IT
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (txtUsername.Text == "admin" && txtPassword.Text == "password")
+            string user = txtUsername.Text.ToString();
+            string password = txtPassword.Text.ToString();
+            int exists = Sql.Login(user, password);
+            if(exists == 0)
+            {
+                string role = Sql.Role(user);
+                if (role == "Admin")
+                {
+                    frmAdmin adminLogIn = new frmAdmin();
+                    this.Hide();
+                    adminLogIn.ShowDialog();
+                    this.Close();
+                }
+                else if (role == "Project Member")
+                {
+                    frmProjectMember projectMemberForm = new frmProjectMember();
+                    this.Hide();
+                    projectMemberForm.ShowDialog();
+                    this.Close();
+                }
+                else if (role == "IT Support Team")
+                {
+                    // WIP
+                    MessageBox.Show("Work In Progress!");
+                }
+                else if (role == "Report Manager")
+                {
+                    // WIP
+                    MessageBox.Show("Work In Progress!");
+                }
+                else
+                    MessageBox.Show("Invalid Role! Contact System Administrator!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+            
+            /* if (txtUsername.Text == "admin" && txtPassword.Text == "password")
             {
                 frmAdmin adminLogIn = new frmAdmin();
                 this.Hide();
@@ -34,6 +69,7 @@ namespace GUI_IT
                 projectMemberForm.ShowDialog();
                 this.Close();
             }
+            */
             else
             {
                 MessageBox.Show("Incorrect Login Information", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -42,11 +78,21 @@ namespace GUI_IT
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            string name = txtFirstName.Text.ToString();
-            string user = txtLastName.Text.ToString();
+            string name = txtFirstName.Text.ToString() + " " + txtLastName.Text.ToString();
+            string user = name[0].ToString() + txtLastName.Text.ToString();
             string email = txtEmail.Text.ToString();
             string role = cboUserType.Text.ToString();
-            Sql.Register(name, user, email, role);
+            Random res = new Random();
+            String str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+            int size = 8;
+            String randomstring = "";
+            for (int i = 0; i < size; i++)
+            {
+                int x = res.Next(str.Length);
+                randomstring = randomstring + str[x];
+            }
+            string pass = randomstring.ToString();
+            Sql.Register(user, name, pass, email, role);
         }
 
         private void btnLoginForm_Click(object sender, EventArgs e)

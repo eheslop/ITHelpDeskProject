@@ -27,13 +27,44 @@ namespace GUI_IT
             return con;
         }
 
-        public static void Register(string user, string name, string email, string role)
+        public static void Register(string user, string name, string pass, string email, string role)
         {
             SqlConnection con = Connect();
-            String query = "INSERT INTO Registration(Username, Name, Password, Email, Role) VALUES('" + user.ToString() + "', '" + name.ToString() + "', '12345', '" + email.ToString() + "', '" + role.ToString() + "');";
+            String query = "INSERT INTO Registration(Username, Name, Password, Email, Role) VALUES('" + user.ToString() + "', '" + name.ToString() + "', '" + pass.ToString() + "', '" + email.ToString() + "', '" + role.ToString() + "');";
             SqlCommand cmd = new SqlCommand(query, con);
             cmd.ExecuteNonQuery();
             con.Close();
+        }
+
+        public static int Login(string user, string password)
+        {
+            SqlConnection con = Connect();
+            String query = "SELECT 1 FROM Registration WHERE Username = '" + user.ToString() + "' AND Password = '" + password.ToString() + "';";
+            SqlCommand cmd = new SqlCommand(query, con);
+            object exists = cmd.ExecuteScalar();
+            con.Close();
+            if (exists == null)
+            {
+                return 1;
+            }
+            else
+            {
+                return 0;
+            }
+            // 1 == Does Not Exist
+            // 0 == Exists
+        }
+
+        public static string Role(string user)
+        {
+            SqlConnection con = Connect();
+            String query = "SELECT Role FROM Registration WHERE Username = '" + user.ToString() + "';";
+            SqlCommand cmd = new SqlCommand(query, con);
+            object role = cmd.ExecuteScalar();
+            if (role == null)
+                return "error";
+            else
+                return (string)role;
         }
     }
 }

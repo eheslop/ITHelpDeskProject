@@ -190,10 +190,10 @@
             // 
             this.pnlOnlineHelp.Controls.Add(this.lblOnline);
             this.pnlOnlineHelp.Controls.Add(this.pictureBox3);
-            this.pnlOnlineHelp.Location = new System.Drawing.Point(-1, 85);
+            this.pnlOnlineHelp.Location = new System.Drawing.Point(-1, 82);
             this.pnlOnlineHelp.Margin = new System.Windows.Forms.Padding(2);
             this.pnlOnlineHelp.Name = "pnlOnlineHelp";
-            this.pnlOnlineHelp.Size = new System.Drawing.Size(938, 431);
+            this.pnlOnlineHelp.Size = new System.Drawing.Size(938, 434);
             this.pnlOnlineHelp.TabIndex = 45;
             this.pnlOnlineHelp.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlOnlineHelp_Paint);
             // 
