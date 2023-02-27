@@ -13,8 +13,8 @@ namespace GUI_IT
     public partial class frmAdmin : Form
     {
         private Rectangle buttonOriginalRectangle;
-        private Rectangle originalFormSize; 
-     
+        private Rectangle originalFormSize;
+
         public frmAdmin()
         {
             InitializeComponent();
@@ -24,7 +24,7 @@ namespace GUI_IT
 
         private void frmAdmin_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btnHome_Click(object sender, EventArgs e)

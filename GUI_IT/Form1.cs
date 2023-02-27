@@ -21,7 +21,7 @@ namespace GUI_IT
             string user = txtUsername.Text.ToString();
             string password = txtPassword.Text.ToString();
             int exists = Sql.Login(user, password);
-            if(exists == 0)
+            if (exists == 0)
             {
                 string role = Sql.Role(user);
                 if (role == "Admin")
@@ -52,7 +52,7 @@ namespace GUI_IT
                     MessageBox.Show("Invalid Role! Contact System Administrator!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
-            
+
             /* if (txtUsername.Text == "admin" && txtPassword.Text == "password")
             {
                 frmAdmin adminLogIn = new frmAdmin();
@@ -95,7 +95,8 @@ namespace GUI_IT
                 }
                 string pass = randomstring.ToString();
                 Sql.Register(user, name, pass, email, role);
-                MessageBox.Show("Account Created!", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                MessageBox.Show("Your Account Has Been Created!", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
@@ -106,7 +107,7 @@ namespace GUI_IT
         private void btnLoginForm_Click(object sender, EventArgs e)
         {
             pnlSignUp.Visible = false;
-            pnlForgotPassword.Visible = false;  
+            pnlForgotPassword.Visible = false;
             this.Text = "IT Help Desk Login";
             txtUsername.Text = String.Empty;
             txtPassword.Text = String.Empty;
