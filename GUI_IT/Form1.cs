@@ -7,6 +7,8 @@ namespace GUI_IT
 {
     public partial class FrmLogin : Form
     {
+      //  private Rectangle buttonOriginalRectangle;
+       // private Rectangle originalFormSize;
         private SessionRegister regSession;
         public FrmLogin()
         {
@@ -108,6 +110,32 @@ namespace GUI_IT
             pnlForgotPassword.Visible = true;
             pnlSignUp.Visible = false;
             this.Text = "IT Help Desk Forgot Password";
+        }
+
+        //nobody touch this!!!
+        private void FrmLogin_Load(object sender, EventArgs e)
+        {
+          //  originalFormSize = new Rectangle(this.Location.X, this.Location.Y, this.Size.Width, this.Size.Height);
+          //  buttonOriginalRectangle=new Rectangle(btnRegisterAccount.Location.X, btnRegisterAccount.Location.Y, btnRegisterAccount.Width, btnRegisterAccount.Height);
+        }
+
+       /* private void resizeControl(Rectangle r, Control c)
+        {
+            float xRatio=(float)(this.Width)/(float)(originalFormSize.Width);
+            float yRatio=(float)(this.Height)/(float)(originalFormSize.Height);
+
+            int newX = (int)(r.Location.X * xRatio);
+            int newY = (int)(r.Location.Y * yRatio);
+
+            int newWidth=(int)(r.Width * xRatio);
+            int newHeight=(int)(r.Height * yRatio);
+
+            c.Location = new Point(newX, newY); 
+            c.Size=new Size(newWidth, newHeight);
+        }
+        */private void FrmLogin_Resize(object sender, EventArgs e)
+        {
+          //  resizeControl(buttonOriginalRectangle, btnRegisterAccount);
         }
     }
 }

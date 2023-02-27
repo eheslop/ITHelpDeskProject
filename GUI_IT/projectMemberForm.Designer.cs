@@ -79,9 +79,9 @@
             this.btnHomeMember.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnHomeMember.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.btnHomeMember.ForeColor = System.Drawing.Color.White;
-            this.btnHomeMember.Location = new System.Drawing.Point(580, 50);
+            this.btnHomeMember.Location = new System.Drawing.Point(541, 41);
             this.btnHomeMember.Name = "btnHomeMember";
-            this.btnHomeMember.Size = new System.Drawing.Size(76, 27);
+            this.btnHomeMember.Size = new System.Drawing.Size(76, 35);
             this.btnHomeMember.TabIndex = 32;
             this.btnHomeMember.Text = "Home";
             this.btnHomeMember.UseVisualStyleBackColor = false;
@@ -134,10 +134,10 @@
             this.btnTickets.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnTickets.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.btnTickets.ForeColor = System.Drawing.Color.White;
-            this.btnTickets.Location = new System.Drawing.Point(854, 46);
+            this.btnTickets.Location = new System.Drawing.Point(622, 42);
             this.btnTickets.Margin = new System.Windows.Forms.Padding(2);
             this.btnTickets.Name = "btnTickets";
-            this.btnTickets.Size = new System.Drawing.Size(71, 32);
+            this.btnTickets.Size = new System.Drawing.Size(71, 35);
             this.btnTickets.TabIndex = 36;
             this.btnTickets.Text = "Tickets";
             this.btnTickets.UseVisualStyleBackColor = false;
@@ -150,7 +150,7 @@
             this.btnProblemList.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnProblemList.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.btnProblemList.ForeColor = System.Drawing.Color.White;
-            this.btnProblemList.Location = new System.Drawing.Point(746, 46);
+            this.btnProblemList.Location = new System.Drawing.Point(697, 42);
             this.btnProblemList.Margin = new System.Windows.Forms.Padding(2);
             this.btnProblemList.Name = "btnProblemList";
             this.btnProblemList.Size = new System.Drawing.Size(104, 32);
@@ -166,9 +166,9 @@
             this.btnOnlineHelp.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnOnlineHelp.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.btnOnlineHelp.ForeColor = System.Drawing.Color.White;
-            this.btnOnlineHelp.Location = new System.Drawing.Point(662, 50);
+            this.btnOnlineHelp.Location = new System.Drawing.Point(806, 38);
             this.btnOnlineHelp.Name = "btnOnlineHelp";
-            this.btnOnlineHelp.Size = new System.Drawing.Size(79, 27);
+            this.btnOnlineHelp.Size = new System.Drawing.Size(116, 40);
             this.btnOnlineHelp.TabIndex = 38;
             this.btnOnlineHelp.Text = "Online Help";
             this.btnOnlineHelp.UseVisualStyleBackColor = false;
@@ -199,8 +199,6 @@
             // 
             // lblOnline
             // 
-            this.lblOnline.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblOnline.AutoSize = true;
             this.lblOnline.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lblOnline.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -217,10 +215,10 @@
             this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.pictureBox3.Location = new System.Drawing.Point(0, -1);
+            this.pictureBox3.Location = new System.Drawing.Point(-5, 0);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(938, 98);
+            this.pictureBox3.Size = new System.Drawing.Size(941, 98);
             this.pictureBox3.TabIndex = 44;
             this.pictureBox3.TabStop = false;
             // 
@@ -236,8 +234,6 @@
             // 
             // lblProblem
             // 
-            this.lblProblem.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblProblem.AutoSize = true;
             this.lblProblem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lblProblem.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -273,8 +269,6 @@
             // 
             // lblTicketDash
             // 
-            this.lblTicketDash.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTicketDash.AutoSize = true;
             this.lblTicketDash.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lblTicketDash.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -300,8 +294,6 @@
             // 
             // lblHomeProject
             // 
-            this.lblHomeProject.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblHomeProject.AutoSize = true;
             this.lblHomeProject.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lblHomeProject.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);

@@ -74,7 +74,7 @@
             this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnHome.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.btnHome.ForeColor = System.Drawing.Color.White;
-            this.btnHome.Location = new System.Drawing.Point(704, 46);
+            this.btnHome.Location = new System.Drawing.Point(569, 46);
             this.btnHome.MaximumSize = new System.Drawing.Size(100, 100);
             this.btnHome.Name = "btnHome";
             this.btnHome.Size = new System.Drawing.Size(69, 33);
@@ -108,7 +108,7 @@
             this.btnRegistration.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnRegistration.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.btnRegistration.ForeColor = System.Drawing.Color.White;
-            this.btnRegistration.Location = new System.Drawing.Point(580, 46);
+            this.btnRegistration.Location = new System.Drawing.Point(656, 46);
             this.btnRegistration.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegistration.Name = "btnRegistration";
             this.btnRegistration.Size = new System.Drawing.Size(119, 33);
@@ -184,7 +184,6 @@
             // 
             // lblNewReg
             // 
-            this.lblNewReg.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblNewReg.AutoSize = true;
             this.lblNewReg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lblNewReg.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -215,16 +214,15 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlReportGenerate.Controls.Add(this.lblReportGen);
             this.pnlReportGenerate.Controls.Add(this.pictureBox3);
-            this.pnlReportGenerate.Location = new System.Drawing.Point(-4, 87);
+            this.pnlReportGenerate.Location = new System.Drawing.Point(-4, 85);
             this.pnlReportGenerate.Margin = new System.Windows.Forms.Padding(2);
             this.pnlReportGenerate.Name = "pnlReportGenerate";
-            this.pnlReportGenerate.Size = new System.Drawing.Size(939, 426);
+            this.pnlReportGenerate.Size = new System.Drawing.Size(939, 428);
             this.pnlReportGenerate.TabIndex = 15;
             this.pnlReportGenerate.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlReportGenerate_Paint);
             // 
             // lblReportGen
             // 
-            this.lblReportGen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblReportGen.AutoSize = true;
             this.lblReportGen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lblReportGen.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -250,7 +248,6 @@
             // 
             // lblHome
             // 
-            this.lblHome.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblHome.AutoSize = true;
             this.lblHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lblHome.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
