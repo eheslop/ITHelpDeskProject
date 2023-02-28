@@ -78,5 +78,32 @@ namespace GUI_IT
             else
                 return true;
         }
+
+        public static string getName(string user)
+        {
+            SqlConnection con = Connect();
+            String query = "SELECT name FROM Registration WHERE Username = '" + user.ToString() + "';";
+            SqlCommand cmd = new SqlCommand(query, con);
+            string name = (string)cmd.ExecuteScalar();
+            return name;
+        }
+        public static string getEmail(string user)
+        {
+            SqlConnection con = Connect();
+            String query = "SELECT email FROM Registration WHERE Username = '" + user.ToString() + "';";
+            SqlCommand cmd = new SqlCommand(query, con);
+            string email = (string)cmd.ExecuteScalar();
+            return email;
+        }
+        public static string getPass(string user)
+        {
+            SqlConnection con = Connect();
+            String query = "SELECT password FROM Registration WHERE Username = '" + user.ToString() + "';";
+            SqlCommand cmd = new SqlCommand(query, con);
+            string pass = (string)cmd.ExecuteScalar();
+            return pass;
+        }
+
+
     }
 }

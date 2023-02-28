@@ -2,6 +2,9 @@ using System.Windows.Forms;
 using System;
 using Microsoft.Data.SqlClient;
 using System.Text;
+using MailKit.Net.Smtp;
+using MailKit;
+using MimeKit;
 
 namespace GUI_IT
 {
@@ -95,7 +98,12 @@ namespace GUI_IT
                 }
                 string pass = randomstring.ToString();
                 Sql.Register(user, name, pass, email, role);
-                MessageBox.Show("Account Created!", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Email.regEmail(user);
+                MessageBox.Show("Account Created!\nCheck your email for your login credentials!", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                
+                pnlSignUp.Visible = false;
+                //pnlForgotPassword.Visible = false;
+
             }
             else
             {
