@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\banan\\source\\repos\\SE361_ITHelpDesk2023\\GUI_IT\\GUI_IT.csproj": {}
+    "C:\\Users\\banan\\Source\\Repos\\SE361_ITHelpDesk2023\\GUI_IT\\GUI_IT.csproj": {}
   },
   "projects": {
-    "C:\\Users\\banan\\source\\repos\\SE361_ITHelpDesk2023\\GUI_IT\\GUI_IT.csproj": {
+    "C:\\Users\\banan\\Source\\Repos\\SE361_ITHelpDesk2023\\GUI_IT\\GUI_IT.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\banan\\source\\repos\\SE361_ITHelpDesk2023\\GUI_IT\\GUI_IT.csproj",
+        "projectUniqueName": "C:\\Users\\banan\\Source\\Repos\\SE361_ITHelpDesk2023\\GUI_IT\\GUI_IT.csproj",
         "projectName": "GUI_IT",
-        "projectPath": "C:\\Users\\banan\\source\\repos\\SE361_ITHelpDesk2023\\GUI_IT\\GUI_IT.csproj",
+        "projectPath": "C:\\Users\\banan\\Source\\Repos\\SE361_ITHelpDesk2023\\GUI_IT\\GUI_IT.csproj",
         "packagesPath": "C:\\Users\\banan\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\banan\\source\\repos\\SE361_ITHelpDesk2023\\GUI_IT\\obj\\",
         "projectStyle": "PackageReference",
