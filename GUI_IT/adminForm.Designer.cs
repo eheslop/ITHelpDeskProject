@@ -75,7 +75,7 @@
             btnHome.Font = new Font("Segoe UI", 10F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             btnHome.ForeColor = Color.White;
             btnHome.Location = new Point(766, 54);
-            btnHome.Margin = new Padding(4, 4, 4, 4);
+            btnHome.Margin = new Padding(4);
             btnHome.MaximumSize = new Size(125, 125);
             btnHome.Name = "btnHome";
             btnHome.Size = new Size(86, 51);
@@ -173,10 +173,10 @@
             pnlRegistration.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             pnlRegistration.Controls.Add(lblNewReg);
             pnlRegistration.Controls.Add(pictureBox4);
-            pnlRegistration.Location = new Point(-2, 106);
+            pnlRegistration.Location = new Point(-2, 104);
             pnlRegistration.Margin = new Padding(2);
             pnlRegistration.Name = "pnlRegistration";
-            pnlRegistration.Size = new Size(1172, 539);
+            pnlRegistration.Size = new Size(1172, 541);
             pnlRegistration.TabIndex = 24;
             // 
             // lblNewReg
@@ -209,10 +209,10 @@
             pnlReportGenerate.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             pnlReportGenerate.Controls.Add(lblReportGen);
             pnlReportGenerate.Controls.Add(pictureBox3);
-            pnlReportGenerate.Location = new Point(-5, 109);
+            pnlReportGenerate.Location = new Point(-5, 104);
             pnlReportGenerate.Margin = new Padding(2);
             pnlReportGenerate.Name = "pnlReportGenerate";
-            pnlReportGenerate.Size = new Size(1174, 532);
+            pnlReportGenerate.Size = new Size(1174, 537);
             pnlReportGenerate.TabIndex = 15;
             pnlReportGenerate.Paint += pnlReportGenerate_Paint;
             // 

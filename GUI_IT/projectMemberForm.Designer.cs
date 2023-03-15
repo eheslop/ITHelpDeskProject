@@ -210,7 +210,7 @@
             btnRaiseTicket.FlatStyle = FlatStyle.Popup;
             btnRaiseTicket.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnRaiseTicket.ForeColor = Color.White;
-            btnRaiseTicket.Location = new Point(991, 493);
+            btnRaiseTicket.Location = new Point(991, 445);
             btnRaiseTicket.Name = "btnRaiseTicket";
             btnRaiseTicket.Size = new Size(135, 34);
             btnRaiseTicket.TabIndex = 49;
@@ -222,7 +222,7 @@
             lblDescription.AutoSize = true;
             lblDescription.BackColor = Color.Transparent;
             lblDescription.Font = new Font("Microsoft YaHei UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            lblDescription.Location = new Point(5, 171);
+            lblDescription.Location = new Point(5, 123);
             lblDescription.Name = "lblDescription";
             lblDescription.Size = new Size(1065, 108);
             lblDescription.TabIndex = 48;
@@ -233,7 +233,7 @@
             lblNewEntry.AutoSize = true;
             lblNewEntry.BackColor = Color.Transparent;
             lblNewEntry.Font = new Font("Segoe UI", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            lblNewEntry.Location = new Point(3, 123);
+            lblNewEntry.Location = new Point(3, 75);
             lblNewEntry.Name = "lblNewEntry";
             lblNewEntry.Size = new Size(307, 48);
             lblNewEntry.TabIndex = 47;
@@ -241,7 +241,7 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(13, 282);
+            textBox1.Location = new Point(13, 234);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
             textBox1.PlaceholderText = "Enter a description of your problem here.";
@@ -255,7 +255,7 @@
             lblTicket.BackColor = Color.FromArgb(64, 0, 0);
             lblTicket.Font = new Font("Microsoft YaHei UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblTicket.ForeColor = Color.White;
-            lblTicket.Location = new Point(433, 25);
+            lblTicket.Location = new Point(433, 10);
             lblTicket.Margin = new Padding(2, 0, 2, 0);
             lblTicket.Name = "lblTicket";
             lblTicket.Size = new Size(292, 47);
@@ -269,7 +269,7 @@
             pictureBox3.Location = new Point(0, -1);
             pictureBox3.Margin = new Padding(2);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(1172, 122);
+            pictureBox3.Size = new Size(1172, 73);
             pictureBox3.TabIndex = 44;
             pictureBox3.TabStop = false;
             // 
