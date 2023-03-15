@@ -104,6 +104,16 @@ namespace GUI_IT
             return pass;
         }
 
-
+        public static DataTable FILL()
+        {
+            SqlConnection con = Connect();
+            con.Open();
+            string query = "Select * from Registration";
+            SqlDataAdapter da = new SqlDataAdapter(query, con);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            con.Close();
+            return dt;
+        }
     }
 }

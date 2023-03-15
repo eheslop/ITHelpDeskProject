@@ -80,10 +80,10 @@
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = Properties.Resources.redAgentsLogo;
             pictureBox1.InitialImage = (Image)resources.GetObject("pictureBox1.InitialImage");
-            pictureBox1.Location = new Point(406, 148);
+            pictureBox1.Location = new Point(325, 118);
             pictureBox1.Margin = new Padding(2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(134, 124);
+            pictureBox1.Size = new Size(107, 99);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -95,7 +95,7 @@
             pictureBox2.Location = new Point(-2, -1);
             pictureBox2.Margin = new Padding(2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(976, 62);
+            pictureBox2.Size = new Size(781, 50);
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
             // 
@@ -103,10 +103,10 @@
             // 
             pictureBox3.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox3.BackColor = Color.Black;
-            pictureBox3.Location = new Point(-2, 49);
+            pictureBox3.Location = new Point(-2, 39);
             pictureBox3.Margin = new Padding(2);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(976, 41);
+            pictureBox3.Size = new Size(781, 33);
             pictureBox3.TabIndex = 2;
             pictureBox3.TabStop = false;
             // 
@@ -116,10 +116,10 @@
             lblHeader.BackColor = Color.FromArgb(64, 0, 0);
             lblHeader.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblHeader.ForeColor = Color.White;
-            lblHeader.Location = new Point(10, 7);
+            lblHeader.Location = new Point(8, 6);
             lblHeader.Margin = new Padding(2, 0, 2, 0);
             lblHeader.Name = "lblHeader";
-            lblHeader.Size = new Size(445, 40);
+            lblHeader.Size = new Size(373, 36);
             lblHeader.TabIndex = 3;
             lblHeader.Text = "Red Agents IT Help Desk";
             // 
@@ -128,31 +128,31 @@
             lblLogin.Anchor = AnchorStyles.None;
             lblLogin.AutoSize = true;
             lblLogin.Font = new Font("Segoe UI", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            lblLogin.Location = new Point(302, 274);
+            lblLogin.Location = new Point(242, 219);
             lblLogin.Margin = new Padding(2, 0, 2, 0);
             lblLogin.Name = "lblLogin";
-            lblLogin.Size = new Size(314, 38);
+            lblLogin.Size = new Size(268, 32);
             lblLogin.TabIndex = 4;
             lblLogin.Text = "Login To Your Account";
             // 
             // txtUsername
             // 
             txtUsername.Anchor = AnchorStyles.None;
-            txtUsername.Location = new Point(326, 328);
+            txtUsername.Location = new Point(261, 262);
             txtUsername.Margin = new Padding(2);
             txtUsername.Name = "txtUsername";
             txtUsername.PlaceholderText = "Enter Username";
-            txtUsername.Size = new Size(288, 31);
+            txtUsername.Size = new Size(231, 27);
             txtUsername.TabIndex = 5;
             // 
             // txtPassword
             // 
             txtPassword.Anchor = AnchorStyles.None;
-            txtPassword.Location = new Point(326, 370);
+            txtPassword.Location = new Point(261, 296);
             txtPassword.Margin = new Padding(2);
             txtPassword.Name = "txtPassword";
             txtPassword.PlaceholderText = "Enter Password";
-            txtPassword.Size = new Size(288, 31);
+            txtPassword.Size = new Size(231, 27);
             txtPassword.TabIndex = 7;
             txtPassword.UseSystemPasswordChar = true;
             // 
@@ -161,10 +161,10 @@
             lblUsernameLogin.Anchor = AnchorStyles.None;
             lblUsernameLogin.AutoSize = true;
             lblUsernameLogin.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblUsernameLogin.Location = new Point(192, 328);
+            lblUsernameLogin.Location = new Point(154, 262);
             lblUsernameLogin.Margin = new Padding(2, 0, 2, 0);
             lblUsernameLogin.Name = "lblUsernameLogin";
-            lblUsernameLogin.Size = new Size(121, 32);
+            lblUsernameLogin.Size = new Size(99, 28);
             lblUsernameLogin.TabIndex = 8;
             lblUsernameLogin.Text = "Username";
             // 
@@ -173,10 +173,10 @@
             lblFirstRegister.Anchor = AnchorStyles.None;
             lblFirstRegister.AutoSize = true;
             lblFirstRegister.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblFirstRegister.Location = new Point(192, 369);
+            lblFirstRegister.Location = new Point(154, 295);
             lblFirstRegister.Margin = new Padding(2, 0, 2, 0);
             lblFirstRegister.Name = "lblFirstRegister";
-            lblFirstRegister.Size = new Size(111, 32);
+            lblFirstRegister.Size = new Size(93, 28);
             lblFirstRegister.TabIndex = 9;
             lblFirstRegister.Text = "Password";
             // 
@@ -187,10 +187,10 @@
             btnLogin.FlatStyle = FlatStyle.Flat;
             btnLogin.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnLogin.ForeColor = Color.White;
-            btnLogin.Location = new Point(388, 411);
+            btnLogin.Location = new Point(310, 329);
             btnLogin.Margin = new Padding(2);
             btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(166, 56);
+            btnLogin.Size = new Size(133, 45);
             btnLogin.TabIndex = 10;
             btnLogin.Text = "Login";
             btnLogin.UseVisualStyleBackColor = false;
@@ -201,10 +201,10 @@
             checkboxRemember.Anchor = AnchorStyles.None;
             checkboxRemember.AutoSize = true;
             checkboxRemember.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            checkboxRemember.Location = new Point(388, 471);
+            checkboxRemember.Location = new Point(310, 377);
             checkboxRemember.Margin = new Padding(2);
             checkboxRemember.Name = "checkboxRemember";
-            checkboxRemember.Size = new Size(165, 32);
+            checkboxRemember.Size = new Size(144, 27);
             checkboxRemember.TabIndex = 11;
             checkboxRemember.Text = "Remember Me";
             checkboxRemember.UseVisualStyleBackColor = true;
@@ -214,10 +214,10 @@
             linklblForgot.ActiveLinkColor = Color.DarkMagenta;
             linklblForgot.Anchor = AnchorStyles.None;
             linklblForgot.AutoSize = true;
-            linklblForgot.Location = new Point(618, 372);
+            linklblForgot.Location = new Point(494, 298);
             linklblForgot.Margin = new Padding(2, 0, 2, 0);
             linklblForgot.Name = "linklblForgot";
-            linklblForgot.Size = new Size(154, 25);
+            linklblForgot.Size = new Size(125, 20);
             linklblForgot.TabIndex = 12;
             linklblForgot.TabStop = true;
             linklblForgot.Text = "Forgot Password?";
@@ -230,10 +230,10 @@
             btnRegisterAccount.FlatStyle = FlatStyle.Popup;
             btnRegisterAccount.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnRegisterAccount.ForeColor = Color.White;
-            btnRegisterAccount.Location = new Point(801, 94);
+            btnRegisterAccount.Location = new Point(641, 75);
             btnRegisterAccount.Margin = new Padding(2);
             btnRegisterAccount.Name = "btnRegisterAccount";
-            btnRegisterAccount.Size = new Size(155, 39);
+            btnRegisterAccount.Size = new Size(124, 31);
             btnRegisterAccount.TabIndex = 14;
             btnRegisterAccount.Text = "Register Here!";
             btnRegisterAccount.UseVisualStyleBackColor = false;
@@ -244,10 +244,10 @@
             lblRegisterAccount.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             lblRegisterAccount.AutoSize = true;
             lblRegisterAccount.Font = new Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point);
-            lblRegisterAccount.Location = new Point(618, 104);
+            lblRegisterAccount.Location = new Point(494, 83);
             lblRegisterAccount.Margin = new Padding(2, 0, 2, 0);
             lblRegisterAccount.Name = "lblRegisterAccount";
-            lblRegisterAccount.Size = new Size(177, 21);
+            lblRegisterAccount.Size = new Size(159, 19);
             lblRegisterAccount.TabIndex = 15;
             lblRegisterAccount.Text = "Don't Have An Account?";
             lblRegisterAccount.Click += lblRegisterAccount_Click_1;
@@ -270,10 +270,10 @@
             pnlSignUp.Controls.Add(txtEmail);
             pnlSignUp.Controls.Add(lblRegister);
             pnlSignUp.Controls.Add(pictureBox4);
-            pnlSignUp.Location = new Point(11, 94);
+            pnlSignUp.Location = new Point(9, 75);
             pnlSignUp.Margin = new Padding(2);
             pnlSignUp.Name = "pnlSignUp";
-            pnlSignUp.Size = new Size(946, 434);
+            pnlSignUp.Size = new Size(757, 347);
             pnlSignUp.TabIndex = 16;
             // 
             // lblUserType
@@ -281,10 +281,10 @@
             lblUserType.Anchor = AnchorStyles.None;
             lblUserType.AutoSize = true;
             lblUserType.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblUserType.Location = new Point(195, 310);
+            lblUserType.Location = new Point(156, 248);
             lblUserType.Margin = new Padding(2, 0, 2, 0);
             lblUserType.Name = "lblUserType";
-            lblUserType.Size = new Size(119, 32);
+            lblUserType.Size = new Size(97, 28);
             lblUserType.TabIndex = 31;
             lblUserType.Text = "User Type";
             // 
@@ -294,10 +294,10 @@
             cboUserType.DropDownStyle = ComboBoxStyle.DropDownList;
             cboUserType.FormattingEnabled = true;
             cboUserType.Items.AddRange(new object[] { "Admin", "Project Member", "IT Support Team", "Report Manager" });
-            cboUserType.Location = new Point(318, 308);
+            cboUserType.Location = new Point(254, 246);
             cboUserType.Margin = new Padding(2);
             cboUserType.Name = "cboUserType";
-            cboUserType.Size = new Size(288, 33);
+            cboUserType.Size = new Size(231, 28);
             cboUserType.TabIndex = 30;
             // 
             // btnRegister
@@ -307,10 +307,10 @@
             btnRegister.FlatStyle = FlatStyle.Flat;
             btnRegister.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnRegister.ForeColor = Color.White;
-            btnRegister.Location = new Point(375, 354);
+            btnRegister.Location = new Point(300, 283);
             btnRegister.Margin = new Padding(2);
             btnRegister.Name = "btnRegister";
-            btnRegister.Size = new Size(166, 56);
+            btnRegister.Size = new Size(133, 45);
             btnRegister.TabIndex = 29;
             btnRegister.Text = "Register";
             btnRegister.UseVisualStyleBackColor = false;
@@ -321,21 +321,21 @@
             lblLastName.Anchor = AnchorStyles.None;
             lblLastName.AutoSize = true;
             lblLastName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblLastName.Location = new Point(185, 229);
+            lblLastName.Location = new Point(148, 183);
             lblLastName.Margin = new Padding(2, 0, 2, 0);
             lblLastName.Name = "lblLastName";
-            lblLastName.Size = new Size(126, 32);
+            lblLastName.Size = new Size(103, 28);
             lblLastName.TabIndex = 28;
             lblLastName.Text = "Last Name";
             // 
             // txtLastName
             // 
             txtLastName.Anchor = AnchorStyles.None;
-            txtLastName.Location = new Point(318, 230);
+            txtLastName.Location = new Point(254, 184);
             txtLastName.Margin = new Padding(2);
             txtLastName.Name = "txtLastName";
             txtLastName.PlaceholderText = "Enter Last Name";
-            txtLastName.Size = new Size(288, 31);
+            txtLastName.Size = new Size(231, 27);
             txtLastName.TabIndex = 27;
             // 
             // lblSignIn
@@ -343,10 +343,10 @@
             lblSignIn.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             lblSignIn.AutoSize = true;
             lblSignIn.Font = new Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point);
-            lblSignIn.Location = new Point(597, 11);
+            lblSignIn.Location = new Point(478, 9);
             lblSignIn.Margin = new Padding(2, 0, 2, 0);
             lblSignIn.Name = "lblSignIn";
-            lblSignIn.Size = new Size(192, 21);
+            lblSignIn.Size = new Size(171, 19);
             lblSignIn.TabIndex = 26;
             lblSignIn.Text = "Already Have An Account?";
             lblSignIn.Click += lblSignIn_Click;
@@ -358,10 +358,10 @@
             btnLoginForm.FlatStyle = FlatStyle.Popup;
             btnLoginForm.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnLoginForm.ForeColor = Color.White;
-            btnLoginForm.Location = new Point(791, 2);
+            btnLoginForm.Location = new Point(633, 2);
             btnLoginForm.Margin = new Padding(2);
             btnLoginForm.Name = "btnLoginForm";
-            btnLoginForm.Size = new Size(153, 42);
+            btnLoginForm.Size = new Size(122, 34);
             btnLoginForm.TabIndex = 25;
             btnLoginForm.Text = "Login Here!";
             btnLoginForm.UseVisualStyleBackColor = false;
@@ -372,10 +372,10 @@
             lblFirstName.Anchor = AnchorStyles.None;
             lblFirstName.AutoSize = true;
             lblFirstName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblFirstName.Location = new Point(182, 190);
+            lblFirstName.Location = new Point(146, 152);
             lblFirstName.Margin = new Padding(2, 0, 2, 0);
             lblFirstName.Name = "lblFirstName";
-            lblFirstName.Size = new Size(129, 32);
+            lblFirstName.Size = new Size(106, 28);
             lblFirstName.TabIndex = 21;
             lblFirstName.Text = "First Name";
             // 
@@ -384,31 +384,32 @@
             lblEmail.Anchor = AnchorStyles.None;
             lblEmail.AutoSize = true;
             lblEmail.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblEmail.Location = new Point(242, 271);
+            lblEmail.Location = new Point(194, 217);
             lblEmail.Margin = new Padding(2, 0, 2, 0);
             lblEmail.Name = "lblEmail";
-            lblEmail.Size = new Size(71, 32);
+            lblEmail.Size = new Size(59, 28);
             lblEmail.TabIndex = 20;
             lblEmail.Text = "Email";
             // 
             // txtFirstName
             // 
             txtFirstName.Anchor = AnchorStyles.None;
-            txtFirstName.Location = new Point(318, 190);
+            txtFirstName.Location = new Point(254, 152);
             txtFirstName.Margin = new Padding(2);
             txtFirstName.Name = "txtFirstName";
             txtFirstName.PlaceholderText = "Enter First Name";
-            txtFirstName.Size = new Size(288, 31);
+            txtFirstName.Size = new Size(231, 27);
             txtFirstName.TabIndex = 19;
+            txtFirstName.TextChanged += txtFirstName_TextChanged;
             // 
             // txtEmail
             // 
             txtEmail.Anchor = AnchorStyles.None;
-            txtEmail.Location = new Point(317, 269);
+            txtEmail.Location = new Point(254, 215);
             txtEmail.Margin = new Padding(2);
             txtEmail.Name = "txtEmail";
             txtEmail.PlaceholderText = "Enter Email";
-            txtEmail.Size = new Size(288, 31);
+            txtEmail.Size = new Size(231, 27);
             txtEmail.TabIndex = 18;
             // 
             // lblRegister
@@ -416,10 +417,10 @@
             lblRegister.Anchor = AnchorStyles.None;
             lblRegister.AutoSize = true;
             lblRegister.Font = new Font("Segoe UI", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            lblRegister.Location = new Point(262, 141);
+            lblRegister.Location = new Point(210, 113);
             lblRegister.Margin = new Padding(2, 0, 2, 0);
             lblRegister.Name = "lblRegister";
-            lblRegister.Size = new Size(359, 38);
+            lblRegister.Size = new Size(306, 32);
             lblRegister.TabIndex = 17;
             lblRegister.Text = "Register For Your Account";
             // 
@@ -429,10 +430,10 @@
             pictureBox4.BackColor = Color.Transparent;
             pictureBox4.Image = Properties.Resources.redAgentsLogo;
             pictureBox4.InitialImage = (Image)resources.GetObject("pictureBox4.InitialImage");
-            pictureBox4.Location = new Point(394, 16);
+            pictureBox4.Location = new Point(315, 13);
             pictureBox4.Margin = new Padding(2);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(134, 124);
+            pictureBox4.Size = new Size(107, 99);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 16;
             pictureBox4.TabStop = false;
@@ -448,10 +449,9 @@
             pnlForgotPassword.Controls.Add(btnBacktoLogin);
             pnlForgotPassword.Controls.Add(button1);
             pnlForgotPassword.Controls.Add(label1);
-            pnlForgotPassword.Location = new Point(10, 94);
-            pnlForgotPassword.Margin = new Padding(4);
+            pnlForgotPassword.Location = new Point(8, 457);
             pnlForgotPassword.Name = "pnlForgotPassword";
-            pnlForgotPassword.Size = new Size(946, 508);
+            pnlForgotPassword.Size = new Size(757, 106);
             pnlForgotPassword.TabIndex = 17;
             pnlForgotPassword.Paint += panel1_Paint;
             // 
@@ -460,10 +460,9 @@
             label2.Anchor = AnchorStyles.None;
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label2.Location = new Point(281, 179);
-            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Location = new Point(225, -7);
             label2.Name = "label2";
-            label2.Size = new Size(355, 38);
+            label2.Size = new Size(286, 31);
             label2.TabIndex = 6;
             label2.Text = "Send a Verification Email";
             // 
@@ -472,21 +471,19 @@
             lblRememebr.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             lblRememebr.AutoSize = true;
             lblRememebr.Font = new Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point);
-            lblRememebr.Location = new Point(621, 17);
-            lblRememebr.Margin = new Padding(4, 0, 4, 0);
+            lblRememebr.Location = new Point(497, 14);
             lblRememebr.Name = "lblRememebr";
-            lblRememebr.Size = new Size(164, 21);
+            lblRememebr.Size = new Size(143, 19);
             lblRememebr.TabIndex = 5;
             lblRememebr.Text = "Remember Password?";
             // 
             // textBox1
             // 
             textBox1.Anchor = AnchorStyles.None;
-            textBox1.Location = new Point(295, 228);
-            textBox1.Margin = new Padding(4);
+            textBox1.Location = new Point(236, 32);
             textBox1.Name = "textBox1";
             textBox1.PlaceholderText = "Enter Email";
-            textBox1.Size = new Size(332, 31);
+            textBox1.Size = new Size(266, 27);
             textBox1.TabIndex = 4;
             // 
             // pictureBox5
@@ -494,10 +491,9 @@
             pictureBox5.Anchor = AnchorStyles.None;
             pictureBox5.BackgroundImage = Properties.Resources.redAgentsLogo;
             pictureBox5.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox5.Location = new Point(389, 41);
-            pictureBox5.Margin = new Padding(4);
+            pictureBox5.Location = new Point(311, -117);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(139, 132);
+            pictureBox5.Size = new Size(111, 106);
             pictureBox5.TabIndex = 3;
             pictureBox5.TabStop = false;
             // 
@@ -509,10 +505,9 @@
             btnBacktoLogin.FlatStyle = FlatStyle.Popup;
             btnBacktoLogin.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnBacktoLogin.ForeColor = Color.White;
-            btnBacktoLogin.Location = new Point(793, 4);
-            btnBacktoLogin.Margin = new Padding(4);
+            btnBacktoLogin.Location = new Point(634, 3);
             btnBacktoLogin.Name = "btnBacktoLogin";
-            btnBacktoLogin.Size = new Size(150, 43);
+            btnBacktoLogin.Size = new Size(120, 34);
             btnBacktoLogin.TabIndex = 2;
             btnBacktoLogin.Text = "Login Here!";
             btnBacktoLogin.UseVisualStyleBackColor = false;
@@ -526,10 +521,9 @@
             button1.FlatStyle = FlatStyle.Popup;
             button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(356, 273);
-            button1.Margin = new Padding(4);
+            button1.Location = new Point(285, 68);
             button1.Name = "button1";
-            button1.Size = new Size(201, 61);
+            button1.Size = new Size(161, 49);
             button1.TabIndex = 1;
             button1.Text = "Send Verification";
             button1.UseVisualStyleBackColor = false;
@@ -540,19 +534,18 @@
             label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(160, 227);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Location = new Point(128, 32);
             label1.Name = "label1";
-            label1.Size = new Size(133, 32);
+            label1.Size = new Size(109, 28);
             label1.TabIndex = 0;
             label1.Text = "Enter Email";
             // 
             // FrmLogin
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(968, 611);
+            ClientSize = new Size(774, 489);
             Controls.Add(pnlForgotPassword);
             Controls.Add(pnlSignUp);
             Controls.Add(lblRegisterAccount);
