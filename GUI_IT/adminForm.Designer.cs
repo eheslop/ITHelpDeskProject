@@ -38,6 +38,8 @@
             Rectangle2 = new PictureBox();
             Rectangle1 = new PictureBox();
             pnlRegistration = new Panel();
+            btnRefresh = new Button();
+            DGVR = new DataGridView();
             lblNewReg = new Label();
             pictureBox4 = new PictureBox();
             pnlReportGenerate = new Panel();
@@ -49,6 +51,7 @@
             ((System.ComponentModel.ISupportInitialize)Rectangle2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Rectangle1).BeginInit();
             pnlRegistration.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)DGVR).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             pnlReportGenerate.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -92,10 +95,10 @@
             btnGenerate.FlatStyle = FlatStyle.Popup;
             btnGenerate.Font = new Font("Segoe UI", 10F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             btnGenerate.ForeColor = Color.White;
-            btnGenerate.Location = new Point(979, 51);
+            btnGenerate.Location = new Point(974, 51);
             btnGenerate.Margin = new Padding(2);
             btnGenerate.Name = "btnGenerate";
-            btnGenerate.Size = new Size(191, 54);
+            btnGenerate.Size = new Size(196, 54);
             btnGenerate.TabIndex = 18;
             btnGenerate.Text = "Generate Reports";
             btnGenerate.UseVisualStyleBackColor = false;
@@ -109,10 +112,10 @@
             btnRegistration.FlatStyle = FlatStyle.Popup;
             btnRegistration.Font = new Font("Segoe UI", 10F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             btnRegistration.ForeColor = Color.White;
-            btnRegistration.Location = new Point(848, 51);
+            btnRegistration.Location = new Point(842, 51);
             btnRegistration.Margin = new Padding(2);
             btnRegistration.Name = "btnRegistration";
-            btnRegistration.Size = new Size(140, 54);
+            btnRegistration.Size = new Size(145, 54);
             btnRegistration.TabIndex = 17;
             btnRegistration.Text = "Registration";
             btnRegistration.UseVisualStyleBackColor = false;
@@ -171,13 +174,40 @@
             // pnlRegistration
             // 
             pnlRegistration.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            pnlRegistration.Controls.Add(pnlReportGenerate);
+            pnlRegistration.Controls.Add(btnRefresh);
+            pnlRegistration.Controls.Add(DGVR);
             pnlRegistration.Controls.Add(lblNewReg);
             pnlRegistration.Controls.Add(pictureBox4);
-            pnlRegistration.Location = new Point(-2, 104);
+            pnlRegistration.Location = new Point(-2, 106);
             pnlRegistration.Margin = new Padding(2);
             pnlRegistration.Name = "pnlRegistration";
-            pnlRegistration.Size = new Size(1172, 541);
+            pnlRegistration.Size = new Size(1172, 539);
             pnlRegistration.TabIndex = 24;
+            pnlRegistration.Paint += pnlRegistration_Paint;
+            // 
+            // btnRefresh
+            // 
+            btnRefresh.Location = new Point(1018, 198);
+            btnRefresh.Margin = new Padding(4);
+            btnRefresh.Name = "btnRefresh";
+            btnRefresh.Size = new Size(118, 69);
+            btnRefresh.TabIndex = 20;
+            btnRefresh.Text = "Refresh";
+            btnRefresh.UseVisualStyleBackColor = true;
+            btnRefresh.Click += button1_Click;
+            // 
+            // DGVR
+            // 
+            DGVR.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            DGVR.Location = new Point(18, 196);
+            DGVR.Margin = new Padding(4);
+            DGVR.Name = "DGVR";
+            DGVR.RowHeadersWidth = 51;
+            DGVR.RowTemplate.Height = 29;
+            DGVR.Size = new Size(972, 305);
+            DGVR.TabIndex = 19;
+            DGVR.CellContentClick += dataGridView1_CellContentClick;
             // 
             // lblNewReg
             // 
@@ -209,10 +239,10 @@
             pnlReportGenerate.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             pnlReportGenerate.Controls.Add(lblReportGen);
             pnlReportGenerate.Controls.Add(pictureBox3);
-            pnlReportGenerate.Location = new Point(-5, 104);
+            pnlReportGenerate.Location = new Point(2, 0);
             pnlReportGenerate.Margin = new Padding(2);
             pnlReportGenerate.Name = "pnlReportGenerate";
-            pnlReportGenerate.Size = new Size(1174, 537);
+            pnlReportGenerate.Size = new Size(1167, 539);
             pnlReportGenerate.TabIndex = 15;
             pnlReportGenerate.Paint += pnlReportGenerate_Paint;
             // 
@@ -223,7 +253,7 @@
             lblReportGen.BackColor = Color.FromArgb(64, 0, 0);
             lblReportGen.Font = new Font("Microsoft YaHei UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblReportGen.ForeColor = Color.White;
-            lblReportGen.Location = new Point(434, 25);
+            lblReportGen.Location = new Point(414, 36);
             lblReportGen.Margin = new Padding(2, 0, 2, 0);
             lblReportGen.Name = "lblReportGen";
             lblReportGen.Size = new Size(357, 47);
@@ -237,7 +267,7 @@
             pictureBox3.Location = new Point(-5, 0);
             pictureBox3.Margin = new Padding(2);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(1176, 125);
+            pictureBox3.Size = new Size(1169, 125);
             pictureBox3.TabIndex = 15;
             pictureBox3.TabStop = false;
             // 
@@ -260,7 +290,6 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1164, 641);
-            Controls.Add(pnlReportGenerate);
             Controls.Add(pnlRegistration);
             Controls.Add(pictureLogo);
             Controls.Add(btnHome);
@@ -282,6 +311,7 @@
             ((System.ComponentModel.ISupportInitialize)Rectangle1).EndInit();
             pnlRegistration.ResumeLayout(false);
             pnlRegistration.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)DGVR).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             pnlReportGenerate.ResumeLayout(false);
             pnlReportGenerate.PerformLayout();
@@ -307,5 +337,7 @@
         private Label lblNewReg;
         private Label lblReportGen;
         private Label lblHome;
+        private DataGridView DGVR;
+        private Button btnRefresh;
     }
 }

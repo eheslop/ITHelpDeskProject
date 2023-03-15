@@ -42,11 +42,15 @@
           "dependencies": {
             "MailKit": {
               "target": "Package",
-              "version": "[3.5.0, )"
+              "version": "[3.6.0, )"
             },
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[5.1.0, )"
+            },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[3.6.0, )"
             },
             "System.Data.SqlClient": {
               "target": "Package",
