@@ -100,7 +100,7 @@ namespace GUI_IT
                 Sql.Register(user, name, pass, email, role);
                 Email.regEmail(user);
                 MessageBox.Show("Account Created!\nCheck your email for your login credentials!", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                
+
                 pnlSignUp.Visible = false;
                 //pnlForgotPassword.Visible = false;
 
@@ -163,6 +163,11 @@ namespace GUI_IT
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtFirstName_TextChanged(object sender, EventArgs e)
         {
 
         }

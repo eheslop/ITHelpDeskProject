@@ -19,7 +19,7 @@ namespace GUI_IT
             regEmail.From.Add(new MailboxAddress("Red Agents IT Service", "redagentsit@gmail.com"));
             regEmail.To.Add(new MailboxAddress(Sql.getName(user), Sql.getEmail(user))); ;
 
-            regEmail.Subject = "Login Credentials";
+            regEmail.Subject = "Successful Registration";
             regEmail.Body = new TextPart()
             {
                 Text = "Hello " + Sql.getName(user) + "! Below are your login credentials for the Red Agents IT Ticketing System.\n\n" +
