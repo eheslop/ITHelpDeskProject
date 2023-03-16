@@ -11,7 +11,7 @@
         "projectName": "GUI_IT",
         "projectPath": "C:\\Users\\banan\\Source\\Repos\\SE361_ITHelpDesk2023\\GUI_IT\\GUI_IT.csproj",
         "packagesPath": "C:\\Users\\banan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\banan\\source\\repos\\SE361_ITHelpDesk2023\\GUI_IT\\obj\\",
+        "outputPath": "C:\\Users\\banan\\Source\\Repos\\SE361_ITHelpDesk2023\\GUI_IT\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -47,11 +47,15 @@
           "dependencies": {
             "MailKit": {
               "target": "Package",
-              "version": "[3.5.0, )"
+              "version": "[3.6.0, )"
             },
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[5.1.0, )"
+            },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[3.6.0, )"
             },
             "System.Data.SqlClient": {
               "target": "Package",
@@ -77,7 +81,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
