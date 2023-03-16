@@ -15,7 +15,6 @@ namespace GUI_IT
         public frmITSupport()
         {
             InitializeComponent();
-            pnlTicketDashboard.Visible = false;
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
@@ -24,18 +23,6 @@ namespace GUI_IT
             this.Hide();
             LoginScreen.ShowDialog();
             this.Close();
-        }
-
-        private void btnHome_Click(object sender, EventArgs e)
-        {
-            pnlTicketDashboard.Visible = false;
-            this.Text = "IT Help Desk IT Support Team Homepage";
-        }
-
-        private void btnTicketDash_Click(object sender, EventArgs e)
-        {
-            pnlTicketDashboard.Visible = true;
-            this.Text = "IT Help Desk IT Support Team Ticket Dashboard";
         }
     }
 }

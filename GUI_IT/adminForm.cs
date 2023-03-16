@@ -19,7 +19,6 @@ namespace GUI_IT
         public frmAdmin()
         {
             InitializeComponent();
-            pnlRegistration.Visible = false;
             pnlReportGenerate.Visible = false;
             Fill();
         }
@@ -29,23 +28,15 @@ namespace GUI_IT
 
         }
 
-        private void btnHome_Click(object sender, EventArgs e)
-        {
-            this.Text = "IT Help Desk Admin Homepage";
-            pnlRegistration.Visible = false;
-            pnlReportGenerate.Visible = false;
-        }
         private void btnRegistration_Click(object sender, EventArgs e)
         {
             this.Text = "IT Help Desk Admin Registration";
-            pnlRegistration.Visible = true;
             pnlReportGenerate.Visible = false;
         }
 
         private void btnGenerate_Click(object sender, EventArgs e)
         {
             this.Text = "IT Help Desk Admin Report Generation";
-            pnlRegistration.Visible = false;
             pnlReportGenerate.Visible = true;
         }
 
@@ -114,6 +105,11 @@ namespace GUI_IT
             da.Fill(dt);
             DGVR.DataSource = dt;
             con.Close();
+        }
+
+        private void lblHome_Click(object sender, EventArgs e)
+        {
+
         }
     }
 

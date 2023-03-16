@@ -15,7 +15,6 @@ namespace GUI_IT
         public frmReportManage()
         {
             InitializeComponent();
-            pnlTicketDashReportMan.Visible = false;
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
@@ -24,18 +23,6 @@ namespace GUI_IT
             this.Hide();
             LoginScreen.ShowDialog();
             this.Close();
-        }
-
-        private void btnHomeReport_Click(object sender, EventArgs e)
-        {
-            pnlTicketDashReportMan.Visible = false;
-            this.Text = "IT Help Desk Report Manager Homepage";
-        }
-
-        private void btnTicketDash_Click(object sender, EventArgs e)
-        {
-            pnlTicketDashReportMan.Visible = false;
-            this.Text = "IT Help Desk Report Manager Ticket Dashboard";
         }
     }
 }
