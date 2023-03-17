@@ -37,7 +37,7 @@
             btnProblemList = new Button();
             btnOnlineHelp = new Button();
             pnlTickets = new Panel();
-            tabControl1 = new TabControl();
+            tabProjectMem = new TabControl();
             tabRaiseTicket = new TabPage();
             btnRaise = new Button();
             cbxType = new ComboBox();
@@ -68,11 +68,15 @@
             lblOnlineHelp = new Label();
             pictureBox5 = new PictureBox();
             lblHeader = new Label();
+            tabMyTickets = new TabPage();
+            label5 = new Label();
+            label6 = new Label();
+            dataGridView1 = new DataGridView();
             ((System.ComponentModel.ISupportInitialize)pictureLogo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Rectangle1).BeginInit();
             pnlTickets.SuspendLayout();
-            tabControl1.SuspendLayout();
+            tabProjectMem.SuspendLayout();
             tabRaiseTicket.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             tabReopenTicket.SuspendLayout();
@@ -81,6 +85,8 @@
             pnlProblemList.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            tabMyTickets.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // pictureLogo
@@ -183,7 +189,7 @@
             // 
             // pnlTickets
             // 
-            pnlTickets.Controls.Add(tabControl1);
+            pnlTickets.Controls.Add(tabProjectMem);
             pnlTickets.Controls.Add(lblTicket);
             pnlTickets.Controls.Add(pictureBox3);
             pnlTickets.Location = new Point(0, 101);
@@ -193,16 +199,17 @@
             pnlTickets.TabIndex = 45;
             pnlTickets.Paint += pnlOnlineHelp_Paint;
             // 
-            // tabControl1
+            // tabProjectMem
             // 
-            tabControl1.Controls.Add(tabRaiseTicket);
-            tabControl1.Controls.Add(tabReopenTicket);
-            tabControl1.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            tabControl1.Location = new Point(-8, 77);
-            tabControl1.Name = "tabControl1";
-            tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(1186, 477);
-            tabControl1.TabIndex = 50;
+            tabProjectMem.Controls.Add(tabRaiseTicket);
+            tabProjectMem.Controls.Add(tabReopenTicket);
+            tabProjectMem.Controls.Add(tabMyTickets);
+            tabProjectMem.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            tabProjectMem.Location = new Point(-8, 77);
+            tabProjectMem.Name = "tabProjectMem";
+            tabProjectMem.SelectedIndex = 0;
+            tabProjectMem.Size = new Size(1186, 477);
+            tabProjectMem.TabIndex = 50;
             // 
             // tabRaiseTicket
             // 
@@ -564,6 +571,50 @@
             lblHeader.TabIndex = 48;
             lblHeader.Text = "Red Agents IT Help Desk";
             // 
+            // tabMyTickets
+            // 
+            tabMyTickets.BackColor = Color.LightGray;
+            tabMyTickets.Controls.Add(dataGridView1);
+            tabMyTickets.Controls.Add(label6);
+            tabMyTickets.Controls.Add(label5);
+            tabMyTickets.Location = new Point(4, 37);
+            tabMyTickets.Name = "tabMyTickets";
+            tabMyTickets.Size = new Size(1178, 436);
+            tabMyTickets.TabIndex = 2;
+            tabMyTickets.Text = "My Tickets";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.BackColor = Color.Transparent;
+            label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label5.Location = new Point(10, 3);
+            label5.Name = "label5";
+            label5.Size = new Size(133, 32);
+            label5.TabIndex = 53;
+            label5.Text = "My Tickets";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.BackColor = Color.Transparent;
+            label6.Font = new Font("Microsoft YaHei UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.Location = new Point(13, 36);
+            label6.Name = "label6";
+            label6.Size = new Size(1080, 54);
+            label6.TabIndex = 54;
+            label6.Text = "Below is a table documenting the information of tickets that you have raised. This includes the ID, urgency level, \r\nproblem type and description of problem.";
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(16, 108);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 62;
+            dataGridView1.RowTemplate.Height = 33;
+            dataGridView1.Size = new Size(1077, 306);
+            dataGridView1.TabIndex = 55;
+            // 
             // frmProjectMember
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -590,7 +641,7 @@
             ((System.ComponentModel.ISupportInitialize)Rectangle1).EndInit();
             pnlTickets.ResumeLayout(false);
             pnlTickets.PerformLayout();
-            tabControl1.ResumeLayout(false);
+            tabProjectMem.ResumeLayout(false);
             tabRaiseTicket.ResumeLayout(false);
             tabRaiseTicket.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
@@ -602,6 +653,9 @@
             pnlProblemList.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            tabMyTickets.ResumeLayout(false);
+            tabMyTickets.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -626,7 +680,7 @@
         private PictureBox pictureBox3;
         private Label lblTicket;
         private Label lblProblem;
-        private TabControl tabControl1;
+        private TabControl tabProjectMem;
         private TabPage tabRaiseTicket;
         private Label label1;
         private Label label2;
@@ -652,5 +706,9 @@
         private Label lblReopenReason;
         private Label lblTicketID;
         private TextBox txtID;
+        private TabPage tabMyTickets;
+        private Label label6;
+        private Label label5;
+        private DataGridView dataGridView1;
     }
 }

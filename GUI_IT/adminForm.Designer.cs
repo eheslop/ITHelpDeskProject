@@ -41,7 +41,7 @@
             label1 = new Label();
             pictureBox2 = new PictureBox();
             pnlReportGenerate = new Panel();
-            tabControl1 = new TabControl();
+            tabReportGeneration = new TabControl();
             tabExisting = new TabPage();
             tabSolved = new TabPage();
             tabUnsolved = new TabPage();
@@ -55,7 +55,7 @@
             ((System.ComponentModel.ISupportInitialize)DGVR).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             pnlReportGenerate.SuspendLayout();
-            tabControl1.SuspendLayout();
+            tabReportGeneration.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
@@ -213,7 +213,7 @@
             // pnlReportGenerate
             // 
             pnlReportGenerate.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            pnlReportGenerate.Controls.Add(tabControl1);
+            pnlReportGenerate.Controls.Add(tabReportGeneration);
             pnlReportGenerate.Controls.Add(lblReportGen);
             pnlReportGenerate.Controls.Add(pictureBox3);
             pnlReportGenerate.Location = new Point(-4, 109);
@@ -223,17 +223,17 @@
             pnlReportGenerate.TabIndex = 15;
             pnlReportGenerate.Paint += pnlReportGenerate_Paint;
             // 
-            // tabControl1
+            // tabReportGeneration
             // 
-            tabControl1.Controls.Add(tabExisting);
-            tabControl1.Controls.Add(tabSolved);
-            tabControl1.Controls.Add(tabUnsolved);
-            tabControl1.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            tabControl1.Location = new Point(0, 79);
-            tabControl1.Name = "tabControl1";
-            tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(1184, 484);
-            tabControl1.TabIndex = 18;
+            tabReportGeneration.Controls.Add(tabExisting);
+            tabReportGeneration.Controls.Add(tabSolved);
+            tabReportGeneration.Controls.Add(tabUnsolved);
+            tabReportGeneration.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            tabReportGeneration.Location = new Point(0, 77);
+            tabReportGeneration.Name = "tabReportGeneration";
+            tabReportGeneration.SelectedIndex = 0;
+            tabReportGeneration.Size = new Size(1184, 486);
+            tabReportGeneration.TabIndex = 18;
             // 
             // tabExisting
             // 
@@ -241,7 +241,7 @@
             tabExisting.Location = new Point(4, 37);
             tabExisting.Name = "tabExisting";
             tabExisting.Padding = new Padding(3);
-            tabExisting.Size = new Size(1176, 443);
+            tabExisting.Size = new Size(1176, 445);
             tabExisting.TabIndex = 0;
             tabExisting.Text = "Existing Tickets";
             // 
@@ -251,7 +251,7 @@
             tabSolved.Location = new Point(4, 37);
             tabSolved.Name = "tabSolved";
             tabSolved.Padding = new Padding(3);
-            tabSolved.Size = new Size(1176, 411);
+            tabSolved.Size = new Size(1176, 443);
             tabSolved.TabIndex = 1;
             tabSolved.Text = "Solved Tickets";
             // 
@@ -260,7 +260,7 @@
             tabUnsolved.BackColor = Color.LightGray;
             tabUnsolved.Location = new Point(4, 37);
             tabUnsolved.Name = "tabUnsolved";
-            tabUnsolved.Size = new Size(1176, 411);
+            tabUnsolved.Size = new Size(1176, 443);
             tabUnsolved.TabIndex = 2;
             tabUnsolved.Text = "Unsolved Tickets";
             // 
@@ -346,7 +346,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             pnlReportGenerate.ResumeLayout(false);
             pnlReportGenerate.PerformLayout();
-            tabControl1.ResumeLayout(false);
+            tabReportGeneration.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -370,7 +370,7 @@
         private PictureBox pictureBox3;
         private Button btnSubmit;
         private Button btnClear;
-        private TabControl tabControl1;
+        private TabControl tabReportGeneration;
         private TabPage tabExisting;
         private TabPage tabSolved;
         private TabPage tabUnsolved;
