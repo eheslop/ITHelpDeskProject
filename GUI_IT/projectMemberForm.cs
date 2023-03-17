@@ -83,5 +83,13 @@ namespace GUI_IT
             cbxUrgency.SelectedIndex = -1;
             txtProblemDescribe.Clear();
         }
+
+        private void btnReopenClear_Click(object sender, EventArgs e)
+        {
+            cbxReopenReason.ResetText();
+            cbxReopenReason.SelectedIndex = -1;
+            txtReopenTicket.Clear();
+            txtID.Clear();
+        }
     }
 }

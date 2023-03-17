@@ -59,8 +59,14 @@
   </resheader>
   <data name="label1.Text" xml:space="preserve">
     <value>Have a Problem? Start by checking the "Problem List" section, which contains our list of frequently asked questions. If you cannot find a solution there, 
-refer to the "Online Help" section, which contains solutions for problems based on categories. If you cannot find the solution to your problem in either 
-of those sections, use the space below to describe your problem. </value>
+refer to the "Online Help" section, which contains our solutions for problems based on different categories. If you cannot find the solution to your 
+problem in either of those sections, use the space below to describe your problem. </value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Did you raise a ticket that was unsolved by our IT Support Team? Do you still need your problem to be solved? If you recieved an email that a ticket you raised was closed 
+by a member of our IT Support Team without being solved, you can re-open your ticket by filling out the information below. Please note that if you re-raise a ticket that was 
+closed by our IT Support team because the answer to your problem can be found in either the "Online Help" section or "Problem List" section of this form, it will be promptly 
+closed and you will not be able to re-open it again. </value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

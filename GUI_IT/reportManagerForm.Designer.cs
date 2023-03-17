@@ -117,7 +117,7 @@
             label1.BackColor = Color.FromArgb(64, 0, 0);
             label1.Font = new Font("Microsoft YaHei UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(413, 116);
+            label1.Location = new Point(413, 114);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
             label1.Size = new Size(340, 47);
@@ -140,10 +140,10 @@
             tabControl1.Controls.Add(tabMonitor);
             tabControl1.Controls.Add(tabAssign);
             tabControl1.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            tabControl1.Location = new Point(-5, 169);
+            tabControl1.Location = new Point(-5, 164);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(1183, 489);
+            tabControl1.Size = new Size(1183, 494);
             tabControl1.TabIndex = 50;
             // 
             // tabMonitor
@@ -152,7 +152,7 @@
             tabMonitor.Location = new Point(4, 37);
             tabMonitor.Name = "tabMonitor";
             tabMonitor.Padding = new Padding(3);
-            tabMonitor.Size = new Size(1175, 448);
+            tabMonitor.Size = new Size(1175, 453);
             tabMonitor.TabIndex = 0;
             tabMonitor.Text = "Monitor Tickets";
             // 
