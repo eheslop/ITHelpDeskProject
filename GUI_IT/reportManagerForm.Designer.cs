@@ -38,12 +38,19 @@
             pictureBox2 = new PictureBox();
             tabControl1 = new TabControl();
             tabMonitor = new TabPage();
+            DGVT = new DataGridView();
             tabAssign = new TabPage();
+            lblMonitor = new Label();
+            btnUnsolved = new Button();
+            btnSolved = new Button();
+            btnReOpened = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureLogo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Rectangle1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             tabControl1.SuspendLayout();
+            tabMonitor.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)DGVT).BeginInit();
             SuspendLayout();
             // 
             // pictureLogo
@@ -149,6 +156,11 @@
             // tabMonitor
             // 
             tabMonitor.BackColor = Color.LightGray;
+            tabMonitor.Controls.Add(btnReOpened);
+            tabMonitor.Controls.Add(btnSolved);
+            tabMonitor.Controls.Add(btnUnsolved);
+            tabMonitor.Controls.Add(lblMonitor);
+            tabMonitor.Controls.Add(DGVT);
             tabMonitor.Location = new Point(4, 37);
             tabMonitor.Name = "tabMonitor";
             tabMonitor.Padding = new Padding(3);
@@ -156,15 +168,79 @@
             tabMonitor.TabIndex = 0;
             tabMonitor.Text = "Monitor Tickets";
             // 
+            // DGVT
+            // 
+            DGVT.AllowUserToAddRows = false;
+            DGVT.AllowUserToDeleteRows = false;
+            DGVT.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            DGVT.Location = new Point(13, 104);
+            DGVT.Name = "DGVT";
+            DGVT.ReadOnly = true;
+            DGVT.RowHeadersWidth = 62;
+            DGVT.RowTemplate.Height = 33;
+            DGVT.Size = new Size(1144, 308);
+            DGVT.TabIndex = 0;
+            DGVT.CellContentClick += dataGridView1_CellContentClick;
+            // 
             // tabAssign
             // 
             tabAssign.BackColor = Color.LightGray;
             tabAssign.Location = new Point(4, 37);
             tabAssign.Name = "tabAssign";
             tabAssign.Padding = new Padding(3);
-            tabAssign.Size = new Size(1175, 448);
+            tabAssign.Size = new Size(1175, 453);
             tabAssign.TabIndex = 1;
             tabAssign.Text = "Assign Tickets";
+            // 
+            // lblMonitor
+            // 
+            lblMonitor.AutoSize = true;
+            lblMonitor.BackColor = Color.Transparent;
+            lblMonitor.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            lblMonitor.Location = new Point(2, 3);
+            lblMonitor.Name = "lblMonitor";
+            lblMonitor.Size = new Size(189, 32);
+            lblMonitor.TabIndex = 54;
+            lblMonitor.Text = "Monitor Tickets";
+            // 
+            // btnUnsolved
+            // 
+            btnUnsolved.BackColor = Color.FromArgb(64, 0, 0);
+            btnUnsolved.FlatStyle = FlatStyle.Popup;
+            btnUnsolved.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            btnUnsolved.ForeColor = Color.White;
+            btnUnsolved.Location = new Point(13, 44);
+            btnUnsolved.Name = "btnUnsolved";
+            btnUnsolved.Size = new Size(191, 40);
+            btnUnsolved.TabIndex = 55;
+            btnUnsolved.Text = "Unsolved Tickets";
+            btnUnsolved.UseVisualStyleBackColor = false;
+            // 
+            // btnSolved
+            // 
+            btnSolved.BackColor = Color.FromArgb(64, 0, 0);
+            btnSolved.FlatStyle = FlatStyle.Popup;
+            btnSolved.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSolved.ForeColor = Color.White;
+            btnSolved.Location = new Point(253, 44);
+            btnSolved.Name = "btnSolved";
+            btnSolved.Size = new Size(164, 40);
+            btnSolved.TabIndex = 56;
+            btnSolved.Text = "Solved Tickets";
+            btnSolved.UseVisualStyleBackColor = false;
+            // 
+            // btnReOpened
+            // 
+            btnReOpened.BackColor = Color.FromArgb(64, 0, 0);
+            btnReOpened.FlatStyle = FlatStyle.Popup;
+            btnReOpened.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            btnReOpened.ForeColor = Color.White;
+            btnReOpened.Location = new Point(468, 43);
+            btnReOpened.Name = "btnReOpened";
+            btnReOpened.Size = new Size(205, 40);
+            btnReOpened.TabIndex = 57;
+            btnReOpened.Text = "Re-Opened Tickets";
+            btnReOpened.UseVisualStyleBackColor = false;
             // 
             // frmReportManage
             // 
@@ -187,6 +263,9 @@
             ((System.ComponentModel.ISupportInitialize)Rectangle1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             tabControl1.ResumeLayout(false);
+            tabMonitor.ResumeLayout(false);
+            tabMonitor.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)DGVT).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -203,5 +282,10 @@
         private TabControl tabControl1;
         private TabPage tabMonitor;
         private TabPage tabAssign;
+        private DataGridView DGVT;
+        private Label lblMonitor;
+        private Button btnReOpened;
+        private Button btnSolved;
+        private Button btnUnsolved;
     }
 }
