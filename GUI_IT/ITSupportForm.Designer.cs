@@ -36,10 +36,14 @@
             lblHeader = new Label();
             label1 = new Label();
             pictureBox2 = new PictureBox();
+            tabControl1 = new TabControl();
+            tabSolve = new TabPage();
+            tabShare = new TabPage();
             ((System.ComponentModel.ISupportInitialize)pictureLogo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Rectangle1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            tabControl1.SuspendLayout();
             SuspendLayout();
             // 
             // pictureLogo
@@ -113,7 +117,7 @@
             label1.BackColor = Color.FromArgb(64, 0, 0);
             label1.Font = new Font("Microsoft YaHei UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(421, 120);
+            label1.Location = new Point(413, 115);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
             label1.Size = new Size(340, 47);
@@ -127,15 +131,48 @@
             pictureBox2.Location = new Point(0, 109);
             pictureBox2.Margin = new Padding(2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(1167, 73);
+            pictureBox2.Size = new Size(1167, 58);
             pictureBox2.TabIndex = 47;
             pictureBox2.TabStop = false;
+            // 
+            // tabControl1
+            // 
+            tabControl1.Controls.Add(tabSolve);
+            tabControl1.Controls.Add(tabShare);
+            tabControl1.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            tabControl1.Location = new Point(-5, 165);
+            tabControl1.Name = "tabControl1";
+            tabControl1.SelectedIndex = 0;
+            tabControl1.Size = new Size(1185, 480);
+            tabControl1.TabIndex = 49;
+            // 
+            // tabSolve
+            // 
+            tabSolve.BackColor = Color.LightGray;
+            tabSolve.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            tabSolve.Location = new Point(4, 37);
+            tabSolve.Name = "tabSolve";
+            tabSolve.Padding = new Padding(3);
+            tabSolve.Size = new Size(1177, 439);
+            tabSolve.TabIndex = 0;
+            tabSolve.Text = "Solve Tickets";
+            // 
+            // tabShare
+            // 
+            tabShare.BackColor = Color.LightGray;
+            tabShare.Location = new Point(4, 37);
+            tabShare.Name = "tabShare";
+            tabShare.Padding = new Padding(3);
+            tabShare.Size = new Size(1177, 439);
+            tabShare.TabIndex = 1;
+            tabShare.Text = "Share Tickets";
             // 
             // frmITSupport
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1168, 641);
+            Controls.Add(tabControl1);
             Controls.Add(label1);
             Controls.Add(pictureBox2);
             Controls.Add(lblHeader);
@@ -150,6 +187,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)Rectangle1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            tabControl1.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -163,5 +201,8 @@
         private Label lblHeader;
         private Label label1;
         private PictureBox pictureBox2;
+        private TabControl tabControl1;
+        private TabPage tabSolve;
+        private TabPage tabShare;
     }
 }

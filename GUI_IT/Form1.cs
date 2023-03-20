@@ -20,6 +20,10 @@ namespace GUI_IT
             pnlSignUp.Visible = false;
             pnlForgotPassword.Visible = false;
             regSession = new SessionRegister();
+            btnOpenEye.FlatAppearance.BorderSize = 0;
+            btnOpenEye.FlatAppearance.BorderColor = Color.FromArgb(0, 255, 255, 255);
+            btnClosedEye.FlatAppearance.BorderSize = 0;
+            btnClosedEye.FlatAppearance.BorderColor = Color.FromArgb(0, 255, 255, 255);
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -27,7 +31,7 @@ namespace GUI_IT
             string user = txtUsername.Text.ToString();
             string password = txtPassword.Text.ToString();
             int exists = Sql.Login(user, password);
-            if(exists == 0)
+            if (exists == 0)
             {
                 string role = Sql.Role(user);
                 if (role == "Admin")
@@ -46,19 +50,23 @@ namespace GUI_IT
                 }
                 else if (role == "IT Support Team")
                 {
-                    // WIP
-                    MessageBox.Show("Work In Progress!");
+                    frmITSupport ITSupportForm = new frmITSupport();
+                    this.Hide();
+                    ITSupportForm.ShowDialog();
+                    this.Close();
                 }
                 else if (role == "Report Manager")
                 {
-                    // WIP
-                    MessageBox.Show("Work In Progress!");
+                    frmReportManage ReportManageForm = new frmReportManage();
+                    this.Hide();
+                    ReportManageForm.ShowDialog();
+                    this.Close();
                 }
                 else
                     MessageBox.Show("Invalid Role! Contact System Administrator!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
-            
+
             /* if (txtUsername.Text == "admin" && txtPassword.Text == "password")
             {
                 frmAdmin adminLogIn = new frmAdmin();
@@ -124,7 +132,7 @@ namespace GUI_IT
         private void btnLoginForm_Click(object sender, EventArgs e)
         {
             pnlSignUp.Visible = false;
-            pnlForgotPassword.Visible = false;  
+            pnlForgotPassword.Visible = false;
             this.Text = "IT Help Desk Login";
             txtUsername.Text = String.Empty;
             txtPassword.Text = String.Empty;
@@ -180,6 +188,25 @@ namespace GUI_IT
         private void txtFirstName_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void FrmLogin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnOpenEye_Click(object sender, EventArgs e)
+        {
+            btnOpenEye.Visible = false;
+            btnClosedEye.Visible = true;
+            txtPassword.UseSystemPasswordChar = true;
+        }
+
+        private void btnClosedEye_Click(object sender, EventArgs e)
+        {
+            btnOpenEye.Visible = true;
+            btnClosedEye.Visible = false;
+            txtPassword.UseSystemPasswordChar = false;
         }
     }
 }

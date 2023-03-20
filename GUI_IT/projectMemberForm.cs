@@ -12,6 +12,7 @@ namespace GUI_IT
 {
     public partial class frmProjectMember : Form
     {
+        int id = 1;
         public frmProjectMember()
         {
             InitializeComponent();
@@ -82,6 +83,29 @@ namespace GUI_IT
             cbxUrgency.ResetText();
             cbxUrgency.SelectedIndex = -1;
             txtProblemDescribe.Clear();
+        }
+
+        private void btnReopenClear_Click(object sender, EventArgs e)
+        {
+            cbxReopenReason.ResetText();
+            cbxReopenReason.SelectedIndex = -1;
+            txtReopenTicket.Clear();
+            txtID.Clear();
+        }
+
+        private void pnlProblemList_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnRaise_Click(object sender, EventArgs e)
+        {
+            string Category = cbxType.Text.ToString();
+            string Description = txtProblemDescribe.Text.ToString();
+            string Priority = cbxUrgency.Text.ToString();
+            Sql.RaiseTicket(id, Category, Description, Priority);
+            id = id++;
+
         }
     }
 }

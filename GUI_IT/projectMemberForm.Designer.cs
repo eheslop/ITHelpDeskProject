@@ -37,8 +37,13 @@
             btnProblemList = new Button();
             btnOnlineHelp = new Button();
             pnlTickets = new Panel();
-            tabControl1 = new TabControl();
+            tabProjectMem = new TabControl();
+            tabMyTickets = new TabPage();
+            dataGridView1 = new DataGridView();
+            label6 = new Label();
+            label5 = new Label();
             tabRaiseTicket = new TabPage();
+            btnRaise = new Button();
             cbxType = new ComboBox();
             cbxUrgency = new ComboBox();
             lblUrgency = new Label();
@@ -46,10 +51,19 @@
             txtProblemDescribe = new TextBox();
             pictureBox2 = new PictureBox();
             btnClear = new Button();
-            button1 = new Button();
             label1 = new Label();
             label2 = new Label();
             tabReopenTicket = new TabPage();
+            txtID = new TextBox();
+            lblTicketID = new Label();
+            cbxReopenReason = new ComboBox();
+            lblReopenReason = new Label();
+            btnReopenTicket = new Button();
+            btnReopenClear = new Button();
+            txtReopenTicket = new TextBox();
+            pictureBox6 = new PictureBox();
+            label4 = new Label();
+            label3 = new Label();
             lblTicket = new Label();
             pictureBox3 = new PictureBox();
             pnlProblemList = new Panel();
@@ -57,13 +71,18 @@
             pictureBox4 = new PictureBox();
             lblOnlineHelp = new Label();
             pictureBox5 = new PictureBox();
+            lblHeader = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureLogo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Rectangle1).BeginInit();
             pnlTickets.SuspendLayout();
-            tabControl1.SuspendLayout();
+            tabProjectMem.SuspendLayout();
+            tabMyTickets.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             tabRaiseTicket.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            tabReopenTicket.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             pnlProblemList.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -170,30 +189,76 @@
             // 
             // pnlTickets
             // 
-            pnlTickets.Controls.Add(tabControl1);
+            pnlTickets.Controls.Add(tabProjectMem);
             pnlTickets.Controls.Add(lblTicket);
             pnlTickets.Controls.Add(pictureBox3);
-            pnlTickets.Location = new Point(0, 106);
+            pnlTickets.Location = new Point(0, 101);
             pnlTickets.Margin = new Padding(2);
             pnlTickets.Name = "pnlTickets";
-            pnlTickets.Size = new Size(1172, 541);
+            pnlTickets.Size = new Size(1172, 546);
             pnlTickets.TabIndex = 45;
             pnlTickets.Paint += pnlOnlineHelp_Paint;
             // 
-            // tabControl1
+            // tabProjectMem
             // 
-            tabControl1.Controls.Add(tabRaiseTicket);
-            tabControl1.Controls.Add(tabReopenTicket);
-            tabControl1.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            tabControl1.Location = new Point(0, 74);
-            tabControl1.Name = "tabControl1";
-            tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(1172, 467);
-            tabControl1.TabIndex = 50;
+            tabProjectMem.Controls.Add(tabMyTickets);
+            tabProjectMem.Controls.Add(tabRaiseTicket);
+            tabProjectMem.Controls.Add(tabReopenTicket);
+            tabProjectMem.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            tabProjectMem.Location = new Point(-8, 59);
+            tabProjectMem.Name = "tabProjectMem";
+            tabProjectMem.SelectedIndex = 0;
+            tabProjectMem.Size = new Size(1186, 487);
+            tabProjectMem.TabIndex = 50;
+            // 
+            // tabMyTickets
+            // 
+            tabMyTickets.BackColor = Color.LightGray;
+            tabMyTickets.Controls.Add(dataGridView1);
+            tabMyTickets.Controls.Add(label6);
+            tabMyTickets.Controls.Add(label5);
+            tabMyTickets.Location = new Point(4, 37);
+            tabMyTickets.Name = "tabMyTickets";
+            tabMyTickets.Size = new Size(1178, 446);
+            tabMyTickets.TabIndex = 2;
+            tabMyTickets.Text = "My Tickets";
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(22, 120);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 62;
+            dataGridView1.RowTemplate.Height = 33;
+            dataGridView1.Size = new Size(1116, 266);
+            dataGridView1.TabIndex = 55;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.BackColor = Color.Transparent;
+            label6.Font = new Font("Microsoft YaHei UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.Location = new Point(13, 44);
+            label6.Name = "label6";
+            label6.Size = new Size(1097, 60);
+            label6.TabIndex = 54;
+            label6.Text = "Below is a table documenting the information of the tickets that you have raised. This includes the ID, \r\nurgency level, problem type and description of problem.";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.BackColor = Color.Transparent;
+            label5.Font = new Font("Segoe UI", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label5.Location = new Point(10, 3);
+            label5.Name = "label5";
+            label5.Size = new Size(156, 38);
+            label5.TabIndex = 53;
+            label5.Text = "My Tickets";
             // 
             // tabRaiseTicket
             // 
             tabRaiseTicket.BackColor = Color.LightGray;
+            tabRaiseTicket.Controls.Add(btnRaise);
             tabRaiseTicket.Controls.Add(cbxType);
             tabRaiseTicket.Controls.Add(cbxUrgency);
             tabRaiseTicket.Controls.Add(lblUrgency);
@@ -201,15 +266,28 @@
             tabRaiseTicket.Controls.Add(txtProblemDescribe);
             tabRaiseTicket.Controls.Add(pictureBox2);
             tabRaiseTicket.Controls.Add(btnClear);
-            tabRaiseTicket.Controls.Add(button1);
             tabRaiseTicket.Controls.Add(label1);
             tabRaiseTicket.Controls.Add(label2);
             tabRaiseTicket.Location = new Point(4, 37);
             tabRaiseTicket.Name = "tabRaiseTicket";
             tabRaiseTicket.Padding = new Padding(3);
-            tabRaiseTicket.Size = new Size(1164, 426);
+            tabRaiseTicket.Size = new Size(1178, 446);
             tabRaiseTicket.TabIndex = 0;
-            tabRaiseTicket.Text = "Raise Ticket";
+            tabRaiseTicket.Text = "Raise Tickets";
+            // 
+            // btnRaise
+            // 
+            btnRaise.BackColor = Color.FromArgb(64, 0, 0);
+            btnRaise.FlatStyle = FlatStyle.Popup;
+            btnRaise.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnRaise.ForeColor = Color.White;
+            btnRaise.Location = new Point(1015, 387);
+            btnRaise.Name = "btnRaise";
+            btnRaise.Size = new Size(140, 40);
+            btnRaise.TabIndex = 61;
+            btnRaise.Text = "Raise Ticket";
+            btnRaise.UseVisualStyleBackColor = false;
+            btnRaise.Click += btnRaise_Click;
             // 
             // cbxType
             // 
@@ -217,7 +295,7 @@
             cbxType.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
             cbxType.FormattingEnabled = true;
             cbxType.Items.AddRange(new object[] { "Type 1", "Type 2", "Type 3", "Type 4", "Other" });
-            cbxType.Location = new Point(13, 141);
+            cbxType.Location = new Point(13, 151);
             cbxType.Name = "cbxType";
             cbxType.Size = new Size(384, 36);
             cbxType.TabIndex = 60;
@@ -228,7 +306,7 @@
             cbxUrgency.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
             cbxUrgency.FormattingEnabled = true;
             cbxUrgency.Items.AddRange(new object[] { "Low", "Medium", "High" });
-            cbxUrgency.Location = new Point(491, 141);
+            cbxUrgency.Location = new Point(491, 151);
             cbxUrgency.Name = "cbxUrgency";
             cbxUrgency.Size = new Size(383, 36);
             cbxUrgency.TabIndex = 59;
@@ -236,7 +314,7 @@
             // lblUrgency
             // 
             lblUrgency.AutoSize = true;
-            lblUrgency.Location = new Point(491, 110);
+            lblUrgency.Location = new Point(491, 120);
             lblUrgency.Name = "lblUrgency";
             lblUrgency.Size = new Size(381, 28);
             lblUrgency.TabIndex = 58;
@@ -245,7 +323,7 @@
             // lblType
             // 
             lblType.AutoSize = true;
-            lblType.Location = new Point(13, 110);
+            lblType.Location = new Point(13, 120);
             lblType.Name = "lblType";
             lblType.Size = new Size(384, 28);
             lblType.TabIndex = 57;
@@ -254,11 +332,11 @@
             // txtProblemDescribe
             // 
             txtProblemDescribe.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            txtProblemDescribe.Location = new Point(25, 209);
-            txtProblemDescribe.MaxLength = 250;
+            txtProblemDescribe.Location = new Point(25, 232);
+            txtProblemDescribe.MaxLength = 500;
             txtProblemDescribe.Multiline = true;
             txtProblemDescribe.Name = "txtProblemDescribe";
-            txtProblemDescribe.PlaceholderText = "Enter a description of your problem here in 250 characters or less.";
+            txtProblemDescribe.PlaceholderText = "Enter a description of your problem here in 500 characters or less.";
             txtProblemDescribe.Size = new Size(966, 190);
             txtProblemDescribe.TabIndex = 56;
             // 
@@ -266,10 +344,10 @@
             // 
             pictureBox2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox2.BackColor = Color.Gray;
-            pictureBox2.Location = new Point(13, 198);
+            pictureBox2.Location = new Point(13, 221);
             pictureBox2.Margin = new Padding(2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(989, 210);
+            pictureBox2.Size = new Size(991, 210);
             pictureBox2.TabIndex = 55;
             pictureBox2.TabStop = false;
             // 
@@ -279,33 +357,20 @@
             btnClear.FlatStyle = FlatStyle.Popup;
             btnClear.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnClear.ForeColor = Color.White;
-            btnClear.Location = new Point(1015, 302);
+            btnClear.Location = new Point(1015, 333);
             btnClear.Name = "btnClear";
-            btnClear.Size = new Size(135, 44);
+            btnClear.Size = new Size(140, 40);
             btnClear.TabIndex = 54;
             btnClear.Text = "Clear";
             btnClear.UseVisualStyleBackColor = false;
             btnClear.Click += btnClear_Click;
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.FromArgb(64, 0, 0);
-            button1.FlatStyle = FlatStyle.Popup;
-            button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(1015, 361);
-            button1.Name = "button1";
-            button1.Size = new Size(135, 44);
-            button1.TabIndex = 53;
-            button1.Text = "Raise Ticket";
-            button1.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Microsoft YaHei UI", 8F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(-2, 35);
+            label1.Location = new Point(3, 35);
             label1.Name = "label1";
             label1.Size = new Size(1169, 63);
             label1.TabIndex = 52;
@@ -316,7 +381,7 @@
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label2.Location = new Point(0, 3);
+            label2.Location = new Point(4, 3);
             label2.Name = "label2";
             label2.Size = new Size(204, 32);
             label2.TabIndex = 51;
@@ -325,12 +390,133 @@
             // tabReopenTicket
             // 
             tabReopenTicket.BackColor = Color.LightGray;
+            tabReopenTicket.Controls.Add(txtID);
+            tabReopenTicket.Controls.Add(lblTicketID);
+            tabReopenTicket.Controls.Add(cbxReopenReason);
+            tabReopenTicket.Controls.Add(lblReopenReason);
+            tabReopenTicket.Controls.Add(btnReopenTicket);
+            tabReopenTicket.Controls.Add(btnReopenClear);
+            tabReopenTicket.Controls.Add(txtReopenTicket);
+            tabReopenTicket.Controls.Add(pictureBox6);
+            tabReopenTicket.Controls.Add(label4);
+            tabReopenTicket.Controls.Add(label3);
             tabReopenTicket.Location = new Point(4, 37);
             tabReopenTicket.Name = "tabReopenTicket";
             tabReopenTicket.Padding = new Padding(3);
-            tabReopenTicket.Size = new Size(1164, 423);
+            tabReopenTicket.Size = new Size(1178, 446);
             tabReopenTicket.TabIndex = 1;
-            tabReopenTicket.Text = "Re-open Ticket";
+            tabReopenTicket.Text = "Re-open Tickets";
+            // 
+            // txtID
+            // 
+            txtID.Anchor = AnchorStyles.None;
+            txtID.Location = new Point(17, 233);
+            txtID.Margin = new Padding(4);
+            txtID.Name = "txtID";
+            txtID.Size = new Size(405, 34);
+            txtID.TabIndex = 67;
+            // 
+            // lblTicketID
+            // 
+            lblTicketID.AutoSize = true;
+            lblTicketID.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            lblTicketID.Location = new Point(15, 201);
+            lblTicketID.Name = "lblTicketID";
+            lblTicketID.Size = new Size(407, 25);
+            lblTicketID.TabIndex = 66;
+            lblTicketID.Text = "Enter the ID of the ticket you want to re-open:";
+            // 
+            // cbxReopenReason
+            // 
+            cbxReopenReason.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbxReopenReason.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            cbxReopenReason.FormattingEnabled = true;
+            cbxReopenReason.Items.AddRange(new object[] { "Reason 1", "Reason 2", "Reason 3", "Reason 4", "Reason 5", "None of the above" });
+            cbxReopenReason.Location = new Point(11, 157);
+            cbxReopenReason.Name = "cbxReopenReason";
+            cbxReopenReason.Size = new Size(742, 36);
+            cbxReopenReason.TabIndex = 64;
+            // 
+            // lblReopenReason
+            // 
+            lblReopenReason.AutoSize = true;
+            lblReopenReason.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            lblReopenReason.Location = new Point(10, 127);
+            lblReopenReason.Name = "lblReopenReason";
+            lblReopenReason.Size = new Size(654, 25);
+            lblReopenReason.TabIndex = 63;
+            lblReopenReason.Text = "Select the most accurate description of why you are re-opening your ticket:";
+            // 
+            // btnReopenTicket
+            // 
+            btnReopenTicket.BackColor = Color.FromArgb(64, 0, 0);
+            btnReopenTicket.FlatStyle = FlatStyle.Popup;
+            btnReopenTicket.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnReopenTicket.ForeColor = Color.White;
+            btnReopenTicket.Location = new Point(1011, 393);
+            btnReopenTicket.Name = "btnReopenTicket";
+            btnReopenTicket.Size = new Size(150, 40);
+            btnReopenTicket.TabIndex = 62;
+            btnReopenTicket.Text = "Re-open Ticket";
+            btnReopenTicket.UseVisualStyleBackColor = false;
+            // 
+            // btnReopenClear
+            // 
+            btnReopenClear.BackColor = Color.FromArgb(64, 0, 0);
+            btnReopenClear.FlatStyle = FlatStyle.Popup;
+            btnReopenClear.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnReopenClear.ForeColor = Color.White;
+            btnReopenClear.Location = new Point(1011, 351);
+            btnReopenClear.Name = "btnReopenClear";
+            btnReopenClear.Size = new Size(150, 36);
+            btnReopenClear.TabIndex = 58;
+            btnReopenClear.Text = "Clear";
+            btnReopenClear.UseVisualStyleBackColor = false;
+            btnReopenClear.Click += btnReopenClear_Click;
+            // 
+            // txtReopenTicket
+            // 
+            txtReopenTicket.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            txtReopenTicket.Location = new Point(26, 292);
+            txtReopenTicket.MaxLength = 500;
+            txtReopenTicket.Multiline = true;
+            txtReopenTicket.Name = "txtReopenTicket";
+            txtReopenTicket.PlaceholderText = "Please explain your reasoning in 500 characters or less.";
+            txtReopenTicket.Size = new Size(968, 136);
+            txtReopenTicket.TabIndex = 57;
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            pictureBox6.BackColor = Color.Gray;
+            pictureBox6.Location = new Point(13, 281);
+            pictureBox6.Margin = new Padding(2);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(993, 157);
+            pictureBox6.TabIndex = 56;
+            pictureBox6.TabStop = false;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.BackColor = Color.Transparent;
+            label4.Font = new Font("Microsoft YaHei UI", 7F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Location = new Point(2, 34);
+            label4.Name = "label4";
+            label4.Size = new Size(1173, 80);
+            label4.TabIndex = 53;
+            label4.Text = resources.GetString("label4.Text");
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label3.Location = new Point(3, 3);
+            label3.Name = "label3";
+            label3.Size = new Size(206, 32);
+            label3.TabIndex = 52;
+            label3.Text = "Re-Raise a Ticket";
             // 
             // lblTicket
             // 
@@ -361,10 +547,10 @@
             // 
             pnlProblemList.Controls.Add(lblProblem);
             pnlProblemList.Controls.Add(pictureBox4);
-            pnlProblemList.Location = new Point(-4, 104);
+            pnlProblemList.Location = new Point(-4, 101);
             pnlProblemList.Margin = new Padding(2);
             pnlProblemList.Name = "pnlProblemList";
-            pnlProblemList.Size = new Size(1176, 541);
+            pnlProblemList.Size = new Size(1176, 540);
             pnlProblemList.TabIndex = 45;
             // 
             // lblProblem
@@ -413,9 +599,22 @@
             pictureBox5.Location = new Point(-1, 104);
             pictureBox5.Margin = new Padding(2);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(1171, 128);
+            pictureBox5.Size = new Size(1171, 120);
             pictureBox5.TabIndex = 46;
             pictureBox5.TabStop = false;
+            // 
+            // lblHeader
+            // 
+            lblHeader.AutoSize = true;
+            lblHeader.BackColor = Color.FromArgb(64, 0, 0);
+            lblHeader.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblHeader.ForeColor = Color.White;
+            lblHeader.Location = new Point(0, 4);
+            lblHeader.Margin = new Padding(2, 0, 2, 0);
+            lblHeader.Name = "lblHeader";
+            lblHeader.Size = new Size(307, 29);
+            lblHeader.TabIndex = 48;
+            lblHeader.Text = "Red Agents IT Help Desk";
             // 
             // frmProjectMember
             // 
@@ -423,6 +622,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1168, 641);
             Controls.Add(pnlTickets);
+            Controls.Add(lblHeader);
             Controls.Add(pnlProblemList);
             Controls.Add(lblOnlineHelp);
             Controls.Add(pictureBox5);
@@ -442,10 +642,16 @@
             ((System.ComponentModel.ISupportInitialize)Rectangle1).EndInit();
             pnlTickets.ResumeLayout(false);
             pnlTickets.PerformLayout();
-            tabControl1.ResumeLayout(false);
+            tabProjectMem.ResumeLayout(false);
+            tabMyTickets.ResumeLayout(false);
+            tabMyTickets.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             tabRaiseTicket.ResumeLayout(false);
             tabRaiseTicket.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            tabReopenTicket.ResumeLayout(false);
+            tabReopenTicket.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             pnlProblemList.ResumeLayout(false);
             pnlProblemList.PerformLayout();
@@ -475,9 +681,8 @@
         private PictureBox pictureBox3;
         private Label lblTicket;
         private Label lblProblem;
-        private TabControl tabControl1;
+        private TabControl tabProjectMem;
         private TabPage tabRaiseTicket;
-        private Button button1;
         private Label label1;
         private Label label2;
         private TabPage tabReopenTicket;
@@ -490,5 +695,21 @@
         private ComboBox cbxUrgency;
         private Label lblUrgency;
         private Label lblType;
+        private Label lblHeader;
+        private Button btnRaise;
+        private Label label4;
+        private Label label3;
+        private TextBox txtReopenTicket;
+        private PictureBox pictureBox6;
+        private Button btnReopenTicket;
+        private Button btnReopenClear;
+        private ComboBox cbxReopenReason;
+        private Label lblReopenReason;
+        private Label lblTicketID;
+        private TextBox txtID;
+        private TabPage tabMyTickets;
+        private Label label6;
+        private Label label5;
+        private DataGridView dataGridView1;
     }
 }

@@ -41,6 +41,10 @@
             label1 = new Label();
             pictureBox2 = new PictureBox();
             pnlReportGenerate = new Panel();
+            tabReportGeneration = new TabControl();
+            tabExisting = new TabPage();
+            tabSolved = new TabPage();
+            tabUnsolved = new TabPage();
             lblReportGen = new Label();
             pictureBox3 = new PictureBox();
             btnSubmit = new Button();
@@ -51,6 +55,7 @@
             ((System.ComponentModel.ISupportInitialize)DGVR).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             pnlReportGenerate.SuspendLayout();
+            tabReportGeneration.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
@@ -156,6 +161,7 @@
             // 
             // DGVR
             // 
+            DGVR.AllowUserToDeleteRows = false;
             DGVR.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             DGVR.Location = new Point(15, 249);
             DGVR.Margin = new Padding(4);
@@ -207,14 +213,57 @@
             // pnlReportGenerate
             // 
             pnlReportGenerate.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            pnlReportGenerate.Controls.Add(tabReportGeneration);
             pnlReportGenerate.Controls.Add(lblReportGen);
             pnlReportGenerate.Controls.Add(pictureBox3);
-            pnlReportGenerate.Location = new Point(-4, 439);
+            pnlReportGenerate.Location = new Point(-4, 109);
             pnlReportGenerate.Margin = new Padding(2);
             pnlReportGenerate.Name = "pnlReportGenerate";
-            pnlReportGenerate.Size = new Size(1177, 202);
+            pnlReportGenerate.Size = new Size(1177, 531);
             pnlReportGenerate.TabIndex = 15;
             pnlReportGenerate.Paint += pnlReportGenerate_Paint;
+            // 
+            // tabReportGeneration
+            // 
+            tabReportGeneration.Controls.Add(tabExisting);
+            tabReportGeneration.Controls.Add(tabSolved);
+            tabReportGeneration.Controls.Add(tabUnsolved);
+            tabReportGeneration.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            tabReportGeneration.Location = new Point(0, 79);
+            tabReportGeneration.Name = "tabReportGeneration";
+            tabReportGeneration.SelectedIndex = 0;
+            tabReportGeneration.Size = new Size(1184, 484);
+            tabReportGeneration.TabIndex = 18;
+            // 
+            // tabExisting
+            // 
+            tabExisting.BackColor = Color.LightGray;
+            tabExisting.Location = new Point(4, 37);
+            tabExisting.Name = "tabExisting";
+            tabExisting.Padding = new Padding(3);
+            tabExisting.Size = new Size(1176, 443);
+            tabExisting.TabIndex = 0;
+            tabExisting.Text = "Existing Tickets";
+            tabExisting.Click += tabExisting_Click;
+            // 
+            // tabSolved
+            // 
+            tabSolved.BackColor = Color.LightGray;
+            tabSolved.Location = new Point(4, 37);
+            tabSolved.Name = "tabSolved";
+            tabSolved.Padding = new Padding(3);
+            tabSolved.Size = new Size(1176, 443);
+            tabSolved.TabIndex = 1;
+            tabSolved.Text = "Solved Tickets";
+            // 
+            // tabUnsolved
+            // 
+            tabUnsolved.BackColor = Color.LightGray;
+            tabUnsolved.Location = new Point(4, 37);
+            tabUnsolved.Name = "tabUnsolved";
+            tabUnsolved.Size = new Size(1176, 443);
+            tabUnsolved.TabIndex = 2;
+            tabUnsolved.Text = "Unsolved Tickets";
             // 
             // lblReportGen
             // 
@@ -223,7 +272,7 @@
             lblReportGen.BackColor = Color.FromArgb(64, 0, 0);
             lblReportGen.Font = new Font("Microsoft YaHei UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblReportGen.ForeColor = Color.White;
-            lblReportGen.Location = new Point(413, 33);
+            lblReportGen.Location = new Point(413, 12);
             lblReportGen.Margin = new Padding(2, 0, 2, 0);
             lblReportGen.Name = "lblReportGen";
             lblReportGen.Size = new Size(357, 47);
@@ -237,7 +286,7 @@
             pictureBox3.Location = new Point(-5, 0);
             pictureBox3.Margin = new Padding(2);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(1179, 125);
+            pictureBox3.Size = new Size(1179, 74);
             pictureBox3.TabIndex = 15;
             pictureBox3.TabStop = false;
             // 
@@ -253,7 +302,6 @@
             btnSubmit.TabIndex = 51;
             btnSubmit.Text = "Submit Changes";
             btnSubmit.UseVisualStyleBackColor = false;
-            btnSubmit.Click += btnSubmit_Click;
             // 
             // btnClear
             // 
@@ -299,6 +347,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             pnlReportGenerate.ResumeLayout(false);
             pnlReportGenerate.PerformLayout();
+            tabReportGeneration.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -322,5 +371,9 @@
         private PictureBox pictureBox3;
         private Button btnSubmit;
         private Button btnClear;
+        private TabControl tabReportGeneration;
+        private TabPage tabExisting;
+        private TabPage tabSolved;
+        private TabPage tabUnsolved;
     }
 }

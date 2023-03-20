@@ -152,6 +152,14 @@ namespace GUI_IT
             return dt;
         }
 
-        
+        public static void RaiseTicket(int id, string Category, string Description, string Priority)
+        {
+            SqlConnection con = Connect();
+            string x = "Pending";
+            String query = "INSERT INTO Tickets(id, Category, Description, Status, Priority) VALUES('" + id + "', '" + Category.ToString() + "', '" + Description.ToString() + "', '" +x+ "', '" + Priority.ToString() + "');";
+            SqlCommand cmd = new SqlCommand(query, con);
+            cmd.ExecuteNonQuery();
+            con.Close();
+        }
     }
 }
