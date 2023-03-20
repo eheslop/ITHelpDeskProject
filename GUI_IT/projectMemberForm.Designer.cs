@@ -230,7 +230,7 @@
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 62;
             dataGridView1.RowTemplate.Height = 33;
-            dataGridView1.Size = new Size(1116, 266);
+            dataGridView1.Size = new Size(1116, 290);
             dataGridView1.TabIndex = 55;
             // 
             // label6
@@ -240,9 +240,9 @@
             label6.Font = new Font("Microsoft YaHei UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
             label6.Location = new Point(13, 44);
             label6.Name = "label6";
-            label6.Size = new Size(1097, 60);
+            label6.Size = new Size(1096, 60);
             label6.TabIndex = 54;
-            label6.Text = "Below is a table documenting the information of the tickets that you have raised. This includes the ID, \r\nurgency level, problem type and description of problem.";
+            label6.Text = resources.GetString("label6.Text");
             // 
             // label5
             // 

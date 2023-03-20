@@ -16,6 +16,9 @@ namespace GUI_IT
             InitializeComponent();
             pnlSignUp.Visible = false;
             pnlForgotPassword.Visible = false;
+            lblIncorrectLogin.Visible = false;
+            lblInvalidRole.Visible = false;
+            lblAlreadyExists.Visible = false;
             regSession = new SessionRegister();
             btnOpenEye.FlatAppearance.BorderSize = 0;
             btnOpenEye.FlatAppearance.BorderColor = Color.FromArgb(0, 255, 255, 255);
@@ -60,7 +63,8 @@ namespace GUI_IT
                     this.Close();
                 }
                 else
-                    MessageBox.Show("Invalid Role! Contact System Administrator!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    //MessageBox.Show("Invalid Role! Contact System Administrator!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    lblInvalidRole.Visible = true;
 
             }
 
@@ -81,7 +85,8 @@ namespace GUI_IT
             */
             else
             {
-                MessageBox.Show("Incorrect Login Information", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MessageBox.Show("Incorrect Login Information", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                lblIncorrectLogin.Visible = true;
             }
         }
 
@@ -115,7 +120,8 @@ namespace GUI_IT
             }
             else
             {
-                MessageBox.Show("Account Already Exists!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MessageBox.Show("Account Already Exists!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                lblAlreadyExists.Visible = true;
             }
         }
 
@@ -123,6 +129,9 @@ namespace GUI_IT
         {
             pnlSignUp.Visible = false;
             pnlForgotPassword.Visible = false;
+            lblIncorrectLogin.Visible = false;
+            lblInvalidRole.Visible = false;
+            lblAlreadyExists.Visible = false;
             this.Text = "IT Help Desk Login";
             txtUsername.Text = String.Empty;
             txtPassword.Text = String.Empty;
@@ -132,6 +141,9 @@ namespace GUI_IT
         {
             pnlSignUp.Visible = true;
             pnlForgotPassword.Visible = false;
+            lblIncorrectLogin.Visible = false;
+            lblInvalidRole.Visible = false;
+            lblAlreadyExists.Visible = false;
             this.Text = "IT Help Desk Registration";
             txtEmail.Text = String.Empty;
             txtFirstName.Text = String.Empty;
@@ -167,6 +179,9 @@ namespace GUI_IT
         {
             pnlForgotPassword.Visible = true;
             pnlSignUp.Visible = false;
+            lblIncorrectLogin.Visible = false;
+            lblInvalidRole.Visible = false;
+            lblAlreadyExists.Visible = false;
             this.Text = "IT Help Desk Forgot Password";
         }
 

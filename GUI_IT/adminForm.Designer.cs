@@ -229,10 +229,10 @@
             tabReportGeneration.Controls.Add(tabSolved);
             tabReportGeneration.Controls.Add(tabUnsolved);
             tabReportGeneration.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            tabReportGeneration.Location = new Point(0, 79);
+            tabReportGeneration.Location = new Point(0, 77);
             tabReportGeneration.Name = "tabReportGeneration";
             tabReportGeneration.SelectedIndex = 0;
-            tabReportGeneration.Size = new Size(1184, 484);
+            tabReportGeneration.Size = new Size(1184, 486);
             tabReportGeneration.TabIndex = 18;
             // 
             // tabExisting
@@ -241,7 +241,7 @@
             tabExisting.Location = new Point(4, 37);
             tabExisting.Name = "tabExisting";
             tabExisting.Padding = new Padding(3);
-            tabExisting.Size = new Size(1176, 443);
+            tabExisting.Size = new Size(1176, 445);
             tabExisting.TabIndex = 0;
             tabExisting.Text = "Existing Tickets";
             tabExisting.Click += tabExisting_Click;

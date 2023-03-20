@@ -12,7 +12,7 @@ namespace GUI_IT
 {
     public partial class frmProjectMember : Form
     {
-        int id = 1;
+        int id = 3;
         public frmProjectMember()
         {
             InitializeComponent();
@@ -104,8 +104,12 @@ namespace GUI_IT
             string Description = txtProblemDescribe.Text.ToString();
             string Priority = cbxUrgency.Text.ToString();
             Sql.RaiseTicket(id, Category, Description, Priority);
-            id = id++;
-
+            id++;
+            cbxType.ResetText();
+            cbxType.SelectedIndex = -1;
+            cbxUrgency.ResetText();
+            cbxUrgency.SelectedIndex = -1;
+            txtProblemDescribe.Clear();
         }
     }
 }

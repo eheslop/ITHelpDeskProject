@@ -38,12 +38,13 @@
             pictureBox2 = new PictureBox();
             tabControl1 = new TabControl();
             tabMonitor = new TabPage();
+            btnReOpened = new Button();
+            btnSolved = new Button();
+            btnUnsolved = new Button();
+            lblMonitor = new Label();
             DGVT = new DataGridView();
             tabAssign = new TabPage();
-            lblMonitor = new Label();
-            btnUnsolved = new Button();
-            btnSolved = new Button();
-            btnReOpened = new Button();
+            lblAssign = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureLogo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Rectangle1).BeginInit();
@@ -51,6 +52,7 @@
             tabControl1.SuspendLayout();
             tabMonitor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)DGVT).BeginInit();
+            tabAssign.SuspendLayout();
             SuspendLayout();
             // 
             // pictureLogo
@@ -168,6 +170,56 @@
             tabMonitor.TabIndex = 0;
             tabMonitor.Text = "Monitor Tickets";
             // 
+            // btnReOpened
+            // 
+            btnReOpened.BackColor = Color.FromArgb(64, 0, 0);
+            btnReOpened.FlatStyle = FlatStyle.Popup;
+            btnReOpened.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            btnReOpened.ForeColor = Color.White;
+            btnReOpened.Location = new Point(553, 44);
+            btnReOpened.Name = "btnReOpened";
+            btnReOpened.Size = new Size(220, 40);
+            btnReOpened.TabIndex = 57;
+            btnReOpened.Text = "Re-Opened Tickets";
+            btnReOpened.UseVisualStyleBackColor = false;
+            // 
+            // btnSolved
+            // 
+            btnSolved.BackColor = Color.FromArgb(64, 0, 0);
+            btnSolved.FlatStyle = FlatStyle.Popup;
+            btnSolved.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSolved.ForeColor = Color.White;
+            btnSolved.Location = new Point(281, 44);
+            btnSolved.Name = "btnSolved";
+            btnSolved.Size = new Size(220, 40);
+            btnSolved.TabIndex = 56;
+            btnSolved.Text = "Solved Tickets";
+            btnSolved.UseVisualStyleBackColor = false;
+            // 
+            // btnUnsolved
+            // 
+            btnUnsolved.BackColor = Color.FromArgb(64, 0, 0);
+            btnUnsolved.FlatStyle = FlatStyle.Popup;
+            btnUnsolved.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            btnUnsolved.ForeColor = Color.White;
+            btnUnsolved.Location = new Point(13, 44);
+            btnUnsolved.Name = "btnUnsolved";
+            btnUnsolved.Size = new Size(220, 40);
+            btnUnsolved.TabIndex = 55;
+            btnUnsolved.Text = "Unsolved Tickets";
+            btnUnsolved.UseVisualStyleBackColor = false;
+            // 
+            // lblMonitor
+            // 
+            lblMonitor.AutoSize = true;
+            lblMonitor.BackColor = Color.Transparent;
+            lblMonitor.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            lblMonitor.Location = new Point(2, 3);
+            lblMonitor.Name = "lblMonitor";
+            lblMonitor.Size = new Size(189, 32);
+            lblMonitor.TabIndex = 54;
+            lblMonitor.Text = "Monitor Tickets";
+            // 
             // DGVT
             // 
             DGVT.AllowUserToAddRows = false;
@@ -185,6 +237,7 @@
             // tabAssign
             // 
             tabAssign.BackColor = Color.LightGray;
+            tabAssign.Controls.Add(lblAssign);
             tabAssign.Location = new Point(4, 37);
             tabAssign.Name = "tabAssign";
             tabAssign.Padding = new Padding(3);
@@ -192,55 +245,16 @@
             tabAssign.TabIndex = 1;
             tabAssign.Text = "Assign Tickets";
             // 
-            // lblMonitor
+            // lblAssign
             // 
-            lblMonitor.AutoSize = true;
-            lblMonitor.BackColor = Color.Transparent;
-            lblMonitor.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            lblMonitor.Location = new Point(2, 3);
-            lblMonitor.Name = "lblMonitor";
-            lblMonitor.Size = new Size(189, 32);
-            lblMonitor.TabIndex = 54;
-            lblMonitor.Text = "Monitor Tickets";
-            // 
-            // btnUnsolved
-            // 
-            btnUnsolved.BackColor = Color.FromArgb(64, 0, 0);
-            btnUnsolved.FlatStyle = FlatStyle.Popup;
-            btnUnsolved.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            btnUnsolved.ForeColor = Color.White;
-            btnUnsolved.Location = new Point(13, 44);
-            btnUnsolved.Name = "btnUnsolved";
-            btnUnsolved.Size = new Size(191, 40);
-            btnUnsolved.TabIndex = 55;
-            btnUnsolved.Text = "Unsolved Tickets";
-            btnUnsolved.UseVisualStyleBackColor = false;
-            // 
-            // btnSolved
-            // 
-            btnSolved.BackColor = Color.FromArgb(64, 0, 0);
-            btnSolved.FlatStyle = FlatStyle.Popup;
-            btnSolved.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            btnSolved.ForeColor = Color.White;
-            btnSolved.Location = new Point(253, 44);
-            btnSolved.Name = "btnSolved";
-            btnSolved.Size = new Size(164, 40);
-            btnSolved.TabIndex = 56;
-            btnSolved.Text = "Solved Tickets";
-            btnSolved.UseVisualStyleBackColor = false;
-            // 
-            // btnReOpened
-            // 
-            btnReOpened.BackColor = Color.FromArgb(64, 0, 0);
-            btnReOpened.FlatStyle = FlatStyle.Popup;
-            btnReOpened.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            btnReOpened.ForeColor = Color.White;
-            btnReOpened.Location = new Point(468, 43);
-            btnReOpened.Name = "btnReOpened";
-            btnReOpened.Size = new Size(205, 40);
-            btnReOpened.TabIndex = 57;
-            btnReOpened.Text = "Re-Opened Tickets";
-            btnReOpened.UseVisualStyleBackColor = false;
+            lblAssign.AutoSize = true;
+            lblAssign.BackColor = Color.Transparent;
+            lblAssign.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            lblAssign.Location = new Point(2, 2);
+            lblAssign.Name = "lblAssign";
+            lblAssign.Size = new Size(174, 32);
+            lblAssign.TabIndex = 55;
+            lblAssign.Text = "Assign Tickets";
             // 
             // frmReportManage
             // 
@@ -266,6 +280,8 @@
             tabMonitor.ResumeLayout(false);
             tabMonitor.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)DGVT).EndInit();
+            tabAssign.ResumeLayout(false);
+            tabAssign.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -287,5 +303,6 @@
         private Button btnReOpened;
         private Button btnSolved;
         private Button btnUnsolved;
+        private Label lblAssign;
     }
 }
