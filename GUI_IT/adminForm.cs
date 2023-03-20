@@ -1,4 +1,5 @@
 ﻿using Microsoft.Data.SqlClient;
+using Microsoft.Identity.Client;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,6 +16,8 @@ namespace GUI_IT
     {
         private Rectangle buttonOriginalRectangle;
         private Rectangle originalFormSize;
+        private DataTable dt;
+        private SqlDataAdapter da;
 
         public frmAdmin()
         {
@@ -104,7 +107,9 @@ namespace GUI_IT
             DataTable dt = new DataTable();
             da.Fill(dt);
             DGVR.DataSource = dt;
+            DGVR.EditMode = DataGridViewEditMode.EditOnEnter;
             con.Close();
+            
         }
 
         private void lblHome_Click(object sender, EventArgs e)
@@ -116,6 +121,27 @@ namespace GUI_IT
         {
 
         }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+       
+            SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
+            builder.DataSource = "redagents.database.windows.net";
+            builder.UserID = "kwekwe";
+            builder.Password = "Password1!";
+            builder.InitialCatalog = "red_Agents";
+            SqlConnection con = new SqlConnection(builder.ConnectionString);
+            con.Open();
+            DataTable dt = new DataTable();
+            string query = "UPDATE Registration";
+            SqlDataAdapter da = new SqlDataAdapter(query, con);
+            da.Update(dt);
+            this.DGVR.Refresh();
+
+
+
+        }
+
     }
 
 }

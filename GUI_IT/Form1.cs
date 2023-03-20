@@ -5,6 +5,9 @@ using System.Text;
 using MailKit.Net.Smtp;
 using MailKit;
 using MimeKit;
+using System.Security.Cryptography.X509Certificates;
+using System.Net.Mail;
+using Org.BouncyCastle.Asn1.Crmf;
 
 namespace GUI_IT
 {
@@ -96,9 +99,9 @@ namespace GUI_IT
             string email = txtEmail.Text.ToString();
             string role = cboUserType.Text.ToString();
             string user = name[0].ToString() + txtLastName.Text.ToString();
-
             Boolean accountExists = Sql.Exists(user);
-            if (accountExists == false)
+            Boolean validEmail = Email.isValid(email);
+            if (accountExists == false && validEmail == true)
             {
                 Random res = new Random();
                 String str = "ABCDEFGHIJOPQRSTUVWXsYZ0123489!@#$%^&*?><abcdefghijklmnopqrswxyz0123456789";
@@ -111,17 +114,24 @@ namespace GUI_IT
                 }
                 string pass = randomstring.ToString();
                 Sql.Register(user, name, pass, email, role);
-                Email.regEmail(user);
+                Email.sendEmail("Registration", user);
+                Email.sendEmail("Registration Accepted", user);
+                Email.sendEmail("Registration Denied", user);
+                Email.sendEmail("Raised Ticket", user, 1);
                 MessageBox.Show("Account Created!\nCheck your email for your login credentials!", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                
                 pnlSignUp.Visible = false;
                 //pnlForgotPassword.Visible = false;
 
             }
-            else
+            else if (accountExists == true)
             {
                 //MessageBox.Show("Account Already Exists!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 lblAlreadyExists.Visible = true;
+            }
+            else
+            {
+                MessageBox.Show("Invalid Email!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
