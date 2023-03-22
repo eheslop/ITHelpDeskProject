@@ -145,7 +145,8 @@ namespace GUI_IT
 
         private void btnApproveDeny_Click(object sender, EventArgs e)
         {
-
+            frmstatusUpdate UpdateUserStatus = new frmstatusUpdate();
+            UpdateUserStatus.ShowDialog();
         }
     }
 

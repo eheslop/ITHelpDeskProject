@@ -41,6 +41,12 @@
             pnlReportGenerate = new Panel();
             tabReportGeneration = new TabControl();
             tabHome = new TabPage();
+            pictureBox13 = new PictureBox();
+            pictureBox12 = new PictureBox();
+            pictureBox11 = new PictureBox();
+            pictureBox10 = new PictureBox();
+            pictureBox9 = new PictureBox();
+            pictureBox8 = new PictureBox();
             lblUser = new Label();
             lblWelcomeMessage = new Label();
             lblDescribeHome = new Label();
@@ -54,12 +60,6 @@
             pictureBox4 = new PictureBox();
             lblLoggedIn = new Label();
             pictureBox5 = new PictureBox();
-            pictureBox13 = new PictureBox();
-            pictureBox12 = new PictureBox();
-            pictureBox11 = new PictureBox();
-            pictureBox10 = new PictureBox();
-            pictureBox9 = new PictureBox();
-            pictureBox8 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Rectangle1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)DGVR).BeginInit();
@@ -67,15 +67,15 @@
             pnlReportGenerate.SuspendLayout();
             tabReportGeneration.SuspendLayout();
             tabHome.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             SuspendLayout();
             // 
             // btnGenerate
@@ -86,7 +86,7 @@
             btnGenerate.FlatStyle = FlatStyle.Popup;
             btnGenerate.Font = new Font("Segoe UI", 10F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             btnGenerate.ForeColor = Color.White;
-            btnGenerate.Location = new Point(233, 48);
+            btnGenerate.Location = new Point(228, 48);
             btnGenerate.Margin = new Padding(2);
             btnGenerate.Name = "btnGenerate";
             btnGenerate.Size = new Size(184, 45);
@@ -103,7 +103,7 @@
             btnRegistration.FlatStyle = FlatStyle.Popup;
             btnRegistration.Font = new Font("Segoe UI", 10F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             btnRegistration.ForeColor = Color.White;
-            btnRegistration.Location = new Point(95, 45);
+            btnRegistration.Location = new Point(86, 45);
             btnRegistration.Margin = new Padding(2);
             btnRegistration.Name = "btnRegistration";
             btnRegistration.Size = new Size(145, 49);
@@ -247,11 +247,65 @@
             tabHome.TabIndex = 3;
             tabHome.Text = "Report Homepage";
             // 
+            // pictureBox13
+            // 
+            pictureBox13.BackColor = Color.White;
+            pictureBox13.Location = new Point(23, 335);
+            pictureBox13.Name = "pictureBox13";
+            pictureBox13.Size = new Size(1160, 75);
+            pictureBox13.TabIndex = 77;
+            pictureBox13.TabStop = false;
+            // 
+            // pictureBox12
+            // 
+            pictureBox12.BackColor = Color.White;
+            pictureBox12.Location = new Point(25, 215);
+            pictureBox12.Name = "pictureBox12";
+            pictureBox12.Size = new Size(1160, 75);
+            pictureBox12.TabIndex = 76;
+            pictureBox12.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            pictureBox11.BackColor = Color.White;
+            pictureBox11.Location = new Point(24, 93);
+            pictureBox11.Name = "pictureBox11";
+            pictureBox11.Size = new Size(1160, 75);
+            pictureBox11.TabIndex = 74;
+            pictureBox11.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            pictureBox10.BackColor = Color.Gray;
+            pictureBox10.Location = new Point(14, 320);
+            pictureBox10.Name = "pictureBox10";
+            pictureBox10.Size = new Size(1180, 105);
+            pictureBox10.TabIndex = 73;
+            pictureBox10.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            pictureBox9.BackColor = Color.Gray;
+            pictureBox9.Location = new Point(15, 199);
+            pictureBox9.Name = "pictureBox9";
+            pictureBox9.Size = new Size(1180, 105);
+            pictureBox9.TabIndex = 72;
+            pictureBox9.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            pictureBox8.BackColor = Color.Gray;
+            pictureBox8.Location = new Point(15, 78);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(1180, 105);
+            pictureBox8.TabIndex = 71;
+            pictureBox8.TabStop = false;
+            // 
             // lblUser
             // 
             lblUser.AutoSize = true;
             lblUser.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            lblUser.Location = new Point(419, 6);
+            lblUser.Location = new Point(426, 8);
             lblUser.Name = "lblUser";
             lblUser.Size = new Size(73, 32);
             lblUser.TabIndex = 53;
@@ -263,19 +317,19 @@
             lblWelcomeMessage.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblWelcomeMessage.Location = new Point(1, 7);
             lblWelcomeMessage.Name = "lblWelcomeMessage";
-            lblWelcomeMessage.Size = new Size(430, 32);
+            lblWelcomeMessage.Size = new Size(440, 32);
             lblWelcomeMessage.TabIndex = 70;
-            lblWelcomeMessage.Text = "Welcome to your Ticket Homepage, ";
+            lblWelcomeMessage.Text = "Welcome to your Report Homepage, ";
             // 
             // lblDescribeHome
             // 
             lblDescribeHome.AutoSize = true;
-            lblDescribeHome.Font = new Font("Microsoft YaHei UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            lblDescribeHome.Location = new Point(6, 42);
+            lblDescribeHome.Font = new Font("Microsoft YaHei UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            lblDescribeHome.Location = new Point(9, 40);
             lblDescribeHome.Name = "lblDescribeHome";
-            lblDescribeHome.Size = new Size(1186, 27);
+            lblDescribeHome.Size = new Size(1141, 30);
             lblDescribeHome.TabIndex = 65;
-            lblDescribeHome.Text = "Listed below are the different functionalities offered to you via your ticket dashboard, as well as a brief description of each. \r\n";
+            lblDescribeHome.Text = "Listed below are the different potential reports that can be generated, as well as a brief description of each.\r\n";
             // 
             // tabExisting
             // 
@@ -394,60 +448,6 @@
             pictureBox5.TabIndex = 0;
             pictureBox5.TabStop = false;
             // 
-            // pictureBox13
-            // 
-            pictureBox13.BackColor = Color.White;
-            pictureBox13.Location = new Point(23, 335);
-            pictureBox13.Name = "pictureBox13";
-            pictureBox13.Size = new Size(1160, 75);
-            pictureBox13.TabIndex = 77;
-            pictureBox13.TabStop = false;
-            // 
-            // pictureBox12
-            // 
-            pictureBox12.BackColor = Color.White;
-            pictureBox12.Location = new Point(25, 215);
-            pictureBox12.Name = "pictureBox12";
-            pictureBox12.Size = new Size(1160, 75);
-            pictureBox12.TabIndex = 76;
-            pictureBox12.TabStop = false;
-            // 
-            // pictureBox11
-            // 
-            pictureBox11.BackColor = Color.White;
-            pictureBox11.Location = new Point(24, 93);
-            pictureBox11.Name = "pictureBox11";
-            pictureBox11.Size = new Size(1160, 75);
-            pictureBox11.TabIndex = 74;
-            pictureBox11.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            pictureBox10.BackColor = Color.Gray;
-            pictureBox10.Location = new Point(14, 320);
-            pictureBox10.Name = "pictureBox10";
-            pictureBox10.Size = new Size(1180, 105);
-            pictureBox10.TabIndex = 73;
-            pictureBox10.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            pictureBox9.BackColor = Color.Gray;
-            pictureBox9.Location = new Point(15, 199);
-            pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(1180, 105);
-            pictureBox9.TabIndex = 72;
-            pictureBox9.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            pictureBox8.BackColor = Color.Gray;
-            pictureBox8.Location = new Point(15, 78);
-            pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(1180, 105);
-            pictureBox8.TabIndex = 71;
-            pictureBox8.TabStop = false;
-            // 
             // frmAdmin
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -482,15 +482,15 @@
             tabReportGeneration.ResumeLayout(false);
             tabHome.ResumeLayout(false);
             tabHome.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }

@@ -39,6 +39,18 @@
             pnlTickets = new Panel();
             tabProjectMem = new TabControl();
             tabHome = new TabPage();
+            label11 = new Label();
+            label10 = new Label();
+            label9 = new Label();
+            label8 = new Label();
+            pictureBox13 = new PictureBox();
+            pictureBox12 = new PictureBox();
+            label6 = new Label();
+            label7 = new Label();
+            pictureBox11 = new PictureBox();
+            pictureBox10 = new PictureBox();
+            pictureBox9 = new PictureBox();
+            pictureBox8 = new PictureBox();
             lblUser = new Label();
             lblDescribeHome = new Label();
             lblWelcomeMessage = new Label();
@@ -77,24 +89,18 @@
             lblHeader = new Label();
             lblLoggedIn = new Label();
             pictureBox7 = new PictureBox();
-            pictureBox8 = new PictureBox();
-            pictureBox9 = new PictureBox();
-            pictureBox10 = new PictureBox();
-            pictureBox11 = new PictureBox();
-            label7 = new Label();
-            label6 = new Label();
-            pictureBox12 = new PictureBox();
-            pictureBox13 = new PictureBox();
-            label8 = new Label();
-            label9 = new Label();
-            label10 = new Label();
-            label11 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureLogo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Rectangle1).BeginInit();
             pnlTickets.SuspendLayout();
             tabProjectMem.SuspendLayout();
             tabHome.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             tabMyTickets.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             tabRaiseTicket.SuspendLayout();
@@ -106,12 +112,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
             SuspendLayout();
             // 
             // pictureLogo
@@ -260,6 +260,126 @@
             tabHome.Size = new Size(1281, 455);
             tabHome.TabIndex = 3;
             tabHome.Text = "Ticket Homepage";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.BackColor = Color.White;
+            label11.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label11.Location = new Point(265, 344);
+            label11.Name = "label11";
+            label11.Size = new Size(911, 72);
+            label11.TabIndex = 70;
+            label11.Text = resources.GetString("label11.Text");
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.BackColor = Color.White;
+            label10.Font = new Font("Segoe UI", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label10.Location = new Point(33, 359);
+            label10.Name = "label10";
+            label10.Size = new Size(226, 38);
+            label10.TabIndex = 69;
+            label10.Text = "Re-open Tickets";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.BackColor = Color.White;
+            label9.Font = new Font("Microsoft YaHei UI", 7F, FontStyle.Regular, GraphicsUnit.Point);
+            label9.Location = new Point(229, 231);
+            label9.Name = "label9";
+            label9.Size = new Size(933, 60);
+            label9.TabIndex = 68;
+            label9.Text = resources.GetString("label9.Text");
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.BackColor = Color.White;
+            label8.Font = new Font("Segoe UI", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label8.Location = new Point(37, 240);
+            label8.Name = "label8";
+            label8.Size = new Size(188, 38);
+            label8.TabIndex = 67;
+            label8.Text = "Raise Tickets";
+            // 
+            // pictureBox13
+            // 
+            pictureBox13.BackColor = Color.White;
+            pictureBox13.Location = new Point(26, 343);
+            pictureBox13.Name = "pictureBox13";
+            pictureBox13.Size = new Size(1160, 75);
+            pictureBox13.TabIndex = 66;
+            pictureBox13.TabStop = false;
+            // 
+            // pictureBox12
+            // 
+            pictureBox12.BackColor = Color.White;
+            pictureBox12.Location = new Point(28, 223);
+            pictureBox12.Name = "pictureBox12";
+            pictureBox12.Size = new Size(1160, 75);
+            pictureBox12.TabIndex = 65;
+            pictureBox12.TabStop = false;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.BackColor = Color.White;
+            label6.Font = new Font("Segoe UI", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label6.Location = new Point(41, 116);
+            label6.Name = "label6";
+            label6.Size = new Size(156, 38);
+            label6.TabIndex = 64;
+            label6.Text = "My Tickets";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.BackColor = Color.White;
+            label7.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label7.Location = new Point(197, 114);
+            label7.Name = "label7";
+            label7.Size = new Size(985, 48);
+            label7.TabIndex = 63;
+            label7.Text = resources.GetString("label7.Text");
+            // 
+            // pictureBox11
+            // 
+            pictureBox11.BackColor = Color.White;
+            pictureBox11.Location = new Point(27, 101);
+            pictureBox11.Name = "pictureBox11";
+            pictureBox11.Size = new Size(1160, 75);
+            pictureBox11.TabIndex = 62;
+            pictureBox11.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            pictureBox10.BackColor = Color.Gray;
+            pictureBox10.Location = new Point(17, 328);
+            pictureBox10.Name = "pictureBox10";
+            pictureBox10.Size = new Size(1180, 105);
+            pictureBox10.TabIndex = 59;
+            pictureBox10.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            pictureBox9.BackColor = Color.Gray;
+            pictureBox9.Location = new Point(18, 207);
+            pictureBox9.Name = "pictureBox9";
+            pictureBox9.Size = new Size(1180, 105);
+            pictureBox9.TabIndex = 58;
+            pictureBox9.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            pictureBox8.BackColor = Color.Gray;
+            pictureBox8.Location = new Point(18, 86);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(1180, 105);
+            pictureBox8.TabIndex = 57;
+            pictureBox8.TabStop = false;
             // 
             // lblUser
             // 
@@ -522,7 +642,7 @@
             btnReopenTicket.FlatStyle = FlatStyle.Popup;
             btnReopenTicket.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnReopenTicket.ForeColor = Color.White;
-            btnReopenTicket.Location = new Point(1097, 394);
+            btnReopenTicket.Location = new Point(1090, 394);
             btnReopenTicket.Name = "btnReopenTicket";
             btnReopenTicket.Size = new Size(157, 40);
             btnReopenTicket.TabIndex = 62;
@@ -535,7 +655,7 @@
             btnReopenClear.FlatStyle = FlatStyle.Popup;
             btnReopenClear.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnReopenClear.ForeColor = Color.White;
-            btnReopenClear.Location = new Point(1097, 345);
+            btnReopenClear.Location = new Point(1090, 345);
             btnReopenClear.Name = "btnReopenClear";
             btnReopenClear.Size = new Size(156, 36);
             btnReopenClear.TabIndex = 58;
@@ -708,126 +828,6 @@
             pictureBox7.TabIndex = 4;
             pictureBox7.TabStop = false;
             // 
-            // pictureBox8
-            // 
-            pictureBox8.BackColor = Color.Gray;
-            pictureBox8.Location = new Point(18, 86);
-            pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(1180, 105);
-            pictureBox8.TabIndex = 57;
-            pictureBox8.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            pictureBox9.BackColor = Color.Gray;
-            pictureBox9.Location = new Point(18, 207);
-            pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(1180, 105);
-            pictureBox9.TabIndex = 58;
-            pictureBox9.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            pictureBox10.BackColor = Color.Gray;
-            pictureBox10.Location = new Point(17, 328);
-            pictureBox10.Name = "pictureBox10";
-            pictureBox10.Size = new Size(1180, 105);
-            pictureBox10.TabIndex = 59;
-            pictureBox10.TabStop = false;
-            // 
-            // pictureBox11
-            // 
-            pictureBox11.BackColor = Color.White;
-            pictureBox11.Location = new Point(27, 101);
-            pictureBox11.Name = "pictureBox11";
-            pictureBox11.Size = new Size(1160, 75);
-            pictureBox11.TabIndex = 62;
-            pictureBox11.TabStop = false;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.BackColor = Color.White;
-            label7.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(197, 114);
-            label7.Name = "label7";
-            label7.Size = new Size(985, 48);
-            label7.TabIndex = 63;
-            label7.Text = resources.GetString("label7.Text");
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.BackColor = Color.White;
-            label6.Font = new Font("Segoe UI", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label6.Location = new Point(41, 116);
-            label6.Name = "label6";
-            label6.Size = new Size(156, 38);
-            label6.TabIndex = 64;
-            label6.Text = "My Tickets";
-            // 
-            // pictureBox12
-            // 
-            pictureBox12.BackColor = Color.White;
-            pictureBox12.Location = new Point(28, 223);
-            pictureBox12.Name = "pictureBox12";
-            pictureBox12.Size = new Size(1160, 75);
-            pictureBox12.TabIndex = 65;
-            pictureBox12.TabStop = false;
-            // 
-            // pictureBox13
-            // 
-            pictureBox13.BackColor = Color.White;
-            pictureBox13.Location = new Point(26, 343);
-            pictureBox13.Name = "pictureBox13";
-            pictureBox13.Size = new Size(1160, 75);
-            pictureBox13.TabIndex = 66;
-            pictureBox13.TabStop = false;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.BackColor = Color.White;
-            label8.Font = new Font("Segoe UI", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label8.Location = new Point(37, 240);
-            label8.Name = "label8";
-            label8.Size = new Size(188, 38);
-            label8.TabIndex = 67;
-            label8.Text = "Raise Tickets";
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.BackColor = Color.White;
-            label9.Font = new Font("Microsoft YaHei UI", 7F, FontStyle.Regular, GraphicsUnit.Point);
-            label9.Location = new Point(229, 231);
-            label9.Name = "label9";
-            label9.Size = new Size(933, 60);
-            label9.TabIndex = 68;
-            label9.Text = resources.GetString("label9.Text");
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.BackColor = Color.White;
-            label10.Font = new Font("Segoe UI", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label10.Location = new Point(33, 359);
-            label10.Name = "label10";
-            label10.Size = new Size(226, 38);
-            label10.TabIndex = 69;
-            label10.Text = "Re-open Tickets";
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.BackColor = Color.White;
-            label11.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label11.Location = new Point(265, 344);
-            label11.Name = "label11";
-            label11.Size = new Size(911, 72);
-            label11.TabIndex = 70;
-            label11.Text = resources.GetString("label11.Text");
-            // 
             // frmProjectMember
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -859,6 +859,12 @@
             tabProjectMem.ResumeLayout(false);
             tabHome.ResumeLayout(false);
             tabHome.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             tabMyTickets.ResumeLayout(false);
             tabMyTickets.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
@@ -874,12 +880,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
