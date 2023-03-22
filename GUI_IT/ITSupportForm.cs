@@ -12,9 +12,12 @@ namespace GUI_IT
 {
     public partial class frmITSupport : Form
     {
-        public frmITSupport()
+        private SessionRegister newUser;
+        public frmITSupport(SessionRegister newUser)
         {
             InitializeComponent();
+            lblUser.Text = newUser.Username + "!";
+            lblLoggedIn.Text = "Logged in as: " + newUser.Username;
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
