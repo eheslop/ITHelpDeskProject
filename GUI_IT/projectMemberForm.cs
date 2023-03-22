@@ -12,12 +12,16 @@ namespace GUI_IT
 {
     public partial class frmProjectMember : Form
     {
-        int id = 3;
-        public frmProjectMember()
+        private SessionRegister newUser;
+
+        int id = 8;
+        public frmProjectMember(SessionRegister newUser)
         {
             InitializeComponent();
-            pnlTickets.Visible = false;
+            pnlTickets.Visible = true;
             pnlProblemList.Visible = false;
+            lblUser.Text = newUser.Username + "!";
+            lblLoggedIn.Text = "Logged in as: " + newUser.Username;
         }
 
         private void frmProjectMember_Load(object sender, EventArgs e)
@@ -110,6 +114,11 @@ namespace GUI_IT
             cbxUrgency.ResetText();
             cbxUrgency.SelectedIndex = -1;
             txtProblemDescribe.Clear();
+        }
+
+        private void lblUser_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

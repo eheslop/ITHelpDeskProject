@@ -14,15 +14,19 @@ namespace GUI_IT
 {
     public partial class frmAdmin : Form
     {
+        private SessionRegister newUser;
+
         private Rectangle buttonOriginalRectangle;
         private Rectangle originalFormSize;
         private DataTable dt;
         private SqlDataAdapter da;
 
-        public frmAdmin()
+        public frmAdmin(SessionRegister newUser)
         {
             InitializeComponent();
             pnlReportGenerate.Visible = false;
+            lblLoggedIn.Text = "Logged in as: " + newUser.Username;
+            lblUser.Text = newUser.Username + "!";
             Fill();
         }
 
@@ -109,7 +113,7 @@ namespace GUI_IT
             DGVR.DataSource = dt;
             DGVR.EditMode = DataGridViewEditMode.EditOnEnter;
             con.Close();
-            
+
         }
 
         private void lblHome_Click(object sender, EventArgs e)
@@ -124,7 +128,7 @@ namespace GUI_IT
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-       
+
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
             builder.DataSource = "redagents.database.windows.net";
             builder.UserID = "kwekwe";
@@ -137,11 +141,12 @@ namespace GUI_IT
             SqlDataAdapter da = new SqlDataAdapter(query, con);
             da.Update(dt);
             this.DGVR.Refresh();
-
-
-
         }
 
+        private void btnApproveDeny_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

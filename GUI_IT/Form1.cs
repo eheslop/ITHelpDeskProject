@@ -13,16 +13,17 @@ namespace GUI_IT
 {
     public partial class FrmLogin : Form
     {
-        private SessionRegister regSession;
+        private SessionRegister newUser;
+
         public FrmLogin()
         {
             InitializeComponent();
+            newUser = new SessionRegister();
             pnlSignUp.Visible = false;
             pnlForgotPassword.Visible = false;
             lblIncorrectLogin.Visible = false;
             lblInvalidRole.Visible = false;
             lblAlreadyExists.Visible = false;
-            regSession = new SessionRegister();
             btnOpenEye.FlatAppearance.BorderSize = 0;
             btnOpenEye.FlatAppearance.BorderColor = Color.FromArgb(0, 255, 255, 255);
             btnClosedEye.FlatAppearance.BorderSize = 0;
@@ -31,36 +32,36 @@ namespace GUI_IT
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            string user = txtUsername.Text.ToString();
-            string password = txtPassword.Text.ToString();
-            int exists = Sql.Login(user, password);
+            newUser.Username = txtUsername.Text.ToString();
+            newUser.Password = txtPassword.Text.ToString();
+            int exists = Sql.Login(newUser.Username, newUser.Password);
             if (exists == 0)
             {
-                string role = Sql.Role(user);
-                if (role == "Admin")
+                newUser.UserType = Sql.Role(newUser.Username);
+                if (newUser.UserType == "Admin")
                 {
-                    frmAdmin adminLogIn = new frmAdmin();
+                    frmAdmin adminLogIn = new frmAdmin(newUser);
                     this.Hide();
                     adminLogIn.ShowDialog();
                     this.Close();
                 }
-                else if (role == "Project Member")
+                else if (newUser.UserType == "Project Member")
                 {
-                    frmProjectMember projectMemberForm = new frmProjectMember();
+                    frmProjectMember projectMemberForm = new frmProjectMember(newUser);
                     this.Hide();
                     projectMemberForm.ShowDialog();
                     this.Close();
                 }
-                else if (role == "IT Support Team")
+                else if (newUser.UserType == "IT Support Team")
                 {
-                    frmITSupport ITSupportForm = new frmITSupport();
+                    frmITSupport ITSupportForm = new frmITSupport(newUser);
                     this.Hide();
                     ITSupportForm.ShowDialog();
                     this.Close();
                 }
-                else if (role == "Report Manager")
+                else if (newUser.UserType == "Report Manager")
                 {
-                    frmReportManage ReportManageForm = new frmReportManage();
+                    frmReportManage ReportManageForm = new frmReportManage(newUser);
                     this.Hide();
                     ReportManageForm.ShowDialog();
                     this.Close();
@@ -97,7 +98,7 @@ namespace GUI_IT
         {
             string name = txtFirstName.Text.ToString() + " " + txtLastName.Text.ToString();
             string email = txtEmail.Text.ToString();
-            string role = cboUserType.Text.ToString();
+            newUser.UserType = cboUserType.Text.ToString();
             string user = name[0].ToString() + txtLastName.Text.ToString();
             Boolean accountExists = Sql.Exists(user);
             Boolean validEmail = Email.isValid(email);
@@ -112,14 +113,14 @@ namespace GUI_IT
                     int x = res.Next(str.Length);
                     randomstring = randomstring + str[x];
                 }
-                string pass = randomstring.ToString();
-                Sql.Register(user, name, pass, email, role);
+                newUser.Password = randomstring.ToString();
+                Sql.Register(user, name, newUser.Password, email, newUser.UserType);
                 Email.sendEmail("Registration", user);
                 Email.sendEmail("Registration Accepted", user);
-                Email.sendEmail("Registration Denied", user);
-                Email.sendEmail("Raised Ticket", user, 1);
+                //Email.sendEmail("Registration Denied", user);
+                //Email.sendEmail("Raised Ticket", user, 1);
                 MessageBox.Show("Account Created!\nCheck your email for your login credentials!", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                
+
                 pnlSignUp.Visible = false;
                 //pnlForgotPassword.Visible = false;
 

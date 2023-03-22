@@ -351,6 +351,7 @@
             txtLastName.Anchor = AnchorStyles.None;
             txtLastName.Location = new Point(327, 252);
             txtLastName.Margin = new Padding(2);
+            txtLastName.MaxLength = 45;
             txtLastName.Name = "txtLastName";
             txtLastName.PlaceholderText = "Enter Last Name";
             txtLastName.Size = new Size(288, 31);
@@ -414,6 +415,7 @@
             txtFirstName.Anchor = AnchorStyles.None;
             txtFirstName.Location = new Point(327, 212);
             txtFirstName.Margin = new Padding(2);
+            txtFirstName.MaxLength = 45;
             txtFirstName.Name = "txtFirstName";
             txtFirstName.PlaceholderText = "Enter First Name";
             txtFirstName.Size = new Size(288, 31);

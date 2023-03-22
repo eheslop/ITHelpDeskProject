@@ -14,10 +14,13 @@ namespace GUI_IT
 {
     public partial class frmReportManage : Form
     {
-        public frmReportManage()
+        private SessionRegister newUser;
+        public frmReportManage(SessionRegister newUser)
         {
             InitializeComponent();
             Fill();
+            lblUser.Text = newUser.Username + "!";
+            lblLoggedIn.Text = "Logged in as: " + newUser.Username;
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
@@ -47,6 +50,11 @@ namespace GUI_IT
             da.Fill(dt);
             DGVT.DataSource = dt;
             con.Close();
+        }
+
+        private void lblLoggedIn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

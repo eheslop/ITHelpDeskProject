@@ -6,22 +6,29 @@ using System.Threading.Tasks;
 
 namespace GUI_IT
 {
-    internal class SessionRegister
+    public class SessionRegister
     {
-        private string _email;
-        private string _firstName;
-        private string _lastName;
-        private string _userType;
+        private string email_;
+        private string firstName_;
+        private string lastName_;
+        private string userType_;
+        private string username_;
+        private string password_;
+
         public SessionRegister()
         {
-            _email = string.Empty;
-            _firstName = string.Empty;
-            _lastName = string.Empty;
-            _userType = string.Empty;
+            email_ = string.Empty;
+            firstName_ = string.Empty;
+            lastName_ = string.Empty;
+            userType_ = string.Empty;
+            username_ = string.Empty;
+            password_ = string.Empty;
         }
-        public string Email { get =>_email; set => _email = value;}
-        public string FirstName { get => _firstName; set => _firstName = value;}
-        public string LastName { get => _lastName; set => _lastName = value;}
-        public string UserType { get => _userType; set => _userType = value;}
+        public string Email { get => email_; set => email_ = value;}
+        public string FirstName { get => firstName_; set => firstName_ = value;}
+        public string LastName { get => lastName_; set => lastName_ = value;}
+        public string UserType { get => userType_; set => userType_ = value;}
+        public string Username { get => username_; set => username_ = value; }
+        public string Password { get => password_; set => password_ = value;}
     }
 }
