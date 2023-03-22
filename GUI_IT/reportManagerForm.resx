@@ -57,6 +57,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label4.Text" xml:space="preserve">
+    <value>This page displays three different tables for you to monitor: The unsolved ticket 
+table, the solved ticket table, and the re-opened ticket table. If you notice anything 
+that could be erroneous in any manner, please contact a system adminstrator 
+immediately.</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>This page allows you to assign unsolved or re-opened tickets to the different 
+members of the IT support Team. Using the ticket ID, assign a IT Support Team 
+member a ticket using their email address and their username. </value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

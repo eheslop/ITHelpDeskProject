@@ -38,6 +38,13 @@
             pictureBox2 = new PictureBox();
             tabControl1 = new TabControl();
             tabHome = new TabPage();
+            label3 = new Label();
+            label2 = new Label();
+            pictureBox4 = new PictureBox();
+            pictureBox11 = new PictureBox();
+            pictureBox3 = new PictureBox();
+            pictureBox8 = new PictureBox();
+            lblDescribeHome = new Label();
             lblUser = new Label();
             lblWelcomeMessage = new Label();
             tabSolve = new TabPage();
@@ -47,35 +54,41 @@
             btnSolveClear = new Button();
             txtSolution = new TextBox();
             pictureBox6 = new PictureBox();
-            lblSolveTickets = new Label();
             DGVS = new DataGridView();
             lblSolve = new Label();
             tabShare = new TabPage();
             lblShare = new Label();
             pictureBox7 = new PictureBox();
             lblLoggedIn = new Label();
-            pictureBox4 = new PictureBox();
-            pictureBox11 = new PictureBox();
-            pictureBox3 = new PictureBox();
-            pictureBox8 = new PictureBox();
-            lblDescribeHome = new Label();
-            label2 = new Label();
-            label3 = new Label();
+            label4 = new Label();
+            label5 = new Label();
+            txtTicketID = new TextBox();
+            label6 = new Label();
+            txtEmail = new TextBox();
+            label7 = new Label();
+            txtUsername = new TextBox();
+            label8 = new Label();
+            pictureBox5 = new PictureBox();
+            btnShare = new Button();
+            btnClear = new Button();
+            DGVShare = new DataGridView();
             ((System.ComponentModel.ISupportInitialize)pictureLogo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Rectangle1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             tabControl1.SuspendLayout();
             tabHome.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             tabSolve.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)DGVS).BeginInit();
             tabShare.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)DGVShare).BeginInit();
             SuspendLayout();
             // 
             // pictureLogo
@@ -176,12 +189,14 @@
             tabControl1.Location = new Point(-5, 144);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(1291, 509);
+            tabControl1.Size = new Size(1287, 509);
             tabControl1.TabIndex = 49;
             // 
             // tabHome
             // 
             tabHome.BackColor = Color.LightGray;
+            tabHome.Controls.Add(label5);
+            tabHome.Controls.Add(label4);
             tabHome.Controls.Add(label3);
             tabHome.Controls.Add(label2);
             tabHome.Controls.Add(pictureBox4);
@@ -193,193 +208,31 @@
             tabHome.Controls.Add(lblWelcomeMessage);
             tabHome.Location = new Point(4, 37);
             tabHome.Name = "tabHome";
-            tabHome.Size = new Size(1283, 468);
+            tabHome.Size = new Size(1279, 468);
             tabHome.TabIndex = 2;
             tabHome.Text = "Ticket Homepage";
             // 
-            // lblUser
+            // label3
             // 
-            lblUser.AutoSize = true;
-            lblUser.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            lblUser.Location = new Point(411, 7);
-            lblUser.Name = "lblUser";
-            lblUser.Size = new Size(73, 32);
-            lblUser.TabIndex = 5;
-            lblUser.Text = "User!";
+            label3.AutoSize = true;
+            label3.BackColor = Color.White;
+            label3.Font = new Font("Segoe UI", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label3.Location = new Point(39, 323);
+            label3.Name = "label3";
+            label3.Size = new Size(192, 38);
+            label3.TabIndex = 71;
+            label3.Text = "Share Tickets";
             // 
-            // lblWelcomeMessage
+            // label2
             // 
-            lblWelcomeMessage.AutoSize = true;
-            lblWelcomeMessage.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            lblWelcomeMessage.Location = new Point(-2, 6);
-            lblWelcomeMessage.Name = "lblWelcomeMessage";
-            lblWelcomeMessage.Size = new Size(430, 32);
-            lblWelcomeMessage.TabIndex = 1;
-            lblWelcomeMessage.Text = "Welcome to your Ticket Homepage, ";
-            // 
-            // tabSolve
-            // 
-            tabSolve.BackColor = Color.LightGray;
-            tabSolve.Controls.Add(txtSolveTicketID);
-            tabSolve.Controls.Add(lblTicketID);
-            tabSolve.Controls.Add(btnSolveTicket);
-            tabSolve.Controls.Add(btnSolveClear);
-            tabSolve.Controls.Add(txtSolution);
-            tabSolve.Controls.Add(pictureBox6);
-            tabSolve.Controls.Add(lblSolveTickets);
-            tabSolve.Controls.Add(DGVS);
-            tabSolve.Controls.Add(lblSolve);
-            tabSolve.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            tabSolve.Location = new Point(4, 37);
-            tabSolve.Name = "tabSolve";
-            tabSolve.Padding = new Padding(3);
-            tabSolve.Size = new Size(1283, 468);
-            tabSolve.TabIndex = 0;
-            tabSolve.Text = "Solve Tickets";
-            // 
-            // txtSolveTicketID
-            // 
-            txtSolveTicketID.Anchor = AnchorStyles.None;
-            txtSolveTicketID.Location = new Point(1010, 121);
-            txtSolveTicketID.Margin = new Padding(4);
-            txtSolveTicketID.Name = "txtSolveTicketID";
-            txtSolveTicketID.Size = new Size(144, 31);
-            txtSolveTicketID.TabIndex = 69;
-            // 
-            // lblTicketID
-            // 
-            lblTicketID.AutoSize = true;
-            lblTicketID.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblTicketID.Location = new Point(1006, 91);
-            lblTicketID.Name = "lblTicketID";
-            lblTicketID.Size = new Size(143, 25);
-            lblTicketID.TabIndex = 68;
-            lblTicketID.Text = "Enter Ticket ID:";
-            // 
-            // btnSolveTicket
-            // 
-            btnSolveTicket.BackColor = Color.FromArgb(64, 0, 0);
-            btnSolveTicket.FlatStyle = FlatStyle.Popup;
-            btnSolveTicket.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnSolveTicket.ForeColor = Color.White;
-            btnSolveTicket.Location = new Point(1007, 391);
-            btnSolveTicket.Name = "btnSolveTicket";
-            btnSolveTicket.Size = new Size(150, 40);
-            btnSolveTicket.TabIndex = 64;
-            btnSolveTicket.Text = "Solve Ticket";
-            btnSolveTicket.UseVisualStyleBackColor = false;
-            // 
-            // btnSolveClear
-            // 
-            btnSolveClear.BackColor = Color.FromArgb(64, 0, 0);
-            btnSolveClear.FlatStyle = FlatStyle.Popup;
-            btnSolveClear.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnSolveClear.ForeColor = Color.White;
-            btnSolveClear.Location = new Point(1007, 349);
-            btnSolveClear.Name = "btnSolveClear";
-            btnSolveClear.Size = new Size(150, 36);
-            btnSolveClear.TabIndex = 63;
-            btnSolveClear.Text = "Clear";
-            btnSolveClear.UseVisualStyleBackColor = false;
-            // 
-            // txtSolution
-            // 
-            txtSolution.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            txtSolution.Location = new Point(19, 299);
-            txtSolution.MaxLength = 500;
-            txtSolution.Multiline = true;
-            txtSolution.Name = "txtSolution";
-            txtSolution.PlaceholderText = "Explain the solution to this ticket in 500 characters or less.";
-            txtSolution.Size = new Size(970, 133);
-            txtSolution.TabIndex = 59;
-            // 
-            // pictureBox6
-            // 
-            pictureBox6.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            pictureBox6.BackColor = Color.Gray;
-            pictureBox6.Location = new Point(6, 291);
-            pictureBox6.Margin = new Padding(2);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(996, 147);
-            pictureBox6.TabIndex = 58;
-            pictureBox6.TabStop = false;
-            // 
-            // lblSolveTickets
-            // 
-            lblSolveTickets.AutoSize = true;
-            lblSolveTickets.BackColor = Color.Transparent;
-            lblSolveTickets.Font = new Font("Microsoft YaHei UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            lblSolveTickets.Location = new Point(0, 34);
-            lblSolveTickets.Name = "lblSolveTickets";
-            lblSolveTickets.Size = new Size(1164, 54);
-            lblSolveTickets.TabIndex = 57;
-            lblSolveTickets.Text = resources.GetString("lblSolveTickets.Text");
-            // 
-            // DGVS
-            // 
-            DGVS.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            DGVS.Location = new Point(6, 91);
-            DGVS.Name = "DGVS";
-            DGVS.RowHeadersWidth = 62;
-            DGVS.RowTemplate.Height = 33;
-            DGVS.Size = new Size(993, 186);
-            DGVS.TabIndex = 56;
-            // 
-            // lblSolve
-            // 
-            lblSolve.AutoSize = true;
-            lblSolve.BackColor = Color.Transparent;
-            lblSolve.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            lblSolve.Location = new Point(2, 2);
-            lblSolve.Name = "lblSolve";
-            lblSolve.Size = new Size(159, 32);
-            lblSolve.TabIndex = 55;
-            lblSolve.Text = "Solve Tickets";
-            // 
-            // tabShare
-            // 
-            tabShare.BackColor = Color.LightGray;
-            tabShare.Controls.Add(lblShare);
-            tabShare.Location = new Point(4, 37);
-            tabShare.Name = "tabShare";
-            tabShare.Padding = new Padding(3);
-            tabShare.Size = new Size(1283, 468);
-            tabShare.TabIndex = 1;
-            tabShare.Text = "Share Tickets";
-            // 
-            // lblShare
-            // 
-            lblShare.AutoSize = true;
-            lblShare.BackColor = Color.Transparent;
-            lblShare.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            lblShare.Location = new Point(2, 2);
-            lblShare.Name = "lblShare";
-            lblShare.Size = new Size(162, 32);
-            lblShare.TabIndex = 55;
-            lblShare.Text = "Share Tickets";
-            // 
-            // pictureBox7
-            // 
-            pictureBox7.BackColor = Color.Black;
-            pictureBox7.BackgroundImage = Properties.Resources.Profile_Picture;
-            pictureBox7.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox7.Location = new Point(1202, 47);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(47, 35);
-            pictureBox7.TabIndex = 5;
-            pictureBox7.TabStop = false;
-            // 
-            // lblLoggedIn
-            // 
-            lblLoggedIn.AutoSize = true;
-            lblLoggedIn.BackColor = Color.Black;
-            lblLoggedIn.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            lblLoggedIn.ForeColor = Color.White;
-            lblLoggedIn.Location = new Point(921, 51);
-            lblLoggedIn.Name = "lblLoggedIn";
-            lblLoggedIn.Size = new Size(171, 28);
-            lblLoggedIn.TabIndex = 6;
-            lblLoggedIn.Text = "Logged in as: User";
+            label2.AutoSize = true;
+            label2.BackColor = Color.White;
+            label2.Font = new Font("Segoe UI", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label2.Location = new Point(33, 139);
+            label2.Name = "label2";
+            label2.Size = new Size(187, 38);
+            label2.TabIndex = 70;
+            label2.Text = "Solve Tickets";
             // 
             // pictureBox4
             // 
@@ -427,27 +280,318 @@
             lblDescribeHome.TabIndex = 65;
             lblDescribeHome.Text = "Listed below are the different functionalities offered to you via your ticket dashboard, as well as a brief description of each. \r\n";
             // 
-            // label2
+            // lblUser
             // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.White;
-            label2.Font = new Font("Segoe UI", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label2.Location = new Point(41, 139);
-            label2.Name = "label2";
-            label2.Size = new Size(187, 38);
-            label2.TabIndex = 70;
-            label2.Text = "Solve Tickets";
+            lblUser.AutoSize = true;
+            lblUser.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblUser.Location = new Point(411, 7);
+            lblUser.Name = "lblUser";
+            lblUser.Size = new Size(73, 32);
+            lblUser.TabIndex = 5;
+            lblUser.Text = "User!";
             // 
-            // label3
+            // lblWelcomeMessage
             // 
-            label3.AutoSize = true;
-            label3.BackColor = Color.White;
-            label3.Font = new Font("Segoe UI", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label3.Location = new Point(38, 323);
-            label3.Name = "label3";
-            label3.Size = new Size(192, 38);
-            label3.TabIndex = 71;
-            label3.Text = "Share Tickets";
+            lblWelcomeMessage.AutoSize = true;
+            lblWelcomeMessage.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblWelcomeMessage.Location = new Point(-2, 6);
+            lblWelcomeMessage.Name = "lblWelcomeMessage";
+            lblWelcomeMessage.Size = new Size(430, 32);
+            lblWelcomeMessage.TabIndex = 1;
+            lblWelcomeMessage.Text = "Welcome to your Ticket Homepage, ";
+            // 
+            // tabSolve
+            // 
+            tabSolve.BackColor = Color.LightGray;
+            tabSolve.Controls.Add(txtSolveTicketID);
+            tabSolve.Controls.Add(btnSolveTicket);
+            tabSolve.Controls.Add(btnSolveClear);
+            tabSolve.Controls.Add(txtSolution);
+            tabSolve.Controls.Add(pictureBox6);
+            tabSolve.Controls.Add(DGVS);
+            tabSolve.Controls.Add(lblSolve);
+            tabSolve.Controls.Add(lblTicketID);
+            tabSolve.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            tabSolve.Location = new Point(4, 37);
+            tabSolve.Name = "tabSolve";
+            tabSolve.Padding = new Padding(3);
+            tabSolve.Size = new Size(1279, 468);
+            tabSolve.TabIndex = 0;
+            tabSolve.Text = "Solve Tickets";
+            // 
+            // txtSolveTicketID
+            // 
+            txtSolveTicketID.Anchor = AnchorStyles.None;
+            txtSolveTicketID.Location = new Point(1051, 69);
+            txtSolveTicketID.Margin = new Padding(4);
+            txtSolveTicketID.Name = "txtSolveTicketID";
+            txtSolveTicketID.Size = new Size(170, 31);
+            txtSolveTicketID.TabIndex = 69;
+            // 
+            // lblTicketID
+            // 
+            lblTicketID.AutoSize = true;
+            lblTicketID.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            lblTicketID.Location = new Point(1050, 37);
+            lblTicketID.Name = "lblTicketID";
+            lblTicketID.Size = new Size(175, 28);
+            lblTicketID.TabIndex = 68;
+            lblTicketID.Text = "Enter a Ticket ID:";
+            // 
+            // btnSolveTicket
+            // 
+            btnSolveTicket.BackColor = Color.FromArgb(64, 0, 0);
+            btnSolveTicket.FlatStyle = FlatStyle.Popup;
+            btnSolveTicket.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSolveTicket.ForeColor = Color.White;
+            btnSolveTicket.Location = new Point(1067, 406);
+            btnSolveTicket.Name = "btnSolveTicket";
+            btnSolveTicket.Size = new Size(158, 45);
+            btnSolveTicket.TabIndex = 64;
+            btnSolveTicket.Text = "Solve Ticket";
+            btnSolveTicket.UseVisualStyleBackColor = false;
+            // 
+            // btnSolveClear
+            // 
+            btnSolveClear.BackColor = Color.FromArgb(64, 0, 0);
+            btnSolveClear.FlatStyle = FlatStyle.Popup;
+            btnSolveClear.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSolveClear.ForeColor = Color.White;
+            btnSolveClear.Location = new Point(1067, 350);
+            btnSolveClear.Name = "btnSolveClear";
+            btnSolveClear.Size = new Size(158, 45);
+            btnSolveClear.TabIndex = 63;
+            btnSolveClear.Text = "Clear";
+            btnSolveClear.UseVisualStyleBackColor = false;
+            // 
+            // txtSolution
+            // 
+            txtSolution.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            txtSolution.Location = new Point(23, 275);
+            txtSolution.MaxLength = 500;
+            txtSolution.Multiline = true;
+            txtSolution.Name = "txtSolution";
+            txtSolution.PlaceholderText = "Explain the solution to this ticket in 500 characters or less.";
+            txtSolution.Size = new Size(1018, 172);
+            txtSolution.TabIndex = 59;
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            pictureBox6.BackColor = Color.Gray;
+            pictureBox6.Location = new Point(10, 267);
+            pictureBox6.Margin = new Padding(2);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(1040, 186);
+            pictureBox6.TabIndex = 58;
+            pictureBox6.TabStop = false;
+            // 
+            // DGVS
+            // 
+            DGVS.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            DGVS.Location = new Point(9, 43);
+            DGVS.Name = "DGVS";
+            DGVS.RowHeadersWidth = 62;
+            DGVS.RowTemplate.Height = 33;
+            DGVS.Size = new Size(1029, 207);
+            DGVS.TabIndex = 56;
+            // 
+            // lblSolve
+            // 
+            lblSolve.AutoSize = true;
+            lblSolve.BackColor = Color.Transparent;
+            lblSolve.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            lblSolve.Location = new Point(2, 6);
+            lblSolve.Name = "lblSolve";
+            lblSolve.Size = new Size(159, 32);
+            lblSolve.TabIndex = 55;
+            lblSolve.Text = "Solve Tickets";
+            // 
+            // tabShare
+            // 
+            tabShare.BackColor = Color.LightGray;
+            tabShare.Controls.Add(DGVShare);
+            tabShare.Controls.Add(btnShare);
+            tabShare.Controls.Add(btnClear);
+            tabShare.Controls.Add(txtUsername);
+            tabShare.Controls.Add(label8);
+            tabShare.Controls.Add(txtEmail);
+            tabShare.Controls.Add(label7);
+            tabShare.Controls.Add(txtTicketID);
+            tabShare.Controls.Add(label6);
+            tabShare.Controls.Add(lblShare);
+            tabShare.Controls.Add(pictureBox5);
+            tabShare.Location = new Point(4, 37);
+            tabShare.Name = "tabShare";
+            tabShare.Padding = new Padding(3);
+            tabShare.Size = new Size(1279, 468);
+            tabShare.TabIndex = 1;
+            tabShare.Text = "Share Tickets";
+            tabShare.Click += tabShare_Click;
+            // 
+            // lblShare
+            // 
+            lblShare.AutoSize = true;
+            lblShare.BackColor = Color.Transparent;
+            lblShare.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            lblShare.Location = new Point(3, 6);
+            lblShare.Name = "lblShare";
+            lblShare.Size = new Size(162, 32);
+            lblShare.TabIndex = 55;
+            lblShare.Text = "Share Tickets";
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.BackColor = Color.Black;
+            pictureBox7.BackgroundImage = Properties.Resources.Profile_Picture;
+            pictureBox7.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox7.Location = new Point(1202, 47);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(47, 35);
+            pictureBox7.TabIndex = 5;
+            pictureBox7.TabStop = false;
+            // 
+            // lblLoggedIn
+            // 
+            lblLoggedIn.AutoSize = true;
+            lblLoggedIn.BackColor = Color.Black;
+            lblLoggedIn.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            lblLoggedIn.ForeColor = Color.White;
+            lblLoggedIn.Location = new Point(921, 51);
+            lblLoggedIn.Name = "lblLoggedIn";
+            lblLoggedIn.Size = new Size(171, 28);
+            lblLoggedIn.TabIndex = 6;
+            lblLoggedIn.Text = "Logged in as: User";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.BackColor = Color.White;
+            label4.Font = new Font("Microsoft YaHei UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Location = new Point(224, 117);
+            label4.Name = "label4";
+            label4.Size = new Size(952, 81);
+            label4.TabIndex = 72;
+            label4.Text = resources.GetString("label4.Text");
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.BackColor = Color.White;
+            label5.Font = new Font("Microsoft YaHei UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.Location = new Point(243, 294);
+            label5.Name = "label5";
+            label5.Size = new Size(916, 108);
+            label5.TabIndex = 73;
+            label5.Text = resources.GetString("label5.Text");
+            // 
+            // txtTicketID
+            // 
+            txtTicketID.Anchor = AnchorStyles.None;
+            txtTicketID.Location = new Point(18, 102);
+            txtTicketID.Margin = new Padding(4);
+            txtTicketID.MaxLength = 50;
+            txtTicketID.Name = "txtTicketID";
+            txtTicketID.Size = new Size(629, 34);
+            txtTicketID.TabIndex = 71;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.BackColor = Color.DarkGray;
+            label6.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.Location = new Point(15, 69);
+            label6.Name = "label6";
+            label6.Size = new Size(462, 30);
+            label6.TabIndex = 70;
+            label6.Text = "Enter the ID of the ticket you wish to share:";
+            // 
+            // txtEmail
+            // 
+            txtEmail.Anchor = AnchorStyles.None;
+            txtEmail.Location = new Point(19, 309);
+            txtEmail.Margin = new Padding(4);
+            txtEmail.MaxLength = 50;
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(630, 34);
+            txtEmail.TabIndex = 73;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.BackColor = Color.DarkGray;
+            label7.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.Location = new Point(16, 274);
+            label7.Name = "label7";
+            label7.Size = new Size(397, 30);
+            label7.TabIndex = 72;
+            label7.Text = "Enter the above user's email address:";
+            // 
+            // txtUsername
+            // 
+            txtUsername.Anchor = AnchorStyles.None;
+            txtUsername.Location = new Point(19, 203);
+            txtUsername.Margin = new Padding(4);
+            txtUsername.MaxLength = 50;
+            txtUsername.Name = "txtUsername";
+            txtUsername.Size = new Size(628, 34);
+            txtUsername.TabIndex = 75;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.BackColor = Color.DarkGray;
+            label8.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label8.Location = new Point(14, 169);
+            label8.Name = "label8";
+            label8.Size = new Size(646, 30);
+            label8.TabIndex = 74;
+            label8.Text = "Enter the username of the IT member you wish to share with:";
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.BackColor = Color.DarkGray;
+            pictureBox5.Location = new Point(11, 45);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(662, 328);
+            pictureBox5.TabIndex = 76;
+            pictureBox5.TabStop = false;
+            // 
+            // btnShare
+            // 
+            btnShare.BackColor = Color.FromArgb(64, 0, 0);
+            btnShare.FlatStyle = FlatStyle.Popup;
+            btnShare.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnShare.ForeColor = Color.White;
+            btnShare.Location = new Point(218, 391);
+            btnShare.Name = "btnShare";
+            btnShare.Size = new Size(163, 51);
+            btnShare.TabIndex = 78;
+            btnShare.Text = "Share Ticket";
+            btnShare.UseVisualStyleBackColor = false;
+            // 
+            // btnClear
+            // 
+            btnClear.BackColor = Color.FromArgb(64, 0, 0);
+            btnClear.FlatStyle = FlatStyle.Popup;
+            btnClear.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnClear.ForeColor = Color.White;
+            btnClear.Location = new Point(15, 391);
+            btnClear.Name = "btnClear";
+            btnClear.Size = new Size(163, 51);
+            btnClear.TabIndex = 77;
+            btnClear.Text = "Clear";
+            btnClear.UseVisualStyleBackColor = false;
+            // 
+            // DGVShare
+            // 
+            DGVShare.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            DGVShare.Location = new Point(731, 45);
+            DGVShare.Name = "DGVShare";
+            DGVShare.RowHeadersWidth = 62;
+            DGVShare.RowTemplate.Height = 33;
+            DGVShare.Size = new Size(498, 393);
+            DGVShare.TabIndex = 79;
             // 
             // frmITSupport
             // 
@@ -474,6 +618,10 @@
             tabControl1.ResumeLayout(false);
             tabHome.ResumeLayout(false);
             tabHome.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             tabSolve.ResumeLayout(false);
             tabSolve.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
@@ -481,10 +629,8 @@
             tabShare.ResumeLayout(false);
             tabShare.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)DGVShare).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -504,7 +650,6 @@
         private Label lblSolve;
         private Label lblShare;
         private DataGridView DGVS;
-        private Label lblSolveTickets;
         private TextBox txtSolution;
         private PictureBox pictureBox6;
         private Button btnSolveTicket;
@@ -523,5 +668,17 @@
         private Label lblDescribeHome;
         private Label label3;
         private Label label2;
+        private Label label4;
+        private Label label5;
+        private TextBox txtTicketID;
+        private Label label6;
+        private TextBox txtUsername;
+        private Label label8;
+        private TextBox txtEmail;
+        private Label label7;
+        private PictureBox pictureBox5;
+        private Button btnShare;
+        private Button btnClear;
+        private DataGridView DGVShare;
     }
 }

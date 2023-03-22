@@ -105,7 +105,7 @@
             btnDeny.FlatStyle = FlatStyle.Popup;
             btnDeny.Font = new Font("Microsoft YaHei UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
             btnDeny.ForeColor = Color.White;
-            btnDeny.Location = new Point(308, 529);
+            btnDeny.Location = new Point(308, 530);
             btnDeny.Name = "btnDeny";
             btnDeny.Size = new Size(145, 59);
             btnDeny.TabIndex = 40;
@@ -117,7 +117,7 @@
             // 
             lblStatusQuestion.AutoSize = true;
             lblStatusQuestion.Font = new Font("Microsoft YaHei UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            lblStatusQuestion.Location = new Point(61, 469);
+            lblStatusQuestion.Location = new Point(61, 473);
             lblStatusQuestion.Name = "lblStatusQuestion";
             lblStatusQuestion.Size = new Size(449, 27);
             lblStatusQuestion.TabIndex = 41;
@@ -191,7 +191,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft YaHei UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.Green;
-            label1.Location = new Point(61, 469);
+            label1.Location = new Point(61, 473);
             label1.Name = "label1";
             label1.Size = new Size(95, 27);
             label1.TabIndex = 51;
@@ -202,7 +202,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Microsoft YaHei UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.FromArgb(192, 0, 0);
-            label2.Location = new Point(177, 469);
+            label2.Location = new Point(177, 473);
             label2.Name = "label2";
             label2.Size = new Size(61, 27);
             label2.TabIndex = 52;

@@ -266,7 +266,7 @@
             label11.AutoSize = true;
             label11.BackColor = Color.White;
             label11.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label11.Location = new Point(265, 344);
+            label11.Location = new Point(261, 345);
             label11.Name = "label11";
             label11.Size = new Size(911, 72);
             label11.TabIndex = 70;
@@ -287,10 +287,10 @@
             // 
             label9.AutoSize = true;
             label9.BackColor = Color.White;
-            label9.Font = new Font("Microsoft YaHei UI", 7F, FontStyle.Regular, GraphicsUnit.Point);
-            label9.Location = new Point(229, 231);
+            label9.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label9.Location = new Point(224, 224);
             label9.Name = "label9";
-            label9.Size = new Size(933, 60);
+            label9.Size = new Size(954, 72);
             label9.TabIndex = 68;
             label9.Text = resources.GetString("label9.Text");
             // 
@@ -559,7 +559,7 @@
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Microsoft YaHei UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(9, 40);
+            label1.Location = new Point(7, 40);
             label1.Name = "label1";
             label1.Size = new Size(790, 27);
             label1.TabIndex = 52;
@@ -570,7 +570,7 @@
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label2.Location = new Point(7, 4);
+            label2.Location = new Point(7, 7);
             label2.Name = "label2";
             label2.Size = new Size(204, 32);
             label2.TabIndex = 51;
@@ -690,7 +690,7 @@
             label4.AutoSize = true;
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(2, 36);
+            label4.Location = new Point(2, 40);
             label4.Name = "label4";
             label4.Size = new Size(1232, 48);
             label4.TabIndex = 53;
@@ -701,7 +701,7 @@
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label3.Location = new Point(3, 4);
+            label3.Location = new Point(4, 5);
             label3.Name = "label3";
             label3.Size = new Size(206, 32);
             label3.TabIndex = 52;

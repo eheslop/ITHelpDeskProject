@@ -41,18 +41,20 @@
             pnlReportGenerate = new Panel();
             tabReportGeneration = new TabControl();
             tabHome = new TabPage();
+            label5 = new Label();
+            label4 = new Label();
             pictureBox13 = new PictureBox();
-            pictureBox12 = new PictureBox();
-            pictureBox11 = new PictureBox();
             pictureBox10 = new PictureBox();
+            label6 = new Label();
+            pictureBox12 = new PictureBox();
             pictureBox9 = new PictureBox();
-            pictureBox8 = new PictureBox();
             lblUser = new Label();
             lblWelcomeMessage = new Label();
             lblDescribeHome = new Label();
-            tabExisting = new TabPage();
             tabSolved = new TabPage();
+            label2 = new Label();
             tabUnsolved = new TabPage();
+            label3 = new Label();
             lblReportGen = new Label();
             pictureBox3 = new PictureBox();
             btnApproveDeny = new Button();
@@ -60,6 +62,7 @@
             pictureBox4 = new PictureBox();
             lblLoggedIn = new Label();
             pictureBox5 = new PictureBox();
+            label7 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Rectangle1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)DGVR).BeginInit();
@@ -68,11 +71,11 @@
             tabReportGeneration.SuspendLayout();
             tabHome.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            tabSolved.SuspendLayout();
+            tabUnsolved.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
@@ -219,7 +222,6 @@
             // tabReportGeneration
             // 
             tabReportGeneration.Controls.Add(tabHome);
-            tabReportGeneration.Controls.Add(tabExisting);
             tabReportGeneration.Controls.Add(tabSolved);
             tabReportGeneration.Controls.Add(tabUnsolved);
             tabReportGeneration.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
@@ -232,12 +234,14 @@
             // tabHome
             // 
             tabHome.BackColor = Color.LightGray;
+            tabHome.Controls.Add(label7);
+            tabHome.Controls.Add(label5);
+            tabHome.Controls.Add(label4);
             tabHome.Controls.Add(pictureBox13);
-            tabHome.Controls.Add(pictureBox12);
-            tabHome.Controls.Add(pictureBox11);
             tabHome.Controls.Add(pictureBox10);
+            tabHome.Controls.Add(label6);
+            tabHome.Controls.Add(pictureBox12);
             tabHome.Controls.Add(pictureBox9);
-            tabHome.Controls.Add(pictureBox8);
             tabHome.Controls.Add(lblUser);
             tabHome.Controls.Add(lblWelcomeMessage);
             tabHome.Controls.Add(lblDescribeHome);
@@ -247,59 +251,74 @@
             tabHome.TabIndex = 3;
             tabHome.Text = "Report Homepage";
             // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.BackColor = Color.White;
+            label5.Font = new Font("Microsoft YaHei UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.Location = new Point(326, 110);
+            label5.Name = "label5";
+            label5.Size = new Size(850, 108);
+            label5.TabIndex = 81;
+            label5.Text = resources.GetString("label5.Text");
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.BackColor = Color.White;
+            label4.Font = new Font("Segoe UI", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label4.Location = new Point(31, 322);
+            label4.Name = "label4";
+            label4.Size = new Size(322, 38);
+            label4.TabIndex = 78;
+            label4.Text = "Unsolved Ticket Report";
+            // 
             // pictureBox13
             // 
             pictureBox13.BackColor = Color.White;
-            pictureBox13.Location = new Point(23, 335);
+            pictureBox13.Location = new Point(23, 280);
             pictureBox13.Name = "pictureBox13";
-            pictureBox13.Size = new Size(1160, 75);
+            pictureBox13.Size = new Size(1160, 133);
             pictureBox13.TabIndex = 77;
             pictureBox13.TabStop = false;
-            // 
-            // pictureBox12
-            // 
-            pictureBox12.BackColor = Color.White;
-            pictureBox12.Location = new Point(25, 215);
-            pictureBox12.Name = "pictureBox12";
-            pictureBox12.Size = new Size(1160, 75);
-            pictureBox12.TabIndex = 76;
-            pictureBox12.TabStop = false;
-            // 
-            // pictureBox11
-            // 
-            pictureBox11.BackColor = Color.White;
-            pictureBox11.Location = new Point(24, 93);
-            pictureBox11.Name = "pictureBox11";
-            pictureBox11.Size = new Size(1160, 75);
-            pictureBox11.TabIndex = 74;
-            pictureBox11.TabStop = false;
             // 
             // pictureBox10
             // 
             pictureBox10.BackColor = Color.Gray;
-            pictureBox10.Location = new Point(14, 320);
+            pictureBox10.Location = new Point(14, 265);
             pictureBox10.Name = "pictureBox10";
-            pictureBox10.Size = new Size(1180, 105);
+            pictureBox10.Size = new Size(1180, 163);
             pictureBox10.TabIndex = 73;
             pictureBox10.TabStop = false;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.BackColor = Color.White;
+            label6.Font = new Font("Segoe UI", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label6.Location = new Point(34, 142);
+            label6.Name = "label6";
+            label6.Size = new Size(288, 38);
+            label6.TabIndex = 80;
+            label6.Text = "Solved Ticket Report";
+            // 
+            // pictureBox12
+            // 
+            pictureBox12.BackColor = Color.White;
+            pictureBox12.Location = new Point(25, 97);
+            pictureBox12.Name = "pictureBox12";
+            pictureBox12.Size = new Size(1160, 135);
+            pictureBox12.TabIndex = 76;
+            pictureBox12.TabStop = false;
             // 
             // pictureBox9
             // 
             pictureBox9.BackColor = Color.Gray;
-            pictureBox9.Location = new Point(15, 199);
+            pictureBox9.Location = new Point(15, 81);
             pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(1180, 105);
+            pictureBox9.Size = new Size(1180, 165);
             pictureBox9.TabIndex = 72;
             pictureBox9.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            pictureBox8.BackColor = Color.Gray;
-            pictureBox8.Location = new Point(15, 78);
-            pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(1180, 105);
-            pictureBox8.TabIndex = 71;
-            pictureBox8.TabStop = false;
             // 
             // lblUser
             // 
@@ -329,22 +348,12 @@
             lblDescribeHome.Name = "lblDescribeHome";
             lblDescribeHome.Size = new Size(1141, 30);
             lblDescribeHome.TabIndex = 65;
-            lblDescribeHome.Text = "Listed below are the different potential reports that can be generated, as well as a brief description of each.\r\n";
-            // 
-            // tabExisting
-            // 
-            tabExisting.BackColor = Color.LightGray;
-            tabExisting.Location = new Point(4, 37);
-            tabExisting.Name = "tabExisting";
-            tabExisting.Padding = new Padding(3);
-            tabExisting.Size = new Size(1281, 451);
-            tabExisting.TabIndex = 0;
-            tabExisting.Text = "Existing Tickets";
-            tabExisting.Click += tabExisting_Click;
+            lblDescribeHome.Text = "Listed below are the different potential reports that you can generate, as well as a brief description of each.\r\n";
             // 
             // tabSolved
             // 
             tabSolved.BackColor = Color.LightGray;
+            tabSolved.Controls.Add(label2);
             tabSolved.Location = new Point(4, 37);
             tabSolved.Name = "tabSolved";
             tabSolved.Padding = new Padding(3);
@@ -352,14 +361,37 @@
             tabSolved.TabIndex = 1;
             tabSolved.Text = "Solved Tickets";
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label2.Location = new Point(0, 4);
+            label2.Name = "label2";
+            label2.Size = new Size(418, 32);
+            label2.TabIndex = 56;
+            label2.Text = "Creating a Report for Solved Tickets";
+            // 
             // tabUnsolved
             // 
             tabUnsolved.BackColor = Color.LightGray;
+            tabUnsolved.Controls.Add(label3);
             tabUnsolved.Location = new Point(4, 37);
             tabUnsolved.Name = "tabUnsolved";
             tabUnsolved.Size = new Size(1281, 451);
             tabUnsolved.TabIndex = 2;
             tabUnsolved.Text = "Unsolved Tickets";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label3.Location = new Point(0, 5);
+            label3.Name = "label3";
+            label3.Size = new Size(447, 32);
+            label3.TabIndex = 57;
+            label3.Text = "Creating a Report for Unsolved Tickets";
             // 
             // lblReportGen
             // 
@@ -431,7 +463,7 @@
             lblLoggedIn.BackColor = Color.Black;
             lblLoggedIn.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             lblLoggedIn.ForeColor = Color.White;
-            lblLoggedIn.Location = new Point(921, 53);
+            lblLoggedIn.Location = new Point(910, 53);
             lblLoggedIn.Name = "lblLoggedIn";
             lblLoggedIn.Size = new Size(171, 28);
             lblLoggedIn.TabIndex = 0;
@@ -447,6 +479,17 @@
             pictureBox5.Size = new Size(47, 35);
             pictureBox5.TabIndex = 0;
             pictureBox5.TabStop = false;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.BackColor = Color.White;
+            label7.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label7.Location = new Point(355, 287);
+            label7.Name = "label7";
+            label7.Size = new Size(809, 120);
+            label7.TabIndex = 82;
+            label7.Text = resources.GetString("label7.Text");
             // 
             // frmAdmin
             // 
@@ -483,11 +526,13 @@
             tabHome.ResumeLayout(false);
             tabHome.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            tabSolved.ResumeLayout(false);
+            tabSolved.PerformLayout();
+            tabUnsolved.ResumeLayout(false);
+            tabUnsolved.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
@@ -511,22 +556,25 @@
         private PictureBox pictureBox3;
         private Button btnApproveDeny;
         private Button btnClear;
-        private TabControl tabReportGeneration;
-        private TabPage tabExisting;
-        private TabPage tabSolved;
-        private TabPage tabUnsolved;
         private PictureBox pictureBox4;
-        private TabPage tabHome;
         private Label lblLoggedIn;
         private PictureBox pictureBox5;
-        private Label lblDescribeHome;
-        private Label lblWelcomeMessage;
-        private Label lblUser;
+        private TabControl tabReportGeneration;
+        private TabPage tabHome;
+        private Label label4;
         private PictureBox pictureBox13;
-        private PictureBox pictureBox12;
-        private PictureBox pictureBox11;
         private PictureBox pictureBox10;
+        private Label label6;
+        private PictureBox pictureBox12;
         private PictureBox pictureBox9;
-        private PictureBox pictureBox8;
+        private Label lblUser;
+        private Label lblWelcomeMessage;
+        private Label lblDescribeHome;
+        private TabPage tabSolved;
+        private Label label2;
+        private TabPage tabUnsolved;
+        private Label label3;
+        private Label label5;
+        private Label label7;
     }
 }
