@@ -148,6 +148,16 @@ namespace GUI_IT
             frmstatusUpdate UpdateUserStatus = new frmstatusUpdate();
             UpdateUserStatus.ShowDialog();
         }
+
+        private void lblLoggedIn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Fill();
+        }
     }
 
 }
