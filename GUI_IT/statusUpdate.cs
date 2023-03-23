@@ -29,7 +29,7 @@ namespace GUI_IT
             Sql.Regis(user, name, pass, email, role);
             Sql.delete(user);
             nxtuser();
-           
+
         }
 
         private void btnDeny_Click(object sender, EventArgs e)
