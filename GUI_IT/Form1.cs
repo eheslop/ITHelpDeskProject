@@ -5,9 +5,7 @@ using System.Text;
 using MailKit.Net.Smtp;
 using MailKit;
 using MimeKit;
-using System.Security.Cryptography.X509Certificates;
 using System.Net.Mail;
-using Org.BouncyCastle.Asn1.Crmf;
 
 namespace GUI_IT
 {
@@ -118,7 +116,6 @@ namespace GUI_IT
                 newUser.Password = randomstring.ToString();
                 Sql.Register(user, name, first, last, newUser.Password, email, newUser.UserType);
                 Email.sendEmail("Registration", user);
-                Email.sendEmail("Registration Accepted", user);
                 //Email.sendEmail("Registration Denied", user);
                 //Email.sendEmail("Raised Ticket", user, 1);
                 MessageBox.Show("Account Created!\nCheck your email for your login credentials!", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);

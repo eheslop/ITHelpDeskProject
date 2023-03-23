@@ -169,6 +169,16 @@ namespace GUI_IT
             frmUserProf UserProfile = new frmUserProf();
             UserProfile.ShowDialog();
         }
+
+        private void tabHome_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabSolved_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }
