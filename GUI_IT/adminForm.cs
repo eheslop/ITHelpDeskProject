@@ -69,5 +69,10 @@ namespace GUI_IT
         {
 
         }
+
+        private void btnRegistration_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
