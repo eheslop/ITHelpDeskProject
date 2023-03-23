@@ -120,5 +120,16 @@ namespace GUI_IT
         {
 
         }
+
+        private void lblLoggedIn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ProfilePictureBox_Click(object sender, EventArgs e)
+        {
+            frmUserProf UserProfile = new frmUserProf();
+            UserProfile.ShowDialog();
+        }
     }
 }

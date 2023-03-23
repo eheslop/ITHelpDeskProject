@@ -88,7 +88,7 @@
             pictureBox5 = new PictureBox();
             lblHeader = new Label();
             lblLoggedIn = new Label();
-            pictureBox7 = new PictureBox();
+            ProfilePictureBox = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureLogo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Rectangle1).BeginInit();
@@ -111,7 +111,7 @@
             pnlProblemList.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)ProfilePictureBox).BeginInit();
             SuspendLayout();
             // 
             // pictureLogo
@@ -266,7 +266,7 @@
             label11.AutoSize = true;
             label11.BackColor = Color.White;
             label11.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label11.Location = new Point(265, 344);
+            label11.Location = new Point(261, 345);
             label11.Name = "label11";
             label11.Size = new Size(911, 72);
             label11.TabIndex = 70;
@@ -287,10 +287,10 @@
             // 
             label9.AutoSize = true;
             label9.BackColor = Color.White;
-            label9.Font = new Font("Microsoft YaHei UI", 7F, FontStyle.Regular, GraphicsUnit.Point);
-            label9.Location = new Point(229, 231);
+            label9.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label9.Location = new Point(224, 224);
             label9.Name = "label9";
-            label9.Size = new Size(933, 60);
+            label9.Size = new Size(954, 72);
             label9.TabIndex = 68;
             label9.Text = resources.GetString("label9.Text");
             // 
@@ -470,7 +470,7 @@
             btnRaise.FlatStyle = FlatStyle.Popup;
             btnRaise.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnRaise.ForeColor = Color.White;
-            btnRaise.Location = new Point(1067, 388);
+            btnRaise.Location = new Point(1076, 388);
             btnRaise.Name = "btnRaise";
             btnRaise.Size = new Size(161, 40);
             btnRaise.TabIndex = 61;
@@ -495,7 +495,7 @@
             cbxUrgency.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
             cbxUrgency.FormattingEnabled = true;
             cbxUrgency.Items.AddRange(new object[] { "Low", "Medium", "High" });
-            cbxUrgency.Location = new Point(459, 111);
+            cbxUrgency.Location = new Point(462, 112);
             cbxUrgency.Name = "cbxUrgency";
             cbxUrgency.Size = new Size(354, 36);
             cbxUrgency.TabIndex = 59;
@@ -521,12 +521,12 @@
             // txtProblemDescribe
             // 
             txtProblemDescribe.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            txtProblemDescribe.Location = new Point(28, 181);
+            txtProblemDescribe.Location = new Point(26, 180);
             txtProblemDescribe.MaxLength = 500;
             txtProblemDescribe.Multiline = true;
             txtProblemDescribe.Name = "txtProblemDescribe";
             txtProblemDescribe.PlaceholderText = "Enter a description of your problem here in 500 characters or less.";
-            txtProblemDescribe.Size = new Size(998, 241);
+            txtProblemDescribe.Size = new Size(1018, 241);
             txtProblemDescribe.TabIndex = 56;
             // 
             // pictureBox2
@@ -536,7 +536,7 @@
             pictureBox2.Location = new Point(13, 169);
             pictureBox2.Margin = new Padding(2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(1028, 262);
+            pictureBox2.Size = new Size(1043, 262);
             pictureBox2.TabIndex = 55;
             pictureBox2.TabStop = false;
             // 
@@ -546,7 +546,7 @@
             btnClear.FlatStyle = FlatStyle.Popup;
             btnClear.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnClear.ForeColor = Color.White;
-            btnClear.Location = new Point(1067, 335);
+            btnClear.Location = new Point(1076, 335);
             btnClear.Name = "btnClear";
             btnClear.Size = new Size(161, 40);
             btnClear.TabIndex = 54;
@@ -559,7 +559,7 @@
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Microsoft YaHei UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(9, 40);
+            label1.Location = new Point(7, 40);
             label1.Name = "label1";
             label1.Size = new Size(790, 27);
             label1.TabIndex = 52;
@@ -570,7 +570,7 @@
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label2.Location = new Point(7, 4);
+            label2.Location = new Point(7, 7);
             label2.Name = "label2";
             label2.Size = new Size(204, 32);
             label2.TabIndex = 51;
@@ -690,7 +690,7 @@
             label4.AutoSize = true;
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(2, 36);
+            label4.Location = new Point(2, 40);
             label4.Name = "label4";
             label4.Size = new Size(1232, 48);
             label4.TabIndex = 53;
@@ -701,7 +701,7 @@
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label3.Location = new Point(3, 4);
+            label3.Location = new Point(4, 5);
             label3.Name = "label3";
             label3.Size = new Size(206, 32);
             label3.TabIndex = 52;
@@ -817,23 +817,24 @@
             lblLoggedIn.TabIndex = 4;
             lblLoggedIn.Text = "Logged in as: User";
             // 
-            // pictureBox7
+            // ProfilePictureBox
             // 
-            pictureBox7.BackColor = Color.Black;
-            pictureBox7.BackgroundImage = Properties.Resources.Profile_Picture;
-            pictureBox7.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox7.Location = new Point(1202, 46);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(47, 35);
-            pictureBox7.TabIndex = 4;
-            pictureBox7.TabStop = false;
+            ProfilePictureBox.BackColor = Color.Black;
+            ProfilePictureBox.BackgroundImage = Properties.Resources.Profile_Picture;
+            ProfilePictureBox.BackgroundImageLayout = ImageLayout.Zoom;
+            ProfilePictureBox.Location = new Point(1202, 46);
+            ProfilePictureBox.Name = "ProfilePictureBox";
+            ProfilePictureBox.Size = new Size(47, 35);
+            ProfilePictureBox.TabIndex = 4;
+            ProfilePictureBox.TabStop = false;
+            ProfilePictureBox.Click += ProfilePictureBox_Click;
             // 
             // frmProjectMember
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1261, 641);
-            Controls.Add(pictureBox7);
+            Controls.Add(ProfilePictureBox);
             Controls.Add(lblLoggedIn);
             Controls.Add(pnlTickets);
             Controls.Add(lblHeader);
@@ -879,7 +880,7 @@
             pnlProblemList.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)ProfilePictureBox).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -938,7 +939,7 @@
         private Label lblDescribeHome;
         private Label lblUser;
         private Label lblLoggedIn;
-        private PictureBox pictureBox7;
+        private PictureBox ProfilePictureBox;
         private Label label6;
         private Label label7;
         private PictureBox pictureBox11;

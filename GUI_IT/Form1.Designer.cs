@@ -39,7 +39,6 @@
             lblUsernameLogin = new Label();
             lblFirstRegister = new Label();
             btnLogin = new Button();
-            checkboxRemember = new CheckBox();
             linklblForgot = new LinkLabel();
             btnRegisterAccount = new Button();
             lblRegisterAccount = new Label();
@@ -200,19 +199,6 @@
             btnLogin.Text = "Login";
             btnLogin.UseVisualStyleBackColor = false;
             btnLogin.Click += btnLogin_Click;
-            // 
-            // checkboxRemember
-            // 
-            checkboxRemember.Anchor = AnchorStyles.None;
-            checkboxRemember.AutoSize = true;
-            checkboxRemember.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            checkboxRemember.Location = new Point(388, 471);
-            checkboxRemember.Margin = new Padding(2);
-            checkboxRemember.Name = "checkboxRemember";
-            checkboxRemember.Size = new Size(165, 32);
-            checkboxRemember.TabIndex = 11;
-            checkboxRemember.Text = "Remember Me";
-            checkboxRemember.UseVisualStyleBackColor = true;
             // 
             // linklblForgot
             // 
@@ -493,7 +479,7 @@
             lblRememebr.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             lblRememebr.AutoSize = true;
             lblRememebr.Font = new Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point);
-            lblRememebr.Location = new Point(627, 16);
+            lblRememebr.Location = new Point(630, 10);
             lblRememebr.Margin = new Padding(4, 0, 4, 0);
             lblRememebr.Name = "lblRememebr";
             lblRememebr.Size = new Size(164, 21);
@@ -530,7 +516,7 @@
             btnBacktoLogin.FlatStyle = FlatStyle.Popup;
             btnBacktoLogin.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnBacktoLogin.ForeColor = Color.White;
-            btnBacktoLogin.Location = new Point(798, 4);
+            btnBacktoLogin.Location = new Point(798, 0);
             btnBacktoLogin.Margin = new Padding(4);
             btnBacktoLogin.Name = "btnBacktoLogin";
             btnBacktoLogin.Size = new Size(152, 41);
@@ -635,7 +621,6 @@
             Controls.Add(btnClosedEye);
             Controls.Add(btnOpenEye);
             Controls.Add(btnRegisterAccount);
-            Controls.Add(checkboxRemember);
             Controls.Add(btnLogin);
             Controls.Add(lblFirstRegister);
             Controls.Add(lblUsernameLogin);
@@ -675,7 +660,6 @@
         private Label lblUsernameLogin;
         private Label lblFirstRegister;
         private Button btnLogin;
-        private CheckBox checkboxRemember;
         private LinkLabel linklblForgot;
         private Button btnRegisterAccount;
         private Label lblRegisterAccount;

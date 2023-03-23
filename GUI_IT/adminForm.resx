@@ -57,11 +57,26 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label7.Text" xml:space="preserve">
+    <value>This page allows for you to write a report about a specific unsolved ticket. Input the ID of the 
+ticket you wish to write a report about, as well as the problem category, description of the 
+problem, and which member of the IT Support Team was unable to solve the problem. 
+Write your own description regarding the ticket problem and the reason it is unsolved, as 
+well as any other relavant ticket information.
+</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>This page allows for you to write a report about a specific solved ticket. Input the ID of 
+the ticket you wish to write a report about, as well as the problem category, description 
+of the problem, and problem solution, and then write your own description regarding 
+the ticket problem and solution, as well as any other relavant ticket information.
+</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pictureBox5.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ProfilePictureBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYCAYAAAC+ZpjcAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DgAACw4BQL7hQQAAQRdJREFUeF7t3QmwVfWdr/1wkEkDHMFusXJbaMAJUAY7raKJGBkkg0A3pFo0CpF0
+        DAAACwwBP0AiyAAAQRdJREFUeF7t3QmwVfWdr/1wkEkDHMFusXJbaMAJUAY7raKJGBkkg0A3pFo0CpF0
         lFeMJl3iVCpgR+/tVrpExQlU1MtkiZ1E7Aa1RZAhHAxYdSMKKhiMgswchAYO6/3+tv+kHX7AOXtcw/Op
         eqpSicJea/2HnXP2XutrAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACUWVN1gjpd9VFD1VXqFjVRTVOz1L+rF9UrapH6rVql3lLv

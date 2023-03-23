@@ -57,9 +57,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="lblSolveTickets.Text" xml:space="preserve">
-    <value>Below is a list of unsolved tickets that have been assigned to you by an administrator or shared with you by another IT 
-Support Team member. Enter the ticket ID you would like to solve, then write the solution in the designated space below.</value>
+  <data name="label5.Text" xml:space="preserve">
+    <value>This page allows for you to share tickets that have been assigned to you with another member 
+of the IT Support Team. If you are struggling to generate a solution to a ticket that has been 
+assigned to you, you can share the information of the ticket with another member of the IT 
+Team so that they may be able to help you solve it. </value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>This page displays to you a table of unsolved tickets that have either been assigned to you by an
+report manager or shared with you by another member of the IT Support Team. Enter the ticket ID
+of the ticket that you would like to solve, and then write your solution in the designated space.</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

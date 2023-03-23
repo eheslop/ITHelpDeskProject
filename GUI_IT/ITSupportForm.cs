@@ -13,6 +13,7 @@ namespace GUI_IT
     public partial class frmITSupport : Form
     {
         private SessionRegister newUser;
+
         public frmITSupport(SessionRegister newUser)
         {
             InitializeComponent();
@@ -26,6 +27,17 @@ namespace GUI_IT
             this.Hide();
             LoginScreen.ShowDialog();
             this.Close();
+        }
+
+        private void tabShare_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ProfilePictureBox_Click(object sender, EventArgs e)
+        {
+            frmUserProf UserProfile = new frmUserProf();
+            UserProfile.ShowDialog();
         }
     }
 }
