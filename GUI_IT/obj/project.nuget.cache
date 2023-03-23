@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "T6TNQK1zSo2qksnBmBH5tX4llexo4D20tle2jz9MgwME2N9GZDLMsJhsH5XGZa4b8Jt8QZg57GIFv4kQZifmkw==",
+  "dgSpecHash": "G8ugQQXZrKbyHwX8oEaIRsyOkRGvTFNK8e1bNrbjmvhfjfzo/Kml5fNWXZ23ouSxaVuDkRlShOy35WAzJPprng==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kwkye\\source\\repos\\SE361_ITHelpDesk2023\\GUI_IT\\GUI_IT.csproj",
+  "projectFilePath": "C:\\Users\\kwkye\\Source\\Repos\\avadella\\SE361_ITHelpDesk2023\\GUI_IT\\GUI_IT.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kwkye\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\kwkye\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

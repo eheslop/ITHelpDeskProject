@@ -107,8 +107,9 @@ namespace GUI_IT
             string Category = cbxType.Text.ToString();
             string Description = txtProblemDescribe.Text.ToString();
             string Priority = cbxUrgency.Text.ToString();
+            int id = Sql.count();
             Sql.RaiseTicket(id, Category, Description, Priority);
-            id++;
+
             cbxType.ResetText();
             cbxType.SelectedIndex = -1;
             cbxUrgency.ResetText();

@@ -253,6 +253,13 @@ namespace GUI_IT
             con.Close();
         }
 
-
+        public static int count()
+        {
+            SqlConnection con = Connect();
+            String query = "SELECT Count(Id) FROM Tickets;";
+            SqlCommand cmd = new SqlCommand(query, con);
+            int pass = (int)cmd.ExecuteScalar();
+            return pass;
+        }
     }
 }
