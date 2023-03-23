@@ -38,6 +38,8 @@
             pictureBox2 = new PictureBox();
             tabControl1 = new TabControl();
             tabHome = new TabPage();
+            label5 = new Label();
+            label4 = new Label();
             label3 = new Label();
             label2 = new Label();
             pictureBox4 = new PictureBox();
@@ -49,29 +51,28 @@
             lblWelcomeMessage = new Label();
             tabSolve = new TabPage();
             txtSolveTicketID = new TextBox();
-            lblTicketID = new Label();
             btnSolveTicket = new Button();
             btnSolveClear = new Button();
             txtSolution = new TextBox();
             pictureBox6 = new PictureBox();
             DGVS = new DataGridView();
             lblSolve = new Label();
+            lblTicketID = new Label();
             tabShare = new TabPage();
-            lblShare = new Label();
-            pictureBox7 = new PictureBox();
-            lblLoggedIn = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            txtTicketID = new TextBox();
-            label6 = new Label();
-            txtEmail = new TextBox();
-            label7 = new Label();
-            txtUsername = new TextBox();
-            label8 = new Label();
-            pictureBox5 = new PictureBox();
+            DGVShare = new DataGridView();
             btnShare = new Button();
             btnClear = new Button();
-            DGVShare = new DataGridView();
+            txtUsername = new TextBox();
+            label8 = new Label();
+            txtEmail = new TextBox();
+            label7 = new Label();
+            txtTicketID = new TextBox();
+            label6 = new Label();
+            lblShare = new Label();
+            pictureBox5 = new PictureBox();
+            pictureBox7 = new PictureBox();
+            lblLoggedIn = new Label();
+            pictureBox9 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureLogo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Rectangle1).BeginInit();
@@ -86,9 +87,10 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)DGVS).BeginInit();
             tabShare.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)DGVShare).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             SuspendLayout();
             // 
             // pictureLogo
@@ -212,6 +214,28 @@
             tabHome.TabIndex = 2;
             tabHome.Text = "Ticket Homepage";
             // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.BackColor = Color.White;
+            label5.Font = new Font("Microsoft YaHei UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.Location = new Point(243, 294);
+            label5.Name = "label5";
+            label5.Size = new Size(916, 108);
+            label5.TabIndex = 73;
+            label5.Text = resources.GetString("label5.Text");
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.BackColor = Color.White;
+            label4.Font = new Font("Microsoft YaHei UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Location = new Point(224, 117);
+            label4.Name = "label4";
+            label4.Size = new Size(952, 81);
+            label4.TabIndex = 72;
+            label4.Text = resources.GetString("label4.Text");
+            // 
             // label3
             // 
             label3.AutoSize = true;
@@ -311,6 +335,7 @@
             tabSolve.Controls.Add(DGVS);
             tabSolve.Controls.Add(lblSolve);
             tabSolve.Controls.Add(lblTicketID);
+            tabSolve.Controls.Add(pictureBox9);
             tabSolve.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
             tabSolve.Location = new Point(4, 37);
             tabSolve.Name = "tabSolve";
@@ -322,21 +347,11 @@
             // txtSolveTicketID
             // 
             txtSolveTicketID.Anchor = AnchorStyles.None;
-            txtSolveTicketID.Location = new Point(1051, 69);
+            txtSolveTicketID.Location = new Point(1064, 80);
             txtSolveTicketID.Margin = new Padding(4);
             txtSolveTicketID.Name = "txtSolveTicketID";
             txtSolveTicketID.Size = new Size(170, 31);
             txtSolveTicketID.TabIndex = 69;
-            // 
-            // lblTicketID
-            // 
-            lblTicketID.AutoSize = true;
-            lblTicketID.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            lblTicketID.Location = new Point(1050, 37);
-            lblTicketID.Name = "lblTicketID";
-            lblTicketID.Size = new Size(175, 28);
-            lblTicketID.TabIndex = 68;
-            lblTicketID.Text = "Enter a Ticket ID:";
             // 
             // btnSolveTicket
             // 
@@ -367,7 +382,7 @@
             // txtSolution
             // 
             txtSolution.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            txtSolution.Location = new Point(23, 275);
+            txtSolution.Location = new Point(21, 274);
             txtSolution.MaxLength = 500;
             txtSolution.Multiline = true;
             txtSolution.Name = "txtSolution";
@@ -407,6 +422,17 @@
             lblSolve.TabIndex = 55;
             lblSolve.Text = "Solve Tickets";
             // 
+            // lblTicketID
+            // 
+            lblTicketID.AutoSize = true;
+            lblTicketID.BackColor = Color.DarkGray;
+            lblTicketID.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            lblTicketID.Location = new Point(1062, 48);
+            lblTicketID.Name = "lblTicketID";
+            lblTicketID.Size = new Size(175, 28);
+            lblTicketID.TabIndex = 68;
+            lblTicketID.Text = "Enter a Ticket ID:";
+            // 
             // tabShare
             // 
             tabShare.BackColor = Color.LightGray;
@@ -429,133 +455,15 @@
             tabShare.Text = "Share Tickets";
             tabShare.Click += tabShare_Click;
             // 
-            // lblShare
+            // DGVShare
             // 
-            lblShare.AutoSize = true;
-            lblShare.BackColor = Color.Transparent;
-            lblShare.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            lblShare.Location = new Point(3, 6);
-            lblShare.Name = "lblShare";
-            lblShare.Size = new Size(162, 32);
-            lblShare.TabIndex = 55;
-            lblShare.Text = "Share Tickets";
-            // 
-            // pictureBox7
-            // 
-            pictureBox7.BackColor = Color.Black;
-            pictureBox7.BackgroundImage = Properties.Resources.Profile_Picture;
-            pictureBox7.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox7.Location = new Point(1202, 47);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(47, 35);
-            pictureBox7.TabIndex = 5;
-            pictureBox7.TabStop = false;
-            // 
-            // lblLoggedIn
-            // 
-            lblLoggedIn.AutoSize = true;
-            lblLoggedIn.BackColor = Color.Black;
-            lblLoggedIn.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            lblLoggedIn.ForeColor = Color.White;
-            lblLoggedIn.Location = new Point(921, 51);
-            lblLoggedIn.Name = "lblLoggedIn";
-            lblLoggedIn.Size = new Size(171, 28);
-            lblLoggedIn.TabIndex = 6;
-            lblLoggedIn.Text = "Logged in as: User";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.BackColor = Color.White;
-            label4.Font = new Font("Microsoft YaHei UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(224, 117);
-            label4.Name = "label4";
-            label4.Size = new Size(952, 81);
-            label4.TabIndex = 72;
-            label4.Text = resources.GetString("label4.Text");
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.BackColor = Color.White;
-            label5.Font = new Font("Microsoft YaHei UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(243, 294);
-            label5.Name = "label5";
-            label5.Size = new Size(916, 108);
-            label5.TabIndex = 73;
-            label5.Text = resources.GetString("label5.Text");
-            // 
-            // txtTicketID
-            // 
-            txtTicketID.Anchor = AnchorStyles.None;
-            txtTicketID.Location = new Point(18, 102);
-            txtTicketID.Margin = new Padding(4);
-            txtTicketID.MaxLength = 50;
-            txtTicketID.Name = "txtTicketID";
-            txtTicketID.Size = new Size(629, 34);
-            txtTicketID.TabIndex = 71;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.BackColor = Color.DarkGray;
-            label6.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.Location = new Point(15, 69);
-            label6.Name = "label6";
-            label6.Size = new Size(462, 30);
-            label6.TabIndex = 70;
-            label6.Text = "Enter the ID of the ticket you wish to share:";
-            // 
-            // txtEmail
-            // 
-            txtEmail.Anchor = AnchorStyles.None;
-            txtEmail.Location = new Point(19, 309);
-            txtEmail.Margin = new Padding(4);
-            txtEmail.MaxLength = 50;
-            txtEmail.Name = "txtEmail";
-            txtEmail.Size = new Size(630, 34);
-            txtEmail.TabIndex = 73;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.BackColor = Color.DarkGray;
-            label7.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
-            label7.Location = new Point(16, 274);
-            label7.Name = "label7";
-            label7.Size = new Size(397, 30);
-            label7.TabIndex = 72;
-            label7.Text = "Enter the above user's email address:";
-            // 
-            // txtUsername
-            // 
-            txtUsername.Anchor = AnchorStyles.None;
-            txtUsername.Location = new Point(19, 203);
-            txtUsername.Margin = new Padding(4);
-            txtUsername.MaxLength = 50;
-            txtUsername.Name = "txtUsername";
-            txtUsername.Size = new Size(628, 34);
-            txtUsername.TabIndex = 75;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.BackColor = Color.DarkGray;
-            label8.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
-            label8.Location = new Point(14, 169);
-            label8.Name = "label8";
-            label8.Size = new Size(646, 30);
-            label8.TabIndex = 74;
-            label8.Text = "Enter the username of the IT member you wish to share with:";
-            // 
-            // pictureBox5
-            // 
-            pictureBox5.BackColor = Color.DarkGray;
-            pictureBox5.Location = new Point(11, 45);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(662, 328);
-            pictureBox5.TabIndex = 76;
-            pictureBox5.TabStop = false;
+            DGVShare.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            DGVShare.Location = new Point(731, 45);
+            DGVShare.Name = "DGVShare";
+            DGVShare.RowHeadersWidth = 62;
+            DGVShare.RowTemplate.Height = 33;
+            DGVShare.Size = new Size(498, 393);
+            DGVShare.TabIndex = 79;
             // 
             // btnShare
             // 
@@ -583,15 +491,120 @@
             btnClear.Text = "Clear";
             btnClear.UseVisualStyleBackColor = false;
             // 
-            // DGVShare
+            // txtUsername
             // 
-            DGVShare.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            DGVShare.Location = new Point(731, 45);
-            DGVShare.Name = "DGVShare";
-            DGVShare.RowHeadersWidth = 62;
-            DGVShare.RowTemplate.Height = 33;
-            DGVShare.Size = new Size(498, 393);
-            DGVShare.TabIndex = 79;
+            txtUsername.Anchor = AnchorStyles.None;
+            txtUsername.Location = new Point(19, 203);
+            txtUsername.Margin = new Padding(4);
+            txtUsername.MaxLength = 50;
+            txtUsername.Name = "txtUsername";
+            txtUsername.Size = new Size(628, 34);
+            txtUsername.TabIndex = 75;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.BackColor = Color.DarkGray;
+            label8.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label8.Location = new Point(14, 169);
+            label8.Name = "label8";
+            label8.Size = new Size(646, 30);
+            label8.TabIndex = 74;
+            label8.Text = "Enter the username of the IT member you wish to share with:";
+            // 
+            // txtEmail
+            // 
+            txtEmail.Anchor = AnchorStyles.None;
+            txtEmail.Location = new Point(19, 309);
+            txtEmail.Margin = new Padding(4);
+            txtEmail.MaxLength = 50;
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(630, 34);
+            txtEmail.TabIndex = 73;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.BackColor = Color.DarkGray;
+            label7.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.Location = new Point(16, 274);
+            label7.Name = "label7";
+            label7.Size = new Size(397, 30);
+            label7.TabIndex = 72;
+            label7.Text = "Enter the above user's email address:";
+            // 
+            // txtTicketID
+            // 
+            txtTicketID.Anchor = AnchorStyles.None;
+            txtTicketID.Location = new Point(18, 102);
+            txtTicketID.Margin = new Padding(4);
+            txtTicketID.MaxLength = 50;
+            txtTicketID.Name = "txtTicketID";
+            txtTicketID.Size = new Size(629, 34);
+            txtTicketID.TabIndex = 71;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.BackColor = Color.DarkGray;
+            label6.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.Location = new Point(15, 69);
+            label6.Name = "label6";
+            label6.Size = new Size(462, 30);
+            label6.TabIndex = 70;
+            label6.Text = "Enter the ID of the ticket you wish to share:";
+            // 
+            // lblShare
+            // 
+            lblShare.AutoSize = true;
+            lblShare.BackColor = Color.Transparent;
+            lblShare.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            lblShare.Location = new Point(3, 6);
+            lblShare.Name = "lblShare";
+            lblShare.Size = new Size(162, 32);
+            lblShare.TabIndex = 55;
+            lblShare.Text = "Share Tickets";
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.BackColor = Color.DarkGray;
+            pictureBox5.Location = new Point(11, 45);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(662, 328);
+            pictureBox5.TabIndex = 76;
+            pictureBox5.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.BackColor = Color.Black;
+            pictureBox7.BackgroundImage = Properties.Resources.Profile_Picture;
+            pictureBox7.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox7.Location = new Point(1202, 47);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(47, 35);
+            pictureBox7.TabIndex = 5;
+            pictureBox7.TabStop = false;
+            // 
+            // lblLoggedIn
+            // 
+            lblLoggedIn.AutoSize = true;
+            lblLoggedIn.BackColor = Color.Black;
+            lblLoggedIn.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            lblLoggedIn.ForeColor = Color.White;
+            lblLoggedIn.Location = new Point(921, 51);
+            lblLoggedIn.Name = "lblLoggedIn";
+            lblLoggedIn.Size = new Size(171, 28);
+            lblLoggedIn.TabIndex = 6;
+            lblLoggedIn.Text = "Logged in as: User";
+            // 
+            // pictureBox9
+            // 
+            pictureBox9.BackColor = Color.DarkGray;
+            pictureBox9.Location = new Point(1049, 44);
+            pictureBox9.Name = "pictureBox9";
+            pictureBox9.Size = new Size(200, 82);
+            pictureBox9.TabIndex = 70;
+            pictureBox9.TabStop = false;
             // 
             // frmITSupport
             // 
@@ -628,9 +641,10 @@
             ((System.ComponentModel.ISupportInitialize)DGVS).EndInit();
             tabShare.ResumeLayout(false);
             tabShare.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)DGVShare).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -680,5 +694,6 @@
         private Button btnShare;
         private Button btnClear;
         private DataGridView DGVShare;
+        private PictureBox pictureBox9;
     }
 }

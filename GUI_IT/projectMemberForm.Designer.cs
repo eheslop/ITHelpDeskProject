@@ -470,7 +470,7 @@
             btnRaise.FlatStyle = FlatStyle.Popup;
             btnRaise.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnRaise.ForeColor = Color.White;
-            btnRaise.Location = new Point(1067, 388);
+            btnRaise.Location = new Point(1076, 388);
             btnRaise.Name = "btnRaise";
             btnRaise.Size = new Size(161, 40);
             btnRaise.TabIndex = 61;
@@ -495,7 +495,7 @@
             cbxUrgency.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
             cbxUrgency.FormattingEnabled = true;
             cbxUrgency.Items.AddRange(new object[] { "Low", "Medium", "High" });
-            cbxUrgency.Location = new Point(459, 111);
+            cbxUrgency.Location = new Point(462, 112);
             cbxUrgency.Name = "cbxUrgency";
             cbxUrgency.Size = new Size(354, 36);
             cbxUrgency.TabIndex = 59;
@@ -521,12 +521,12 @@
             // txtProblemDescribe
             // 
             txtProblemDescribe.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            txtProblemDescribe.Location = new Point(28, 181);
+            txtProblemDescribe.Location = new Point(26, 180);
             txtProblemDescribe.MaxLength = 500;
             txtProblemDescribe.Multiline = true;
             txtProblemDescribe.Name = "txtProblemDescribe";
             txtProblemDescribe.PlaceholderText = "Enter a description of your problem here in 500 characters or less.";
-            txtProblemDescribe.Size = new Size(998, 241);
+            txtProblemDescribe.Size = new Size(1018, 241);
             txtProblemDescribe.TabIndex = 56;
             // 
             // pictureBox2
@@ -536,7 +536,7 @@
             pictureBox2.Location = new Point(13, 169);
             pictureBox2.Margin = new Padding(2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(1028, 262);
+            pictureBox2.Size = new Size(1043, 262);
             pictureBox2.TabIndex = 55;
             pictureBox2.TabStop = false;
             // 
@@ -546,7 +546,7 @@
             btnClear.FlatStyle = FlatStyle.Popup;
             btnClear.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnClear.ForeColor = Color.White;
-            btnClear.Location = new Point(1067, 335);
+            btnClear.Location = new Point(1076, 335);
             btnClear.Name = "btnClear";
             btnClear.Size = new Size(161, 40);
             btnClear.TabIndex = 54;
