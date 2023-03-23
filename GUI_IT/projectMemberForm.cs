@@ -120,5 +120,10 @@ namespace GUI_IT
         {
 
         }
+
+        private void lblLoggedIn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
