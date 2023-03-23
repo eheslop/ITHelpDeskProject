@@ -154,12 +154,7 @@ namespace GUI_IT
 
         }
 
-        private void pictureBox12_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnrefre_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
             Fill();
         }
