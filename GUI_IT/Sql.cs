@@ -28,11 +28,11 @@ namespace GUI_IT
             return con;
         }
 
-        public static void Register(string user, string name, string pass, string email, string role)
+        public static void Register(string user, string name, string first, string last, string pass, string email, string role)
         {
             string x = "Pending";
             SqlConnection con = Connect();
-            String query = "INSERT INTO Registration(Username, Name, Password, Email, Role, Status) VALUES('" + user.ToString() + "', '" + name.ToString() + "', '" + pass.ToString() + "', '" + email.ToString() + "', '" + role.ToString() + "', '" + x + "');";
+            String query = "INSERT INTO Registration(Username, Name, First_Name, Last_Name, Password, Email, Role, Status) VALUES('" + user.ToString() + "', '" + name.ToString() + "', '" + first.ToString() + "', '" + last.ToString() + "','" + pass.ToString() + "', '" + email.ToString() + "', '" + role.ToString() + "', '" + x + "');";
             SqlCommand cmd = new SqlCommand(query, con);
             cmd.ExecuteNonQuery();
             con.Close();
@@ -172,6 +172,24 @@ namespace GUI_IT
             return name;
         }
 
+        public static string retFirst()
+        {
+            SqlConnection con = Connect();
+            String query = "SELECT top 1 First_Name FROM Registration;";
+            SqlCommand cmd = new SqlCommand(query, con);
+            string name = (string)cmd.ExecuteScalar();
+            return name;
+        }
+
+        public static string retLast()
+        {
+            SqlConnection con = Connect();
+            String query = "SELECT top 1 Last_Name FROM Registration;";
+            SqlCommand cmd = new SqlCommand(query, con);
+            string name = (string)cmd.ExecuteScalar();
+            return name;
+        }
+
         public static string retEmail()
         {
             SqlConnection con = Connect();
@@ -199,10 +217,10 @@ namespace GUI_IT
             return role;
         }
 
-        public static void Regis(string user, string name, string pass, string email, string role)
+        public static void Regis(string user, string name, string first, string last, string pass, string email, string role)
         {
             SqlConnection con = Connect();
-            String query = "INSERT INTO RegisteredUsers(Username, Name, Password, Email, Role) VALUES('" + user.ToString() + "', '" + name.ToString() + "', '" + pass.ToString() + "', '" + email.ToString() + "', '" + role.ToString() + "');";
+            String query = "INSERT INTO RegisteredUsers(Username, Name, First_Name, Last_Name, Password, Email, Role) VALUES('" + user.ToString() + "', '" + name.ToString() + "', '" + first.ToString() + "', '" + last.ToString() + "','" + pass.ToString() + "', '" + email.ToString() + "', '" + role.ToString() + "');";
             SqlCommand cmd = new SqlCommand(query, con);
             cmd.ExecuteNonQuery();
             con.Close();
@@ -224,6 +242,24 @@ namespace GUI_IT
             SqlCommand cmd = new SqlCommand(query, con);
             cmd.ExecuteNonQuery();
             con.Close();
+        }
+
+        public static void cngpass(string user, string newpass)
+        {
+            SqlConnection con = Connect();
+            String query = "UPDATE RegisteredUsers SET Password = '" + newpass + "' where Username = '" + user + "';";
+            SqlCommand cmd = new SqlCommand(query, con);
+            cmd.ExecuteNonQuery();
+            con.Close();
+        }
+
+        public static int count()
+        {
+            SqlConnection con = Connect();
+            String query = "SELECT Count(Id) FROM Tickets;";
+            SqlCommand cmd = new SqlCommand(query, con);
+            int pass = (int)cmd.ExecuteScalar();
+            return pass;
         }
     }
 }

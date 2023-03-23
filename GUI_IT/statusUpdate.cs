@@ -21,12 +21,14 @@ namespace GUI_IT
         private void btnApprove_Click(object sender, EventArgs e)
         {
             string name = Sql.retName();
+            string fname = Sql.retFirst();
+            string lname = Sql.retLast();
             string email = Sql.retEmail();
             string role = Sql.rerole();
             string user = Sql.retUser();
             string pass = Sql.repass();
             Email.sendEmail("Registration Accepted", user);
-            Sql.Regis(user, name, pass, email, role);
+            Sql.Regis(user, name, fname, lname, pass, email, role);
             Sql.delete(user);
             nxtuser();
 
@@ -58,14 +60,15 @@ namespace GUI_IT
 
         private void nxtuser()
         {
-            string name = Sql.retName();
-            txtname.Text = name;
+            string fname = Sql.retFirst();
+            txtname.Text = fname;
+            string lname = Sql.retLast();
+            txtuser.Text = lname;
             string email = Sql.retEmail();
             textemail.Text = email;
             string role = Sql.rerole();
             textrole.Text = role;
-            string user = Sql.retUser();
-            txtuser.Text = user;
+           
         }
     }
 }
