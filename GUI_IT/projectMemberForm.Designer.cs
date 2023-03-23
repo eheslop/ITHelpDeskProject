@@ -88,7 +88,7 @@
             pictureBox5 = new PictureBox();
             lblHeader = new Label();
             lblLoggedIn = new Label();
-            pictureBox7 = new PictureBox();
+            ProfilePictureBox = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureLogo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Rectangle1).BeginInit();
@@ -111,7 +111,7 @@
             pnlProblemList.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)ProfilePictureBox).BeginInit();
             SuspendLayout();
             // 
             // pictureLogo
@@ -817,23 +817,24 @@
             lblLoggedIn.TabIndex = 4;
             lblLoggedIn.Text = "Logged in as: User";
             // 
-            // pictureBox7
+            // ProfilePictureBox
             // 
-            pictureBox7.BackColor = Color.Black;
-            pictureBox7.BackgroundImage = Properties.Resources.Profile_Picture;
-            pictureBox7.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox7.Location = new Point(1202, 46);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(47, 35);
-            pictureBox7.TabIndex = 4;
-            pictureBox7.TabStop = false;
+            ProfilePictureBox.BackColor = Color.Black;
+            ProfilePictureBox.BackgroundImage = Properties.Resources.Profile_Picture;
+            ProfilePictureBox.BackgroundImageLayout = ImageLayout.Zoom;
+            ProfilePictureBox.Location = new Point(1202, 46);
+            ProfilePictureBox.Name = "ProfilePictureBox";
+            ProfilePictureBox.Size = new Size(47, 35);
+            ProfilePictureBox.TabIndex = 4;
+            ProfilePictureBox.TabStop = false;
+            ProfilePictureBox.Click += ProfilePictureBox_Click;
             // 
             // frmProjectMember
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1261, 641);
-            Controls.Add(pictureBox7);
+            Controls.Add(ProfilePictureBox);
             Controls.Add(lblLoggedIn);
             Controls.Add(pnlTickets);
             Controls.Add(lblHeader);
@@ -879,7 +880,7 @@
             pnlProblemList.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)ProfilePictureBox).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -938,7 +939,7 @@
         private Label lblDescribeHome;
         private Label lblUser;
         private Label lblLoggedIn;
-        private PictureBox pictureBox7;
+        private PictureBox ProfilePictureBox;
         private Label label6;
         private Label label7;
         private PictureBox pictureBox11;

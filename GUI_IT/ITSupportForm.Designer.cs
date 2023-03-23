@@ -58,6 +58,7 @@
             DGVS = new DataGridView();
             lblSolve = new Label();
             lblTicketID = new Label();
+            pictureBox9 = new PictureBox();
             tabShare = new TabPage();
             DGVShare = new DataGridView();
             btnShare = new Button();
@@ -70,9 +71,8 @@
             label6 = new Label();
             lblShare = new Label();
             pictureBox5 = new PictureBox();
-            pictureBox7 = new PictureBox();
+            ProfilePictureBox = new PictureBox();
             lblLoggedIn = new Label();
-            pictureBox9 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureLogo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Rectangle1).BeginInit();
@@ -86,11 +86,11 @@
             tabSolve.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)DGVS).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             tabShare.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)DGVShare).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)ProfilePictureBox).BeginInit();
             SuspendLayout();
             // 
             // pictureLogo
@@ -433,6 +433,15 @@
             lblTicketID.TabIndex = 68;
             lblTicketID.Text = "Enter a Ticket ID:";
             // 
+            // pictureBox9
+            // 
+            pictureBox9.BackColor = Color.DarkGray;
+            pictureBox9.Location = new Point(1049, 44);
+            pictureBox9.Name = "pictureBox9";
+            pictureBox9.Size = new Size(200, 82);
+            pictureBox9.TabIndex = 70;
+            pictureBox9.TabStop = false;
+            // 
             // tabShare
             // 
             tabShare.BackColor = Color.LightGray;
@@ -574,16 +583,17 @@
             pictureBox5.TabIndex = 76;
             pictureBox5.TabStop = false;
             // 
-            // pictureBox7
+            // ProfilePictureBox
             // 
-            pictureBox7.BackColor = Color.Black;
-            pictureBox7.BackgroundImage = Properties.Resources.Profile_Picture;
-            pictureBox7.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox7.Location = new Point(1202, 47);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(47, 35);
-            pictureBox7.TabIndex = 5;
-            pictureBox7.TabStop = false;
+            ProfilePictureBox.BackColor = Color.Black;
+            ProfilePictureBox.BackgroundImage = Properties.Resources.Profile_Picture;
+            ProfilePictureBox.BackgroundImageLayout = ImageLayout.Zoom;
+            ProfilePictureBox.Location = new Point(1202, 47);
+            ProfilePictureBox.Name = "ProfilePictureBox";
+            ProfilePictureBox.Size = new Size(47, 35);
+            ProfilePictureBox.TabIndex = 5;
+            ProfilePictureBox.TabStop = false;
+            ProfilePictureBox.Click += ProfilePictureBox_Click;
             // 
             // lblLoggedIn
             // 
@@ -597,15 +607,6 @@
             lblLoggedIn.TabIndex = 6;
             lblLoggedIn.Text = "Logged in as: User";
             // 
-            // pictureBox9
-            // 
-            pictureBox9.BackColor = Color.DarkGray;
-            pictureBox9.Location = new Point(1049, 44);
-            pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(200, 82);
-            pictureBox9.TabIndex = 70;
-            pictureBox9.TabStop = false;
-            // 
             // frmITSupport
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -613,7 +614,7 @@
             ClientSize = new Size(1261, 641);
             Controls.Add(lblLoggedIn);
             Controls.Add(tabControl1);
-            Controls.Add(pictureBox7);
+            Controls.Add(ProfilePictureBox);
             Controls.Add(label1);
             Controls.Add(pictureBox2);
             Controls.Add(lblHeader);
@@ -639,12 +640,12 @@
             tabSolve.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)DGVS).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             tabShare.ResumeLayout(false);
             tabShare.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)DGVShare).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
+            ((System.ComponentModel.ISupportInitialize)ProfilePictureBox).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -671,7 +672,7 @@
         private TextBox txtSolveTicketID;
         private Label lblTicketID;
         private TabPage tabHome;
-        private PictureBox pictureBox7;
+        private PictureBox ProfilePictureBox;
         private Label lblLoggedIn;
         private Label lblWelcomeMessage;
         private Label lblUser;

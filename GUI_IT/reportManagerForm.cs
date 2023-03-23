@@ -56,5 +56,11 @@ namespace GUI_IT
         {
 
         }
+
+        private void ProfilePictureBox_Click(object sender, EventArgs e)
+        {
+            frmUserProf UserProfile = new frmUserProf();
+            UserProfile.ShowDialog();
+        }
     }
 }

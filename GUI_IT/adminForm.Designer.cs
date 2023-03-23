@@ -41,6 +41,7 @@
             pnlReportGenerate = new Panel();
             tabReportGeneration = new TabControl();
             tabHome = new TabPage();
+            ProfilePictureBox = new PictureBox();
             label7 = new Label();
             label5 = new Label();
             label4 = new Label();
@@ -104,9 +105,11 @@
             btnClear = new Button();
             pictureBox4 = new PictureBox();
             lblLoggedIn = new Label();
-            pictureBox5 = new PictureBox();
             pictureBox6 = new PictureBox();
+<<<<<<< HEAD
             btnrefre = new Button();
+=======
+>>>>>>> 9820d622e113bc440dbe0a4ce2363405c337e172
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Rectangle1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)DGVR).BeginInit();
@@ -114,6 +117,7 @@
             pnlReportGenerate.SuspendLayout();
             tabReportGeneration.SuspendLayout();
             tabHome.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)ProfilePictureBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
@@ -131,7 +135,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             SuspendLayout();
             // 
@@ -306,6 +309,18 @@
             tabHome.Size = new Size(1023, 355);
             tabHome.TabIndex = 3;
             tabHome.Text = "Report Homepage";
+            // 
+            // ProfilePictureBox
+            // 
+            ProfilePictureBox.BackColor = Color.Black;
+            ProfilePictureBox.BackgroundImage = (Image)resources.GetObject("ProfilePictureBox.BackgroundImage");
+            ProfilePictureBox.BackgroundImageLayout = ImageLayout.Zoom;
+            ProfilePictureBox.Location = new Point(1202, 49);
+            ProfilePictureBox.Name = "ProfilePictureBox";
+            ProfilePictureBox.Size = new Size(47, 35);
+            ProfilePictureBox.TabIndex = 83;
+            ProfilePictureBox.TabStop = false;
+            ProfilePictureBox.Click += ProfilePictureBox_Click;
             // 
             // label7
             // 
@@ -539,10 +554,16 @@
             // 
             label19.AutoSize = true;
             label19.BackColor = Color.DarkGray;
+<<<<<<< HEAD
             label19.Location = new Point(18, 42);
             label19.Margin = new Padding(2, 0, 2, 0);
             label19.Name = "label19";
             label19.Size = new Size(87, 23);
+=======
+            label19.Location = new Point(23, 52);
+            label19.Name = "label19";
+            label19.Size = new Size(102, 28);
+>>>>>>> 9820d622e113bc440dbe0a4ce2363405c337e172
             label19.TabIndex = 121;
             label19.Text = "Ticket ID:";
             // 
@@ -550,33 +571,53 @@
             // 
             label14.AutoSize = true;
             label14.BackColor = Color.DarkGray;
+<<<<<<< HEAD
             label14.Location = new Point(17, 162);
             label14.Margin = new Padding(2, 0, 2, 0);
             label14.Name = "label14";
             label14.Size = new Size(303, 23);
+=======
+            label14.Location = new Point(21, 203);
+            label14.Name = "label14";
+            label14.Size = new Size(362, 28);
+>>>>>>> 9820d622e113bc440dbe0a4ce2363405c337e172
             label14.TabIndex = 120;
             label14.Text = "What was the select ticket category?";
             // 
             // txtSolvedProblem
             // 
             txtSolvedProblem.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
+<<<<<<< HEAD
             txtSolvedProblem.Location = new Point(26, 234);
             txtSolvedProblem.Margin = new Padding(2);
+=======
+            txtSolvedProblem.Location = new Point(32, 292);
+>>>>>>> 9820d622e113bc440dbe0a4ce2363405c337e172
             txtSolvedProblem.MaxLength = 500;
             txtSolvedProblem.Multiline = true;
             txtSolvedProblem.Name = "txtSolvedProblem";
             txtSolvedProblem.PlaceholderText = "Provide a brief summary of the ticket description.";
+<<<<<<< HEAD
             txtSolvedProblem.Size = new Size(521, 59);
+=======
+            txtSolvedProblem.Size = new Size(650, 73);
+>>>>>>> 9820d622e113bc440dbe0a4ce2363405c337e172
             txtSolvedProblem.TabIndex = 119;
             // 
             // label15
             // 
             label15.AutoSize = true;
             label15.BackColor = Color.DarkGray;
+<<<<<<< HEAD
             label15.Location = new Point(18, 102);
             label15.Margin = new Padding(2, 0, 2, 0);
             label15.Name = "label15";
             label15.Size = new Size(135, 23);
+=======
+            label15.Location = new Point(22, 127);
+            label15.Name = "label15";
+            label15.Size = new Size(159, 28);
+>>>>>>> 9820d622e113bc440dbe0a4ce2363405c337e172
             label15.TabIndex = 118;
             label15.Text = "Ticket Urgency:";
             // 
@@ -584,10 +625,16 @@
             // 
             label16.AutoSize = true;
             label16.BackColor = Color.DarkGray;
+<<<<<<< HEAD
             label16.Location = new Point(173, 102);
             label16.Margin = new Padding(2, 0, 2, 0);
             label16.Name = "label16";
             label16.Size = new Size(262, 23);
+=======
+            label16.Location = new Point(216, 127);
+            label16.Name = "label16";
+            label16.Size = new Size(310, 28);
+>>>>>>> 9820d622e113bc440dbe0a4ce2363405c337e172
             label16.TabIndex = 117;
             label16.Text = "Email of user who raised ticket:";
             // 
@@ -595,10 +642,16 @@
             // 
             label17.AutoSize = true;
             label17.BackColor = Color.DarkGray;
+<<<<<<< HEAD
             label17.Location = new Point(171, 42);
             label17.Margin = new Padding(2, 0, 2, 0);
             label17.Name = "label17";
             label17.Size = new Size(395, 23);
+=======
+            label17.Location = new Point(214, 53);
+            label17.Name = "label17";
+            label17.Size = new Size(465, 28);
+>>>>>>> 9820d622e113bc440dbe0a4ce2363405c337e172
             label17.TabIndex = 116;
             label17.Text = "Email of IT member who was assigned to ticket:";
             // 
@@ -607,74 +660,125 @@
             label18.AutoSize = true;
             label18.BackColor = Color.DarkGray;
             label18.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+<<<<<<< HEAD
             label18.Location = new Point(568, 44);
             label18.Margin = new Padding(2, 0, 2, 0);
             label18.Name = "label18";
             label18.Size = new Size(445, 46);
+=======
+            label18.Location = new Point(710, 55);
+            label18.Name = "label18";
+            label18.Size = new Size(528, 56);
+>>>>>>> 9820d622e113bc440dbe0a4ce2363405c337e172
             label18.TabIndex = 114;
             label18.Text = "Provide the solution to the raised ticket below, as well\r\nas any other potentially important ticket details.";
             // 
             // txtSolvedDescription
             // 
             txtSolvedDescription.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
+<<<<<<< HEAD
             txtSolvedDescription.Location = new Point(577, 102);
             txtSolvedDescription.Margin = new Padding(2);
+=======
+            txtSolvedDescription.Location = new Point(721, 127);
+>>>>>>> 9820d622e113bc440dbe0a4ce2363405c337e172
             txtSolvedDescription.MaxLength = 750;
             txtSolvedDescription.Multiline = true;
             txtSolvedDescription.Name = "txtSolvedDescription";
             txtSolvedDescription.PlaceholderText = "Include any other necessary ticket details here.";
+<<<<<<< HEAD
             txtSolvedDescription.Size = new Size(406, 226);
+=======
+            txtSolvedDescription.Size = new Size(506, 281);
+>>>>>>> 9820d622e113bc440dbe0a4ce2363405c337e172
             txtSolvedDescription.TabIndex = 113;
             // 
             // pictureBox15
             // 
             pictureBox15.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox15.BackColor = Color.Gray;
+<<<<<<< HEAD
             pictureBox15.Location = new Point(567, 94);
             pictureBox15.Margin = new Padding(2);
             pictureBox15.Name = "pictureBox15";
             pictureBox15.Size = new Size(422, 242);
+=======
+            pictureBox15.Location = new Point(709, 117);
+            pictureBox15.Margin = new Padding(2);
+            pictureBox15.Name = "pictureBox15";
+            pictureBox15.Size = new Size(527, 302);
+>>>>>>> 9820d622e113bc440dbe0a4ce2363405c337e172
             pictureBox15.TabIndex = 112;
             pictureBox15.TabStop = false;
             // 
             // txtSolvedProjectEmail
             // 
+<<<<<<< HEAD
             txtSolvedProjectEmail.Location = new Point(174, 127);
             txtSolvedProjectEmail.Margin = new Padding(2);
             txtSolvedProjectEmail.Name = "txtSolvedProjectEmail";
             txtSolvedProjectEmail.Size = new Size(370, 30);
+=======
+            txtSolvedProjectEmail.Location = new Point(218, 159);
+            txtSolvedProjectEmail.Name = "txtSolvedProjectEmail";
+            txtSolvedProjectEmail.Size = new Size(462, 34);
+>>>>>>> 9820d622e113bc440dbe0a4ce2363405c337e172
             txtSolvedProjectEmail.TabIndex = 111;
             // 
             // txtSolvedTicketID
             // 
+<<<<<<< HEAD
             txtSolvedTicketID.Location = new Point(19, 66);
             txtSolvedTicketID.Margin = new Padding(2);
             txtSolvedTicketID.Name = "txtSolvedTicketID";
             txtSolvedTicketID.Size = new Size(130, 30);
+=======
+            txtSolvedTicketID.Location = new Point(24, 83);
+            txtSolvedTicketID.Name = "txtSolvedTicketID";
+            txtSolvedTicketID.Size = new Size(162, 34);
+>>>>>>> 9820d622e113bc440dbe0a4ce2363405c337e172
             txtSolvedTicketID.TabIndex = 110;
             // 
             // txtSolvedUrgency
             // 
+<<<<<<< HEAD
             txtSolvedUrgency.Location = new Point(19, 126);
             txtSolvedUrgency.Margin = new Padding(2);
             txtSolvedUrgency.Name = "txtSolvedUrgency";
             txtSolvedUrgency.Size = new Size(132, 30);
+=======
+            txtSolvedUrgency.Location = new Point(24, 158);
+            txtSolvedUrgency.Name = "txtSolvedUrgency";
+            txtSolvedUrgency.Size = new Size(164, 34);
+>>>>>>> 9820d622e113bc440dbe0a4ce2363405c337e172
             txtSolvedUrgency.TabIndex = 109;
             // 
             // txtSolvedITEmail
             // 
+<<<<<<< HEAD
             txtSolvedITEmail.Location = new Point(174, 67);
             txtSolvedITEmail.Margin = new Padding(2);
             txtSolvedITEmail.Name = "txtSolvedITEmail";
             txtSolvedITEmail.Size = new Size(370, 30);
+=======
+            txtSolvedITEmail.Location = new Point(218, 84);
+            txtSolvedITEmail.Name = "txtSolvedITEmail";
+            txtSolvedITEmail.Size = new Size(462, 34);
+>>>>>>> 9820d622e113bc440dbe0a4ce2363405c337e172
             txtSolvedITEmail.TabIndex = 108;
             // 
             // txtSolvedCategory
             // 
+<<<<<<< HEAD
             txtSolvedCategory.Location = new Point(18, 187);
             txtSolvedCategory.Margin = new Padding(2);
             txtSolvedCategory.Name = "txtSolvedCategory";
             txtSolvedCategory.Size = new Size(527, 30);
+=======
+            txtSolvedCategory.Location = new Point(22, 234);
+            txtSolvedCategory.Name = "txtSolvedCategory";
+            txtSolvedCategory.Size = new Size(658, 34);
+>>>>>>> 9820d622e113bc440dbe0a4ce2363405c337e172
             txtSolvedCategory.TabIndex = 107;
             // 
             // btnSubmitSolved
@@ -683,10 +787,16 @@
             btnSubmitSolved.FlatStyle = FlatStyle.Popup;
             btnSubmitSolved.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnSubmitSolved.ForeColor = Color.White;
+<<<<<<< HEAD
             btnSubmitSolved.Location = new Point(163, 309);
             btnSubmitSolved.Margin = new Padding(2);
             btnSubmitSolved.Name = "btnSubmitSolved";
             btnSubmitSolved.Size = new Size(127, 30);
+=======
+            btnSubmitSolved.Location = new Point(204, 386);
+            btnSubmitSolved.Name = "btnSubmitSolved";
+            btnSubmitSolved.Size = new Size(159, 38);
+>>>>>>> 9820d622e113bc440dbe0a4ce2363405c337e172
             btnSubmitSolved.TabIndex = 106;
             btnSubmitSolved.Text = "Submit Report";
             btnSubmitSolved.UseVisualStyleBackColor = false;
@@ -697,10 +807,16 @@
             btnClearSolved.FlatStyle = FlatStyle.Popup;
             btnClearSolved.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnClearSolved.ForeColor = Color.White;
+<<<<<<< HEAD
             btnClearSolved.Location = new Point(21, 309);
             btnClearSolved.Margin = new Padding(2);
             btnClearSolved.Name = "btnClearSolved";
             btnClearSolved.Size = new Size(127, 30);
+=======
+            btnClearSolved.Location = new Point(26, 386);
+            btnClearSolved.Name = "btnClearSolved";
+            btnClearSolved.Size = new Size(159, 38);
+>>>>>>> 9820d622e113bc440dbe0a4ce2363405c337e172
             btnClearSolved.TabIndex = 105;
             btnClearSolved.Text = "Clear";
             btnClearSolved.UseVisualStyleBackColor = false;
@@ -709,20 +825,33 @@
             // 
             pictureBox16.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox16.BackColor = Color.Gray;
+<<<<<<< HEAD
             pictureBox16.Location = new Point(17, 227);
             pictureBox16.Margin = new Padding(2);
             pictureBox16.Name = "pictureBox16";
             pictureBox16.Size = new Size(538, 72);
+=======
+            pictureBox16.Location = new Point(21, 284);
+            pictureBox16.Margin = new Padding(2);
+            pictureBox16.Name = "pictureBox16";
+            pictureBox16.Size = new Size(672, 90);
+>>>>>>> 9820d622e113bc440dbe0a4ce2363405c337e172
             pictureBox16.TabIndex = 115;
             pictureBox16.TabStop = false;
             // 
             // pictureBox17
             // 
             pictureBox17.BackColor = Color.DarkGray;
+<<<<<<< HEAD
             pictureBox17.Location = new Point(10, 38);
             pictureBox17.Margin = new Padding(2);
             pictureBox17.Name = "pictureBox17";
             pictureBox17.Size = new Size(991, 306);
+=======
+            pictureBox17.Location = new Point(12, 48);
+            pictureBox17.Name = "pictureBox17";
+            pictureBox17.Size = new Size(1239, 383);
+>>>>>>> 9820d622e113bc440dbe0a4ce2363405c337e172
             pictureBox17.TabIndex = 104;
             pictureBox17.TabStop = false;
             // 
@@ -771,23 +900,37 @@
             // 
             label13.AutoSize = true;
             label13.BackColor = Color.DarkGray;
+<<<<<<< HEAD
             label13.Location = new Point(16, 160);
             label13.Margin = new Padding(2, 0, 2, 0);
             label13.Name = "label13";
             label13.Size = new Size(303, 23);
+=======
+            label13.Location = new Point(20, 200);
+            label13.Name = "label13";
+            label13.Size = new Size(362, 28);
+>>>>>>> 9820d622e113bc440dbe0a4ce2363405c337e172
             label13.TabIndex = 102;
             label13.Text = "What was the select ticket category?";
             // 
             // txtTicketSummary
             // 
             txtTicketSummary.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
+<<<<<<< HEAD
             txtTicketSummary.Location = new Point(23, 234);
             txtTicketSummary.Margin = new Padding(2);
+=======
+            txtTicketSummary.Location = new Point(29, 292);
+>>>>>>> 9820d622e113bc440dbe0a4ce2363405c337e172
             txtTicketSummary.MaxLength = 500;
             txtTicketSummary.Multiline = true;
             txtTicketSummary.Name = "txtTicketSummary";
             txtTicketSummary.PlaceholderText = "Provide a brief summary of the ticket description.";
+<<<<<<< HEAD
             txtTicketSummary.Size = new Size(521, 59);
+=======
+            txtTicketSummary.Size = new Size(650, 73);
+>>>>>>> 9820d622e113bc440dbe0a4ce2363405c337e172
             txtTicketSummary.TabIndex = 101;
             // 
             // label12
@@ -1049,6 +1192,7 @@
             lblLoggedIn.TabIndex = 0;
             lblLoggedIn.Text = "Logged in as: User";
             // 
+<<<<<<< HEAD
             // pictureBox5
             // 
             pictureBox5.BackColor = Color.Black;
@@ -1061,6 +1205,8 @@
             pictureBox5.TabIndex = 0;
             pictureBox5.TabStop = false;
             // 
+=======
+>>>>>>> 9820d622e113bc440dbe0a4ce2363405c337e172
             // pictureBox6
             // 
             pictureBox6.BackColor = Color.DarkGray;
@@ -1071,6 +1217,7 @@
             pictureBox6.TabIndex = 73;
             pictureBox6.TabStop = false;
             // 
+<<<<<<< HEAD
             // btnrefre
             // 
             btnrefre.Location = new Point(857, 345);
@@ -1081,13 +1228,20 @@
             btnrefre.UseVisualStyleBackColor = true;
             btnrefre.Click += btnrefre_Click;
             // 
+=======
+>>>>>>> 9820d622e113bc440dbe0a4ce2363405c337e172
             // frmAdmin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+<<<<<<< HEAD
             ClientSize = new Size(1009, 513);
             Controls.Add(btnrefre);
             Controls.Add(pictureBox5);
+=======
+            ClientSize = new Size(1261, 641);
+            Controls.Add(ProfilePictureBox);
+>>>>>>> 9820d622e113bc440dbe0a4ce2363405c337e172
             Controls.Add(lblLoggedIn);
             Controls.Add(pictureBox4);
             Controls.Add(pnlReportGenerate);
@@ -1117,6 +1271,7 @@
             tabReportGeneration.ResumeLayout(false);
             tabHome.ResumeLayout(false);
             tabHome.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)ProfilePictureBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
@@ -1137,7 +1292,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -1161,7 +1315,6 @@
         private Button btnClear;
         private PictureBox pictureBox4;
         private Label lblLoggedIn;
-        private PictureBox pictureBox5;
         private TabControl tabReportGeneration;
         private TabPage tabHome;
         private Label label4;
@@ -1222,6 +1375,10 @@
         private PictureBox pictureBox16;
         private PictureBox pictureBox17;
         private Label label18;
+<<<<<<< HEAD
         private Button btnrefre;
+=======
+        private PictureBox ProfilePictureBox;
+>>>>>>> 9820d622e113bc440dbe0a4ce2363405c337e172
     }
 }

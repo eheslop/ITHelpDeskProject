@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmstatusUpdate));
             pictureBox3 = new PictureBox();
-            pictureBox2 = new PictureBox();
+            pictureBoxIcon = new PictureBox();
             btnApprove = new Button();
             btnDeny = new Button();
             lblStatusQuestion = new Label();
@@ -55,7 +55,7 @@
             textemail = new TextBox();
             textrole = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxIcon).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
@@ -77,17 +77,17 @@
             pictureBox3.TabIndex = 37;
             pictureBox3.TabStop = false;
             // 
-            // pictureBox2
+            // pictureBoxIcon
             // 
-            pictureBox2.BackColor = Color.Black;
-            pictureBox2.Image = Properties.Resources.redAgentsLogo;
-            pictureBox2.Location = new Point(8, 41);
-            pictureBox2.Margin = new Padding(2);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(38, 32);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 38;
-            pictureBox2.TabStop = false;
+            pictureBoxIcon.BackColor = Color.Black;
+            pictureBoxIcon.Image = Properties.Resources.redAgentsLogo;
+            pictureBoxIcon.Location = new Point(8, 41);
+            pictureBoxIcon.Margin = new Padding(2);
+            pictureBoxIcon.Name = "pictureBoxIcon";
+            pictureBoxIcon.Size = new Size(38, 32);
+            pictureBoxIcon.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBoxIcon.TabIndex = 38;
+            pictureBoxIcon.TabStop = false;
             // 
             // btnApprove
             // 
@@ -95,7 +95,7 @@
             btnApprove.FlatStyle = FlatStyle.Popup;
             btnApprove.Font = new Font("Microsoft YaHei UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
             btnApprove.ForeColor = Color.White;
-            btnApprove.Location = new Point(113, 529);
+            btnApprove.Location = new Point(106, 529);
             btnApprove.Margin = new Padding(2);
             btnApprove.Name = "btnApprove";
             btnApprove.Size = new Size(145, 59);
@@ -110,7 +110,7 @@
             btnDeny.FlatStyle = FlatStyle.Popup;
             btnDeny.Font = new Font("Microsoft YaHei UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
             btnDeny.ForeColor = Color.White;
-            btnDeny.Location = new Point(305, 529);
+            btnDeny.Location = new Point(313, 530);
             btnDeny.Margin = new Padding(2);
             btnDeny.Name = "btnDeny";
             btnDeny.Size = new Size(145, 59);
@@ -213,7 +213,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Microsoft YaHei UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.ForeColor = Color.FromArgb(192, 0, 0);
+            label2.ForeColor = Color.Red;
             label2.Location = new Point(179, 474);
             label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
@@ -239,7 +239,7 @@
             lblUserType.AutoSize = true;
             lblUserType.BackColor = Color.Gainsboro;
             lblUserType.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblUserType.Location = new Point(47, 384);
+            lblUserType.Location = new Point(67, 385);
             lblUserType.Margin = new Padding(2, 0, 2, 0);
             lblUserType.Name = "lblUserType";
             lblUserType.Size = new Size(57, 25);
@@ -251,7 +251,7 @@
             lblEmail.AutoSize = true;
             lblEmail.BackColor = Color.Gainsboro;
             lblEmail.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblEmail.Location = new Point(49, 314);
+            lblEmail.Location = new Point(64, 315);
             lblEmail.Margin = new Padding(2, 0, 2, 0);
             lblEmail.Name = "lblEmail";
             lblEmail.Size = new Size(65, 25);
@@ -316,7 +316,8 @@
             txtname.Location = new Point(159, 174);
             txtname.Margin = new Padding(4);
             txtname.Name = "txtname";
-            txtname.Size = new Size(155, 31);
+            txtname.ReadOnly = true;
+            txtname.Size = new Size(352, 31);
             txtname.TabIndex = 61;
             txtname.TextChanged += textBox1_TextChanged;
             // 
@@ -325,30 +326,33 @@
             txtuser.Location = new Point(159, 239);
             txtuser.Margin = new Padding(4);
             txtuser.Name = "txtuser";
-            txtuser.Size = new Size(155, 31);
+            txtuser.ReadOnly = true;
+            txtuser.Size = new Size(352, 31);
             txtuser.TabIndex = 62;
             // 
             // textemail
             // 
-            textemail.Location = new Point(118, 311);
+            textemail.Location = new Point(159, 311);
             textemail.Margin = new Padding(4);
             textemail.Name = "textemail";
-            textemail.Size = new Size(193, 31);
+            textemail.ReadOnly = true;
+            textemail.Size = new Size(352, 31);
             textemail.TabIndex = 63;
             // 
             // textrole
             // 
-            textrole.Location = new Point(107, 381);
+            textrole.Location = new Point(159, 381);
             textrole.Margin = new Padding(4);
             textrole.Name = "textrole";
-            textrole.Size = new Size(155, 31);
+            textrole.ReadOnly = true;
+            textrole.Size = new Size(352, 31);
             textrole.TabIndex = 64;
             // 
             // frmstatusUpdate
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Gainsboro;
+            BackColor = Color.WhiteSmoke;
             BackgroundImageLayout = ImageLayout.None;
             ClientSize = new Size(586, 626);
             Controls.Add(textrole);
@@ -373,17 +377,19 @@
             Controls.Add(lblStatusQuestion);
             Controls.Add(btnDeny);
             Controls.Add(btnApprove);
-            Controls.Add(pictureBox2);
+            Controls.Add(pictureBoxIcon);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox6);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
+            ImeMode = ImeMode.NoControl;
             Margin = new Padding(2);
             MaximizeBox = false;
+            MinimizeBox = false;
             Name = "frmstatusUpdate";
             Text = "Red Agents IT Registration Status Update";
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxIcon).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
@@ -398,7 +404,7 @@
 
         #endregion
         private PictureBox pictureBox3;
-        private PictureBox pictureBox2;
+        private PictureBox pictureBoxIcon;
         private Button btnApprove;
         private Button btnDeny;
         private Label lblStatusQuestion;
