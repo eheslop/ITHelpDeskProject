@@ -25,7 +25,7 @@ namespace GUI_IT
         {
             InitializeComponent();
             pnlReportGenerate.Visible = false;
-            lblLoggedIn.Text = "Logged in as: " + newUser.Username;
+            lblLoggedIn.Text = "Logged in as: " + newUser.Username + newUser.Password + newUser.UserType;
             lblUser.Text = newUser.Username + "!";
             Fill();
         }

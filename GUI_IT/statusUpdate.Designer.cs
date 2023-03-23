@@ -110,8 +110,12 @@
             btnDeny.FlatStyle = FlatStyle.Popup;
             btnDeny.Font = new Font("Microsoft YaHei UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
             btnDeny.ForeColor = Color.White;
+<<<<<<< HEAD
             btnDeny.Location = new Point(246, 423);
             btnDeny.Margin = new Padding(2);
+=======
+            btnDeny.Location = new Point(308, 530);
+>>>>>>> efce1ead8d5197b607c96f808af0840ee75fa2a7
             btnDeny.Name = "btnDeny";
             btnDeny.Size = new Size(116, 47);
             btnDeny.TabIndex = 40;
@@ -123,8 +127,12 @@
             // 
             lblStatusQuestion.AutoSize = true;
             lblStatusQuestion.Font = new Font("Microsoft YaHei UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+<<<<<<< HEAD
             lblStatusQuestion.Location = new Point(49, 375);
             lblStatusQuestion.Margin = new Padding(2, 0, 2, 0);
+=======
+            lblStatusQuestion.Location = new Point(61, 473);
+>>>>>>> efce1ead8d5197b607c96f808af0840ee75fa2a7
             lblStatusQuestion.Name = "lblStatusQuestion";
             lblStatusQuestion.Size = new Size(381, 23);
             lblStatusQuestion.TabIndex = 41;
@@ -202,8 +210,12 @@
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft YaHei UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.Green;
+<<<<<<< HEAD
             label1.Location = new Point(49, 375);
             label1.Margin = new Padding(2, 0, 2, 0);
+=======
+            label1.Location = new Point(61, 473);
+>>>>>>> efce1ead8d5197b607c96f808af0840ee75fa2a7
             label1.Name = "label1";
             label1.Size = new Size(80, 23);
             label1.TabIndex = 51;
@@ -214,8 +226,12 @@
             label2.AutoSize = true;
             label2.Font = new Font("Microsoft YaHei UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.FromArgb(192, 0, 0);
+<<<<<<< HEAD
             label2.Location = new Point(142, 375);
             label2.Margin = new Padding(2, 0, 2, 0);
+=======
+            label2.Location = new Point(177, 473);
+>>>>>>> efce1ead8d5197b607c96f808af0840ee75fa2a7
             label2.Name = "label2";
             label2.Size = new Size(52, 23);
             label2.TabIndex = 52;
