@@ -29,320 +29,371 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProjectMember));
-            this.pictureLogo = new System.Windows.Forms.PictureBox();
-            this.btnHomeMember = new System.Windows.Forms.Button();
-            this.btnLogout = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Rectangle1 = new System.Windows.Forms.PictureBox();
-            this.btnTickets = new System.Windows.Forms.Button();
-            this.btnProblemList = new System.Windows.Forms.Button();
-            this.btnOnlineHelp = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pnlOnlineHelp = new System.Windows.Forms.Panel();
-            this.lblOnline = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pnlProblemList = new System.Windows.Forms.Panel();
-            this.lblProblem = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pnlTickets = new System.Windows.Forms.Panel();
-            this.lblTicketDash = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.lblHomeProject = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Rectangle1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.pnlOnlineHelp.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.pnlProblemList.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.pnlTickets.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.SuspendLayout();
+            pictureLogo = new PictureBox();
+            btnHomeMember = new Button();
+            btnLogout = new Button();
+            pictureBox1 = new PictureBox();
+            Rectangle1 = new PictureBox();
+            btnTickets = new Button();
+            btnProblemList = new Button();
+            btnOnlineHelp = new Button();
+            pictureBox2 = new PictureBox();
+            pnlTickets = new Panel();
+            btnRaiseTicket = new Button();
+            lblDescription = new Label();
+            lblNewEntry = new Label();
+            textBox1 = new TextBox();
+            lblTicket = new Label();
+            pictureBox3 = new PictureBox();
+            pnlProblemList = new Panel();
+            lblProblem = new Label();
+            pictureBox4 = new PictureBox();
+            pnlOnlineHelp = new Panel();
+            lblOnlineHelp = new Label();
+            pictureBox5 = new PictureBox();
+            lblHomeProject = new Label();
+            ((System.ComponentModel.ISupportInitialize)pictureLogo).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Rectangle1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            pnlTickets.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            pnlProblemList.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            pnlOnlineHelp.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            SuspendLayout();
             // 
             // pictureLogo
             // 
-            this.pictureLogo.BackColor = System.Drawing.Color.Black;
-            this.pictureLogo.Image = global::GUI_IT.Properties.Resources.redAgentsLogo;
-            this.pictureLogo.Location = new System.Drawing.Point(7, 36);
-            this.pictureLogo.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureLogo.Name = "pictureLogo";
-            this.pictureLogo.Size = new System.Drawing.Size(50, 42);
-            this.pictureLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureLogo.TabIndex = 35;
-            this.pictureLogo.TabStop = false;
+            pictureLogo.BackColor = Color.Black;
+            pictureLogo.Image = Properties.Resources.redAgentsLogo;
+            pictureLogo.Location = new Point(9, 45);
+            pictureLogo.Margin = new Padding(2);
+            pictureLogo.Name = "pictureLogo";
+            pictureLogo.Size = new Size(62, 52);
+            pictureLogo.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureLogo.TabIndex = 35;
+            pictureLogo.TabStop = false;
             // 
             // btnHomeMember
             // 
-            this.btnHomeMember.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnHomeMember.BackColor = System.Drawing.Color.Black;
-            this.btnHomeMember.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnHomeMember.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.btnHomeMember.ForeColor = System.Drawing.Color.White;
-            this.btnHomeMember.Location = new System.Drawing.Point(541, 41);
-            this.btnHomeMember.Name = "btnHomeMember";
-            this.btnHomeMember.Size = new System.Drawing.Size(76, 35);
-            this.btnHomeMember.TabIndex = 32;
-            this.btnHomeMember.Text = "Home";
-            this.btnHomeMember.UseVisualStyleBackColor = false;
-            this.btnHomeMember.Click += new System.EventHandler(this.btnHomeMember_Click);
+            btnHomeMember.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnHomeMember.BackColor = Color.Black;
+            btnHomeMember.FlatStyle = FlatStyle.Popup;
+            btnHomeMember.Font = new Font("Segoe UI", 10F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            btnHomeMember.ForeColor = Color.White;
+            btnHomeMember.Location = new Point(716, 48);
+            btnHomeMember.Margin = new Padding(4);
+            btnHomeMember.Name = "btnHomeMember";
+            btnHomeMember.Size = new Size(95, 59);
+            btnHomeMember.TabIndex = 32;
+            btnHomeMember.Text = "Home";
+            btnHomeMember.UseVisualStyleBackColor = false;
+            btnHomeMember.Click += btnHomeMember_Click;
             // 
             // btnLogout
             // 
-            this.btnLogout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnLogout.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnLogout.ForeColor = System.Drawing.Color.White;
-            this.btnLogout.Location = new System.Drawing.Point(842, -2);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(2);
-            this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(95, 33);
-            this.btnLogout.TabIndex = 27;
-            this.btnLogout.Text = "Log Out";
-            this.btnLogout.UseVisualStyleBackColor = false;
-            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            btnLogout.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnLogout.BackColor = Color.FromArgb(64, 0, 0);
+            btnLogout.FlatStyle = FlatStyle.Popup;
+            btnLogout.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            btnLogout.ForeColor = Color.White;
+            btnLogout.Location = new Point(1052, -2);
+            btnLogout.Margin = new Padding(2);
+            btnLogout.Name = "btnLogout";
+            btnLogout.Size = new Size(119, 41);
+            btnLogout.TabIndex = 27;
+            btnLogout.Text = "Log Out";
+            btnLogout.UseVisualStyleBackColor = false;
+            btnLogout.Click += btnLogout_Click;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.pictureBox1.Location = new System.Drawing.Point(-6, -2);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(943, 33);
-            this.pictureBox1.TabIndex = 26;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            pictureBox1.BackColor = Color.FromArgb(64, 0, 0);
+            pictureBox1.Location = new Point(-8, -2);
+            pictureBox1.Margin = new Padding(2);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(1179, 41);
+            pictureBox1.TabIndex = 26;
+            pictureBox1.TabStop = false;
             // 
             // Rectangle1
             // 
-            this.Rectangle1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Rectangle1.BackColor = System.Drawing.Color.Black;
-            this.Rectangle1.Location = new System.Drawing.Point(-6, 18);
-            this.Rectangle1.Margin = new System.Windows.Forms.Padding(2);
-            this.Rectangle1.Name = "Rectangle1";
-            this.Rectangle1.Size = new System.Drawing.Size(943, 67);
-            this.Rectangle1.TabIndex = 24;
-            this.Rectangle1.TabStop = false;
+            Rectangle1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            Rectangle1.BackColor = Color.Black;
+            Rectangle1.Location = new Point(-8, 22);
+            Rectangle1.Margin = new Padding(2);
+            Rectangle1.Name = "Rectangle1";
+            Rectangle1.Size = new Size(1179, 84);
+            Rectangle1.TabIndex = 24;
+            Rectangle1.TabStop = false;
             // 
             // btnTickets
             // 
-            this.btnTickets.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnTickets.BackColor = System.Drawing.Color.Black;
-            this.btnTickets.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnTickets.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.btnTickets.ForeColor = System.Drawing.Color.White;
-            this.btnTickets.Location = new System.Drawing.Point(622, 42);
-            this.btnTickets.Margin = new System.Windows.Forms.Padding(2);
-            this.btnTickets.Name = "btnTickets";
-            this.btnTickets.Size = new System.Drawing.Size(71, 35);
-            this.btnTickets.TabIndex = 36;
-            this.btnTickets.Text = "Tickets";
-            this.btnTickets.UseVisualStyleBackColor = false;
-            this.btnTickets.Click += new System.EventHandler(this.btnTickets_Click);
+            btnTickets.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnTickets.BackColor = Color.Black;
+            btnTickets.FlatStyle = FlatStyle.Popup;
+            btnTickets.Font = new Font("Segoe UI", 10F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            btnTickets.ForeColor = Color.White;
+            btnTickets.Location = new Point(1068, 48);
+            btnTickets.Margin = new Padding(2);
+            btnTickets.Name = "btnTickets";
+            btnTickets.Size = new Size(89, 57);
+            btnTickets.TabIndex = 36;
+            btnTickets.Text = "Tickets";
+            btnTickets.UseVisualStyleBackColor = false;
+            btnTickets.Click += btnTickets_Click;
             // 
             // btnProblemList
             // 
-            this.btnProblemList.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnProblemList.BackColor = System.Drawing.Color.Black;
-            this.btnProblemList.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnProblemList.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.btnProblemList.ForeColor = System.Drawing.Color.White;
-            this.btnProblemList.Location = new System.Drawing.Point(697, 42);
-            this.btnProblemList.Margin = new System.Windows.Forms.Padding(2);
-            this.btnProblemList.Name = "btnProblemList";
-            this.btnProblemList.Size = new System.Drawing.Size(104, 32);
-            this.btnProblemList.TabIndex = 37;
-            this.btnProblemList.Text = "Problem List";
-            this.btnProblemList.UseVisualStyleBackColor = false;
-            this.btnProblemList.Click += new System.EventHandler(this.btnProblemList_Click);
+            btnProblemList.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnProblemList.BackColor = Color.Black;
+            btnProblemList.FlatStyle = FlatStyle.Popup;
+            btnProblemList.Font = new Font("Segoe UI", 10F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            btnProblemList.ForeColor = Color.White;
+            btnProblemList.Location = new Point(927, 46);
+            btnProblemList.Margin = new Padding(2);
+            btnProblemList.Name = "btnProblemList";
+            btnProblemList.Size = new Size(148, 61);
+            btnProblemList.TabIndex = 37;
+            btnProblemList.Text = "Problem List";
+            btnProblemList.UseVisualStyleBackColor = false;
+            btnProblemList.Click += btnProblemList_Click;
             // 
             // btnOnlineHelp
             // 
-            this.btnOnlineHelp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnOnlineHelp.BackColor = System.Drawing.Color.Black;
-            this.btnOnlineHelp.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnOnlineHelp.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.btnOnlineHelp.ForeColor = System.Drawing.Color.White;
-            this.btnOnlineHelp.Location = new System.Drawing.Point(806, 38);
-            this.btnOnlineHelp.Name = "btnOnlineHelp";
-            this.btnOnlineHelp.Size = new System.Drawing.Size(116, 40);
-            this.btnOnlineHelp.TabIndex = 38;
-            this.btnOnlineHelp.Text = "Online Help";
-            this.btnOnlineHelp.UseVisualStyleBackColor = false;
-            this.btnOnlineHelp.Click += new System.EventHandler(this.btnOnlineHelp_Click);
+            btnOnlineHelp.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnOnlineHelp.BackColor = Color.Black;
+            btnOnlineHelp.FlatStyle = FlatStyle.Popup;
+            btnOnlineHelp.Font = new Font("Segoe UI", 10F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            btnOnlineHelp.ForeColor = Color.White;
+            btnOnlineHelp.Location = new Point(797, 46);
+            btnOnlineHelp.Margin = new Padding(4);
+            btnOnlineHelp.Name = "btnOnlineHelp";
+            btnOnlineHelp.Size = new Size(139, 61);
+            btnOnlineHelp.TabIndex = 38;
+            btnOnlineHelp.Text = "Online Help";
+            btnOnlineHelp.UseVisualStyleBackColor = false;
+            btnOnlineHelp.Click += btnOnlineHelp_Click;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.pictureBox2.Location = new System.Drawing.Point(-6, 85);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(943, 98);
-            this.pictureBox2.TabIndex = 43;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pnlOnlineHelp
-            // 
-            this.pnlOnlineHelp.Controls.Add(this.lblOnline);
-            this.pnlOnlineHelp.Controls.Add(this.pictureBox3);
-            this.pnlOnlineHelp.Location = new System.Drawing.Point(-1, 82);
-            this.pnlOnlineHelp.Margin = new System.Windows.Forms.Padding(2);
-            this.pnlOnlineHelp.Name = "pnlOnlineHelp";
-            this.pnlOnlineHelp.Size = new System.Drawing.Size(938, 434);
-            this.pnlOnlineHelp.TabIndex = 45;
-            this.pnlOnlineHelp.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlOnlineHelp_Paint);
-            // 
-            // lblOnline
-            // 
-            this.lblOnline.AutoSize = true;
-            this.lblOnline.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblOnline.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblOnline.ForeColor = System.Drawing.Color.White;
-            this.lblOnline.Location = new System.Drawing.Point(370, 15);
-            this.lblOnline.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblOnline.Name = "lblOnline";
-            this.lblOnline.Size = new System.Drawing.Size(195, 40);
-            this.lblOnline.TabIndex = 45;
-            this.lblOnline.Text = "Online Help";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.pictureBox3.Location = new System.Drawing.Point(-5, 0);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(941, 98);
-            this.pictureBox3.TabIndex = 44;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pnlProblemList
-            // 
-            this.pnlProblemList.Controls.Add(this.lblProblem);
-            this.pnlProblemList.Controls.Add(this.pictureBox4);
-            this.pnlProblemList.Location = new System.Drawing.Point(-3, 85);
-            this.pnlProblemList.Margin = new System.Windows.Forms.Padding(2);
-            this.pnlProblemList.Name = "pnlProblemList";
-            this.pnlProblemList.Size = new System.Drawing.Size(941, 431);
-            this.pnlProblemList.TabIndex = 45;
-            // 
-            // lblProblem
-            // 
-            this.lblProblem.AutoSize = true;
-            this.lblProblem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblProblem.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblProblem.ForeColor = System.Drawing.Color.White;
-            this.lblProblem.Location = new System.Drawing.Point(261, 20);
-            this.lblProblem.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblProblem.Name = "lblProblem";
-            this.lblProblem.Size = new System.Drawing.Size(439, 40);
-            this.lblProblem.TabIndex = 45;
-            this.lblProblem.Text = "Frequently Asked Questions";
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.pictureBox4.Location = new System.Drawing.Point(2, 0);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(939, 98);
-            this.pictureBox4.TabIndex = 44;
-            this.pictureBox4.TabStop = false;
+            pictureBox2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            pictureBox2.BackColor = Color.FromArgb(64, 0, 0);
+            pictureBox2.Location = new Point(-8, 106);
+            pictureBox2.Margin = new Padding(2);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(1179, 122);
+            pictureBox2.TabIndex = 43;
+            pictureBox2.TabStop = false;
             // 
             // pnlTickets
             // 
-            this.pnlTickets.Controls.Add(this.lblTicketDash);
-            this.pnlTickets.Controls.Add(this.pictureBox5);
-            this.pnlTickets.Location = new System.Drawing.Point(1, 85);
-            this.pnlTickets.Margin = new System.Windows.Forms.Padding(2);
-            this.pnlTickets.Name = "pnlTickets";
-            this.pnlTickets.Size = new System.Drawing.Size(937, 431);
-            this.pnlTickets.TabIndex = 45;
+            pnlTickets.Controls.Add(btnRaiseTicket);
+            pnlTickets.Controls.Add(lblDescription);
+            pnlTickets.Controls.Add(lblNewEntry);
+            pnlTickets.Controls.Add(textBox1);
+            pnlTickets.Controls.Add(lblTicket);
+            pnlTickets.Controls.Add(pictureBox3);
+            pnlTickets.Location = new Point(-1, 101);
+            pnlTickets.Margin = new Padding(2);
+            pnlTickets.Name = "pnlTickets";
+            pnlTickets.Size = new Size(1172, 544);
+            pnlTickets.TabIndex = 45;
+            pnlTickets.Paint += pnlOnlineHelp_Paint;
             // 
-            // lblTicketDash
+            // btnRaiseTicket
             // 
-            this.lblTicketDash.AutoSize = true;
-            this.lblTicketDash.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblTicketDash.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTicketDash.ForeColor = System.Drawing.Color.White;
-            this.lblTicketDash.Location = new System.Drawing.Point(345, 16);
-            this.lblTicketDash.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblTicketDash.Name = "lblTicketDash";
-            this.lblTicketDash.Size = new System.Drawing.Size(282, 40);
-            this.lblTicketDash.TabIndex = 45;
-            this.lblTicketDash.Text = "Ticket Dashboard";
+            btnRaiseTicket.BackColor = Color.FromArgb(64, 0, 0);
+            btnRaiseTicket.FlatStyle = FlatStyle.Popup;
+            btnRaiseTicket.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnRaiseTicket.ForeColor = Color.White;
+            btnRaiseTicket.Location = new Point(991, 493);
+            btnRaiseTicket.Name = "btnRaiseTicket";
+            btnRaiseTicket.Size = new Size(135, 34);
+            btnRaiseTicket.TabIndex = 49;
+            btnRaiseTicket.Text = "Raise Ticket";
+            btnRaiseTicket.UseVisualStyleBackColor = false;
+            // 
+            // lblDescription
+            // 
+            lblDescription.AutoSize = true;
+            lblDescription.BackColor = Color.Transparent;
+            lblDescription.Font = new Font("Microsoft YaHei UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            lblDescription.Location = new Point(5, 171);
+            lblDescription.Name = "lblDescription";
+            lblDescription.Size = new Size(1065, 108);
+            lblDescription.TabIndex = 48;
+            lblDescription.Text = resources.GetString("lblDescription.Text");
+            // 
+            // lblNewEntry
+            // 
+            lblNewEntry.AutoSize = true;
+            lblNewEntry.BackColor = Color.Transparent;
+            lblNewEntry.Font = new Font("Segoe UI", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            lblNewEntry.Location = new Point(3, 123);
+            lblNewEntry.Name = "lblNewEntry";
+            lblNewEntry.Size = new Size(307, 48);
+            lblNewEntry.TabIndex = 47;
+            lblNewEntry.Text = "New Ticket Entry";
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(13, 282);
+            textBox1.Multiline = true;
+            textBox1.Name = "textBox1";
+            textBox1.PlaceholderText = "Enter a description of your problem here.";
+            textBox1.Size = new Size(1113, 205);
+            textBox1.TabIndex = 46;
+            // 
+            // lblTicket
+            // 
+            lblTicket.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            lblTicket.AutoSize = true;
+            lblTicket.BackColor = Color.FromArgb(64, 0, 0);
+            lblTicket.Font = new Font("Microsoft YaHei UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            lblTicket.ForeColor = Color.White;
+            lblTicket.Location = new Point(433, 25);
+            lblTicket.Margin = new Padding(2, 0, 2, 0);
+            lblTicket.Name = "lblTicket";
+            lblTicket.Size = new Size(292, 47);
+            lblTicket.TabIndex = 45;
+            lblTicket.Text = "Raising Tickets";
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            pictureBox3.BackColor = Color.FromArgb(64, 0, 0);
+            pictureBox3.Location = new Point(0, -1);
+            pictureBox3.Margin = new Padding(2);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(1172, 122);
+            pictureBox3.TabIndex = 44;
+            pictureBox3.TabStop = false;
+            // 
+            // pnlProblemList
+            // 
+            pnlProblemList.Controls.Add(lblProblem);
+            pnlProblemList.Controls.Add(pictureBox4);
+            pnlProblemList.Location = new Point(-4, 101);
+            pnlProblemList.Margin = new Padding(2);
+            pnlProblemList.Name = "pnlProblemList";
+            pnlProblemList.Size = new Size(1176, 544);
+            pnlProblemList.TabIndex = 45;
+            // 
+            // lblProblem
+            // 
+            lblProblem.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            lblProblem.AutoSize = true;
+            lblProblem.BackColor = Color.FromArgb(64, 0, 0);
+            lblProblem.Font = new Font("Microsoft YaHei UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            lblProblem.ForeColor = Color.White;
+            lblProblem.Location = new Point(326, 25);
+            lblProblem.Margin = new Padding(2, 0, 2, 0);
+            lblProblem.Name = "lblProblem";
+            lblProblem.Size = new Size(529, 47);
+            lblProblem.TabIndex = 45;
+            lblProblem.Text = "Frequently Asked Questions";
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            pictureBox4.BackColor = Color.FromArgb(64, 0, 0);
+            pictureBox4.Location = new Point(2, 0);
+            pictureBox4.Margin = new Padding(2);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(1174, 122);
+            pictureBox4.TabIndex = 44;
+            pictureBox4.TabStop = false;
+            // 
+            // pnlOnlineHelp
+            // 
+            pnlOnlineHelp.Controls.Add(lblOnlineHelp);
+            pnlOnlineHelp.Controls.Add(pictureBox5);
+            pnlOnlineHelp.Location = new Point(1, 106);
+            pnlOnlineHelp.Margin = new Padding(2);
+            pnlOnlineHelp.Name = "pnlOnlineHelp";
+            pnlOnlineHelp.Size = new Size(1171, 539);
+            pnlOnlineHelp.TabIndex = 45;
+            // 
+            // lblOnlineHelp
+            // 
+            lblOnlineHelp.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            lblOnlineHelp.AutoSize = true;
+            lblOnlineHelp.BackColor = Color.FromArgb(64, 0, 0);
+            lblOnlineHelp.Font = new Font("Microsoft YaHei UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            lblOnlineHelp.ForeColor = Color.White;
+            lblOnlineHelp.Location = new Point(431, 20);
+            lblOnlineHelp.Margin = new Padding(2, 0, 2, 0);
+            lblOnlineHelp.Name = "lblOnlineHelp";
+            lblOnlineHelp.Size = new Size(235, 47);
+            lblOnlineHelp.TabIndex = 45;
+            lblOnlineHelp.Text = "Online Help";
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.pictureBox5.Location = new System.Drawing.Point(0, -4);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(937, 102);
-            this.pictureBox5.TabIndex = 44;
-            this.pictureBox5.TabStop = false;
+            pictureBox5.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            pictureBox5.BackColor = Color.FromArgb(64, 0, 0);
+            pictureBox5.Location = new Point(0, -5);
+            pictureBox5.Margin = new Padding(2);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(1171, 128);
+            pictureBox5.TabIndex = 44;
+            pictureBox5.TabStop = false;
             // 
             // lblHomeProject
             // 
-            this.lblHomeProject.AutoSize = true;
-            this.lblHomeProject.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblHomeProject.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblHomeProject.ForeColor = System.Drawing.Color.White;
-            this.lblHomeProject.Location = new System.Drawing.Point(197, 101);
-            this.lblHomeProject.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblHomeProject.Name = "lblHomeProject";
-            this.lblHomeProject.Size = new System.Drawing.Size(528, 40);
-            this.lblHomeProject.TabIndex = 46;
-            this.lblHomeProject.Text = "Welcome Home, Project Member!";
+            lblHomeProject.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            lblHomeProject.AutoSize = true;
+            lblHomeProject.BackColor = Color.FromArgb(64, 0, 0);
+            lblHomeProject.Font = new Font("Microsoft YaHei UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            lblHomeProject.ForeColor = Color.White;
+            lblHomeProject.Location = new Point(246, 126);
+            lblHomeProject.Margin = new Padding(2, 0, 2, 0);
+            lblHomeProject.Name = "lblHomeProject";
+            lblHomeProject.Size = new Size(638, 47);
+            lblHomeProject.TabIndex = 46;
+            lblHomeProject.Text = "Welcome Home, Project Member!";
             // 
             // frmProjectMember
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(934, 513);
-            this.Controls.Add(this.pnlOnlineHelp);
-            this.Controls.Add(this.pnlProblemList);
-            this.Controls.Add(this.pnlTickets);
-            this.Controls.Add(this.btnOnlineHelp);
-            this.Controls.Add(this.btnProblemList);
-            this.Controls.Add(this.btnTickets);
-            this.Controls.Add(this.lblHomeProject);
-            this.Controls.Add(this.pictureLogo);
-            this.Controls.Add(this.btnHomeMember);
-            this.Controls.Add(this.btnLogout);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.Rectangle1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "frmProjectMember";
-            this.Text = "IT Help Desk Project Member Homepage";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Rectangle1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.pnlOnlineHelp.ResumeLayout(false);
-            this.pnlOnlineHelp.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.pnlProblemList.ResumeLayout(false);
-            this.pnlProblemList.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.pnlTickets.ResumeLayout(false);
-            this.pnlTickets.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1168, 641);
+            Controls.Add(pnlTickets);
+            Controls.Add(pnlProblemList);
+            Controls.Add(pnlOnlineHelp);
+            Controls.Add(btnOnlineHelp);
+            Controls.Add(btnProblemList);
+            Controls.Add(btnTickets);
+            Controls.Add(lblHomeProject);
+            Controls.Add(pictureLogo);
+            Controls.Add(btnHomeMember);
+            Controls.Add(btnLogout);
+            Controls.Add(pictureBox2);
+            Controls.Add(pictureBox1);
+            Controls.Add(Rectangle1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(2);
+            Name = "frmProjectMember";
+            Text = "IT Help Desk Project Member Homepage";
+            ((System.ComponentModel.ISupportInitialize)pictureLogo).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Rectangle1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            pnlTickets.ResumeLayout(false);
+            pnlTickets.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            pnlProblemList.ResumeLayout(false);
+            pnlProblemList.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            pnlOnlineHelp.ResumeLayout(false);
+            pnlOnlineHelp.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -361,15 +412,19 @@
         private Button btnProblemList;
         private Button btnOnlineHelp;
         private PictureBox pictureBox2;
-        private Panel pnlOnlineHelp;
+        private Panel pnlTickets;
         private Panel pnlProblemList;
         private PictureBox pictureBox4;
         private PictureBox pictureBox3;
-        private Panel pnlTickets;
+        private Panel pnlOnlineHelp;
         private PictureBox pictureBox5;
-        private Label lblOnline;
+        private Label lblTicket;
         private Label lblProblem;
-        private Label lblTicketDash;
+        private Label lblOnlineHelp;
         private Label lblHomeProject;
+        private Button btnRaiseTicket;
+        private Label lblDescription;
+        private Label lblNewEntry;
+        private TextBox textBox1;
     }
 }
