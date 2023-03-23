@@ -39,6 +39,8 @@
             label1 = new Label();
             pictureBox2 = new PictureBox();
             pnlReportGenerate = new Panel();
+            lblReportGen = new Label();
+            pictureBox3 = new PictureBox();
             tabReportGeneration = new TabControl();
             tabHome = new TabPage();
             label7 = new Label();
@@ -59,6 +61,9 @@
             DGVV = new DataGridView();
             label8 = new Label();
             tabSolved = new TabPage();
+            label19 = new Label();
+            textBox8 = new TextBox();
+            label17 = new Label();
             label16 = new Label();
             textBox6 = new TextBox();
             button2 = new Button();
@@ -97,8 +102,6 @@
             label3 = new Label();
             pictureBox8 = new PictureBox();
             pictureBox11 = new PictureBox();
-            lblReportGen = new Label();
-            pictureBox3 = new PictureBox();
             ProfilePictureBox = new PictureBox();
             btnApproveDeny = new Button();
             btnClear = new Button();
@@ -106,13 +109,12 @@
             lblLoggedIn = new Label();
             pictureBox6 = new PictureBox();
             btnrefre = new Button();
-            textBox7 = new TextBox();
-            label17 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Rectangle1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)DGVR).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             pnlReportGenerate.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             tabReportGeneration.SuspendLayout();
             tabHome.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
@@ -130,7 +132,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ProfilePictureBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
@@ -144,7 +145,7 @@
             btnGenerate.FlatStyle = FlatStyle.Popup;
             btnGenerate.Font = new Font("Segoe UI", 10F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             btnGenerate.ForeColor = Color.White;
-            btnGenerate.Location = new Point(253, 48);
+            btnGenerate.Location = new Point(229, 48);
             btnGenerate.Margin = new Padding(2);
             btnGenerate.Name = "btnGenerate";
             btnGenerate.Size = new Size(196, 45);
@@ -161,7 +162,7 @@
             btnRegistration.FlatStyle = FlatStyle.Popup;
             btnRegistration.Font = new Font("Segoe UI", 10F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             btnRegistration.ForeColor = Color.White;
-            btnRegistration.Location = new Point(124, 45);
+            btnRegistration.Location = new Point(91, 45);
             btnRegistration.Margin = new Padding(2);
             btnRegistration.Name = "btnRegistration";
             btnRegistration.Size = new Size(145, 49);
@@ -254,25 +255,51 @@
             // 
             pictureBox2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox2.BackColor = Color.FromArgb(64, 0, 0);
-            pictureBox2.Location = new Point(-9, 96);
+            pictureBox2.Location = new Point(-42, 96);
             pictureBox2.Margin = new Padding(2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(1276, 64);
+            pictureBox2.Size = new Size(1383, 64);
             pictureBox2.TabIndex = 49;
             pictureBox2.TabStop = false;
             // 
             // pnlReportGenerate
             // 
             pnlReportGenerate.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            pnlReportGenerate.Controls.Add(tabReportGeneration);
+            pnlReportGenerate.BackColor = Color.White;
             pnlReportGenerate.Controls.Add(lblReportGen);
             pnlReportGenerate.Controls.Add(pictureBox3);
-            pnlReportGenerate.Location = new Point(-5, 96);
+            pnlReportGenerate.Controls.Add(tabReportGeneration);
+            pnlReportGenerate.Location = new Point(-5, 98);
             pnlReportGenerate.Margin = new Padding(2);
             pnlReportGenerate.Name = "pnlReportGenerate";
             pnlReportGenerate.Size = new Size(1267, 562);
             pnlReportGenerate.TabIndex = 15;
             pnlReportGenerate.Paint += pnlReportGenerate_Paint;
+            // 
+            // lblReportGen
+            // 
+            lblReportGen.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            lblReportGen.AutoSize = true;
+            lblReportGen.BackColor = Color.FromArgb(64, 0, 0);
+            lblReportGen.Font = new Font("Microsoft YaHei UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            lblReportGen.ForeColor = Color.White;
+            lblReportGen.Location = new Point(477, 6);
+            lblReportGen.Margin = new Padding(2, 0, 2, 0);
+            lblReportGen.Name = "lblReportGen";
+            lblReportGen.Size = new Size(357, 47);
+            lblReportGen.TabIndex = 17;
+            lblReportGen.Text = "Report Generation";
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            pictureBox3.BackColor = Color.FromArgb(64, 0, 0);
+            pictureBox3.Location = new Point(-8, -6);
+            pictureBox3.Margin = new Padding(2);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(1282, 73);
+            pictureBox3.TabIndex = 45;
+            pictureBox3.TabStop = false;
             // 
             // tabReportGeneration
             // 
@@ -281,11 +308,11 @@
             tabReportGeneration.Controls.Add(tabSolved);
             tabReportGeneration.Controls.Add(tabUnsolved);
             tabReportGeneration.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            tabReportGeneration.Location = new Point(-1, 68);
+            tabReportGeneration.Location = new Point(-1, 66);
             tabReportGeneration.Margin = new Padding(2);
             tabReportGeneration.Name = "tabReportGeneration";
             tabReportGeneration.SelectedIndex = 0;
-            tabReportGeneration.Size = new Size(1302, 688);
+            tabReportGeneration.Size = new Size(1284, 690);
             tabReportGeneration.TabIndex = 18;
             // 
             // tabHome
@@ -305,10 +332,9 @@
             tabHome.Location = new Point(4, 37);
             tabHome.Margin = new Padding(2);
             tabHome.Name = "tabHome";
-            tabHome.Size = new Size(1294, 647);
+            tabHome.Size = new Size(1276, 649);
             tabHome.TabIndex = 3;
             tabHome.Text = "Report Homepage";
-            tabHome.Click += tabHome_Click;
             // 
             // label7
             // 
@@ -443,7 +469,7 @@
             tabView.Location = new Point(4, 37);
             tabView.Margin = new Padding(2);
             tabView.Name = "tabView";
-            tabView.Size = new Size(1294, 647);
+            tabView.Size = new Size(1276, 649);
             tabView.TabIndex = 4;
             tabView.Text = "View Tickets";
             // 
@@ -495,6 +521,7 @@
             DGVV.RowTemplate.Height = 33;
             DGVV.Size = new Size(1065, 379);
             DGVV.TabIndex = 58;
+            DGVV.CellContentClick += DGVV_CellContentClick;
             // 
             // label8
             // 
@@ -511,8 +538,9 @@
             // tabSolved
             // 
             tabSolved.BackColor = Color.LightGray;
+            tabSolved.Controls.Add(label19);
+            tabSolved.Controls.Add(textBox8);
             tabSolved.Controls.Add(label17);
-            tabSolved.Controls.Add(textBox7);
             tabSolved.Controls.Add(label16);
             tabSolved.Controls.Add(textBox6);
             tabSolved.Controls.Add(button2);
@@ -535,10 +563,39 @@
             tabSolved.Margin = new Padding(2);
             tabSolved.Name = "tabSolved";
             tabSolved.Padding = new Padding(2);
-            tabSolved.Size = new Size(1294, 647);
+            tabSolved.Size = new Size(1276, 649);
             tabSolved.TabIndex = 1;
             tabSolved.Text = "Solved Tickets";
-            tabSolved.Click += tabSolved_Click;
+            // 
+            // label19
+            // 
+            label19.AutoSize = true;
+            label19.BackColor = Color.DarkGray;
+            label19.Location = new Point(23, 205);
+            label19.Margin = new Padding(2, 0, 2, 0);
+            label19.Name = "label19";
+            label19.Size = new Size(362, 28);
+            label19.TabIndex = 133;
+            label19.Text = "What was the select ticket category?";
+            // 
+            // textBox8
+            // 
+            textBox8.Location = new Point(30, 78);
+            textBox8.Margin = new Padding(2);
+            textBox8.Name = "textBox8";
+            textBox8.Size = new Size(162, 34);
+            textBox8.TabIndex = 132;
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.BackColor = Color.DarkGray;
+            label17.Location = new Point(30, 48);
+            label17.Margin = new Padding(2, 0, 2, 0);
+            label17.Name = "label17";
+            label17.Size = new Size(102, 28);
+            label17.TabIndex = 131;
+            label17.Text = "Ticket ID:";
             // 
             // label16
             // 
@@ -596,7 +653,7 @@
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
             textBox1.PlaceholderText = "Provide a brief summary of the ticket description.";
-            textBox1.Size = new Size(625, 68);
+            textBox1.Size = new Size(636, 68);
             textBox1.TabIndex = 125;
             // 
             // label14
@@ -624,7 +681,7 @@
             // textBox2
             // 
             textBox2.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox2.Location = new Point(722, 120);
+            textBox2.Location = new Point(724, 120);
             textBox2.Margin = new Padding(2);
             textBox2.MaxLength = 750;
             textBox2.Multiline = true;
@@ -640,7 +697,7 @@
             pictureBox5.Location = new Point(710, 109);
             pictureBox5.Margin = new Padding(2);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(529, 310);
+            pictureBox5.Size = new Size(531, 310);
             pictureBox5.TabIndex = 119;
             pictureBox5.TabStop = false;
             // 
@@ -675,7 +732,7 @@
             pictureBox15.Location = new Point(22, 291);
             pictureBox15.Margin = new Padding(2);
             pictureBox15.Name = "pictureBox15";
-            pictureBox15.Size = new Size(649, 90);
+            pictureBox15.Size = new Size(657, 90);
             pictureBox15.TabIndex = 122;
             pictureBox15.TabStop = false;
             // 
@@ -766,7 +823,7 @@
             tabUnsolved.Location = new Point(4, 37);
             tabUnsolved.Margin = new Padding(2);
             tabUnsolved.Name = "tabUnsolved";
-            tabUnsolved.Size = new Size(1294, 647);
+            tabUnsolved.Size = new Size(1276, 649);
             tabUnsolved.TabIndex = 2;
             tabUnsolved.Text = "Unsolved Tickets";
             // 
@@ -790,7 +847,7 @@
             txtTicketSummary.Multiline = true;
             txtTicketSummary.Name = "txtTicketSummary";
             txtTicketSummary.PlaceholderText = "Provide a brief summary of the ticket description.";
-            txtTicketSummary.Size = new Size(625, 68);
+            txtTicketSummary.Size = new Size(636, 68);
             txtTicketSummary.TabIndex = 101;
             // 
             // label12
@@ -857,7 +914,7 @@
             pictureBox14.Location = new Point(708, 108);
             pictureBox14.Margin = new Padding(2);
             pictureBox14.Name = "pictureBox14";
-            pictureBox14.Size = new Size(529, 310);
+            pictureBox14.Size = new Size(528, 310);
             pictureBox14.TabIndex = 93;
             pictureBox14.TabStop = false;
             // 
@@ -959,7 +1016,7 @@
             pictureBox8.Location = new Point(20, 290);
             pictureBox8.Margin = new Padding(2);
             pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(649, 90);
+            pictureBox8.Size = new Size(657, 90);
             pictureBox8.TabIndex = 97;
             pictureBox8.TabStop = false;
             // 
@@ -972,31 +1029,6 @@
             pictureBox11.Size = new Size(1239, 382);
             pictureBox11.TabIndex = 81;
             pictureBox11.TabStop = false;
-            // 
-            // lblReportGen
-            // 
-            lblReportGen.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            lblReportGen.AutoSize = true;
-            lblReportGen.BackColor = Color.FromArgb(64, 0, 0);
-            lblReportGen.Font = new Font("Microsoft YaHei UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            lblReportGen.ForeColor = Color.White;
-            lblReportGen.Location = new Point(477, 6);
-            lblReportGen.Margin = new Padding(2, 0, 2, 0);
-            lblReportGen.Name = "lblReportGen";
-            lblReportGen.Size = new Size(357, 47);
-            lblReportGen.TabIndex = 17;
-            lblReportGen.Text = "Report Generation";
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            pictureBox3.BackColor = Color.FromArgb(64, 0, 0);
-            pictureBox3.Location = new Point(-5, -2);
-            pictureBox3.Margin = new Padding(2);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(1279, 66);
-            pictureBox3.TabIndex = 15;
-            pictureBox3.TabStop = false;
             // 
             // ProfilePictureBox
             // 
@@ -1090,25 +1122,6 @@
             btnrefre.UseVisualStyleBackColor = false;
             btnrefre.Click += btnrefre_Click;
             // 
-            // textBox7
-            // 
-            textBox7.Location = new Point(30, 77);
-            textBox7.Margin = new Padding(2);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(162, 34);
-            textBox7.TabIndex = 130;
-            // 
-            // label17
-            // 
-            label17.AutoSize = true;
-            label17.BackColor = Color.DarkGray;
-            label17.Location = new Point(30, 48);
-            label17.Margin = new Padding(2, 0, 2, 0);
-            label17.Name = "label17";
-            label17.Size = new Size(102, 28);
-            label17.TabIndex = 131;
-            label17.Text = "Ticket ID:";
-            // 
             // frmAdmin
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -1142,6 +1155,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             pnlReportGenerate.ResumeLayout(false);
             pnlReportGenerate.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             tabReportGeneration.ResumeLayout(false);
             tabHome.ResumeLayout(false);
             tabHome.PerformLayout();
@@ -1163,7 +1177,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)ProfilePictureBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
@@ -1184,7 +1197,6 @@
         private PictureBox pictureBox2;
         private Panel pnlReportGenerate;
         private Label lblReportGen;
-        private PictureBox pictureBox3;
         private Button btnApproveDeny;
         private Button btnClear;
         private PictureBox pictureBox4;
@@ -1254,5 +1266,8 @@
         private Label label16;
         private Label label17;
         private TextBox textBox7;
+        private Label label19;
+        private TextBox textBox8;
+        private PictureBox pictureBox3;
     }
 }

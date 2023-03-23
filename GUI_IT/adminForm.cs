@@ -25,9 +25,10 @@ namespace GUI_IT
         {
             InitializeComponent();
             pnlReportGenerate.Visible = false;
-            lblLoggedIn.Text = "Logged in as: " + newUser.Username;
-            lblUser.Text = newUser.Username + "!";
+            lblLoggedIn.Text = "Logged in as: " + newUser.FirstName;
+            lblUser.Text = newUser.FirstName + "!";
             Fill();
+            Fill1();
         }
 
         private void frmAdmin_Load(object sender, EventArgs e)
@@ -170,12 +171,25 @@ namespace GUI_IT
             UserProfile.ShowDialog();
         }
 
-        private void tabHome_Click(object sender, EventArgs e)
+        private void Fill1()
         {
-
+            SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
+            builder.DataSource = "redagents.database.windows.net";
+            builder.UserID = "kwekwe";
+            builder.Password = "Password1!";
+            builder.InitialCatalog = "red_Agents";
+            SqlConnection con = new SqlConnection(builder.ConnectionString);
+            con.Open();
+            string query = "Select * from Tickets";
+            SqlDataAdapter da = new SqlDataAdapter(query, con);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            DGVV.DataSource = dt;
+            DGVV.EditMode = DataGridViewEditMode.EditOnEnter;
+            con.Close();
         }
 
-        private void tabSolved_Click(object sender, EventArgs e)
+        private void DGVV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

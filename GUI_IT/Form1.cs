@@ -95,8 +95,8 @@ namespace GUI_IT
         private void btnRegister_Click(object sender, EventArgs e)
         {
             string name = txtFirstName.Text.ToString() + " " + txtLastName.Text.ToString();
-            string first = txtFirstName.Text.ToString();
-            string last = txtLastName.Text.ToString();
+            newUser.FirstName = txtFirstName.Text.ToString();
+            newUser.LastName = txtLastName.Text.ToString();
             string email = txtEmail.Text.ToString();
             newUser.UserType = cboUserType.Text.ToString();
             string user = name[0].ToString() + txtLastName.Text.ToString();
@@ -114,10 +114,8 @@ namespace GUI_IT
                     randomstring = randomstring + str[x];
                 }
                 newUser.Password = randomstring.ToString();
-                Sql.Register(user, name, first, last, newUser.Password, email, newUser.UserType);
+                Sql.Register(user, name, newUser.FirstName, newUser.LastName, newUser.Password, email, newUser.UserType);
                 Email.sendEmail("Registration", user);
-                //Email.sendEmail("Registration Denied", user);
-                //Email.sendEmail("Raised Ticket", user, 1);
                 MessageBox.Show("Account Created!\nCheck your email for your login credentials!", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 pnlSignUp.Visible = false;
