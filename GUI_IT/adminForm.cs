@@ -25,7 +25,7 @@ namespace GUI_IT
         {
             InitializeComponent();
             pnlReportGenerate.Visible = false;
-            lblLoggedIn.Text = "Logged in as: " + newUser.Username + newUser.Password + newUser.UserType;
+            lblLoggedIn.Text = "Logged in as: " + newUser.Username;
             lblUser.Text = newUser.Username + "!";
             Fill();
         }
@@ -157,6 +157,12 @@ namespace GUI_IT
         private void button1_Click_1(object sender, EventArgs e)
         {
             Fill();
+        }
+
+        private void ProfilePictureBox_Click(object sender, EventArgs e)
+        {
+            frmUserProf UserProfile = new frmUserProf();
+            UserProfile.ShowDialog();
         }
     }
 

@@ -19,5 +19,8 @@
     <Compile Update="statusUpdate.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="userProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
