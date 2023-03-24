@@ -19,8 +19,8 @@ namespace GUI_IT
         {
             InitializeComponent();
             Fill();
-            lblUser.Text = newUser.Username + "!";
-            lblLoggedIn.Text = "Logged in as: " + newUser.Username;
+            lblUser.Text = newUser.FirstName + "!";
+            lblLoggedIn.Text = "Logged in as: " + newUser.FirstName;
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
@@ -62,5 +62,7 @@ namespace GUI_IT
             frmUserProf UserProfile = new frmUserProf();
             UserProfile.ShowDialog();
         }
+
+       
     }
 }
