@@ -84,7 +84,7 @@ namespace GUI_IT
         public static string getName(string user)
         {
             SqlConnection con = Connect();
-            String query = "SELECT name FROM Registration WHERE Username = '" + user.ToString() + "';";
+            String query = "SELECT name FROM RegisteredUsers WHERE Username = '" + user.ToString() + "';";
             SqlCommand cmd = new SqlCommand(query, con);
             string name = (string)cmd.ExecuteScalar();
             return name;
@@ -92,7 +92,7 @@ namespace GUI_IT
         public static string getEmail(string user)
         {
             SqlConnection con = Connect();
-            String query = "SELECT email FROM Registration WHERE Username = '" + user.ToString() + "';";
+            String query = "SELECT email FROM RegisteredUsers WHERE Username = '" + user.ToString() + "';";
             SqlCommand cmd = new SqlCommand(query, con);
             string email = (string)cmd.ExecuteScalar();
             return email;
@@ -100,7 +100,7 @@ namespace GUI_IT
         public static string getPass(string user)
         {
             SqlConnection con = Connect();
-            String query = "SELECT password FROM Registration WHERE Username = '" + user.ToString() + "';";
+            String query = "SELECT password FROM RegisteredUsers WHERE Username = '" + user.ToString() + "';";
             SqlCommand cmd = new SqlCommand(query, con);
             string pass = (string)cmd.ExecuteScalar();
             return pass;
