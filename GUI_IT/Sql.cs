@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace GUI_IT
 {
@@ -84,7 +85,24 @@ namespace GUI_IT
         public static string getName(string user)
         {
             SqlConnection con = Connect();
-            String query = "SELECT name FROM RegisteredUsers WHERE Username = '" + user.ToString() + "';";
+            String query = "SELECT First_Name FROM RegisteredUsers WHERE Username = '" + user.ToString() + "';";
+            SqlCommand cmd = new SqlCommand(query, con);
+            string name = (string)cmd.ExecuteScalar();
+            return name;
+        }
+
+        public static string getfullName(string user)
+        {
+            SqlConnection con = Connect();
+            String query = "SELECT Name FROM RegisteredUsers WHERE Username = '" + user.ToString() + "';";
+            SqlCommand cmd = new SqlCommand(query, con);
+            string name = (string)cmd.ExecuteScalar();
+            return name;
+        }
+        public static string getRole(string user)
+        {
+            SqlConnection con = Connect();
+            String query = "SELECT Role FROM RegisteredUsers WHERE Username = '" + user.ToString() + "';";
             SqlCommand cmd = new SqlCommand(query, con);
             string name = (string)cmd.ExecuteScalar();
             return name;
@@ -153,11 +171,11 @@ namespace GUI_IT
             return dt;
         }
 
-        public static void RaiseTicket(int id, string Category, string Description, string Priority)
+        public static void RaiseTicket(int id, string name, string username, string Category, string Description, string email, string Priority)
         {
             SqlConnection con = Connect();
             string x = "Pending";
-            String query = "INSERT INTO Tickets(id, Category, Description, Status, Priority) VALUES('" + id + "', '" + Category.ToString() + "', '" + Description.ToString() + "', '" +x+ "', '" + Priority.ToString() + "');";
+            String query = "INSERT INTO Tickets(id, Name, Username, Category, Description, Status, Email, Priority) VALUES('" + id + "',  '" + name.ToString() + "', '" + username.ToString() + "', '" + Category.ToString() + "', '" + Description.ToString() + "', '" +x+ "',  '" + email.ToString() + "', '" + Priority.ToString() + "');";
             SqlCommand cmd = new SqlCommand(query, con);
             cmd.ExecuteNonQuery();
             con.Close();
@@ -261,5 +279,15 @@ namespace GUI_IT
             int pass = (int)cmd.ExecuteScalar();
             return pass;
         }
+
+        public static void log(string user)
+        {
+            SqlConnection con = Connect();
+            String query = "INSERT INTO Login(Username) VALUES('" + user.ToString() + "');";
+            SqlCommand cmd = new SqlCommand(query, con);
+            int pass = (int)cmd.ExecuteScalar();
+        }
+
+
     }
 }

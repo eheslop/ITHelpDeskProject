@@ -187,7 +187,7 @@
             tabControl1.Controls.Add(tabAssign);
             tabControl1.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
             tabControl1.Location = new Point(-4, 117);
-            tabControl1.Margin = new Padding(2, 2, 2, 2);
+            tabControl1.Margin = new Padding(2);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
             tabControl1.Size = new Size(1030, 408);
@@ -208,7 +208,7 @@
             tabHome.Controls.Add(lblUser);
             tabHome.Controls.Add(lblWelcomeMessage);
             tabHome.Location = new Point(4, 32);
-            tabHome.Margin = new Padding(2, 2, 2, 2);
+            tabHome.Margin = new Padding(2);
             tabHome.Name = "tabHome";
             tabHome.Size = new Size(1022, 372);
             tabHome.TabIndex = 2;
@@ -266,7 +266,7 @@
             // 
             pictureBox4.BackColor = Color.White;
             pictureBox4.Location = new Point(18, 226);
-            pictureBox4.Margin = new Padding(2, 2, 2, 2);
+            pictureBox4.Margin = new Padding(2);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(928, 106);
             pictureBox4.TabIndex = 64;
@@ -276,7 +276,7 @@
             // 
             pictureBox11.BackColor = Color.White;
             pictureBox11.Location = new Point(17, 77);
-            pictureBox11.Margin = new Padding(2, 2, 2, 2);
+            pictureBox11.Margin = new Padding(2);
             pictureBox11.Name = "pictureBox11";
             pictureBox11.Size = new Size(928, 106);
             pictureBox11.TabIndex = 63;
@@ -286,7 +286,7 @@
             // 
             pictureBox3.BackColor = Color.Gray;
             pictureBox3.Location = new Point(10, 217);
-            pictureBox3.Margin = new Padding(2, 2, 2, 2);
+            pictureBox3.Margin = new Padding(2);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(944, 126);
             pictureBox3.TabIndex = 59;
@@ -296,7 +296,7 @@
             // 
             pictureBox8.BackColor = Color.Gray;
             pictureBox8.Location = new Point(10, 68);
-            pictureBox8.Margin = new Padding(2, 2, 2, 2);
+            pictureBox8.Margin = new Padding(2);
             pictureBox8.Name = "pictureBox8";
             pictureBox8.Size = new Size(944, 126);
             pictureBox8.TabIndex = 58;
@@ -345,9 +345,9 @@
             tabMonitor.Controls.Add(DGVT);
             tabMonitor.Controls.Add(pictureBox5);
             tabMonitor.Location = new Point(4, 32);
-            tabMonitor.Margin = new Padding(2, 2, 2, 2);
+            tabMonitor.Margin = new Padding(2);
             tabMonitor.Name = "tabMonitor";
-            tabMonitor.Padding = new Padding(2, 2, 2, 2);
+            tabMonitor.Padding = new Padding(2);
             tabMonitor.Size = new Size(1022, 372);
             tabMonitor.TabIndex = 0;
             tabMonitor.Text = "Monitor Tickets";
@@ -359,7 +359,7 @@
             btnReOpened.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
             btnReOpened.ForeColor = Color.White;
             btnReOpened.Location = new Point(859, 279);
-            btnReOpened.Margin = new Padding(2, 2, 2, 2);
+            btnReOpened.Margin = new Padding(2);
             btnReOpened.Name = "btnReOpened";
             btnReOpened.Size = new Size(142, 54);
             btnReOpened.TabIndex = 57;
@@ -373,7 +373,7 @@
             btnSolved.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
             btnSolved.ForeColor = Color.White;
             btnSolved.Location = new Point(859, 174);
-            btnSolved.Margin = new Padding(2, 2, 2, 2);
+            btnSolved.Margin = new Padding(2);
             btnSolved.Name = "btnSolved";
             btnSolved.Size = new Size(142, 54);
             btnSolved.TabIndex = 56;
@@ -387,7 +387,7 @@
             btnUnsolved.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
             btnUnsolved.ForeColor = Color.White;
             btnUnsolved.Location = new Point(858, 62);
-            btnUnsolved.Margin = new Padding(2, 2, 2, 2);
+            btnUnsolved.Margin = new Padding(2);
             btnUnsolved.Name = "btnUnsolved";
             btnUnsolved.Size = new Size(142, 54);
             btnUnsolved.TabIndex = 55;
@@ -412,7 +412,7 @@
             DGVT.AllowUserToDeleteRows = false;
             DGVT.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             DGVT.Location = new Point(10, 40);
-            DGVT.Margin = new Padding(2, 2, 2, 2);
+            DGVT.Margin = new Padding(2);
             DGVT.Name = "DGVT";
             DGVT.ReadOnly = true;
             DGVT.RowHeadersWidth = 62;
@@ -425,7 +425,7 @@
             // 
             pictureBox5.BackColor = Color.DarkGray;
             pictureBox5.Location = new Point(849, 40);
-            pictureBox5.Margin = new Padding(2, 2, 2, 2);
+            pictureBox5.Margin = new Padding(2);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(160, 317);
             pictureBox5.TabIndex = 58;
@@ -448,9 +448,9 @@
             tabAssign.Controls.Add(pictureBox6);
             tabAssign.Controls.Add(lblAssign);
             tabAssign.Location = new Point(4, 32);
-            tabAssign.Margin = new Padding(2, 2, 2, 2);
+            tabAssign.Margin = new Padding(2);
             tabAssign.Name = "tabAssign";
-            tabAssign.Padding = new Padding(2, 2, 2, 2);
+            tabAssign.Padding = new Padding(2);
             tabAssign.Size = new Size(1022, 372);
             tabAssign.TabIndex = 1;
             tabAssign.Text = "Assign Tickets";
@@ -462,7 +462,7 @@
             btnViewReopenedTable.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnViewReopenedTable.ForeColor = Color.White;
             btnViewReopenedTable.Location = new Point(665, 8);
-            btnViewReopenedTable.Margin = new Padding(2, 2, 2, 2);
+            btnViewReopenedTable.Margin = new Padding(2);
             btnViewReopenedTable.Name = "btnViewReopenedTable";
             btnViewReopenedTable.Size = new Size(97, 25);
             btnViewReopenedTable.TabIndex = 90;
@@ -476,7 +476,7 @@
             btnViewUnsolvedTable.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnViewUnsolvedTable.ForeColor = Color.White;
             btnViewUnsolvedTable.Location = new Point(557, 8);
-            btnViewUnsolvedTable.Margin = new Padding(2, 2, 2, 2);
+            btnViewUnsolvedTable.Margin = new Padding(2);
             btnViewUnsolvedTable.Name = "btnViewUnsolvedTable";
             btnViewUnsolvedTable.Size = new Size(89, 25);
             btnViewUnsolvedTable.TabIndex = 89;
@@ -487,7 +487,7 @@
             // 
             DGVAssign.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             DGVAssign.Location = new Point(557, 38);
-            DGVAssign.Margin = new Padding(2, 2, 2, 2);
+            DGVAssign.Margin = new Padding(2);
             DGVAssign.Name = "DGVAssign";
             DGVAssign.RowHeadersWidth = 62;
             DGVAssign.RowTemplate.Height = 33;
@@ -501,7 +501,7 @@
             btnAssign.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnAssign.ForeColor = Color.White;
             btnAssign.Location = new Point(192, 315);
-            btnAssign.Margin = new Padding(2, 2, 2, 2);
+            btnAssign.Margin = new Padding(2);
             btnAssign.Name = "btnAssign";
             btnAssign.Size = new Size(130, 41);
             btnAssign.TabIndex = 87;
@@ -515,7 +515,7 @@
             btnClear.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnClear.ForeColor = Color.White;
             btnClear.Location = new Point(16, 315);
-            btnClear.Margin = new Padding(2, 2, 2, 2);
+            btnClear.Margin = new Padding(2);
             btnClear.Name = "btnClear";
             btnClear.Size = new Size(130, 41);
             btnClear.TabIndex = 86;
@@ -589,7 +589,7 @@
             // 
             pictureBox6.BackColor = Color.DarkGray;
             pictureBox6.Location = new Point(11, 38);
-            pictureBox6.Margin = new Padding(2, 2, 2, 2);
+            pictureBox6.Margin = new Padding(2);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(523, 262);
             pictureBox6.TabIndex = 85;
@@ -619,6 +619,7 @@
             lblLoggedIn.Size = new Size(150, 23);
             lblLoggedIn.TabIndex = 5;
             lblLoggedIn.Text = "Logged in as: User";
+            //lblLoggedIn.Click += lblLoggedIn_Click_1;
             // 
             // ProfilePictureBox
             // 
@@ -626,7 +627,7 @@
             ProfilePictureBox.BackgroundImage = Properties.Resources.Profile_Picture;
             ProfilePictureBox.BackgroundImageLayout = ImageLayout.Zoom;
             ProfilePictureBox.Location = new Point(962, 39);
-            ProfilePictureBox.Margin = new Padding(2, 2, 2, 2);
+            ProfilePictureBox.Margin = new Padding(2);
             ProfilePictureBox.Name = "ProfilePictureBox";
             ProfilePictureBox.Size = new Size(38, 28);
             ProfilePictureBox.TabIndex = 6;
@@ -649,7 +650,7 @@
             Controls.Add(Rectangle1);
             Controls.Add(pictureBox1);
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "frmReportManage";
             Text = "IT Help Desk Report Manager Ticket Dashboard";
             ((System.ComponentModel.ISupportInitialize)pictureLogo).EndInit();

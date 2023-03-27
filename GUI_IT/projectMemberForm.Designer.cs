@@ -55,7 +55,7 @@
             lblDescribeHome = new Label();
             lblWelcomeMessage = new Label();
             tabMyTickets = new TabPage();
-            dataGridView1 = new DataGridView();
+            DGVM = new DataGridView();
             label5 = new Label();
             tabRaiseTicket = new TabPage();
             btnRaise = new Button();
@@ -102,7 +102,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             tabMyTickets.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)DGVM).BeginInit();
             tabRaiseTicket.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             tabReopenTicket.SuspendLayout();
@@ -231,7 +231,7 @@
             tabProjectMem.Controls.Add(tabReopenTicket);
             tabProjectMem.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
             tabProjectMem.Location = new Point(-6, 54);
-            tabProjectMem.Margin = new Padding(2, 2, 2, 2);
+            tabProjectMem.Margin = new Padding(2);
             tabProjectMem.Name = "tabProjectMem";
             tabProjectMem.SelectedIndex = 0;
             tabProjectMem.Size = new Size(1031, 397);
@@ -256,7 +256,7 @@
             tabHome.Controls.Add(lblDescribeHome);
             tabHome.Controls.Add(lblWelcomeMessage);
             tabHome.Location = new Point(4, 32);
-            tabHome.Margin = new Padding(2, 2, 2, 2);
+            tabHome.Margin = new Padding(2);
             tabHome.Name = "tabHome";
             tabHome.Size = new Size(1023, 361);
             tabHome.TabIndex = 3;
@@ -267,7 +267,7 @@
             label11.AutoSize = true;
             label11.BackColor = Color.White;
             label11.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label11.Location = new Point(218, 273);
+            label11.Location = new Point(214, 274);
             label11.Margin = new Padding(2, 0, 2, 0);
             label11.Name = "label11";
             label11.Size = new Size(769, 60);
@@ -279,7 +279,7 @@
             label10.AutoSize = true;
             label10.BackColor = Color.White;
             label10.Font = new Font("Segoe UI", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label10.Location = new Point(26, 287);
+            label10.Location = new Point(26, 286);
             label10.Margin = new Padding(2, 0, 2, 0);
             label10.Name = "label10";
             label10.Size = new Size(190, 32);
@@ -291,7 +291,7 @@
             label9.AutoSize = true;
             label9.BackColor = Color.White;
             label9.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label9.Location = new Point(183, 177);
+            label9.Location = new Point(189, 179);
             label9.Margin = new Padding(2, 0, 2, 0);
             label9.Name = "label9";
             label9.Size = new Size(809, 60);
@@ -303,7 +303,7 @@
             label8.AutoSize = true;
             label8.BackColor = Color.White;
             label8.Font = new Font("Segoe UI", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label8.Location = new Point(30, 192);
+            label8.Location = new Point(30, 191);
             label8.Margin = new Padding(2, 0, 2, 0);
             label8.Name = "label8";
             label8.Size = new Size(159, 32);
@@ -314,9 +314,9 @@
             // 
             pictureBox13.BackColor = Color.White;
             pictureBox13.Location = new Point(21, 274);
-            pictureBox13.Margin = new Padding(2, 2, 2, 2);
+            pictureBox13.Margin = new Padding(2);
             pictureBox13.Name = "pictureBox13";
-            pictureBox13.Size = new Size(928, 60);
+            pictureBox13.Size = new Size(970, 60);
             pictureBox13.TabIndex = 66;
             pictureBox13.TabStop = false;
             // 
@@ -324,9 +324,9 @@
             // 
             pictureBox12.BackColor = Color.White;
             pictureBox12.Location = new Point(22, 178);
-            pictureBox12.Margin = new Padding(2, 2, 2, 2);
+            pictureBox12.Margin = new Padding(2);
             pictureBox12.Name = "pictureBox12";
-            pictureBox12.Size = new Size(928, 60);
+            pictureBox12.Size = new Size(968, 60);
             pictureBox12.TabIndex = 65;
             pictureBox12.TabStop = false;
             // 
@@ -358,7 +358,7 @@
             // 
             pictureBox11.BackColor = Color.White;
             pictureBox11.Location = new Point(22, 81);
-            pictureBox11.Margin = new Padding(2, 2, 2, 2);
+            pictureBox11.Margin = new Padding(2);
             pictureBox11.Name = "pictureBox11";
             pictureBox11.Size = new Size(968, 60);
             pictureBox11.TabIndex = 62;
@@ -368,7 +368,7 @@
             // 
             pictureBox10.BackColor = Color.Gray;
             pictureBox10.Location = new Point(14, 262);
-            pictureBox10.Margin = new Padding(2, 2, 2, 2);
+            pictureBox10.Margin = new Padding(2);
             pictureBox10.Name = "pictureBox10";
             pictureBox10.Size = new Size(986, 84);
             pictureBox10.TabIndex = 59;
@@ -378,7 +378,7 @@
             // 
             pictureBox9.BackColor = Color.Gray;
             pictureBox9.Location = new Point(14, 166);
-            pictureBox9.Margin = new Padding(2, 2, 2, 2);
+            pictureBox9.Margin = new Padding(2);
             pictureBox9.Name = "pictureBox9";
             pictureBox9.Size = new Size(986, 84);
             pictureBox9.TabIndex = 58;
@@ -388,7 +388,7 @@
             // 
             pictureBox8.BackColor = Color.Gray;
             pictureBox8.Location = new Point(14, 69);
-            pictureBox8.Margin = new Padding(2, 2, 2, 2);
+            pictureBox8.Margin = new Padding(2);
             pictureBox8.Name = "pictureBox8";
             pictureBox8.Size = new Size(986, 84);
             pictureBox8.TabIndex = 57;
@@ -431,25 +431,25 @@
             // tabMyTickets
             // 
             tabMyTickets.BackColor = Color.LightGray;
-            tabMyTickets.Controls.Add(dataGridView1);
+            tabMyTickets.Controls.Add(DGVM);
             tabMyTickets.Controls.Add(label5);
             tabMyTickets.Location = new Point(4, 32);
-            tabMyTickets.Margin = new Padding(2, 2, 2, 2);
+            tabMyTickets.Margin = new Padding(2);
             tabMyTickets.Name = "tabMyTickets";
             tabMyTickets.Size = new Size(1023, 361);
             tabMyTickets.TabIndex = 2;
             tabMyTickets.Text = "My Tickets";
             // 
-            // dataGridView1
+            // DGVM
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(17, 40);
-            dataGridView1.Margin = new Padding(2, 2, 2, 2);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.RowTemplate.Height = 33;
-            dataGridView1.Size = new Size(936, 302);
-            dataGridView1.TabIndex = 55;
+            DGVM.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            DGVM.Location = new Point(17, 40);
+            DGVM.Margin = new Padding(2);
+            DGVM.Name = "DGVM";
+            DGVM.RowHeadersWidth = 62;
+            DGVM.RowTemplate.Height = 33;
+            DGVM.Size = new Size(936, 302);
+            DGVM.TabIndex = 55;
             // 
             // label5
             // 
@@ -477,9 +477,9 @@
             tabRaiseTicket.Controls.Add(label1);
             tabRaiseTicket.Controls.Add(label2);
             tabRaiseTicket.Location = new Point(4, 32);
-            tabRaiseTicket.Margin = new Padding(2, 2, 2, 2);
+            tabRaiseTicket.Margin = new Padding(2);
             tabRaiseTicket.Name = "tabRaiseTicket";
-            tabRaiseTicket.Padding = new Padding(2, 2, 2, 2);
+            tabRaiseTicket.Padding = new Padding(2);
             tabRaiseTicket.Size = new Size(1023, 361);
             tabRaiseTicket.TabIndex = 0;
             tabRaiseTicket.Text = "Raise Tickets";
@@ -491,7 +491,7 @@
             btnRaise.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnRaise.ForeColor = Color.White;
             btnRaise.Location = new Point(861, 310);
-            btnRaise.Margin = new Padding(2, 2, 2, 2);
+            btnRaise.Margin = new Padding(2);
             btnRaise.Name = "btnRaise";
             btnRaise.Size = new Size(129, 32);
             btnRaise.TabIndex = 61;
@@ -506,7 +506,7 @@
             cbxType.FormattingEnabled = true;
             cbxType.Items.AddRange(new object[] { "Type 1", "Type 2", "Type 3", "Type 4", "Other" });
             cbxType.Location = new Point(10, 90);
-            cbxType.Margin = new Padding(2, 2, 2, 2);
+            cbxType.Margin = new Padding(2);
             cbxType.Name = "cbxType";
             cbxType.Size = new Size(308, 31);
             cbxType.TabIndex = 60;
@@ -518,7 +518,7 @@
             cbxUrgency.FormattingEnabled = true;
             cbxUrgency.Items.AddRange(new object[] { "Low", "Medium", "High" });
             cbxUrgency.Location = new Point(370, 90);
-            cbxUrgency.Margin = new Padding(2, 2, 2, 2);
+            cbxUrgency.Margin = new Padding(2);
             cbxUrgency.Name = "cbxUrgency";
             cbxUrgency.Size = new Size(284, 31);
             cbxUrgency.TabIndex = 59;
@@ -547,7 +547,7 @@
             // 
             txtProblemDescribe.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
             txtProblemDescribe.Location = new Point(21, 144);
-            txtProblemDescribe.Margin = new Padding(2, 2, 2, 2);
+            txtProblemDescribe.Margin = new Padding(2);
             txtProblemDescribe.MaxLength = 500;
             txtProblemDescribe.Multiline = true;
             txtProblemDescribe.Name = "txtProblemDescribe";
@@ -573,7 +573,7 @@
             btnClear.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnClear.ForeColor = Color.White;
             btnClear.Location = new Point(861, 268);
-            btnClear.Margin = new Padding(2, 2, 2, 2);
+            btnClear.Margin = new Padding(2);
             btnClear.Name = "btnClear";
             btnClear.Size = new Size(129, 32);
             btnClear.TabIndex = 54;
@@ -619,9 +619,9 @@
             tabReopenTicket.Controls.Add(label4);
             tabReopenTicket.Controls.Add(label3);
             tabReopenTicket.Location = new Point(4, 32);
-            tabReopenTicket.Margin = new Padding(2, 2, 2, 2);
+            tabReopenTicket.Margin = new Padding(2);
             tabReopenTicket.Name = "tabReopenTicket";
-            tabReopenTicket.Padding = new Padding(2, 2, 2, 2);
+            tabReopenTicket.Padding = new Padding(2);
             tabReopenTicket.Size = new Size(1023, 361);
             tabReopenTicket.TabIndex = 1;
             tabReopenTicket.Text = "Re-open Tickets";
@@ -652,7 +652,7 @@
             cbxReopenReason.FormattingEnabled = true;
             cbxReopenReason.Items.AddRange(new object[] { "Reason 1", "Reason 2", "Reason 3", "Reason 4", "Reason 5", "None of the above" });
             cbxReopenReason.Location = new Point(8, 101);
-            cbxReopenReason.Margin = new Padding(2, 2, 2, 2);
+            cbxReopenReason.Margin = new Padding(2);
             cbxReopenReason.Name = "cbxReopenReason";
             cbxReopenReason.Size = new Size(522, 31);
             cbxReopenReason.TabIndex = 64;
@@ -675,7 +675,7 @@
             btnReopenTicket.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnReopenTicket.ForeColor = Color.White;
             btnReopenTicket.Location = new Point(872, 315);
-            btnReopenTicket.Margin = new Padding(2, 2, 2, 2);
+            btnReopenTicket.Margin = new Padding(2);
             btnReopenTicket.Name = "btnReopenTicket";
             btnReopenTicket.Size = new Size(126, 32);
             btnReopenTicket.TabIndex = 62;
@@ -689,7 +689,7 @@
             btnReopenClear.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnReopenClear.ForeColor = Color.White;
             btnReopenClear.Location = new Point(872, 276);
-            btnReopenClear.Margin = new Padding(2, 2, 2, 2);
+            btnReopenClear.Margin = new Padding(2);
             btnReopenClear.Name = "btnReopenClear";
             btnReopenClear.Size = new Size(125, 29);
             btnReopenClear.TabIndex = 58;
@@ -701,7 +701,7 @@
             // 
             txtReopenTicket.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
             txtReopenTicket.Location = new Point(21, 158);
-            txtReopenTicket.Margin = new Padding(2, 2, 2, 2);
+            txtReopenTicket.Margin = new Padding(2);
             txtReopenTicket.MaxLength = 500;
             txtReopenTicket.Multiline = true;
             txtReopenTicket.Name = "txtReopenTicket";
@@ -861,7 +861,7 @@
             ProfilePictureBox.BackgroundImage = Properties.Resources.Profile_Picture;
             ProfilePictureBox.BackgroundImageLayout = ImageLayout.Zoom;
             ProfilePictureBox.Location = new Point(962, 37);
-            ProfilePictureBox.Margin = new Padding(2, 2, 2, 2);
+            ProfilePictureBox.Margin = new Padding(2);
             ProfilePictureBox.Name = "ProfilePictureBox";
             ProfilePictureBox.Size = new Size(38, 28);
             ProfilePictureBox.TabIndex = 4;
@@ -907,7 +907,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             tabMyTickets.ResumeLayout(false);
             tabMyTickets.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)DGVM).EndInit();
             tabRaiseTicket.ResumeLayout(false);
             tabRaiseTicket.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
@@ -972,7 +972,7 @@
         private TextBox txtID;
         private TabPage tabMyTickets;
         private Label label5;
-        private DataGridView dataGridView1;
+        private DataGridView DGVM;
         private TabPage tabHome;
         private Label lblWelcomeMessage;
         private Label lblDescribeHome;

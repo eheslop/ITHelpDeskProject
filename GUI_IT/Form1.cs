@@ -6,6 +6,7 @@ using MailKit.Net.Smtp;
 using MailKit;
 using MimeKit;
 using System.Net.Mail;
+using Microsoft.Identity.Client;
 
 namespace GUI_IT
 {
@@ -32,6 +33,9 @@ namespace GUI_IT
         {
             newUser.Username = txtUsername.Text.ToString();
             newUser.Password = txtPassword.Text.ToString();
+            newUser.Email = Sql.getEmail(newUser.Username);
+            newUser.FirstName = Sql.getName(newUser.Username);
+            newUser.FullName = Sql.getfullName(newUser.Username);
             int exists = Sql.Login(newUser.Username, newUser.Password);
             if (exists == 0)
             {
@@ -92,14 +96,25 @@ namespace GUI_IT
             }
         }
 
+
+
         private void btnRegister_Click(object sender, EventArgs e)
         {
+            Random res1 = new Random();
+            String str1 = "0123456789";
+            int size1 = 4;
+            String randomstring1 = "";
+            for (int i = 0; i < size1; i++)
+            {
+                int x = res1.Next(str1.Length);
+                randomstring1 = randomstring1 + str1[x];
+            }
             string name = txtFirstName.Text.ToString() + " " + txtLastName.Text.ToString();
-            newUser.FirstName = txtFirstName.Text.ToString();
-            newUser.LastName = txtLastName.Text.ToString();
+            string first = txtFirstName.Text.ToString();
+            string last = txtLastName.Text.ToString();
             string email = txtEmail.Text.ToString();
-            newUser.UserType = cboUserType.Text.ToString();
-            string user = name[0].ToString() + txtLastName.Text.ToString();
+            string role = cboUserType.Text.ToString();
+            string user = name[0].ToString() + txtLastName.Text.ToString() + randomstring1.ToString();
             Boolean accountExists = Sql.Exists(user);
             Boolean validEmail = Email.isValid(email);
             if (accountExists == false && validEmail == true)
@@ -113,8 +128,8 @@ namespace GUI_IT
                     int x = res.Next(str.Length);
                     randomstring = randomstring + str[x];
                 }
-                newUser.Password = randomstring.ToString();
-                Sql.Register(user, name, newUser.FirstName, newUser.LastName, newUser.Password, email, newUser.UserType);
+                string pass = randomstring.ToString();
+                Sql.Register(user, name, first, last, pass, email, role);
                 Email.sendEmail("Registration", user);
                 MessageBox.Show("Account Created!\nCheck your email for your login credentials!", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -221,5 +236,7 @@ namespace GUI_IT
             btnClosedEye.Visible = false;
             txtPassword.UseSystemPasswordChar = false;
         }
+
+
     }
 }

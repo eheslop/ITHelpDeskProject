@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Microsoft.Data.SqlClient;
+using GUI_IT;
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,14 +17,21 @@ namespace GUI_IT
     {
         private SessionRegister newUser;
 
-        int id = 8;
+        public string User { get; set; }
+        public string Email { get; set; }
+        public string FullName { get; set; }
+
         public frmProjectMember(SessionRegister newUser)
         {
             InitializeComponent();
             pnlTickets.Visible = true;
             pnlProblemList.Visible = false;
-            lblUser.Text = newUser.Username + "!";
-            lblLoggedIn.Text = "Logged in as: " + newUser.Username;
+            lblUser.Text = newUser.FirstName + "!";
+            lblLoggedIn.Text = "Logged in as: " + newUser.FirstName;
+            User = newUser.Username;
+            Email = newUser.Email;
+            FullName = newUser.FullName;
+            Fill();
         }
 
         private void frmProjectMember_Load(object sender, EventArgs e)
@@ -73,6 +83,7 @@ namespace GUI_IT
             pnlTickets.Visible = true;
             pnlProblemList.Visible = false;
             this.Text = "IT Help Desk Project Member Ticket Dashboard";
+
         }
 
         private void pnlOnlineHelp_Paint(object sender, PaintEventArgs e)
@@ -104,11 +115,14 @@ namespace GUI_IT
 
         private void btnRaise_Click(object sender, EventArgs e)
         {
+            // SessionRegister newUser;
+
             string Category = cbxType.Text.ToString();
             string Description = txtProblemDescribe.Text.ToString();
             string Priority = cbxUrgency.Text.ToString();
+
             int id = Sql.count();
-            Sql.RaiseTicket(id, Category, Description, Priority);
+            Sql.RaiseTicket(id, FullName, User, Category, Description, Email, Priority);
 
             cbxType.ResetText();
             cbxType.SelectedIndex = -1;
@@ -131,6 +145,26 @@ namespace GUI_IT
         {
             frmUserProf UserProfile = new frmUserProf();
             UserProfile.ShowDialog();
+        }
+
+        private void Fill()
+        {
+            SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
+            builder.DataSource = "redagents.database.windows.net";
+            builder.UserID = "kwekwe";
+            builder.Password = "Password1!";
+            builder.InitialCatalog = "red_Agents";
+            SqlConnection con = new SqlConnection(builder.ConnectionString);
+            con.Open();
+            string x = User;
+            string query = "Select * from Tickets where Username = '" + User + "'";
+            SqlDataAdapter da = new SqlDataAdapter(query, con);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            DGVM.DataSource = dt;
+            DGVM.EditMode = DataGridViewEditMode.EditOnEnter;
+            con.Close();
+
         }
     }
 }
