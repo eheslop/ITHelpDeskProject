@@ -164,5 +164,10 @@ namespace GUI_IT
             DGVM.EditMode = DataGridViewEditMode.EditOnEnter;
             con.Close();
         }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            Fill();
+        }
     }
 }

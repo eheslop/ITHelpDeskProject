@@ -55,6 +55,7 @@
             lblDescribeHome = new Label();
             lblWelcomeMessage = new Label();
             tabMyTickets = new TabPage();
+            btnRefresh = new Button();
             DGVM = new DataGridView();
             label5 = new Label();
             tabRaiseTicket = new TabPage();
@@ -89,7 +90,10 @@
             lblHeader = new Label();
             lblLoggedIn = new Label();
             ProfilePictureBox = new PictureBox();
-            btnRefresh = new Button();
+            tabEmail = new TabPage();
+            tabReportGeneration = new TabControl();
+            tabPassword = new TabPage();
+            tabTickets = new TabPage();
             ((System.ComponentModel.ISupportInitialize)pictureLogo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Rectangle1).BeginInit();
@@ -113,6 +117,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ProfilePictureBox).BeginInit();
+            tabReportGeneration.SuspendLayout();
             SuspendLayout();
             // 
             // pictureLogo
@@ -218,10 +223,10 @@
             pnlTickets.Controls.Add(tabProjectMem);
             pnlTickets.Controls.Add(lblTicket);
             pnlTickets.Controls.Add(pictureBox3);
-            pnlTickets.Location = new Point(0, 85);
+            pnlTickets.Location = new Point(0, 91);
             pnlTickets.Margin = new Padding(2);
             pnlTickets.Name = "pnlTickets";
-            pnlTickets.Size = new Size(1285, 562);
+            pnlTickets.Size = new Size(1285, 603);
             pnlTickets.TabIndex = 45;
             pnlTickets.Paint += pnlOnlineHelp_Paint;
             // 
@@ -442,6 +447,21 @@
             tabMyTickets.Size = new Size(1281, 454);
             tabMyTickets.TabIndex = 2;
             tabMyTickets.Text = "My Tickets";
+            // 
+            // btnRefresh
+            // 
+            btnRefresh.BackColor = Color.FromArgb(64, 0, 0);
+            btnRefresh.FlatStyle = FlatStyle.Popup;
+            btnRefresh.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnRefresh.ForeColor = Color.White;
+            btnRefresh.Location = new Point(1161, 48);
+            btnRefresh.Margin = new Padding(2);
+            btnRefresh.Name = "btnRefresh";
+            btnRefresh.Size = new Size(95, 52);
+            btnRefresh.TabIndex = 56;
+            btnRefresh.Text = "Refresh";
+            btnRefresh.UseVisualStyleBackColor = false;
+            btnRefresh.Click += btnRefresh_Click;
             // 
             // DGVM
             // 
@@ -766,10 +786,10 @@
             // 
             pictureBox3.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox3.BackColor = Color.FromArgb(64, 0, 0);
-            pictureBox3.Location = new Point(0, -1);
+            pictureBox3.Location = new Point(0, 0);
             pictureBox3.Margin = new Padding(2);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(1282, 66);
+            pictureBox3.Size = new Size(1274, 65);
             pictureBox3.TabIndex = 44;
             pictureBox3.TabStop = false;
             // 
@@ -780,7 +800,7 @@
             pnlProblemList.Location = new Point(-4, 89);
             pnlProblemList.Margin = new Padding(2);
             pnlProblemList.Name = "pnlProblemList";
-            pnlProblemList.Size = new Size(1268, 552);
+            pnlProblemList.Size = new Size(1268, 580);
             pnlProblemList.TabIndex = 45;
             // 
             // lblProblem
@@ -872,19 +892,46 @@
             ProfilePictureBox.TabStop = false;
             ProfilePictureBox.Click += ProfilePictureBox_Click;
             // 
-            // btnRefresh
+            // tabEmail
             // 
-            btnRefresh.BackColor = Color.FromArgb(64, 0, 0);
-            btnRefresh.FlatStyle = FlatStyle.Popup;
-            btnRefresh.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnRefresh.ForeColor = Color.White;
-            btnRefresh.Location = new Point(1161, 48);
-            btnRefresh.Margin = new Padding(2);
-            btnRefresh.Name = "btnRefresh";
-            btnRefresh.Size = new Size(95, 52);
-            btnRefresh.TabIndex = 56;
-            btnRefresh.Text = "Refresh";
-            btnRefresh.UseVisualStyleBackColor = false;
+            tabEmail.BackColor = Color.LightGray;
+            tabEmail.Location = new Point(4, 37);
+            tabEmail.Margin = new Padding(2);
+            tabEmail.Name = "tabEmail";
+            tabEmail.Size = new Size(1266, 502);
+            tabEmail.TabIndex = 3;
+            tabEmail.Text = "Email Questions";
+            // 
+            // tabReportGeneration
+            // 
+            tabReportGeneration.Controls.Add(tabEmail);
+            tabReportGeneration.Controls.Add(tabPassword);
+            tabReportGeneration.Controls.Add(tabTickets);
+            tabReportGeneration.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            tabReportGeneration.Location = new Point(-2, 155);
+            tabReportGeneration.Margin = new Padding(2);
+            tabReportGeneration.Name = "tabReportGeneration";
+            tabReportGeneration.SelectedIndex = 0;
+            tabReportGeneration.Size = new Size(1274, 543);
+            tabReportGeneration.TabIndex = 49;
+            // 
+            // tabPassword
+            // 
+            tabPassword.BackColor = Color.LightGray;
+            tabPassword.Location = new Point(4, 37);
+            tabPassword.Name = "tabPassword";
+            tabPassword.Size = new Size(1266, 502);
+            tabPassword.TabIndex = 4;
+            tabPassword.Text = "Password Questions";
+            // 
+            // tabTickets
+            // 
+            tabTickets.BackColor = Color.LightGray;
+            tabTickets.Location = new Point(4, 37);
+            tabTickets.Name = "tabTickets";
+            tabTickets.Size = new Size(1266, 502);
+            tabTickets.TabIndex = 5;
+            tabTickets.Text = "Tickets Questions";
             // 
             // frmProjectMember
             // 
@@ -905,6 +952,7 @@
             Controls.Add(btnLogout);
             Controls.Add(pictureBox1);
             Controls.Add(Rectangle1);
+            Controls.Add(tabReportGeneration);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(2);
             Name = "frmProjectMember";
@@ -938,6 +986,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)ProfilePictureBox).EndInit();
+            tabReportGeneration.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -1010,5 +1059,9 @@
         private Label label11;
         private PictureBox pictureBox4;
         private Button btnRefresh;
+        private TabPage tabEmail;
+        private TabControl tabReportGeneration;
+        private TabPage tabPassword;
+        private TabPage tabTickets;
     }
 }
