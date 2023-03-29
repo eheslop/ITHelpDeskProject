@@ -49,6 +49,9 @@
             lblUserPassword = new Label();
             lblUserRole = new Label();
             lblUserUsername = new Label();
+            pictureBox9 = new PictureBox();
+            lblName = new Label();
+            lblNameUser = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureboxIcon).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -58,6 +61,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             SuspendLayout();
             // 
             // lblHeader
@@ -150,7 +154,7 @@
             // pictureBox2
             // 
             pictureBox2.BackColor = Color.Gainsboro;
-            pictureBox2.Location = new Point(42, 253);
+            pictureBox2.Location = new Point(42, 310);
             pictureBox2.Margin = new Padding(2);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(502, 58);
@@ -160,7 +164,7 @@
             // pictureBox6
             // 
             pictureBox6.BackColor = Color.Gainsboro;
-            pictureBox6.Location = new Point(42, 344);
+            pictureBox6.Location = new Point(42, 383);
             pictureBox6.Margin = new Padding(2);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(502, 58);
@@ -170,7 +174,7 @@
             // pictureBox8
             // 
             pictureBox8.BackColor = Color.Gainsboro;
-            pictureBox8.Location = new Point(42, 436);
+            pictureBox8.Location = new Point(42, 454);
             pictureBox8.Margin = new Padding(2);
             pictureBox8.Name = "pictureBox8";
             pictureBox8.Size = new Size(502, 58);
@@ -182,7 +186,7 @@
             lblUsername.AutoSize = true;
             lblUsername.BackColor = Color.Gainsboro;
             lblUsername.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblUsername.Location = new Point(44, 360);
+            lblUsername.Location = new Point(44, 400);
             lblUsername.Name = "lblUsername";
             lblUsername.Size = new Size(108, 25);
             lblUsername.TabIndex = 64;
@@ -193,12 +197,13 @@
             linklblChangePassword.ActiveLinkColor = Color.Red;
             linklblChangePassword.AutoSize = true;
             linklblChangePassword.BackColor = Color.Silver;
-            linklblChangePassword.Location = new Point(384, 499);
+            linklblChangePassword.Location = new Point(384, 517);
             linklblChangePassword.Name = "linklblChangePassword";
             linklblChangePassword.Size = new Size(160, 25);
             linklblChangePassword.TabIndex = 65;
             linklblChangePassword.TabStop = true;
             linklblChangePassword.Text = "Change Password?";
+            linklblChangePassword.LinkClicked += linklblChangePassword_LinkClicked;
             // 
             // lblUserEmail
             // 
@@ -206,7 +211,7 @@
             lblUserEmail.BackColor = Color.Gainsboro;
             lblUserEmail.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             lblUserEmail.ForeColor = Color.Black;
-            lblUserEmail.Location = new Point(111, 181);
+            lblUserEmail.Location = new Point(108, 255);
             lblUserEmail.Name = "lblUserEmail";
             lblUserEmail.Size = new Size(57, 24);
             lblUserEmail.TabIndex = 66;
@@ -217,7 +222,7 @@
             lblPassword.AutoSize = true;
             lblPassword.BackColor = Color.Gainsboro;
             lblPassword.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblPassword.Location = new Point(45, 453);
+            lblPassword.Location = new Point(45, 470);
             lblPassword.Name = "lblPassword";
             lblPassword.Size = new Size(104, 25);
             lblPassword.TabIndex = 67;
@@ -228,7 +233,7 @@
             lblRole.AutoSize = true;
             lblRole.BackColor = Color.Gainsboro;
             lblRole.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblRole.Location = new Point(50, 270);
+            lblRole.Location = new Point(50, 328);
             lblRole.Name = "lblRole";
             lblRole.Size = new Size(57, 25);
             lblRole.TabIndex = 68;
@@ -239,7 +244,7 @@
             lblEmail.AutoSize = true;
             lblEmail.BackColor = Color.Gainsboro;
             lblEmail.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblEmail.Location = new Point(49, 181);
+            lblEmail.Location = new Point(47, 255);
             lblEmail.Name = "lblEmail";
             lblEmail.Size = new Size(65, 25);
             lblEmail.TabIndex = 69;
@@ -251,7 +256,7 @@
             lblUserPassword.BackColor = Color.Gainsboro;
             lblUserPassword.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             lblUserPassword.ForeColor = Color.Black;
-            lblUserPassword.Location = new Point(147, 453);
+            lblUserPassword.Location = new Point(145, 470);
             lblUserPassword.Name = "lblUserPassword";
             lblUserPassword.Size = new Size(92, 24);
             lblUserPassword.TabIndex = 70;
@@ -263,7 +268,7 @@
             lblUserRole.BackColor = Color.Gainsboro;
             lblUserRole.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             lblUserRole.ForeColor = Color.Black;
-            lblUserRole.Location = new Point(105, 270);
+            lblUserRole.Location = new Point(104, 328);
             lblUserRole.Name = "lblUserRole";
             lblUserRole.Size = new Size(43, 24);
             lblUserRole.TabIndex = 72;
@@ -275,11 +280,44 @@
             lblUserUsername.BackColor = Color.Gainsboro;
             lblUserUsername.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             lblUserUsername.ForeColor = Color.Black;
-            lblUserUsername.Location = new Point(149, 361);
+            lblUserUsername.Location = new Point(149, 401);
             lblUserUsername.Name = "lblUserUsername";
             lblUserUsername.Size = new Size(94, 24);
             lblUserUsername.TabIndex = 73;
             lblUserUsername.Text = "username";
+            // 
+            // pictureBox9
+            // 
+            pictureBox9.BackColor = Color.Gainsboro;
+            pictureBox9.Location = new Point(42, 238);
+            pictureBox9.Margin = new Padding(2);
+            pictureBox9.Name = "pictureBox9";
+            pictureBox9.Size = new Size(502, 58);
+            pictureBox9.TabIndex = 74;
+            pictureBox9.TabStop = false;
+            // 
+            // lblName
+            // 
+            lblName.AutoSize = true;
+            lblName.BackColor = Color.Gainsboro;
+            lblName.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            lblName.Location = new Point(47, 181);
+            lblName.Name = "lblName";
+            lblName.Size = new Size(70, 25);
+            lblName.TabIndex = 75;
+            lblName.Text = "Name:";
+            // 
+            // lblNameUser
+            // 
+            lblNameUser.AutoSize = true;
+            lblNameUser.BackColor = Color.Gainsboro;
+            lblNameUser.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            lblNameUser.ForeColor = Color.Black;
+            lblNameUser.Location = new Point(113, 181);
+            lblNameUser.Name = "lblNameUser";
+            lblNameUser.Size = new Size(169, 24);
+            lblNameUser.TabIndex = 76;
+            lblNameUser.Text = "first and last name";
             // 
             // frmUserProf
             // 
@@ -287,13 +325,16 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
             ClientSize = new Size(586, 581);
+            Controls.Add(lblEmail);
+            Controls.Add(lblUserEmail);
+            Controls.Add(lblNameUser);
+            Controls.Add(lblName);
+            Controls.Add(pictureBox9);
             Controls.Add(lblUserUsername);
             Controls.Add(lblUserRole);
             Controls.Add(lblUserPassword);
-            Controls.Add(lblEmail);
             Controls.Add(lblRole);
             Controls.Add(lblPassword);
-            Controls.Add(lblUserEmail);
             Controls.Add(linklblChangePassword);
             Controls.Add(lblUsername);
             Controls.Add(pictureBox8);
@@ -322,6 +363,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -348,5 +390,8 @@
         private Label lblUserPassword;
         private Label lblUserRole;
         private Label lblUserUsername;
+        private PictureBox pictureBox9;
+        private Label lblName;
+        private Label lblNameUser;
     }
 }

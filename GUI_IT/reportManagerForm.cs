@@ -15,6 +15,7 @@ namespace GUI_IT
     public partial class frmReportManage : Form
     {
         private SessionRegister newUser;
+
         public frmReportManage(SessionRegister newUser)
         {
             InitializeComponent();
@@ -59,10 +60,10 @@ namespace GUI_IT
 
         private void ProfilePictureBox_Click(object sender, EventArgs e)
         {
-            frmUserProf UserProfile = new frmUserProf();
+            frmUserProf UserProfile = new frmUserProf(newUser);
             UserProfile.ShowDialog();
         }
 
-       
+
     }
 }

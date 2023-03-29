@@ -16,7 +16,6 @@ namespace GUI_IT
     public partial class frmProjectMember : Form
     {
         private SessionRegister newUser;
-
         public string User { get; set; }
         public string Email { get; set; }
         public string FullName { get; set; }
@@ -143,7 +142,7 @@ namespace GUI_IT
 
         private void ProfilePictureBox_Click(object sender, EventArgs e)
         {
-            frmUserProf UserProfile = new frmUserProf();
+            frmUserProf UserProfile = new frmUserProf(newUser);
             UserProfile.ShowDialog();
         }
 
@@ -164,7 +163,6 @@ namespace GUI_IT
             DGVM.DataSource = dt;
             DGVM.EditMode = DataGridViewEditMode.EditOnEnter;
             con.Close();
-
         }
     }
 }

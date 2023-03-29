@@ -36,11 +36,9 @@
             Rectangle1 = new PictureBox();
             DGVR = new DataGridView();
             lblHeader = new Label();
-            label1 = new Label();
+            lblAdminHeader = new Label();
             pictureBox2 = new PictureBox();
             pnlReportGenerate = new Panel();
-            lblReportGen = new Label();
-            pictureBox3 = new PictureBox();
             tabReportGeneration = new TabControl();
             tabHome = new TabPage();
             label7 = new Label();
@@ -114,7 +112,6 @@
             ((System.ComponentModel.ISupportInitialize)DGVR).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             pnlReportGenerate.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             tabReportGeneration.SuspendLayout();
             tabHome.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
@@ -237,19 +234,19 @@
             lblHeader.TabIndex = 48;
             lblHeader.Text = "Red Agents IT Help Desk";
             // 
-            // label1
+            // lblAdminHeader
             // 
-            label1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            label1.AutoSize = true;
-            label1.BackColor = Color.FromArgb(64, 0, 0);
-            label1.Font = new Font("Microsoft YaHei UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(454, 101);
-            label1.Margin = new Padding(2, 0, 2, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(430, 47);
-            label1.TabIndex = 50;
-            label1.Text = "New User Registration";
+            lblAdminHeader.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            lblAdminHeader.AutoSize = true;
+            lblAdminHeader.BackColor = Color.FromArgb(64, 0, 0);
+            lblAdminHeader.Font = new Font("Microsoft YaHei UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            lblAdminHeader.ForeColor = Color.White;
+            lblAdminHeader.Location = new Point(429, 101);
+            lblAdminHeader.Margin = new Padding(2, 0, 2, 0);
+            lblAdminHeader.Name = "lblAdminHeader";
+            lblAdminHeader.Size = new Size(430, 47);
+            lblAdminHeader.TabIndex = 50;
+            lblAdminHeader.Text = "New User Registration";
             // 
             // pictureBox2
             // 
@@ -266,40 +263,13 @@
             // 
             pnlReportGenerate.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             pnlReportGenerate.BackColor = Color.White;
-            pnlReportGenerate.Controls.Add(lblReportGen);
-            pnlReportGenerate.Controls.Add(pictureBox3);
             pnlReportGenerate.Controls.Add(tabReportGeneration);
-            pnlReportGenerate.Location = new Point(-5, 98);
+            pnlReportGenerate.Location = new Point(-5, 164);
             pnlReportGenerate.Margin = new Padding(2);
             pnlReportGenerate.Name = "pnlReportGenerate";
-            pnlReportGenerate.Size = new Size(1267, 562);
+            pnlReportGenerate.Size = new Size(1267, 496);
             pnlReportGenerate.TabIndex = 15;
             pnlReportGenerate.Paint += pnlReportGenerate_Paint;
-            // 
-            // lblReportGen
-            // 
-            lblReportGen.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            lblReportGen.AutoSize = true;
-            lblReportGen.BackColor = Color.FromArgb(64, 0, 0);
-            lblReportGen.Font = new Font("Microsoft YaHei UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            lblReportGen.ForeColor = Color.White;
-            lblReportGen.Location = new Point(477, 6);
-            lblReportGen.Margin = new Padding(2, 0, 2, 0);
-            lblReportGen.Name = "lblReportGen";
-            lblReportGen.Size = new Size(357, 47);
-            lblReportGen.TabIndex = 17;
-            lblReportGen.Text = "Report Generation";
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            pictureBox3.BackColor = Color.FromArgb(64, 0, 0);
-            pictureBox3.Location = new Point(-8, -6);
-            pictureBox3.Margin = new Padding(2);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(1282, 73);
-            pictureBox3.TabIndex = 45;
-            pictureBox3.TabStop = false;
             // 
             // tabReportGeneration
             // 
@@ -308,11 +278,11 @@
             tabReportGeneration.Controls.Add(tabSolved);
             tabReportGeneration.Controls.Add(tabUnsolved);
             tabReportGeneration.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            tabReportGeneration.Location = new Point(-1, 66);
+            tabReportGeneration.Location = new Point(-1, 0);
             tabReportGeneration.Margin = new Padding(2);
             tabReportGeneration.Name = "tabReportGeneration";
             tabReportGeneration.SelectedIndex = 0;
-            tabReportGeneration.Size = new Size(1284, 690);
+            tabReportGeneration.Size = new Size(1284, 756);
             tabReportGeneration.TabIndex = 18;
             // 
             // tabHome
@@ -332,7 +302,7 @@
             tabHome.Location = new Point(4, 37);
             tabHome.Margin = new Padding(2);
             tabHome.Name = "tabHome";
-            tabHome.Size = new Size(1276, 649);
+            tabHome.Size = new Size(1276, 715);
             tabHome.TabIndex = 3;
             tabHome.Text = "Report Homepage";
             // 
@@ -469,7 +439,7 @@
             tabView.Location = new Point(4, 37);
             tabView.Margin = new Padding(2);
             tabView.Name = "tabView";
-            tabView.Size = new Size(1276, 649);
+            tabView.Size = new Size(1276, 715);
             tabView.TabIndex = 4;
             tabView.Text = "View Tickets";
             // 
@@ -563,7 +533,7 @@
             tabSolved.Margin = new Padding(2);
             tabSolved.Name = "tabSolved";
             tabSolved.Padding = new Padding(2);
-            tabSolved.Size = new Size(1276, 649);
+            tabSolved.Size = new Size(1276, 715);
             tabSolved.TabIndex = 1;
             tabSolved.Text = "Solved Tickets";
             // 
@@ -823,7 +793,7 @@
             tabUnsolved.Location = new Point(4, 37);
             tabUnsolved.Margin = new Padding(2);
             tabUnsolved.Name = "tabUnsolved";
-            tabUnsolved.Size = new Size(1276, 649);
+            tabUnsolved.Size = new Size(1276, 715);
             tabUnsolved.TabIndex = 2;
             tabUnsolved.Text = "Unsolved Tickets";
             // 
@@ -1090,7 +1060,7 @@
             lblLoggedIn.BackColor = Color.Black;
             lblLoggedIn.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             lblLoggedIn.ForeColor = Color.White;
-            lblLoggedIn.Location = new Point(956, 52);
+            lblLoggedIn.Location = new Point(974, 52);
             lblLoggedIn.Margin = new Padding(2, 0, 2, 0);
             lblLoggedIn.Name = "lblLoggedIn";
             lblLoggedIn.Size = new Size(171, 28);
@@ -1129,7 +1099,7 @@
             ClientSize = new Size(1261, 641);
             Controls.Add(lblLoggedIn);
             Controls.Add(pnlReportGenerate);
-            Controls.Add(label1);
+            Controls.Add(lblAdminHeader);
             Controls.Add(btnApproveDeny);
             Controls.Add(btnClear);
             Controls.Add(pictureBox2);
@@ -1154,8 +1124,6 @@
             ((System.ComponentModel.ISupportInitialize)DGVR).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             pnlReportGenerate.ResumeLayout(false);
-            pnlReportGenerate.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             tabReportGeneration.ResumeLayout(false);
             tabHome.ResumeLayout(false);
             tabHome.PerformLayout();
@@ -1193,10 +1161,9 @@
         private DataGridView DGVR;
         private Button btnRefresh;
         private Label lblHeader;
-        private Label label1;
+        private Label lblAdminHeader;
         private PictureBox pictureBox2;
         private Panel pnlReportGenerate;
-        private Label lblReportGen;
         private Button btnApproveDeny;
         private Button btnClear;
         private PictureBox pictureBox4;
@@ -1268,6 +1235,5 @@
         private TextBox textBox7;
         private Label label19;
         private TextBox textBox8;
-        private PictureBox pictureBox3;
     }
 }

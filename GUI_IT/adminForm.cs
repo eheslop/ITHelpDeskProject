@@ -40,12 +40,16 @@ namespace GUI_IT
         {
             this.Text = "IT Help Desk Admin Registration";
             pnlReportGenerate.Visible = false;
+            lblAdminHeader.Text = "New User Registration";
+            lblAdminHeader.Location = new Point(429, 101);
         }
 
         private void btnGenerate_Click(object sender, EventArgs e)
         {
             this.Text = "IT Help Desk Admin Report Generation";
             pnlReportGenerate.Visible = true;
+            lblAdminHeader.Text = "Report Generation";
+            lblAdminHeader.Location = new Point(459, 101);
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
@@ -167,7 +171,7 @@ namespace GUI_IT
 
         private void ProfilePictureBox_Click(object sender, EventArgs e)
         {
-            frmUserProf UserProfile = new frmUserProf();
+            frmUserProf UserProfile = new frmUserProf(newUser);
             UserProfile.ShowDialog();
         }
 
