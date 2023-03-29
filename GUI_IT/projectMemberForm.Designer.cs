@@ -83,12 +83,13 @@
             pictureBox3 = new PictureBox();
             pnlProblemList = new Panel();
             lblProblem = new Label();
+            pictureBox4 = new PictureBox();
             lblOnlineHelp = new Label();
             pictureBox5 = new PictureBox();
             lblHeader = new Label();
             lblLoggedIn = new Label();
             ProfilePictureBox = new PictureBox();
-            pictureBox4 = new PictureBox();
+            btnRefresh = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureLogo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Rectangle1).BeginInit();
@@ -109,9 +110,9 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             pnlProblemList.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ProfilePictureBox).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
             // pictureLogo
@@ -432,24 +433,25 @@
             // tabMyTickets
             // 
             tabMyTickets.BackColor = Color.LightGray;
+            tabMyTickets.Controls.Add(btnRefresh);
             tabMyTickets.Controls.Add(DGVM);
             tabMyTickets.Controls.Add(label5);
             tabMyTickets.Location = new Point(4, 37);
             tabMyTickets.Margin = new Padding(2);
             tabMyTickets.Name = "tabMyTickets";
-            tabMyTickets.Size = new Size(1281, 455);
+            tabMyTickets.Size = new Size(1281, 454);
             tabMyTickets.TabIndex = 2;
             tabMyTickets.Text = "My Tickets";
             // 
             // DGVM
             // 
             DGVM.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            DGVM.Location = new Point(21, 50);
+            DGVM.Location = new Point(21, 48);
             DGVM.Margin = new Padding(2);
             DGVM.Name = "DGVM";
             DGVM.RowHeadersWidth = 62;
             DGVM.RowTemplate.Height = 33;
-            DGVM.Size = new Size(1170, 378);
+            DGVM.Size = new Size(1131, 380);
             DGVM.TabIndex = 55;
             // 
             // label5
@@ -481,7 +483,7 @@
             tabRaiseTicket.Margin = new Padding(2);
             tabRaiseTicket.Name = "tabRaiseTicket";
             tabRaiseTicket.Padding = new Padding(2);
-            tabRaiseTicket.Size = new Size(1281, 455);
+            tabRaiseTicket.Size = new Size(1281, 454);
             tabRaiseTicket.TabIndex = 0;
             tabRaiseTicket.Text = "Raise Tickets";
             // 
@@ -623,7 +625,7 @@
             tabReopenTicket.Margin = new Padding(2);
             tabReopenTicket.Name = "tabReopenTicket";
             tabReopenTicket.Padding = new Padding(2);
-            tabReopenTicket.Size = new Size(1281, 455);
+            tabReopenTicket.Size = new Size(1281, 454);
             tabReopenTicket.TabIndex = 1;
             tabReopenTicket.Text = "Re-open Tickets";
             // 
@@ -795,6 +797,17 @@
             lblProblem.TabIndex = 45;
             lblProblem.Text = "Frequently Asked Questions";
             // 
+            // pictureBox4
+            // 
+            pictureBox4.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            pictureBox4.BackColor = Color.FromArgb(64, 0, 0);
+            pictureBox4.Location = new Point(2, -2);
+            pictureBox4.Margin = new Padding(2);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(1266, 69);
+            pictureBox4.TabIndex = 44;
+            pictureBox4.TabStop = false;
+            // 
             // lblOnlineHelp
             // 
             lblOnlineHelp.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
@@ -859,16 +872,19 @@
             ProfilePictureBox.TabStop = false;
             ProfilePictureBox.Click += ProfilePictureBox_Click;
             // 
-            // pictureBox4
+            // btnRefresh
             // 
-            pictureBox4.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            pictureBox4.BackColor = Color.FromArgb(64, 0, 0);
-            pictureBox4.Location = new Point(2, -2);
-            pictureBox4.Margin = new Padding(2);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(1266, 69);
-            pictureBox4.TabIndex = 44;
-            pictureBox4.TabStop = false;
+            btnRefresh.BackColor = Color.FromArgb(64, 0, 0);
+            btnRefresh.FlatStyle = FlatStyle.Popup;
+            btnRefresh.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnRefresh.ForeColor = Color.White;
+            btnRefresh.Location = new Point(1161, 48);
+            btnRefresh.Margin = new Padding(2);
+            btnRefresh.Name = "btnRefresh";
+            btnRefresh.Size = new Size(95, 52);
+            btnRefresh.TabIndex = 56;
+            btnRefresh.Text = "Refresh";
+            btnRefresh.UseVisualStyleBackColor = false;
             // 
             // frmProjectMember
             // 
@@ -919,9 +935,9 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             pnlProblemList.ResumeLayout(false);
             pnlProblemList.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)ProfilePictureBox).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -993,5 +1009,6 @@
         private Label label10;
         private Label label11;
         private PictureBox pictureBox4;
+        private Button btnRefresh;
     }
 }
