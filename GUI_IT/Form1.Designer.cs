@@ -84,7 +84,7 @@
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = Properties.Resources.redAgentsLogo;
             pictureBox1.InitialImage = (Image)resources.GetObject("pictureBox1.InitialImage");
-            pictureBox1.Location = new Point(406, 148);
+            pictureBox1.Location = new Point(406, 167);
             pictureBox1.Margin = new Padding(2);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(134, 124);
@@ -132,7 +132,7 @@
             lblLogin.Anchor = AnchorStyles.None;
             lblLogin.AutoSize = true;
             lblLogin.Font = new Font("Segoe UI", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            lblLogin.Location = new Point(302, 274);
+            lblLogin.Location = new Point(302, 293);
             lblLogin.Margin = new Padding(2, 0, 2, 0);
             lblLogin.Name = "lblLogin";
             lblLogin.Size = new Size(314, 38);
@@ -142,7 +142,7 @@
             // txtUsername
             // 
             txtUsername.Anchor = AnchorStyles.None;
-            txtUsername.Location = new Point(326, 328);
+            txtUsername.Location = new Point(326, 347);
             txtUsername.Margin = new Padding(2);
             txtUsername.Name = "txtUsername";
             txtUsername.PlaceholderText = "Enter Username";
@@ -152,7 +152,7 @@
             // txtPassword
             // 
             txtPassword.Anchor = AnchorStyles.None;
-            txtPassword.Location = new Point(326, 370);
+            txtPassword.Location = new Point(326, 389);
             txtPassword.Margin = new Padding(2);
             txtPassword.Name = "txtPassword";
             txtPassword.PlaceholderText = "Enter Password";
@@ -165,7 +165,7 @@
             lblUsernameLogin.Anchor = AnchorStyles.None;
             lblUsernameLogin.AutoSize = true;
             lblUsernameLogin.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblUsernameLogin.Location = new Point(200, 328);
+            lblUsernameLogin.Location = new Point(200, 347);
             lblUsernameLogin.Margin = new Padding(2, 0, 2, 0);
             lblUsernameLogin.Name = "lblUsernameLogin";
             lblUsernameLogin.Size = new Size(121, 32);
@@ -177,7 +177,7 @@
             lblFirstRegister.Anchor = AnchorStyles.None;
             lblFirstRegister.AutoSize = true;
             lblFirstRegister.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblFirstRegister.Location = new Point(210, 369);
+            lblFirstRegister.Location = new Point(210, 388);
             lblFirstRegister.Margin = new Padding(2, 0, 2, 0);
             lblFirstRegister.Name = "lblFirstRegister";
             lblFirstRegister.Size = new Size(111, 32);
@@ -191,7 +191,7 @@
             btnLogin.FlatStyle = FlatStyle.Flat;
             btnLogin.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnLogin.ForeColor = Color.White;
-            btnLogin.Location = new Point(388, 411);
+            btnLogin.Location = new Point(388, 430);
             btnLogin.Margin = new Padding(2);
             btnLogin.Name = "btnLogin";
             btnLogin.Size = new Size(166, 56);
@@ -205,7 +205,7 @@
             linklblForgot.ActiveLinkColor = Color.DarkMagenta;
             linklblForgot.Anchor = AnchorStyles.None;
             linklblForgot.AutoSize = true;
-            linklblForgot.Location = new Point(652, 374);
+            linklblForgot.Location = new Point(652, 393);
             linklblForgot.Margin = new Padding(2, 0, 2, 0);
             linklblForgot.Name = "linklblForgot";
             linklblForgot.Size = new Size(154, 25);
@@ -262,10 +262,10 @@
             pnlSignUp.Controls.Add(txtEmail);
             pnlSignUp.Controls.Add(lblRegister);
             pnlSignUp.Controls.Add(pictureBox4);
-            pnlSignUp.Location = new Point(8, 91);
+            pnlSignUp.Location = new Point(8, 94);
             pnlSignUp.Margin = new Padding(2);
             pnlSignUp.Name = "pnlSignUp";
-            pnlSignUp.Size = new Size(950, 509);
+            pnlSignUp.Size = new Size(950, 543);
             pnlSignUp.TabIndex = 16;
             // 
             // lblAlreadyExists
@@ -273,20 +273,21 @@
             lblAlreadyExists.AutoSize = true;
             lblAlreadyExists.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             lblAlreadyExists.ForeColor = Color.FromArgb(192, 0, 0);
-            lblAlreadyExists.Location = new Point(129, 434);
+            lblAlreadyExists.Location = new Point(129, 452);
             lblAlreadyExists.Margin = new Padding(2, 0, 2, 0);
             lblAlreadyExists.Name = "lblAlreadyExists";
             lblAlreadyExists.Size = new Size(661, 56);
             lblAlreadyExists.TabIndex = 34;
             lblAlreadyExists.Text = "Account Already Exists: An account with that information already exists. \r\n                Please Try Again or contact a System Administrator.";
             lblAlreadyExists.Visible = false;
+            lblAlreadyExists.Click += lblAlreadyExists_Click;
             // 
             // lblUserType
             // 
             lblUserType.Anchor = AnchorStyles.None;
             lblUserType.AutoSize = true;
             lblUserType.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblUserType.Location = new Point(204, 333);
+            lblUserType.Location = new Point(204, 350);
             lblUserType.Margin = new Padding(2, 0, 2, 0);
             lblUserType.Name = "lblUserType";
             lblUserType.Size = new Size(119, 32);
@@ -299,7 +300,7 @@
             cboUserType.DropDownStyle = ComboBoxStyle.DropDownList;
             cboUserType.FormattingEnabled = true;
             cboUserType.Items.AddRange(new object[] { "Admin", "Project Member", "IT Support Team", "Report Manager" });
-            cboUserType.Location = new Point(328, 331);
+            cboUserType.Location = new Point(328, 348);
             cboUserType.Margin = new Padding(2);
             cboUserType.Name = "cboUserType";
             cboUserType.Size = new Size(288, 33);
@@ -312,7 +313,7 @@
             btnRegister.FlatStyle = FlatStyle.Flat;
             btnRegister.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnRegister.ForeColor = Color.White;
-            btnRegister.Location = new Point(384, 377);
+            btnRegister.Location = new Point(384, 394);
             btnRegister.Margin = new Padding(2);
             btnRegister.Name = "btnRegister";
             btnRegister.Size = new Size(166, 56);
@@ -326,7 +327,7 @@
             lblLastName.Anchor = AnchorStyles.None;
             lblLastName.AutoSize = true;
             lblLastName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblLastName.Location = new Point(194, 252);
+            lblLastName.Location = new Point(194, 269);
             lblLastName.Margin = new Padding(2, 0, 2, 0);
             lblLastName.Name = "lblLastName";
             lblLastName.Size = new Size(126, 32);
@@ -336,7 +337,7 @@
             // txtLastName
             // 
             txtLastName.Anchor = AnchorStyles.None;
-            txtLastName.Location = new Point(328, 253);
+            txtLastName.Location = new Point(328, 270);
             txtLastName.Margin = new Padding(2);
             txtLastName.MaxLength = 45;
             txtLastName.Name = "txtLastName";
@@ -378,7 +379,7 @@
             lblFirstName.Anchor = AnchorStyles.None;
             lblFirstName.AutoSize = true;
             lblFirstName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblFirstName.Location = new Point(191, 213);
+            lblFirstName.Location = new Point(191, 230);
             lblFirstName.Margin = new Padding(2, 0, 2, 0);
             lblFirstName.Name = "lblFirstName";
             lblFirstName.Size = new Size(129, 32);
@@ -390,7 +391,7 @@
             lblEmail.Anchor = AnchorStyles.None;
             lblEmail.AutoSize = true;
             lblEmail.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblEmail.Location = new Point(251, 293);
+            lblEmail.Location = new Point(251, 310);
             lblEmail.Margin = new Padding(2, 0, 2, 0);
             lblEmail.Name = "lblEmail";
             lblEmail.Size = new Size(71, 32);
@@ -400,7 +401,7 @@
             // txtFirstName
             // 
             txtFirstName.Anchor = AnchorStyles.None;
-            txtFirstName.Location = new Point(328, 213);
+            txtFirstName.Location = new Point(328, 230);
             txtFirstName.Margin = new Padding(2);
             txtFirstName.MaxLength = 45;
             txtFirstName.Name = "txtFirstName";
@@ -412,7 +413,7 @@
             // txtEmail
             // 
             txtEmail.Anchor = AnchorStyles.None;
-            txtEmail.Location = new Point(328, 292);
+            txtEmail.Location = new Point(328, 309);
             txtEmail.Margin = new Padding(2);
             txtEmail.Name = "txtEmail";
             txtEmail.PlaceholderText = "Enter Email";
@@ -424,7 +425,7 @@
             lblRegister.Anchor = AnchorStyles.None;
             lblRegister.AutoSize = true;
             lblRegister.Font = new Font("Segoe UI", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            lblRegister.Location = new Point(274, 163);
+            lblRegister.Location = new Point(274, 180);
             lblRegister.Margin = new Padding(2, 0, 2, 0);
             lblRegister.Name = "lblRegister";
             lblRegister.Size = new Size(359, 38);
@@ -437,7 +438,7 @@
             pictureBox4.BackColor = Color.Transparent;
             pictureBox4.Image = Properties.Resources.redAgentsLogo;
             pictureBox4.InitialImage = (Image)resources.GetObject("pictureBox4.InitialImage");
-            pictureBox4.Location = new Point(402, 39);
+            pictureBox4.Location = new Point(402, 56);
             pictureBox4.Margin = new Padding(2);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(134, 124);
@@ -456,10 +457,10 @@
             pnlForgotPassword.Controls.Add(btnBacktoLogin);
             pnlForgotPassword.Controls.Add(button1);
             pnlForgotPassword.Controls.Add(label1);
-            pnlForgotPassword.Location = new Point(4, 93);
+            pnlForgotPassword.Location = new Point(8, 91);
             pnlForgotPassword.Margin = new Padding(4);
             pnlForgotPassword.Name = "pnlForgotPassword";
-            pnlForgotPassword.Size = new Size(950, 673);
+            pnlForgotPassword.Size = new Size(950, 548);
             pnlForgotPassword.TabIndex = 12;
             pnlForgotPassword.Paint += panel1_Paint;
             // 
@@ -468,7 +469,7 @@
             label2.Anchor = AnchorStyles.None;
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label2.Location = new Point(292, 294);
+            label2.Location = new Point(292, 232);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
             label2.Size = new Size(355, 38);
@@ -490,7 +491,7 @@
             // textBox1
             // 
             textBox1.Anchor = AnchorStyles.None;
-            textBox1.Location = new Point(302, 347);
+            textBox1.Location = new Point(302, 285);
             textBox1.Margin = new Padding(4);
             textBox1.Name = "textBox1";
             textBox1.PlaceholderText = "Enter Email";
@@ -502,7 +503,7 @@
             pictureBox5.Anchor = AnchorStyles.None;
             pictureBox5.BackgroundImage = Properties.Resources.redAgentsLogo;
             pictureBox5.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox5.Location = new Point(404, 154);
+            pictureBox5.Location = new Point(404, 92);
             pictureBox5.Margin = new Padding(4);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(139, 132);
@@ -534,7 +535,7 @@
             button1.FlatStyle = FlatStyle.Popup;
             button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(368, 398);
+            button1.Location = new Point(368, 336);
             button1.Margin = new Padding(4);
             button1.Name = "button1";
             button1.Size = new Size(209, 61);
@@ -548,7 +549,7 @@
             label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(165, 345);
+            label1.Location = new Point(165, 283);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(133, 32);
@@ -561,7 +562,7 @@
             btnOpenEye.BackgroundImage = Properties.Resources.openEye;
             btnOpenEye.BackgroundImageLayout = ImageLayout.Stretch;
             btnOpenEye.FlatStyle = FlatStyle.Flat;
-            btnOpenEye.Location = new Point(618, 372);
+            btnOpenEye.Location = new Point(617, 390);
             btnOpenEye.Margin = new Padding(2);
             btnOpenEye.Name = "btnOpenEye";
             btnOpenEye.Size = new Size(40, 29);
@@ -576,7 +577,7 @@
             btnClosedEye.BackgroundImage = Properties.Resources.closedEye;
             btnClosedEye.BackgroundImageLayout = ImageLayout.Stretch;
             btnClosedEye.FlatStyle = FlatStyle.Flat;
-            btnClosedEye.Location = new Point(618, 372);
+            btnClosedEye.Location = new Point(617, 389);
             btnClosedEye.Margin = new Padding(2);
             btnClosedEye.Name = "btnClosedEye";
             btnClosedEye.Size = new Size(40, 30);
@@ -603,7 +604,7 @@
             lblInvalidRole.AutoSize = true;
             lblInvalidRole.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             lblInvalidRole.ForeColor = Color.FromArgb(192, 0, 0);
-            lblInvalidRole.Location = new Point(232, 510);
+            lblInvalidRole.Location = new Point(232, 511);
             lblInvalidRole.Margin = new Padding(2, 0, 2, 0);
             lblInvalidRole.Name = "lblInvalidRole";
             lblInvalidRole.Size = new Size(465, 28);
@@ -616,7 +617,7 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(968, 611);
+            ClientSize = new Size(968, 648);
             Controls.Add(pnlForgotPassword);
             Controls.Add(pnlSignUp);
             Controls.Add(lblRegisterAccount);

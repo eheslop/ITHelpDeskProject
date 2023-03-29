@@ -95,9 +95,6 @@ namespace GUI_IT
                 lblIncorrectLogin.Visible = true;
             }
         }
-
-
-
         private void btnRegister_Click(object sender, EventArgs e)
         {
             Random res1 = new Random();
@@ -237,6 +234,9 @@ namespace GUI_IT
             txtPassword.UseSystemPasswordChar = false;
         }
 
+        private void lblAlreadyExists_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }
