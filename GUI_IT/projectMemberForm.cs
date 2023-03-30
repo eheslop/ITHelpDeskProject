@@ -123,6 +123,8 @@ namespace GUI_IT
             int id = Sql.count();
             Sql.RaiseTicket(id, FullName, User, Category, Description, Email, Priority);
 
+            MessageBox.Show("Your ticket was raised successfully, and you will recieve email updates regarding the status of your ticket.", "Ticket Successfully Raised!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
             cbxType.ResetText();
             cbxType.SelectedIndex = -1;
             cbxUrgency.ResetText();
@@ -142,8 +144,7 @@ namespace GUI_IT
 
         private void ProfilePictureBox_Click(object sender, EventArgs e)
         {
-            frmUserProf UserProfile = new frmUserProf(newUser);
-            UserProfile.ShowDialog();
+            
         }
 
         private void Fill()

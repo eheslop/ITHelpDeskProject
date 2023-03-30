@@ -18,7 +18,7 @@ namespace GUI_IT
         public frmUserProf(SessionRegister newUser)
         {
             InitializeComponent();
-            lblNameUser.Text = newUser.FullName;
+            //lblNameUser.Text = newUser.FullName;
             /*lblUserEmail.Text = newUser.Email;
             lblUserRole.Text = newUser.UserType;
             lblUserUsername.Text = newUser.Username;

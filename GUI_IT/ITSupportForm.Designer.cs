@@ -394,6 +394,7 @@
             btnSolveClear.TabIndex = 63;
             btnSolveClear.Text = "Clear";
             btnSolveClear.UseVisualStyleBackColor = false;
+            btnSolveClear.Click += btnSolveClear_Click;
             // 
             // txtSolution
             // 
@@ -524,6 +525,7 @@
             btnClear.TabIndex = 77;
             btnClear.Text = "Clear";
             btnClear.UseVisualStyleBackColor = false;
+            btnClear.Click += btnClear_Click;
             // 
             // txtUsername
             // 

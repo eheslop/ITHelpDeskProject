@@ -52,6 +52,17 @@
             pictureBox9 = new PictureBox();
             lblName = new Label();
             lblNameUser = new Label();
+            pnlChangePassword = new Panel();
+            pictureBox10 = new PictureBox();
+            lblChangePass = new Label();
+            pictureBox13 = new PictureBox();
+            pictureBox14 = new PictureBox();
+            pictureBox11 = new PictureBox();
+            linklblNoPassChange = new LinkLabel();
+            lblConfirm = new Label();
+            lblNewPass = new Label();
+            txtnewPass = new TextBox();
+            txtConfirmPass = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureboxIcon).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -62,6 +73,11 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
+            pnlChangePassword.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
             SuspendLayout();
             // 
             // lblHeader
@@ -319,12 +335,126 @@
             lblNameUser.TabIndex = 76;
             lblNameUser.Text = "first and last name";
             // 
+            // pnlChangePassword
+            // 
+            pnlChangePassword.Controls.Add(txtConfirmPass);
+            pnlChangePassword.Controls.Add(txtnewPass);
+            pnlChangePassword.Controls.Add(lblNewPass);
+            pnlChangePassword.Controls.Add(lblConfirm);
+            pnlChangePassword.Controls.Add(linklblNoPassChange);
+            pnlChangePassword.Controls.Add(pictureBox11);
+            pnlChangePassword.Controls.Add(pictureBox10);
+            pnlChangePassword.Controls.Add(lblChangePass);
+            pnlChangePassword.Controls.Add(pictureBox13);
+            pnlChangePassword.Controls.Add(pictureBox14);
+            pnlChangePassword.Location = new Point(2, 78);
+            pnlChangePassword.Name = "pnlChangePassword";
+            pnlChangePassword.Size = new Size(595, 504);
+            pnlChangePassword.TabIndex = 77;
+            // 
+            // pictureBox10
+            // 
+            pictureBox10.BackColor = Color.Gainsboro;
+            pictureBox10.Location = new Point(27, 276);
+            pictureBox10.Margin = new Padding(2);
+            pictureBox10.Name = "pictureBox10";
+            pictureBox10.Size = new Size(536, 71);
+            pictureBox10.TabIndex = 80;
+            pictureBox10.TabStop = false;
+            // 
+            // lblChangePass
+            // 
+            lblChangePass.AutoSize = true;
+            lblChangePass.Font = new Font("Microsoft YaHei UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            lblChangePass.Location = new Point(74, 10);
+            lblChangePass.Name = "lblChangePass";
+            lblChangePass.Size = new Size(438, 47);
+            lblChangePass.TabIndex = 77;
+            lblChangePass.Text = "Change Your Password";
+            // 
+            // pictureBox13
+            // 
+            pictureBox13.BackColor = Color.Silver;
+            pictureBox13.Location = new Point(13, 81);
+            pictureBox13.Margin = new Padding(2);
+            pictureBox13.Name = "pictureBox13";
+            pictureBox13.Size = new Size(560, 309);
+            pictureBox13.TabIndex = 76;
+            pictureBox13.TabStop = false;
+            // 
+            // pictureBox14
+            // 
+            pictureBox14.BackColor = Color.FromArgb(64, 64, 64);
+            pictureBox14.Location = new Point(0, 68);
+            pictureBox14.Margin = new Padding(2);
+            pictureBox14.Name = "pictureBox14";
+            pictureBox14.Size = new Size(593, 340);
+            pictureBox14.TabIndex = 75;
+            pictureBox14.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            pictureBox11.BackColor = Color.Gainsboro;
+            pictureBox11.Location = new Point(27, 136);
+            pictureBox11.Margin = new Padding(2);
+            pictureBox11.Name = "pictureBox11";
+            pictureBox11.Size = new Size(536, 66);
+            pictureBox11.TabIndex = 81;
+            pictureBox11.TabStop = false;
+            // 
+            // linklblNoPassChange
+            // 
+            linklblNoPassChange.AutoSize = true;
+            linklblNoPassChange.Location = new Point(260, 422);
+            linklblNoPassChange.Name = "linklblNoPassChange";
+            linklblNoPassChange.Size = new Size(317, 25);
+            linklblNoPassChange.TabIndex = 82;
+            linklblNoPassChange.TabStop = true;
+            linklblNoPassChange.Text = "Don't Want to Change Your Password?";
+            // 
+            // lblConfirm
+            // 
+            lblConfirm.AutoSize = true;
+            lblConfirm.BackColor = Color.Silver;
+            lblConfirm.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            lblConfirm.Location = new Point(27, 244);
+            lblConfirm.Name = "lblConfirm";
+            lblConfirm.Size = new Size(263, 30);
+            lblConfirm.TabIndex = 84;
+            lblConfirm.Text = "Re-enter new password:";
+            // 
+            // lblNewPass
+            // 
+            lblNewPass.AutoSize = true;
+            lblNewPass.BackColor = Color.Silver;
+            lblNewPass.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            lblNewPass.Location = new Point(27, 103);
+            lblNewPass.Name = "lblNewPass";
+            lblNewPass.Size = new Size(229, 30);
+            lblNewPass.TabIndex = 85;
+            lblNewPass.Text = "Enter new password:";
+            // 
+            // txtnewPass
+            // 
+            txtnewPass.Location = new Point(45, 154);
+            txtnewPass.Name = "txtnewPass";
+            txtnewPass.Size = new Size(497, 31);
+            txtnewPass.TabIndex = 86;
+            // 
+            // txtConfirmPass
+            // 
+            txtConfirmPass.Location = new Point(45, 297);
+            txtConfirmPass.Name = "txtConfirmPass";
+            txtConfirmPass.Size = new Size(497, 31);
+            txtConfirmPass.TabIndex = 87;
+            // 
             // frmUserProf
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
             ClientSize = new Size(586, 581);
+            Controls.Add(pnlChangePassword);
             Controls.Add(lblEmail);
             Controls.Add(lblUserEmail);
             Controls.Add(lblNameUser);
@@ -364,6 +494,12 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
+            pnlChangePassword.ResumeLayout(false);
+            pnlChangePassword.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -393,5 +529,16 @@
         private PictureBox pictureBox9;
         private Label lblName;
         private Label lblNameUser;
+        private Panel pnlChangePassword;
+        private Label lblNewPass;
+        private Label lblConfirm;
+        private LinkLabel linklblNoPassChange;
+        private PictureBox pictureBox11;
+        private PictureBox pictureBox10;
+        private Label lblChangePass;
+        private PictureBox pictureBox13;
+        private PictureBox pictureBox14;
+        private TextBox txtConfirmPass;
+        private TextBox txtnewPass;
     }
 }

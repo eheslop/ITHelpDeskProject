@@ -60,10 +60,14 @@ namespace GUI_IT
 
         private void ProfilePictureBox_Click(object sender, EventArgs e)
         {
-            frmUserProf UserProfile = new frmUserProf(newUser);
-            UserProfile.ShowDialog();
+
         }
 
-
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtTicketID.Clear();
+            txtUsername.Clear();
+            txtEmail.Clear();
+        }
     }
 }

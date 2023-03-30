@@ -177,7 +177,7 @@
             btnTickets.FlatStyle = FlatStyle.Popup;
             btnTickets.Font = new Font("Segoe UI", 10F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             btnTickets.ForeColor = Color.White;
-            btnTickets.Location = new Point(352, 42);
+            btnTickets.Location = new Point(352, 43);
             btnTickets.Margin = new Padding(2);
             btnTickets.Name = "btnTickets";
             btnTickets.Size = new Size(189, 49);
@@ -193,7 +193,7 @@
             btnProblemList.FlatStyle = FlatStyle.Popup;
             btnProblemList.Font = new Font("Segoe UI", 10F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             btnProblemList.ForeColor = Color.White;
-            btnProblemList.Location = new Point(209, 42);
+            btnProblemList.Location = new Point(209, 43);
             btnProblemList.Margin = new Padding(2);
             btnProblemList.Name = "btnProblemList";
             btnProblemList.Size = new Size(148, 48);

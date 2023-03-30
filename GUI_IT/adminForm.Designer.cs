@@ -59,21 +59,21 @@
             DGVV = new DataGridView();
             label8 = new Label();
             tabSolved = new TabPage();
+            btnReportClear = new Button();
             label19 = new Label();
-            textBox8 = new TextBox();
+            txtTicketIDSolve = new TextBox();
             label17 = new Label();
             label16 = new Label();
-            textBox6 = new TextBox();
-            button2 = new Button();
+            txtUrgencySolved = new TextBox();
             button1 = new Button();
-            textBox1 = new TextBox();
+            txtTicketDescribeSolved = new TextBox();
             label14 = new Label();
             label15 = new Label();
-            textBox2 = new TextBox();
+            txtTicketDetailSolved = new TextBox();
             pictureBox5 = new PictureBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
+            txtUserEmailSolved = new TextBox();
+            txtEmailSolved = new TextBox();
+            txtTicketCategorySolved = new TextBox();
             pictureBox15 = new PictureBox();
             label18 = new Label();
             btnSubmitSolved = new Button();
@@ -508,21 +508,21 @@
             // tabSolved
             // 
             tabSolved.BackColor = Color.LightGray;
+            tabSolved.Controls.Add(btnReportClear);
             tabSolved.Controls.Add(label19);
-            tabSolved.Controls.Add(textBox8);
+            tabSolved.Controls.Add(txtTicketIDSolve);
             tabSolved.Controls.Add(label17);
             tabSolved.Controls.Add(label16);
-            tabSolved.Controls.Add(textBox6);
-            tabSolved.Controls.Add(button2);
+            tabSolved.Controls.Add(txtUrgencySolved);
             tabSolved.Controls.Add(button1);
-            tabSolved.Controls.Add(textBox1);
+            tabSolved.Controls.Add(txtTicketDescribeSolved);
             tabSolved.Controls.Add(label14);
             tabSolved.Controls.Add(label15);
-            tabSolved.Controls.Add(textBox2);
+            tabSolved.Controls.Add(txtTicketDetailSolved);
             tabSolved.Controls.Add(pictureBox5);
-            tabSolved.Controls.Add(textBox3);
-            tabSolved.Controls.Add(textBox4);
-            tabSolved.Controls.Add(textBox5);
+            tabSolved.Controls.Add(txtUserEmailSolved);
+            tabSolved.Controls.Add(txtEmailSolved);
+            tabSolved.Controls.Add(txtTicketCategorySolved);
             tabSolved.Controls.Add(pictureBox15);
             tabSolved.Controls.Add(label18);
             tabSolved.Controls.Add(btnSubmitSolved);
@@ -537,6 +537,21 @@
             tabSolved.TabIndex = 1;
             tabSolved.Text = "Solved Tickets";
             // 
+            // btnReportClear
+            // 
+            btnReportClear.BackColor = Color.FromArgb(64, 0, 0);
+            btnReportClear.FlatStyle = FlatStyle.Popup;
+            btnReportClear.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnReportClear.ForeColor = Color.White;
+            btnReportClear.Location = new Point(34, 391);
+            btnReportClear.Margin = new Padding(2);
+            btnReportClear.Name = "btnReportClear";
+            btnReportClear.Size = new Size(159, 38);
+            btnReportClear.TabIndex = 134;
+            btnReportClear.Text = "Clear";
+            btnReportClear.UseVisualStyleBackColor = false;
+            btnReportClear.Click += btnReportClear_Click;
+            // 
             // label19
             // 
             label19.AutoSize = true;
@@ -548,13 +563,13 @@
             label19.TabIndex = 133;
             label19.Text = "What was the select ticket category?";
             // 
-            // textBox8
+            // txtTicketIDSolve
             // 
-            textBox8.Location = new Point(30, 78);
-            textBox8.Margin = new Padding(2);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(162, 34);
-            textBox8.TabIndex = 132;
+            txtTicketIDSolve.Location = new Point(30, 78);
+            txtTicketIDSolve.Margin = new Padding(2);
+            txtTicketIDSolve.Name = "txtTicketIDSolve";
+            txtTicketIDSolve.Size = new Size(162, 34);
+            txtTicketIDSolve.TabIndex = 132;
             // 
             // label17
             // 
@@ -578,27 +593,13 @@
             label16.TabIndex = 129;
             label16.Text = "Ticket Urgency:";
             // 
-            // textBox6
+            // txtUrgencySolved
             // 
-            textBox6.Location = new Point(29, 159);
-            textBox6.Margin = new Padding(2);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(164, 34);
-            textBox6.TabIndex = 128;
-            // 
-            // button2
-            // 
-            button2.BackColor = Color.FromArgb(64, 0, 0);
-            button2.FlatStyle = FlatStyle.Popup;
-            button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(28, 391);
-            button2.Margin = new Padding(2);
-            button2.Name = "button2";
-            button2.Size = new Size(159, 38);
-            button2.TabIndex = 127;
-            button2.Text = "Clear";
-            button2.UseVisualStyleBackColor = false;
+            txtUrgencySolved.Location = new Point(29, 159);
+            txtUrgencySolved.Margin = new Padding(2);
+            txtUrgencySolved.Name = "txtUrgencySolved";
+            txtUrgencySolved.Size = new Size(164, 34);
+            txtUrgencySolved.TabIndex = 128;
             // 
             // button1
             // 
@@ -614,17 +615,17 @@
             button1.Text = "Submit Report";
             button1.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // txtTicketDescribeSolved
             // 
-            textBox1.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox1.Location = new Point(33, 302);
-            textBox1.Margin = new Padding(2);
-            textBox1.MaxLength = 500;
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.PlaceholderText = "Provide a brief summary of the ticket description.";
-            textBox1.Size = new Size(636, 68);
-            textBox1.TabIndex = 125;
+            txtTicketDescribeSolved.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            txtTicketDescribeSolved.Location = new Point(33, 302);
+            txtTicketDescribeSolved.Margin = new Padding(2);
+            txtTicketDescribeSolved.MaxLength = 500;
+            txtTicketDescribeSolved.Multiline = true;
+            txtTicketDescribeSolved.Name = "txtTicketDescribeSolved";
+            txtTicketDescribeSolved.PlaceholderText = "Provide a brief summary of the ticket description.";
+            txtTicketDescribeSolved.Size = new Size(636, 68);
+            txtTicketDescribeSolved.TabIndex = 125;
             // 
             // label14
             // 
@@ -648,17 +649,17 @@
             label15.TabIndex = 123;
             label15.Text = "Email of IT member who was assigned to ticket:";
             // 
-            // textBox2
+            // txtTicketDetailSolved
             // 
-            textBox2.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox2.Location = new Point(724, 120);
-            textBox2.Margin = new Padding(2);
-            textBox2.MaxLength = 750;
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.PlaceholderText = "Include any other necessary ticket details here.";
-            textBox2.Size = new Size(506, 288);
-            textBox2.TabIndex = 120;
+            txtTicketDetailSolved.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            txtTicketDetailSolved.Location = new Point(724, 120);
+            txtTicketDetailSolved.Margin = new Padding(2);
+            txtTicketDetailSolved.MaxLength = 750;
+            txtTicketDetailSolved.Multiline = true;
+            txtTicketDetailSolved.Name = "txtTicketDetailSolved";
+            txtTicketDetailSolved.PlaceholderText = "Include any other necessary ticket details here.";
+            txtTicketDetailSolved.Size = new Size(506, 288);
+            txtTicketDetailSolved.TabIndex = 120;
             // 
             // pictureBox5
             // 
@@ -671,29 +672,29 @@
             pictureBox5.TabIndex = 119;
             pictureBox5.TabStop = false;
             // 
-            // textBox3
+            // txtUserEmailSolved
             // 
-            textBox3.Location = new Point(220, 159);
-            textBox3.Margin = new Padding(2);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(462, 34);
-            textBox3.TabIndex = 118;
+            txtUserEmailSolved.Location = new Point(220, 159);
+            txtUserEmailSolved.Margin = new Padding(2);
+            txtUserEmailSolved.Name = "txtUserEmailSolved";
+            txtUserEmailSolved.Size = new Size(462, 34);
+            txtUserEmailSolved.TabIndex = 118;
             // 
-            // textBox4
+            // txtEmailSolved
             // 
-            textBox4.Location = new Point(220, 78);
-            textBox4.Margin = new Padding(2);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(462, 34);
-            textBox4.TabIndex = 117;
+            txtEmailSolved.Location = new Point(220, 78);
+            txtEmailSolved.Margin = new Padding(2);
+            txtEmailSolved.Name = "txtEmailSolved";
+            txtEmailSolved.Size = new Size(462, 34);
+            txtEmailSolved.TabIndex = 117;
             // 
-            // textBox5
+            // txtTicketCategorySolved
             // 
-            textBox5.Location = new Point(23, 235);
-            textBox5.Margin = new Padding(2);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(658, 34);
-            textBox5.TabIndex = 116;
+            txtTicketCategorySolved.Location = new Point(23, 235);
+            txtTicketCategorySolved.Margin = new Padding(2);
+            txtTicketCategorySolved.Name = "txtTicketCategorySolved";
+            txtTicketCategorySolved.Size = new Size(658, 34);
+            txtTicketCategorySolved.TabIndex = 116;
             // 
             // pictureBox15
             // 
@@ -945,7 +946,7 @@
             btnSubmitUnsolved.FlatStyle = FlatStyle.Popup;
             btnSubmitUnsolved.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnSubmitUnsolved.ForeColor = Color.White;
-            btnSubmitUnsolved.Location = new Point(202, 385);
+            btnSubmitUnsolved.Location = new Point(202, 386);
             btnSubmitUnsolved.Margin = new Padding(2);
             btnSubmitUnsolved.Name = "btnSubmitUnsolved";
             btnSubmitUnsolved.Size = new Size(159, 38);
@@ -959,13 +960,14 @@
             btnClearUnsolved.FlatStyle = FlatStyle.Popup;
             btnClearUnsolved.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnClearUnsolved.ForeColor = Color.White;
-            btnClearUnsolved.Location = new Point(27, 386);
+            btnClearUnsolved.Location = new Point(31, 385);
             btnClearUnsolved.Margin = new Padding(2);
             btnClearUnsolved.Name = "btnClearUnsolved";
             btnClearUnsolved.Size = new Size(159, 38);
             btnClearUnsolved.TabIndex = 82;
             btnClearUnsolved.Text = "Clear";
             btnClearUnsolved.UseVisualStyleBackColor = false;
+            btnClearUnsolved.Click += btnClearUnsolved_Click;
             // 
             // label3
             // 
@@ -1217,23 +1219,23 @@
         private Button btnrefre;
 
         private PictureBox ProfilePictureBox;
-        private TextBox textBox1;
+        private TextBox txtTicketDescribeSolved;
         private Label label14;
         private Label label15;
-        private TextBox textBox2;
+        private TextBox txtTicketDetailSolved;
         private PictureBox pictureBox5;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox5;
+        private TextBox txtUserEmailSolved;
+        private TextBox txtEmailSolved;
+        private TextBox txtTicketCategorySolved;
         private PictureBox pictureBox15;
         private PictureBox pictureBox16;
-        private Button button2;
         private Button button1;
-        private TextBox textBox6;
+        private TextBox txtUrgencySolved;
         private Label label16;
         private Label label17;
         private TextBox textBox7;
         private Label label19;
-        private TextBox textBox8;
+        private TextBox txtTicketIDSolve;
+        private Button btnReportClear;
     }
 }

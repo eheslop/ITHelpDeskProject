@@ -171,8 +171,7 @@ namespace GUI_IT
 
         private void ProfilePictureBox_Click(object sender, EventArgs e)
         {
-            frmUserProf UserProfile = new frmUserProf(newUser);
-            UserProfile.ShowDialog();
+
         }
 
         private void Fill1()
@@ -197,6 +196,27 @@ namespace GUI_IT
         {
 
         }
-    }
 
+        private void btnReportClear_Click(object sender, EventArgs e)
+        {
+            txtTicketIDSolve.Clear();
+            txtEmailSolved.Clear();
+            txtUrgencySolved.Clear();
+            txtUserEmailSolved.Clear();
+            txtTicketCategorySolved.Clear();
+            txtTicketDescribeSolved.Clear();
+            txtTicketDetailSolved.Clear();
+        }
+
+        private void btnClearUnsolved_Click(object sender, EventArgs e)
+        {
+            txtTicketID.Clear();
+            txtITEmail.Clear();
+            txtTicketUrgency.Clear();
+            txtProjectEmail.Clear();
+            txtProblemCategory.Clear();
+            txtTicketSummary.Clear();
+            txtUnsolvedExplain.Clear();
+        }
+    }
 }

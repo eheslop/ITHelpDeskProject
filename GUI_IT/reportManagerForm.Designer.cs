@@ -461,10 +461,10 @@
             btnViewReopenedTable.FlatStyle = FlatStyle.Popup;
             btnViewReopenedTable.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnViewReopenedTable.ForeColor = Color.White;
-            btnViewReopenedTable.Location = new Point(831, 10);
+            btnViewReopenedTable.Location = new Point(821, 6);
             btnViewReopenedTable.Margin = new Padding(2);
             btnViewReopenedTable.Name = "btnViewReopenedTable";
-            btnViewReopenedTable.Size = new Size(121, 31);
+            btnViewReopenedTable.Size = new Size(121, 34);
             btnViewReopenedTable.TabIndex = 90;
             btnViewReopenedTable.Text = "Re-opened";
             btnViewReopenedTable.UseVisualStyleBackColor = false;
@@ -475,10 +475,10 @@
             btnViewUnsolvedTable.FlatStyle = FlatStyle.Popup;
             btnViewUnsolvedTable.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnViewUnsolvedTable.ForeColor = Color.White;
-            btnViewUnsolvedTable.Location = new Point(696, 10);
+            btnViewUnsolvedTable.Location = new Point(696, 6);
             btnViewUnsolvedTable.Margin = new Padding(2);
             btnViewUnsolvedTable.Name = "btnViewUnsolvedTable";
-            btnViewUnsolvedTable.Size = new Size(111, 31);
+            btnViewUnsolvedTable.Size = new Size(111, 34);
             btnViewUnsolvedTable.TabIndex = 89;
             btnViewUnsolvedTable.Text = "Unsolved";
             btnViewUnsolvedTable.UseVisualStyleBackColor = false;
@@ -521,12 +521,13 @@
             btnClear.TabIndex = 86;
             btnClear.Text = "Clear";
             btnClear.UseVisualStyleBackColor = false;
+            btnClear.Click += btnClear_Click;
             // 
             // txtUsername
             // 
             txtUsername.Anchor = AnchorStyles.None;
             txtUsername.Location = new Point(21, 209);
-            txtUsername.Margin = new Padding(4, 4, 4, 4);
+            txtUsername.Margin = new Padding(4);
             txtUsername.MaxLength = 50;
             txtUsername.Name = "txtUsername";
             txtUsername.Size = new Size(596, 34);
@@ -548,7 +549,7 @@
             // 
             txtEmail.Anchor = AnchorStyles.None;
             txtEmail.Location = new Point(21, 309);
-            txtEmail.Margin = new Padding(4, 4, 4, 4);
+            txtEmail.Margin = new Padding(4);
             txtEmail.MaxLength = 50;
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(596, 34);
@@ -570,7 +571,7 @@
             // 
             txtTicketID.Anchor = AnchorStyles.None;
             txtTicketID.Location = new Point(20, 105);
-            txtTicketID.Margin = new Padding(4, 4, 4, 4);
+            txtTicketID.Margin = new Padding(4);
             txtTicketID.MaxLength = 50;
             txtTicketID.Name = "txtTicketID";
             txtTicketID.Size = new Size(598, 34);
