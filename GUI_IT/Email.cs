@@ -21,7 +21,7 @@ namespace GUI_IT
 {
     internal class Email
     {
-        public static Boolean sendEmail(string template, string user, int tID = 0)
+        public static Boolean sendEmail(string template, string user, int x, int tID = 0)
         {
             String[] data = { };
             data = emailBody(template, user);
@@ -31,8 +31,14 @@ namespace GUI_IT
             var regEmail = new MimeMessage();
 
             regEmail.From.Add(new MailboxAddress("Red Agents IT Service", "redagentsit@gmail.com"));
-            regEmail.To.Add(new MailboxAddress(Sql.getName(user), Sql.getEmail(user)));
-
+            if (x == 0)
+            {
+                regEmail.To.Add(new MailboxAddress(Sql.getName(user), Sql.getEmail(user)));
+            }
+            else
+            {
+                regEmail.To.Add(new MailboxAddress(Sql.getNamee(user), Sql.getEmaill(user)));
+            }
             regEmail.Subject = subject;
             regEmail.Body = new TextPart()
             {
@@ -72,7 +78,7 @@ namespace GUI_IT
             if(template == "Registration")
             {
                 data[0] = "Successful Registration";
-                data[1] = "Hello " + Sql.getName(user)
+                data[1] = "Hello " + Sql.getNamee(user)
                           + "! Your access is pending administrative approval.\n You will be notified " 
                           + "when your registration status has been reviewed by our Administrative Team.\n\n"
                           + "If you have any concerns or questions, please respond to this email or reach us at redagentsit@gmail.com\n\n-Red Agents IT";
@@ -80,16 +86,16 @@ namespace GUI_IT
             if(template == "Registration Accepted")
             {
                 data[0] = "Account Registration Accepted";
-                data[1] = "Hello " + Sql.getName(user)
+                data[1] = "Hello " + Sql.getNamee(user)
                         + "! \n\nCongratulations! Your account registration has been accepted.\n\n"
                         + "Below are your login credentials for the Red Agents IT Ticketing System.\n"
-                        + "Username: " + user + "\n" + "Password: " + Sql.getPass(user) + "\n\n"
+                        + "Username: " + user + "\n" + "Password: " + Sql.getPasss(user) + "\n\n"
                         + "Please do not share your credentials with anyone!\n\n-Red Agents IT";
             }
             if(template == "Registration Denied")
             {
                 data[0] = "Account Registration Denied";
-                data[1] = "Hello " + Sql.getName(user)
+                data[1] = "Hello " + Sql.getNamee(user)
                         + "! \n\nYour account registration has been denied.\n\n"
                         + "If you believe we have made an error, please respond to this email or "
                         + "reach us at redagentsit@gmail.com\n\n-Reg Agents IT";
