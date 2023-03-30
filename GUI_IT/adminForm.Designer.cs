@@ -812,7 +812,7 @@
             // txtTicketSummary
             // 
             txtTicketSummary.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            txtTicketSummary.Location = new Point(28, 303);
+            txtTicketSummary.Location = new Point(28, 297);
             txtTicketSummary.Margin = new Padding(2);
             txtTicketSummary.MaxLength = 500;
             txtTicketSummary.Multiline = true;
@@ -985,7 +985,7 @@
             // 
             pictureBox8.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox8.BackColor = Color.Gray;
-            pictureBox8.Location = new Point(20, 290);
+            pictureBox8.Location = new Point(20, 286);
             pictureBox8.Margin = new Padding(2);
             pictureBox8.Name = "pictureBox8";
             pictureBox8.Size = new Size(657, 90);
