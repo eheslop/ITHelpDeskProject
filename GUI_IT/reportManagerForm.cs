@@ -21,6 +21,7 @@ namespace GUI_IT
             newUser_ = newUser;
             InitializeComponent();
             Fill();
+            Fill1();
             lblUser.Text = newUser_.FirstName + "!";
             lblLoggedIn.Text = "Logged in as: " + newUser_.FirstName;
         }
@@ -65,6 +66,38 @@ namespace GUI_IT
             UserProfile.ShowDialog();
         }
 
+        private void txtTicketID_TextChanged(object sender, EventArgs e)
+        {
 
+        }
+
+        private void btnAssign_Click(object sender, EventArgs e)
+        {
+            string x = txtTicketID.Text.ToString();
+            int y = System.Convert.ToInt32(x);
+            string z = txtUsername.Text.ToString();
+            string f = txtEmail.Text.ToString();
+            Sql.Addcoll(z, y);
+            Sql.add2(z, y, f);
+        }
+
+        private void Fill1()
+        {
+            SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
+            builder.DataSource = "redagents.database.windows.net";
+            builder.UserID = "kwekwe";
+            builder.Password = "Password1!";
+            builder.InitialCatalog = "red_Agents";
+            SqlConnection con = new SqlConnection(builder.ConnectionString);
+            con.Open();
+            string query = "Select * from Registration";
+            SqlDataAdapter da = new SqlDataAdapter(query, con);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            DGVAssign.DataSource = dt;
+            DGVAssign.EditMode = DataGridViewEditMode.EditOnEnter;
+            con.Close();
+
+        }
     }
 }

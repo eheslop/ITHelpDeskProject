@@ -24,7 +24,7 @@ namespace GUI_IT
             lblUserRole.Text = newUser_.UserType;
             lblUserUsername.Text = newUser_.Username;
             lblUserPassword.Text = newUser_.Password;
-        }   
+        }
 
         private void linklblChangePassword_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -32,6 +32,16 @@ namespace GUI_IT
         }
 
         private void lblUserPassword_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblNameUser_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblUserRole_Click(object sender, EventArgs e)
         {
 
         }
