@@ -112,7 +112,8 @@ namespace GUI_IT
                 }
                 string pass = randomstring.ToString();
                 Sql.Register(user, name, first, last, pass, email, role, time);
-                Email.sendEmail("Registration", user);
+                int kk = 1;
+                Email.sendEmail("Registration", user, kk);
                 MessageBox.Show("Account Created!\nCheck your email for your login credentials!", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 pnlSignUp.Visible = false;

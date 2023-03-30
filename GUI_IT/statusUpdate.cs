@@ -27,7 +27,7 @@ namespace GUI_IT
             string role = Sql.rerole();
             string user = Sql.retUser();
             string pass = Sql.repass();
-            Email.sendEmail("Registration Accepted", user);
+            Email.sendEmail("Registration Accepted", user,1);
             Sql.Regis(user, name, fname, lname, pass, email, role);
             Sql.delete(user);
             nxtuser();
@@ -37,7 +37,7 @@ namespace GUI_IT
         private void btnDeny_Click(object sender, EventArgs e)
         {
             string user = Sql.retUser();
-            Email.sendEmail("Registration Denied", user);
+            Email.sendEmail("Registration Denied", user,1);
             Sql.delete(user);
             nxtuser();
         }

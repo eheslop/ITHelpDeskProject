@@ -91,6 +91,15 @@ namespace GUI_IT
             return name;
         }
 
+        public static string getNamee(string user)
+        {
+            SqlConnection con = Connect();
+            String query = "SELECT First_Name FROM Registration WHERE Username = '" + user.ToString() + "';";
+            SqlCommand cmd = new SqlCommand(query, con);
+            string name = (string)cmd.ExecuteScalar();
+            return name;
+        }
+
         public static string getfullName(string user)
         {
             SqlConnection con = Connect();
@@ -111,6 +120,15 @@ namespace GUI_IT
         {
             SqlConnection con = Connect();
             String query = "SELECT email FROM RegisteredUsers WHERE Username = '" + user.ToString() + "';";
+            SqlCommand cmd = new SqlCommand(query, con);
+            string email = (string)cmd.ExecuteScalar();
+            return email;
+        }
+
+        public static string getEmaill(string user)
+        {
+            SqlConnection con = Connect();
+            String query = "SELECT email FROM Registration WHERE Username = '" + user.ToString() + "';";
             SqlCommand cmd = new SqlCommand(query, con);
             string email = (string)cmd.ExecuteScalar();
             return email;
