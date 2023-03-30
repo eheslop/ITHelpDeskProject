@@ -12,13 +12,14 @@ namespace GUI_IT
 {
     public partial class frmITSupport : Form
     {
-        private SessionRegister newUser;
+        private SessionRegister newUser_;
 
         public frmITSupport(SessionRegister newUser)
         {
+            newUser_ = newUser;
             InitializeComponent();
-            lblUser.Text = newUser.FirstName + "!";
-            lblLoggedIn.Text = "Logged in as: " + newUser.FirstName;
+            lblUser.Text = newUser_.FirstName + "!";
+            lblLoggedIn.Text = "Logged in as: " + newUser_.FirstName;
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
@@ -50,6 +51,8 @@ namespace GUI_IT
             txtTicketID.Clear();
             txtUsername.Clear();
             txtEmail.Clear();
+            frmUserProf UserProfile = new frmUserProf(newUser_);
+            UserProfile.ShowDialog();
         }
     }
 }

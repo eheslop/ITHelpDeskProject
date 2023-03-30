@@ -29,11 +29,11 @@ namespace GUI_IT
             return con;
         }
 
-        public static void Register(string user, string name, string first, string last, string pass, string email, string role)
+        public static void Register(string user, string name, string first, string last, string pass, string email, string role, DateTime time)
         {
             string x = "Pending";
             SqlConnection con = Connect();
-            String query = "INSERT INTO Registration(Username, Name, First_Name, Last_Name, Password, Email, Role, Status) VALUES('" + user.ToString() + "', '" + name.ToString() + "', '" + first.ToString() + "', '" + last.ToString() + "','" + pass.ToString() + "', '" + email.ToString() + "', '" + role.ToString() + "', '" + x + "');";
+            String query = "INSERT INTO Registration(Username, Name, First_Name, Last_Name, Password, Email, Role, Status, Time) VALUES('" + user.ToString() + "', '" + name.ToString() + "', '" + first.ToString() + "', '" + last.ToString() + "','" + pass.ToString() + "', '" + email.ToString() + "', '" + role.ToString() + "', '" + x + "', '" + time + "');";
             SqlCommand cmd = new SqlCommand(query, con);
             cmd.ExecuteNonQuery();
             con.Close();
@@ -175,7 +175,9 @@ namespace GUI_IT
         {
             SqlConnection con = Connect();
             string x = "Pending";
-            String query = "INSERT INTO Tickets(id, Name, Username, Category, Description, Status, Email, Priority) VALUES('" + id + "',  '" + name.ToString() + "', '" + username.ToString() + "', '" + Category.ToString() + "', '" + Description.ToString() + "', '" +x+ "',  '" + email.ToString() + "', '" + Priority.ToString() + "');";
+            int y = 0;
+            string z = "NONE";
+            String query = "INSERT INTO Tickets(id, Name, Username, Category, Description, Status, Email, Priority, Collaborators, Num_Of_Coll) VALUES('" + id + "',  '" + name.ToString() + "', '" + username.ToString() + "', '" + Category.ToString() + "', '" + Description.ToString() + "', '" +x+ "',  '" + email.ToString() + "', '" + Priority.ToString() + "', '" +z+ "', '" +y+ "');";
             SqlCommand cmd = new SqlCommand(query, con);
             cmd.ExecuteNonQuery();
             con.Close();
@@ -288,6 +290,78 @@ namespace GUI_IT
             int pass = (int)cmd.ExecuteScalar();
         }
 
+        public static int countC(int id)
+        {
+            SqlConnection con = Connect();
+            String query = "SELECT Num_Of_Coll FROM Tickets where ID = '" + id + "' ;";
+            SqlCommand cmd = new SqlCommand(query, con);
+            int pass = (int)cmd.ExecuteScalar();
+            return pass;
+        }
 
+        public static string getColl(int id)
+        {
+            SqlConnection con = Connect();
+            String query = "SELECT Collaborators FROM Tickets where ID = '" + id + "' ;";
+            SqlCommand cmd = new SqlCommand(query, con);
+            string pass = (string)cmd.ExecuteScalar();
+            return pass;
+        }
+
+        public static void Addcoll(string user, int id)
+        {
+            int x = countC(id) + 1;
+            string y = getColl(id) +" " +user.ToString();
+            SqlConnection con = Connect();
+           if((x-1) == 0)
+           {
+                String query = "UPDATE Tickets SET Collaborators = '" + user + "' where ID = '" + id + "';";
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.ExecuteNonQuery();
+                String query1 = "UPDATE Tickets SET Num_Of_Coll = '" + x + "' where ID = '" + id + "';";
+                SqlCommand cmd1 = new SqlCommand(query1, con);
+                cmd1.ExecuteNonQuery();
+           }
+           else
+           {
+                String query = "UPDATE Tickets SET Collaborators = '" + y + "' where ID = '" + id + "';";
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.ExecuteNonQuery();
+                String query1 = "UPDATE Tickets SET Num_Of_Coll = '" + x + "' where ID = '" + id + "';";
+                SqlCommand cmd1 = new SqlCommand(query1, con);
+                cmd1.ExecuteNonQuery();
+
+           }
+            con.Close();
+        }
+        
+        public static void add2(string user, int id, string email)
+        {
+            string x = tickuser(id);
+            int y = countraise();
+            SqlConnection con = Connect();
+            String query2 = "INSERT INTO SharedTickets(Id, RaisedBy, SharedWith, Email, Count) VALUES('"+ id + "', '" +x+ "','" + user.ToString() + "', '" + email.ToString() + "', '" +y+ "');";
+            SqlCommand cmd2 = new SqlCommand(query2, con);
+            cmd2.ExecuteNonQuery();
+            con.Close();
+        }
+
+        public static int countraise()
+        {
+            SqlConnection con = Connect();
+            String query = "SELECT Count(Id) FROM SharedTickets;";
+            SqlCommand cmd = new SqlCommand(query, con);
+            int pass = (int)cmd.ExecuteScalar();
+            return pass;
+        }
+
+        public static string tickuser(int id)
+        {
+            SqlConnection con = Connect();
+            String query = "SELECT Username FROM Tickets where Id = '" + id + "';";
+            SqlCommand cmd = new SqlCommand(query, con);
+            string pass = (string)cmd.ExecuteScalar();
+            return pass;
+        }
     }
 }

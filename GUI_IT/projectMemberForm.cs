@@ -15,21 +15,22 @@ namespace GUI_IT
 {
     public partial class frmProjectMember : Form
     {
-        private SessionRegister newUser;
+        private SessionRegister newUser_;
         public string User { get; set; }
         public string Email { get; set; }
         public string FullName { get; set; }
 
         public frmProjectMember(SessionRegister newUser)
         {
+            newUser_ = newUser;
             InitializeComponent();
             pnlTickets.Visible = true;
             pnlProblemList.Visible = false;
-            lblUser.Text = newUser.FirstName + "!";
-            lblLoggedIn.Text = "Logged in as: " + newUser.FirstName;
-            User = newUser.Username;
-            Email = newUser.Email;
-            FullName = newUser.FullName;
+            lblUser.Text = newUser_.FirstName + "!";
+            lblLoggedIn.Text = "Logged in as: " + newUser_.FirstName;
+            User = newUser_.Username;
+            Email = newUser_.Email;
+            FullName = newUser_.FullName;
             Fill();
         }
 
@@ -144,7 +145,8 @@ namespace GUI_IT
 
         private void ProfilePictureBox_Click(object sender, EventArgs e)
         {
-            
+            frmUserProf UserProfile = new frmUserProf(newUser_);
+            UserProfile.ShowDialog();
         }
 
         private void Fill()

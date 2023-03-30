@@ -14,14 +14,16 @@ namespace GUI_IT
 {
     public partial class frmReportManage : Form
     {
-        private SessionRegister newUser;
+        private SessionRegister newUser_;
 
         public frmReportManage(SessionRegister newUser)
         {
+            newUser_ = newUser;
             InitializeComponent();
             Fill();
-            lblUser.Text = newUser.FirstName + "!";
-            lblLoggedIn.Text = "Logged in as: " + newUser.FirstName;
+            Fill1();
+            lblUser.Text = newUser_.FirstName + "!";
+            lblLoggedIn.Text = "Logged in as: " + newUser_.FirstName;
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
@@ -60,14 +62,55 @@ namespace GUI_IT
 
         private void ProfilePictureBox_Click(object sender, EventArgs e)
         {
-
+            frmUserProf UserProfile = new frmUserProf(newUser_);
+            UserProfile.ShowDialog();
         }
 
-        private void btnClear_Click(object sender, EventArgs e)
+        private void txtTicketID_TextChanged(object sender, EventArgs e)
         {
-            txtTicketID.Clear();
-            txtUsername.Clear();
-            txtEmail.Clear();
+
         }
+
+        private void btnAssign_Click(object sender, EventArgs e)
+        {
+            string x = txtTicketID.Text.ToString();
+            int y = System.Convert.ToInt32(x);
+            string z = txtUsername.Text.ToString();
+            string f = txtEmail.Text.ToString();
+            Sql.Addcoll(z, y);
+            Sql.add2(z, y, f);
+        }
+
+        private void Fill1()
+        {
+            SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
+            builder.DataSource = "redagents.database.windows.net";
+            builder.UserID = "kwekwe";
+            builder.Password = "Password1!";
+            builder.InitialCatalog = "red_Agents";
+            SqlConnection con = new SqlConnection(builder.ConnectionString);
+            con.Open();
+            string query = "Select * from Registration";
+            SqlDataAdapter da = new SqlDataAdapter(query, con);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            DGVAssign.DataSource = dt;
+            DGVAssign.EditMode = DataGridViewEditMode.EditOnEnter;
+            con.Close();
+
+        }
+
+        private void tabAssign_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
+private void btnClear_Click(object sender, EventArgs e)
+{
+    txtTicketID.Clear();
+    txtUsername.Clear();
+    txtEmail.Clear();
+}
     }
 }

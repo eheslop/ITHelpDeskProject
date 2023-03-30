@@ -31,7 +31,7 @@ namespace GUI_IT
             var regEmail = new MimeMessage();
 
             regEmail.From.Add(new MailboxAddress("Red Agents IT Service", "redagentsit@gmail.com"));
-            regEmail.To.Add(new MailboxAddress(Sql.getName(user), Sql.getEmail(user))); ;
+            regEmail.To.Add(new MailboxAddress(Sql.getName(user), Sql.getEmail(user)));
 
             regEmail.Subject = subject;
             regEmail.Body = new TextPart()

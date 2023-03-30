@@ -186,11 +186,11 @@
             tabControl1.Controls.Add(tabMonitor);
             tabControl1.Controls.Add(tabAssign);
             tabControl1.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            tabControl1.Location = new Point(-5, 146);
+            tabControl1.Location = new Point(-5, 143);
             tabControl1.Margin = new Padding(2);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(1288, 510);
+            tabControl1.Size = new Size(1288, 506);
             tabControl1.TabIndex = 50;
             // 
             // tabHome
@@ -210,7 +210,7 @@
             tabHome.Location = new Point(4, 37);
             tabHome.Margin = new Padding(2);
             tabHome.Name = "tabHome";
-            tabHome.Size = new Size(1280, 469);
+            tabHome.Size = new Size(1280, 465);
             tabHome.TabIndex = 2;
             tabHome.Text = "Ticket Homepage";
             // 
@@ -348,7 +348,7 @@
             tabMonitor.Margin = new Padding(2);
             tabMonitor.Name = "tabMonitor";
             tabMonitor.Padding = new Padding(2);
-            tabMonitor.Size = new Size(1280, 469);
+            tabMonitor.Size = new Size(1280, 465);
             tabMonitor.TabIndex = 0;
             tabMonitor.Text = "Monitor Tickets";
             // 
@@ -451,9 +451,10 @@
             tabAssign.Margin = new Padding(2);
             tabAssign.Name = "tabAssign";
             tabAssign.Padding = new Padding(2);
-            tabAssign.Size = new Size(1280, 469);
+            tabAssign.Size = new Size(1280, 465);
             tabAssign.TabIndex = 1;
             tabAssign.Text = "Assign Tickets";
+            tabAssign.Click += tabAssign_Click;
             // 
             // btnViewReopenedTable
             // 
@@ -461,10 +462,10 @@
             btnViewReopenedTable.FlatStyle = FlatStyle.Popup;
             btnViewReopenedTable.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnViewReopenedTable.ForeColor = Color.White;
-            btnViewReopenedTable.Location = new Point(821, 6);
+            btnViewReopenedTable.Location = new Point(1086, 8);
             btnViewReopenedTable.Margin = new Padding(2);
             btnViewReopenedTable.Name = "btnViewReopenedTable";
-            btnViewReopenedTable.Size = new Size(121, 34);
+            btnViewReopenedTable.Size = new Size(151, 42);
             btnViewReopenedTable.TabIndex = 90;
             btnViewReopenedTable.Text = "Re-opened";
             btnViewReopenedTable.UseVisualStyleBackColor = false;
@@ -475,10 +476,10 @@
             btnViewUnsolvedTable.FlatStyle = FlatStyle.Popup;
             btnViewUnsolvedTable.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnViewUnsolvedTable.ForeColor = Color.White;
-            btnViewUnsolvedTable.Location = new Point(696, 6);
+            btnViewUnsolvedTable.Location = new Point(922, 8);
             btnViewUnsolvedTable.Margin = new Padding(2);
             btnViewUnsolvedTable.Name = "btnViewUnsolvedTable";
-            btnViewUnsolvedTable.Size = new Size(111, 34);
+            btnViewUnsolvedTable.Size = new Size(139, 42);
             btnViewUnsolvedTable.TabIndex = 89;
             btnViewUnsolvedTable.Text = "Unsolved";
             btnViewUnsolvedTable.UseVisualStyleBackColor = false;
@@ -486,12 +487,12 @@
             // DGVAssign
             // 
             DGVAssign.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            DGVAssign.Location = new Point(696, 48);
+            DGVAssign.Location = new Point(696, 68);
             DGVAssign.Margin = new Padding(2);
             DGVAssign.Name = "DGVAssign";
             DGVAssign.RowHeadersWidth = 62;
             DGVAssign.RowTemplate.Height = 33;
-            DGVAssign.Size = new Size(498, 392);
+            DGVAssign.Size = new Size(541, 372);
             DGVAssign.TabIndex = 88;
             // 
             // btnAssign
@@ -500,13 +501,14 @@
             btnAssign.FlatStyle = FlatStyle.Popup;
             btnAssign.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnAssign.ForeColor = Color.White;
-            btnAssign.Location = new Point(240, 394);
+            btnAssign.Location = new Point(236, 394);
             btnAssign.Margin = new Padding(2);
             btnAssign.Name = "btnAssign";
             btnAssign.Size = new Size(162, 51);
             btnAssign.TabIndex = 87;
             btnAssign.Text = "Assign Ticket";
             btnAssign.UseVisualStyleBackColor = false;
+            btnAssign.Click += btnAssign_Click;
             // 
             // btnClear
             // 
@@ -521,16 +523,15 @@
             btnClear.TabIndex = 86;
             btnClear.Text = "Clear";
             btnClear.UseVisualStyleBackColor = false;
-            btnClear.Click += btnClear_Click;
             // 
             // txtUsername
             // 
             txtUsername.Anchor = AnchorStyles.None;
-            txtUsername.Location = new Point(21, 209);
-            txtUsername.Margin = new Padding(4);
+            txtUsername.Location = new Point(18, 206);
+            txtUsername.Margin = new Padding(5, 5, 5, 5);
             txtUsername.MaxLength = 50;
             txtUsername.Name = "txtUsername";
-            txtUsername.Size = new Size(596, 34);
+            txtUsername.Size = new Size(609, 34);
             txtUsername.TabIndex = 84;
             // 
             // label8
@@ -548,11 +549,11 @@
             // txtEmail
             // 
             txtEmail.Anchor = AnchorStyles.None;
-            txtEmail.Location = new Point(21, 309);
-            txtEmail.Margin = new Padding(4);
+            txtEmail.Location = new Point(18, 303);
+            txtEmail.Margin = new Padding(5, 5, 5, 5);
             txtEmail.MaxLength = 50;
             txtEmail.Name = "txtEmail";
-            txtEmail.Size = new Size(596, 34);
+            txtEmail.Size = new Size(609, 34);
             txtEmail.TabIndex = 82;
             // 
             // label7
@@ -560,7 +561,7 @@
             label7.AutoSize = true;
             label7.BackColor = Color.DarkGray;
             label7.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
-            label7.Location = new Point(21, 275);
+            label7.Location = new Point(21, 268);
             label7.Margin = new Padding(2, 0, 2, 0);
             label7.Name = "label7";
             label7.Size = new Size(397, 30);
@@ -570,12 +571,13 @@
             // txtTicketID
             // 
             txtTicketID.Anchor = AnchorStyles.None;
-            txtTicketID.Location = new Point(20, 105);
-            txtTicketID.Margin = new Padding(4);
+            txtTicketID.Location = new Point(18, 103);
+            txtTicketID.Margin = new Padding(5, 5, 5, 5);
             txtTicketID.MaxLength = 50;
             txtTicketID.Name = "txtTicketID";
-            txtTicketID.Size = new Size(598, 34);
+            txtTicketID.Size = new Size(609, 34);
             txtTicketID.TabIndex = 80;
+            txtTicketID.TextChanged += txtTicketID_TextChanged;
             // 
             // label6
             // 
@@ -592,7 +594,7 @@
             // pictureBox6
             // 
             pictureBox6.BackColor = Color.DarkGray;
-            pictureBox6.Location = new Point(14, 48);
+            pictureBox6.Location = new Point(10, 51);
             pictureBox6.Margin = new Padding(2);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(654, 328);

@@ -14,7 +14,7 @@ namespace GUI_IT
 {
     public partial class frmAdmin : Form
     {
-        private SessionRegister newUser;
+        private SessionRegister newUser_;
 
         private Rectangle buttonOriginalRectangle;
         private Rectangle originalFormSize;
@@ -23,10 +23,11 @@ namespace GUI_IT
 
         public frmAdmin(SessionRegister newUser)
         {
+            newUser_ = newUser;
             InitializeComponent();
             pnlReportGenerate.Visible = false;
-            lblLoggedIn.Text = "Logged in as: " + newUser.FirstName;
-            lblUser.Text = newUser.FirstName + "!";
+            lblLoggedIn.Text = "Logged in as: " + newUser_.FirstName;
+            lblUser.Text = newUser_.FirstName + "!";
             Fill();
             Fill1();
         }
@@ -171,7 +172,8 @@ namespace GUI_IT
 
         private void ProfilePictureBox_Click(object sender, EventArgs e)
         {
-
+            frmUserProf UserProfile = new frmUserProf(newUser_);
+            UserProfile.ShowDialog();
         }
 
         private void Fill1()
