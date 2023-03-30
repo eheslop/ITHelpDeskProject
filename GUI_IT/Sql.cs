@@ -29,11 +29,11 @@ namespace GUI_IT
             return con;
         }
 
-        public static void Register(string user, string name, string first, string last, string pass, string email, string role)
+        public static void Register(string user, string name, string first, string last, string pass, string email, string role, DateTime time)
         {
             string x = "Pending";
             SqlConnection con = Connect();
-            String query = "INSERT INTO Registration(Username, Name, First_Name, Last_Name, Password, Email, Role, Status) VALUES('" + user.ToString() + "', '" + name.ToString() + "', '" + first.ToString() + "', '" + last.ToString() + "','" + pass.ToString() + "', '" + email.ToString() + "', '" + role.ToString() + "', '" + x + "');";
+            String query = "INSERT INTO Registration(Username, Name, First_Name, Last_Name, Password, Email, Role, Status, Time) VALUES('" + user.ToString() + "', '" + name.ToString() + "', '" + first.ToString() + "', '" + last.ToString() + "','" + pass.ToString() + "', '" + email.ToString() + "', '" + role.ToString() + "', '" + x + "', '" + time + "');";
             SqlCommand cmd = new SqlCommand(query, con);
             cmd.ExecuteNonQuery();
             con.Close();

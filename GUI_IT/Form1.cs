@@ -73,22 +73,6 @@ namespace GUI_IT
                     lblInvalidRole.Visible = true;
 
             }
-
-            /* if (txtUsername.Text == "admin" && txtPassword.Text == "password")
-            {
-                frmAdmin adminLogIn = new frmAdmin();
-                this.Hide();
-                adminLogIn.ShowDialog();
-                this.Close();
-            }
-            else if (txtUsername.Text == "projectMem" && txtPassword.Text == "member")
-            {
-                frmProjectMember projectMemberForm = new frmProjectMember();
-                this.Hide();
-                projectMemberForm.ShowDialog();
-                this.Close();
-            }
-            */
             else
             {
                 //MessageBox.Show("Incorrect Login Information", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -112,6 +96,7 @@ namespace GUI_IT
             string email = txtEmail.Text.ToString();
             string role = cboUserType.Text.ToString();
             string user = name[0].ToString() + txtLastName.Text.ToString() + randomstring1.ToString();
+            DateTime time = DateTime.Now;
             Boolean accountExists = Sql.Exists(user);
             Boolean validEmail = Email.isValid(email);
             if (accountExists == false && validEmail == true)
@@ -126,7 +111,7 @@ namespace GUI_IT
                     randomstring = randomstring + str[x];
                 }
                 string pass = randomstring.ToString();
-                Sql.Register(user, name, first, last, pass, email, role);
+                Sql.Register(user, name, first, last, pass, email, role, time);
                 Email.sendEmail("Registration", user);
                 MessageBox.Show("Account Created!\nCheck your email for your login credentials!", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 

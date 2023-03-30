@@ -261,6 +261,7 @@
             lblUserPassword.Size = new Size(92, 24);
             lblUserPassword.TabIndex = 70;
             lblUserPassword.Text = "password";
+            lblUserPassword.Click += lblUserPassword_Click;
             // 
             // lblUserRole
             // 
