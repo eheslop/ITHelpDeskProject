@@ -12,7 +12,7 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\annav\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\kwkye\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\annav\\.nuget\\packages"
     ],
     "configProperties": {

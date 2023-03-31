@@ -142,6 +142,15 @@ namespace GUI_IT
             return pass;
         }
 
+        public static string getPasss(string user)
+        {
+            SqlConnection con = Connect();
+            String query = "SELECT password FROM Registration WHERE Username = '" + user.ToString() + "';";
+            SqlCommand cmd = new SqlCommand(query, con);
+            string pass = (string)cmd.ExecuteScalar();
+            return pass;
+        }
+
         public static string getTicketCategory(int tID)
         {
             SqlConnection con = Connect();
