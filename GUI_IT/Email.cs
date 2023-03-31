@@ -89,7 +89,7 @@ namespace GUI_IT
                 data[1] = "Hello " + Sql.getNamee(user)
                         + "! \n\nCongratulations! Your account registration has been accepted.\n\n"
                         + "Below are your login credentials for the Red Agents IT Ticketing System.\n"
-                        + "Username: " + user + "\n" + "Password: " + Sql.getPasss(user) + "\n\n"
+                        + "Username: " + user + "\n" + "Password: " + Sql.getPass(user) + "\n\n"
                         + "Please do not share your credentials with anyone!\n\n-Red Agents IT";
             }
             if(template == "Registration Denied")

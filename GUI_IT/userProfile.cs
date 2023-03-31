@@ -24,11 +24,12 @@ namespace GUI_IT
             lblUserRole.Text = newUser_.UserType;
             lblUserUsername.Text = newUser_.Username;
             lblUserPassword.Text = newUser_.Password;
+            pnlChangePassword.Visible = false;
         }
 
         private void linklblChangePassword_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            pnlChangePassword.Visible = true;
         }
 
         private void lblUserPassword_Click(object sender, EventArgs e)
@@ -44,6 +45,11 @@ namespace GUI_IT
         private void lblUserRole_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void linklblNoPassChange_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            pnlChangePassword.Visible = false;
         }
     }
 }

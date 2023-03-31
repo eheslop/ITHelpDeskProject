@@ -53,6 +53,7 @@
             lblName = new Label();
             lblNameUser = new Label();
             pnlChangePassword = new Panel();
+            btnChange = new Button();
             txtConfirmPass = new TextBox();
             txtnewPass = new TextBox();
             lblNewPass = new Label();
@@ -97,10 +98,10 @@
             // 
             pictureBox5.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox5.BackColor = Color.FromArgb(64, 0, 0);
-            pictureBox5.Location = new Point(-11, -10);
+            pictureBox5.Location = new Point(-8, -10);
             pictureBox5.Margin = new Padding(2);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(615, 46);
+            pictureBox5.Size = new Size(644, 46);
             pictureBox5.TabIndex = 53;
             pictureBox5.TabStop = false;
             // 
@@ -123,7 +124,7 @@
             pictureBox3.Location = new Point(-12, 35);
             pictureBox3.Margin = new Padding(2);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(622, 41);
+            pictureBox3.Size = new Size(698, 41);
             pictureBox3.TabIndex = 50;
             pictureBox3.TabStop = false;
             // 
@@ -133,17 +134,17 @@
             pictureBox1.Location = new Point(15, 128);
             pictureBox1.Margin = new Padding(2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(556, 438);
+            pictureBox1.Size = new Size(556, 441);
             pictureBox1.TabIndex = 55;
             pictureBox1.TabStop = false;
             // 
             // pictureBox4
             // 
             pictureBox4.BackColor = Color.Silver;
-            pictureBox4.Location = new Point(29, 140);
+            pictureBox4.Location = new Point(29, 142);
             pictureBox4.Margin = new Padding(2);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(529, 412);
+            pictureBox4.Size = new Size(529, 416);
             pictureBox4.TabIndex = 57;
             pictureBox4.TabStop = false;
             // 
@@ -215,7 +216,7 @@
             linklblChangePassword.ActiveLinkColor = Color.Red;
             linklblChangePassword.AutoSize = true;
             linklblChangePassword.BackColor = Color.Silver;
-            linklblChangePassword.Location = new Point(384, 518);
+            linklblChangePassword.Location = new Point(384, 514);
             linklblChangePassword.Margin = new Padding(2, 0, 2, 0);
             linklblChangePassword.Name = "linklblChangePassword";
             linklblChangePassword.Size = new Size(160, 25);
@@ -230,7 +231,7 @@
             lblUserEmail.BackColor = Color.Gainsboro;
             lblUserEmail.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             lblUserEmail.ForeColor = Color.Black;
-            lblUserEmail.Location = new Point(121, 255);
+            lblUserEmail.Location = new Point(109, 255);
             lblUserEmail.Margin = new Padding(2, 0, 2, 0);
             lblUserEmail.Name = "lblUserEmail";
             lblUserEmail.Size = new Size(57, 24);
@@ -279,7 +280,7 @@
             lblUserPassword.BackColor = Color.Gainsboro;
             lblUserPassword.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             lblUserPassword.ForeColor = Color.Black;
-            lblUserPassword.Location = new Point(156, 469);
+            lblUserPassword.Location = new Point(144, 469);
             lblUserPassword.Margin = new Padding(2, 0, 2, 0);
             lblUserPassword.Name = "lblUserPassword";
             lblUserPassword.Size = new Size(92, 24);
@@ -293,7 +294,7 @@
             lblUserRole.BackColor = Color.Gainsboro;
             lblUserRole.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             lblUserRole.ForeColor = Color.Black;
-            lblUserRole.Location = new Point(109, 328);
+            lblUserRole.Location = new Point(103, 328);
             lblUserRole.Margin = new Padding(2, 0, 2, 0);
             lblUserRole.Name = "lblUserRole";
             lblUserRole.Size = new Size(43, 24);
@@ -307,7 +308,7 @@
             lblUserUsername.BackColor = Color.Gainsboro;
             lblUserUsername.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             lblUserUsername.ForeColor = Color.Black;
-            lblUserUsername.Location = new Point(161, 400);
+            lblUserUsername.Location = new Point(147, 400);
             lblUserUsername.Margin = new Padding(2, 0, 2, 0);
             lblUserUsername.Name = "lblUserUsername";
             lblUserUsername.Size = new Size(94, 24);
@@ -351,6 +352,7 @@
             // 
             // pnlChangePassword
             // 
+            pnlChangePassword.Controls.Add(btnChange);
             pnlChangePassword.Controls.Add(txtConfirmPass);
             pnlChangePassword.Controls.Add(txtnewPass);
             pnlChangePassword.Controls.Add(lblNewPass);
@@ -361,26 +363,41 @@
             pnlChangePassword.Controls.Add(lblChangePass);
             pnlChangePassword.Controls.Add(pictureBox13);
             pnlChangePassword.Controls.Add(pictureBox14);
-            pnlChangePassword.Location = new Point(2, 79);
-            pnlChangePassword.Margin = new Padding(4, 4, 4, 4);
+            pnlChangePassword.Location = new Point(-8, 79);
+            pnlChangePassword.Margin = new Padding(4);
             pnlChangePassword.Name = "pnlChangePassword";
-            pnlChangePassword.Size = new Size(602, 649);
+            pnlChangePassword.Size = new Size(630, 556);
             pnlChangePassword.TabIndex = 77;
+            // 
+            // btnChange
+            // 
+            btnChange.BackColor = Color.FromArgb(64, 0, 0);
+            btnChange.FlatStyle = FlatStyle.Flat;
+            btnChange.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            btnChange.ForeColor = Color.White;
+            btnChange.Location = new Point(405, 495);
+            btnChange.Name = "btnChange";
+            btnChange.Size = new Size(192, 44);
+            btnChange.TabIndex = 88;
+            btnChange.Text = "Change Password";
+            btnChange.UseVisualStyleBackColor = false;
             // 
             // txtConfirmPass
             // 
-            txtConfirmPass.Location = new Point(43, 367);
-            txtConfirmPass.Margin = new Padding(4, 4, 4, 4);
+            txtConfirmPass.Location = new Point(58, 353);
+            txtConfirmPass.Margin = new Padding(4);
+            txtConfirmPass.MaxLength = 50;
             txtConfirmPass.Name = "txtConfirmPass";
-            txtConfirmPass.Size = new Size(526, 31);
+            txtConfirmPass.Size = new Size(494, 31);
             txtConfirmPass.TabIndex = 87;
             // 
             // txtnewPass
             // 
-            txtnewPass.Location = new Point(38, 188);
-            txtnewPass.Margin = new Padding(4, 4, 4, 4);
+            txtnewPass.Location = new Point(58, 188);
+            txtnewPass.Margin = new Padding(4);
+            txtnewPass.MaxLength = 50;
             txtnewPass.Name = "txtnewPass";
-            txtnewPass.Size = new Size(531, 31);
+            txtnewPass.Size = new Size(494, 31);
             txtnewPass.TabIndex = 86;
             // 
             // lblNewPass
@@ -388,7 +405,7 @@
             lblNewPass.AutoSize = true;
             lblNewPass.BackColor = Color.Silver;
             lblNewPass.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
-            lblNewPass.Location = new Point(25, 129);
+            lblNewPass.Location = new Point(38, 129);
             lblNewPass.Margin = new Padding(4, 0, 4, 0);
             lblNewPass.Name = "lblNewPass";
             lblNewPass.Size = new Size(229, 30);
@@ -400,7 +417,7 @@
             lblConfirm.AutoSize = true;
             lblConfirm.BackColor = Color.Silver;
             lblConfirm.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
-            lblConfirm.Location = new Point(29, 291);
+            lblConfirm.Location = new Point(38, 292);
             lblConfirm.Margin = new Padding(4, 0, 4, 0);
             lblConfirm.Name = "lblConfirm";
             lblConfirm.Size = new Size(263, 30);
@@ -410,31 +427,33 @@
             // linklblNoPassChange
             // 
             linklblNoPassChange.AutoSize = true;
-            linklblNoPassChange.Location = new Point(285, 518);
+            linklblNoPassChange.BackColor = Color.Silver;
+            linklblNoPassChange.Location = new Point(257, 421);
             linklblNoPassChange.Margin = new Padding(4, 0, 4, 0);
             linklblNoPassChange.Name = "linklblNoPassChange";
             linklblNoPassChange.Size = new Size(317, 25);
             linklblNoPassChange.TabIndex = 82;
             linklblNoPassChange.TabStop = true;
             linklblNoPassChange.Text = "Don't Want to Change Your Password?";
+            linklblNoPassChange.LinkClicked += linklblNoPassChange_LinkClicked;
             // 
             // pictureBox11
             // 
             pictureBox11.BackColor = Color.Gainsboro;
-            pictureBox11.Location = new Point(29, 164);
+            pictureBox11.Location = new Point(44, 164);
             pictureBox11.Margin = new Padding(2);
             pictureBox11.Name = "pictureBox11";
-            pictureBox11.Size = new Size(547, 82);
+            pictureBox11.Size = new Size(526, 82);
             pictureBox11.TabIndex = 81;
             pictureBox11.TabStop = false;
             // 
             // pictureBox10
             // 
             pictureBox10.BackColor = Color.Gainsboro;
-            pictureBox10.Location = new Point(34, 336);
+            pictureBox10.Location = new Point(44, 325);
             pictureBox10.Margin = new Padding(2);
             pictureBox10.Name = "pictureBox10";
-            pictureBox10.Size = new Size(542, 89);
+            pictureBox10.Size = new Size(526, 89);
             pictureBox10.TabIndex = 80;
             pictureBox10.TabStop = false;
             // 
@@ -442,7 +461,7 @@
             // 
             lblChangePass.AutoSize = true;
             lblChangePass.Font = new Font("Microsoft YaHei UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            lblChangePass.Location = new Point(84, 20);
+            lblChangePass.Location = new Point(89, 18);
             lblChangePass.Margin = new Padding(4, 0, 4, 0);
             lblChangePass.Name = "lblChangePass";
             lblChangePass.Size = new Size(438, 47);
@@ -452,20 +471,20 @@
             // pictureBox13
             // 
             pictureBox13.BackColor = Color.Silver;
-            pictureBox13.Location = new Point(16, 101);
+            pictureBox13.Location = new Point(34, 101);
             pictureBox13.Margin = new Padding(2);
             pictureBox13.Name = "pictureBox13";
-            pictureBox13.Size = new Size(576, 386);
+            pictureBox13.Size = new Size(549, 363);
             pictureBox13.TabIndex = 76;
             pictureBox13.TabStop = false;
             // 
             // pictureBox14
             // 
             pictureBox14.BackColor = Color.FromArgb(64, 64, 64);
-            pictureBox14.Location = new Point(-13, 85);
+            pictureBox14.Location = new Point(16, 85);
             pictureBox14.Margin = new Padding(2);
             pictureBox14.Name = "pictureBox14";
-            pictureBox14.Size = new Size(621, 425);
+            pictureBox14.Size = new Size(585, 402);
             pictureBox14.TabIndex = 75;
             pictureBox14.TabStop = false;
             // 
@@ -474,7 +493,7 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
-            ClientSize = new Size(605, 726);
+            ClientSize = new Size(604, 631);
             Controls.Add(pnlChangePassword);
             Controls.Add(lblEmail);
             Controls.Add(lblUserEmail);
@@ -562,5 +581,6 @@
         private PictureBox pictureBox14;
         private TextBox txtConfirmPass;
         private TextBox txtnewPass;
+        private Button btnChange;
     }
 }

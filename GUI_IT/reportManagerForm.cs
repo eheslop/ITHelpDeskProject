@@ -104,13 +104,12 @@ namespace GUI_IT
         {
 
         }
-    }
-}
-private void btnClear_Click(object sender, EventArgs e)
-{
-    txtTicketID.Clear();
-    txtUsername.Clear();
-    txtEmail.Clear();
-}
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtTicketID.Clear();
+            txtUsername.Clear();
+            txtEmail.Clear();
+        }
     }
 }
