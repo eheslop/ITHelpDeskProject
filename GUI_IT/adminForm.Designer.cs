@@ -59,12 +59,13 @@
             this.DGVV = new System.Windows.Forms.DataGridView();
             this.label8 = new System.Windows.Forms.Label();
             this.tabSolved = new System.Windows.Forms.TabPage();
+            this.cbxcat1 = new System.Windows.Forms.ComboBox();
+            this.cbxurg1 = new System.Windows.Forms.ComboBox();
             this.btnReportClear = new System.Windows.Forms.Button();
             this.label19 = new System.Windows.Forms.Label();
             this.txtTicketIDSolve = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.txtUrgencySolved = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.txtTicketDescribeSolved = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
@@ -73,7 +74,6 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.txtUserEmailSolved = new System.Windows.Forms.TextBox();
             this.txtEmailSolved = new System.Windows.Forms.TextBox();
-            this.txtTicketCategorySolved = new System.Windows.Forms.TextBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.label18 = new System.Windows.Forms.Label();
             this.btnSubmitSolved = new System.Windows.Forms.Button();
@@ -81,6 +81,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.tabUnsolved = new System.Windows.Forms.TabPage();
+            this.cbxurg = new System.Windows.Forms.ComboBox();
+            this.cbxcat = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
             this.txtTicketSummary = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -92,9 +94,7 @@
             this.lblTicketID = new System.Windows.Forms.Label();
             this.txtProjectEmail = new System.Windows.Forms.TextBox();
             this.txtTicketID = new System.Windows.Forms.TextBox();
-            this.txtTicketUrgency = new System.Windows.Forms.TextBox();
             this.txtITEmail = new System.Windows.Forms.TextBox();
-            this.txtProblemCategory = new System.Windows.Forms.TextBox();
             this.btnSubmitUnsolved = new System.Windows.Forms.Button();
             this.btnClearUnsolved = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -511,12 +511,13 @@
             // tabSolved
             // 
             this.tabSolved.BackColor = System.Drawing.Color.LightGray;
+            this.tabSolved.Controls.Add(this.cbxcat1);
+            this.tabSolved.Controls.Add(this.cbxurg1);
             this.tabSolved.Controls.Add(this.btnReportClear);
             this.tabSolved.Controls.Add(this.label19);
             this.tabSolved.Controls.Add(this.txtTicketIDSolve);
             this.tabSolved.Controls.Add(this.label17);
             this.tabSolved.Controls.Add(this.label16);
-            this.tabSolved.Controls.Add(this.txtUrgencySolved);
             this.tabSolved.Controls.Add(this.button1);
             this.tabSolved.Controls.Add(this.txtTicketDescribeSolved);
             this.tabSolved.Controls.Add(this.label14);
@@ -525,7 +526,6 @@
             this.tabSolved.Controls.Add(this.pictureBox5);
             this.tabSolved.Controls.Add(this.txtUserEmailSolved);
             this.tabSolved.Controls.Add(this.txtEmailSolved);
-            this.tabSolved.Controls.Add(this.txtTicketCategorySolved);
             this.tabSolved.Controls.Add(this.pictureBox15);
             this.tabSolved.Controls.Add(this.label18);
             this.tabSolved.Controls.Add(this.btnSubmitSolved);
@@ -539,6 +539,33 @@
             this.tabSolved.Size = new System.Drawing.Size(1019, 569);
             this.tabSolved.TabIndex = 1;
             this.tabSolved.Text = "Solved Tickets";
+            // 
+            // cbxcat1
+            // 
+            this.cbxcat1.FormattingEnabled = true;
+            this.cbxcat1.Items.AddRange(new object[] {
+            "Type 1",
+            "Type 2",
+            "Type 3",
+            "Type 4",
+            "Other"});
+            this.cbxcat1.Location = new System.Drawing.Point(22, 190);
+            this.cbxcat1.Name = "cbxcat1";
+            this.cbxcat1.Size = new System.Drawing.Size(299, 31);
+            this.cbxcat1.TabIndex = 136;
+            // 
+            // cbxurg1
+            // 
+            this.cbxurg1.FormattingEnabled = true;
+            this.cbxurg1.Items.AddRange(new object[] {
+            "High",
+            "Medium",
+            "Low"});
+            this.cbxurg1.Location = new System.Drawing.Point(22, 126);
+            this.cbxurg1.Name = "cbxurg1";
+            this.cbxurg1.Size = new System.Drawing.Size(135, 31);
+            this.cbxurg1.TabIndex = 135;
+            this.cbxurg1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // btnReportClear
             // 
@@ -594,14 +621,6 @@
             this.label16.Size = new System.Drawing.Size(135, 23);
             this.label16.TabIndex = 129;
             this.label16.Text = "Ticket Urgency:";
-            // 
-            // txtUrgencySolved
-            // 
-            this.txtUrgencySolved.Location = new System.Drawing.Point(23, 127);
-            this.txtUrgencySolved.Margin = new System.Windows.Forms.Padding(2);
-            this.txtUrgencySolved.Name = "txtUrgencySolved";
-            this.txtUrgencySolved.Size = new System.Drawing.Size(132, 30);
-            this.txtUrgencySolved.TabIndex = 128;
             // 
             // button1
             // 
@@ -692,14 +711,6 @@
             this.txtEmailSolved.Size = new System.Drawing.Size(370, 30);
             this.txtEmailSolved.TabIndex = 117;
             // 
-            // txtTicketCategorySolved
-            // 
-            this.txtTicketCategorySolved.Location = new System.Drawing.Point(18, 188);
-            this.txtTicketCategorySolved.Margin = new System.Windows.Forms.Padding(2);
-            this.txtTicketCategorySolved.Name = "txtTicketCategorySolved";
-            this.txtTicketCategorySolved.Size = new System.Drawing.Size(527, 30);
-            this.txtTicketCategorySolved.TabIndex = 116;
-            // 
             // pictureBox15
             // 
             this.pictureBox15.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -778,6 +789,8 @@
             // tabUnsolved
             // 
             this.tabUnsolved.BackColor = System.Drawing.Color.LightGray;
+            this.tabUnsolved.Controls.Add(this.cbxurg);
+            this.tabUnsolved.Controls.Add(this.cbxcat);
             this.tabUnsolved.Controls.Add(this.label13);
             this.tabUnsolved.Controls.Add(this.txtTicketSummary);
             this.tabUnsolved.Controls.Add(this.label12);
@@ -789,9 +802,7 @@
             this.tabUnsolved.Controls.Add(this.lblTicketID);
             this.tabUnsolved.Controls.Add(this.txtProjectEmail);
             this.tabUnsolved.Controls.Add(this.txtTicketID);
-            this.tabUnsolved.Controls.Add(this.txtTicketUrgency);
             this.tabUnsolved.Controls.Add(this.txtITEmail);
-            this.tabUnsolved.Controls.Add(this.txtProblemCategory);
             this.tabUnsolved.Controls.Add(this.btnSubmitUnsolved);
             this.tabUnsolved.Controls.Add(this.btnClearUnsolved);
             this.tabUnsolved.Controls.Add(this.label3);
@@ -804,6 +815,32 @@
             this.tabUnsolved.TabIndex = 2;
             this.tabUnsolved.Text = "Unsolved Tickets";
             // 
+            // cbxurg
+            // 
+            this.cbxurg.FormattingEnabled = true;
+            this.cbxurg.Items.AddRange(new object[] {
+            "High",
+            "Medium",
+            "Low"});
+            this.cbxurg.Location = new System.Drawing.Point(16, 125);
+            this.cbxurg.Name = "cbxurg";
+            this.cbxurg.Size = new System.Drawing.Size(136, 31);
+            this.cbxurg.TabIndex = 104;
+            // 
+            // cbxcat
+            // 
+            this.cbxcat.FormattingEnabled = true;
+            this.cbxcat.Items.AddRange(new object[] {
+            "Type 1",
+            "Type 2",
+            "Type 3",
+            "Type 4",
+            "Other"});
+            this.cbxcat.Location = new System.Drawing.Point(16, 188);
+            this.cbxcat.Name = "cbxcat";
+            this.cbxcat.Size = new System.Drawing.Size(325, 31);
+            this.cbxcat.TabIndex = 103;
+            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -811,9 +848,9 @@
             this.label13.Location = new System.Drawing.Point(16, 162);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(303, 23);
+            this.label13.Size = new System.Drawing.Size(264, 23);
             this.label13.TabIndex = 102;
-            this.label13.Text = "What was the select ticket category?";
+            this.label13.Text = "What was the ticket\'s category?";
             // 
             // txtTicketSummary
             // 
@@ -924,14 +961,6 @@
             this.txtTicketID.Size = new System.Drawing.Size(130, 30);
             this.txtTicketID.TabIndex = 88;
             // 
-            // txtTicketUrgency
-            // 
-            this.txtTicketUrgency.Location = new System.Drawing.Point(16, 127);
-            this.txtTicketUrgency.Margin = new System.Windows.Forms.Padding(2);
-            this.txtTicketUrgency.Name = "txtTicketUrgency";
-            this.txtTicketUrgency.Size = new System.Drawing.Size(132, 30);
-            this.txtTicketUrgency.TabIndex = 87;
-            // 
             // txtITEmail
             // 
             this.txtITEmail.Location = new System.Drawing.Point(174, 66);
@@ -939,14 +968,6 @@
             this.txtITEmail.Name = "txtITEmail";
             this.txtITEmail.Size = new System.Drawing.Size(370, 30);
             this.txtITEmail.TabIndex = 86;
-            // 
-            // txtProblemCategory
-            // 
-            this.txtProblemCategory.Location = new System.Drawing.Point(17, 187);
-            this.txtProblemCategory.Margin = new System.Windows.Forms.Padding(2);
-            this.txtProblemCategory.Name = "txtProblemCategory";
-            this.txtProblemCategory.Size = new System.Drawing.Size(527, 30);
-            this.txtProblemCategory.TabIndex = 85;
             // 
             // btnSubmitUnsolved
             // 
@@ -1021,6 +1042,7 @@
             this.ProfilePictureBox.Size = new System.Drawing.Size(47, 35);
             this.ProfilePictureBox.TabIndex = 83;
             this.ProfilePictureBox.TabStop = false;
+            this.ProfilePictureBox.Click += new System.EventHandler(this.ProfilePictureBox_Click);
             // 
             // btnApproveDeny
             // 
@@ -1204,9 +1226,7 @@
         private Label lblTicketID;
         private TextBox txtProjectEmail;
         private TextBox txtTicketID;
-        private TextBox txtTicketUrgency;
         private TextBox txtITEmail;
-        private TextBox txtProblemCategory;
         private Label label9;
         private TextBox txtUnsolvedExplain;
         private PictureBox pictureBox14;
@@ -1230,16 +1250,18 @@
         private PictureBox pictureBox5;
         private TextBox txtUserEmailSolved;
         private TextBox txtEmailSolved;
-        private TextBox txtTicketCategorySolved;
         private PictureBox pictureBox15;
         private PictureBox pictureBox16;
         private Button button1;
-        private TextBox txtUrgencySolved;
         private Label label16;
         private Label label17;
         private TextBox textBox7;
         private Label label19;
         private TextBox txtTicketIDSolve;
         private Button btnReportClear;
+        private ComboBox cbxurg;
+        private ComboBox cbxcat;
+        private ComboBox cbxcat1;
+        private ComboBox cbxurg1;
     }
 }

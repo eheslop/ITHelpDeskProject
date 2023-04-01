@@ -222,9 +222,9 @@ namespace GUI_IT
         {
             txtTicketIDSolve.Clear();
             txtEmailSolved.Clear();
-            txtUrgencySolved.Clear();
+            
             txtUserEmailSolved.Clear();
-            txtTicketCategorySolved.Clear();
+            
             txtTicketDescribeSolved.Clear();
             txtTicketDetailSolved.Clear();
         }
@@ -233,9 +233,9 @@ namespace GUI_IT
         {
             txtTicketID.Clear();
             txtITEmail.Clear();
-            txtTicketUrgency.Clear();
+            
             txtProjectEmail.Clear();
-            txtProblemCategory.Clear();
+           
             txtTicketSummary.Clear();
             txtUnsolvedExplain.Clear();
         }
@@ -255,9 +255,9 @@ namespace GUI_IT
             string x = txtTicketIDSolve.Text.ToString();
             int y = System.Convert.ToInt32(x);
             string b = txtEmailSolved.Text.ToString();
-            string c = txtUrgencySolved.Text.ToString();
+            string c = cbxurg1.Text.ToString();
             string d = txtUserEmailSolved.Text.ToString();
-            string g = txtTicketCategorySolved.Text.ToString();
+            string g = cbxcat1.Text.ToString();
             string l = txtTicketDetailSolved.Text.ToString();
             string f = txtTicketDescribeSolved.Text.ToString();
             string h = "Solved";
@@ -269,13 +269,18 @@ namespace GUI_IT
             string x = txtTicketID.Text.ToString();
             int y = System.Convert.ToInt32(x);
             string b = txtITEmail.Text.ToString();
-            string c = txtTicketUrgency.Text.ToString();
+            string c = cbxurg.Text.ToString();
             string d = txtProjectEmail.Text.ToString();
-            string g = txtProblemCategory.Text.ToString();
+            string g = cbxcat.Text.ToString();
             string f = txtTicketSummary.Text.ToString();
             string l = txtUnsolvedExplain.Text.ToString();
             string h = "Unsolved";
             Sql.report(y, c, b, d, g, f, l, newUser_.Username, h);
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

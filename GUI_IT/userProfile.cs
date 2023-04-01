@@ -15,6 +15,7 @@ namespace GUI_IT
     {
         private SessionRegister newUser_;
 
+        public string pass { get; set; }
         public frmUserProf(SessionRegister newUser)
         {
             InitializeComponent();
@@ -50,6 +51,33 @@ namespace GUI_IT
         private void linklblNoPassChange_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             pnlChangePassword.Visible = false;
+        }
+
+        private void btnChange_Click(object sender, EventArgs e)
+        {
+            string user = newUser_.Username;
+            pass = txtConfirmPass.Text.ToString();
+            string confirm = txtnewPass.Text.ToString();
+            if (pass == confirm)
+            {
+                Sql.cngpass(user, pass);
+                MessageBox.Show("Your Password has been Changed!");
+                reload();
+                pnlChangePassword.Visible = false;
+            }
+            else
+            {
+                MessageBox.Show("Those Passwords do not match, Try again!");
+            }
+        }
+        
+        public void reload()
+        {
+            lblNameUser.Text = newUser_.FullName;
+            lblUserEmail.Text = newUser_.Email;
+            lblUserRole.Text = newUser_.UserType;
+            lblUserUsername.Text = newUser_.Username;
+            lblUserPassword.Text = pass;
         }
     }
 }
