@@ -616,6 +616,7 @@
             this.button1.TabIndex = 126;
             this.button1.Text = "Submit Report";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // txtTicketDescribeSolved
             // 
@@ -636,9 +637,9 @@
             this.label14.Location = new System.Drawing.Point(174, 102);
             this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(262, 23);
+            this.label14.Size = new System.Drawing.Size(265, 23);
             this.label14.TabIndex = 124;
-            this.label14.Text = "Email of user who raised ticket:";
+            this.label14.Text = "Name of user who raised ticket:";
             // 
             // label15
             // 
@@ -647,9 +648,9 @@
             this.label15.Location = new System.Drawing.Point(171, 38);
             this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(395, 23);
+            this.label15.Size = new System.Drawing.Size(398, 23);
             this.label15.TabIndex = 123;
-            this.label15.Text = "Email of IT member who was assigned to ticket:";
+            this.label15.Text = "Name of IT member who was assigned to ticket:";
             // 
             // txtTicketDetailSolved
             // 
@@ -844,9 +845,9 @@
             this.label11.Location = new System.Drawing.Point(172, 101);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(262, 23);
+            this.label11.Size = new System.Drawing.Size(265, 23);
             this.label11.TabIndex = 99;
-            this.label11.Text = "Email of user who raised ticket:";
+            this.label11.Text = "Name of user who raised ticket:";
             // 
             // label10
             // 
@@ -855,9 +856,9 @@
             this.label10.Location = new System.Drawing.Point(170, 42);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(395, 23);
+            this.label10.Size = new System.Drawing.Size(398, 23);
             this.label10.TabIndex = 98;
-            this.label10.Text = "Email of IT member who was assigned to ticket:";
+            this.label10.Text = "Name of IT member who was assigned to ticket:";
             // 
             // label9
             // 
@@ -960,6 +961,7 @@
             this.btnSubmitUnsolved.TabIndex = 83;
             this.btnSubmitUnsolved.Text = "Submit Report";
             this.btnSubmitUnsolved.UseVisualStyleBackColor = false;
+            this.btnSubmitUnsolved.Click += new System.EventHandler(this.btnSubmitUnsolved_Click);
             // 
             // btnClearUnsolved
             // 

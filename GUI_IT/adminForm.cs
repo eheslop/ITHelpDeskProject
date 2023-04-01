@@ -249,5 +249,33 @@ namespace GUI_IT
         {
             Fill2();
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            string x = txtTicketIDSolve.Text.ToString();
+            int y = System.Convert.ToInt32(x);
+            string b = txtEmailSolved.Text.ToString();
+            string c = txtUrgencySolved.Text.ToString();
+            string d = txtUserEmailSolved.Text.ToString();
+            string g = txtTicketCategorySolved.Text.ToString();
+            string l = txtTicketDetailSolved.Text.ToString();
+            string f = txtTicketDescribeSolved.Text.ToString();
+            string h = "Solved";
+            Sql.report(y, c, b, d, g, f, l, newUser_.Username, h);
+        }
+
+        private void btnSubmitUnsolved_Click(object sender, EventArgs e)
+        {
+            string x = txtTicketID.Text.ToString();
+            int y = System.Convert.ToInt32(x);
+            string b = txtITEmail.Text.ToString();
+            string c = txtTicketUrgency.Text.ToString();
+            string d = txtProjectEmail.Text.ToString();
+            string g = txtProblemCategory.Text.ToString();
+            string f = txtTicketSummary.Text.ToString();
+            string l = txtUnsolvedExplain.Text.ToString();
+            string h = "Unsolved";
+            Sql.report(y, c, b, d, g, f, l, newUser_.Username, h);
+        }
     }
 }
