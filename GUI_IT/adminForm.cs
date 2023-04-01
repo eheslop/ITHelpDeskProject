@@ -30,6 +30,10 @@ namespace GUI_IT
             lblUser.Text = newUser_.FirstName + "!";
             Fill();
             Fill1();
+            combo();
+            combo1();
+            combo2();
+            combo3();
         }
 
         private void frmAdmin_Load(object sender, EventArgs e)
@@ -53,6 +57,28 @@ namespace GUI_IT
             lblAdminHeader.Location = new Point(459, 101);
         }
 
+        private void combo()
+        {
+            cbxn.DataSource = Sql.ITname();
+            cbxn.DisplayMember = "Name";
+        }
+
+        private void combo1()
+        {
+            cbxp.DataSource = Sql.PMname();
+            cbxp.DisplayMember = "Name";
+        }
+        private void combo2()
+        {
+            cbxu.DataSource = Sql.ITname();
+            cbxu.DisplayMember = "Name";
+        }
+
+        private void combo3()
+        {
+            cbxuu.DataSource = Sql.PMname();
+            cbxuu.DisplayMember = "Name";
+        }
         private void btnLogout_Click(object sender, EventArgs e)
         {
             FrmLogin LoginScreen = new FrmLogin();
@@ -221,9 +247,9 @@ namespace GUI_IT
         private void btnReportClear_Click(object sender, EventArgs e)
         {
             txtTicketIDSolve.Clear();
-            txtEmailSolved.Clear();
+            //txtEmailSolved.Clear();
             
-            txtUserEmailSolved.Clear();
+            //txtUserEmailSolved.Clear();
             
             txtTicketDescribeSolved.Clear();
             txtTicketDetailSolved.Clear();
@@ -232,9 +258,9 @@ namespace GUI_IT
         private void btnClearUnsolved_Click(object sender, EventArgs e)
         {
             txtTicketID.Clear();
-            txtITEmail.Clear();
+            //txtITEmail.Clear();
             
-            txtProjectEmail.Clear();
+           // txtProjectEmail.Clear();
            
             txtTicketSummary.Clear();
             txtUnsolvedExplain.Clear();
@@ -254,9 +280,9 @@ namespace GUI_IT
         {
             string x = txtTicketIDSolve.Text.ToString();
             int y = System.Convert.ToInt32(x);
-            string b = txtEmailSolved.Text.ToString();
+            string b = cbxn.Text.ToString();
             string c = cbxurg1.Text.ToString();
-            string d = txtUserEmailSolved.Text.ToString();
+            string d = cbxp.Text.ToString();
             string g = cbxcat1.Text.ToString();
             string l = txtTicketDetailSolved.Text.ToString();
             string f = txtTicketDescribeSolved.Text.ToString();
@@ -268,9 +294,9 @@ namespace GUI_IT
         {
             string x = txtTicketID.Text.ToString();
             int y = System.Convert.ToInt32(x);
-            string b = txtITEmail.Text.ToString();
+            string b = cbxu.Text.ToString();
             string c = cbxurg.Text.ToString();
-            string d = txtProjectEmail.Text.ToString();
+            string d = cbxuu.Text.ToString();
             string g = cbxcat.Text.ToString();
             string f = txtTicketSummary.Text.ToString();
             string l = txtUnsolvedExplain.Text.ToString();

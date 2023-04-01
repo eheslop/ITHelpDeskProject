@@ -91,6 +91,15 @@ namespace GUI_IT
             return name;
         }
 
+        public static string getUser(string user)
+        {
+            SqlConnection con = Connect();
+            String query = "SELECT Username FROM RegisteredUsers WHERE Name = '" + user.ToString() + "';";
+            SqlCommand cmd = new SqlCommand(query, con);
+            string name = (string)cmd.ExecuteScalar();
+            return name;
+        }
+
         public static string getNamee(string user)
         {
             SqlConnection con = Connect();
@@ -438,6 +447,44 @@ namespace GUI_IT
             SqlCommand cmd = new SqlCommand(query, con);
             int pass = (int)cmd.ExecuteScalar();
             return pass;
+        }
+
+        public static DataTable ITname()
+        {
+            string x = "IT Support Team";
+            SqlConnection con = Connect();
+            string query = "Select * from RegisteredUsers where Role = '" + x + "'; ";
+            SqlCommand cmd = new SqlCommand(query, con);
+            cmd.ExecuteNonQuery();
+            SqlDataAdapter da = new SqlDataAdapter();
+            da.SelectCommand = cmd;
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+
+            DataRow item = dt.NewRow();
+            item[1] = "Select Name";
+            dt.Rows.InsertAt(item, 0);
+
+            return dt;
+        }
+
+        public static DataTable PMname()
+        {
+            string x = "Project Member";
+            SqlConnection con = Connect();
+            string query = "Select * from RegisteredUsers where Role = '" + x + "'; ";
+            SqlCommand cmd = new SqlCommand(query, con);
+            cmd.ExecuteNonQuery();
+            SqlDataAdapter da = new SqlDataAdapter();
+            da.SelectCommand = cmd;
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+
+            DataRow item = dt.NewRow();
+            item[1] = "Select Name";
+            dt.Rows.InsertAt(item, 0);
+
+            return dt;
         }
     }
 }

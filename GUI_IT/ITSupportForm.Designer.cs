@@ -60,12 +60,10 @@
             this.lblTicketID = new System.Windows.Forms.Label();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.tabShare = new System.Windows.Forms.TabPage();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtuser = new System.Windows.Forms.TextBox();
+            this.cbxn = new System.Windows.Forms.ComboBox();
             this.DGVShare = new System.Windows.Forms.DataGridView();
             this.btnShare = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
-            this.txtname = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -473,12 +471,10 @@
             // tabShare
             // 
             this.tabShare.BackColor = System.Drawing.Color.LightGray;
-            this.tabShare.Controls.Add(this.label9);
-            this.tabShare.Controls.Add(this.txtuser);
+            this.tabShare.Controls.Add(this.cbxn);
             this.tabShare.Controls.Add(this.DGVShare);
             this.tabShare.Controls.Add(this.btnShare);
             this.tabShare.Controls.Add(this.btnClear);
-            this.tabShare.Controls.Add(this.txtname);
             this.tabShare.Controls.Add(this.label8);
             this.tabShare.Controls.Add(this.txtEmail);
             this.tabShare.Controls.Add(this.label7);
@@ -494,26 +490,13 @@
             this.tabShare.TabIndex = 1;
             this.tabShare.Text = "Share Tickets";
             // 
-            // label9
+            // cbxn
             // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.DarkGray;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(9, 168);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(551, 25);
-            this.label9.TabIndex = 81;
-            this.label9.Text = "Enter the Username of the IT member you wish to share with:";
-            // 
-            // txtuser
-            // 
-            this.txtuser.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtuser.Location = new System.Drawing.Point(14, 196);
-            this.txtuser.MaxLength = 50;
-            this.txtuser.Name = "txtuser";
-            this.txtuser.Size = new System.Drawing.Size(503, 30);
-            this.txtuser.TabIndex = 80;
+            this.cbxn.FormattingEnabled = true;
+            this.cbxn.Location = new System.Drawing.Point(11, 158);
+            this.cbxn.Name = "cbxn";
+            this.cbxn.Size = new System.Drawing.Size(501, 31);
+            this.cbxn.TabIndex = 82;
             // 
             // DGVShare
             // 
@@ -555,21 +538,12 @@
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = false;
             // 
-            // txtname
-            // 
-            this.txtname.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtname.Location = new System.Drawing.Point(12, 125);
-            this.txtname.MaxLength = 50;
-            this.txtname.Name = "txtname";
-            this.txtname.Size = new System.Drawing.Size(503, 30);
-            this.txtname.TabIndex = 75;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.DarkGray;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(9, 97);
+            this.label8.Location = new System.Drawing.Point(11, 130);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(514, 25);
@@ -579,7 +553,7 @@
             // txtEmail
             // 
             this.txtEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtEmail.Location = new System.Drawing.Point(12, 257);
+            this.txtEmail.Location = new System.Drawing.Point(10, 236);
             this.txtEmail.MaxLength = 50;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(505, 30);
@@ -591,7 +565,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.DarkGray;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(9, 229);
+            this.label7.Location = new System.Drawing.Point(9, 208);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(337, 25);
@@ -601,23 +575,25 @@
             // txtTicketID
             // 
             this.txtTicketID.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtTicketID.Location = new System.Drawing.Point(11, 64);
+            this.txtTicketID.Location = new System.Drawing.Point(11, 83);
             this.txtTicketID.MaxLength = 50;
             this.txtTicketID.Name = "txtTicketID";
             this.txtTicketID.Size = new System.Drawing.Size(504, 30);
             this.txtTicketID.TabIndex = 71;
+            this.txtTicketID.TextChanged += new System.EventHandler(this.txtTicketID_TextChanged);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.DarkGray;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(9, 36);
+            this.label6.Location = new System.Drawing.Point(12, 55);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(392, 25);
             this.label6.TabIndex = 70;
             this.label6.Text = "Enter the ID of the ticket you wish to share:";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // lblShare
             // 
@@ -748,7 +724,6 @@
         private Label label5;
         private TextBox txtTicketID;
         private Label label6;
-        private TextBox txtname;
         private Label label8;
         private TextBox txtEmail;
         private Label label7;
@@ -757,7 +732,6 @@
         private Button btnClear;
         private DataGridView DGVShare;
         private PictureBox pictureBox9;
-        private TextBox txtuser;
-        private Label label9;
+        private ComboBox cbxn;
     }
 }

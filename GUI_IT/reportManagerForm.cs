@@ -22,6 +22,7 @@ namespace GUI_IT
             InitializeComponent();
             Fill();
             Fill1();
+            combo();
             lblUser.Text = newUser_.FirstName + "!";
             lblLoggedIn.Text = "Logged in as: " + newUser_.FirstName;
         }
@@ -40,6 +41,7 @@ namespace GUI_IT
         }
         private void Fill()
         {
+            string x = "Unsolved";
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
             builder.DataSource = "redagents.database.windows.net";
             builder.UserID = "kwekwe";
@@ -47,7 +49,7 @@ namespace GUI_IT
             builder.InitialCatalog = "red_Agents";
             SqlConnection con = new SqlConnection(builder.ConnectionString);
             con.Open();
-            string query = "Select * from Tickets";
+            string query = "Select * from Tickets where Status = '"+x+"'; ";
             SqlDataAdapter da = new SqlDataAdapter(query, con);
             DataTable dt = new DataTable();
             da.Fill(dt);
@@ -75,14 +77,20 @@ namespace GUI_IT
         {
             string x = txtTicketID.Text.ToString();
             int y = System.Convert.ToInt32(x);
-            string z = txtUsername.Text.ToString();
+            string k = cbxn.Text.ToString();
+            string z = Sql.getUser(k);
             string f = txtEmail.Text.ToString();
             Sql.Addcoll(z, y);
             Sql.add2(z, y, f);
         }
-
+        private void combo()
+        {
+            cbxn.DataSource = Sql.ITname();
+            cbxn.DisplayMember = "Name";
+        }
         private void Fill1()
         {
+            string x = "Unsolved";
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
             builder.DataSource = "redagents.database.windows.net";
             builder.UserID = "kwekwe";
@@ -90,7 +98,7 @@ namespace GUI_IT
             builder.InitialCatalog = "red_Agents";
             SqlConnection con = new SqlConnection(builder.ConnectionString);
             con.Open();
-            string query = "Select * from Tickets";
+            string query = "Select * from Tickets where Status = '"+x+"';";
             SqlDataAdapter da = new SqlDataAdapter(query, con);
             DataTable dt = new DataTable();
             da.Fill(dt);
@@ -100,6 +108,27 @@ namespace GUI_IT
 
         }
 
+        private void Fill2()
+        {
+            string x = "Solved";
+            SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
+            builder.DataSource = "redagents.database.windows.net";
+            builder.UserID = "kwekwe";
+            builder.Password = "Password1!";
+            builder.InitialCatalog = "red_Agents";
+            SqlConnection con = new SqlConnection(builder.ConnectionString);
+            con.Open();
+            string query = "Select * from Tickets where Status = '" + x + "';";
+            SqlDataAdapter da = new SqlDataAdapter(query, con);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            DGVT.DataSource = dt;
+            DGVAssign.EditMode = DataGridViewEditMode.EditOnEnter;
+            con.Close();
+
+        }
+
+
         private void tabAssign_Click(object sender, EventArgs e)
         {
 
@@ -108,13 +137,23 @@ namespace GUI_IT
         private void btnClear_Click(object sender, EventArgs e)
         {
             txtTicketID.Clear();
-            txtUsername.Clear();
+            //txtUsername.Clear();
             txtEmail.Clear();
         }
 
         private void DGVT_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void btnUnsolved_Click(object sender, EventArgs e)
+        {
+            Fill();
+        }
+
+        private void btnSolved_Click(object sender, EventArgs e)
+        {
+            Fill2();
         }
     }
 }

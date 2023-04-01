@@ -23,6 +23,7 @@ namespace GUI_IT
             lblLoggedIn.Text = "Logged in as: " + newUser_.FirstName;
             Fill1();
             Fill2();
+            combo();
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
@@ -52,7 +53,7 @@ namespace GUI_IT
         private void btnClear_Click(object sender, EventArgs e)
         {
             txtTicketID.Clear();
-            txtname.Clear();
+            //txtname.Clear();
             txtEmail.Clear();
             frmUserProf UserProfile = new frmUserProf(newUser_);
             UserProfile.ShowDialog();
@@ -69,7 +70,7 @@ namespace GUI_IT
             builder.InitialCatalog = "red_Agents";
             SqlConnection con = new SqlConnection(builder.ConnectionString);
             con.Open();
-            string query = "Select * from Tickets where AssignedTo = '" + x + "' and Status = '"+y+"'; ";
+            string query = "Select * from Tickets where AssignedTo = '" + x + "' and Status = '" + y + "'; ";
             SqlDataAdapter da = new SqlDataAdapter(query, con);
             DataTable dt = new DataTable();
             da.Fill(dt);
@@ -77,6 +78,12 @@ namespace GUI_IT
             DGVS.EditMode = DataGridViewEditMode.EditOnEnter;
             con.Close();
 
+        }
+
+        private void combo()
+        {
+            cbxn.DataSource = Sql.ITname();
+            cbxn.DisplayMember= "Name";
         }
 
         private void Fill2()
@@ -119,11 +126,21 @@ namespace GUI_IT
         {
             string x = txtTicketID.Text.ToString();
             int y = System.Convert.ToInt32(x);
-            string a = txtname.Text.ToString();
-            string b = txtuser.Text.ToString();
+            string a = cbxn.Text.ToString();
+            string b = Sql.getUser(a);
             string c = txtEmail.Text.ToString();
             Sql.Addcoll(b, y);
             Sql.add2(b, y, c);
+        }
+
+        private void txtTicketID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

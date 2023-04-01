@@ -57,12 +57,12 @@
             this.DGVT = new System.Windows.Forms.DataGridView();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.tabAssign = new System.Windows.Forms.TabPage();
+            this.cbxn = new System.Windows.Forms.ComboBox();
             this.btnViewReopenedTable = new System.Windows.Forms.Button();
             this.btnViewUnsolvedTable = new System.Windows.Forms.Button();
             this.DGVAssign = new System.Windows.Forms.DataGridView();
             this.btnAssign = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
-            this.txtUsername = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -383,6 +383,7 @@
             this.btnSolved.TabIndex = 56;
             this.btnSolved.Text = "View Solved Tickets";
             this.btnSolved.UseVisualStyleBackColor = false;
+            this.btnSolved.Click += new System.EventHandler(this.btnSolved_Click);
             // 
             // btnUnsolved
             // 
@@ -397,6 +398,7 @@
             this.btnUnsolved.TabIndex = 55;
             this.btnUnsolved.Text = "View Unsolved Tickets";
             this.btnUnsolved.UseVisualStyleBackColor = false;
+            this.btnUnsolved.Click += new System.EventHandler(this.btnUnsolved_Click);
             // 
             // lblMonitor
             // 
@@ -438,12 +440,12 @@
             // tabAssign
             // 
             this.tabAssign.BackColor = System.Drawing.Color.LightGray;
+            this.tabAssign.Controls.Add(this.cbxn);
             this.tabAssign.Controls.Add(this.btnViewReopenedTable);
             this.tabAssign.Controls.Add(this.btnViewUnsolvedTable);
             this.tabAssign.Controls.Add(this.DGVAssign);
             this.tabAssign.Controls.Add(this.btnAssign);
             this.tabAssign.Controls.Add(this.btnClear);
-            this.tabAssign.Controls.Add(this.txtUsername);
             this.tabAssign.Controls.Add(this.label8);
             this.tabAssign.Controls.Add(this.txtEmail);
             this.tabAssign.Controls.Add(this.label7);
@@ -458,6 +460,14 @@
             this.tabAssign.Size = new System.Drawing.Size(1022, 369);
             this.tabAssign.TabIndex = 1;
             this.tabAssign.Text = "Assign Tickets";
+            // 
+            // cbxn
+            // 
+            this.cbxn.FormattingEnabled = true;
+            this.cbxn.Location = new System.Drawing.Point(11, 145);
+            this.cbxn.Name = "cbxn";
+            this.cbxn.Size = new System.Drawing.Size(493, 31);
+            this.cbxn.TabIndex = 91;
             // 
             // btnViewReopenedTable
             // 
@@ -504,13 +514,14 @@
             this.btnAssign.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAssign.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnAssign.ForeColor = System.Drawing.Color.White;
-            this.btnAssign.Location = new System.Drawing.Point(189, 315);
+            this.btnAssign.Location = new System.Drawing.Point(188, 285);
             this.btnAssign.Margin = new System.Windows.Forms.Padding(2);
             this.btnAssign.Name = "btnAssign";
             this.btnAssign.Size = new System.Drawing.Size(130, 41);
             this.btnAssign.TabIndex = 87;
             this.btnAssign.Text = "Assign Ticket";
             this.btnAssign.UseVisualStyleBackColor = false;
+            this.btnAssign.Click += new System.EventHandler(this.btnAssign_Click);
             // 
             // btnClear
             // 
@@ -518,7 +529,7 @@
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnClear.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnClear.ForeColor = System.Drawing.Color.White;
-            this.btnClear.Location = new System.Drawing.Point(16, 315);
+            this.btnClear.Location = new System.Drawing.Point(13, 285);
             this.btnClear.Margin = new System.Windows.Forms.Padding(2);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(130, 41);
@@ -526,33 +537,23 @@
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = false;
             // 
-            // txtUsername
-            // 
-            this.txtUsername.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtUsername.Location = new System.Drawing.Point(14, 165);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtUsername.MaxLength = 50;
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(488, 30);
-            this.txtUsername.TabIndex = 84;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.DarkGray;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(12, 137);
+            this.label8.Location = new System.Drawing.Point(11, 117);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(522, 25);
+            this.label8.Size = new System.Drawing.Size(525, 25);
             this.label8.TabIndex = 83;
-            this.label8.Text = "Enter username of the IT member you wish to assign it to:";
+            this.label8.Text = "Select the Name of the IT member you wish to assign it to:";
             // 
             // txtEmail
             // 
             this.txtEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtEmail.Location = new System.Drawing.Point(14, 242);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEmail.Location = new System.Drawing.Point(13, 208);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmail.MaxLength = 50;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(488, 30);
@@ -563,7 +564,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.DarkGray;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(17, 214);
+            this.label7.Location = new System.Drawing.Point(8, 179);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(337, 25);
@@ -573,8 +574,8 @@
             // txtTicketID
             // 
             this.txtTicketID.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtTicketID.Location = new System.Drawing.Point(14, 82);
-            this.txtTicketID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTicketID.Location = new System.Drawing.Point(11, 83);
+            this.txtTicketID.Margin = new System.Windows.Forms.Padding(4);
             this.txtTicketID.MaxLength = 50;
             this.txtTicketID.Name = "txtTicketID";
             this.txtTicketID.Size = new System.Drawing.Size(488, 30);
@@ -585,7 +586,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.DarkGray;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(14, 54);
+            this.label6.Location = new System.Drawing.Point(11, 54);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(397, 25);
@@ -598,7 +599,7 @@
             this.pictureBox6.Location = new System.Drawing.Point(8, 41);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(523, 262);
+            this.pictureBox6.Size = new System.Drawing.Size(528, 224);
             this.pictureBox6.TabIndex = 85;
             this.pictureBox6.TabStop = false;
             // 
@@ -718,7 +719,6 @@
         private PictureBox pictureBox5;
         private Button btnAssign;
         private Button btnClear;
-        private TextBox txtUsername;
         private Label label8;
         private TextBox txtEmail;
         private Label label7;
@@ -728,5 +728,6 @@
         private Button btnViewReopenedTable;
         private Button btnViewUnsolvedTable;
         private DataGridView DGVAssign;
+        private ComboBox cbxn;
     }
 }
