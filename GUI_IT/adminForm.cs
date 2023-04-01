@@ -178,6 +178,7 @@ namespace GUI_IT
 
         private void Fill1()
         {
+            string x = "Unsolved";
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
             builder.DataSource = "redagents.database.windows.net";
             builder.UserID = "kwekwe";
@@ -185,7 +186,7 @@ namespace GUI_IT
             builder.InitialCatalog = "red_Agents";
             SqlConnection con = new SqlConnection(builder.ConnectionString);
             con.Open();
-            string query = "Select * from Tickets";
+            string query = "Select * from Tickets where Status = '" +x+ "' ;";
             SqlDataAdapter da = new SqlDataAdapter(query, con);
             DataTable dt = new DataTable();
             da.Fill(dt);
@@ -194,6 +195,24 @@ namespace GUI_IT
             con.Close();
         }
 
+        private void Fill2()
+        {
+            string x = "Solved";
+            SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
+            builder.DataSource = "redagents.database.windows.net";
+            builder.UserID = "kwekwe";
+            builder.Password = "Password1!";
+            builder.InitialCatalog = "red_Agents";
+            SqlConnection con = new SqlConnection(builder.ConnectionString);
+            con.Open();
+            string query = "Select * from Tickets where Status = '" + x + "' ;";
+            SqlDataAdapter da = new SqlDataAdapter(query, con);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            DGVV.DataSource = dt;
+            DGVV.EditMode = DataGridViewEditMode.EditOnEnter;
+            con.Close();
+        }
         private void DGVV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -219,6 +238,16 @@ namespace GUI_IT
             txtProblemCategory.Clear();
             txtTicketSummary.Clear();
             txtUnsolvedExplain.Clear();
+        }
+
+        private void btnUnsolvedView_Click(object sender, EventArgs e)
+        {
+            Fill1();
+        }
+
+        private void btnSolvedView_Click(object sender, EventArgs e)
+        {
+            Fill2();
         }
     }
 }

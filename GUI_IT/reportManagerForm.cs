@@ -111,5 +111,10 @@ namespace GUI_IT
             txtUsername.Clear();
             txtEmail.Clear();
         }
+
+        private void DGVT_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

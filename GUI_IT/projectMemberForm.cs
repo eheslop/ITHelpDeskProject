@@ -17,7 +17,7 @@ namespace GUI_IT
     {
         private SessionRegister newUser_;
         public string User { get; set; }
-        public string Email { get; set; }
+        public string emaill { get; set; }
         public string FullName { get; set; }
 
         public frmProjectMember(SessionRegister newUser)
@@ -29,7 +29,7 @@ namespace GUI_IT
             lblUser.Text = newUser_.FirstName + "!";
             lblLoggedIn.Text = "Logged in as: " + newUser_.FirstName;
             User = newUser_.Username;
-            Email = newUser_.Email;
+            emaill = newUser_.Email;
             FullName = newUser_.FullName;
             Fill();
         }
@@ -122,8 +122,8 @@ namespace GUI_IT
             string Priority = cbxUrgency.Text.ToString();
 
             int id = Sql.count();
-            Sql.RaiseTicket(id, FullName, User, Category, Description, Email, Priority);
-
+            Sql.RaiseTicket(id, FullName, User, Category, Description, emaill, Priority);
+            Email.sendEmail("Raised Ticket", User, 0, id);
             MessageBox.Show("Your ticket was raised successfully, and you will recieve email updates regarding the status of your ticket.", "Ticket Successfully Raised!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             cbxType.ResetText();

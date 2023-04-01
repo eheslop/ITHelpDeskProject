@@ -201,7 +201,7 @@ namespace GUI_IT
         public static void RaiseTicket(int id, string name, string username, string Category, string Description, string email, string Priority)
         {
             SqlConnection con = Connect();
-            string x = "Pending";
+            string x = "Unsolved";
             int y = 0;
             string z = "NONE";
             String query = "INSERT INTO Tickets(id, Name, Username, Category, Description, Status, Email, Priority, Collaborators, Num_Of_Coll) VALUES('" + id + "',  '" + name.ToString() + "', '" + username.ToString() + "', '" + Category.ToString() + "', '" + Description.ToString() + "', '" +x+ "',  '" + email.ToString() + "', '" + Priority.ToString() + "', '" +z+ "', '" +y+ "');";
@@ -342,6 +342,15 @@ namespace GUI_IT
             SqlConnection con = Connect();
            if((x-1) == 0)
            {
+                String query = "UPDATE Tickets SET AssignedTo = '" + user + "' where ID = '" + id + "';";
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.ExecuteNonQuery();
+                String query1 = "UPDATE Tickets SET Num_Of_Coll = '" + x + "' where ID = '" + id + "';";
+                SqlCommand cmd1 = new SqlCommand(query1, con);
+                cmd1.ExecuteNonQuery();
+           }
+           else if((x-1) == 1)
+           {
                 String query = "UPDATE Tickets SET Collaborators = '" + user + "' where ID = '" + id + "';";
                 SqlCommand cmd = new SqlCommand(query, con);
                 cmd.ExecuteNonQuery();
@@ -349,16 +358,15 @@ namespace GUI_IT
                 SqlCommand cmd1 = new SqlCommand(query1, con);
                 cmd1.ExecuteNonQuery();
            }
-           else
-           {
+            else
+            {
                 String query = "UPDATE Tickets SET Collaborators = '" + y + "' where ID = '" + id + "';";
                 SqlCommand cmd = new SqlCommand(query, con);
                 cmd.ExecuteNonQuery();
                 String query1 = "UPDATE Tickets SET Num_Of_Coll = '" + x + "' where ID = '" + id + "';";
                 SqlCommand cmd1 = new SqlCommand(query1, con);
                 cmd1.ExecuteNonQuery();
-
-           }
+            }
             con.Close();
         }
         
@@ -389,6 +397,28 @@ namespace GUI_IT
             SqlCommand cmd = new SqlCommand(query, con);
             string pass = (string)cmd.ExecuteScalar();
             return pass;
+        }
+
+        public static string tickemail(int id)
+        {
+            SqlConnection con = Connect();
+            String query = "SELECT Email FROM Tickets where Id = '" + id + "';";
+            SqlCommand cmd = new SqlCommand(query, con);
+            string pass = (string)cmd.ExecuteScalar();
+            return pass;
+        }
+
+        public static void solve(int id, string user, string raised, string email, string solution)
+        {
+            string y = "Solved";
+            SqlConnection con = Connect();
+            String query2 = "INSERT INTO Solved_Tickets(Id, UsernameIT, UsernamePM, Email, Solution) VALUES('" + id + "', '" + user.ToString() + "','" + raised.ToString() + "', '" + email.ToString() + "', '" + solution.ToString() + "');";
+            SqlCommand cmd2 = new SqlCommand(query2, con);
+            String query = "UPDATE Tickets SET Status = '" + y + "' where ID = '" + id + "';";
+            SqlCommand cmd = new SqlCommand(query, con);
+            cmd.ExecuteNonQuery();
+            cmd2.ExecuteNonQuery();
+            con.Close();
         }
     }
 }
