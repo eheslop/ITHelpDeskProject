@@ -29,1131 +29,1121 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAdmin));
-            this.btnGenerate = new System.Windows.Forms.Button();
-            this.btnRegistration = new System.Windows.Forms.Button();
-            this.btnLogout = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Rectangle1 = new System.Windows.Forms.PictureBox();
-            this.DGVR = new System.Windows.Forms.DataGridView();
-            this.lblHeader = new System.Windows.Forms.Label();
-            this.lblAdminHeader = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pnlReportGenerate = new System.Windows.Forms.Panel();
-            this.tabReportGeneration = new System.Windows.Forms.TabControl();
-            this.tabHome = new System.Windows.Forms.TabPage();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.lblUser = new System.Windows.Forms.Label();
-            this.lblWelcomeMessage = new System.Windows.Forms.Label();
-            this.lblDescribeHome = new System.Windows.Forms.Label();
-            this.tabView = new System.Windows.Forms.TabPage();
-            this.btnSolvedView = new System.Windows.Forms.Button();
-            this.btnUnsolvedView = new System.Windows.Forms.Button();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.DGVV = new System.Windows.Forms.DataGridView();
-            this.label8 = new System.Windows.Forms.Label();
-            this.tabSolved = new System.Windows.Forms.TabPage();
-            this.btnReportClear = new System.Windows.Forms.Button();
-            this.label19 = new System.Windows.Forms.Label();
-            this.txtTicketIDSolve = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.txtUrgencySolved = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.txtTicketDescribeSolved = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.txtTicketDetailSolved = new System.Windows.Forms.TextBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.txtUserEmailSolved = new System.Windows.Forms.TextBox();
-            this.txtEmailSolved = new System.Windows.Forms.TextBox();
-            this.txtTicketCategorySolved = new System.Windows.Forms.TextBox();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.btnSubmitSolved = new System.Windows.Forms.Button();
-            this.btnClearSolved = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.tabUnsolved = new System.Windows.Forms.TabPage();
-            this.label13 = new System.Windows.Forms.Label();
-            this.txtTicketSummary = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtUnsolvedExplain = new System.Windows.Forms.TextBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.lblTicketID = new System.Windows.Forms.Label();
-            this.txtProjectEmail = new System.Windows.Forms.TextBox();
-            this.txtTicketID = new System.Windows.Forms.TextBox();
-            this.txtTicketUrgency = new System.Windows.Forms.TextBox();
-            this.txtITEmail = new System.Windows.Forms.TextBox();
-            this.txtProblemCategory = new System.Windows.Forms.TextBox();
-            this.btnSubmitUnsolved = new System.Windows.Forms.Button();
-            this.btnClearUnsolved = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.ProfilePictureBox = new System.Windows.Forms.PictureBox();
-            this.btnApproveDeny = new System.Windows.Forms.Button();
-            this.btnClear = new System.Windows.Forms.Button();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.lblLoggedIn = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.btnrefre = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Rectangle1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DGVR)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.pnlReportGenerate.SuspendLayout();
-            this.tabReportGeneration.SuspendLayout();
-            this.tabHome.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            this.tabView.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DGVV)).BeginInit();
-            this.tabSolved.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
-            this.tabUnsolved.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ProfilePictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            this.SuspendLayout();
+            btnGenerate = new Button();
+            btnRegistration = new Button();
+            btnLogout = new Button();
+            pictureBox1 = new PictureBox();
+            Rectangle1 = new PictureBox();
+            DGVR = new DataGridView();
+            lblHeader = new Label();
+            lblAdminHeader = new Label();
+            pictureBox2 = new PictureBox();
+            pnlReportGenerate = new Panel();
+            tabReportGeneration = new TabControl();
+            tabHome = new TabPage();
+            label7 = new Label();
+            label5 = new Label();
+            label4 = new Label();
+            pictureBox13 = new PictureBox();
+            pictureBox10 = new PictureBox();
+            label6 = new Label();
+            pictureBox12 = new PictureBox();
+            pictureBox9 = new PictureBox();
+            lblUser = new Label();
+            lblWelcomeMessage = new Label();
+            lblDescribeHome = new Label();
+            tabView = new TabPage();
+            btnSolvedView = new Button();
+            btnUnsolvedView = new Button();
+            pictureBox7 = new PictureBox();
+            DGVV = new DataGridView();
+            label8 = new Label();
+            tabSolved = new TabPage();
+            btnReportClear = new Button();
+            label19 = new Label();
+            txtTicketIDSolve = new TextBox();
+            label17 = new Label();
+            label16 = new Label();
+            txtUrgencySolved = new TextBox();
+            button1 = new Button();
+            txtTicketDescribeSolved = new TextBox();
+            label14 = new Label();
+            label15 = new Label();
+            txtTicketDetailSolved = new TextBox();
+            pictureBox5 = new PictureBox();
+            txtUserEmailSolved = new TextBox();
+            txtEmailSolved = new TextBox();
+            txtTicketCategorySolved = new TextBox();
+            pictureBox15 = new PictureBox();
+            label18 = new Label();
+            btnSubmitSolved = new Button();
+            btnClearSolved = new Button();
+            label2 = new Label();
+            pictureBox16 = new PictureBox();
+            tabUnsolved = new TabPage();
+            label13 = new Label();
+            txtTicketSummary = new TextBox();
+            label12 = new Label();
+            label11 = new Label();
+            label10 = new Label();
+            label9 = new Label();
+            txtUnsolvedExplain = new TextBox();
+            pictureBox14 = new PictureBox();
+            lblTicketID = new Label();
+            txtProjectEmail = new TextBox();
+            txtTicketID = new TextBox();
+            txtTicketUrgency = new TextBox();
+            txtITEmail = new TextBox();
+            txtProblemCategory = new TextBox();
+            btnSubmitUnsolved = new Button();
+            btnClearUnsolved = new Button();
+            label3 = new Label();
+            pictureBox8 = new PictureBox();
+            pictureBox11 = new PictureBox();
+            ProfilePictureBox = new PictureBox();
+            btnApproveDeny = new Button();
+            btnClear = new Button();
+            pictureBox4 = new PictureBox();
+            lblLoggedIn = new Label();
+            pictureBox6 = new PictureBox();
+            btnrefre = new Button();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Rectangle1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)DGVR).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            pnlReportGenerate.SuspendLayout();
+            tabReportGeneration.SuspendLayout();
+            tabHome.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
+            tabView.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)DGVV).BeginInit();
+            tabSolved.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox15).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox16).BeginInit();
+            tabUnsolved.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)ProfilePictureBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            SuspendLayout();
             // 
             // btnGenerate
             // 
-            this.btnGenerate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnGenerate.AutoSize = true;
-            this.btnGenerate.BackColor = System.Drawing.Color.Black;
-            this.btnGenerate.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnGenerate.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.btnGenerate.ForeColor = System.Drawing.Color.White;
-            this.btnGenerate.Location = new System.Drawing.Point(183, 38);
-            this.btnGenerate.Margin = new System.Windows.Forms.Padding(2);
-            this.btnGenerate.Name = "btnGenerate";
-            this.btnGenerate.Size = new System.Drawing.Size(157, 36);
-            this.btnGenerate.TabIndex = 18;
-            this.btnGenerate.Text = "Generate Reports";
-            this.btnGenerate.UseVisualStyleBackColor = false;
-            this.btnGenerate.Click += new System.EventHandler(this.btnGenerate_Click);
+            btnGenerate.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnGenerate.AutoSize = true;
+            btnGenerate.BackColor = Color.Black;
+            btnGenerate.FlatStyle = FlatStyle.Popup;
+            btnGenerate.Font = new Font("Segoe UI", 10F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            btnGenerate.ForeColor = Color.White;
+            btnGenerate.Location = new Point(229, 48);
+            btnGenerate.Margin = new Padding(2);
+            btnGenerate.Name = "btnGenerate";
+            btnGenerate.Size = new Size(196, 45);
+            btnGenerate.TabIndex = 18;
+            btnGenerate.Text = "Generate Reports";
+            btnGenerate.UseVisualStyleBackColor = false;
+            btnGenerate.Click += btnGenerate_Click;
             // 
             // btnRegistration
             // 
-            this.btnRegistration.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRegistration.AutoSize = true;
-            this.btnRegistration.BackColor = System.Drawing.Color.Black;
-            this.btnRegistration.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnRegistration.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.btnRegistration.ForeColor = System.Drawing.Color.White;
-            this.btnRegistration.Location = new System.Drawing.Point(73, 36);
-            this.btnRegistration.Margin = new System.Windows.Forms.Padding(2);
-            this.btnRegistration.Name = "btnRegistration";
-            this.btnRegistration.Size = new System.Drawing.Size(116, 39);
-            this.btnRegistration.TabIndex = 17;
-            this.btnRegistration.Text = "Registration";
-            this.btnRegistration.UseVisualStyleBackColor = false;
-            this.btnRegistration.Click += new System.EventHandler(this.btnRegistration_Click);
+            btnRegistration.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnRegistration.AutoSize = true;
+            btnRegistration.BackColor = Color.Black;
+            btnRegistration.FlatStyle = FlatStyle.Popup;
+            btnRegistration.Font = new Font("Segoe UI", 10F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            btnRegistration.ForeColor = Color.White;
+            btnRegistration.Location = new Point(91, 45);
+            btnRegistration.Margin = new Padding(2);
+            btnRegistration.Name = "btnRegistration";
+            btnRegistration.Size = new Size(145, 49);
+            btnRegistration.TabIndex = 17;
+            btnRegistration.Text = "Registration";
+            btnRegistration.UseVisualStyleBackColor = false;
+            btnRegistration.Click += btnRegistration_Click;
             // 
             // btnLogout
             // 
-            this.btnLogout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLogout.AutoSize = true;
-            this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnLogout.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnLogout.ForeColor = System.Drawing.Color.White;
-            this.btnLogout.Location = new System.Drawing.Point(914, 0);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(2);
-            this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(95, 33);
-            this.btnLogout.TabIndex = 15;
-            this.btnLogout.Text = "Log Out";
-            this.btnLogout.UseVisualStyleBackColor = false;
-            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            btnLogout.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnLogout.AutoSize = true;
+            btnLogout.BackColor = Color.FromArgb(64, 0, 0);
+            btnLogout.FlatStyle = FlatStyle.Popup;
+            btnLogout.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            btnLogout.ForeColor = Color.White;
+            btnLogout.Location = new Point(1142, 0);
+            btnLogout.Margin = new Padding(2);
+            btnLogout.Name = "btnLogout";
+            btnLogout.Size = new Size(119, 41);
+            btnLogout.TabIndex = 15;
+            btnLogout.Text = "Log Out";
+            btnLogout.UseVisualStyleBackColor = false;
+            btnLogout.Click += btnLogout_Click;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.pictureBox1.Location = new System.Drawing.Point(-4, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1009, 33);
-            this.pictureBox1.TabIndex = 14;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            pictureBox1.BackColor = Color.FromArgb(64, 0, 0);
+            pictureBox1.Location = new Point(-5, 0);
+            pictureBox1.Margin = new Padding(2);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(1261, 41);
+            pictureBox1.TabIndex = 14;
+            pictureBox1.TabStop = false;
             // 
             // Rectangle1
             // 
-            this.Rectangle1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Rectangle1.BackColor = System.Drawing.Color.Black;
-            this.Rectangle1.Location = new System.Drawing.Point(-7, 20);
-            this.Rectangle1.Margin = new System.Windows.Forms.Padding(2);
-            this.Rectangle1.Name = "Rectangle1";
-            this.Rectangle1.Size = new System.Drawing.Size(1018, 64);
-            this.Rectangle1.TabIndex = 12;
-            this.Rectangle1.TabStop = false;
+            Rectangle1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            Rectangle1.BackColor = Color.Black;
+            Rectangle1.Location = new Point(-9, 25);
+            Rectangle1.Margin = new Padding(2);
+            Rectangle1.Name = "Rectangle1";
+            Rectangle1.Size = new Size(1272, 80);
+            Rectangle1.TabIndex = 12;
+            Rectangle1.TabStop = false;
             // 
             // DGVR
             // 
-            this.DGVR.AllowUserToAddRows = false;
-            this.DGVR.AllowUserToDeleteRows = false;
-            this.DGVR.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGVR.Location = new System.Drawing.Point(21, 145);
-            this.DGVR.Name = "DGVR";
-            this.DGVR.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders;
-            this.DGVR.RowTemplate.Height = 29;
-            this.DGVR.Size = new System.Drawing.Size(792, 358);
-            this.DGVR.TabIndex = 19;
+            DGVR.AllowUserToAddRows = false;
+            DGVR.AllowUserToDeleteRows = false;
+            DGVR.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            DGVR.Location = new Point(26, 181);
+            DGVR.Margin = new Padding(4, 4, 4, 4);
+            DGVR.Name = "DGVR";
+            DGVR.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders;
+            DGVR.RowTemplate.Height = 29;
+            DGVR.Size = new Size(990, 448);
+            DGVR.TabIndex = 19;
             // 
             // lblHeader
             // 
-            this.lblHeader.AutoSize = true;
-            this.lblHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblHeader.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblHeader.ForeColor = System.Drawing.Color.White;
-            this.lblHeader.Location = new System.Drawing.Point(0, 5);
-            this.lblHeader.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblHeader.Name = "lblHeader";
-            this.lblHeader.Size = new System.Drawing.Size(255, 25);
-            this.lblHeader.TabIndex = 48;
-            this.lblHeader.Text = "Red Agents IT Help Desk";
+            lblHeader.AutoSize = true;
+            lblHeader.BackColor = Color.FromArgb(64, 0, 0);
+            lblHeader.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblHeader.ForeColor = Color.White;
+            lblHeader.Location = new Point(0, 6);
+            lblHeader.Margin = new Padding(2, 0, 2, 0);
+            lblHeader.Name = "lblHeader";
+            lblHeader.Size = new Size(307, 29);
+            lblHeader.TabIndex = 48;
+            lblHeader.Text = "Red Agents IT Help Desk";
             // 
             // lblAdminHeader
             // 
-            this.lblAdminHeader.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblAdminHeader.AutoSize = true;
-            this.lblAdminHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblAdminHeader.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblAdminHeader.ForeColor = System.Drawing.Color.White;
-            this.lblAdminHeader.Location = new System.Drawing.Point(343, 81);
-            this.lblAdminHeader.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblAdminHeader.Name = "lblAdminHeader";
-            this.lblAdminHeader.Size = new System.Drawing.Size(355, 40);
-            this.lblAdminHeader.TabIndex = 50;
-            this.lblAdminHeader.Text = "New User Registration";
+            lblAdminHeader.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            lblAdminHeader.AutoSize = true;
+            lblAdminHeader.BackColor = Color.FromArgb(64, 0, 0);
+            lblAdminHeader.Font = new Font("Microsoft YaHei UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            lblAdminHeader.ForeColor = Color.White;
+            lblAdminHeader.Location = new Point(429, 101);
+            lblAdminHeader.Margin = new Padding(2, 0, 2, 0);
+            lblAdminHeader.Name = "lblAdminHeader";
+            lblAdminHeader.Size = new Size(430, 47);
+            lblAdminHeader.TabIndex = 50;
+            lblAdminHeader.Text = "New User Registration";
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.pictureBox2.Location = new System.Drawing.Point(-34, 77);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1106, 51);
-            this.pictureBox2.TabIndex = 49;
-            this.pictureBox2.TabStop = false;
+            pictureBox2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            pictureBox2.BackColor = Color.FromArgb(64, 0, 0);
+            pictureBox2.Location = new Point(-42, 96);
+            pictureBox2.Margin = new Padding(2);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(1382, 64);
+            pictureBox2.TabIndex = 49;
+            pictureBox2.TabStop = false;
             // 
             // pnlReportGenerate
             // 
-            this.pnlReportGenerate.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlReportGenerate.BackColor = System.Drawing.Color.White;
-            this.pnlReportGenerate.Controls.Add(this.tabReportGeneration);
-            this.pnlReportGenerate.Location = new System.Drawing.Point(-4, 131);
-            this.pnlReportGenerate.Margin = new System.Windows.Forms.Padding(2);
-            this.pnlReportGenerate.Name = "pnlReportGenerate";
-            this.pnlReportGenerate.Size = new System.Drawing.Size(1014, 397);
-            this.pnlReportGenerate.TabIndex = 15;
+            pnlReportGenerate.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            pnlReportGenerate.BackColor = Color.White;
+            pnlReportGenerate.Controls.Add(tabReportGeneration);
+            pnlReportGenerate.Location = new Point(-5, 164);
+            pnlReportGenerate.Margin = new Padding(2);
+            pnlReportGenerate.Name = "pnlReportGenerate";
+            pnlReportGenerate.Size = new Size(1268, 496);
+            pnlReportGenerate.TabIndex = 15;
             // 
             // tabReportGeneration
             // 
-            this.tabReportGeneration.Controls.Add(this.tabHome);
-            this.tabReportGeneration.Controls.Add(this.tabView);
-            this.tabReportGeneration.Controls.Add(this.tabSolved);
-            this.tabReportGeneration.Controls.Add(this.tabUnsolved);
-            this.tabReportGeneration.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.tabReportGeneration.Location = new System.Drawing.Point(-1, 0);
-            this.tabReportGeneration.Margin = new System.Windows.Forms.Padding(2);
-            this.tabReportGeneration.Name = "tabReportGeneration";
-            this.tabReportGeneration.SelectedIndex = 0;
-            this.tabReportGeneration.Size = new System.Drawing.Size(1027, 605);
-            this.tabReportGeneration.TabIndex = 18;
+            tabReportGeneration.Controls.Add(tabHome);
+            tabReportGeneration.Controls.Add(tabView);
+            tabReportGeneration.Controls.Add(tabSolved);
+            tabReportGeneration.Controls.Add(tabUnsolved);
+            tabReportGeneration.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            tabReportGeneration.Location = new Point(-1, 0);
+            tabReportGeneration.Margin = new Padding(2);
+            tabReportGeneration.Name = "tabReportGeneration";
+            tabReportGeneration.SelectedIndex = 0;
+            tabReportGeneration.Size = new Size(1284, 756);
+            tabReportGeneration.TabIndex = 18;
             // 
             // tabHome
             // 
-            this.tabHome.BackColor = System.Drawing.Color.LightGray;
-            this.tabHome.Controls.Add(this.label7);
-            this.tabHome.Controls.Add(this.label5);
-            this.tabHome.Controls.Add(this.label4);
-            this.tabHome.Controls.Add(this.pictureBox13);
-            this.tabHome.Controls.Add(this.pictureBox10);
-            this.tabHome.Controls.Add(this.label6);
-            this.tabHome.Controls.Add(this.pictureBox12);
-            this.tabHome.Controls.Add(this.pictureBox9);
-            this.tabHome.Controls.Add(this.lblUser);
-            this.tabHome.Controls.Add(this.lblWelcomeMessage);
-            this.tabHome.Controls.Add(this.lblDescribeHome);
-            this.tabHome.Location = new System.Drawing.Point(4, 32);
-            this.tabHome.Margin = new System.Windows.Forms.Padding(2);
-            this.tabHome.Name = "tabHome";
-            this.tabHome.Size = new System.Drawing.Size(1019, 569);
-            this.tabHome.TabIndex = 3;
-            this.tabHome.Text = "Report Homepage";
+            tabHome.BackColor = Color.LightGray;
+            tabHome.Controls.Add(label7);
+            tabHome.Controls.Add(label5);
+            tabHome.Controls.Add(label4);
+            tabHome.Controls.Add(pictureBox13);
+            tabHome.Controls.Add(pictureBox10);
+            tabHome.Controls.Add(label6);
+            tabHome.Controls.Add(pictureBox12);
+            tabHome.Controls.Add(pictureBox9);
+            tabHome.Controls.Add(lblUser);
+            tabHome.Controls.Add(lblWelcomeMessage);
+            tabHome.Controls.Add(lblDescribeHome);
+            tabHome.Location = new Point(4, 37);
+            tabHome.Margin = new Padding(2);
+            tabHome.Name = "tabHome";
+            tabHome.Size = new Size(1276, 715);
+            tabHome.TabIndex = 3;
+            tabHome.Text = "Report Homepage";
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.White;
-            this.label7.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(284, 230);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(685, 100);
-            this.label7.TabIndex = 82;
-            this.label7.Text = resources.GetString("label7.Text");
+            label7.AutoSize = true;
+            label7.BackColor = Color.White;
+            label7.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label7.Location = new Point(355, 288);
+            label7.Margin = new Padding(2, 0, 2, 0);
+            label7.Name = "label7";
+            label7.Size = new Size(809, 120);
+            label7.TabIndex = 82;
+            label7.Text = resources.GetString("label7.Text");
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.White;
-            this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(261, 88);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(724, 92);
-            this.label5.TabIndex = 81;
-            this.label5.Text = resources.GetString("label5.Text");
+            label5.AutoSize = true;
+            label5.BackColor = Color.White;
+            label5.Font = new Font("Microsoft YaHei UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.Location = new Point(326, 110);
+            label5.Margin = new Padding(2, 0, 2, 0);
+            label5.Name = "label5";
+            label5.Size = new Size(850, 108);
+            label5.TabIndex = 81;
+            label5.Text = resources.GetString("label5.Text");
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(25, 258);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(272, 32);
-            this.label4.TabIndex = 78;
-            this.label4.Text = "Unsolved Ticket Report";
+            label4.AutoSize = true;
+            label4.BackColor = Color.White;
+            label4.Font = new Font("Segoe UI", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label4.Location = new Point(31, 322);
+            label4.Margin = new Padding(2, 0, 2, 0);
+            label4.Name = "label4";
+            label4.Size = new Size(322, 38);
+            label4.TabIndex = 78;
+            label4.Text = "Unsolved Ticket Report";
             // 
             // pictureBox13
             // 
-            this.pictureBox13.BackColor = System.Drawing.Color.White;
-            this.pictureBox13.Location = new System.Drawing.Point(18, 224);
-            this.pictureBox13.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(928, 106);
-            this.pictureBox13.TabIndex = 77;
-            this.pictureBox13.TabStop = false;
+            pictureBox13.BackColor = Color.White;
+            pictureBox13.Location = new Point(22, 280);
+            pictureBox13.Margin = new Padding(2);
+            pictureBox13.Name = "pictureBox13";
+            pictureBox13.Size = new Size(1160, 132);
+            pictureBox13.TabIndex = 77;
+            pictureBox13.TabStop = false;
             // 
             // pictureBox10
             // 
-            this.pictureBox10.BackColor = System.Drawing.Color.Gray;
-            this.pictureBox10.Location = new System.Drawing.Point(11, 212);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(944, 130);
-            this.pictureBox10.TabIndex = 73;
-            this.pictureBox10.TabStop = false;
+            pictureBox10.BackColor = Color.Gray;
+            pictureBox10.Location = new Point(14, 265);
+            pictureBox10.Margin = new Padding(2);
+            pictureBox10.Name = "pictureBox10";
+            pictureBox10.Size = new Size(1180, 162);
+            pictureBox10.TabIndex = 73;
+            pictureBox10.TabStop = false;
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.White;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(27, 114);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(243, 32);
-            this.label6.TabIndex = 80;
-            this.label6.Text = "Solved Ticket Report";
+            label6.AutoSize = true;
+            label6.BackColor = Color.White;
+            label6.Font = new Font("Segoe UI", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label6.Location = new Point(34, 142);
+            label6.Margin = new Padding(2, 0, 2, 0);
+            label6.Name = "label6";
+            label6.Size = new Size(288, 38);
+            label6.TabIndex = 80;
+            label6.Text = "Solved Ticket Report";
             // 
             // pictureBox12
             // 
-            this.pictureBox12.BackColor = System.Drawing.Color.White;
-            this.pictureBox12.Location = new System.Drawing.Point(20, 78);
-            this.pictureBox12.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(928, 108);
-            this.pictureBox12.TabIndex = 76;
-            this.pictureBox12.TabStop = false;
+            pictureBox12.BackColor = Color.White;
+            pictureBox12.Location = new Point(25, 98);
+            pictureBox12.Margin = new Padding(2);
+            pictureBox12.Name = "pictureBox12";
+            pictureBox12.Size = new Size(1160, 135);
+            pictureBox12.TabIndex = 76;
+            pictureBox12.TabStop = false;
             // 
             // pictureBox9
             // 
-            this.pictureBox9.BackColor = System.Drawing.Color.Gray;
-            this.pictureBox9.Location = new System.Drawing.Point(12, 65);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(944, 132);
-            this.pictureBox9.TabIndex = 72;
-            this.pictureBox9.TabStop = false;
+            pictureBox9.BackColor = Color.Gray;
+            pictureBox9.Location = new Point(15, 81);
+            pictureBox9.Margin = new Padding(2);
+            pictureBox9.Name = "pictureBox9";
+            pictureBox9.Size = new Size(1180, 165);
+            pictureBox9.TabIndex = 72;
+            pictureBox9.TabStop = false;
             // 
             // lblUser
             // 
-            this.lblUser.AutoSize = true;
-            this.lblUser.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblUser.Location = new System.Drawing.Point(341, 6);
-            this.lblUser.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblUser.Name = "lblUser";
-            this.lblUser.Size = new System.Drawing.Size(61, 28);
-            this.lblUser.TabIndex = 53;
-            this.lblUser.Text = "User!";
+            lblUser.AutoSize = true;
+            lblUser.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblUser.Location = new Point(426, 8);
+            lblUser.Margin = new Padding(2, 0, 2, 0);
+            lblUser.Name = "lblUser";
+            lblUser.Size = new Size(73, 32);
+            lblUser.TabIndex = 53;
+            lblUser.Text = "User!";
             // 
             // lblWelcomeMessage
             // 
-            this.lblWelcomeMessage.AutoSize = true;
-            this.lblWelcomeMessage.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblWelcomeMessage.Location = new System.Drawing.Point(1, 6);
-            this.lblWelcomeMessage.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblWelcomeMessage.Name = "lblWelcomeMessage";
-            this.lblWelcomeMessage.Size = new System.Drawing.Size(364, 28);
-            this.lblWelcomeMessage.TabIndex = 70;
-            this.lblWelcomeMessage.Text = "Welcome to your Report Homepage, ";
+            lblWelcomeMessage.AutoSize = true;
+            lblWelcomeMessage.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblWelcomeMessage.Location = new Point(1, 8);
+            lblWelcomeMessage.Margin = new Padding(2, 0, 2, 0);
+            lblWelcomeMessage.Name = "lblWelcomeMessage";
+            lblWelcomeMessage.Size = new Size(440, 32);
+            lblWelcomeMessage.TabIndex = 70;
+            lblWelcomeMessage.Text = "Welcome to your Report Homepage, ";
             // 
             // lblDescribeHome
             // 
-            this.lblDescribeHome.AutoSize = true;
-            this.lblDescribeHome.Font = new System.Drawing.Font("Microsoft YaHei UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblDescribeHome.Location = new System.Drawing.Point(7, 32);
-            this.lblDescribeHome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblDescribeHome.Name = "lblDescribeHome";
-            this.lblDescribeHome.Size = new System.Drawing.Size(1004, 25);
-            this.lblDescribeHome.TabIndex = 65;
-            this.lblDescribeHome.Text = "Listed below are the different potential reports that you can generate, as well a" +
-    "s a brief description of each.\r\n";
+            lblDescribeHome.AutoSize = true;
+            lblDescribeHome.Font = new Font("Microsoft YaHei UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            lblDescribeHome.Location = new Point(9, 40);
+            lblDescribeHome.Margin = new Padding(2, 0, 2, 0);
+            lblDescribeHome.Name = "lblDescribeHome";
+            lblDescribeHome.Size = new Size(1141, 30);
+            lblDescribeHome.TabIndex = 65;
+            lblDescribeHome.Text = "Listed below are the different potential reports that you can generate, as well as a brief description of each.\r\n";
             // 
             // tabView
             // 
-            this.tabView.BackColor = System.Drawing.Color.LightGray;
-            this.tabView.Controls.Add(this.btnSolvedView);
-            this.tabView.Controls.Add(this.btnUnsolvedView);
-            this.tabView.Controls.Add(this.pictureBox7);
-            this.tabView.Controls.Add(this.DGVV);
-            this.tabView.Controls.Add(this.label8);
-            this.tabView.Location = new System.Drawing.Point(4, 32);
-            this.tabView.Margin = new System.Windows.Forms.Padding(2);
-            this.tabView.Name = "tabView";
-            this.tabView.Size = new System.Drawing.Size(1019, 569);
-            this.tabView.TabIndex = 4;
-            this.tabView.Text = "View Tickets";
+            tabView.BackColor = Color.LightGray;
+            tabView.Controls.Add(btnSolvedView);
+            tabView.Controls.Add(btnUnsolvedView);
+            tabView.Controls.Add(pictureBox7);
+            tabView.Controls.Add(DGVV);
+            tabView.Controls.Add(label8);
+            tabView.Location = new Point(4, 37);
+            tabView.Margin = new Padding(2);
+            tabView.Name = "tabView";
+            tabView.Size = new Size(1276, 715);
+            tabView.TabIndex = 4;
+            tabView.Text = "View Tickets";
             // 
             // btnSolvedView
             // 
-            this.btnSolvedView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnSolvedView.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSolvedView.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnSolvedView.ForeColor = System.Drawing.Color.White;
-            this.btnSolvedView.Location = new System.Drawing.Point(888, 211);
-            this.btnSolvedView.Margin = new System.Windows.Forms.Padding(2);
-            this.btnSolvedView.Name = "btnSolvedView";
-            this.btnSolvedView.Size = new System.Drawing.Size(106, 91);
-            this.btnSolvedView.TabIndex = 75;
-            this.btnSolvedView.Text = "View Solved Tickets";
-            this.btnSolvedView.UseVisualStyleBackColor = false;
-            this.btnSolvedView.Click += new System.EventHandler(this.btnSolvedView_Click);
+            btnSolvedView.BackColor = Color.FromArgb(64, 0, 0);
+            btnSolvedView.FlatStyle = FlatStyle.Popup;
+            btnSolvedView.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSolvedView.ForeColor = Color.White;
+            btnSolvedView.Location = new Point(1110, 264);
+            btnSolvedView.Margin = new Padding(2);
+            btnSolvedView.Name = "btnSolvedView";
+            btnSolvedView.Size = new Size(132, 114);
+            btnSolvedView.TabIndex = 75;
+            btnSolvedView.Text = "View Solved Tickets";
+            btnSolvedView.UseVisualStyleBackColor = false;
+            btnSolvedView.Click += btnSolvedView_Click;
             // 
             // btnUnsolvedView
             // 
-            this.btnUnsolvedView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnUnsolvedView.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnUnsolvedView.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnUnsolvedView.ForeColor = System.Drawing.Color.White;
-            this.btnUnsolvedView.Location = new System.Drawing.Point(888, 74);
-            this.btnUnsolvedView.Margin = new System.Windows.Forms.Padding(2);
-            this.btnUnsolvedView.Name = "btnUnsolvedView";
-            this.btnUnsolvedView.Size = new System.Drawing.Size(106, 91);
-            this.btnUnsolvedView.TabIndex = 74;
-            this.btnUnsolvedView.Text = "View Unsolved Tickets";
-            this.btnUnsolvedView.UseVisualStyleBackColor = false;
-            this.btnUnsolvedView.Click += new System.EventHandler(this.btnUnsolvedView_Click);
+            btnUnsolvedView.BackColor = Color.FromArgb(64, 0, 0);
+            btnUnsolvedView.FlatStyle = FlatStyle.Popup;
+            btnUnsolvedView.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            btnUnsolvedView.ForeColor = Color.White;
+            btnUnsolvedView.Location = new Point(1110, 92);
+            btnUnsolvedView.Margin = new Padding(2);
+            btnUnsolvedView.Name = "btnUnsolvedView";
+            btnUnsolvedView.Size = new Size(132, 114);
+            btnUnsolvedView.TabIndex = 74;
+            btnUnsolvedView.Text = "View Unsolved Tickets";
+            btnUnsolvedView.UseVisualStyleBackColor = false;
+            btnUnsolvedView.Click += btnUnsolvedView_Click;
             // 
             // pictureBox7
             // 
-            this.pictureBox7.BackColor = System.Drawing.Color.DarkGray;
-            this.pictureBox7.Location = new System.Drawing.Point(878, 36);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(127, 303);
-            this.pictureBox7.TabIndex = 73;
-            this.pictureBox7.TabStop = false;
+            pictureBox7.BackColor = Color.DarkGray;
+            pictureBox7.Location = new Point(1098, 45);
+            pictureBox7.Margin = new Padding(2);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(159, 379);
+            pictureBox7.TabIndex = 73;
+            pictureBox7.TabStop = false;
             // 
             // DGVV
             // 
-            this.DGVV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGVV.Location = new System.Drawing.Point(13, 36);
-            this.DGVV.Margin = new System.Windows.Forms.Padding(2);
-            this.DGVV.Name = "DGVV";
-            this.DGVV.RowHeadersWidth = 62;
-            this.DGVV.RowTemplate.Height = 33;
-            this.DGVV.Size = new System.Drawing.Size(852, 303);
-            this.DGVV.TabIndex = 58;
+            DGVV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            DGVV.Location = new Point(16, 45);
+            DGVV.Margin = new Padding(2);
+            DGVV.Name = "DGVV";
+            DGVV.RowHeadersWidth = 62;
+            DGVV.RowTemplate.Height = 33;
+            DGVV.Size = new Size(1065, 379);
+            DGVV.TabIndex = 58;
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(3, 5);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(128, 28);
-            this.label8.TabIndex = 57;
-            this.label8.Text = "View Tickets";
+            label8.AutoSize = true;
+            label8.BackColor = Color.Transparent;
+            label8.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label8.Location = new Point(4, 6);
+            label8.Margin = new Padding(2, 0, 2, 0);
+            label8.Name = "label8";
+            label8.Size = new Size(154, 32);
+            label8.TabIndex = 57;
+            label8.Text = "View Tickets";
             // 
             // tabSolved
             // 
-            this.tabSolved.BackColor = System.Drawing.Color.LightGray;
-            this.tabSolved.Controls.Add(this.btnReportClear);
-            this.tabSolved.Controls.Add(this.label19);
-            this.tabSolved.Controls.Add(this.txtTicketIDSolve);
-            this.tabSolved.Controls.Add(this.label17);
-            this.tabSolved.Controls.Add(this.label16);
-            this.tabSolved.Controls.Add(this.txtUrgencySolved);
-            this.tabSolved.Controls.Add(this.button1);
-            this.tabSolved.Controls.Add(this.txtTicketDescribeSolved);
-            this.tabSolved.Controls.Add(this.label14);
-            this.tabSolved.Controls.Add(this.label15);
-            this.tabSolved.Controls.Add(this.txtTicketDetailSolved);
-            this.tabSolved.Controls.Add(this.pictureBox5);
-            this.tabSolved.Controls.Add(this.txtUserEmailSolved);
-            this.tabSolved.Controls.Add(this.txtEmailSolved);
-            this.tabSolved.Controls.Add(this.txtTicketCategorySolved);
-            this.tabSolved.Controls.Add(this.pictureBox15);
-            this.tabSolved.Controls.Add(this.label18);
-            this.tabSolved.Controls.Add(this.btnSubmitSolved);
-            this.tabSolved.Controls.Add(this.btnClearSolved);
-            this.tabSolved.Controls.Add(this.label2);
-            this.tabSolved.Controls.Add(this.pictureBox16);
-            this.tabSolved.Location = new System.Drawing.Point(4, 32);
-            this.tabSolved.Margin = new System.Windows.Forms.Padding(2);
-            this.tabSolved.Name = "tabSolved";
-            this.tabSolved.Padding = new System.Windows.Forms.Padding(2);
-            this.tabSolved.Size = new System.Drawing.Size(1019, 569);
-            this.tabSolved.TabIndex = 1;
-            this.tabSolved.Text = "Solved Tickets";
+            tabSolved.BackColor = Color.LightGray;
+            tabSolved.Controls.Add(btnReportClear);
+            tabSolved.Controls.Add(label19);
+            tabSolved.Controls.Add(txtTicketIDSolve);
+            tabSolved.Controls.Add(label17);
+            tabSolved.Controls.Add(label16);
+            tabSolved.Controls.Add(txtUrgencySolved);
+            tabSolved.Controls.Add(button1);
+            tabSolved.Controls.Add(txtTicketDescribeSolved);
+            tabSolved.Controls.Add(label14);
+            tabSolved.Controls.Add(label15);
+            tabSolved.Controls.Add(txtTicketDetailSolved);
+            tabSolved.Controls.Add(pictureBox5);
+            tabSolved.Controls.Add(txtUserEmailSolved);
+            tabSolved.Controls.Add(txtEmailSolved);
+            tabSolved.Controls.Add(txtTicketCategorySolved);
+            tabSolved.Controls.Add(pictureBox15);
+            tabSolved.Controls.Add(label18);
+            tabSolved.Controls.Add(btnSubmitSolved);
+            tabSolved.Controls.Add(btnClearSolved);
+            tabSolved.Controls.Add(label2);
+            tabSolved.Controls.Add(pictureBox16);
+            tabSolved.Location = new Point(4, 37);
+            tabSolved.Margin = new Padding(2);
+            tabSolved.Name = "tabSolved";
+            tabSolved.Padding = new Padding(2);
+            tabSolved.Size = new Size(1276, 715);
+            tabSolved.TabIndex = 1;
+            tabSolved.Text = "Solved Tickets";
             // 
             // btnReportClear
             // 
-            this.btnReportClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnReportClear.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnReportClear.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnReportClear.ForeColor = System.Drawing.Color.White;
-            this.btnReportClear.Location = new System.Drawing.Point(27, 313);
-            this.btnReportClear.Margin = new System.Windows.Forms.Padding(2);
-            this.btnReportClear.Name = "btnReportClear";
-            this.btnReportClear.Size = new System.Drawing.Size(127, 30);
-            this.btnReportClear.TabIndex = 134;
-            this.btnReportClear.Text = "Clear";
-            this.btnReportClear.UseVisualStyleBackColor = false;
+            btnReportClear.BackColor = Color.FromArgb(64, 0, 0);
+            btnReportClear.FlatStyle = FlatStyle.Popup;
+            btnReportClear.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnReportClear.ForeColor = Color.White;
+            btnReportClear.Location = new Point(34, 391);
+            btnReportClear.Margin = new Padding(2);
+            btnReportClear.Name = "btnReportClear";
+            btnReportClear.Size = new Size(159, 38);
+            btnReportClear.TabIndex = 134;
+            btnReportClear.Text = "Clear";
+            btnReportClear.UseVisualStyleBackColor = false;
             // 
             // label19
             // 
-            this.label19.AutoSize = true;
-            this.label19.BackColor = System.Drawing.Color.DarkGray;
-            this.label19.Location = new System.Drawing.Point(18, 164);
-            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(303, 23);
-            this.label19.TabIndex = 133;
-            this.label19.Text = "What was the select ticket category?";
+            label19.AutoSize = true;
+            label19.BackColor = Color.DarkGray;
+            label19.Location = new Point(22, 205);
+            label19.Margin = new Padding(2, 0, 2, 0);
+            label19.Name = "label19";
+            label19.Size = new Size(362, 28);
+            label19.TabIndex = 133;
+            label19.Text = "What was the select ticket category?";
             // 
             // txtTicketIDSolve
             // 
-            this.txtTicketIDSolve.Location = new System.Drawing.Point(24, 62);
-            this.txtTicketIDSolve.Margin = new System.Windows.Forms.Padding(2);
-            this.txtTicketIDSolve.Name = "txtTicketIDSolve";
-            this.txtTicketIDSolve.Size = new System.Drawing.Size(130, 30);
-            this.txtTicketIDSolve.TabIndex = 132;
+            txtTicketIDSolve.Location = new Point(30, 78);
+            txtTicketIDSolve.Margin = new Padding(2);
+            txtTicketIDSolve.Name = "txtTicketIDSolve";
+            txtTicketIDSolve.Size = new Size(162, 34);
+            txtTicketIDSolve.TabIndex = 132;
             // 
             // label17
             // 
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.Color.DarkGray;
-            this.label17.Location = new System.Drawing.Point(24, 38);
-            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(87, 23);
-            this.label17.TabIndex = 131;
-            this.label17.Text = "Ticket ID:";
+            label17.AutoSize = true;
+            label17.BackColor = Color.DarkGray;
+            label17.Location = new Point(30, 48);
+            label17.Margin = new Padding(2, 0, 2, 0);
+            label17.Name = "label17";
+            label17.Size = new Size(102, 28);
+            label17.TabIndex = 131;
+            label17.Text = "Ticket ID:";
             // 
             // label16
             // 
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.DarkGray;
-            this.label16.Location = new System.Drawing.Point(22, 102);
-            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(135, 23);
-            this.label16.TabIndex = 129;
-            this.label16.Text = "Ticket Urgency:";
+            label16.AutoSize = true;
+            label16.BackColor = Color.DarkGray;
+            label16.Location = new Point(28, 128);
+            label16.Margin = new Padding(2, 0, 2, 0);
+            label16.Name = "label16";
+            label16.Size = new Size(159, 28);
+            label16.TabIndex = 129;
+            label16.Text = "Ticket Urgency:";
             // 
             // txtUrgencySolved
             // 
-            this.txtUrgencySolved.Location = new System.Drawing.Point(23, 127);
-            this.txtUrgencySolved.Margin = new System.Windows.Forms.Padding(2);
-            this.txtUrgencySolved.Name = "txtUrgencySolved";
-            this.txtUrgencySolved.Size = new System.Drawing.Size(132, 30);
-            this.txtUrgencySolved.TabIndex = 128;
+            txtUrgencySolved.Location = new Point(29, 159);
+            txtUrgencySolved.Margin = new Padding(2);
+            txtUrgencySolved.Name = "txtUrgencySolved";
+            txtUrgencySolved.Size = new Size(164, 34);
+            txtUrgencySolved.TabIndex = 128;
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(167, 313);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(127, 30);
-            this.button1.TabIndex = 126;
-            this.button1.Text = "Submit Report";
-            this.button1.UseVisualStyleBackColor = false;
+            button1.BackColor = Color.FromArgb(64, 0, 0);
+            button1.FlatStyle = FlatStyle.Popup;
+            button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(209, 391);
+            button1.Margin = new Padding(2);
+            button1.Name = "button1";
+            button1.Size = new Size(159, 38);
+            button1.TabIndex = 126;
+            button1.Text = "Submit Report";
+            button1.UseVisualStyleBackColor = false;
             // 
             // txtTicketDescribeSolved
             // 
-            this.txtTicketDescribeSolved.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtTicketDescribeSolved.Location = new System.Drawing.Point(26, 242);
-            this.txtTicketDescribeSolved.Margin = new System.Windows.Forms.Padding(2);
-            this.txtTicketDescribeSolved.MaxLength = 500;
-            this.txtTicketDescribeSolved.Multiline = true;
-            this.txtTicketDescribeSolved.Name = "txtTicketDescribeSolved";
-            this.txtTicketDescribeSolved.PlaceholderText = "Provide a brief summary of the ticket description.";
-            this.txtTicketDescribeSolved.Size = new System.Drawing.Size(510, 55);
-            this.txtTicketDescribeSolved.TabIndex = 125;
+            txtTicketDescribeSolved.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            txtTicketDescribeSolved.Location = new Point(32, 302);
+            txtTicketDescribeSolved.Margin = new Padding(2);
+            txtTicketDescribeSolved.MaxLength = 500;
+            txtTicketDescribeSolved.Multiline = true;
+            txtTicketDescribeSolved.Name = "txtTicketDescribeSolved";
+            txtTicketDescribeSolved.PlaceholderText = "Provide a brief summary of the ticket description.";
+            txtTicketDescribeSolved.Size = new Size(636, 68);
+            txtTicketDescribeSolved.TabIndex = 125;
             // 
             // label14
             // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.DarkGray;
-            this.label14.Location = new System.Drawing.Point(174, 102);
-            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(262, 23);
-            this.label14.TabIndex = 124;
-            this.label14.Text = "Email of user who raised ticket:";
+            label14.AutoSize = true;
+            label14.BackColor = Color.DarkGray;
+            label14.Location = new Point(218, 128);
+            label14.Margin = new Padding(2, 0, 2, 0);
+            label14.Name = "label14";
+            label14.Size = new Size(310, 28);
+            label14.TabIndex = 124;
+            label14.Text = "Email of user who raised ticket:";
             // 
             // label15
             // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.DarkGray;
-            this.label15.Location = new System.Drawing.Point(171, 38);
-            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(395, 23);
-            this.label15.TabIndex = 123;
-            this.label15.Text = "Email of IT member who was assigned to ticket:";
+            label15.AutoSize = true;
+            label15.BackColor = Color.DarkGray;
+            label15.Location = new Point(214, 48);
+            label15.Margin = new Padding(2, 0, 2, 0);
+            label15.Name = "label15";
+            label15.Size = new Size(465, 28);
+            label15.TabIndex = 123;
+            label15.Text = "Email of IT member who was assigned to ticket:";
             // 
             // txtTicketDetailSolved
             // 
-            this.txtTicketDetailSolved.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtTicketDetailSolved.Location = new System.Drawing.Point(579, 96);
-            this.txtTicketDetailSolved.Margin = new System.Windows.Forms.Padding(2);
-            this.txtTicketDetailSolved.MaxLength = 750;
-            this.txtTicketDetailSolved.Multiline = true;
-            this.txtTicketDetailSolved.Name = "txtTicketDetailSolved";
-            this.txtTicketDetailSolved.PlaceholderText = "Include any other necessary ticket details here.";
-            this.txtTicketDetailSolved.Size = new System.Drawing.Size(406, 231);
-            this.txtTicketDetailSolved.TabIndex = 120;
+            txtTicketDetailSolved.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            txtTicketDetailSolved.Location = new Point(724, 120);
+            txtTicketDetailSolved.Margin = new Padding(2);
+            txtTicketDetailSolved.MaxLength = 750;
+            txtTicketDetailSolved.Multiline = true;
+            txtTicketDetailSolved.Name = "txtTicketDetailSolved";
+            txtTicketDetailSolved.PlaceholderText = "Include any other necessary ticket details here.";
+            txtTicketDetailSolved.Size = new Size(506, 288);
+            txtTicketDetailSolved.TabIndex = 120;
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox5.BackColor = System.Drawing.Color.Gray;
-            this.pictureBox5.Location = new System.Drawing.Point(568, 87);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(425, 248);
-            this.pictureBox5.TabIndex = 119;
-            this.pictureBox5.TabStop = false;
+            pictureBox5.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            pictureBox5.BackColor = Color.Gray;
+            pictureBox5.Location = new Point(710, 109);
+            pictureBox5.Margin = new Padding(2);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(531, 310);
+            pictureBox5.TabIndex = 119;
+            pictureBox5.TabStop = false;
             // 
             // txtUserEmailSolved
             // 
-            this.txtUserEmailSolved.Location = new System.Drawing.Point(176, 127);
-            this.txtUserEmailSolved.Margin = new System.Windows.Forms.Padding(2);
-            this.txtUserEmailSolved.Name = "txtUserEmailSolved";
-            this.txtUserEmailSolved.Size = new System.Drawing.Size(370, 30);
-            this.txtUserEmailSolved.TabIndex = 118;
+            txtUserEmailSolved.Location = new Point(220, 159);
+            txtUserEmailSolved.Margin = new Padding(2);
+            txtUserEmailSolved.Name = "txtUserEmailSolved";
+            txtUserEmailSolved.Size = new Size(462, 34);
+            txtUserEmailSolved.TabIndex = 118;
             // 
             // txtEmailSolved
             // 
-            this.txtEmailSolved.Location = new System.Drawing.Point(176, 62);
-            this.txtEmailSolved.Margin = new System.Windows.Forms.Padding(2);
-            this.txtEmailSolved.Name = "txtEmailSolved";
-            this.txtEmailSolved.Size = new System.Drawing.Size(370, 30);
-            this.txtEmailSolved.TabIndex = 117;
+            txtEmailSolved.Location = new Point(220, 78);
+            txtEmailSolved.Margin = new Padding(2);
+            txtEmailSolved.Name = "txtEmailSolved";
+            txtEmailSolved.Size = new Size(462, 34);
+            txtEmailSolved.TabIndex = 117;
             // 
             // txtTicketCategorySolved
             // 
-            this.txtTicketCategorySolved.Location = new System.Drawing.Point(18, 188);
-            this.txtTicketCategorySolved.Margin = new System.Windows.Forms.Padding(2);
-            this.txtTicketCategorySolved.Name = "txtTicketCategorySolved";
-            this.txtTicketCategorySolved.Size = new System.Drawing.Size(527, 30);
-            this.txtTicketCategorySolved.TabIndex = 116;
+            txtTicketCategorySolved.Location = new Point(22, 235);
+            txtTicketCategorySolved.Margin = new Padding(2);
+            txtTicketCategorySolved.Name = "txtTicketCategorySolved";
+            txtTicketCategorySolved.Size = new Size(658, 34);
+            txtTicketCategorySolved.TabIndex = 116;
             // 
             // pictureBox15
             // 
-            this.pictureBox15.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox15.BackColor = System.Drawing.Color.Gray;
-            this.pictureBox15.Location = new System.Drawing.Point(18, 233);
-            this.pictureBox15.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(526, 72);
-            this.pictureBox15.TabIndex = 122;
-            this.pictureBox15.TabStop = false;
+            pictureBox15.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            pictureBox15.BackColor = Color.Gray;
+            pictureBox15.Location = new Point(22, 291);
+            pictureBox15.Margin = new Padding(2);
+            pictureBox15.Name = "pictureBox15";
+            pictureBox15.Size = new Size(658, 90);
+            pictureBox15.TabIndex = 122;
+            pictureBox15.TabStop = false;
             // 
             // label18
             // 
-            this.label18.AutoSize = true;
-            this.label18.BackColor = System.Drawing.Color.DarkGray;
-            this.label18.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label18.Location = new System.Drawing.Point(563, 38);
-            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(445, 46);
-            this.label18.TabIndex = 114;
-            this.label18.Text = "Provide the solution to the raised ticket below, as well\r\nas any other potentiall" +
-    "y important ticket details.";
+            label18.AutoSize = true;
+            label18.BackColor = Color.DarkGray;
+            label18.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            label18.Location = new Point(704, 48);
+            label18.Margin = new Padding(2, 0, 2, 0);
+            label18.Name = "label18";
+            label18.Size = new Size(528, 56);
+            label18.TabIndex = 114;
+            label18.Text = "Provide the solution to the raised ticket below, as well\r\nas any other potentially important ticket details.";
             // 
             // btnSubmitSolved
             // 
-            this.btnSubmitSolved.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnSubmitSolved.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSubmitSolved.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnSubmitSolved.ForeColor = System.Drawing.Color.White;
-            this.btnSubmitSolved.Location = new System.Drawing.Point(204, 386);
-            this.btnSubmitSolved.Margin = new System.Windows.Forms.Padding(2);
-            this.btnSubmitSolved.Name = "btnSubmitSolved";
-            this.btnSubmitSolved.Size = new System.Drawing.Size(159, 38);
-            this.btnSubmitSolved.TabIndex = 106;
-            this.btnSubmitSolved.Text = "Submit Report";
-            this.btnSubmitSolved.UseVisualStyleBackColor = false;
+            btnSubmitSolved.BackColor = Color.FromArgb(64, 0, 0);
+            btnSubmitSolved.FlatStyle = FlatStyle.Popup;
+            btnSubmitSolved.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSubmitSolved.ForeColor = Color.White;
+            btnSubmitSolved.Location = new Point(255, 482);
+            btnSubmitSolved.Margin = new Padding(2);
+            btnSubmitSolved.Name = "btnSubmitSolved";
+            btnSubmitSolved.Size = new Size(199, 48);
+            btnSubmitSolved.TabIndex = 106;
+            btnSubmitSolved.Text = "Submit Report";
+            btnSubmitSolved.UseVisualStyleBackColor = false;
             // 
             // btnClearSolved
             // 
-            this.btnClearSolved.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnClearSolved.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnClearSolved.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnClearSolved.ForeColor = System.Drawing.Color.White;
-            this.btnClearSolved.Location = new System.Drawing.Point(26, 386);
-            this.btnClearSolved.Margin = new System.Windows.Forms.Padding(2);
-            this.btnClearSolved.Name = "btnClearSolved";
-            this.btnClearSolved.Size = new System.Drawing.Size(159, 38);
-            this.btnClearSolved.TabIndex = 105;
-            this.btnClearSolved.Text = "Clear";
-            this.btnClearSolved.UseVisualStyleBackColor = false;
+            btnClearSolved.BackColor = Color.FromArgb(64, 0, 0);
+            btnClearSolved.FlatStyle = FlatStyle.Popup;
+            btnClearSolved.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnClearSolved.ForeColor = Color.White;
+            btnClearSolved.Location = new Point(32, 482);
+            btnClearSolved.Margin = new Padding(2);
+            btnClearSolved.Name = "btnClearSolved";
+            btnClearSolved.Size = new Size(199, 48);
+            btnClearSolved.TabIndex = 105;
+            btnClearSolved.Text = "Clear";
+            btnClearSolved.UseVisualStyleBackColor = false;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(5, 5);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(353, 28);
-            this.label2.TabIndex = 56;
-            this.label2.Text = "Creating a Report for Solved Tickets";
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label2.Location = new Point(6, 6);
+            label2.Margin = new Padding(2, 0, 2, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(418, 32);
+            label2.TabIndex = 56;
+            label2.Text = "Creating a Report for Solved Tickets";
             // 
             // pictureBox16
             // 
-            this.pictureBox16.BackColor = System.Drawing.Color.DarkGray;
-            this.pictureBox16.Location = new System.Drawing.Point(10, 35);
-            this.pictureBox16.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(991, 314);
-            this.pictureBox16.TabIndex = 115;
-            this.pictureBox16.TabStop = false;
+            pictureBox16.BackColor = Color.DarkGray;
+            pictureBox16.Location = new Point(12, 44);
+            pictureBox16.Margin = new Padding(2);
+            pictureBox16.Name = "pictureBox16";
+            pictureBox16.Size = new Size(1239, 392);
+            pictureBox16.TabIndex = 115;
+            pictureBox16.TabStop = false;
             // 
             // tabUnsolved
             // 
-            this.tabUnsolved.BackColor = System.Drawing.Color.LightGray;
-            this.tabUnsolved.Controls.Add(this.label13);
-            this.tabUnsolved.Controls.Add(this.txtTicketSummary);
-            this.tabUnsolved.Controls.Add(this.label12);
-            this.tabUnsolved.Controls.Add(this.label11);
-            this.tabUnsolved.Controls.Add(this.label10);
-            this.tabUnsolved.Controls.Add(this.label9);
-            this.tabUnsolved.Controls.Add(this.txtUnsolvedExplain);
-            this.tabUnsolved.Controls.Add(this.pictureBox14);
-            this.tabUnsolved.Controls.Add(this.lblTicketID);
-            this.tabUnsolved.Controls.Add(this.txtProjectEmail);
-            this.tabUnsolved.Controls.Add(this.txtTicketID);
-            this.tabUnsolved.Controls.Add(this.txtTicketUrgency);
-            this.tabUnsolved.Controls.Add(this.txtITEmail);
-            this.tabUnsolved.Controls.Add(this.txtProblemCategory);
-            this.tabUnsolved.Controls.Add(this.btnSubmitUnsolved);
-            this.tabUnsolved.Controls.Add(this.btnClearUnsolved);
-            this.tabUnsolved.Controls.Add(this.label3);
-            this.tabUnsolved.Controls.Add(this.pictureBox8);
-            this.tabUnsolved.Controls.Add(this.pictureBox11);
-            this.tabUnsolved.Location = new System.Drawing.Point(4, 32);
-            this.tabUnsolved.Margin = new System.Windows.Forms.Padding(2);
-            this.tabUnsolved.Name = "tabUnsolved";
-            this.tabUnsolved.Size = new System.Drawing.Size(1019, 569);
-            this.tabUnsolved.TabIndex = 2;
-            this.tabUnsolved.Text = "Unsolved Tickets";
+            tabUnsolved.BackColor = Color.LightGray;
+            tabUnsolved.Controls.Add(label13);
+            tabUnsolved.Controls.Add(txtTicketSummary);
+            tabUnsolved.Controls.Add(label12);
+            tabUnsolved.Controls.Add(label11);
+            tabUnsolved.Controls.Add(label10);
+            tabUnsolved.Controls.Add(label9);
+            tabUnsolved.Controls.Add(txtUnsolvedExplain);
+            tabUnsolved.Controls.Add(pictureBox14);
+            tabUnsolved.Controls.Add(lblTicketID);
+            tabUnsolved.Controls.Add(txtProjectEmail);
+            tabUnsolved.Controls.Add(txtTicketID);
+            tabUnsolved.Controls.Add(txtTicketUrgency);
+            tabUnsolved.Controls.Add(txtITEmail);
+            tabUnsolved.Controls.Add(txtProblemCategory);
+            tabUnsolved.Controls.Add(btnSubmitUnsolved);
+            tabUnsolved.Controls.Add(btnClearUnsolved);
+            tabUnsolved.Controls.Add(label3);
+            tabUnsolved.Controls.Add(pictureBox8);
+            tabUnsolved.Controls.Add(pictureBox11);
+            tabUnsolved.Location = new Point(4, 37);
+            tabUnsolved.Margin = new Padding(2);
+            tabUnsolved.Name = "tabUnsolved";
+            tabUnsolved.Size = new Size(1276, 715);
+            tabUnsolved.TabIndex = 2;
+            tabUnsolved.Text = "Unsolved Tickets";
             // 
             // label13
             // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.DarkGray;
-            this.label13.Location = new System.Drawing.Point(16, 162);
-            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(303, 23);
-            this.label13.TabIndex = 102;
-            this.label13.Text = "What was the select ticket category?";
+            label13.AutoSize = true;
+            label13.BackColor = Color.DarkGray;
+            label13.Location = new Point(20, 202);
+            label13.Margin = new Padding(2, 0, 2, 0);
+            label13.Name = "label13";
+            label13.Size = new Size(362, 28);
+            label13.TabIndex = 102;
+            label13.Text = "What was the select ticket category?";
             // 
             // txtTicketSummary
             // 
-            this.txtTicketSummary.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtTicketSummary.Location = new System.Drawing.Point(22, 238);
-            this.txtTicketSummary.Margin = new System.Windows.Forms.Padding(2);
-            this.txtTicketSummary.MaxLength = 500;
-            this.txtTicketSummary.Multiline = true;
-            this.txtTicketSummary.Name = "txtTicketSummary";
-            this.txtTicketSummary.PlaceholderText = "Provide a brief summary of the ticket description.";
-            this.txtTicketSummary.Size = new System.Drawing.Size(510, 55);
-            this.txtTicketSummary.TabIndex = 101;
+            txtTicketSummary.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            txtTicketSummary.Location = new Point(28, 298);
+            txtTicketSummary.Margin = new Padding(2);
+            txtTicketSummary.MaxLength = 500;
+            txtTicketSummary.Multiline = true;
+            txtTicketSummary.Name = "txtTicketSummary";
+            txtTicketSummary.PlaceholderText = "Provide a brief summary of the ticket description.";
+            txtTicketSummary.Size = new Size(636, 68);
+            txtTicketSummary.TabIndex = 101;
             // 
             // label12
             // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.DarkGray;
-            this.label12.Location = new System.Drawing.Point(17, 101);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(135, 23);
-            this.label12.TabIndex = 100;
-            this.label12.Text = "Ticket Urgency:";
+            label12.AutoSize = true;
+            label12.BackColor = Color.DarkGray;
+            label12.Location = new Point(21, 126);
+            label12.Margin = new Padding(2, 0, 2, 0);
+            label12.Name = "label12";
+            label12.Size = new Size(159, 28);
+            label12.TabIndex = 100;
+            label12.Text = "Ticket Urgency:";
             // 
             // label11
             // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.DarkGray;
-            this.label11.Location = new System.Drawing.Point(172, 101);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(262, 23);
-            this.label11.TabIndex = 99;
-            this.label11.Text = "Email of user who raised ticket:";
+            label11.AutoSize = true;
+            label11.BackColor = Color.DarkGray;
+            label11.Location = new Point(215, 126);
+            label11.Margin = new Padding(2, 0, 2, 0);
+            label11.Name = "label11";
+            label11.Size = new Size(310, 28);
+            label11.TabIndex = 99;
+            label11.Text = "Email of user who raised ticket:";
             // 
             // label10
             // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.DarkGray;
-            this.label10.Location = new System.Drawing.Point(170, 42);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(395, 23);
-            this.label10.TabIndex = 98;
-            this.label10.Text = "Email of IT member who was assigned to ticket:";
+            label10.AutoSize = true;
+            label10.BackColor = Color.DarkGray;
+            label10.Location = new Point(212, 52);
+            label10.Margin = new Padding(2, 0, 2, 0);
+            label10.Name = "label10";
+            label10.Size = new Size(465, 28);
+            label10.TabIndex = 98;
+            label10.Text = "Email of IT member who was assigned to ticket:";
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.DarkGray;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(566, 42);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(443, 40);
-            this.label9.TabIndex = 95;
-            this.label9.Text = "Note any potential solution ideas here. Also make note of \r\nwho you think should " +
-    "solve this ticket should it be re-opened. ";
+            label9.AutoSize = true;
+            label9.BackColor = Color.DarkGray;
+            label9.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label9.Location = new Point(708, 52);
+            label9.Margin = new Padding(2, 0, 2, 0);
+            label9.Name = "label9";
+            label9.Size = new Size(542, 50);
+            label9.TabIndex = 95;
+            label9.Text = "Note any potential solution ideas here. Also make note of \r\nwho you think should solve this ticket should it be re-opened. ";
             // 
             // txtUnsolvedExplain
             // 
-            this.txtUnsolvedExplain.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtUnsolvedExplain.Location = new System.Drawing.Point(576, 95);
-            this.txtUnsolvedExplain.Margin = new System.Windows.Forms.Padding(2);
-            this.txtUnsolvedExplain.MaxLength = 750;
-            this.txtUnsolvedExplain.Multiline = true;
-            this.txtUnsolvedExplain.Name = "txtUnsolvedExplain";
-            this.txtUnsolvedExplain.PlaceholderText = "Include any other necessary ticket details here.";
-            this.txtUnsolvedExplain.Size = new System.Drawing.Size(406, 231);
-            this.txtUnsolvedExplain.TabIndex = 94;
+            txtUnsolvedExplain.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            txtUnsolvedExplain.Location = new Point(720, 119);
+            txtUnsolvedExplain.Margin = new Padding(2);
+            txtUnsolvedExplain.MaxLength = 750;
+            txtUnsolvedExplain.Multiline = true;
+            txtUnsolvedExplain.Name = "txtUnsolvedExplain";
+            txtUnsolvedExplain.PlaceholderText = "Include any other necessary ticket details here.";
+            txtUnsolvedExplain.Size = new Size(506, 288);
+            txtUnsolvedExplain.TabIndex = 94;
             // 
             // pictureBox14
             // 
-            this.pictureBox14.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox14.BackColor = System.Drawing.Color.Gray;
-            this.pictureBox14.Location = new System.Drawing.Point(566, 86);
-            this.pictureBox14.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(422, 248);
-            this.pictureBox14.TabIndex = 93;
-            this.pictureBox14.TabStop = false;
+            pictureBox14.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            pictureBox14.BackColor = Color.Gray;
+            pictureBox14.Location = new Point(708, 108);
+            pictureBox14.Margin = new Padding(2);
+            pictureBox14.Name = "pictureBox14";
+            pictureBox14.Size = new Size(528, 310);
+            pictureBox14.TabIndex = 93;
+            pictureBox14.TabStop = false;
             // 
             // lblTicketID
             // 
-            this.lblTicketID.AutoSize = true;
-            this.lblTicketID.BackColor = System.Drawing.Color.DarkGray;
-            this.lblTicketID.Location = new System.Drawing.Point(14, 42);
-            this.lblTicketID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblTicketID.Name = "lblTicketID";
-            this.lblTicketID.Size = new System.Drawing.Size(87, 23);
-            this.lblTicketID.TabIndex = 92;
-            this.lblTicketID.Text = "Ticket ID:";
+            lblTicketID.AutoSize = true;
+            lblTicketID.BackColor = Color.DarkGray;
+            lblTicketID.Location = new Point(18, 52);
+            lblTicketID.Margin = new Padding(2, 0, 2, 0);
+            lblTicketID.Name = "lblTicketID";
+            lblTicketID.Size = new Size(102, 28);
+            lblTicketID.TabIndex = 92;
+            lblTicketID.Text = "Ticket ID:";
             // 
             // txtProjectEmail
             // 
-            this.txtProjectEmail.Location = new System.Drawing.Point(174, 126);
-            this.txtProjectEmail.Margin = new System.Windows.Forms.Padding(2);
-            this.txtProjectEmail.Name = "txtProjectEmail";
-            this.txtProjectEmail.Size = new System.Drawing.Size(370, 30);
-            this.txtProjectEmail.TabIndex = 91;
+            txtProjectEmail.Location = new Point(218, 158);
+            txtProjectEmail.Margin = new Padding(2);
+            txtProjectEmail.Name = "txtProjectEmail";
+            txtProjectEmail.Size = new Size(462, 34);
+            txtProjectEmail.TabIndex = 91;
             // 
             // txtTicketID
             // 
-            this.txtTicketID.Location = new System.Drawing.Point(16, 66);
-            this.txtTicketID.Margin = new System.Windows.Forms.Padding(2);
-            this.txtTicketID.Name = "txtTicketID";
-            this.txtTicketID.Size = new System.Drawing.Size(130, 30);
-            this.txtTicketID.TabIndex = 88;
+            txtTicketID.Location = new Point(20, 82);
+            txtTicketID.Margin = new Padding(2);
+            txtTicketID.Name = "txtTicketID";
+            txtTicketID.Size = new Size(162, 34);
+            txtTicketID.TabIndex = 88;
             // 
             // txtTicketUrgency
             // 
-            this.txtTicketUrgency.Location = new System.Drawing.Point(16, 127);
-            this.txtTicketUrgency.Margin = new System.Windows.Forms.Padding(2);
-            this.txtTicketUrgency.Name = "txtTicketUrgency";
-            this.txtTicketUrgency.Size = new System.Drawing.Size(132, 30);
-            this.txtTicketUrgency.TabIndex = 87;
+            txtTicketUrgency.Location = new Point(20, 159);
+            txtTicketUrgency.Margin = new Padding(2);
+            txtTicketUrgency.Name = "txtTicketUrgency";
+            txtTicketUrgency.Size = new Size(164, 34);
+            txtTicketUrgency.TabIndex = 87;
             // 
             // txtITEmail
             // 
-            this.txtITEmail.Location = new System.Drawing.Point(174, 66);
-            this.txtITEmail.Margin = new System.Windows.Forms.Padding(2);
-            this.txtITEmail.Name = "txtITEmail";
-            this.txtITEmail.Size = new System.Drawing.Size(370, 30);
-            this.txtITEmail.TabIndex = 86;
+            txtITEmail.Location = new Point(218, 82);
+            txtITEmail.Margin = new Padding(2);
+            txtITEmail.Name = "txtITEmail";
+            txtITEmail.Size = new Size(462, 34);
+            txtITEmail.TabIndex = 86;
             // 
             // txtProblemCategory
             // 
-            this.txtProblemCategory.Location = new System.Drawing.Point(17, 187);
-            this.txtProblemCategory.Margin = new System.Windows.Forms.Padding(2);
-            this.txtProblemCategory.Name = "txtProblemCategory";
-            this.txtProblemCategory.Size = new System.Drawing.Size(527, 30);
-            this.txtProblemCategory.TabIndex = 85;
+            txtProblemCategory.Location = new Point(21, 234);
+            txtProblemCategory.Margin = new Padding(2);
+            txtProblemCategory.Name = "txtProblemCategory";
+            txtProblemCategory.Size = new Size(658, 34);
+            txtProblemCategory.TabIndex = 85;
             // 
             // btnSubmitUnsolved
             // 
-            this.btnSubmitUnsolved.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnSubmitUnsolved.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSubmitUnsolved.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnSubmitUnsolved.ForeColor = System.Drawing.Color.White;
-            this.btnSubmitUnsolved.Location = new System.Drawing.Point(162, 309);
-            this.btnSubmitUnsolved.Margin = new System.Windows.Forms.Padding(2);
-            this.btnSubmitUnsolved.Name = "btnSubmitUnsolved";
-            this.btnSubmitUnsolved.Size = new System.Drawing.Size(127, 30);
-            this.btnSubmitUnsolved.TabIndex = 83;
-            this.btnSubmitUnsolved.Text = "Submit Report";
-            this.btnSubmitUnsolved.UseVisualStyleBackColor = false;
+            btnSubmitUnsolved.BackColor = Color.FromArgb(64, 0, 0);
+            btnSubmitUnsolved.FlatStyle = FlatStyle.Popup;
+            btnSubmitUnsolved.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSubmitUnsolved.ForeColor = Color.White;
+            btnSubmitUnsolved.Location = new Point(202, 386);
+            btnSubmitUnsolved.Margin = new Padding(2);
+            btnSubmitUnsolved.Name = "btnSubmitUnsolved";
+            btnSubmitUnsolved.Size = new Size(159, 38);
+            btnSubmitUnsolved.TabIndex = 83;
+            btnSubmitUnsolved.Text = "Submit Report";
+            btnSubmitUnsolved.UseVisualStyleBackColor = false;
             // 
             // btnClearUnsolved
             // 
-            this.btnClearUnsolved.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnClearUnsolved.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnClearUnsolved.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnClearUnsolved.ForeColor = System.Drawing.Color.White;
-            this.btnClearUnsolved.Location = new System.Drawing.Point(25, 308);
-            this.btnClearUnsolved.Margin = new System.Windows.Forms.Padding(2);
-            this.btnClearUnsolved.Name = "btnClearUnsolved";
-            this.btnClearUnsolved.Size = new System.Drawing.Size(127, 30);
-            this.btnClearUnsolved.TabIndex = 82;
-            this.btnClearUnsolved.Text = "Clear";
-            this.btnClearUnsolved.UseVisualStyleBackColor = false;
+            btnClearUnsolved.BackColor = Color.FromArgb(64, 0, 0);
+            btnClearUnsolved.FlatStyle = FlatStyle.Popup;
+            btnClearUnsolved.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnClearUnsolved.ForeColor = Color.White;
+            btnClearUnsolved.Location = new Point(31, 385);
+            btnClearUnsolved.Margin = new Padding(2);
+            btnClearUnsolved.Name = "btnClearUnsolved";
+            btnClearUnsolved.Size = new Size(159, 38);
+            btnClearUnsolved.TabIndex = 82;
+            btnClearUnsolved.Text = "Clear";
+            btnClearUnsolved.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(0, 5);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(377, 28);
-            this.label3.TabIndex = 57;
-            this.label3.Text = "Creating a Report for Unsolved Tickets";
+            label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label3.Location = new Point(0, 6);
+            label3.Margin = new Padding(2, 0, 2, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(447, 32);
+            label3.TabIndex = 57;
+            label3.Text = "Creating a Report for Unsolved Tickets";
             // 
             // pictureBox8
             // 
-            this.pictureBox8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox8.BackColor = System.Drawing.Color.Gray;
-            this.pictureBox8.Location = new System.Drawing.Point(16, 229);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(526, 72);
-            this.pictureBox8.TabIndex = 97;
-            this.pictureBox8.TabStop = false;
+            pictureBox8.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            pictureBox8.BackColor = Color.Gray;
+            pictureBox8.Location = new Point(20, 286);
+            pictureBox8.Margin = new Padding(2);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(658, 90);
+            pictureBox8.TabIndex = 97;
+            pictureBox8.TabStop = false;
             // 
             // pictureBox11
             // 
-            this.pictureBox11.BackColor = System.Drawing.Color.DarkGray;
-            this.pictureBox11.Location = new System.Drawing.Point(9, 38);
-            this.pictureBox11.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(991, 306);
-            this.pictureBox11.TabIndex = 81;
-            this.pictureBox11.TabStop = false;
+            pictureBox11.BackColor = Color.DarkGray;
+            pictureBox11.Location = new Point(11, 48);
+            pictureBox11.Margin = new Padding(2);
+            pictureBox11.Name = "pictureBox11";
+            pictureBox11.Size = new Size(1239, 382);
+            pictureBox11.TabIndex = 81;
+            pictureBox11.TabStop = false;
             // 
             // ProfilePictureBox
             // 
-            this.ProfilePictureBox.BackColor = System.Drawing.Color.Black;
-            this.ProfilePictureBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ProfilePictureBox.BackgroundImage")));
-            this.ProfilePictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ProfilePictureBox.Location = new System.Drawing.Point(951, 37);
-            this.ProfilePictureBox.Name = "ProfilePictureBox";
-            this.ProfilePictureBox.Size = new System.Drawing.Size(47, 35);
-            this.ProfilePictureBox.TabIndex = 83;
-            this.ProfilePictureBox.TabStop = false;
+            ProfilePictureBox.BackColor = Color.Black;
+            ProfilePictureBox.BackgroundImage = (Image)resources.GetObject("ProfilePictureBox.BackgroundImage");
+            ProfilePictureBox.BackgroundImageLayout = ImageLayout.Zoom;
+            ProfilePictureBox.Location = new Point(1189, 46);
+            ProfilePictureBox.Margin = new Padding(4, 4, 4, 4);
+            ProfilePictureBox.Name = "ProfilePictureBox";
+            ProfilePictureBox.Size = new Size(59, 44);
+            ProfilePictureBox.TabIndex = 83;
+            ProfilePictureBox.TabStop = false;
             // 
             // btnApproveDeny
             // 
-            this.btnApproveDeny.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnApproveDeny.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnApproveDeny.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnApproveDeny.ForeColor = System.Drawing.Color.White;
-            this.btnApproveDeny.Location = new System.Drawing.Point(840, 250);
-            this.btnApproveDeny.Margin = new System.Windows.Forms.Padding(2);
-            this.btnApproveDeny.Name = "btnApproveDeny";
-            this.btnApproveDeny.Size = new System.Drawing.Size(132, 52);
-            this.btnApproveDeny.TabIndex = 51;
-            this.btnApproveDeny.Text = "Update Status";
-            this.btnApproveDeny.UseVisualStyleBackColor = false;
+            btnApproveDeny.BackColor = Color.FromArgb(64, 0, 0);
+            btnApproveDeny.FlatStyle = FlatStyle.Popup;
+            btnApproveDeny.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            btnApproveDeny.ForeColor = Color.White;
+            btnApproveDeny.Location = new Point(1050, 312);
+            btnApproveDeny.Margin = new Padding(2);
+            btnApproveDeny.Name = "btnApproveDeny";
+            btnApproveDeny.Size = new Size(165, 65);
+            btnApproveDeny.TabIndex = 51;
+            btnApproveDeny.Text = "Update Status";
+            btnApproveDeny.UseVisualStyleBackColor = false;
             // 
             // btnClear
             // 
-            this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnClear.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnClear.ForeColor = System.Drawing.Color.White;
-            this.btnClear.Location = new System.Drawing.Point(840, 166);
-            this.btnClear.Margin = new System.Windows.Forms.Padding(2);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(132, 52);
-            this.btnClear.TabIndex = 52;
-            this.btnClear.Text = "Clear";
-            this.btnClear.UseVisualStyleBackColor = false;
+            btnClear.BackColor = Color.FromArgb(64, 0, 0);
+            btnClear.FlatStyle = FlatStyle.Popup;
+            btnClear.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            btnClear.ForeColor = Color.White;
+            btnClear.Location = new Point(1050, 208);
+            btnClear.Margin = new Padding(2);
+            btnClear.Name = "btnClear";
+            btnClear.Size = new Size(165, 65);
+            btnClear.TabIndex = 52;
+            btnClear.Text = "Clear";
+            btnClear.UseVisualStyleBackColor = false;
             // 
             // pictureBox4
             // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Black;
-            this.pictureBox4.Image = global::GUI_IT.Properties.Resources.redAgentsLogo;
-            this.pictureBox4.Location = new System.Drawing.Point(7, 35);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(43, 35);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 36;
-            this.pictureBox4.TabStop = false;
+            pictureBox4.BackColor = Color.Black;
+            pictureBox4.Image = Properties.Resources.redAgentsLogo;
+            pictureBox4.Location = new Point(9, 44);
+            pictureBox4.Margin = new Padding(2);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(54, 44);
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox4.TabIndex = 36;
+            pictureBox4.TabStop = false;
             // 
             // lblLoggedIn
             // 
-            this.lblLoggedIn.AutoSize = true;
-            this.lblLoggedIn.BackColor = System.Drawing.Color.Black;
-            this.lblLoggedIn.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblLoggedIn.ForeColor = System.Drawing.Color.White;
-            this.lblLoggedIn.Location = new System.Drawing.Point(779, 42);
-            this.lblLoggedIn.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblLoggedIn.Name = "lblLoggedIn";
-            this.lblLoggedIn.Size = new System.Drawing.Size(150, 23);
-            this.lblLoggedIn.TabIndex = 0;
-            this.lblLoggedIn.Text = "Logged in as: User";
+            lblLoggedIn.AutoSize = true;
+            lblLoggedIn.BackColor = Color.Black;
+            lblLoggedIn.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            lblLoggedIn.ForeColor = Color.White;
+            lblLoggedIn.Location = new Point(974, 52);
+            lblLoggedIn.Margin = new Padding(2, 0, 2, 0);
+            lblLoggedIn.Name = "lblLoggedIn";
+            lblLoggedIn.Size = new Size(171, 28);
+            lblLoggedIn.TabIndex = 0;
+            lblLoggedIn.Text = "Logged in as: User";
             // 
             // pictureBox6
             // 
-            this.pictureBox6.BackColor = System.Drawing.Color.DarkGray;
-            this.pictureBox6.Location = new System.Drawing.Point(828, 145);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(156, 268);
-            this.pictureBox6.TabIndex = 73;
-            this.pictureBox6.TabStop = false;
+            pictureBox6.BackColor = Color.DarkGray;
+            pictureBox6.Location = new Point(1035, 181);
+            pictureBox6.Margin = new Padding(2);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(195, 335);
+            pictureBox6.TabIndex = 73;
+            pictureBox6.TabStop = false;
             // 
             // btnrefre
             // 
-            this.btnrefre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnrefre.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnrefre.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnrefre.ForeColor = System.Drawing.Color.White;
-            this.btnrefre.Location = new System.Drawing.Point(840, 331);
-            this.btnrefre.Name = "btnrefre";
-            this.btnrefre.Size = new System.Drawing.Size(132, 52);
-            this.btnrefre.TabIndex = 74;
-            this.btnrefre.Text = "Refresh";
-            this.btnrefre.UseVisualStyleBackColor = false;
+            btnrefre.BackColor = Color.FromArgb(64, 0, 0);
+            btnrefre.FlatStyle = FlatStyle.Popup;
+            btnrefre.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            btnrefre.ForeColor = Color.White;
+            btnrefre.Location = new Point(1050, 414);
+            btnrefre.Margin = new Padding(4, 4, 4, 4);
+            btnrefre.Name = "btnrefre";
+            btnrefre.Size = new Size(165, 65);
+            btnrefre.TabIndex = 74;
+            btnrefre.Text = "Refresh";
+            btnrefre.UseVisualStyleBackColor = false;
             // 
             // frmAdmin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1009, 513);
-            this.Controls.Add(this.lblLoggedIn);
-            this.Controls.Add(this.pnlReportGenerate);
-            this.Controls.Add(this.lblAdminHeader);
-            this.Controls.Add(this.btnApproveDeny);
-            this.Controls.Add(this.btnClear);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.lblHeader);
-            this.Controls.Add(this.btnGenerate);
-            this.Controls.Add(this.btnRegistration);
-            this.Controls.Add(this.btnLogout);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.ProfilePictureBox);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.Rectangle1);
-            this.Controls.Add(this.btnrefre);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.DGVR);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "frmAdmin";
-            this.Text = "IT Help Desk Admin Registration";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Rectangle1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DGVR)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.pnlReportGenerate.ResumeLayout(false);
-            this.tabReportGeneration.ResumeLayout(false);
-            this.tabHome.ResumeLayout(false);
-            this.tabHome.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            this.tabView.ResumeLayout(false);
-            this.tabView.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DGVV)).EndInit();
-            this.tabSolved.ResumeLayout(false);
-            this.tabSolved.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
-            this.tabUnsolved.ResumeLayout(false);
-            this.tabUnsolved.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ProfilePictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1261, 641);
+            Controls.Add(lblLoggedIn);
+            Controls.Add(pnlReportGenerate);
+            Controls.Add(lblAdminHeader);
+            Controls.Add(btnApproveDeny);
+            Controls.Add(btnClear);
+            Controls.Add(pictureBox2);
+            Controls.Add(lblHeader);
+            Controls.Add(btnGenerate);
+            Controls.Add(btnRegistration);
+            Controls.Add(btnLogout);
+            Controls.Add(pictureBox1);
+            Controls.Add(ProfilePictureBox);
+            Controls.Add(pictureBox4);
+            Controls.Add(Rectangle1);
+            Controls.Add(btnrefre);
+            Controls.Add(pictureBox6);
+            Controls.Add(DGVR);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(2);
+            Name = "frmAdmin";
+            Text = "IT Help Desk Admin Registration";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Rectangle1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)DGVR).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            pnlReportGenerate.ResumeLayout(false);
+            tabReportGeneration.ResumeLayout(false);
+            tabHome.ResumeLayout(false);
+            tabHome.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
+            tabView.ResumeLayout(false);
+            tabView.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)DGVV).EndInit();
+            tabSolved.ResumeLayout(false);
+            tabSolved.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox15).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox16).EndInit();
+            tabUnsolved.ResumeLayout(false);
+            tabUnsolved.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
+            ((System.ComponentModel.ISupportInitialize)ProfilePictureBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

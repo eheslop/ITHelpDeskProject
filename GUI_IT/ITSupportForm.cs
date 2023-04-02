@@ -106,5 +106,13 @@ namespace GUI_IT
             string j = txtSolution.Text.ToString();
             Sql.solve(y, newUser_.Username, z, k, j);
         }
+
+        private void btnLogout_Click_1(object sender, EventArgs e)
+        {
+            FrmLogin LoginScreen = new FrmLogin();
+            this.Hide();
+            LoginScreen.ShowDialog();
+            this.Close();
+        }
     }
 }

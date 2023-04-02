@@ -116,5 +116,13 @@ namespace GUI_IT
         {
 
         }
+
+        private void btnLogout_Click_1(object sender, EventArgs e)
+        {
+            FrmLogin LoginScreen = new FrmLogin();
+            this.Hide();
+            LoginScreen.ShowDialog();
+            this.Close();
+        }
     }
 }
