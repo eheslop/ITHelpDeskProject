@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Microsoft.Data.SqlClient;
+using GUI_IT;
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,16 +15,23 @@ namespace GUI_IT
 {
     public partial class frmProjectMember : Form
     {
-        private SessionRegister newUser;
+        private SessionRegister newUser_;
+        public string User { get; set; }
+        public string emaill { get; set; }
+        public string FullName { get; set; }
 
-        int id = 8;
         public frmProjectMember(SessionRegister newUser)
         {
+            newUser_ = newUser;
             InitializeComponent();
             pnlTickets.Visible = true;
             pnlProblemList.Visible = false;
-            lblUser.Text = newUser.Username + "!";
-            lblLoggedIn.Text = "Logged in as: " + newUser.Username;
+            lblUser.Text = newUser_.FirstName + "!";
+            lblLoggedIn.Text = "Logged in as: " + newUser_.FirstName;
+            User = newUser_.Username;
+            emaill = newUser_.Email;
+            FullName = newUser_.FullName;
+            Fill();
         }
 
         private void frmProjectMember_Load(object sender, EventArgs e)
@@ -73,6 +83,7 @@ namespace GUI_IT
             pnlTickets.Visible = true;
             pnlProblemList.Visible = false;
             this.Text = "IT Help Desk Project Member Ticket Dashboard";
+
         }
 
         private void pnlOnlineHelp_Paint(object sender, PaintEventArgs e)
@@ -104,11 +115,17 @@ namespace GUI_IT
 
         private void btnRaise_Click(object sender, EventArgs e)
         {
+            // SessionRegister newUser;
+
             string Category = cbxType.Text.ToString();
             string Description = txtProblemDescribe.Text.ToString();
             string Priority = cbxUrgency.Text.ToString();
-            Sql.RaiseTicket(id, Category, Description, Priority);
-            id++;
+
+            int id = Sql.count();
+            Sql.RaiseTicket(id, FullName, User, Category, Description, emaill, Priority);
+            Email.sendEmail("Raised Ticket", User, 0, id);
+            MessageBox.Show("Your ticket was raised successfully, and you will recieve email updates regarding the status of your ticket.", "Ticket Successfully Raised!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
             cbxType.ResetText();
             cbxType.SelectedIndex = -1;
             cbxUrgency.ResetText();
@@ -124,6 +141,36 @@ namespace GUI_IT
         private void lblLoggedIn_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void ProfilePictureBox_Click(object sender, EventArgs e)
+        {
+            frmUserProf UserProfile = new frmUserProf(newUser_);
+            UserProfile.ShowDialog();
+        }
+
+        private void Fill()
+        {
+            SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
+            builder.DataSource = "redagents.database.windows.net";
+            builder.UserID = "kwekwe";
+            builder.Password = "Password1!";
+            builder.InitialCatalog = "red_Agents";
+            SqlConnection con = new SqlConnection(builder.ConnectionString);
+            con.Open();
+            string x = User;
+            string query = "Select * from Tickets where Username = '" + User + "'";
+            SqlDataAdapter da = new SqlDataAdapter(query, con);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            DGVM.DataSource = dt;
+            DGVM.EditMode = DataGridViewEditMode.EditOnEnter;
+            con.Close();
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            Fill();
         }
     }
 }

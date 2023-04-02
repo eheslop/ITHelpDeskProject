@@ -5,9 +5,8 @@ using System.Text;
 using MailKit.Net.Smtp;
 using MailKit;
 using MimeKit;
-using System.Security.Cryptography.X509Certificates;
 using System.Net.Mail;
-using Org.BouncyCastle.Asn1.Crmf;
+using Microsoft.Identity.Client;
 
 namespace GUI_IT
 {
@@ -90,6 +89,9 @@ namespace GUI_IT
         {
             newUser.Username = txtUsername.Text.ToString();
             newUser.Password = txtPassword.Text.ToString();
+            newUser.Email = Sql.getEmail(newUser.Username);
+            newUser.FirstName = Sql.getName(newUser.Username);
+            newUser.FullName = Sql.getfullName(newUser.Username);
             int exists = Sql.Login(newUser.Username, newUser.Password);
             if (exists == 0)
             {
@@ -127,35 +129,30 @@ namespace GUI_IT
                     lblInvalidRole.Visible = true;
 
             }
-
-            /* if (txtUsername.Text == "admin" && txtPassword.Text == "password")
-            {
-                frmAdmin adminLogIn = new frmAdmin();
-                this.Hide();
-                adminLogIn.ShowDialog();
-                this.Close();
-            }
-            else if (txtUsername.Text == "projectMem" && txtPassword.Text == "member")
-            {
-                frmProjectMember projectMemberForm = new frmProjectMember();
-                this.Hide();
-                projectMemberForm.ShowDialog();
-                this.Close();
-            }
-            */
             else
             {
                 //MessageBox.Show("Incorrect Login Information", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 lblIncorrectLogin.Visible = true;
             }
         }
-
         private void btnRegister_Click(object sender, EventArgs e)
         {
+            Random res1 = new Random();
+            String str1 = "0123456789";
+            int size1 = 4;
+            String randomstring1 = "";
+            for (int i = 0; i < size1; i++)
+            {
+                int x = res1.Next(str1.Length);
+                randomstring1 = randomstring1 + str1[x];
+            }
             string name = txtFirstName.Text.ToString() + " " + txtLastName.Text.ToString();
+            string first = txtFirstName.Text.ToString();
+            string last = txtLastName.Text.ToString();
             string email = txtEmail.Text.ToString();
-            newUser.UserType = cboUserType.Text.ToString();
-            string user = name[0].ToString() + txtLastName.Text.ToString();
+            string role = cboUserType.Text.ToString();
+            string user = name[0].ToString() + txtLastName.Text.ToString() + randomstring1.ToString();
+            DateTime time = DateTime.Now;
             Boolean accountExists = Sql.Exists(user);
             Boolean validEmail = Email.isValid(email);
             if (accountExists == false && validEmail == true)
@@ -169,12 +166,10 @@ namespace GUI_IT
                     int x = res.Next(str.Length);
                     randomstring = randomstring + str[x];
                 }
-                newUser.Password = randomstring.ToString();
-                Sql.Register(user, name, newUser.Password, email, newUser.UserType);
-                Email.sendEmail("Registration", user);
-                Email.sendEmail("Registration Accepted", user);
-                //Email.sendEmail("Registration Denied", user);
-                //Email.sendEmail("Raised Ticket", user, 1);
+                string pass = randomstring.ToString();
+                Sql.Register(user, name, first, last, pass, email, role, time);
+                int kk = 1;
+                Email.sendEmail("Registration", user, kk);
                 MessageBox.Show("Account Created!\nCheck your email for your login credentials!", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 pnlSignUp.Visible = false;
@@ -459,6 +454,11 @@ namespace GUI_IT
         }
 
         private void btnLoginForm_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblAlreadyExists_Click(object sender, EventArgs e)
         {
 
         }

@@ -14,13 +14,17 @@ namespace GUI_IT
 {
     public partial class frmReportManage : Form
     {
-        private SessionRegister newUser;
+        private SessionRegister newUser_;
+
         public frmReportManage(SessionRegister newUser)
         {
+            newUser_ = newUser;
             InitializeComponent();
             Fill();
-            lblUser.Text = newUser.Username + "!";
-            lblLoggedIn.Text = "Logged in as: " + newUser.Username;
+            Fill1();
+            combo();
+            lblUser.Text = newUser_.FirstName + "!";
+            lblLoggedIn.Text = "Logged in as: " + newUser_.FirstName;
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
@@ -37,6 +41,7 @@ namespace GUI_IT
         }
         private void Fill()
         {
+            string x = "Unsolved";
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
             builder.DataSource = "redagents.database.windows.net";
             builder.UserID = "kwekwe";
@@ -44,7 +49,7 @@ namespace GUI_IT
             builder.InitialCatalog = "red_Agents";
             SqlConnection con = new SqlConnection(builder.ConnectionString);
             con.Open();
-            string query = "Select * from Tickets";
+            string query = "Select * from Tickets where Status = '"+x+"'; ";
             SqlDataAdapter da = new SqlDataAdapter(query, con);
             DataTable dt = new DataTable();
             da.Fill(dt);
@@ -55,6 +60,100 @@ namespace GUI_IT
         private void lblLoggedIn_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void ProfilePictureBox_Click(object sender, EventArgs e)
+        {
+            frmUserProf UserProfile = new frmUserProf(newUser_);
+            UserProfile.ShowDialog();
+        }
+
+        private void txtTicketID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAssign_Click(object sender, EventArgs e)
+        {
+            string x = txtTicketID.Text.ToString();
+            int y = System.Convert.ToInt32(x);
+            string k = cbxn.Text.ToString();
+            string z = Sql.getUser(k);
+            string f = txtEmail.Text.ToString();
+            Sql.Addcoll(z, y);
+            Sql.add2(z, y, f);
+        }
+        private void combo()
+        {
+            cbxn.DataSource = Sql.ITname();
+            cbxn.DisplayMember = "Name";
+        }
+        private void Fill1()
+        {
+            string x = "Unsolved";
+            SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
+            builder.DataSource = "redagents.database.windows.net";
+            builder.UserID = "kwekwe";
+            builder.Password = "Password1!";
+            builder.InitialCatalog = "red_Agents";
+            SqlConnection con = new SqlConnection(builder.ConnectionString);
+            con.Open();
+            string query = "Select * from Tickets where Status = '"+x+"';";
+            SqlDataAdapter da = new SqlDataAdapter(query, con);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            DGVAssign.DataSource = dt;
+            DGVAssign.EditMode = DataGridViewEditMode.EditOnEnter;
+            con.Close();
+
+        }
+
+        private void Fill2()
+        {
+            string x = "Solved";
+            SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
+            builder.DataSource = "redagents.database.windows.net";
+            builder.UserID = "kwekwe";
+            builder.Password = "Password1!";
+            builder.InitialCatalog = "red_Agents";
+            SqlConnection con = new SqlConnection(builder.ConnectionString);
+            con.Open();
+            string query = "Select * from Tickets where Status = '" + x + "';";
+            SqlDataAdapter da = new SqlDataAdapter(query, con);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            DGVT.DataSource = dt;
+            DGVAssign.EditMode = DataGridViewEditMode.EditOnEnter;
+            con.Close();
+
+        }
+
+
+        private void tabAssign_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtTicketID.Clear();
+            //txtUsername.Clear();
+            txtEmail.Clear();
+        }
+
+        private void DGVT_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnUnsolved_Click(object sender, EventArgs e)
+        {
+            Fill();
+        }
+
+        private void btnSolved_Click(object sender, EventArgs e)
+        {
+            Fill2();
         }
     }
 }

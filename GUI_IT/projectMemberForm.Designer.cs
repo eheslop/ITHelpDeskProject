@@ -55,7 +55,8 @@
             this.lblDescribeHome = new System.Windows.Forms.Label();
             this.lblWelcomeMessage = new System.Windows.Forms.Label();
             this.tabMyTickets = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnRefresh = new System.Windows.Forms.Button();
+            this.DGVM = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
             this.tabRaiseTicket = new System.Windows.Forms.TabPage();
             this.btnRaise = new System.Windows.Forms.Button();
@@ -88,7 +89,11 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.lblHeader = new System.Windows.Forms.Label();
             this.lblLoggedIn = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.ProfilePictureBox = new System.Windows.Forms.PictureBox();
+            this.tabEmail = new System.Windows.Forms.TabPage();
+            this.tabReportGeneration = new System.Windows.Forms.TabControl();
+            this.tabPassword = new System.Windows.Forms.TabPage();
+            this.tabTickets = new System.Windows.Forms.TabPage();
             ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Rectangle1)).BeginInit();
@@ -102,7 +107,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.tabMyTickets.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGVM)).BeginInit();
             this.tabRaiseTicket.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabReopenTicket.SuspendLayout();
@@ -111,7 +116,8 @@
             this.pnlProblemList.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ProfilePictureBox)).BeginInit();
+            this.tabReportGeneration.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureLogo
@@ -187,7 +193,7 @@
             this.btnProblemList.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnProblemList.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.btnProblemList.ForeColor = System.Drawing.Color.White;
-            this.btnProblemList.Location = new System.Drawing.Point(191, 33);
+            this.btnProblemList.Location = new System.Drawing.Point(167, 34);
             this.btnProblemList.Margin = new System.Windows.Forms.Padding(2);
             this.btnProblemList.Name = "btnProblemList";
             this.btnProblemList.Size = new System.Drawing.Size(118, 38);
@@ -202,7 +208,7 @@
             this.btnOnlineHelp.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnOnlineHelp.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.btnOnlineHelp.ForeColor = System.Drawing.Color.White;
-            this.btnOnlineHelp.Location = new System.Drawing.Point(73, 31);
+            this.btnOnlineHelp.Location = new System.Drawing.Point(61, 35);
             this.btnOnlineHelp.Name = "btnOnlineHelp";
             this.btnOnlineHelp.Size = new System.Drawing.Size(113, 38);
             this.btnOnlineHelp.TabIndex = 38;
@@ -214,10 +220,10 @@
             this.pnlTickets.Controls.Add(this.tabProjectMem);
             this.pnlTickets.Controls.Add(this.lblTicket);
             this.pnlTickets.Controls.Add(this.pictureBox3);
-            this.pnlTickets.Location = new System.Drawing.Point(0, 71);
+            this.pnlTickets.Location = new System.Drawing.Point(0, 73);
             this.pnlTickets.Margin = new System.Windows.Forms.Padding(2);
             this.pnlTickets.Name = "pnlTickets";
-            this.pnlTickets.Size = new System.Drawing.Size(1028, 446);
+            this.pnlTickets.Size = new System.Drawing.Size(1028, 482);
             this.pnlTickets.TabIndex = 45;
             // 
             // tabProjectMem
@@ -227,11 +233,11 @@
             this.tabProjectMem.Controls.Add(this.tabRaiseTicket);
             this.tabProjectMem.Controls.Add(this.tabReopenTicket);
             this.tabProjectMem.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.tabProjectMem.Location = new System.Drawing.Point(-6, 54);
-            this.tabProjectMem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabProjectMem.Location = new System.Drawing.Point(-6, 55);
+            this.tabProjectMem.Margin = new System.Windows.Forms.Padding(2);
             this.tabProjectMem.Name = "tabProjectMem";
             this.tabProjectMem.SelectedIndex = 0;
-            this.tabProjectMem.Size = new System.Drawing.Size(1031, 397);
+            this.tabProjectMem.Size = new System.Drawing.Size(1031, 396);
             this.tabProjectMem.TabIndex = 50;
             // 
             // tabHome
@@ -253,9 +259,9 @@
             this.tabHome.Controls.Add(this.lblDescribeHome);
             this.tabHome.Controls.Add(this.lblWelcomeMessage);
             this.tabHome.Location = new System.Drawing.Point(4, 32);
-            this.tabHome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabHome.Margin = new System.Windows.Forms.Padding(2);
             this.tabHome.Name = "tabHome";
-            this.tabHome.Size = new System.Drawing.Size(1023, 361);
+            this.tabHome.Size = new System.Drawing.Size(1023, 360);
             this.tabHome.TabIndex = 3;
             this.tabHome.Text = "Ticket Homepage";
             // 
@@ -264,7 +270,7 @@
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.White;
             this.label11.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label11.Location = new System.Drawing.Point(209, 276);
+            this.label11.Location = new System.Drawing.Point(214, 274);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(769, 60);
@@ -276,7 +282,7 @@
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.White;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(26, 287);
+            this.label10.Location = new System.Drawing.Point(26, 286);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(190, 32);
@@ -288,7 +294,7 @@
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.White;
             this.label9.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(179, 179);
+            this.label9.Location = new System.Drawing.Point(189, 179);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(809, 60);
@@ -300,7 +306,7 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.White;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(30, 192);
+            this.label8.Location = new System.Drawing.Point(30, 191);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(159, 32);
@@ -311,9 +317,9 @@
             // 
             this.pictureBox13.BackColor = System.Drawing.Color.White;
             this.pictureBox13.Location = new System.Drawing.Point(21, 274);
-            this.pictureBox13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox13.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(928, 60);
+            this.pictureBox13.Size = new System.Drawing.Size(970, 60);
             this.pictureBox13.TabIndex = 66;
             this.pictureBox13.TabStop = false;
             // 
@@ -321,9 +327,9 @@
             // 
             this.pictureBox12.BackColor = System.Drawing.Color.White;
             this.pictureBox12.Location = new System.Drawing.Point(22, 178);
-            this.pictureBox12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox12.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(928, 60);
+            this.pictureBox12.Size = new System.Drawing.Size(968, 60);
             this.pictureBox12.TabIndex = 65;
             this.pictureBox12.TabStop = false;
             // 
@@ -344,7 +350,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.White;
             this.label7.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(158, 91);
+            this.label7.Location = new System.Drawing.Point(163, 91);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(827, 40);
@@ -355,9 +361,9 @@
             // 
             this.pictureBox11.BackColor = System.Drawing.Color.White;
             this.pictureBox11.Location = new System.Drawing.Point(22, 81);
-            this.pictureBox11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox11.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(928, 60);
+            this.pictureBox11.Size = new System.Drawing.Size(968, 60);
             this.pictureBox11.TabIndex = 62;
             this.pictureBox11.TabStop = false;
             // 
@@ -365,9 +371,9 @@
             // 
             this.pictureBox10.BackColor = System.Drawing.Color.Gray;
             this.pictureBox10.Location = new System.Drawing.Point(14, 262);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox10.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(944, 84);
+            this.pictureBox10.Size = new System.Drawing.Size(986, 84);
             this.pictureBox10.TabIndex = 59;
             this.pictureBox10.TabStop = false;
             // 
@@ -375,9 +381,9 @@
             // 
             this.pictureBox9.BackColor = System.Drawing.Color.Gray;
             this.pictureBox9.Location = new System.Drawing.Point(14, 166);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(944, 84);
+            this.pictureBox9.Size = new System.Drawing.Size(986, 84);
             this.pictureBox9.TabIndex = 58;
             this.pictureBox9.TabStop = false;
             // 
@@ -385,9 +391,9 @@
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.Gray;
             this.pictureBox8.Location = new System.Drawing.Point(14, 69);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(944, 84);
+            this.pictureBox8.Size = new System.Drawing.Size(986, 84);
             this.pictureBox8.TabIndex = 57;
             this.pictureBox8.TabStop = false;
             // 
@@ -428,25 +434,40 @@
             // tabMyTickets
             // 
             this.tabMyTickets.BackColor = System.Drawing.Color.LightGray;
-            this.tabMyTickets.Controls.Add(this.dataGridView1);
+            this.tabMyTickets.Controls.Add(this.btnRefresh);
+            this.tabMyTickets.Controls.Add(this.DGVM);
             this.tabMyTickets.Controls.Add(this.label5);
             this.tabMyTickets.Location = new System.Drawing.Point(4, 32);
-            this.tabMyTickets.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabMyTickets.Margin = new System.Windows.Forms.Padding(2);
             this.tabMyTickets.Name = "tabMyTickets";
-            this.tabMyTickets.Size = new System.Drawing.Size(1023, 361);
+            this.tabMyTickets.Size = new System.Drawing.Size(1023, 360);
             this.tabMyTickets.TabIndex = 2;
             this.tabMyTickets.Text = "My Tickets";
             // 
-            // dataGridView1
+            // btnRefresh
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(17, 40);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.Size = new System.Drawing.Size(936, 302);
-            this.dataGridView1.TabIndex = 55;
+            this.btnRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnRefresh.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnRefresh.ForeColor = System.Drawing.Color.White;
+            this.btnRefresh.Location = new System.Drawing.Point(929, 38);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(76, 42);
+            this.btnRefresh.TabIndex = 56;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.UseVisualStyleBackColor = false;
+            // 
+            // DGVM
+            // 
+            this.DGVM.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGVM.Location = new System.Drawing.Point(17, 38);
+            this.DGVM.Margin = new System.Windows.Forms.Padding(2);
+            this.DGVM.Name = "DGVM";
+            this.DGVM.RowHeadersWidth = 62;
+            this.DGVM.RowTemplate.Height = 33;
+            this.DGVM.Size = new System.Drawing.Size(905, 304);
+            this.DGVM.TabIndex = 55;
             // 
             // label5
             // 
@@ -474,10 +495,10 @@
             this.tabRaiseTicket.Controls.Add(this.label1);
             this.tabRaiseTicket.Controls.Add(this.label2);
             this.tabRaiseTicket.Location = new System.Drawing.Point(4, 32);
-            this.tabRaiseTicket.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabRaiseTicket.Margin = new System.Windows.Forms.Padding(2);
             this.tabRaiseTicket.Name = "tabRaiseTicket";
-            this.tabRaiseTicket.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabRaiseTicket.Size = new System.Drawing.Size(1023, 361);
+            this.tabRaiseTicket.Padding = new System.Windows.Forms.Padding(2);
+            this.tabRaiseTicket.Size = new System.Drawing.Size(1023, 360);
             this.tabRaiseTicket.TabIndex = 0;
             this.tabRaiseTicket.Text = "Raise Tickets";
             // 
@@ -488,7 +509,7 @@
             this.btnRaise.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnRaise.ForeColor = System.Drawing.Color.White;
             this.btnRaise.Location = new System.Drawing.Point(861, 310);
-            this.btnRaise.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRaise.Margin = new System.Windows.Forms.Padding(2);
             this.btnRaise.Name = "btnRaise";
             this.btnRaise.Size = new System.Drawing.Size(129, 32);
             this.btnRaise.TabIndex = 61;
@@ -507,7 +528,7 @@
             "Type 4",
             "Other"});
             this.cbxType.Location = new System.Drawing.Point(10, 90);
-            this.cbxType.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbxType.Margin = new System.Windows.Forms.Padding(2);
             this.cbxType.Name = "cbxType";
             this.cbxType.Size = new System.Drawing.Size(308, 31);
             this.cbxType.TabIndex = 60;
@@ -518,11 +539,11 @@
             this.cbxUrgency.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.cbxUrgency.FormattingEnabled = true;
             this.cbxUrgency.Items.AddRange(new object[] {
-            "Low",
+            "High",
             "Medium",
-            "High"});
+            "Low"});
             this.cbxUrgency.Location = new System.Drawing.Point(370, 90);
-            this.cbxUrgency.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbxUrgency.Margin = new System.Windows.Forms.Padding(2);
             this.cbxUrgency.Name = "cbxUrgency";
             this.cbxUrgency.Size = new System.Drawing.Size(284, 31);
             this.cbxUrgency.TabIndex = 59;
@@ -551,7 +572,7 @@
             // 
             this.txtProblemDescribe.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtProblemDescribe.Location = new System.Drawing.Point(21, 144);
-            this.txtProblemDescribe.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtProblemDescribe.Margin = new System.Windows.Forms.Padding(2);
             this.txtProblemDescribe.MaxLength = 500;
             this.txtProblemDescribe.Multiline = true;
             this.txtProblemDescribe.Name = "txtProblemDescribe";
@@ -578,7 +599,7 @@
             this.btnClear.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnClear.ForeColor = System.Drawing.Color.White;
             this.btnClear.Location = new System.Drawing.Point(861, 268);
-            this.btnClear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(2);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(129, 32);
             this.btnClear.TabIndex = 54;
@@ -623,10 +644,10 @@
             this.tabReopenTicket.Controls.Add(this.label4);
             this.tabReopenTicket.Controls.Add(this.label3);
             this.tabReopenTicket.Location = new System.Drawing.Point(4, 32);
-            this.tabReopenTicket.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabReopenTicket.Margin = new System.Windows.Forms.Padding(2);
             this.tabReopenTicket.Name = "tabReopenTicket";
-            this.tabReopenTicket.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabReopenTicket.Size = new System.Drawing.Size(1023, 361);
+            this.tabReopenTicket.Padding = new System.Windows.Forms.Padding(2);
+            this.tabReopenTicket.Size = new System.Drawing.Size(1023, 360);
             this.tabReopenTicket.TabIndex = 1;
             this.tabReopenTicket.Text = "Re-open Tickets";
             // 
@@ -662,7 +683,7 @@
             "Reason 5",
             "None of the above"});
             this.cbxReopenReason.Location = new System.Drawing.Point(8, 101);
-            this.cbxReopenReason.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbxReopenReason.Margin = new System.Windows.Forms.Padding(2);
             this.cbxReopenReason.Name = "cbxReopenReason";
             this.cbxReopenReason.Size = new System.Drawing.Size(522, 31);
             this.cbxReopenReason.TabIndex = 64;
@@ -685,7 +706,7 @@
             this.btnReopenTicket.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnReopenTicket.ForeColor = System.Drawing.Color.White;
             this.btnReopenTicket.Location = new System.Drawing.Point(872, 315);
-            this.btnReopenTicket.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnReopenTicket.Margin = new System.Windows.Forms.Padding(2);
             this.btnReopenTicket.Name = "btnReopenTicket";
             this.btnReopenTicket.Size = new System.Drawing.Size(126, 32);
             this.btnReopenTicket.TabIndex = 62;
@@ -699,7 +720,7 @@
             this.btnReopenClear.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnReopenClear.ForeColor = System.Drawing.Color.White;
             this.btnReopenClear.Location = new System.Drawing.Point(872, 276);
-            this.btnReopenClear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnReopenClear.Margin = new System.Windows.Forms.Padding(2);
             this.btnReopenClear.Name = "btnReopenClear";
             this.btnReopenClear.Size = new System.Drawing.Size(125, 29);
             this.btnReopenClear.TabIndex = 58;
@@ -710,7 +731,7 @@
             // 
             this.txtReopenTicket.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtReopenTicket.Location = new System.Drawing.Point(21, 158);
-            this.txtReopenTicket.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtReopenTicket.Margin = new System.Windows.Forms.Padding(2);
             this.txtReopenTicket.MaxLength = 500;
             this.txtReopenTicket.Multiline = true;
             this.txtReopenTicket.Name = "txtReopenTicket";
@@ -774,10 +795,10 @@
             this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.pictureBox3.Location = new System.Drawing.Point(0, -1);
+            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(1026, 53);
+            this.pictureBox3.Size = new System.Drawing.Size(1019, 52);
             this.pictureBox3.TabIndex = 44;
             this.pictureBox3.TabStop = false;
             // 
@@ -788,7 +809,7 @@
             this.pnlProblemList.Location = new System.Drawing.Point(-3, 71);
             this.pnlProblemList.Margin = new System.Windows.Forms.Padding(2);
             this.pnlProblemList.Name = "pnlProblemList";
-            this.pnlProblemList.Size = new System.Drawing.Size(1014, 442);
+            this.pnlProblemList.Size = new System.Drawing.Size(1014, 464);
             this.pnlProblemList.TabIndex = 45;
             // 
             // lblProblem
@@ -864,31 +885,74 @@
             this.lblLoggedIn.BackColor = System.Drawing.Color.Black;
             this.lblLoggedIn.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblLoggedIn.ForeColor = System.Drawing.Color.White;
-            this.lblLoggedIn.Location = new System.Drawing.Point(730, 40);
+            this.lblLoggedIn.Location = new System.Drawing.Point(782, 40);
             this.lblLoggedIn.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblLoggedIn.Name = "lblLoggedIn";
             this.lblLoggedIn.Size = new System.Drawing.Size(150, 23);
             this.lblLoggedIn.TabIndex = 4;
             this.lblLoggedIn.Text = "Logged in as: User";
             // 
-            // pictureBox7
+            // ProfilePictureBox
             // 
-            this.pictureBox7.BackColor = System.Drawing.Color.Black;
-            this.pictureBox7.BackgroundImage = global::GUI_IT.Properties.Resources.Profile_Picture;
-            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox7.Location = new System.Drawing.Point(962, 37);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(38, 28);
-            this.pictureBox7.TabIndex = 4;
-            this.pictureBox7.TabStop = false;
+            this.ProfilePictureBox.BackColor = System.Drawing.Color.Black;
+            this.ProfilePictureBox.BackgroundImage = global::GUI_IT.Properties.Resources.Profile_Picture;
+            this.ProfilePictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ProfilePictureBox.Location = new System.Drawing.Point(962, 37);
+            this.ProfilePictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.ProfilePictureBox.Name = "ProfilePictureBox";
+            this.ProfilePictureBox.Size = new System.Drawing.Size(38, 28);
+            this.ProfilePictureBox.TabIndex = 4;
+            this.ProfilePictureBox.TabStop = false;
+            // 
+            // tabEmail
+            // 
+            this.tabEmail.BackColor = System.Drawing.Color.LightGray;
+            this.tabEmail.Location = new System.Drawing.Point(4, 32);
+            this.tabEmail.Margin = new System.Windows.Forms.Padding(2);
+            this.tabEmail.Name = "tabEmail";
+            this.tabEmail.Size = new System.Drawing.Size(1011, 398);
+            this.tabEmail.TabIndex = 3;
+            this.tabEmail.Text = "Email Questions";
+            // 
+            // tabReportGeneration
+            // 
+            this.tabReportGeneration.Controls.Add(this.tabEmail);
+            this.tabReportGeneration.Controls.Add(this.tabPassword);
+            this.tabReportGeneration.Controls.Add(this.tabTickets);
+            this.tabReportGeneration.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.tabReportGeneration.Location = new System.Drawing.Point(-2, 124);
+            this.tabReportGeneration.Margin = new System.Windows.Forms.Padding(2);
+            this.tabReportGeneration.Name = "tabReportGeneration";
+            this.tabReportGeneration.SelectedIndex = 0;
+            this.tabReportGeneration.Size = new System.Drawing.Size(1019, 434);
+            this.tabReportGeneration.TabIndex = 49;
+            // 
+            // tabPassword
+            // 
+            this.tabPassword.BackColor = System.Drawing.Color.LightGray;
+            this.tabPassword.Location = new System.Drawing.Point(4, 32);
+            this.tabPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPassword.Name = "tabPassword";
+            this.tabPassword.Size = new System.Drawing.Size(1011, 398);
+            this.tabPassword.TabIndex = 4;
+            this.tabPassword.Text = "Password Questions";
+            // 
+            // tabTickets
+            // 
+            this.tabTickets.BackColor = System.Drawing.Color.LightGray;
+            this.tabTickets.Location = new System.Drawing.Point(4, 32);
+            this.tabTickets.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabTickets.Name = "tabTickets";
+            this.tabTickets.Size = new System.Drawing.Size(1011, 398);
+            this.tabTickets.TabIndex = 5;
+            this.tabTickets.Text = "Tickets Questions";
             // 
             // frmProjectMember
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1009, 513);
-            this.Controls.Add(this.pictureBox7);
+            this.Controls.Add(this.ProfilePictureBox);
             this.Controls.Add(this.lblLoggedIn);
             this.Controls.Add(this.pnlTickets);
             this.Controls.Add(this.lblHeader);
@@ -902,6 +966,7 @@
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Rectangle1);
+            this.Controls.Add(this.tabReportGeneration);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmProjectMember";
@@ -922,7 +987,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.tabMyTickets.ResumeLayout(false);
             this.tabMyTickets.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGVM)).EndInit();
             this.tabRaiseTicket.ResumeLayout(false);
             this.tabRaiseTicket.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -934,7 +999,8 @@
             this.pnlProblemList.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ProfilePictureBox)).EndInit();
+            this.tabReportGeneration.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -956,7 +1022,6 @@
         private Button btnOnlineHelp;
         private Panel pnlTickets;
         private Panel pnlProblemList;
-        private PictureBox pictureBox4;
         private PictureBox pictureBox3;
         private Label lblTicket;
         private Label lblProblem;
@@ -988,13 +1053,13 @@
         private TextBox txtID;
         private TabPage tabMyTickets;
         private Label label5;
-        private DataGridView dataGridView1;
+        private DataGridView DGVM;
         private TabPage tabHome;
         private Label lblWelcomeMessage;
         private Label lblDescribeHome;
         private Label lblUser;
         private Label lblLoggedIn;
-        private PictureBox pictureBox7;
+        private PictureBox ProfilePictureBox;
         private Label label6;
         private Label label7;
         private PictureBox pictureBox11;
@@ -1007,5 +1072,11 @@
         private Label label8;
         private Label label10;
         private Label label11;
+        private PictureBox pictureBox4;
+        private Button btnRefresh;
+        private TabPage tabEmail;
+        private TabControl tabReportGeneration;
+        private TabPage tabPassword;
+        private TabPage tabTickets;
     }
 }

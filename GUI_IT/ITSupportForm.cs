@@ -7,18 +7,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.Data.SqlClient;
 
 namespace GUI_IT
 {
     public partial class frmITSupport : Form
     {
-        private SessionRegister newUser;
+        private SessionRegister newUser_;
 
         public frmITSupport(SessionRegister newUser)
         {
+            newUser_ = newUser;
             InitializeComponent();
-            lblUser.Text = newUser.Username + "!";
-            lblLoggedIn.Text = "Logged in as: " + newUser.Username;
+            lblUser.Text = newUser_.FirstName + "!";
+            lblLoggedIn.Text = "Logged in as: " + newUser_.FirstName;
+            Fill1();
+            Fill2();
+            combo();
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
@@ -30,6 +35,110 @@ namespace GUI_IT
         }
 
         private void tabShare_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ProfilePictureBox_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSolveClear_Click(object sender, EventArgs e)
+        {
+            txtSolution.Clear();
+            txtSolveTicketID.Clear();
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtTicketID.Clear();
+            //txtname.Clear();
+            txtEmail.Clear();
+            frmUserProf UserProfile = new frmUserProf(newUser_);
+            UserProfile.ShowDialog();
+        }
+
+        private void Fill1()
+        {
+            string x = newUser_.Username;
+            string y = "Unsolved";
+            SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
+            builder.DataSource = "redagents.database.windows.net";
+            builder.UserID = "kwekwe";
+            builder.Password = "Password1!";
+            builder.InitialCatalog = "red_Agents";
+            SqlConnection con = new SqlConnection(builder.ConnectionString);
+            con.Open();
+            string query = "Select * from Tickets where AssignedTo = '" + x + "' and Status = '" + y + "'; ";
+            SqlDataAdapter da = new SqlDataAdapter(query, con);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            DGVS.DataSource = dt;
+            DGVS.EditMode = DataGridViewEditMode.EditOnEnter;
+            con.Close();
+
+        }
+
+        private void combo()
+        {
+            cbxn.DataSource = Sql.ITname();
+            cbxn.DisplayMember= "Name";
+        }
+
+        private void Fill2()
+        {
+            string x = newUser_.Username;
+            string y = "Unsolved";
+            SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
+            builder.DataSource = "redagents.database.windows.net";
+            builder.UserID = "kwekwe";
+            builder.Password = "Password1!";
+            builder.InitialCatalog = "red_Agents";
+            SqlConnection con = new SqlConnection(builder.ConnectionString);
+            con.Open();
+            string query = "Select * from Tickets where AssignedTo = '" + x + "' and Status = '" + y + "'; ";
+            SqlDataAdapter da = new SqlDataAdapter(query, con);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            DGVShare.DataSource = dt;
+            DGVShare.EditMode = DataGridViewEditMode.EditOnEnter;
+            con.Close();
+
+        }
+
+        private void btnSolveTicket_Click(object sender, EventArgs e)
+        {
+            string x = txtSolveTicketID.Text.ToString();
+            int y = System.Convert.ToInt32(x);
+            string z = Sql.tickuser(y);
+            string k = Sql.tickemail(y);
+            string j = txtSolution.Text.ToString();
+            Sql.solve(y, newUser_.Username, z, k, j);
+        }
+
+        private void txtEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnShare_Click(object sender, EventArgs e)
+        {
+            string x = txtTicketID.Text.ToString();
+            int y = System.Convert.ToInt32(x);
+            string a = cbxn.Text.ToString();
+            string b = Sql.getUser(a);
+            string c = txtEmail.Text.ToString();
+            Sql.Addcoll(b, y);
+            Sql.add2(b, y, c);
+        }
+
+        private void txtTicketID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
         {
 
         }
