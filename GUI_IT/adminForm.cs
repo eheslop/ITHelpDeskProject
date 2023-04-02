@@ -30,6 +30,10 @@ namespace GUI_IT
             lblUser.Text = newUser_.FirstName + "!";
             Fill();
             Fill1();
+            combo();
+            combo1();
+            combo2();
+            combo3();
         }
 
         private void frmAdmin_Load(object sender, EventArgs e)
@@ -53,6 +57,28 @@ namespace GUI_IT
             lblAdminHeader.Location = new Point(459, 101);
         }
 
+        private void combo()
+        {
+            cbxn.DataSource = Sql.ITname();
+            cbxn.DisplayMember = "Name";
+        }
+
+        private void combo1()
+        {
+            cbxp.DataSource = Sql.PMname();
+            cbxp.DisplayMember = "Name";
+        }
+        private void combo2()
+        {
+            cbxu.DataSource = Sql.ITname();
+            cbxu.DisplayMember = "Name";
+        }
+
+        private void combo3()
+        {
+            cbxuu.DataSource = Sql.PMname();
+            cbxuu.DisplayMember = "Name";
+        }
         private void btnLogout_Click(object sender, EventArgs e)
         {
             FrmLogin LoginScreen = new FrmLogin();
@@ -221,10 +247,6 @@ namespace GUI_IT
         private void btnReportClear_Click(object sender, EventArgs e)
         {
             txtTicketIDSolve.Clear();
-            txtEmailSolved.Clear();
-            txtUrgencySolved.Clear();
-            txtUserEmailSolved.Clear();
-            txtTicketCategorySolved.Clear();
             txtTicketDescribeSolved.Clear();
             txtTicketDetailSolved.Clear();
         }
@@ -232,10 +254,6 @@ namespace GUI_IT
         private void btnClearUnsolved_Click(object sender, EventArgs e)
         {
             txtTicketID.Clear();
-            txtITEmail.Clear();
-            txtTicketUrgency.Clear();
-            txtProjectEmail.Clear();
-            txtProblemCategory.Clear();
             txtTicketSummary.Clear();
             txtUnsolvedExplain.Clear();
         }
@@ -248,6 +266,39 @@ namespace GUI_IT
         private void btnSolvedView_Click(object sender, EventArgs e)
         {
             Fill2();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            string x = txtTicketIDSolve.Text.ToString();
+            int y = System.Convert.ToInt32(x);
+            string b = cbxn.Text.ToString();
+            string c = cbxurg1.Text.ToString();
+            string d = cbxp.Text.ToString();
+            string g = cbxcat1.Text.ToString();
+            string l = txtTicketDetailSolved.Text.ToString();
+            string f = txtTicketDescribeSolved.Text.ToString();
+            string h = "Solved";
+            Sql.report(y, c, b, d, g, f, l, newUser_.Username, h);
+        }
+
+        private void btnSubmitUnsolved_Click(object sender, EventArgs e)
+        {
+            string x = txtTicketID.Text.ToString();
+            int y = System.Convert.ToInt32(x);
+            string b = cbxu.Text.ToString();
+            string c = cbxurg.Text.ToString();
+            string d = cbxuu.Text.ToString();
+            string g = cbxcat.Text.ToString();
+            string f = txtTicketSummary.Text.ToString();
+            string l = txtUnsolvedExplain.Text.ToString();
+            string h = "Unsolved";
+            Sql.report(y, c, b, d, g, f, l, newUser_.Username, h);
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -62,7 +62,6 @@
             DGVAssign = new DataGridView();
             btnAssign = new Button();
             btnClear = new Button();
-            txtUsername = new TextBox();
             label8 = new Label();
             txtEmail = new TextBox();
             label7 = new Label();
@@ -72,6 +71,7 @@
             lblAssign = new Label();
             lblLoggedIn = new Label();
             ProfilePictureBox = new PictureBox();
+            cbxname = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)pictureLogo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Rectangle1).BeginInit();
@@ -118,7 +118,6 @@
             btnLogout.TabIndex = 36;
             btnLogout.Text = "Log Out";
             btnLogout.UseVisualStyleBackColor = false;
-            btnLogout.Click += btnLogout_Click_1;
             // 
             // pictureBox1
             // 
@@ -434,12 +433,12 @@
             // tabAssign
             // 
             tabAssign.BackColor = Color.LightGray;
+            tabAssign.Controls.Add(cbxname);
             tabAssign.Controls.Add(btnViewReopenedTable);
             tabAssign.Controls.Add(btnViewUnsolvedTable);
             tabAssign.Controls.Add(DGVAssign);
             tabAssign.Controls.Add(btnAssign);
             tabAssign.Controls.Add(btnClear);
-            tabAssign.Controls.Add(txtUsername);
             tabAssign.Controls.Add(label8);
             tabAssign.Controls.Add(txtEmail);
             tabAssign.Controls.Add(label7);
@@ -522,16 +521,6 @@
             btnClear.Text = "Clear";
             btnClear.UseVisualStyleBackColor = false;
             // 
-            // txtUsername
-            // 
-            txtUsername.Anchor = AnchorStyles.None;
-            txtUsername.Location = new Point(18, 206);
-            txtUsername.Margin = new Padding(5, 5, 5, 5);
-            txtUsername.MaxLength = 50;
-            txtUsername.Name = "txtUsername";
-            txtUsername.Size = new Size(609, 34);
-            txtUsername.TabIndex = 84;
-            // 
             // label8
             // 
             label8.AutoSize = true;
@@ -548,7 +537,7 @@
             // 
             txtEmail.Anchor = AnchorStyles.None;
             txtEmail.Location = new Point(18, 302);
-            txtEmail.Margin = new Padding(5, 5, 5, 5);
+            txtEmail.Margin = new Padding(5);
             txtEmail.MaxLength = 50;
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(609, 34);
@@ -569,8 +558,8 @@
             // txtTicketID
             // 
             txtTicketID.Anchor = AnchorStyles.None;
-            txtTicketID.Location = new Point(18, 102);
-            txtTicketID.Margin = new Padding(5, 5, 5, 5);
+            txtTicketID.Location = new Point(18, 107);
+            txtTicketID.Margin = new Padding(5);
             txtTicketID.MaxLength = 50;
             txtTicketID.Name = "txtTicketID";
             txtTicketID.Size = new Size(609, 34);
@@ -581,7 +570,7 @@
             label6.AutoSize = true;
             label6.BackColor = Color.DarkGray;
             label6.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.Location = new Point(18, 68);
+            label6.Location = new Point(17, 74);
             label6.Margin = new Padding(2, 0, 2, 0);
             label6.Name = "label6";
             label6.Size = new Size(465, 30);
@@ -597,6 +586,7 @@
             pictureBox6.Size = new Size(654, 328);
             pictureBox6.TabIndex = 85;
             pictureBox6.TabStop = false;
+            pictureBox6.Click += pictureBox6_Click;
             // 
             // lblAssign
             // 
@@ -634,6 +624,14 @@
             ProfilePictureBox.Size = new Size(48, 35);
             ProfilePictureBox.TabIndex = 6;
             ProfilePictureBox.TabStop = false;
+            // 
+            // cbxname
+            // 
+            cbxname.FormattingEnabled = true;
+            cbxname.Location = new Point(19, 203);
+            cbxname.Name = "cbxname";
+            cbxname.Size = new Size(608, 36);
+            cbxname.TabIndex = 91;
             // 
             // frmReportManage
             // 
@@ -713,7 +711,6 @@
         private PictureBox pictureBox5;
         private Button btnAssign;
         private Button btnClear;
-        private TextBox txtUsername;
         private Label label8;
         private TextBox txtEmail;
         private Label label7;
@@ -723,5 +720,7 @@
         private Button btnViewReopenedTable;
         private Button btnViewUnsolvedTable;
         private DataGridView DGVAssign;
+        private ComboBox cbxn;
+        private ComboBox cbxname;
     }
 }

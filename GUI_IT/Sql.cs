@@ -91,6 +91,15 @@ namespace GUI_IT
             return name;
         }
 
+        public static string getUser(string user)
+        {
+            SqlConnection con = Connect();
+            String query = "SELECT Username FROM RegisteredUsers WHERE Name = '" + user.ToString() + "';";
+            SqlCommand cmd = new SqlCommand(query, con);
+            string name = (string)cmd.ExecuteScalar();
+            return name;
+        }
+
         public static string getNamee(string user)
         {
             SqlConnection con = Connect();
@@ -419,6 +428,63 @@ namespace GUI_IT
             cmd.ExecuteNonQuery();
             cmd2.ExecuteNonQuery();
             con.Close();
+        }
+
+        public static void report(int id, string urg, string email1, string email2, string category, string summary, string solution, string username, string status) 
+        {
+            int x = countrep();
+            SqlConnection con = Connect();
+            String query2 = "INSERT INTO Report(Id, TicketID, Urgency, NameA, NameR, Category, Summary, Solution, Username, Status) VALUES('"+x+"', '" + id + "', '" + urg.ToString() + "','" + email1.ToString() + "', '" + email2.ToString() + "', '" + category.ToString() + "', ' " +summary.ToString()+ "', '" +solution.ToString()+ "', '" + username.ToString() + "', '" + status.ToString() + "' );";
+            SqlCommand cmd2 = new SqlCommand(query2, con);
+            cmd2.ExecuteNonQuery();
+            con.Close();
+        }
+
+        public static int countrep()
+        {
+            SqlConnection con = Connect();
+            String query = "SELECT Count(Id) FROM Report;";
+            SqlCommand cmd = new SqlCommand(query, con);
+            int pass = (int)cmd.ExecuteScalar();
+            return pass;
+        }
+
+        public static DataTable ITname()
+        {
+            string x = "IT Support Team";
+            SqlConnection con = Connect();
+            string query = "Select * from RegisteredUsers where Role = '" + x + "'; ";
+            SqlCommand cmd = new SqlCommand(query, con);
+            cmd.ExecuteNonQuery();
+            SqlDataAdapter da = new SqlDataAdapter();
+            da.SelectCommand = cmd;
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+
+            DataRow item = dt.NewRow();
+            item[1] = "Select Name";
+            dt.Rows.InsertAt(item, 0);
+
+            return dt;
+        }
+
+        public static DataTable PMname()
+        {
+            string x = "Project Member";
+            SqlConnection con = Connect();
+            string query = "Select * from RegisteredUsers where Role = '" + x + "'; ";
+            SqlCommand cmd = new SqlCommand(query, con);
+            cmd.ExecuteNonQuery();
+            SqlDataAdapter da = new SqlDataAdapter();
+            da.SelectCommand = cmd;
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+
+            DataRow item = dt.NewRow();
+            item[1] = "Select Name";
+            dt.Rows.InsertAt(item, 0);
+
+            return dt;
         }
     }
 }

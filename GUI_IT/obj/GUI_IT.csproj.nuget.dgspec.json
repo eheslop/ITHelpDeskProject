@@ -46,7 +46,7 @@
             },
             "Microsoft.Data.SqlClient": {
               "target": "Package",
-              "version": "[5.1.1, )"
+              "version": "[5.1.0, )"
             },
             "MimeKit": {
               "target": "Package",
@@ -76,7 +76,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
