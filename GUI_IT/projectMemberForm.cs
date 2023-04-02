@@ -12,12 +12,16 @@ namespace GUI_IT
 {
     public partial class frmProjectMember : Form
     {
-        public frmProjectMember()
+        private SessionRegister newUser;
+
+        int id = 8;
+        public frmProjectMember(SessionRegister newUser)
         {
             InitializeComponent();
-            pnlTickets.Visible = false;
+            pnlTickets.Visible = true;
             pnlProblemList.Visible = false;
-            pnlOnlineHelp.Visible = false;
+            lblUser.Text = newUser.Username + "!";
+            lblLoggedIn.Text = "Logged in as: " + newUser.Username;
         }
 
         private void frmProjectMember_Load(object sender, EventArgs e)
@@ -37,7 +41,6 @@ namespace GUI_IT
         {
             pnlTickets.Visible = false;
             pnlProblemList.Visible = false;
-            pnlOnlineHelp.Visible = false;
             this.Text = "IT Help Desk Project Member Homepage";
         }
 
@@ -45,27 +48,80 @@ namespace GUI_IT
         {
             pnlTickets.Visible = false;
             pnlProblemList.Visible = false;
-            pnlOnlineHelp.Visible = true;
             this.Text = "IT Help Desk Project Member Online Help";
+            cbxType.ResetText();
+            cbxType.SelectedIndex = -1;
+            cbxUrgency.ResetText();
+            cbxUrgency.SelectedIndex = -1;
+            txtProblemDescribe.Clear();
         }
 
         private void btnProblemList_Click(object sender, EventArgs e)
         {
             pnlTickets.Visible = false;
             pnlProblemList.Visible = true;
-            pnlOnlineHelp.Visible = false;
             this.Text = "IT Help Desk Project Member Problem List";
+            cbxType.ResetText();
+            cbxType.SelectedIndex = -1;
+            cbxUrgency.ResetText();
+            cbxUrgency.SelectedIndex = -1;
+            txtProblemDescribe.Clear();
         }
 
         private void btnTickets_Click(object sender, EventArgs e)
         {
             pnlTickets.Visible = true;
             pnlProblemList.Visible = false;
-            pnlOnlineHelp.Visible = false;
-            this.Text = "IT Help Desk Project Member Raising Tickets";
+            this.Text = "IT Help Desk Project Member Ticket Dashboard";
         }
 
         private void pnlOnlineHelp_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            cbxType.ResetText();
+            cbxType.SelectedIndex = -1;
+            cbxUrgency.ResetText();
+            cbxUrgency.SelectedIndex = -1;
+            txtProblemDescribe.Clear();
+        }
+
+        private void btnReopenClear_Click(object sender, EventArgs e)
+        {
+            cbxReopenReason.ResetText();
+            cbxReopenReason.SelectedIndex = -1;
+            txtReopenTicket.Clear();
+            txtID.Clear();
+        }
+
+        private void pnlProblemList_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnRaise_Click(object sender, EventArgs e)
+        {
+            string Category = cbxType.Text.ToString();
+            string Description = txtProblemDescribe.Text.ToString();
+            string Priority = cbxUrgency.Text.ToString();
+            Sql.RaiseTicket(id, Category, Description, Priority);
+            id++;
+            cbxType.ResetText();
+            cbxType.SelectedIndex = -1;
+            cbxUrgency.ResetText();
+            cbxUrgency.SelectedIndex = -1;
+            txtProblemDescribe.Clear();
+        }
+
+        private void lblUser_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblLoggedIn_Click(object sender, EventArgs e)
         {
 
         }

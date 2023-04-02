@@ -2,11 +2,18 @@ using System.Windows.Forms;
 using System;
 using Microsoft.Data.SqlClient;
 using System.Text;
+using MailKit.Net.Smtp;
+using MailKit;
+using MimeKit;
+using System.Security.Cryptography.X509Certificates;
+using System.Net.Mail;
+using Org.BouncyCastle.Asn1.Crmf;
 
 namespace GUI_IT
 {
     public partial class FrmLogin : Form
     {
+        //main form
         private Rectangle buttonRegRect;
         private Rectangle textBoxUsername;
         private Rectangle textBoxPassword;
@@ -18,6 +25,32 @@ namespace GUI_IT
         private Rectangle LinkLabelForgot;
         private Rectangle Picture;
         private Rectangle labelLogin;
+        private Rectangle HidePass;
+        private Rectangle ShowPass;
+
+        //panel 2
+        private Rectangle buttonRegRect2;
+        private Rectangle Register;
+        private Rectangle FirstNameLabel2;
+        private Rectangle LastNameLabel2;
+        private Rectangle FirstNameText;
+        private Rectangle LastNameText;
+        private Rectangle Email2;
+        private Rectangle LabelEmail;
+        private Rectangle Picture2;
+        private Rectangle AHAC;
+        private Rectangle Type;
+        private Rectangle LabelType;
+        private Rectangle LabelRegister;
+
+        //panel 3
+        private Rectangle buttonRegRect3;
+        private Rectangle RP;
+        private Rectangle LabelEmail2;
+        private Rectangle Picture3;
+        private Rectangle TextEmail2;
+        private Rectangle SendVerification;
+        private Rectangle Send;
 
         private Rectangle OriginalFormSize;
 
@@ -34,48 +67,64 @@ namespace GUI_IT
 
 
         private SessionRegister regSession;
+
+        private SessionRegister newUser;
+
+
         public FrmLogin()
         {
             InitializeComponent();
+            newUser = new SessionRegister();
             pnlSignUp.Visible = false;
             pnlForgotPassword.Visible = false;
-            regSession = new SessionRegister();
+            lblIncorrectLogin.Visible = false;
+            lblInvalidRole.Visible = false;
+            lblAlreadyExists.Visible = false;
+            btnOpenEye.FlatAppearance.BorderSize = 0;
+            btnOpenEye.FlatAppearance.BorderColor = Color.FromArgb(0, 255, 255, 255);
+            btnClosedEye.FlatAppearance.BorderSize = 0;
+            btnClosedEye.FlatAppearance.BorderColor = Color.FromArgb(0, 255, 255, 255);
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            string user = txtUsername.Text.ToString();
-            string password = txtPassword.Text.ToString();
-            int exists = Sql.Login(user, password);
+            newUser.Username = txtUsername.Text.ToString();
+            newUser.Password = txtPassword.Text.ToString();
+            int exists = Sql.Login(newUser.Username, newUser.Password);
             if (exists == 0)
             {
-                string role = Sql.Role(user);
-                if (role == "Admin")
+                newUser.UserType = Sql.Role(newUser.Username);
+                if (newUser.UserType == "Admin")
                 {
-                    frmAdmin adminLogIn = new frmAdmin();
+                    frmAdmin adminLogIn = new frmAdmin(newUser);
                     this.Hide();
                     adminLogIn.ShowDialog();
                     this.Close();
                 }
-                else if (role == "Project Member")
+                else if (newUser.UserType == "Project Member")
                 {
-                    frmProjectMember projectMemberForm = new frmProjectMember();
+                    frmProjectMember projectMemberForm = new frmProjectMember(newUser);
                     this.Hide();
                     projectMemberForm.ShowDialog();
                     this.Close();
                 }
-                else if (role == "IT Support Team")
+                else if (newUser.UserType == "IT Support Team")
                 {
-                    // WIP
-                    MessageBox.Show("Work In Progress!");
+                    frmITSupport ITSupportForm = new frmITSupport(newUser);
+                    this.Hide();
+                    ITSupportForm.ShowDialog();
+                    this.Close();
                 }
-                else if (role == "Report Manager")
+                else if (newUser.UserType == "Report Manager")
                 {
-                    // WIP
-                    MessageBox.Show("Work In Progress!");
+                    frmReportManage ReportManageForm = new frmReportManage(newUser);
+                    this.Hide();
+                    ReportManageForm.ShowDialog();
+                    this.Close();
                 }
                 else
-                    MessageBox.Show("Invalid Role! Contact System Administrator!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    //MessageBox.Show("Invalid Role! Contact System Administrator!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    lblInvalidRole.Visible = true;
 
             }
 
@@ -96,7 +145,8 @@ namespace GUI_IT
             */
             else
             {
-                MessageBox.Show("Incorrect Login Information", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MessageBox.Show("Incorrect Login Information", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                lblIncorrectLogin.Visible = true;
             }
         }
 
@@ -104,11 +154,11 @@ namespace GUI_IT
         {
             string name = txtFirstName.Text.ToString() + " " + txtLastName.Text.ToString();
             string email = txtEmail.Text.ToString();
-            string role = cboUserType.Text.ToString();
+            newUser.UserType = cboUserType.Text.ToString();
             string user = name[0].ToString() + txtLastName.Text.ToString();
-
             Boolean accountExists = Sql.Exists(user);
-            if (accountExists == false)
+            Boolean validEmail = Email.isValid(email);
+            if (accountExists == false && validEmail == true)
             {
                 Random res = new Random();
                 String str = "ABCDEFGHIJOPQRSTUVWXsYZ0123489!@#$%^&*?><abcdefghijklmnopqrswxyz0123456789";
@@ -119,14 +169,26 @@ namespace GUI_IT
                     int x = res.Next(str.Length);
                     randomstring = randomstring + str[x];
                 }
-                string pass = randomstring.ToString();
-                Sql.Register(user, name, pass, email, role);
+                newUser.Password = randomstring.ToString();
+                Sql.Register(user, name, newUser.Password, email, newUser.UserType);
+                Email.sendEmail("Registration", user);
+                Email.sendEmail("Registration Accepted", user);
+                //Email.sendEmail("Registration Denied", user);
+                //Email.sendEmail("Raised Ticket", user, 1);
+                MessageBox.Show("Account Created!\nCheck your email for your login credentials!", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                MessageBox.Show("Your Account Has Been Created!", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                pnlSignUp.Visible = false;
+                //pnlForgotPassword.Visible = false;
+
+            }
+            else if (accountExists == true)
+            {
+                //MessageBox.Show("Account Already Exists!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                lblAlreadyExists.Visible = true;
             }
             else
             {
-                MessageBox.Show("Account Already Exists!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Invalid Email!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -134,6 +196,9 @@ namespace GUI_IT
         {
             pnlSignUp.Visible = false;
             pnlForgotPassword.Visible = false;
+            lblIncorrectLogin.Visible = false;
+            lblInvalidRole.Visible = false;
+            lblAlreadyExists.Visible = false;
             this.Text = "IT Help Desk Login";
             txtUsername.Text = String.Empty;
             txtPassword.Text = String.Empty;
@@ -143,6 +208,9 @@ namespace GUI_IT
         {
             pnlSignUp.Visible = true;
             pnlForgotPassword.Visible = false;
+            lblIncorrectLogin.Visible = false;
+            lblInvalidRole.Visible = false;
+            lblAlreadyExists.Visible = false;
             this.Text = "IT Help Desk Registration";
             txtEmail.Text = String.Empty;
             txtFirstName.Text = String.Empty;
@@ -178,6 +246,9 @@ namespace GUI_IT
         {
             pnlForgotPassword.Visible = true;
             pnlSignUp.Visible = false;
+            lblIncorrectLogin.Visible = false;
+            lblInvalidRole.Visible = false;
+            lblAlreadyExists.Visible = false;
             this.Text = "IT Help Desk Forgot Password";
         }
 
@@ -185,6 +256,7 @@ namespace GUI_IT
         {
 
         }
+
 
         private void lblSignIn_Click_1(object sender, EventArgs e)
         {
@@ -196,13 +268,17 @@ namespace GUI_IT
 
         }
 
-        private void pnlForgotPassword_Paint(object sender, PaintEventArgs e)
+        private void pnlForgotPassword_Paint(object sender, PaintEventArgs e) { }
+
+        private void txtFirstName_TextChanged(object sender, EventArgs e)
+
         {
 
         }
 
         private void FrmLogin_Load(object sender, EventArgs e)
         {
+
             OriginalFormSize =new Rectangle(this.Location.X, this.Location.Y, this.Size.Width,this.Size.Height);
             buttonRegRect = new Rectangle(btnRegisterAccount.Location.X, btnRegisterAccount.Location.Y, btnRegisterAccount.Width, btnRegisterAccount.Height);
             textBoxUsername=new Rectangle(txtUsername.Location.X,txtUsername.Location.Y, txtUsername.Width, txtUsername.Height);
@@ -215,8 +291,34 @@ namespace GUI_IT
             LinkLabelForgot = new Rectangle(linklblForgot.Location.X, linklblForgot.Location.Y, linklblForgot.Width, linklblForgot.Height);
             Picture=new Rectangle(pictureBox1.Location.X,pictureBox1.Location.Y,pictureBox1.Width,pictureBox1.Height);
             labelLogin = new Rectangle(lblLogin.Location.X, lblLogin.Location.Y, lblLogin.Width, lblLogin.Height);
+            ShowPass=new Rectangle (btnOpenEye.Location.X, btnOpenEye.Location.Y, btnOpenEye.Width, btnOpenEye.Height);
+            HidePass=new Rectangle(btnClosedEye.Location.X,btnClosedEye.Location.Y,btnClosedEye.Width, btnClosedEye.Height);
 
-            originaRegRectangleFSize = btnRegisterAccount.Font.Size;
+            buttonRegRect2 = new Rectangle(btnLoginForm.Location.X, btnLoginForm.Location.Y, btnLoginForm.Width, btnLoginForm.Height);
+            AHAC = new Rectangle(lblSignIn.Location.X, lblSignIn.Location.Y, lblSignIn.Width, lblSignIn.Height);
+            Register = new Rectangle(btnRegister.Location.X, btnRegister.Location.Y, btnRegister .Width, btnRegister.Height);
+            FirstNameLabel2 = new Rectangle(lblFirstName.Location.X, lblFirstName.Location.Y, lblFirstName  .Width, lblFirstName.Height);
+            LastNameLabel2 = new Rectangle(lblLastName.Location.X, lblLastName.Location.Y, lblLastName.Width, lblLastName.Height);
+            FirstNameText = new Rectangle(txtFirstName.Location.X, txtFirstName.Location.Y, txtFirstName.Width, txtFirstName.Height);
+            LastNameText = new Rectangle(txtLastName.Location.X, txtLastName.Location.Y, txtLastName.Width, txtLastName.Height);
+            LabelEmail =new Rectangle(lblEmail.Location.X,lblEmail.Location.Y, lblEmail.Width,lblEmail.Height);
+            Email2 = new Rectangle(txtEmail.Location.X, txtEmail.Location.Y, txtEmail.Width, txtEmail.Height);
+            Type = new Rectangle(cboUserType.Location.X, cboUserType.Location.Y, cboUserType.Width, cboUserType.Height);
+            LabelType=new Rectangle(lblUserType.Location.X,lblUserType.Location.Y,lblUserType.Width, lblUserType.Height);
+            Picture2 = new Rectangle(pictureBox4.Location.X, pictureBox4.Location.Y, pictureBox4.Width, pictureBox4.Height);
+            LabelRegister= new Rectangle(lblRegister.Location.X, lblRegister.Location.Y, lblRegister.Width, lblRegister.Height);
+
+            buttonRegRect3 = new Rectangle(btnBacktoLogin.Location.X, btnBacktoLogin.Location.Y, btnBacktoLogin.Width, btnBacktoLogin.Height);
+            RP = new Rectangle(lblRememebr.Location.X, lblRememebr.Location.Y, lblRememebr.Width, lblRememebr.Height);
+            LabelEmail2 = new Rectangle(label1.Location.X, label1.Location.Y, label1.Width, label1.Height);
+            Picture3= new Rectangle(pictureBox5.Location.X, pictureBox5.Location.Y, pictureBox5.Width, pictureBox5.Height);
+            TextEmail2 = new Rectangle(textBox1.Location.X, textBox1.Location.Y, textBox1.Width, textBox1.Height);
+            SendVerification = new Rectangle(label2.Location.X, label2.Location.Y, label2.Width, label2.Height);
+            Send = new Rectangle(button1.Location.X, button1.Location.Y, button1.Width, button1.Height);
+
+         
+
+        originaRegRectangleFSize = btnRegisterAccount.Font.Size;
             originalLabelDHAASize = lblRegisterAccount.Font.Size;
             originaltextUsernameFSize = txtUsername.Font.Size;
             originaltextPasswordFSize = txtPassword.Font.Size;
@@ -254,15 +356,32 @@ namespace GUI_IT
         }
 
 
-       /* private void resizecontroltwo(Rectangle r, Control c)
-        {
+         private void resizecontroltwo(Rectangle r, Control c)
+         {
             float xRatio = (float)(this.Width) / (float)(OriginalFormSize.Width);
             float yRatio = (float)(this.Height) / (float)(OriginalFormSize.Height);
 
-            int newX = (int)(r.Location.X * xRatio + 30);
-            int newY = (int)(r.Location.Y * yRatio - 50);
+            int newX = (int)(r.Location.X * xRatio);
+            int newY = (int)(r.Location.Y * yRatio);
+
+            int newWidth = (int)(r.Width * xRatio);
+            int newHeight = (int)(r.Height * yRatio);
+
             c.Location = new Point(newX, newY);
-        }*/
+            c.Size = new Size(newWidth, newHeight);
+        }
+        private void ChangeLoca(Rectangle r, Control c, float originalFontSize)
+        {
+
+            float xRatio = (float)(this.Width) / (float)(OriginalFormSize.Width);
+            float yRatio = (float)(this.Height) / (float)(OriginalFormSize.Height);
+
+            int newX = (int)(r.Location.X * xRatio);
+            int newY = (int)(r.Location.Y * yRatio);
+
+            c.Location = new Point(newX, newY);
+            
+        }
         private void FrmLogin_Resize(object sender, EventArgs e)
         {
             resizeControl(buttonRegRect, btnRegisterAccount, originaRegRectangleFSize);
@@ -271,12 +390,35 @@ namespace GUI_IT
             resizeControl(LabelDHAA, lblRegisterAccount, originalLabelDHAASize);
             resizeControl(LoginButton, btnLogin, originalButtonLoginFSize);
             resizeControl(labelLogin, lblLogin, originallabelLoginFSize);
-
             resizeControl(PasswordLabel, lblFirstRegister, originalLabelPasswordFSize);
             resizeControl(UsernameLabel, lblUsernameLogin, originalLabelUsernameFSize);
             resizeControl(CheckBoxRemember, checkboxRemember, originalCheckBoxFSize);
-            resizeControl(LinkLabelForgot, linklblForgot, originalLinkLabelForgotFSize);
+            ChangeLoca(LinkLabelForgot, linklblForgot, originalLinkLabelForgotFSize);
             resizeControl(Picture, pictureBox1,originalLabelDHAASize);
+            ChangeLoca(HidePass, btnClosedEye, originalLabelDHAASize);
+            ChangeLoca(ShowPass,btnOpenEye, originalLabelDHAASize);
+
+            resizecontroltwo(buttonRegRect2, btnLoginForm);
+            resizecontroltwo(AHAC, lblSignIn);
+            resizecontroltwo(FirstNameLabel2, lblFirstName);
+            resizecontroltwo(LastNameLabel2, lblLastName);
+            resizecontroltwo(LabelEmail, lblEmail);
+            resizecontroltwo(Email2, txtEmail);
+            resizecontroltwo(Type, cboUserType);
+            resizecontroltwo(LabelType, lblUserType);
+            resizecontroltwo(Picture2, pictureBox4);
+            resizecontroltwo(Register,btnRegister);
+            resizecontroltwo(FirstNameText, txtFirstName);
+            resizecontroltwo(LastNameText, txtLastName);
+            resizecontroltwo(LabelRegister, lblRegister);
+
+            resizecontroltwo(RP, lblRememebr);
+            resizecontroltwo(buttonRegRect3, btnBacktoLogin);
+            resizecontroltwo(Picture3, pictureBox5);
+            resizecontroltwo(TextEmail2, textBox1);
+            resizecontroltwo(LabelEmail2, label1);
+            resizecontroltwo(Send, button1);
+            resizecontroltwo(SendVerification, label2);
         }
 
         private void lblRegisterAccount_Click_2(object sender, EventArgs e)
@@ -285,6 +427,38 @@ namespace GUI_IT
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+
+
+        }
+
+        private void btnOpenEye_Click(object sender, EventArgs e)
+        {
+            btnOpenEye.Visible = false;
+            btnClosedEye.Visible = true;
+            txtPassword.UseSystemPasswordChar = true;
+        }
+
+        private void btnClosedEye_Click(object sender, EventArgs e)
+        {
+            btnOpenEye.Visible = true;
+            btnClosedEye.Visible = false;
+            txtPassword.UseSystemPasswordChar = false;
+
+        }
+
+        private void FrmLogin_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblHeader_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLoginForm_Click_1(object sender, EventArgs e)
         {
 
         }
