@@ -57,6 +57,7 @@
             DGVT = new DataGridView();
             pictureBox5 = new PictureBox();
             tabAssign = new TabPage();
+            cbxname = new ComboBox();
             btnViewReopenedTable = new Button();
             btnViewUnsolvedTable = new Button();
             DGVAssign = new DataGridView();
@@ -71,7 +72,6 @@
             lblAssign = new Label();
             lblLoggedIn = new Label();
             ProfilePictureBox = new PictureBox();
-            cbxname = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)pictureLogo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Rectangle1).BeginInit();
@@ -118,6 +118,7 @@
             btnLogout.TabIndex = 36;
             btnLogout.Text = "Log Out";
             btnLogout.UseVisualStyleBackColor = false;
+            btnLogout.Click += btnLogout_Click_1;
             // 
             // pictureBox1
             // 
@@ -378,6 +379,7 @@
             btnSolved.TabIndex = 56;
             btnSolved.Text = "View Solved Tickets";
             btnSolved.UseVisualStyleBackColor = false;
+            btnSolved.Click += btnSolved_Click_1;
             // 
             // btnUnsolved
             // 
@@ -392,6 +394,7 @@
             btnUnsolved.TabIndex = 55;
             btnUnsolved.Text = "View Unsolved Tickets";
             btnUnsolved.UseVisualStyleBackColor = false;
+            btnUnsolved.Click += btnUnsolved_Click_1;
             // 
             // lblMonitor
             // 
@@ -454,6 +457,14 @@
             tabAssign.TabIndex = 1;
             tabAssign.Text = "Assign Tickets";
             // 
+            // cbxname
+            // 
+            cbxname.FormattingEnabled = true;
+            cbxname.Location = new Point(19, 203);
+            cbxname.Name = "cbxname";
+            cbxname.Size = new Size(608, 36);
+            cbxname.TabIndex = 91;
+            // 
             // btnViewReopenedTable
             // 
             btnViewReopenedTable.BackColor = Color.FromArgb(64, 0, 0);
@@ -481,6 +492,7 @@
             btnViewUnsolvedTable.TabIndex = 89;
             btnViewUnsolvedTable.Text = "Unsolved";
             btnViewUnsolvedTable.UseVisualStyleBackColor = false;
+            btnViewUnsolvedTable.Click += btnViewUnsolvedTable_Click;
             // 
             // DGVAssign
             // 
@@ -506,6 +518,7 @@
             btnAssign.TabIndex = 87;
             btnAssign.Text = "Assign Ticket";
             btnAssign.UseVisualStyleBackColor = false;
+            btnAssign.Click += btnAssign_Click_1;
             // 
             // btnClear
             // 
@@ -520,6 +533,7 @@
             btnClear.TabIndex = 86;
             btnClear.Text = "Clear";
             btnClear.UseVisualStyleBackColor = false;
+            btnClear.Click += btnClear_Click_1;
             // 
             // label8
             // 
@@ -624,14 +638,7 @@
             ProfilePictureBox.Size = new Size(48, 35);
             ProfilePictureBox.TabIndex = 6;
             ProfilePictureBox.TabStop = false;
-            // 
-            // cbxname
-            // 
-            cbxname.FormattingEnabled = true;
-            cbxname.Location = new Point(19, 203);
-            cbxname.Name = "cbxname";
-            cbxname.Size = new Size(608, 36);
-            cbxname.TabIndex = 91;
+            ProfilePictureBox.Click += ProfilePictureBox_Click_1;
             // 
             // frmReportManage
             // 

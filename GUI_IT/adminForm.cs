@@ -148,11 +148,6 @@ namespace GUI_IT
 
         }
 
-        private void lblHome_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void tabExisting_Click(object sender, EventArgs e)
         {
 
@@ -175,26 +170,6 @@ namespace GUI_IT
             this.DGVR.Refresh();
         }
 
-        private void btnApproveDeny_Click(object sender, EventArgs e)
-        {
-            frmstatusUpdate UpdateUserStatus = new frmstatusUpdate();
-            UpdateUserStatus.ShowDialog();
-        }
-
-        private void lblLoggedIn_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox12_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnrefre_Click(object sender, EventArgs e)
-        {
-            Fill();
-        }
 
         private void ProfilePictureBox_Click(object sender, EventArgs e)
         {
@@ -239,24 +214,6 @@ namespace GUI_IT
             DGVV.EditMode = DataGridViewEditMode.EditOnEnter;
             con.Close();
         }
-        private void DGVV_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void btnReportClear_Click(object sender, EventArgs e)
-        {
-            txtTicketIDSolve.Clear();
-            txtTicketDescribeSolved.Clear();
-            txtTicketDetailSolved.Clear();
-        }
-
-        private void btnClearUnsolved_Click(object sender, EventArgs e)
-        {
-            txtTicketID.Clear();
-            txtTicketSummary.Clear();
-            txtUnsolvedExplain.Clear();
-        }
 
         private void btnUnsolvedView_Click(object sender, EventArgs e)
         {
@@ -299,6 +256,31 @@ namespace GUI_IT
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnReportClear_Click_1(object sender, EventArgs e)
+        {
+            txtTicketIDSolve.Clear();
+            txtTicketDescribeSolved.Clear();
+            txtTicketDetailSolved.Clear();
+        }
+
+        private void btnClearUnsolved_Click_1(object sender, EventArgs e)
+        {
+            txtTicketID.Clear();
+            txtTicketSummary.Clear();
+            txtUnsolvedExplain.Clear();
+        }
+
+        private void btnrefre_Click_1(object sender, EventArgs e)
+        {
+            Fill();
+        }
+
+        private void btnApproveDeny_Click_1(object sender, EventArgs e)
+        {
+            frmstatusUpdate UpdateUserStatus = new frmstatusUpdate();
+            UpdateUserStatus.ShowDialog();
         }
     }
 }

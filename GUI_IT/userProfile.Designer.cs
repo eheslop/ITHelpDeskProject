@@ -29,515 +29,519 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmUserProf));
-            this.lblHeader = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureboxIcon = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.lblProfPage = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.lblUsername = new System.Windows.Forms.Label();
-            this.linklblChangePassword = new System.Windows.Forms.LinkLabel();
-            this.lblUserEmail = new System.Windows.Forms.Label();
-            this.lblPassword = new System.Windows.Forms.Label();
-            this.lblRole = new System.Windows.Forms.Label();
-            this.lblEmail = new System.Windows.Forms.Label();
-            this.lblUserPassword = new System.Windows.Forms.Label();
-            this.lblUserRole = new System.Windows.Forms.Label();
-            this.lblUserUsername = new System.Windows.Forms.Label();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.lblName = new System.Windows.Forms.Label();
-            this.lblNameUser = new System.Windows.Forms.Label();
-            this.pnlChangePassword = new System.Windows.Forms.Panel();
-            this.btnChange = new System.Windows.Forms.Button();
-            this.txtConfirmPass = new System.Windows.Forms.TextBox();
-            this.txtnewPass = new System.Windows.Forms.TextBox();
-            this.lblNewPass = new System.Windows.Forms.Label();
-            this.lblConfirm = new System.Windows.Forms.Label();
-            this.linklblNoPassChange = new System.Windows.Forms.LinkLabel();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.lblChangePass = new System.Windows.Forms.Label();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureboxIcon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            this.pnlChangePassword.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            this.SuspendLayout();
+            lblHeader = new Label();
+            pictureBox5 = new PictureBox();
+            pictureboxIcon = new PictureBox();
+            pictureBox3 = new PictureBox();
+            pictureBox1 = new PictureBox();
+            pictureBox4 = new PictureBox();
+            lblProfPage = new Label();
+            pictureBox7 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            pictureBox6 = new PictureBox();
+            pictureBox8 = new PictureBox();
+            lblUsername = new Label();
+            linklblChangePassword = new LinkLabel();
+            lblUserEmail = new Label();
+            lblPassword = new Label();
+            lblRole = new Label();
+            lblEmail = new Label();
+            lblUserPassword = new Label();
+            lblUserRole = new Label();
+            lblUserUsername = new Label();
+            pictureBox9 = new PictureBox();
+            lblName = new Label();
+            lblNameUser = new Label();
+            pnlChangePassword = new Panel();
+            btnChange = new Button();
+            txtConfirmPass = new TextBox();
+            txtnewPass = new TextBox();
+            lblNewPass = new Label();
+            lblConfirm = new Label();
+            linklblNoPassChange = new LinkLabel();
+            pictureBox11 = new PictureBox();
+            pictureBox10 = new PictureBox();
+            lblChangePass = new Label();
+            pictureBox13 = new PictureBox();
+            pictureBox14 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureboxIcon).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
+            pnlChangePassword.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
+            SuspendLayout();
             // 
             // lblHeader
             // 
-            this.lblHeader.AutoSize = true;
-            this.lblHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblHeader.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblHeader.ForeColor = System.Drawing.Color.White;
-            this.lblHeader.Location = new System.Drawing.Point(2, 5);
-            this.lblHeader.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblHeader.Name = "lblHeader";
-            this.lblHeader.Size = new System.Drawing.Size(245, 24);
-            this.lblHeader.TabIndex = 54;
-            this.lblHeader.Text = "Red Agents IT Help Desk";
+            lblHeader.AutoSize = true;
+            lblHeader.BackColor = Color.FromArgb(64, 0, 0);
+            lblHeader.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            lblHeader.ForeColor = Color.White;
+            lblHeader.Location = new Point(2, 6);
+            lblHeader.Margin = new Padding(2, 0, 2, 0);
+            lblHeader.Name = "lblHeader";
+            lblHeader.Size = new Size(280, 26);
+            lblHeader.TabIndex = 54;
+            lblHeader.Text = "Red Agents IT Help Desk";
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.pictureBox5.Location = new System.Drawing.Point(-6, -8);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(515, 37);
-            this.pictureBox5.TabIndex = 53;
-            this.pictureBox5.TabStop = false;
+            pictureBox5.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            pictureBox5.BackColor = Color.FromArgb(64, 0, 0);
+            pictureBox5.Location = new Point(-8, -10);
+            pictureBox5.Margin = new Padding(2);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(644, 46);
+            pictureBox5.TabIndex = 53;
+            pictureBox5.TabStop = false;
             // 
             // pictureboxIcon
             // 
-            this.pictureboxIcon.BackColor = System.Drawing.Color.Black;
-            this.pictureboxIcon.Image = global::GUI_IT.Properties.Resources.redAgentsLogo;
-            this.pictureboxIcon.Location = new System.Drawing.Point(6, 33);
-            this.pictureboxIcon.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureboxIcon.Name = "pictureboxIcon";
-            this.pictureboxIcon.Size = new System.Drawing.Size(30, 26);
-            this.pictureboxIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureboxIcon.TabIndex = 51;
-            this.pictureboxIcon.TabStop = false;
+            pictureboxIcon.BackColor = Color.Black;
+            pictureboxIcon.Image = Properties.Resources.redAgentsLogo;
+            pictureboxIcon.Location = new Point(8, 41);
+            pictureboxIcon.Margin = new Padding(2);
+            pictureboxIcon.Name = "pictureboxIcon";
+            pictureboxIcon.Size = new Size(38, 32);
+            pictureboxIcon.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureboxIcon.TabIndex = 51;
+            pictureboxIcon.TabStop = false;
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox3.BackColor = System.Drawing.Color.Black;
-            this.pictureBox3.Location = new System.Drawing.Point(-10, 28);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(558, 33);
-            this.pictureBox3.TabIndex = 50;
-            this.pictureBox3.TabStop = false;
+            pictureBox3.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            pictureBox3.BackColor = Color.Black;
+            pictureBox3.Location = new Point(-12, 35);
+            pictureBox3.Margin = new Padding(2);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(698, 41);
+            pictureBox3.TabIndex = 50;
+            pictureBox3.TabStop = false;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 102);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(445, 353);
-            this.pictureBox1.TabIndex = 55;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.BackColor = Color.FromArgb(64, 64, 64);
+            pictureBox1.Location = new Point(15, 128);
+            pictureBox1.Margin = new Padding(2);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(556, 441);
+            pictureBox1.TabIndex = 55;
+            pictureBox1.TabStop = false;
             // 
             // pictureBox4
             // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox4.Location = new System.Drawing.Point(23, 114);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(423, 333);
-            this.pictureBox4.TabIndex = 57;
-            this.pictureBox4.TabStop = false;
+            pictureBox4.BackColor = Color.Silver;
+            pictureBox4.Location = new Point(29, 142);
+            pictureBox4.Margin = new Padding(2);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(529, 416);
+            pictureBox4.TabIndex = 57;
+            pictureBox4.TabStop = false;
             // 
             // lblProfPage
             // 
-            this.lblProfPage.AutoSize = true;
-            this.lblProfPage.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblProfPage.Location = new System.Drawing.Point(75, 69);
-            this.lblProfPage.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblProfPage.Name = "lblProfPage";
-            this.lblProfPage.Size = new System.Drawing.Size(320, 27);
-            this.lblProfPage.TabIndex = 59;
-            this.lblProfPage.Text = "Welcome to your profile page!";
+            lblProfPage.AutoSize = true;
+            lblProfPage.Font = new Font("Microsoft YaHei UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblProfPage.Location = new Point(94, 86);
+            lblProfPage.Margin = new Padding(2, 0, 2, 0);
+            lblProfPage.Name = "lblProfPage";
+            lblProfPage.Size = new Size(385, 31);
+            lblProfPage.TabIndex = 59;
+            lblProfPage.Text = "Welcome to your profile page!";
             // 
             // pictureBox7
             // 
-            this.pictureBox7.BackColor = System.Drawing.Color.Gainsboro;
-            this.pictureBox7.Location = new System.Drawing.Point(34, 131);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(402, 46);
-            this.pictureBox7.TabIndex = 60;
-            this.pictureBox7.TabStop = false;
+            pictureBox7.BackColor = Color.Gainsboro;
+            pictureBox7.Location = new Point(42, 164);
+            pictureBox7.Margin = new Padding(2);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(502, 58);
+            pictureBox7.TabIndex = 60;
+            pictureBox7.TabStop = false;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Gainsboro;
-            this.pictureBox2.Location = new System.Drawing.Point(34, 248);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(402, 46);
-            this.pictureBox2.TabIndex = 61;
-            this.pictureBox2.TabStop = false;
+            pictureBox2.BackColor = Color.Gainsboro;
+            pictureBox2.Location = new Point(42, 310);
+            pictureBox2.Margin = new Padding(2);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(502, 58);
+            pictureBox2.TabIndex = 61;
+            pictureBox2.TabStop = false;
             // 
             // pictureBox6
             // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Gainsboro;
-            this.pictureBox6.Location = new System.Drawing.Point(34, 306);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(402, 46);
-            this.pictureBox6.TabIndex = 62;
-            this.pictureBox6.TabStop = false;
+            pictureBox6.BackColor = Color.Gainsboro;
+            pictureBox6.Location = new Point(42, 382);
+            pictureBox6.Margin = new Padding(2);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(502, 58);
+            pictureBox6.TabIndex = 62;
+            pictureBox6.TabStop = false;
             // 
             // pictureBox8
             // 
-            this.pictureBox8.BackColor = System.Drawing.Color.Gainsboro;
-            this.pictureBox8.Location = new System.Drawing.Point(34, 363);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(402, 46);
-            this.pictureBox8.TabIndex = 63;
-            this.pictureBox8.TabStop = false;
+            pictureBox8.BackColor = Color.Gainsboro;
+            pictureBox8.Location = new Point(42, 454);
+            pictureBox8.Margin = new Padding(2);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(502, 58);
+            pictureBox8.TabIndex = 63;
+            pictureBox8.TabStop = false;
             // 
             // lblUsername
             // 
-            this.lblUsername.AutoSize = true;
-            this.lblUsername.BackColor = System.Drawing.Color.Gainsboro;
-            this.lblUsername.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblUsername.Location = new System.Drawing.Point(35, 320);
-            this.lblUsername.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(90, 19);
-            this.lblUsername.TabIndex = 64;
-            this.lblUsername.Text = "Username:";
+            lblUsername.AutoSize = true;
+            lblUsername.BackColor = Color.Gainsboro;
+            lblUsername.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            lblUsername.Location = new Point(44, 400);
+            lblUsername.Margin = new Padding(2, 0, 2, 0);
+            lblUsername.Name = "lblUsername";
+            lblUsername.Size = new Size(108, 25);
+            lblUsername.TabIndex = 64;
+            lblUsername.Text = "Username:";
             // 
             // linklblChangePassword
             // 
-            this.linklblChangePassword.ActiveLinkColor = System.Drawing.Color.Red;
-            this.linklblChangePassword.AutoSize = true;
-            this.linklblChangePassword.BackColor = System.Drawing.Color.Silver;
-            this.linklblChangePassword.Location = new System.Drawing.Point(307, 411);
-            this.linklblChangePassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.linklblChangePassword.Name = "linklblChangePassword";
-            this.linklblChangePassword.Size = new System.Drawing.Size(131, 20);
-            this.linklblChangePassword.TabIndex = 65;
-            this.linklblChangePassword.TabStop = true;
-            this.linklblChangePassword.Text = "Change Password?";
-            this.linklblChangePassword.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linklblChangePassword_LinkClicked);
+            linklblChangePassword.ActiveLinkColor = Color.Red;
+            linklblChangePassword.AutoSize = true;
+            linklblChangePassword.BackColor = Color.Silver;
+            linklblChangePassword.Location = new Point(384, 514);
+            linklblChangePassword.Margin = new Padding(2, 0, 2, 0);
+            linklblChangePassword.Name = "linklblChangePassword";
+            linklblChangePassword.Size = new Size(160, 25);
+            linklblChangePassword.TabIndex = 65;
+            linklblChangePassword.TabStop = true;
+            linklblChangePassword.Text = "Change Password?";
+            linklblChangePassword.LinkClicked += linklblChangePassword_LinkClicked;
             // 
             // lblUserEmail
             // 
-            this.lblUserEmail.AutoSize = true;
-            this.lblUserEmail.BackColor = System.Drawing.Color.Gainsboro;
-            this.lblUserEmail.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblUserEmail.ForeColor = System.Drawing.Color.Black;
-            this.lblUserEmail.Location = new System.Drawing.Point(87, 204);
-            this.lblUserEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblUserEmail.Name = "lblUserEmail";
-            this.lblUserEmail.Size = new System.Drawing.Size(48, 20);
-            this.lblUserEmail.TabIndex = 66;
-            this.lblUserEmail.Text = "email";
+            lblUserEmail.AutoSize = true;
+            lblUserEmail.BackColor = Color.Gainsboro;
+            lblUserEmail.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            lblUserEmail.ForeColor = Color.Black;
+            lblUserEmail.Location = new Point(109, 255);
+            lblUserEmail.Margin = new Padding(2, 0, 2, 0);
+            lblUserEmail.Name = "lblUserEmail";
+            lblUserEmail.Size = new Size(57, 24);
+            lblUserEmail.TabIndex = 66;
+            lblUserEmail.Text = "email";
             // 
             // lblPassword
             // 
-            this.lblPassword.AutoSize = true;
-            this.lblPassword.BackColor = System.Drawing.Color.Gainsboro;
-            this.lblPassword.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblPassword.Location = new System.Drawing.Point(36, 376);
-            this.lblPassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(85, 19);
-            this.lblPassword.TabIndex = 67;
-            this.lblPassword.Text = "Password:";
+            lblPassword.AutoSize = true;
+            lblPassword.BackColor = Color.Gainsboro;
+            lblPassword.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            lblPassword.Location = new Point(45, 470);
+            lblPassword.Margin = new Padding(2, 0, 2, 0);
+            lblPassword.Name = "lblPassword";
+            lblPassword.Size = new Size(104, 25);
+            lblPassword.TabIndex = 67;
+            lblPassword.Text = "Password:";
             // 
             // lblRole
             // 
-            this.lblRole.AutoSize = true;
-            this.lblRole.BackColor = System.Drawing.Color.Gainsboro;
-            this.lblRole.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblRole.Location = new System.Drawing.Point(40, 262);
-            this.lblRole.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblRole.Name = "lblRole";
-            this.lblRole.Size = new System.Drawing.Size(46, 19);
-            this.lblRole.TabIndex = 68;
-            this.lblRole.Text = "Role:";
+            lblRole.AutoSize = true;
+            lblRole.BackColor = Color.Gainsboro;
+            lblRole.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            lblRole.Location = new Point(50, 328);
+            lblRole.Margin = new Padding(2, 0, 2, 0);
+            lblRole.Name = "lblRole";
+            lblRole.Size = new Size(57, 25);
+            lblRole.TabIndex = 68;
+            lblRole.Text = "Role:";
             // 
             // lblEmail
             // 
-            this.lblEmail.AutoSize = true;
-            this.lblEmail.BackColor = System.Drawing.Color.Gainsboro;
-            this.lblEmail.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblEmail.Location = new System.Drawing.Point(38, 204);
-            this.lblEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(54, 19);
-            this.lblEmail.TabIndex = 69;
-            this.lblEmail.Text = "Email:";
+            lblEmail.AutoSize = true;
+            lblEmail.BackColor = Color.Gainsboro;
+            lblEmail.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            lblEmail.Location = new Point(48, 255);
+            lblEmail.Margin = new Padding(2, 0, 2, 0);
+            lblEmail.Name = "lblEmail";
+            lblEmail.Size = new Size(65, 25);
+            lblEmail.TabIndex = 69;
+            lblEmail.Text = "Email:";
             // 
             // lblUserPassword
             // 
-            this.lblUserPassword.AutoSize = true;
-            this.lblUserPassword.BackColor = System.Drawing.Color.Gainsboro;
-            this.lblUserPassword.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblUserPassword.ForeColor = System.Drawing.Color.Black;
-            this.lblUserPassword.Location = new System.Drawing.Point(115, 375);
-            this.lblUserPassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblUserPassword.Name = "lblUserPassword";
-            this.lblUserPassword.Size = new System.Drawing.Size(79, 20);
-            this.lblUserPassword.TabIndex = 70;
-            this.lblUserPassword.Text = "password";
+            lblUserPassword.AutoSize = true;
+            lblUserPassword.BackColor = Color.Gainsboro;
+            lblUserPassword.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            lblUserPassword.ForeColor = Color.Black;
+            lblUserPassword.Location = new Point(144, 469);
+            lblUserPassword.Margin = new Padding(2, 0, 2, 0);
+            lblUserPassword.Name = "lblUserPassword";
+            lblUserPassword.Size = new Size(92, 24);
+            lblUserPassword.TabIndex = 70;
+            lblUserPassword.Text = "password";
             // 
             // lblUserRole
             // 
-            this.lblUserRole.AutoSize = true;
-            this.lblUserRole.BackColor = System.Drawing.Color.Gainsboro;
-            this.lblUserRole.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblUserRole.ForeColor = System.Drawing.Color.Black;
-            this.lblUserRole.Location = new System.Drawing.Point(82, 262);
-            this.lblUserRole.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblUserRole.Name = "lblUserRole";
-            this.lblUserRole.Size = new System.Drawing.Size(38, 20);
-            this.lblUserRole.TabIndex = 72;
-            this.lblUserRole.Text = "role";
+            lblUserRole.AutoSize = true;
+            lblUserRole.BackColor = Color.Gainsboro;
+            lblUserRole.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            lblUserRole.ForeColor = Color.Black;
+            lblUserRole.Location = new Point(102, 328);
+            lblUserRole.Margin = new Padding(2, 0, 2, 0);
+            lblUserRole.Name = "lblUserRole";
+            lblUserRole.Size = new Size(43, 24);
+            lblUserRole.TabIndex = 72;
+            lblUserRole.Text = "role";
             // 
             // lblUserUsername
             // 
-            this.lblUserUsername.AutoSize = true;
-            this.lblUserUsername.BackColor = System.Drawing.Color.Gainsboro;
-            this.lblUserUsername.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblUserUsername.ForeColor = System.Drawing.Color.Black;
-            this.lblUserUsername.Location = new System.Drawing.Point(118, 320);
-            this.lblUserUsername.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblUserUsername.Name = "lblUserUsername";
-            this.lblUserUsername.Size = new System.Drawing.Size(80, 20);
-            this.lblUserUsername.TabIndex = 73;
-            this.lblUserUsername.Text = "username";
+            lblUserUsername.AutoSize = true;
+            lblUserUsername.BackColor = Color.Gainsboro;
+            lblUserUsername.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            lblUserUsername.ForeColor = Color.Black;
+            lblUserUsername.Location = new Point(148, 400);
+            lblUserUsername.Margin = new Padding(2, 0, 2, 0);
+            lblUserUsername.Name = "lblUserUsername";
+            lblUserUsername.Size = new Size(94, 24);
+            lblUserUsername.TabIndex = 73;
+            lblUserUsername.Text = "username";
             // 
             // pictureBox9
             // 
-            this.pictureBox9.BackColor = System.Drawing.Color.Gainsboro;
-            this.pictureBox9.Location = new System.Drawing.Point(34, 190);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(402, 46);
-            this.pictureBox9.TabIndex = 74;
-            this.pictureBox9.TabStop = false;
+            pictureBox9.BackColor = Color.Gainsboro;
+            pictureBox9.Location = new Point(42, 238);
+            pictureBox9.Margin = new Padding(2);
+            pictureBox9.Name = "pictureBox9";
+            pictureBox9.Size = new Size(502, 58);
+            pictureBox9.TabIndex = 74;
+            pictureBox9.TabStop = false;
             // 
             // lblName
             // 
-            this.lblName.AutoSize = true;
-            this.lblName.BackColor = System.Drawing.Color.Gainsboro;
-            this.lblName.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblName.Location = new System.Drawing.Point(38, 145);
-            this.lblName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(59, 19);
-            this.lblName.TabIndex = 75;
-            this.lblName.Text = "Name:";
+            lblName.AutoSize = true;
+            lblName.BackColor = Color.Gainsboro;
+            lblName.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            lblName.Location = new Point(48, 181);
+            lblName.Margin = new Padding(2, 0, 2, 0);
+            lblName.Name = "lblName";
+            lblName.Size = new Size(70, 25);
+            lblName.TabIndex = 75;
+            lblName.Text = "Name:";
             // 
             // lblNameUser
             // 
-            this.lblNameUser.AutoSize = true;
-            this.lblNameUser.BackColor = System.Drawing.Color.Gainsboro;
-            this.lblNameUser.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblNameUser.ForeColor = System.Drawing.Color.Black;
-            this.lblNameUser.Location = new System.Drawing.Point(97, 145);
-            this.lblNameUser.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblNameUser.Name = "lblNameUser";
-            this.lblNameUser.Size = new System.Drawing.Size(0, 20);
-            this.lblNameUser.TabIndex = 76;
+            lblNameUser.AutoSize = true;
+            lblNameUser.BackColor = Color.Gainsboro;
+            lblNameUser.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            lblNameUser.ForeColor = Color.Black;
+            lblNameUser.Location = new Point(121, 181);
+            lblNameUser.Margin = new Padding(2, 0, 2, 0);
+            lblNameUser.Name = "lblNameUser";
+            lblNameUser.Size = new Size(0, 24);
+            lblNameUser.TabIndex = 76;
             // 
             // pnlChangePassword
             // 
-            this.pnlChangePassword.Controls.Add(this.btnChange);
-            this.pnlChangePassword.Controls.Add(this.txtConfirmPass);
-            this.pnlChangePassword.Controls.Add(this.txtnewPass);
-            this.pnlChangePassword.Controls.Add(this.lblNewPass);
-            this.pnlChangePassword.Controls.Add(this.lblConfirm);
-            this.pnlChangePassword.Controls.Add(this.linklblNoPassChange);
-            this.pnlChangePassword.Controls.Add(this.pictureBox11);
-            this.pnlChangePassword.Controls.Add(this.pictureBox10);
-            this.pnlChangePassword.Controls.Add(this.lblChangePass);
-            this.pnlChangePassword.Controls.Add(this.pictureBox13);
-            this.pnlChangePassword.Controls.Add(this.pictureBox14);
-            this.pnlChangePassword.Location = new System.Drawing.Point(-6, 64);
-            this.pnlChangePassword.Name = "pnlChangePassword";
-            this.pnlChangePassword.Size = new System.Drawing.Size(504, 444);
-            this.pnlChangePassword.TabIndex = 77;
+            pnlChangePassword.Controls.Add(btnChange);
+            pnlChangePassword.Controls.Add(txtConfirmPass);
+            pnlChangePassword.Controls.Add(txtnewPass);
+            pnlChangePassword.Controls.Add(lblNewPass);
+            pnlChangePassword.Controls.Add(lblConfirm);
+            pnlChangePassword.Controls.Add(linklblNoPassChange);
+            pnlChangePassword.Controls.Add(pictureBox11);
+            pnlChangePassword.Controls.Add(pictureBox10);
+            pnlChangePassword.Controls.Add(lblChangePass);
+            pnlChangePassword.Controls.Add(pictureBox13);
+            pnlChangePassword.Controls.Add(pictureBox14);
+            pnlChangePassword.Location = new Point(-8, 80);
+            pnlChangePassword.Margin = new Padding(4, 4, 4, 4);
+            pnlChangePassword.Name = "pnlChangePassword";
+            pnlChangePassword.Size = new Size(630, 555);
+            pnlChangePassword.TabIndex = 77;
             // 
             // btnChange
             // 
-            this.btnChange.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnChange.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnChange.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnChange.ForeColor = System.Drawing.Color.White;
-            this.btnChange.Location = new System.Drawing.Point(324, 396);
-            this.btnChange.Margin = new System.Windows.Forms.Padding(2);
-            this.btnChange.Name = "btnChange";
-            this.btnChange.Size = new System.Drawing.Size(154, 35);
-            this.btnChange.TabIndex = 88;
-            this.btnChange.Text = "Change Password";
-            this.btnChange.UseVisualStyleBackColor = false;
-            this.btnChange.Click += new System.EventHandler(this.btnChange_Click);
+            btnChange.BackColor = Color.FromArgb(64, 0, 0);
+            btnChange.FlatStyle = FlatStyle.Flat;
+            btnChange.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            btnChange.ForeColor = Color.White;
+            btnChange.Location = new Point(405, 495);
+            btnChange.Margin = new Padding(2);
+            btnChange.Name = "btnChange";
+            btnChange.Size = new Size(192, 44);
+            btnChange.TabIndex = 88;
+            btnChange.Text = "Change Password";
+            btnChange.UseVisualStyleBackColor = false;
+            btnChange.Click += btnChange_Click;
             // 
             // txtConfirmPass
             // 
-            this.txtConfirmPass.Location = new System.Drawing.Point(46, 282);
-            this.txtConfirmPass.MaxLength = 50;
-            this.txtConfirmPass.Name = "txtConfirmPass";
-            this.txtConfirmPass.Size = new System.Drawing.Size(396, 27);
-            this.txtConfirmPass.TabIndex = 87;
+            txtConfirmPass.Location = new Point(58, 352);
+            txtConfirmPass.Margin = new Padding(4, 4, 4, 4);
+            txtConfirmPass.MaxLength = 50;
+            txtConfirmPass.Name = "txtConfirmPass";
+            txtConfirmPass.Size = new Size(494, 31);
+            txtConfirmPass.TabIndex = 87;
             // 
             // txtnewPass
             // 
-            this.txtnewPass.Location = new System.Drawing.Point(46, 150);
-            this.txtnewPass.MaxLength = 50;
-            this.txtnewPass.Name = "txtnewPass";
-            this.txtnewPass.Size = new System.Drawing.Size(396, 27);
-            this.txtnewPass.TabIndex = 86;
+            txtnewPass.Location = new Point(58, 188);
+            txtnewPass.Margin = new Padding(4, 4, 4, 4);
+            txtnewPass.MaxLength = 50;
+            txtnewPass.Name = "txtnewPass";
+            txtnewPass.Size = new Size(494, 31);
+            txtnewPass.TabIndex = 86;
             // 
             // lblNewPass
             // 
-            this.lblNewPass.AutoSize = true;
-            this.lblNewPass.BackColor = System.Drawing.Color.Silver;
-            this.lblNewPass.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblNewPass.Location = new System.Drawing.Point(30, 103);
-            this.lblNewPass.Name = "lblNewPass";
-            this.lblNewPass.Size = new System.Drawing.Size(196, 25);
-            this.lblNewPass.TabIndex = 85;
-            this.lblNewPass.Text = "Enter new password:";
+            lblNewPass.AutoSize = true;
+            lblNewPass.BackColor = Color.Silver;
+            lblNewPass.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            lblNewPass.Location = new Point(38, 129);
+            lblNewPass.Margin = new Padding(4, 0, 4, 0);
+            lblNewPass.Name = "lblNewPass";
+            lblNewPass.Size = new Size(229, 30);
+            lblNewPass.TabIndex = 85;
+            lblNewPass.Text = "Enter new password:";
             // 
             // lblConfirm
             // 
-            this.lblConfirm.AutoSize = true;
-            this.lblConfirm.BackColor = System.Drawing.Color.Silver;
-            this.lblConfirm.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblConfirm.Location = new System.Drawing.Point(30, 234);
-            this.lblConfirm.Name = "lblConfirm";
-            this.lblConfirm.Size = new System.Drawing.Size(226, 25);
-            this.lblConfirm.TabIndex = 84;
-            this.lblConfirm.Text = "Re-enter new password:";
+            lblConfirm.AutoSize = true;
+            lblConfirm.BackColor = Color.Silver;
+            lblConfirm.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            lblConfirm.Location = new Point(38, 292);
+            lblConfirm.Margin = new Padding(4, 0, 4, 0);
+            lblConfirm.Name = "lblConfirm";
+            lblConfirm.Size = new Size(263, 30);
+            lblConfirm.TabIndex = 84;
+            lblConfirm.Text = "Re-enter new password:";
             // 
             // linklblNoPassChange
             // 
-            this.linklblNoPassChange.AutoSize = true;
-            this.linklblNoPassChange.BackColor = System.Drawing.Color.Silver;
-            this.linklblNoPassChange.Location = new System.Drawing.Point(206, 337);
-            this.linklblNoPassChange.Name = "linklblNoPassChange";
-            this.linklblNoPassChange.Size = new System.Drawing.Size(260, 20);
-            this.linklblNoPassChange.TabIndex = 82;
-            this.linklblNoPassChange.TabStop = true;
-            this.linklblNoPassChange.Text = "Don\'t Want to Change Your Password?";
-            this.linklblNoPassChange.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linklblNoPassChange_LinkClicked);
+            linklblNoPassChange.AutoSize = true;
+            linklblNoPassChange.BackColor = Color.Silver;
+            linklblNoPassChange.Location = new Point(258, 421);
+            linklblNoPassChange.Margin = new Padding(4, 0, 4, 0);
+            linklblNoPassChange.Name = "linklblNoPassChange";
+            linklblNoPassChange.Size = new Size(317, 25);
+            linklblNoPassChange.TabIndex = 82;
+            linklblNoPassChange.TabStop = true;
+            linklblNoPassChange.Text = "Don't Want to Change Your Password?";
+            linklblNoPassChange.LinkClicked += linklblNoPassChange_LinkClicked;
             // 
             // pictureBox11
             // 
-            this.pictureBox11.BackColor = System.Drawing.Color.Gainsboro;
-            this.pictureBox11.Location = new System.Drawing.Point(35, 131);
-            this.pictureBox11.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(421, 66);
-            this.pictureBox11.TabIndex = 81;
-            this.pictureBox11.TabStop = false;
+            pictureBox11.BackColor = Color.Gainsboro;
+            pictureBox11.Location = new Point(44, 164);
+            pictureBox11.Margin = new Padding(2);
+            pictureBox11.Name = "pictureBox11";
+            pictureBox11.Size = new Size(526, 82);
+            pictureBox11.TabIndex = 81;
+            pictureBox11.TabStop = false;
             // 
             // pictureBox10
             // 
-            this.pictureBox10.BackColor = System.Drawing.Color.Gainsboro;
-            this.pictureBox10.Location = new System.Drawing.Point(35, 260);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(421, 71);
-            this.pictureBox10.TabIndex = 80;
-            this.pictureBox10.TabStop = false;
+            pictureBox10.BackColor = Color.Gainsboro;
+            pictureBox10.Location = new Point(44, 325);
+            pictureBox10.Margin = new Padding(2);
+            pictureBox10.Name = "pictureBox10";
+            pictureBox10.Size = new Size(526, 89);
+            pictureBox10.TabIndex = 80;
+            pictureBox10.TabStop = false;
             // 
             // lblChangePass
             // 
-            this.lblChangePass.AutoSize = true;
-            this.lblChangePass.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblChangePass.Location = new System.Drawing.Point(71, 14);
-            this.lblChangePass.Name = "lblChangePass";
-            this.lblChangePass.Size = new System.Drawing.Size(364, 40);
-            this.lblChangePass.TabIndex = 77;
-            this.lblChangePass.Text = "Change Your Password";
+            lblChangePass.AutoSize = true;
+            lblChangePass.Font = new Font("Microsoft YaHei UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            lblChangePass.Location = new Point(89, 18);
+            lblChangePass.Margin = new Padding(4, 0, 4, 0);
+            lblChangePass.Name = "lblChangePass";
+            lblChangePass.Size = new Size(438, 47);
+            lblChangePass.TabIndex = 77;
+            lblChangePass.Text = "Change Your Password";
             // 
             // pictureBox13
             // 
-            this.pictureBox13.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox13.Location = new System.Drawing.Point(27, 81);
-            this.pictureBox13.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(439, 290);
-            this.pictureBox13.TabIndex = 76;
-            this.pictureBox13.TabStop = false;
+            pictureBox13.BackColor = Color.Silver;
+            pictureBox13.Location = new Point(34, 101);
+            pictureBox13.Margin = new Padding(2);
+            pictureBox13.Name = "pictureBox13";
+            pictureBox13.Size = new Size(549, 362);
+            pictureBox13.TabIndex = 76;
+            pictureBox13.TabStop = false;
             // 
             // pictureBox14
             // 
-            this.pictureBox14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.pictureBox14.Location = new System.Drawing.Point(13, 68);
-            this.pictureBox14.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(468, 322);
-            this.pictureBox14.TabIndex = 75;
-            this.pictureBox14.TabStop = false;
+            pictureBox14.BackColor = Color.FromArgb(64, 64, 64);
+            pictureBox14.Location = new Point(16, 85);
+            pictureBox14.Margin = new Padding(2);
+            pictureBox14.Name = "pictureBox14";
+            pictureBox14.Size = new Size(585, 402);
+            pictureBox14.TabIndex = 75;
+            pictureBox14.TabStop = false;
             // 
             // frmUserProf
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(483, 505);
-            this.Controls.Add(this.pnlChangePassword);
-            this.Controls.Add(this.lblEmail);
-            this.Controls.Add(this.lblUserEmail);
-            this.Controls.Add(this.lblNameUser);
-            this.Controls.Add(this.lblName);
-            this.Controls.Add(this.pictureBox9);
-            this.Controls.Add(this.lblUserUsername);
-            this.Controls.Add(this.lblUserRole);
-            this.Controls.Add(this.lblUserPassword);
-            this.Controls.Add(this.lblRole);
-            this.Controls.Add(this.lblPassword);
-            this.Controls.Add(this.linklblChangePassword);
-            this.Controls.Add(this.lblUsername);
-            this.Controls.Add(this.pictureBox8);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.lblProfPage);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.lblHeader);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureboxIcon);
-            this.Controls.Add(this.pictureBox3);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "frmUserProf";
-            this.Text = "Red Agents IT User Profile";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureboxIcon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            this.pnlChangePassword.ResumeLayout(false);
-            this.pnlChangePassword.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.WhiteSmoke;
+            ClientSize = new Size(604, 631);
+            Controls.Add(pnlChangePassword);
+            Controls.Add(lblEmail);
+            Controls.Add(lblUserEmail);
+            Controls.Add(lblNameUser);
+            Controls.Add(lblName);
+            Controls.Add(pictureBox9);
+            Controls.Add(lblUserUsername);
+            Controls.Add(lblUserRole);
+            Controls.Add(lblUserPassword);
+            Controls.Add(lblRole);
+            Controls.Add(lblPassword);
+            Controls.Add(linklblChangePassword);
+            Controls.Add(lblUsername);
+            Controls.Add(pictureBox8);
+            Controls.Add(pictureBox6);
+            Controls.Add(pictureBox2);
+            Controls.Add(pictureBox7);
+            Controls.Add(lblProfPage);
+            Controls.Add(pictureBox4);
+            Controls.Add(pictureBox1);
+            Controls.Add(lblHeader);
+            Controls.Add(pictureBox5);
+            Controls.Add(pictureboxIcon);
+            Controls.Add(pictureBox3);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(2);
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "frmUserProf";
+            Text = "Red Agents IT User Profile";
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureboxIcon).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
+            pnlChangePassword.ResumeLayout(false);
+            pnlChangePassword.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

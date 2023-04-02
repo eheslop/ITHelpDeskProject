@@ -26,37 +26,9 @@ namespace GUI_IT
             combo();
         }
 
-        private void btnLogout_Click(object sender, EventArgs e)
-        {
-            FrmLogin LoginScreen = new FrmLogin();
-            this.Hide();
-            LoginScreen.ShowDialog();
-            this.Close();
-        }
-
         private void tabShare_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void ProfilePictureBox_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnSolveClear_Click(object sender, EventArgs e)
-        {
-            txtSolution.Clear();
-            txtSolveTicketID.Clear();
-        }
-
-        private void btnClear_Click(object sender, EventArgs e)
-        {
-            txtTicketID.Clear();
-            //txtname.Clear();
-            txtEmail.Clear();
-            frmUserProf UserProfile = new frmUserProf(newUser_);
-            UserProfile.ShowDialog();
         }
 
         private void Fill1()
@@ -141,6 +113,32 @@ namespace GUI_IT
         private void label6_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnLogout_Click_1(object sender, EventArgs e)
+        {
+            FrmLogin LoginScreen = new FrmLogin();
+            this.Hide();
+            LoginScreen.ShowDialog();
+            this.Close();
+        }
+
+        private void ProfilePictureBox_Click_1(object sender, EventArgs e)
+        {
+            frmUserProf UserProfile = new frmUserProf(newUser_);
+            UserProfile.ShowDialog();
+        }
+
+        private void btnSolveClear_Click_1(object sender, EventArgs e)
+        {
+            txtSolution.Clear();
+            txtSolveTicketID.Clear();
+        }
+
+        private void btnClear_Click_1(object sender, EventArgs e)
+        {
+            txtTicketID.Clear();
+            txtEmail.Clear();
         }
     }
 }

@@ -120,6 +120,7 @@
             btnLogout.TabIndex = 27;
             btnLogout.Text = "Log Out";
             btnLogout.UseVisualStyleBackColor = false;
+            btnLogout.Click += btnLogout_Click_1;
             // 
             // pictureBox1
             // 
@@ -394,6 +395,7 @@
             btnSolveClear.TabIndex = 63;
             btnSolveClear.Text = "Clear";
             btnSolveClear.UseVisualStyleBackColor = false;
+            btnSolveClear.Click += btnSolveClear_Click_1;
             // 
             // txtSolution
             // 
@@ -532,6 +534,7 @@
             btnClear.TabIndex = 77;
             btnClear.Text = "Clear";
             btnClear.UseVisualStyleBackColor = false;
+            btnClear.Click += btnClear_Click_1;
             // 
             // label8
             // 
@@ -623,6 +626,7 @@
             ProfilePictureBox.Size = new Size(48, 35);
             ProfilePictureBox.TabIndex = 5;
             ProfilePictureBox.TabStop = false;
+            ProfilePictureBox.Click += ProfilePictureBox_Click_1;
             // 
             // lblLoggedIn
             // 

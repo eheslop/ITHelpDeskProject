@@ -457,10 +457,10 @@
             pnlForgotPassword.Controls.Add(btnBacktoLogin);
             pnlForgotPassword.Controls.Add(button1);
             pnlForgotPassword.Controls.Add(label1);
-            pnlForgotPassword.Location = new Point(8, 91);
+            pnlForgotPassword.Location = new Point(8, 94);
             pnlForgotPassword.Margin = new Padding(4);
             pnlForgotPassword.Name = "pnlForgotPassword";
-            pnlForgotPassword.Size = new Size(950, 548);
+            pnlForgotPassword.Size = new Size(950, 545);
             pnlForgotPassword.TabIndex = 12;
             pnlForgotPassword.Paint += panel1_Paint;
             // 
@@ -469,7 +469,7 @@
             label2.Anchor = AnchorStyles.None;
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label2.Location = new Point(292, 232);
+            label2.Location = new Point(292, 230);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
             label2.Size = new Size(355, 38);
@@ -481,7 +481,7 @@
             lblRememebr.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             lblRememebr.AutoSize = true;
             lblRememebr.Font = new Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point);
-            lblRememebr.Location = new Point(630, 10);
+            lblRememebr.Location = new Point(626, 10);
             lblRememebr.Margin = new Padding(4, 0, 4, 0);
             lblRememebr.Name = "lblRememebr";
             lblRememebr.Size = new Size(164, 21);
@@ -491,7 +491,7 @@
             // textBox1
             // 
             textBox1.Anchor = AnchorStyles.None;
-            textBox1.Location = new Point(302, 285);
+            textBox1.Location = new Point(302, 283);
             textBox1.Margin = new Padding(4);
             textBox1.Name = "textBox1";
             textBox1.PlaceholderText = "Enter Email";
@@ -503,7 +503,7 @@
             pictureBox5.Anchor = AnchorStyles.None;
             pictureBox5.BackgroundImage = Properties.Resources.redAgentsLogo;
             pictureBox5.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox5.Location = new Point(404, 92);
+            pictureBox5.Location = new Point(404, 90);
             pictureBox5.Margin = new Padding(4);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(139, 132);
@@ -518,10 +518,10 @@
             btnBacktoLogin.FlatStyle = FlatStyle.Popup;
             btnBacktoLogin.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnBacktoLogin.ForeColor = Color.White;
-            btnBacktoLogin.Location = new Point(798, 0);
+            btnBacktoLogin.Location = new Point(793, 0);
             btnBacktoLogin.Margin = new Padding(4);
             btnBacktoLogin.Name = "btnBacktoLogin";
-            btnBacktoLogin.Size = new Size(152, 44);
+            btnBacktoLogin.Size = new Size(157, 44);
             btnBacktoLogin.TabIndex = 2;
             btnBacktoLogin.Text = "Login Here!";
             btnBacktoLogin.UseVisualStyleBackColor = false;
@@ -535,7 +535,7 @@
             button1.FlatStyle = FlatStyle.Popup;
             button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(368, 336);
+            button1.Location = new Point(368, 334);
             button1.Margin = new Padding(4);
             button1.Name = "button1";
             button1.Size = new Size(209, 61);
@@ -549,7 +549,7 @@
             label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(165, 283);
+            label1.Location = new Point(165, 281);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(133, 32);

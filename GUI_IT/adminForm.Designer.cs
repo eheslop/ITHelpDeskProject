@@ -102,7 +102,6 @@
             pictureBox11 = new PictureBox();
             ProfilePictureBox = new PictureBox();
             btnApproveDeny = new Button();
-            btnClear = new Button();
             pictureBox4 = new PictureBox();
             lblLoggedIn = new Label();
             pictureBox6 = new PictureBox();
@@ -538,7 +537,7 @@
             // cbxp
             // 
             cbxp.FormattingEnabled = true;
-            cbxp.Location = new Point(215, 158);
+            cbxp.Location = new Point(215, 156);
             cbxp.Name = "cbxp";
             cbxp.Size = new Size(409, 36);
             cbxp.TabIndex = 138;
@@ -546,7 +545,7 @@
             // cbxn
             // 
             cbxn.FormattingEnabled = true;
-            cbxn.Location = new Point(215, 76);
+            cbxn.Location = new Point(215, 74);
             cbxn.Name = "cbxn";
             cbxn.Size = new Size(465, 36);
             cbxn.TabIndex = 137;
@@ -576,13 +575,14 @@
             btnReportClear.FlatStyle = FlatStyle.Popup;
             btnReportClear.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnReportClear.ForeColor = Color.White;
-            btnReportClear.Location = new Point(34, 388);
+            btnReportClear.Location = new Point(34, 386);
             btnReportClear.Margin = new Padding(2);
             btnReportClear.Name = "btnReportClear";
             btnReportClear.Size = new Size(159, 41);
             btnReportClear.TabIndex = 134;
             btnReportClear.Text = "Clear";
             btnReportClear.UseVisualStyleBackColor = false;
+            btnReportClear.Click += btnReportClear_Click_1;
             // 
             // label19
             // 
@@ -597,7 +597,7 @@
             // 
             // txtTicketIDSolve
             // 
-            txtTicketIDSolve.Location = new Point(30, 78);
+            txtTicketIDSolve.Location = new Point(30, 76);
             txtTicketIDSolve.Margin = new Padding(2);
             txtTicketIDSolve.Name = "txtTicketIDSolve";
             txtTicketIDSolve.Size = new Size(162, 34);
@@ -607,7 +607,7 @@
             // 
             label17.AutoSize = true;
             label17.BackColor = Color.DarkGray;
-            label17.Location = new Point(30, 48);
+            label17.Location = new Point(30, 46);
             label17.Margin = new Padding(2, 0, 2, 0);
             label17.Name = "label17";
             label17.Size = new Size(102, 28);
@@ -631,10 +631,10 @@
             button1.FlatStyle = FlatStyle.Popup;
             button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(215, 388);
+            button1.Location = new Point(215, 386);
             button1.Margin = new Padding(2);
             button1.Name = "button1";
-            button1.Size = new Size(158, 42);
+            button1.Size = new Size(158, 41);
             button1.TabIndex = 126;
             button1.Text = "Submit Report";
             button1.UseVisualStyleBackColor = false;
@@ -643,7 +643,7 @@
             // txtTicketDescribeSolved
             // 
             txtTicketDescribeSolved.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            txtTicketDescribeSolved.Location = new Point(32, 302);
+            txtTicketDescribeSolved.Location = new Point(32, 300);
             txtTicketDescribeSolved.Margin = new Padding(2);
             txtTicketDescribeSolved.MaxLength = 500;
             txtTicketDescribeSolved.Multiline = true;
@@ -656,7 +656,7 @@
             // 
             label14.AutoSize = true;
             label14.BackColor = Color.DarkGray;
-            label14.Location = new Point(215, 129);
+            label14.Location = new Point(215, 127);
             label14.Margin = new Padding(2, 0, 2, 0);
             label14.Name = "label14";
             label14.Size = new Size(314, 28);
@@ -667,7 +667,7 @@
             // 
             label15.AutoSize = true;
             label15.BackColor = Color.DarkGray;
-            label15.Location = new Point(212, 48);
+            label15.Location = new Point(212, 46);
             label15.Margin = new Padding(2, 0, 2, 0);
             label15.Name = "label15";
             label15.Size = new Size(469, 28);
@@ -677,7 +677,7 @@
             // txtTicketDetailSolved
             // 
             txtTicketDetailSolved.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            txtTicketDetailSolved.Location = new Point(724, 120);
+            txtTicketDetailSolved.Location = new Point(724, 118);
             txtTicketDetailSolved.Margin = new Padding(2);
             txtTicketDetailSolved.MaxLength = 750;
             txtTicketDetailSolved.Multiline = true;
@@ -690,7 +690,7 @@
             // 
             pictureBox5.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox5.BackColor = Color.Gray;
-            pictureBox5.Location = new Point(710, 109);
+            pictureBox5.Location = new Point(710, 107);
             pictureBox5.Margin = new Padding(2);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(531, 310);
@@ -701,7 +701,7 @@
             // 
             pictureBox15.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox15.BackColor = Color.Gray;
-            pictureBox15.Location = new Point(22, 291);
+            pictureBox15.Location = new Point(22, 289);
             pictureBox15.Margin = new Padding(2);
             pictureBox15.Name = "pictureBox15";
             pictureBox15.Size = new Size(658, 90);
@@ -713,7 +713,7 @@
             label18.AutoSize = true;
             label18.BackColor = Color.DarkGray;
             label18.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            label18.Location = new Point(704, 48);
+            label18.Location = new Point(704, 46);
             label18.Margin = new Padding(2, 0, 2, 0);
             label18.Name = "label18";
             label18.Size = new Size(528, 56);
@@ -763,7 +763,7 @@
             // pictureBox16
             // 
             pictureBox16.BackColor = Color.DarkGray;
-            pictureBox16.Location = new Point(12, 44);
+            pictureBox16.Location = new Point(12, 42);
             pictureBox16.Margin = new Padding(2);
             pictureBox16.Name = "pictureBox16";
             pictureBox16.Size = new Size(1239, 392);
@@ -971,6 +971,7 @@
             btnClearUnsolved.TabIndex = 82;
             btnClearUnsolved.Text = "Clear";
             btnClearUnsolved.UseVisualStyleBackColor = false;
+            btnClearUnsolved.Click += btnClearUnsolved_Click_1;
             // 
             // label3
             // 
@@ -998,11 +999,11 @@
             // pictureBox11
             // 
             pictureBox11.BackColor = Color.DarkGray;
-            pictureBox11.Location = new Point(11, 48);
+            pictureBox11.Location = new Point(14, 49);
             pictureBox11.Margin = new Padding(2);
             pictureBox11.Name = "pictureBox11";
             pictureBox11.Size = new Size(1239, 382);
-            pictureBox11.TabIndex = 81;
+            pictureBox11.TabIndex = 107;
             pictureBox11.TabStop = false;
             // 
             // ProfilePictureBox
@@ -1023,27 +1024,14 @@
             btnApproveDeny.FlatStyle = FlatStyle.Popup;
             btnApproveDeny.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
             btnApproveDeny.ForeColor = Color.White;
-            btnApproveDeny.Location = new Point(1050, 312);
+            btnApproveDeny.Location = new Point(1050, 221);
             btnApproveDeny.Margin = new Padding(2);
             btnApproveDeny.Name = "btnApproveDeny";
             btnApproveDeny.Size = new Size(165, 65);
             btnApproveDeny.TabIndex = 51;
             btnApproveDeny.Text = "Update Status";
             btnApproveDeny.UseVisualStyleBackColor = false;
-            // 
-            // btnClear
-            // 
-            btnClear.BackColor = Color.FromArgb(64, 0, 0);
-            btnClear.FlatStyle = FlatStyle.Popup;
-            btnClear.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            btnClear.ForeColor = Color.White;
-            btnClear.Location = new Point(1050, 208);
-            btnClear.Margin = new Padding(2);
-            btnClear.Name = "btnClear";
-            btnClear.Size = new Size(165, 65);
-            btnClear.TabIndex = 52;
-            btnClear.Text = "Clear";
-            btnClear.UseVisualStyleBackColor = false;
+            btnApproveDeny.Click += btnApproveDeny_Click_1;
             // 
             // pictureBox4
             // 
@@ -1076,7 +1064,7 @@
             pictureBox6.Location = new Point(1035, 181);
             pictureBox6.Margin = new Padding(2);
             pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(195, 335);
+            pictureBox6.Size = new Size(195, 274);
             pictureBox6.TabIndex = 73;
             pictureBox6.TabStop = false;
             // 
@@ -1086,13 +1074,14 @@
             btnrefre.FlatStyle = FlatStyle.Popup;
             btnrefre.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
             btnrefre.ForeColor = Color.White;
-            btnrefre.Location = new Point(1050, 414);
+            btnrefre.Location = new Point(1050, 339);
             btnrefre.Margin = new Padding(4);
             btnrefre.Name = "btnrefre";
             btnrefre.Size = new Size(165, 65);
             btnrefre.TabIndex = 74;
             btnrefre.Text = "Refresh";
             btnrefre.UseVisualStyleBackColor = false;
+            btnrefre.Click += btnrefre_Click_1;
             // 
             // frmAdmin
             // 
@@ -1103,7 +1092,6 @@
             Controls.Add(pnlReportGenerate);
             Controls.Add(lblAdminHeader);
             Controls.Add(btnApproveDeny);
-            Controls.Add(btnClear);
             Controls.Add(pictureBox2);
             Controls.Add(lblHeader);
             Controls.Add(btnGenerate);
@@ -1166,7 +1154,6 @@
         private PictureBox pictureBox2;
         private Panel pnlReportGenerate;
         private Button btnApproveDeny;
-        private Button btnClear;
         private PictureBox pictureBox4;
         private Label lblLoggedIn;
         private TabControl tabReportGeneration;
@@ -1195,7 +1182,6 @@
         private Button btnUnsolvedView;
         private Button btnSubmitUnsolved;
         private Button btnClearUnsolved;
-        private PictureBox pictureBox11;
         private Label lblTicketID;
         private TextBox txtTicketID;
         private Label label9;
@@ -1236,5 +1222,6 @@
         private ComboBox cbxp;
         private ComboBox cbxuu;
         private ComboBox cbxu;
+        private PictureBox pictureBox11;
     }
 }

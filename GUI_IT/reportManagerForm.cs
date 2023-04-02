@@ -27,14 +27,6 @@ namespace GUI_IT
             lblLoggedIn.Text = "Logged in as: " + newUser_.FirstName;
         }
 
-        private void btnLogout_Click(object sender, EventArgs e)
-        {
-            FrmLogin LoginScreen = new FrmLogin();
-            this.Hide();
-            LoginScreen.ShowDialog();
-            this.Close();
-        }
-
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -57,32 +49,6 @@ namespace GUI_IT
             con.Close();
         }
 
-        private void lblLoggedIn_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ProfilePictureBox_Click(object sender, EventArgs e)
-        {
-            frmUserProf UserProfile = new frmUserProf(newUser_);
-            UserProfile.ShowDialog();
-        }
-
-        private void txtTicketID_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnAssign_Click(object sender, EventArgs e)
-        {
-            string x = txtTicketID.Text.ToString();
-            int y = System.Convert.ToInt32(x);
-            string k = cbxn.Text.ToString();
-            string z = Sql.getUser(k);
-            string f = txtEmail.Text.ToString();
-            Sql.Addcoll(z, y);
-            Sql.add2(z, y, f);
-        }
         private void combo()
         {
             cbxname.DataSource = Sql.ITname();
@@ -128,36 +94,60 @@ namespace GUI_IT
 
         }
 
-
-        private void tabAssign_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnClear_Click(object sender, EventArgs e)
-        {
-            txtTicketID.Clear();
-            txtEmail.Clear();
-        }
-
         private void DGVT_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
 
-        private void btnUnsolved_Click(object sender, EventArgs e)
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLogout_Click_1(object sender, EventArgs e)
+        {
+            FrmLogin LoginScreen = new FrmLogin();
+            this.Hide();
+            LoginScreen.ShowDialog();
+            this.Close();
+        }
+
+        private void ProfilePictureBox_Click_1(object sender, EventArgs e)
+        {
+            frmUserProf UserProfile = new frmUserProf(newUser_);
+            UserProfile.ShowDialog();
+        }
+
+        private void btnClear_Click_1(object sender, EventArgs e)
+        {
+            txtTicketID.Clear();
+            txtEmail.Clear();
+        }
+
+        private void btnAssign_Click_1(object sender, EventArgs e)
+        {
+            string x = txtTicketID.Text.ToString();
+            int y = System.Convert.ToInt32(x);
+            string k = cbxn.Text.ToString();
+            string z = Sql.getUser(k);
+            string f = txtEmail.Text.ToString();
+            Sql.Addcoll(z, y);
+            Sql.add2(z, y, f);
+        }
+
+        private void btnUnsolved_Click_1(object sender, EventArgs e)
         {
             Fill();
         }
 
-        private void btnSolved_Click(object sender, EventArgs e)
+        private void btnSolved_Click_1(object sender, EventArgs e)
         {
             Fill2();
         }
 
-        private void pictureBox6_Click(object sender, EventArgs e)
+        private void btnViewUnsolvedTable_Click(object sender, EventArgs e)
         {
-
+            Fill();
         }
     }
 }

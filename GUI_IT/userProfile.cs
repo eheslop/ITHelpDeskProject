@@ -70,7 +70,7 @@ namespace GUI_IT
                 MessageBox.Show("Those Passwords do not match, Try again!");
             }
         }
-        
+
         public void reload()
         {
             lblNameUser.Text = newUser_.FullName;
