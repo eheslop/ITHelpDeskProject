@@ -26,10 +26,6 @@ namespace GUI_IT
             combo();
         }
 
-        private void tabShare_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void Fill1()
         {
@@ -42,7 +38,7 @@ namespace GUI_IT
             builder.InitialCatalog = "red_Agents";
             SqlConnection con = new SqlConnection(builder.ConnectionString);
             con.Open();
-            string query = "Select * from Tickets where AssignedTo = '" + x + "' and Status = '" + y + "'; ";
+            string query = "Select Distinct Tickets.Id, Name, Username, Category, Description, Category, Priority, Collaborators, AssignedTo FROM Tickets inner join SharedTickets  ON ( Tickets.Id = SharedTickets.Id ) Where AssignedTo = '" + x+"' AND Status = '"+y+"' OR SharedWith = '"+x+ "' AND Status = '"+y+"'; ";
             SqlDataAdapter da = new SqlDataAdapter(query, con);
             DataTable dt = new DataTable();
             da.Fill(dt);
@@ -87,6 +83,7 @@ namespace GUI_IT
             string k = Sql.tickemail(y);
             string j = txtSolution.Text.ToString();
             Sql.solve(y, newUser_.Username, z, k, j);
+            MessageBox.Show("Your solution for the ticket of your choosing has now been submitted, thank you.", "Ticket Solved Successfully!", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void txtEmail_TextChanged(object sender, EventArgs e)
@@ -103,6 +100,7 @@ namespace GUI_IT
             string c = txtEmail.Text.ToString();
             Sql.Addcoll(b, y);
             Sql.add2(b, y, c);
+            MessageBox.Show("The ticket you wished to share has now been sent to the user of your choosing.", "Ticket Shared Successfully!", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void txtTicketID_TextChanged(object sender, EventArgs e)

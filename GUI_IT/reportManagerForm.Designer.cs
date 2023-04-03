@@ -57,7 +57,7 @@
             DGVT = new DataGridView();
             pictureBox5 = new PictureBox();
             tabAssign = new TabPage();
-            cbxname = new ComboBox();
+            cbxn = new ComboBox();
             btnViewReopenedTable = new Button();
             btnViewUnsolvedTable = new Button();
             DGVAssign = new DataGridView();
@@ -436,7 +436,7 @@
             // tabAssign
             // 
             tabAssign.BackColor = Color.LightGray;
-            tabAssign.Controls.Add(cbxname);
+            tabAssign.Controls.Add(cbxn);
             tabAssign.Controls.Add(btnViewReopenedTable);
             tabAssign.Controls.Add(btnViewUnsolvedTable);
             tabAssign.Controls.Add(DGVAssign);
@@ -457,13 +457,13 @@
             tabAssign.TabIndex = 1;
             tabAssign.Text = "Assign Tickets";
             // 
-            // cbxname
+            // cbxn
             // 
-            cbxname.FormattingEnabled = true;
-            cbxname.Location = new Point(19, 203);
-            cbxname.Name = "cbxname";
-            cbxname.Size = new Size(608, 36);
-            cbxname.TabIndex = 91;
+            cbxn.FormattingEnabled = true;
+            cbxn.Location = new Point(21, 204);
+            cbxn.Name = "cbxn";
+            cbxn.Size = new Size(606, 36);
+            cbxn.TabIndex = 91;
             // 
             // btnViewReopenedTable
             // 
@@ -659,6 +659,7 @@
             Margin = new Padding(2);
             Name = "frmReportManage";
             Text = "IT Help Desk Report Manager Ticket Dashboard";
+            Load += frmReportManage_Load;
             ((System.ComponentModel.ISupportInitialize)pictureLogo).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)Rectangle1).EndInit();
@@ -727,7 +728,7 @@
         private Button btnViewReopenedTable;
         private Button btnViewUnsolvedTable;
         private DataGridView DGVAssign;
+        //private ComboBox cbxn;
         private ComboBox cbxn;
-        private ComboBox cbxname;
     }
 }

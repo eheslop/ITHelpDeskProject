@@ -237,6 +237,7 @@ namespace GUI_IT
             string f = txtTicketDescribeSolved.Text.ToString();
             string h = "Solved";
             Sql.report(y, c, b, d, g, f, l, newUser_.Username, h);
+            MessageBox.Show("Your report regarded the solved ticket of your choosing has been successfully submitted.", "Solved Ticket Report Submitted!", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void btnSubmitUnsolved_Click(object sender, EventArgs e)
@@ -251,6 +252,7 @@ namespace GUI_IT
             string l = txtUnsolvedExplain.Text.ToString();
             string h = "Unsolved";
             Sql.report(y, c, b, d, g, f, l, newUser_.Username, h);
+            MessageBox.Show("Your report regarded the unsolved ticket of your choosing has been successfully submitted.", "Unsolved Ticket Report Submitted!", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)

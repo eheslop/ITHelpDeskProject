@@ -361,7 +361,7 @@
             pnlChangePassword.Controls.Add(pictureBox13);
             pnlChangePassword.Controls.Add(pictureBox14);
             pnlChangePassword.Location = new Point(-8, 80);
-            pnlChangePassword.Margin = new Padding(4, 4, 4, 4);
+            pnlChangePassword.Margin = new Padding(4);
             pnlChangePassword.Name = "pnlChangePassword";
             pnlChangePassword.Size = new Size(630, 555);
             pnlChangePassword.TabIndex = 77;
@@ -384,7 +384,7 @@
             // txtConfirmPass
             // 
             txtConfirmPass.Location = new Point(58, 352);
-            txtConfirmPass.Margin = new Padding(4, 4, 4, 4);
+            txtConfirmPass.Margin = new Padding(4);
             txtConfirmPass.MaxLength = 50;
             txtConfirmPass.Name = "txtConfirmPass";
             txtConfirmPass.Size = new Size(494, 31);
@@ -393,7 +393,7 @@
             // txtnewPass
             // 
             txtnewPass.Location = new Point(58, 188);
-            txtnewPass.Margin = new Padding(4, 4, 4, 4);
+            txtnewPass.Margin = new Padding(4);
             txtnewPass.MaxLength = 50;
             txtnewPass.Name = "txtnewPass";
             txtnewPass.Size = new Size(494, 31);
