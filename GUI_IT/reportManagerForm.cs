@@ -27,10 +27,7 @@ namespace GUI_IT
             lblLoggedIn.Text = "Logged in as: " + newUser_.FirstName;
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+      
         private void Fill()
         {
             string x = "Unsolved";
@@ -133,6 +130,7 @@ namespace GUI_IT
             string f = txtEmail.Text.ToString();
             Sql.Addcoll(z, y);
             Sql.add2(z, y, f);
+            MessageBox.Show("The ticket has been successfully assigned to the designated user.", "Ticket Assigned!", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void btnUnsolved_Click_1(object sender, EventArgs e)

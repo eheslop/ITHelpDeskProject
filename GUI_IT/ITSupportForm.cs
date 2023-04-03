@@ -26,10 +26,6 @@ namespace GUI_IT
             combo();
         }
 
-        private void tabShare_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void Fill1()
         {
@@ -87,6 +83,7 @@ namespace GUI_IT
             string k = Sql.tickemail(y);
             string j = txtSolution.Text.ToString();
             Sql.solve(y, newUser_.Username, z, k, j);
+            MessageBox.Show("Your solution for the ticket of your choosing has now been submitted, thank you.", "Ticket Solved Successfully!", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void txtEmail_TextChanged(object sender, EventArgs e)
@@ -103,6 +100,7 @@ namespace GUI_IT
             string c = txtEmail.Text.ToString();
             Sql.Addcoll(b, y);
             Sql.add2(b, y, c);
+            MessageBox.Show("The ticket you wished to share has now been sent to the user of your choosing.", "Ticket Shared Successfully!", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void txtTicketID_TextChanged(object sender, EventArgs e)

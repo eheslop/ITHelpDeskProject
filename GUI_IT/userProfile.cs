@@ -33,20 +33,6 @@ namespace GUI_IT
             pnlChangePassword.Visible = true;
         }
 
-        private void lblUserPassword_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblNameUser_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblUserRole_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void linklblNoPassChange_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
