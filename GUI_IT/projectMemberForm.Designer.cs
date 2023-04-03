@@ -148,7 +148,7 @@
             btnLogout.TabIndex = 27;
             btnLogout.Text = "Log Out";
             btnLogout.UseVisualStyleBackColor = false;
-            btnLogout.Click += btnLogout_Click_1;
+            //btnLogout.Click += btnLogout_Click_1;
             // 
             // pictureBox1
             // 
@@ -186,7 +186,7 @@
             btnTickets.TabIndex = 36;
             btnTickets.Text = "Ticket Dashboard";
             btnTickets.UseVisualStyleBackColor = false;
-            btnTickets.Click += btnTickets_Click_1;
+           // btnTickets.Click += btnTickets_Click_1;
             // 
             // btnProblemList
             // 
@@ -202,7 +202,7 @@
             btnProblemList.TabIndex = 37;
             btnProblemList.Text = "Problem List";
             btnProblemList.UseVisualStyleBackColor = false;
-            btnProblemList.Click += btnProblemList_Click_1;
+            //btnProblemList.Click += btnProblemList_Click_1;
             // 
             // btnOnlineHelp
             // 
@@ -218,7 +218,7 @@
             btnOnlineHelp.TabIndex = 38;
             btnOnlineHelp.Text = "Online Help";
             btnOnlineHelp.UseVisualStyleBackColor = false;
-            btnOnlineHelp.Click += btnOnlineHelp_Click_1;
+            //btnOnlineHelp.Click += btnOnlineHelp_Click_1;
             // 
             // pnlTickets
             // 
@@ -462,7 +462,7 @@
             btnRefresh.TabIndex = 56;
             btnRefresh.Text = "Refresh";
             btnRefresh.UseVisualStyleBackColor = false;
-            btnRefresh.Click += btnRefresh_Click_1;
+            //btnRefresh.Click += btnRefresh_Click_1;
             // 
             // DGVM
             // 
@@ -531,7 +531,7 @@
             btnRaise.TabIndex = 61;
             btnRaise.Text = "Raise Ticket";
             btnRaise.UseVisualStyleBackColor = false;
-            btnRaise.Click += btnRaise_Click_1;
+           // btnRaise.Click += btnRaise_Click_1;
             // 
             // cbxType
             // 
@@ -613,7 +613,7 @@
             btnClear.TabIndex = 54;
             btnClear.Text = "Clear";
             btnClear.UseVisualStyleBackColor = false;
-            btnClear.Click += btnClear_Click_1;
+           // btnClear.Click += btnClear_Click_1;
             // 
             // label1
             // 
@@ -716,7 +716,7 @@
             btnReopenTicket.TabIndex = 62;
             btnReopenTicket.Text = "Re-open Ticket";
             btnReopenTicket.UseVisualStyleBackColor = false;
-            btnReopenTicket.Click += btnReopenTicket_Click;
+            //btnReopenTicket.Click += btnReopenTicket_Click;
             // 
             // btnReopenClear
             // 
@@ -731,7 +731,7 @@
             btnReopenClear.TabIndex = 58;
             btnReopenClear.Text = "Clear";
             btnReopenClear.UseVisualStyleBackColor = false;
-            btnReopenClear.Click += btnReopenClear_Click_1;
+           // btnReopenClear.Click += btnReopenClear_Click_1;
             // 
             // txtReopenTicket
             // 
@@ -902,7 +902,7 @@
             ProfilePictureBox.Size = new Size(48, 35);
             ProfilePictureBox.TabIndex = 4;
             ProfilePictureBox.TabStop = false;
-            ProfilePictureBox.Click += ProfilePictureBox_Click_1;
+            //ProfilePictureBox.Click += ProfilePictureBox_Click_1;
             // 
             // tabEmail
             // 
