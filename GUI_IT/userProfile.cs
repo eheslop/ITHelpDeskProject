@@ -47,13 +47,13 @@ namespace GUI_IT
             if (pass == confirm)
             {
                 Sql.cngpass(user, pass);
-                MessageBox.Show("Your Password has been Changed!");
+                MessageBox.Show("Your Password has been successfully changed!", "Successful Password Change!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 reload();
                 pnlChangePassword.Visible = false;
             }
             else
             {
-                MessageBox.Show("Those Passwords do not match, Try again!");
+                MessageBox.Show("Those Passwords do not match, please try again!", "Failed Password Change!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 

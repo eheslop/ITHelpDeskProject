@@ -170,7 +170,7 @@ namespace GUI_IT
                 Sql.Register(user, name, first, last, pass, email, role, time);
                 int kk = 1;
                 Email.sendEmail("Registration", user, kk);
-                MessageBox.Show("Account Created!\nCheck your email for your login credentials!", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Your account registration has been a success. You will recieve an email update regarding your account status after your credentials have been reviewed by an adminstrator. ", "Account Successfully Registered!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 pnlSignUp.Visible = false;
                 //pnlForgotPassword.Visible = false;
