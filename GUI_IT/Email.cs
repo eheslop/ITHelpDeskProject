@@ -21,10 +21,10 @@ namespace GUI_IT
 {
     internal class Email
     {
-        public static Boolean sendEmail(string template, string user, int x, int tID = 0)
+        public static Boolean sendEmail(string template, string user, int x = 0, int tID = 0)
         {
             String[] data = { };
-            data = emailBody(template, user);
+            data = emailBody(template, user, tID);
             string subject = data[0];
             string body = data[1];
 
@@ -89,7 +89,7 @@ namespace GUI_IT
                 data[1] = "Hello " + Sql.getNamee(user)
                         + "! \n\nCongratulations! Your account registration has been accepted.\n\n"
                         + "Below are your login credentials for the Red Agents IT Ticketing System.\n"
-                        + "Username: " + user + "\n" + "Password: " + Sql.getPass(user) + "\n\n"
+                        + "Username: " + user + "\n" + "Password: " + Sql.getPasss(user) + "\n\n"
                         + "Please do not share your credentials with anyone!\n\n-Red Agents IT";
             }
             if(template == "Registration Denied")
