@@ -58,6 +58,7 @@
             btnRefresh = new Button();
             DGVM = new DataGridView();
             label5 = new Label();
+            pictureBox7 = new PictureBox();
             tabRaiseTicket = new TabPage();
             btnRaise = new Button();
             cbxType = new ComboBox();
@@ -108,6 +109,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             tabMyTickets.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)DGVM).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             tabRaiseTicket.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             tabReopenTicket.SuspendLayout();
@@ -146,7 +148,7 @@
             btnLogout.TabIndex = 27;
             btnLogout.Text = "Log Out";
             btnLogout.UseVisualStyleBackColor = false;
-            btnLogout.Click += btnLogout_Click;
+            btnLogout.Click += btnLogout_Click_1;
             // 
             // pictureBox1
             // 
@@ -177,14 +179,14 @@
             btnTickets.FlatStyle = FlatStyle.Popup;
             btnTickets.Font = new Font("Segoe UI", 10F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             btnTickets.ForeColor = Color.White;
-            btnTickets.Location = new Point(352, 43);
+            btnTickets.Location = new Point(352, 42);
             btnTickets.Margin = new Padding(2);
             btnTickets.Name = "btnTickets";
             btnTickets.Size = new Size(189, 49);
             btnTickets.TabIndex = 36;
             btnTickets.Text = "Ticket Dashboard";
             btnTickets.UseVisualStyleBackColor = false;
-            btnTickets.Click += btnTickets_Click;
+            btnTickets.Click += btnTickets_Click_1;
             // 
             // btnProblemList
             // 
@@ -193,14 +195,14 @@
             btnProblemList.FlatStyle = FlatStyle.Popup;
             btnProblemList.Font = new Font("Segoe UI", 10F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             btnProblemList.ForeColor = Color.White;
-            btnProblemList.Location = new Point(209, 43);
+            btnProblemList.Location = new Point(209, 42);
             btnProblemList.Margin = new Padding(2);
             btnProblemList.Name = "btnProblemList";
             btnProblemList.Size = new Size(148, 48);
             btnProblemList.TabIndex = 37;
             btnProblemList.Text = "Problem List";
             btnProblemList.UseVisualStyleBackColor = false;
-            btnProblemList.Click += btnProblemList_Click;
+            btnProblemList.Click += btnProblemList_Click_1;
             // 
             // btnOnlineHelp
             // 
@@ -209,14 +211,14 @@
             btnOnlineHelp.FlatStyle = FlatStyle.Popup;
             btnOnlineHelp.Font = new Font("Segoe UI", 10F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             btnOnlineHelp.ForeColor = Color.White;
-            btnOnlineHelp.Location = new Point(76, 44);
+            btnOnlineHelp.Location = new Point(76, 41);
             btnOnlineHelp.Margin = new Padding(4);
             btnOnlineHelp.Name = "btnOnlineHelp";
             btnOnlineHelp.Size = new Size(141, 48);
             btnOnlineHelp.TabIndex = 38;
             btnOnlineHelp.Text = "Online Help";
             btnOnlineHelp.UseVisualStyleBackColor = false;
-            btnOnlineHelp.Click += btnOnlineHelp_Click;
+            btnOnlineHelp.Click += btnOnlineHelp_Click_1;
             // 
             // pnlTickets
             // 
@@ -226,9 +228,8 @@
             pnlTickets.Location = new Point(0, 91);
             pnlTickets.Margin = new Padding(2);
             pnlTickets.Name = "pnlTickets";
-            pnlTickets.Size = new Size(1285, 603);
+            pnlTickets.Size = new Size(1285, 602);
             pnlTickets.TabIndex = 45;
-            pnlTickets.Paint += pnlOnlineHelp_Paint;
             // 
             // tabProjectMem
             // 
@@ -411,7 +412,6 @@
             lblUser.Size = new Size(73, 32);
             lblUser.TabIndex = 3;
             lblUser.Text = "User!";
-            lblUser.Click += lblUser_Click;
             // 
             // lblDescribeHome
             // 
@@ -441,6 +441,7 @@
             tabMyTickets.Controls.Add(btnRefresh);
             tabMyTickets.Controls.Add(DGVM);
             tabMyTickets.Controls.Add(label5);
+            tabMyTickets.Controls.Add(pictureBox7);
             tabMyTickets.Location = new Point(4, 37);
             tabMyTickets.Margin = new Padding(2);
             tabMyTickets.Name = "tabMyTickets";
@@ -454,14 +455,14 @@
             btnRefresh.FlatStyle = FlatStyle.Popup;
             btnRefresh.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnRefresh.ForeColor = Color.White;
-            btnRefresh.Location = new Point(1161, 48);
+            btnRefresh.Location = new Point(1135, 65);
             btnRefresh.Margin = new Padding(2);
             btnRefresh.Name = "btnRefresh";
-            btnRefresh.Size = new Size(95, 52);
+            btnRefresh.Size = new Size(116, 52);
             btnRefresh.TabIndex = 56;
             btnRefresh.Text = "Refresh";
             btnRefresh.UseVisualStyleBackColor = false;
-            btnRefresh.Click += btnRefresh_Click;
+            btnRefresh.Click += btnRefresh_Click_1;
             // 
             // DGVM
             // 
@@ -471,7 +472,7 @@
             DGVM.Name = "DGVM";
             DGVM.RowHeadersWidth = 62;
             DGVM.RowTemplate.Height = 33;
-            DGVM.Size = new Size(1131, 380);
+            DGVM.Size = new Size(1093, 380);
             DGVM.TabIndex = 55;
             // 
             // label5
@@ -485,6 +486,16 @@
             label5.Size = new Size(133, 32);
             label5.TabIndex = 53;
             label5.Text = "My Tickets";
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.BackColor = Color.DarkGray;
+            pictureBox7.Location = new Point(1130, 48);
+            pictureBox7.Margin = new Padding(2);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(126, 84);
+            pictureBox7.TabIndex = 58;
+            pictureBox7.TabStop = false;
             // 
             // tabRaiseTicket
             // 
@@ -520,7 +531,7 @@
             btnRaise.TabIndex = 61;
             btnRaise.Text = "Raise Ticket";
             btnRaise.UseVisualStyleBackColor = false;
-            btnRaise.Click += btnRaise_Click;
+            btnRaise.Click += btnRaise_Click_1;
             // 
             // cbxType
             // 
@@ -539,7 +550,7 @@
             cbxUrgency.DropDownStyle = ComboBoxStyle.DropDownList;
             cbxUrgency.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
             cbxUrgency.FormattingEnabled = true;
-            cbxUrgency.Items.AddRange(new object[] { "Low", "Medium", "High" });
+            cbxUrgency.Items.AddRange(new object[] { "High", "Medium", "Low" });
             cbxUrgency.Location = new Point(462, 112);
             cbxUrgency.Margin = new Padding(2);
             cbxUrgency.Name = "cbxUrgency";
@@ -602,7 +613,7 @@
             btnClear.TabIndex = 54;
             btnClear.Text = "Clear";
             btnClear.UseVisualStyleBackColor = false;
-            btnClear.Click += btnClear_Click;
+            btnClear.Click += btnClear_Click_1;
             // 
             // label1
             // 
@@ -705,6 +716,7 @@
             btnReopenTicket.TabIndex = 62;
             btnReopenTicket.Text = "Re-open Ticket";
             btnReopenTicket.UseVisualStyleBackColor = false;
+            btnReopenTicket.Click += btnReopenTicket_Click;
             // 
             // btnReopenClear
             // 
@@ -719,7 +731,7 @@
             btnReopenClear.TabIndex = 58;
             btnReopenClear.Text = "Clear";
             btnReopenClear.UseVisualStyleBackColor = false;
-            btnReopenClear.Click += btnReopenClear_Click;
+            btnReopenClear.Click += btnReopenClear_Click_1;
             // 
             // txtReopenTicket
             // 
@@ -872,7 +884,7 @@
             lblLoggedIn.BackColor = Color.Black;
             lblLoggedIn.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             lblLoggedIn.ForeColor = Color.White;
-            lblLoggedIn.Location = new Point(977, 50);
+            lblLoggedIn.Location = new Point(978, 50);
             lblLoggedIn.Margin = new Padding(2, 0, 2, 0);
             lblLoggedIn.Name = "lblLoggedIn";
             lblLoggedIn.Size = new Size(171, 28);
@@ -890,7 +902,7 @@
             ProfilePictureBox.Size = new Size(48, 35);
             ProfilePictureBox.TabIndex = 4;
             ProfilePictureBox.TabStop = false;
-            ProfilePictureBox.Click += ProfilePictureBox_Click;
+            ProfilePictureBox.Click += ProfilePictureBox_Click_1;
             // 
             // tabEmail
             // 
@@ -898,7 +910,7 @@
             tabEmail.Location = new Point(4, 37);
             tabEmail.Margin = new Padding(2);
             tabEmail.Name = "tabEmail";
-            tabEmail.Size = new Size(1266, 502);
+            tabEmail.Size = new Size(1266, 501);
             tabEmail.TabIndex = 3;
             tabEmail.Text = "Email Questions";
             // 
@@ -912,15 +924,16 @@
             tabReportGeneration.Margin = new Padding(2);
             tabReportGeneration.Name = "tabReportGeneration";
             tabReportGeneration.SelectedIndex = 0;
-            tabReportGeneration.Size = new Size(1274, 543);
+            tabReportGeneration.Size = new Size(1274, 542);
             tabReportGeneration.TabIndex = 49;
             // 
             // tabPassword
             // 
             tabPassword.BackColor = Color.LightGray;
             tabPassword.Location = new Point(4, 37);
+            tabPassword.Margin = new Padding(2);
             tabPassword.Name = "tabPassword";
-            tabPassword.Size = new Size(1266, 502);
+            tabPassword.Size = new Size(1266, 501);
             tabPassword.TabIndex = 4;
             tabPassword.Text = "Password Questions";
             // 
@@ -928,8 +941,9 @@
             // 
             tabTickets.BackColor = Color.LightGray;
             tabTickets.Location = new Point(4, 37);
+            tabTickets.Margin = new Padding(2);
             tabTickets.Name = "tabTickets";
-            tabTickets.Size = new Size(1266, 502);
+            tabTickets.Size = new Size(1266, 501);
             tabTickets.TabIndex = 5;
             tabTickets.Text = "Tickets Questions";
             // 
@@ -974,6 +988,7 @@
             tabMyTickets.ResumeLayout(false);
             tabMyTickets.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)DGVM).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             tabRaiseTicket.ResumeLayout(false);
             tabRaiseTicket.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
@@ -1063,5 +1078,6 @@
         private TabControl tabReportGeneration;
         private TabPage tabPassword;
         private TabPage tabTickets;
+        private PictureBox pictureBox7;
     }
 }

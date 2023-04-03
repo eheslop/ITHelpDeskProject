@@ -286,7 +286,6 @@
             lblUserPassword.Size = new Size(92, 24);
             lblUserPassword.TabIndex = 70;
             lblUserPassword.Text = "password";
-            lblUserPassword.Click += lblUserPassword_Click;
             // 
             // lblUserRole
             // 
@@ -294,13 +293,12 @@
             lblUserRole.BackColor = Color.Gainsboro;
             lblUserRole.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             lblUserRole.ForeColor = Color.Black;
-            lblUserRole.Location = new Point(103, 328);
+            lblUserRole.Location = new Point(102, 328);
             lblUserRole.Margin = new Padding(2, 0, 2, 0);
             lblUserRole.Name = "lblUserRole";
             lblUserRole.Size = new Size(43, 24);
             lblUserRole.TabIndex = 72;
             lblUserRole.Text = "role";
-            lblUserRole.Click += lblUserRole_Click;
             // 
             // lblUserUsername
             // 
@@ -308,7 +306,7 @@
             lblUserUsername.BackColor = Color.Gainsboro;
             lblUserUsername.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             lblUserUsername.ForeColor = Color.Black;
-            lblUserUsername.Location = new Point(147, 400);
+            lblUserUsername.Location = new Point(148, 400);
             lblUserUsername.Margin = new Padding(2, 0, 2, 0);
             lblUserUsername.Name = "lblUserUsername";
             lblUserUsername.Size = new Size(94, 24);
@@ -348,7 +346,6 @@
             lblNameUser.Name = "lblNameUser";
             lblNameUser.Size = new Size(0, 24);
             lblNameUser.TabIndex = 76;
-            lblNameUser.Click += lblNameUser_Click;
             // 
             // pnlChangePassword
             // 
@@ -363,10 +360,10 @@
             pnlChangePassword.Controls.Add(lblChangePass);
             pnlChangePassword.Controls.Add(pictureBox13);
             pnlChangePassword.Controls.Add(pictureBox14);
-            pnlChangePassword.Location = new Point(-8, 79);
-            pnlChangePassword.Margin = new Padding(4);
+            pnlChangePassword.Location = new Point(-8, 80);
+            pnlChangePassword.Margin = new Padding(4, 4, 4, 4);
             pnlChangePassword.Name = "pnlChangePassword";
-            pnlChangePassword.Size = new Size(630, 556);
+            pnlChangePassword.Size = new Size(630, 555);
             pnlChangePassword.TabIndex = 77;
             // 
             // btnChange
@@ -376,16 +373,18 @@
             btnChange.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
             btnChange.ForeColor = Color.White;
             btnChange.Location = new Point(405, 495);
+            btnChange.Margin = new Padding(2);
             btnChange.Name = "btnChange";
             btnChange.Size = new Size(192, 44);
             btnChange.TabIndex = 88;
             btnChange.Text = "Change Password";
             btnChange.UseVisualStyleBackColor = false;
+            btnChange.Click += btnChange_Click;
             // 
             // txtConfirmPass
             // 
-            txtConfirmPass.Location = new Point(58, 353);
-            txtConfirmPass.Margin = new Padding(4);
+            txtConfirmPass.Location = new Point(58, 352);
+            txtConfirmPass.Margin = new Padding(4, 4, 4, 4);
             txtConfirmPass.MaxLength = 50;
             txtConfirmPass.Name = "txtConfirmPass";
             txtConfirmPass.Size = new Size(494, 31);
@@ -394,7 +393,7 @@
             // txtnewPass
             // 
             txtnewPass.Location = new Point(58, 188);
-            txtnewPass.Margin = new Padding(4);
+            txtnewPass.Margin = new Padding(4, 4, 4, 4);
             txtnewPass.MaxLength = 50;
             txtnewPass.Name = "txtnewPass";
             txtnewPass.Size = new Size(494, 31);
@@ -428,7 +427,7 @@
             // 
             linklblNoPassChange.AutoSize = true;
             linklblNoPassChange.BackColor = Color.Silver;
-            linklblNoPassChange.Location = new Point(257, 421);
+            linklblNoPassChange.Location = new Point(258, 421);
             linklblNoPassChange.Margin = new Padding(4, 0, 4, 0);
             linklblNoPassChange.Name = "linklblNoPassChange";
             linklblNoPassChange.Size = new Size(317, 25);
@@ -474,7 +473,7 @@
             pictureBox13.Location = new Point(34, 101);
             pictureBox13.Margin = new Padding(2);
             pictureBox13.Name = "pictureBox13";
-            pictureBox13.Size = new Size(549, 363);
+            pictureBox13.Size = new Size(549, 362);
             pictureBox13.TabIndex = 76;
             pictureBox13.TabStop = false;
             // 
