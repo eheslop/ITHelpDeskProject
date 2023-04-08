@@ -524,6 +524,26 @@ namespace GUI_IT
 
             return dt;
         }
+
+        public static DataTable tickets1()
+        {
+            string x = "Unsolved";
+            string y = "Re-opened";
+            SqlConnection con = Connect();
+            string query = "Select * from Tickets where Status = '"+ x +"' or Status = '"+y+"';";
+            SqlCommand cmd = new SqlCommand(query, con);
+            cmd.ExecuteNonQuery();
+            SqlDataAdapter da = new SqlDataAdapter();
+            da.SelectCommand = cmd;
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+
+            DataRow item = dt.NewRow();
+            item[1] = "Select ID";
+            dt.Rows.InsertAt(item, 0);
+
+            return dt;
+        }
         public static string tickpro(int id)
         {
             SqlConnection con = Connect();

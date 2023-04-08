@@ -75,6 +75,7 @@ namespace GUI_IT
         private void Fill2()
         {
             string x = "Solved";
+            string y = "Re-opened";
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
             builder.DataSource = "redagents.database.windows.net";
             builder.UserID = "kwekwe";
@@ -82,7 +83,7 @@ namespace GUI_IT
             builder.InitialCatalog = "red_Agents";
             SqlConnection con = new SqlConnection(builder.ConnectionString);
             con.Open();
-            string query = "Select * from Tickets where Status = '" + x + "';";
+            string query = "Select * from Tickets where Status = '" + x + "' or Status = '"+y+"';";
             SqlDataAdapter da = new SqlDataAdapter(query, con);
             DataTable dt = new DataTable();
             da.Fill(dt);
