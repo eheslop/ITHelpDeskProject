@@ -23,6 +23,7 @@ namespace GUI_IT
             Fill();
             Fill1();
             combo();
+            combo1();
             lblUser.Text = newUser_.FirstName + "!";
             lblLoggedIn.Text = "Logged in as: " + newUser_.FirstName;
         }
@@ -100,6 +101,11 @@ namespace GUI_IT
         {
 
         }
+        private void combo1()
+        {
+            cbxid.DataSource = Sql.tickets1();
+            cbxid.DisplayMember = "Id";
+        }
 
         private void btnLogout_Click_1(object sender, EventArgs e)
         {
@@ -117,13 +123,13 @@ namespace GUI_IT
 
         private void btnClear_Click_1(object sender, EventArgs e)
         {
-            txtTicketID.Clear();
+            //txtTicketID.Clear();
             txtEmail.Clear();
         }
 
         private void btnAssign_Click_1(object sender, EventArgs e)
         {
-            string x = txtTicketID.Text.ToString();
+            string x = cbxid.Text.ToString();
             int y = System.Convert.ToInt32(x);
             string k = cbxn.Text.ToString();
             string z = Sql.getUser(k);

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.Data.SqlClient;
+using Microsoft.VisualBasic.ApplicationServices;
 
 namespace GUI_IT
 {
@@ -24,6 +25,8 @@ namespace GUI_IT
             Fill1();
             Fill2();
             combo();
+            combo1();
+            combo2();
         }
 
 
@@ -77,7 +80,7 @@ namespace GUI_IT
 
         private void btnSolveTicket_Click(object sender, EventArgs e)
         {
-            string x = txtSolveTicketID.Text.ToString();
+            string x = cbxid.Text.ToString();
             int y = System.Convert.ToInt32(x);
             string z = Sql.tickuser(y);
             string k = Sql.tickemail(y);
@@ -93,7 +96,7 @@ namespace GUI_IT
 
         private void btnShare_Click(object sender, EventArgs e)
         {
-            string x = txtTicketID.Text.ToString();
+            string x = cbxid2.Text.ToString();
             int y = System.Convert.ToInt32(x);
             string a = cbxn.Text.ToString();
             string b = Sql.getUser(a);
@@ -130,13 +133,29 @@ namespace GUI_IT
         private void btnSolveClear_Click_1(object sender, EventArgs e)
         {
             txtSolution.Clear();
-            txtSolveTicketID.Clear();
+            //txtSolveTicketID.Clear();
         }
 
+        private void combo1()
+        {
+            cbxid.DataSource = Sql.tickets(newUser_.Username);
+            cbxid.DisplayMember = "Id";
+        }
+
+        private void combo2()
+        {
+            cbxid2.DataSource = Sql.tickets(newUser_.Username);
+            cbxid2.DisplayMember = "Id";
+        }
         private void btnClear_Click_1(object sender, EventArgs e)
         {
-            txtTicketID.Clear();
+            //txtTicketID.Clear();
             txtEmail.Clear();
+        }
+
+        private void lblTicketID_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

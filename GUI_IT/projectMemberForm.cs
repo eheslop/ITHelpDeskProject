@@ -32,6 +32,7 @@ namespace GUI_IT
             emaill = newUser_.Email;
             FullName = newUser_.FullName;
             Fill();
+            combo();
         }
 
 
@@ -94,12 +95,22 @@ namespace GUI_IT
             cbxReopenReason.ResetText();
             cbxReopenReason.SelectedIndex = -1;
             txtReopenTicket.Clear();
-            txtID.Clear();
+            //txtID.Clear();
         }
 
+        private void combo()
+        {
+            cbxid.DataSource = Sql.Solved(User);
+            cbxid.DisplayMember = "Id";
+        }
         private void btnReopenTicket_Click(object sender, EventArgs e)
         {
-
+            string reason = cbxReopenReason.Text.ToString();
+            string info = txtReopenTicket.Text.ToString();
+            string x = cbxid.Text.ToString();
+            int y = System.Convert.ToInt32(x);
+            string ema = emaill;
+            Sql.reraise(y, User, ema, reason, info);
         }
 
         private void ProfilePictureBox_Click(object sender, EventArgs e)
