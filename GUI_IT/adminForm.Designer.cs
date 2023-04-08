@@ -351,7 +351,7 @@
             // 
             // pictureBox10
             // 
-            pictureBox10.BackColor = Color.Gray;
+            pictureBox10.BackColor = Color.FromArgb(64, 0, 0);
             pictureBox10.Location = new Point(14, 265);
             pictureBox10.Margin = new Padding(2);
             pictureBox10.Name = "pictureBox10";
@@ -383,7 +383,7 @@
             // 
             // pictureBox9
             // 
-            pictureBox9.BackColor = Color.Gray;
+            pictureBox9.BackColor = Color.FromArgb(64, 0, 0);
             pictureBox9.Location = new Point(15, 81);
             pictureBox9.Margin = new Padding(2);
             pictureBox9.Name = "pictureBox9";
@@ -537,7 +537,7 @@
             // cbxp
             // 
             cbxp.FormattingEnabled = true;
-            cbxp.Location = new Point(215, 156);
+            cbxp.Location = new Point(215, 151);
             cbxp.Name = "cbxp";
             cbxp.Size = new Size(409, 36);
             cbxp.TabIndex = 138;
@@ -554,7 +554,7 @@
             // 
             cbxcat1.FormattingEnabled = true;
             cbxcat1.Items.AddRange(new object[] { "Type 1", "Type 2", "Type 3", "Type 4", "Other" });
-            cbxcat1.Location = new Point(22, 237);
+            cbxcat1.Location = new Point(22, 229);
             cbxcat1.Name = "cbxcat1";
             cbxcat1.Size = new Size(362, 36);
             cbxcat1.TabIndex = 136;
@@ -563,7 +563,7 @@
             // 
             cbxurg1.FormattingEnabled = true;
             cbxurg1.Items.AddRange(new object[] { "High", "Medium", "Low" });
-            cbxurg1.Location = new Point(31, 158);
+            cbxurg1.Location = new Point(31, 153);
             cbxurg1.Name = "cbxurg1";
             cbxurg1.Size = new Size(156, 36);
             cbxurg1.TabIndex = 135;
@@ -575,7 +575,7 @@
             btnReportClear.FlatStyle = FlatStyle.Popup;
             btnReportClear.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnReportClear.ForeColor = Color.White;
-            btnReportClear.Location = new Point(34, 386);
+            btnReportClear.Location = new Point(34, 390);
             btnReportClear.Margin = new Padding(2);
             btnReportClear.Name = "btnReportClear";
             btnReportClear.Size = new Size(159, 41);
@@ -588,7 +588,7 @@
             // 
             label19.AutoSize = true;
             label19.BackColor = Color.DarkGray;
-            label19.Location = new Point(22, 205);
+            label19.Location = new Point(22, 198);
             label19.Margin = new Padding(2, 0, 2, 0);
             label19.Name = "label19";
             label19.Size = new Size(362, 28);
@@ -618,7 +618,7 @@
             // 
             label16.AutoSize = true;
             label16.BackColor = Color.DarkGray;
-            label16.Location = new Point(28, 128);
+            label16.Location = new Point(28, 123);
             label16.Margin = new Padding(2, 0, 2, 0);
             label16.Name = "label16";
             label16.Size = new Size(159, 28);
@@ -631,7 +631,7 @@
             button1.FlatStyle = FlatStyle.Popup;
             button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(215, 386);
+            button1.Location = new Point(207, 390);
             button1.Margin = new Padding(2);
             button1.Name = "button1";
             button1.Size = new Size(158, 41);
@@ -643,20 +643,20 @@
             // txtTicketDescribeSolved
             // 
             txtTicketDescribeSolved.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            txtTicketDescribeSolved.Location = new Point(32, 300);
+            txtTicketDescribeSolved.Location = new Point(33, 282);
             txtTicketDescribeSolved.Margin = new Padding(2);
             txtTicketDescribeSolved.MaxLength = 500;
             txtTicketDescribeSolved.Multiline = true;
             txtTicketDescribeSolved.Name = "txtTicketDescribeSolved";
             txtTicketDescribeSolved.PlaceholderText = "Provide a brief summary of the ticket description.";
-            txtTicketDescribeSolved.Size = new Size(636, 68);
+            txtTicketDescribeSolved.Size = new Size(652, 93);
             txtTicketDescribeSolved.TabIndex = 125;
             // 
             // label14
             // 
             label14.AutoSize = true;
             label14.BackColor = Color.DarkGray;
-            label14.Location = new Point(215, 127);
+            label14.Location = new Point(215, 122);
             label14.Margin = new Padding(2, 0, 2, 0);
             label14.Name = "label14";
             label14.Size = new Size(314, 28);
@@ -689,7 +689,7 @@
             // pictureBox5
             // 
             pictureBox5.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            pictureBox5.BackColor = Color.Gray;
+            pictureBox5.BackColor = Color.FromArgb(64, 0, 0);
             pictureBox5.Location = new Point(710, 107);
             pictureBox5.Margin = new Padding(2);
             pictureBox5.Name = "pictureBox5";
@@ -700,11 +700,11 @@
             // pictureBox15
             // 
             pictureBox15.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            pictureBox15.BackColor = Color.Gray;
-            pictureBox15.Location = new Point(22, 289);
+            pictureBox15.BackColor = Color.FromArgb(64, 0, 0);
+            pictureBox15.Location = new Point(22, 274);
             pictureBox15.Margin = new Padding(2);
             pictureBox15.Name = "pictureBox15";
-            pictureBox15.Size = new Size(658, 90);
+            pictureBox15.Size = new Size(672, 109);
             pictureBox15.TabIndex = 122;
             pictureBox15.TabStop = false;
             // 
@@ -753,7 +753,7 @@
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label2.Location = new Point(6, 6);
+            label2.Location = new Point(6, 2);
             label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
             label2.Size = new Size(418, 32);
@@ -763,10 +763,10 @@
             // pictureBox16
             // 
             pictureBox16.BackColor = Color.DarkGray;
-            pictureBox16.Location = new Point(12, 42);
+            pictureBox16.Location = new Point(12, 41);
             pictureBox16.Margin = new Padding(2);
             pictureBox16.Name = "pictureBox16";
-            pictureBox16.Size = new Size(1239, 392);
+            pictureBox16.Size = new Size(1239, 395);
             pictureBox16.TabIndex = 115;
             pictureBox16.TabStop = false;
             // 
@@ -847,13 +847,13 @@
             // txtTicketSummary
             // 
             txtTicketSummary.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            txtTicketSummary.Location = new Point(28, 298);
+            txtTicketSummary.Location = new Point(28, 287);
             txtTicketSummary.Margin = new Padding(2);
             txtTicketSummary.MaxLength = 500;
             txtTicketSummary.Multiline = true;
             txtTicketSummary.Name = "txtTicketSummary";
             txtTicketSummary.PlaceholderText = "Provide a brief summary of the ticket description.";
-            txtTicketSummary.Size = new Size(636, 68);
+            txtTicketSummary.Size = new Size(657, 96);
             txtTicketSummary.TabIndex = 101;
             // 
             // label12
@@ -916,7 +916,7 @@
             // pictureBox14
             // 
             pictureBox14.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            pictureBox14.BackColor = Color.Gray;
+            pictureBox14.BackColor = Color.FromArgb(64, 0, 0);
             pictureBox14.Location = new Point(708, 108);
             pictureBox14.Margin = new Padding(2);
             pictureBox14.Name = "pictureBox14";
@@ -949,7 +949,7 @@
             btnSubmitUnsolved.FlatStyle = FlatStyle.Popup;
             btnSubmitUnsolved.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnSubmitUnsolved.ForeColor = Color.White;
-            btnSubmitUnsolved.Location = new Point(204, 384);
+            btnSubmitUnsolved.Location = new Point(204, 392);
             btnSubmitUnsolved.Margin = new Padding(2);
             btnSubmitUnsolved.Name = "btnSubmitUnsolved";
             btnSubmitUnsolved.Size = new Size(174, 38);
@@ -964,7 +964,7 @@
             btnClearUnsolved.FlatStyle = FlatStyle.Popup;
             btnClearUnsolved.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnClearUnsolved.ForeColor = Color.White;
-            btnClearUnsolved.Location = new Point(31, 385);
+            btnClearUnsolved.Location = new Point(31, 392);
             btnClearUnsolved.Margin = new Padding(2);
             btnClearUnsolved.Name = "btnClearUnsolved";
             btnClearUnsolved.Size = new Size(159, 38);
@@ -988,21 +988,21 @@
             // pictureBox8
             // 
             pictureBox8.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            pictureBox8.BackColor = Color.Gray;
-            pictureBox8.Location = new Point(20, 286);
+            pictureBox8.BackColor = Color.FromArgb(64, 0, 0);
+            pictureBox8.Location = new Point(20, 281);
             pictureBox8.Margin = new Padding(2);
             pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(658, 90);
+            pictureBox8.Size = new Size(674, 108);
             pictureBox8.TabIndex = 97;
             pictureBox8.TabStop = false;
             // 
             // pictureBox11
             // 
             pictureBox11.BackColor = Color.DarkGray;
-            pictureBox11.Location = new Point(14, 49);
+            pictureBox11.Location = new Point(14, 42);
             pictureBox11.Margin = new Padding(2);
             pictureBox11.Name = "pictureBox11";
-            pictureBox11.Size = new Size(1239, 382);
+            pictureBox11.Size = new Size(1239, 394);
             pictureBox11.TabIndex = 107;
             pictureBox11.TabStop = false;
             // 

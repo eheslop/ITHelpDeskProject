@@ -52,6 +52,8 @@ namespace GUI_IT
             cbxn.DataSource = Sql.ITname();
             cbxn.DisplayMember = "Name";
         }
+
+
         private void Fill1()
         {
             string x = "Unsolved";
@@ -83,7 +85,7 @@ namespace GUI_IT
             builder.InitialCatalog = "red_Agents";
             SqlConnection con = new SqlConnection(builder.ConnectionString);
             con.Open();
-            string query = "Select * from Tickets where Status = '" + x + "' or Status = '"+y+"';";
+            string query = "Select * from Tickets where Status = '" + x + "' or Status = '" + y + "';";
             SqlDataAdapter da = new SqlDataAdapter(query, con);
             DataTable dt = new DataTable();
             da.Fill(dt);
@@ -93,22 +95,14 @@ namespace GUI_IT
 
         }
 
-        private void DGVT_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void pictureBox6_Click(object sender, EventArgs e)
-        {
-
-        }
         private void combo1()
         {
             cbxid.DataSource = Sql.tickets1();
             cbxid.DisplayMember = "Id";
         }
 
-        private void btnLogout_Click_1(object sender, EventArgs e)
+
+        private void btnLogout_Click(object sender, EventArgs e)
         {
             FrmLogin LoginScreen = new FrmLogin();
             this.Hide();
@@ -116,19 +110,22 @@ namespace GUI_IT
             this.Close();
         }
 
-        private void ProfilePictureBox_Click_1(object sender, EventArgs e)
+        private void ProfilePictureBox_Click(object sender, EventArgs e)
         {
             frmUserProf UserProfile = new frmUserProf(newUser_);
             UserProfile.ShowDialog();
         }
 
-        private void btnClear_Click_1(object sender, EventArgs e)
+        private void btnClear_Click(object sender, EventArgs e)
         {
-            //txtTicketID.Clear();
             txtEmail.Clear();
+            cbxn.ResetText();
+            cbxn.SelectedIndex = -1;
+            cbxid.ResetText();
+            cbxid.SelectedIndex = -1;
         }
 
-        private void btnAssign_Click_1(object sender, EventArgs e)
+        private void btnAssign_Click(object sender, EventArgs e)
         {
             string x = cbxid.Text.ToString();
             int y = System.Convert.ToInt32(x);
@@ -140,12 +137,12 @@ namespace GUI_IT
             MessageBox.Show("The ticket has been successfully assigned to the designated user.", "Ticket Assigned!", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void btnUnsolved_Click_1(object sender, EventArgs e)
+        private void btnUnsolved_Click(object sender, EventArgs e)
         {
             Fill();
         }
 
-        private void btnSolved_Click_1(object sender, EventArgs e)
+        private void btnSolved_Click(object sender, EventArgs e)
         {
             Fill2();
         }
@@ -155,7 +152,12 @@ namespace GUI_IT
             Fill();
         }
 
-        private void frmReportManage_Load(object sender, EventArgs e)
+        private void btnViewReopenedTable_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnReOpened_Click(object sender, EventArgs e)
         {
 
         }

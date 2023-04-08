@@ -41,7 +41,7 @@ namespace GUI_IT
             builder.InitialCatalog = "red_Agents";
             SqlConnection con = new SqlConnection(builder.ConnectionString);
             con.Open();
-            string query = "Select Distinct Tickets.Id, Name, Username, Category, Description, Category, Priority, Collaborators, AssignedTo FROM Tickets inner join SharedTickets  ON ( Tickets.Id = SharedTickets.Id ) Where AssignedTo = '" + x+"' AND Status = '"+y+"' OR SharedWith = '"+x+ "' AND Status = '"+y+"'; ";
+            string query = "Select Distinct Tickets.Id, Name, Username, Category, Description, Category, Priority, Collaborators, AssignedTo FROM Tickets inner join SharedTickets  ON ( Tickets.Id = SharedTickets.Id ) Where AssignedTo = '" + x + "' AND Status = '" + y + "' OR SharedWith = '" + x + "' AND Status = '" + y + "'; ";
             SqlDataAdapter da = new SqlDataAdapter(query, con);
             DataTable dt = new DataTable();
             da.Fill(dt);
@@ -78,6 +78,25 @@ namespace GUI_IT
 
         }
 
+
+        private void combo1()
+        {
+            cbxid.DataSource = Sql.tickets(newUser_.Username);
+            cbxid.DisplayMember = "Id";
+        }
+
+        private void combo2()
+        {
+            cbxid2.DataSource = Sql.tickets(newUser_.Username);
+            cbxid2.DisplayMember = "Id";
+        }
+
+
+        private void lblTicketID_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnSolveTicket_Click(object sender, EventArgs e)
         {
             string x = cbxid.Text.ToString();
@@ -87,11 +106,6 @@ namespace GUI_IT
             string j = txtSolution.Text.ToString();
             Sql.solve(y, newUser_.Username, z, k, j);
             MessageBox.Show("Your solution for the ticket of your choosing has now been submitted, thank you.", "Ticket Solved Successfully!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
-
-        private void txtEmail_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void btnShare_Click(object sender, EventArgs e)
@@ -106,17 +120,7 @@ namespace GUI_IT
             MessageBox.Show("The ticket you wished to share has now been sent to the user of your choosing.", "Ticket Shared Successfully!", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void txtTicketID_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnLogout_Click_1(object sender, EventArgs e)
+        private void btnLogout_Click(object sender, EventArgs e)
         {
             FrmLogin LoginScreen = new FrmLogin();
             this.Hide();
@@ -124,38 +128,26 @@ namespace GUI_IT
             this.Close();
         }
 
-        private void ProfilePictureBox_Click_1(object sender, EventArgs e)
+        private void ProfilePictureBox_Click(object sender, EventArgs e)
         {
             frmUserProf UserProfile = new frmUserProf(newUser_);
             UserProfile.ShowDialog();
         }
 
-        private void btnSolveClear_Click_1(object sender, EventArgs e)
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtEmail.Clear();
+            cbxid2.ResetText();
+            cbxid2.SelectedIndex = -1;
+            cbxn.ResetText();
+            cbxn.SelectedIndex = -1;
+        }
+
+        private void btnSolveClear_Click(object sender, EventArgs e)
         {
             txtSolution.Clear();
-            //txtSolveTicketID.Clear();
-        }
-
-        private void combo1()
-        {
-            cbxid.DataSource = Sql.tickets(newUser_.Username);
-            cbxid.DisplayMember = "Id";
-        }
-
-        private void combo2()
-        {
-            cbxid2.DataSource = Sql.tickets(newUser_.Username);
-            cbxid2.DisplayMember = "Id";
-        }
-        private void btnClear_Click_1(object sender, EventArgs e)
-        {
-            //txtTicketID.Clear();
-            txtEmail.Clear();
-        }
-
-        private void lblTicketID_Click(object sender, EventArgs e)
-        {
-
+            cbxid.ResetText();
+            cbxid.SelectedIndex = -1;
         }
     }
 }
