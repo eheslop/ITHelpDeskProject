@@ -135,6 +135,7 @@ namespace GUI_IT
                 lblIncorrectLogin.Visible = true;
             }
         }
+
         private void btnRegister_Click(object sender, EventArgs e)
         {
             Random res1 = new Random();
@@ -212,15 +213,6 @@ namespace GUI_IT
             txtLastName.Text = String.Empty;
         }
 
-        private void lblRegisterAccount_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pnlSignUp_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void lblSignIn_Click(object sender, EventArgs e)
         {
@@ -252,18 +244,6 @@ namespace GUI_IT
 
         }
 
-
-        private void lblSignIn_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnBacktoLogin_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pnlForgotPassword_Paint(object sender, PaintEventArgs e) { }
 
         private void txtFirstName_TextChanged(object sender, EventArgs e)
 
@@ -311,8 +291,6 @@ namespace GUI_IT
             SendVerification = new Rectangle(label2.Location.X, label2.Location.Y, label2.Width, label2.Height);
             Send = new Rectangle(button1.Location.X, button1.Location.Y, button1.Width, button1.Height);
 
-
-
             originaRegRectangleFSize = btnRegisterAccount.Font.Size;
             originalLabelDHAASize = lblRegisterAccount.Font.Size;
             originaltextUsernameFSize = txtUsername.Font.Size;
@@ -324,6 +302,7 @@ namespace GUI_IT
             originallabelLoginFSize = lblLogin.Font.Size;
 
         }
+
         private void resizeControl(Rectangle r, Control c, float originalFontSize)
         {
             float xRatio = (float)(this.Width) / (float)(OriginalFormSize.Width);
@@ -365,6 +344,7 @@ namespace GUI_IT
             c.Location = new Point(newX, newY);
             c.Size = new Size(newWidth, newHeight);
         }
+
         private void ChangeLoca(Rectangle r, Control c, float originalFontSize)
         {
 
@@ -377,6 +357,7 @@ namespace GUI_IT
             c.Location = new Point(newX, newY);
 
         }
+
         private void FrmLogin_Resize(object sender, EventArgs e)
         {
             resizeControl(buttonRegRect, btnRegisterAccount, originaRegRectangleFSize);
@@ -416,18 +397,7 @@ namespace GUI_IT
             resizecontroltwo(SendVerification, label2);
         }
 
-        private void lblRegisterAccount_Click_2(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-
-
-        }
-
+        
         private void btnOpenEye_Click(object sender, EventArgs e)
         {
             btnOpenEye.Visible = false;
@@ -440,21 +410,6 @@ namespace GUI_IT
             btnOpenEye.Visible = true;
             btnClosedEye.Visible = false;
             txtPassword.UseSystemPasswordChar = false;
-
-        }
-
-        private void FrmLogin_Load_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblHeader_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnLoginForm_Click_1(object sender, EventArgs e)
-        {
 
         }
 

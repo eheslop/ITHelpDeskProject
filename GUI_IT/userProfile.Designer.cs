@@ -130,7 +130,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.BackColor = Color.FromArgb(64, 64, 64);
+            pictureBox1.BackColor = Color.FromArgb(64, 0, 0);
             pictureBox1.Location = new Point(15, 128);
             pictureBox1.Margin = new Padding(2);
             pictureBox1.Name = "pictureBox1";
@@ -360,10 +360,10 @@
             pnlChangePassword.Controls.Add(lblChangePass);
             pnlChangePassword.Controls.Add(pictureBox13);
             pnlChangePassword.Controls.Add(pictureBox14);
-            pnlChangePassword.Location = new Point(-8, 80);
+            pnlChangePassword.Location = new Point(-8, 79);
             pnlChangePassword.Margin = new Padding(4);
             pnlChangePassword.Name = "pnlChangePassword";
-            pnlChangePassword.Size = new Size(630, 555);
+            pnlChangePassword.Size = new Size(630, 556);
             pnlChangePassword.TabIndex = 77;
             // 
             // btnChange
@@ -460,7 +460,7 @@
             // 
             lblChangePass.AutoSize = true;
             lblChangePass.Font = new Font("Microsoft YaHei UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            lblChangePass.Location = new Point(89, 18);
+            lblChangePass.Location = new Point(86, 17);
             lblChangePass.Margin = new Padding(4, 0, 4, 0);
             lblChangePass.Name = "lblChangePass";
             lblChangePass.Size = new Size(438, 47);
@@ -479,11 +479,11 @@
             // 
             // pictureBox14
             // 
-            pictureBox14.BackColor = Color.FromArgb(64, 64, 64);
+            pictureBox14.BackColor = Color.FromArgb(64, 0, 0);
             pictureBox14.Location = new Point(16, 85);
             pictureBox14.Margin = new Padding(2);
             pictureBox14.Name = "pictureBox14";
-            pictureBox14.Size = new Size(585, 402);
+            pictureBox14.Size = new Size(585, 394);
             pictureBox14.TabIndex = 75;
             pictureBox14.TabStop = false;
             // 

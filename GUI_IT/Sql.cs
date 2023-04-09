@@ -6,11 +6,13 @@ using System.Collections.Generic;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar;
 
 namespace GUI_IT
 {
@@ -222,7 +224,7 @@ namespace GUI_IT
             string x = "Unsolved";
             int y = 0;
             string z = "NONE";
-            String query = "INSERT INTO Tickets(id, Name, Username, Category, Description, Status, Email, Priority, Collaborators, Num_Of_Coll) VALUES('" + id + "',  '" + name.ToString() + "', '" + username.ToString() + "', '" + Category.ToString() + "', '" + Description.ToString() + "', '" +x+ "',  '" + email.ToString() + "', '" + Priority.ToString() + "', '" +z+ "', '" +y+ "');";
+            String query = "INSERT INTO Tickets(id, Name, Username, Category, Description, Status, Email, Priority, Collaborators, Num_Of_Coll, AssignedTo) VALUES('" + id + "',  '" + name.ToString() + "', '" + username.ToString() + "', '" + Category.ToString() + "', '" + Description.ToString() + "', '" +x+ "',  '" + email.ToString() + "', '" + Priority.ToString() + "', '" +z+ "', '" +y+ "','"+z+"');";
             SqlCommand cmd = new SqlCommand(query, con);
             cmd.ExecuteNonQuery();
             con.Close();
@@ -494,6 +496,122 @@ namespace GUI_IT
             dt.Rows.InsertAt(item, 0);
 
             return dt;
+        }
+
+        public static DataTable Solved(string user)
+        {
+            SqlConnection con = Connect();
+            string query = "Select * from Solved_Tickets where UsernamePM = '" + user + "'; ";
+            SqlCommand cmd = new SqlCommand(query, con);
+            cmd.ExecuteNonQuery();
+            SqlDataAdapter da = new SqlDataAdapter();
+            da.SelectCommand = cmd;
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+
+            DataRow item = dt.NewRow();
+            item[1] = "Select ID";
+            dt.Rows.InsertAt(item, 0);
+
+            return dt;
+        }
+
+        public static DataTable tickets(string user)
+        {
+            SqlConnection con = Connect();
+            string query = "Select * from Tickets where Username = '" + user + "'; ";
+            SqlCommand cmd = new SqlCommand(query, con);
+            cmd.ExecuteNonQuery();
+            SqlDataAdapter da = new SqlDataAdapter();
+            da.SelectCommand = cmd;
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+
+            DataRow item = dt.NewRow();
+            item[1] = "Select ID";
+            dt.Rows.InsertAt(item, 0);
+
+            return dt;
+        }
+
+        public static DataTable tickets1()
+        {
+            string x = "Unsolved";
+            string y = "Re-opened";
+            SqlConnection con = Connect();
+            string query = "Select * from Tickets where Status = '"+ x +"' or Status = '"+y+"';";
+            SqlCommand cmd = new SqlCommand(query, con);
+            cmd.ExecuteNonQuery();
+            SqlDataAdapter da = new SqlDataAdapter();
+            da.SelectCommand = cmd;
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+
+            DataRow item = dt.NewRow();
+            item[1] = "Select ID";
+            dt.Rows.InsertAt(item, 0);
+
+            return dt;
+        }
+        public static string tickpro(int id)
+        {
+            SqlConnection con = Connect();
+            String query = "SELECT Description FROM Tickets where Id = '" + id + "';";
+            SqlCommand cmd = new SqlCommand(query, con);
+            string pass = (string)cmd.ExecuteScalar();
+            return pass;
+        }
+
+        public static string solvedbyy(int id)
+        {
+            SqlConnection con = Connect();
+            String query = "SELECT UsernameIT FROM Solved_Tickets where Id = '" + id + "';";
+            SqlCommand cmd = new SqlCommand(query, con);
+            string pass = (string)cmd.ExecuteScalar();
+            return pass;
+        }
+        public static string solution(int id)
+        {
+            SqlConnection con = Connect();
+            String query = "SELECT Solution FROM Solved_Tickets where Id = '" + id + "';";
+            SqlCommand cmd = new SqlCommand(query, con);
+            string pass = (string)cmd.ExecuteScalar();
+            return pass;
+        }
+        public static void reraise(int id, string user, string email, string reason, string info)
+        {
+            string x = getColl(id);
+            string y = "Re-opened";
+            string z = "NONE";
+            string f = "NONE";
+            int k = 0;
+            string problem = tickpro(id);
+            string solvedby = solvedbyy(id);
+            string previousSol = solution(id);
+            SqlConnection con = Connect();
+            string query = "INSERT INTO ReopenedTickets(Id, Username, Email, SolvedBy, Collaborators, Description, PreviousSolution, Reraised_Reason, AdditionalInfo) VALUES('" + id.ToString() + "', '" + user.ToString() + "', '" + email.ToString() + "', '" + solvedby.ToString() + "', '"+x+"', '" + problem.ToString() + "','" + previousSol.ToString() + "', '" + reason.ToString() + "', '" + info.ToString() + "');";
+            SqlCommand cmd = new SqlCommand(query, con);
+            cmd.ExecuteNonQuery();
+
+            string query2 = "UPDATE Tickets SET Status = '" + y + "' where ID = '" + id + "'; ";
+            SqlCommand cmd2 = new SqlCommand(query2, con);
+            cmd2.ExecuteNonQuery();
+
+            string query3 = "UPDATE Tickets SET Collaborators = '" + z + "' where ID = '" + id + "'; ";
+            SqlCommand cmd3 = new SqlCommand(query3, con);
+            cmd3.ExecuteNonQuery();
+
+            string query6 = "UPDATE Tickets SET AssignedTo = '" + f + "' where ID = '" + id + "'; ";
+            SqlCommand cmd6 = new SqlCommand(query6, con);
+            cmd6.ExecuteNonQuery();
+
+            string query4 = "UPDATE Tickets SET Num_Of_Coll = '" + k + "' where ID = '" + id + "'; ";
+            SqlCommand cmd4 = new SqlCommand(query4, con);
+            cmd4.ExecuteNonQuery();
+
+            string query5 = "DELETE FROM Solved_Tickets where ID = '" + id + "'; ";
+            SqlCommand cmd5 = new SqlCommand(query5, con);
+            cmd5.ExecuteNonQuery();
         }
     }
 }

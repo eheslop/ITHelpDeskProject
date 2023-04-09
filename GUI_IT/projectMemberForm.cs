@@ -32,6 +32,7 @@ namespace GUI_IT
             emaill = newUser_.Email;
             FullName = newUser_.FullName;
             Fill();
+            combo();
         }
 
 
@@ -52,6 +53,24 @@ namespace GUI_IT
             DGVM.DataSource = dt;
             DGVM.EditMode = DataGridViewEditMode.EditOnEnter;
             con.Close();
+        }
+
+
+        private void combo()
+        {
+            cbxid.DataSource = Sql.Solved(User);
+            cbxid.DisplayMember = "Id";
+        }
+
+
+        private void btnReopenTicket_Click(object sender, EventArgs e)
+        {
+            string reason = cbxReopenReason.Text.ToString();
+            string info = txtReopenTicket.Text.ToString();
+            string x = cbxid.Text.ToString();
+            int y = System.Convert.ToInt32(x);
+            string ema = emaill;
+            Sql.reraise(y, User, ema, reason, info);
         }
 
 
@@ -94,18 +113,29 @@ namespace GUI_IT
             cbxReopenReason.ResetText();
             cbxReopenReason.SelectedIndex = -1;
             txtReopenTicket.Clear();
-            txtID.Clear();
+            cbxid.ResetText();
+            cbxid.SelectedIndex = -1;
         }
 
-        private void btnReopenTicket_Click(object sender, EventArgs e)
+        private void btnTickets_Click(object sender, EventArgs e)
         {
-
+            pnlTickets.Visible = true;
+            pnlProblemList.Visible = false;
+            this.Text = "IT Help Desk Project Member Ticket Dashboard";
         }
 
-        private void ProfilePictureBox_Click(object sender, EventArgs e)
+        private void btnProblemList_Click(object sender, EventArgs e)
         {
-            frmUserProf UserProfile = new frmUserProf(newUser_);
-            UserProfile.ShowDialog();
+            pnlTickets.Visible = false;
+            pnlProblemList.Visible = true;
+            this.Text = "IT Help Desk Project Member Problem List";
+        }
+
+        private void btnOnlineHelp_Click(object sender, EventArgs e)
+        {
+            pnlTickets.Visible = false;
+            pnlProblemList.Visible = false;
+            this.Text = "IT Help Desk Project Member Online Help";
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
@@ -116,35 +146,10 @@ namespace GUI_IT
             this.Close();
         }
 
-        private void btnOnlineHelp_Click(object sender, EventArgs e)
+        private void ProfilePictureBox_Click(object sender, EventArgs e)
         {
-            pnlTickets.Visible = false;
-            pnlProblemList.Visible = false;
-            this.Text = "IT Help Desk Project Member Online Help";
-            cbxType.ResetText();
-            cbxType.SelectedIndex = -1;
-            cbxUrgency.ResetText();
-            cbxUrgency.SelectedIndex = -1;
-            txtProblemDescribe.Clear();
-        }
-
-        private void btnProblemList_Click(object sender, EventArgs e)
-        {
-            pnlTickets.Visible = false;
-            pnlProblemList.Visible = true;
-            this.Text = "IT Help Desk Project Member Problem List";
-            cbxType.ResetText();
-            cbxType.SelectedIndex = -1;
-            cbxUrgency.ResetText();
-            cbxUrgency.SelectedIndex = -1;
-            txtProblemDescribe.Clear();
-        }
-
-        private void btnTickets_Click(object sender, EventArgs e)
-        {
-            pnlTickets.Visible = true;
-            pnlProblemList.Visible = false;
-            this.Text = "IT Help Desk Project Member Ticket Dashboard";
+            frmUserProf UserProfile = new frmUserProf(newUser_);
+            UserProfile.ShowDialog();
         }
     }
 }
