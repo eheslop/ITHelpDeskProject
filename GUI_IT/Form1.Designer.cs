@@ -60,10 +60,10 @@
             pnlForgotPassword = new Panel();
             label2 = new Label();
             lblRememebr = new Label();
-            textBox1 = new TextBox();
+            txtPassReset = new TextBox();
             pictureBox5 = new PictureBox();
             btnBacktoLogin = new Button();
-            button1 = new Button();
+            btnPassReset = new Button();
             label1 = new Label();
             btnOpenEye = new Button();
             btnClosedEye = new Button();
@@ -452,10 +452,10 @@
             pnlForgotPassword.AutoSize = true;
             pnlForgotPassword.Controls.Add(label2);
             pnlForgotPassword.Controls.Add(lblRememebr);
-            pnlForgotPassword.Controls.Add(textBox1);
+            pnlForgotPassword.Controls.Add(txtPassReset);
             pnlForgotPassword.Controls.Add(pictureBox5);
             pnlForgotPassword.Controls.Add(btnBacktoLogin);
-            pnlForgotPassword.Controls.Add(button1);
+            pnlForgotPassword.Controls.Add(btnPassReset);
             pnlForgotPassword.Controls.Add(label1);
             pnlForgotPassword.Location = new Point(8, 94);
             pnlForgotPassword.Margin = new Padding(4);
@@ -469,12 +469,12 @@
             label2.Anchor = AnchorStyles.None;
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label2.Location = new Point(292, 230);
+            label2.Location = new Point(339, 227);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(355, 38);
+            label2.Size = new Size(249, 38);
             label2.TabIndex = 6;
-            label2.Text = "Send a Verification Email";
+            label2.Text = "Forgot Password?";
             // 
             // lblRememebr
             // 
@@ -488,15 +488,15 @@
             lblRememebr.TabIndex = 5;
             lblRememebr.Text = "Remember Password?";
             // 
-            // textBox1
+            // txtPassReset
             // 
-            textBox1.Anchor = AnchorStyles.None;
-            textBox1.Location = new Point(302, 283);
-            textBox1.Margin = new Padding(4);
-            textBox1.Name = "textBox1";
-            textBox1.PlaceholderText = "Enter Email";
-            textBox1.Size = new Size(332, 31);
-            textBox1.TabIndex = 4;
+            txtPassReset.Anchor = AnchorStyles.None;
+            txtPassReset.Location = new Point(302, 283);
+            txtPassReset.Margin = new Padding(4);
+            txtPassReset.Name = "txtPassReset";
+            txtPassReset.PlaceholderText = "Enter Username";
+            txtPassReset.Size = new Size(332, 31);
+            txtPassReset.TabIndex = 4;
             // 
             // pictureBox5
             // 
@@ -527,34 +527,34 @@
             btnBacktoLogin.UseVisualStyleBackColor = false;
             btnBacktoLogin.Click += btnLoginForm_Click;
             // 
-            // button1
+            // btnPassReset
             // 
-            button1.Anchor = AnchorStyles.None;
-            button1.AutoSize = true;
-            button1.BackColor = Color.FromArgb(64, 0, 0);
-            button1.FlatStyle = FlatStyle.Popup;
-            button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(368, 334);
-            button1.Margin = new Padding(4);
-            button1.Name = "button1";
-            button1.Size = new Size(209, 61);
-            button1.TabIndex = 1;
-            button1.Text = "Send Verification";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            btnPassReset.Anchor = AnchorStyles.None;
+            btnPassReset.AutoSize = true;
+            btnPassReset.BackColor = Color.FromArgb(64, 0, 0);
+            btnPassReset.FlatStyle = FlatStyle.Popup;
+            btnPassReset.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnPassReset.ForeColor = Color.White;
+            btnPassReset.Location = new Point(368, 334);
+            btnPassReset.Margin = new Padding(4);
+            btnPassReset.Name = "btnPassReset";
+            btnPassReset.Size = new Size(209, 61);
+            btnPassReset.TabIndex = 1;
+            btnPassReset.Text = "Reset Password";
+            btnPassReset.UseVisualStyleBackColor = false;
+            btnPassReset.Click += btnPassReset_Click;
             // 
             // label1
             // 
             label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(165, 281);
+            label1.Location = new Point(115, 281);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(133, 32);
+            label1.Size = new Size(183, 32);
             label1.TabIndex = 0;
-            label1.Text = "Enter Email";
+            label1.Text = "Enter Username";
             // 
             // btnOpenEye
             // 
@@ -685,10 +685,10 @@
         private Label lblUserType;
         private Panel pnlForgotPassword;
         private Label lblRememebr;
-        private TextBox textBox1;
+        private TextBox txtPassReset;
         private PictureBox pictureBox5;
         private Button btnBacktoLogin;
-        private Button button1;
+        private Button btnPassReset;
         private Label label1;
         private Label label2;
         private Button btnOpenEye;

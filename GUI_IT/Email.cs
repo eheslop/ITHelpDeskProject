@@ -34,10 +34,12 @@ namespace GUI_IT
             if (x == 0)
             {
                 regEmail.To.Add(new MailboxAddress(Sql.getName(user), Sql.getEmail(user)));
+                // Registered Users
             }
             else
             {
                 regEmail.To.Add(new MailboxAddress(Sql.getNamee(user), Sql.getEmaill(user)));
+                // Pending Registration
             }
             regEmail.Subject = subject;
             regEmail.Body = new TextPart()
@@ -117,17 +119,18 @@ namespace GUI_IT
                 data[0] = "Notice: Ticket Solved";
                 data[1] = "Hello " + Sql.getName(user)
                         + "!\n\nIT Ticket " + tID + " has been marked as solved." + "\n\n"
-                        + "The following solution was provided: " + Sql.get
-                        + ""
+                        + "The following solution was provided: " + Sql.getTicketSolution(tID) + "\n\n"
+                        + "-Red Agents IT";
             }
+            if(template == "Password Reset")
+            {
+                data[0] = "Password Reset";
+                data[1] = "Hello " + Sql.getName(user)
+                        + "\n\nYou have requested to reset your password. Below is your new login credential."
+                        + "\n\nPassword: " + Sql.getPass(user) + "\n\n"
+                        + "-Red Agents IT";
+            }           
             return data;
         }
-        /* 
-        "Hello " + Sql.getName(user) 
-		+ "! Below are your login credentials for the Red Agents IT Ticketing System.\n" 
-		+ "Your access is pending administrative approval. You will be notified when your registration status is confirmed.\n\n" 
-		+ "Username: " + user + "\n" + "Password: " + Sql.getPass(user) + "\n\n" 
-		+ "Please do not share your credentials with anyone!" + "\n" + "- Red Agents IT"
-        */
     }
 }

@@ -2,6 +2,7 @@
 using Microsoft.VisualBasic.ApplicationServices;
 using Org.BouncyCastle.Crmf;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Drawing;
@@ -58,6 +59,7 @@ namespace GUI_IT
             }
             // 1 == Does Not Exist
             // 0 == Exists
+            con.Close();
         }
 
         public static string Role(string user)
@@ -66,6 +68,7 @@ namespace GUI_IT
             String query = "SELECT Role FROM RegisteredUsers WHERE Username = '" + user.ToString() + "';";
             SqlCommand cmd = new SqlCommand(query, con);
             object role = cmd.ExecuteScalar();
+            con.Close();
             if (role == null)
                 return "error";
             else
@@ -78,6 +81,7 @@ namespace GUI_IT
             String query = "SELECT * FROM RegisteredUsers WHERE Username = '" + user.ToString() + "';";
             SqlCommand cmd = new SqlCommand(query, con);
             object role = cmd.ExecuteScalar();
+            con.Close();
             if (role == null)
                 return false;
             else
@@ -90,6 +94,7 @@ namespace GUI_IT
             String query = "SELECT First_Name FROM RegisteredUsers WHERE Username = '" + user.ToString() + "';";
             SqlCommand cmd = new SqlCommand(query, con);
             string name = (string)cmd.ExecuteScalar();
+            con.Close();
             return name;
         }
 
@@ -99,6 +104,7 @@ namespace GUI_IT
             String query = "SELECT Username FROM RegisteredUsers WHERE Name = '" + user.ToString() + "';";
             SqlCommand cmd = new SqlCommand(query, con);
             string name = (string)cmd.ExecuteScalar();
+            con.Close();
             return name;
         }
 
@@ -108,6 +114,7 @@ namespace GUI_IT
             String query = "SELECT First_Name FROM Registration WHERE Username = '" + user.ToString() + "';";
             SqlCommand cmd = new SqlCommand(query, con);
             string name = (string)cmd.ExecuteScalar();
+            con.Close();
             return name;
         }
 
@@ -117,6 +124,7 @@ namespace GUI_IT
             String query = "SELECT Name FROM RegisteredUsers WHERE Username = '" + user.ToString() + "';";
             SqlCommand cmd = new SqlCommand(query, con);
             string name = (string)cmd.ExecuteScalar();
+            con.Close();
             return name;
         }
         public static string getRole(string user)
@@ -125,6 +133,7 @@ namespace GUI_IT
             String query = "SELECT Role FROM RegisteredUsers WHERE Username = '" + user.ToString() + "';";
             SqlCommand cmd = new SqlCommand(query, con);
             string name = (string)cmd.ExecuteScalar();
+            con.Close();
             return name;
         }
         public static string getEmail(string user)
@@ -133,6 +142,7 @@ namespace GUI_IT
             String query = "SELECT email FROM RegisteredUsers WHERE Username = '" + user.ToString() + "';";
             SqlCommand cmd = new SqlCommand(query, con);
             string email = (string)cmd.ExecuteScalar();
+            con.Close();
             return email;
         }
 
@@ -142,6 +152,7 @@ namespace GUI_IT
             String query = "SELECT email FROM Registration WHERE Username = '" + user.ToString() + "';";
             SqlCommand cmd = new SqlCommand(query, con);
             string email = (string)cmd.ExecuteScalar();
+            con.Close();
             return email;
         }
         public static string getPass(string user)
@@ -150,6 +161,7 @@ namespace GUI_IT
             String query = "SELECT password FROM RegisteredUsers WHERE Username = '" + user.ToString() + "';";
             SqlCommand cmd = new SqlCommand(query, con);
             string pass = (string)cmd.ExecuteScalar();
+            con.Close();
             return pass;
         }
 
@@ -159,6 +171,7 @@ namespace GUI_IT
             String query = "SELECT password FROM Registration WHERE Username = '" + user.ToString() + "';";
             SqlCommand cmd = new SqlCommand(query, con);
             string pass = (string)cmd.ExecuteScalar();
+            con.Close();
             return pass;
         }
 
@@ -168,6 +181,7 @@ namespace GUI_IT
             String query = "SELECT Category FROM Tickets WHERE Id = '" + tID.ToString() + "';";
             SqlCommand cmd = new SqlCommand(query, con);
             string category = (string)cmd.ExecuteScalar();
+            con.Close();
             return category;
         }
 
@@ -177,6 +191,7 @@ namespace GUI_IT
             String query = "SELECT Priority FROM Tickets WHERE Id = '" + tID.ToString() + "';";
             SqlCommand cmd = new SqlCommand(query, con);
             string priority = (string)cmd.ExecuteScalar();
+            con.Close();
             return priority;
         }
         public static string getTicketUser(int tID)
@@ -185,6 +200,7 @@ namespace GUI_IT
             String query = "SELECT Username FROM Tickets WHERE Id = '" + tID.ToString() + "';";
             SqlCommand cmd = new SqlCommand(query, con);
             string user = (string)cmd.ExecuteScalar();
+            con.Close();
             return user;
         }
 
@@ -194,6 +210,7 @@ namespace GUI_IT
             String query = "SELECT Description FROM Tickets WHERE Id = '" + tID.ToString() + "';";
             SqlCommand cmd = new SqlCommand(query, con);
             string description = (string)cmd.ExecuteScalar();
+            con.Close();
             return description;
         }
 
@@ -203,6 +220,7 @@ namespace GUI_IT
             String query = "SELECT Description FROM Tickets WHERE Id = '" + tID.ToString() + "';";
             SqlCommand cmd = new SqlCommand(query, con);
             string description = (string)cmd.ExecuteScalar();
+            con.Close();
             return description;
         }
 
@@ -236,6 +254,7 @@ namespace GUI_IT
             String query = "SELECT top 1 Name FROM Registration;";
             SqlCommand cmd = new SqlCommand(query, con);
             string name = (string)cmd.ExecuteScalar();
+            con.Close();
             return name;
         }
 
@@ -245,6 +264,7 @@ namespace GUI_IT
             String query = "SELECT top 1 First_Name FROM Registration;";
             SqlCommand cmd = new SqlCommand(query, con);
             string name = (string)cmd.ExecuteScalar();
+            con.Close();
             return name;
         }
 
@@ -254,6 +274,7 @@ namespace GUI_IT
             String query = "SELECT top 1 Last_Name FROM Registration;";
             SqlCommand cmd = new SqlCommand(query, con);
             string name = (string)cmd.ExecuteScalar();
+            con.Close();
             return name;
         }
 
@@ -263,6 +284,7 @@ namespace GUI_IT
             String query = "SELECT top 1 Email FROM Registration;";
             SqlCommand cmd = new SqlCommand(query, con);
             string email = (string)cmd.ExecuteScalar();
+            con.Close();
             return email;
         }
 
@@ -272,6 +294,7 @@ namespace GUI_IT
             String query = "SELECT top 1 Username FROM Registration;";
             SqlCommand cmd = new SqlCommand(query, con);
             string user = (string)cmd.ExecuteScalar();
+            con.Close();
             return user;
         }
 
@@ -281,6 +304,7 @@ namespace GUI_IT
             String query = "SELECT top 1 Role FROM Registration;";
             SqlCommand cmd = new SqlCommand(query, con);
             string role = (string)cmd.ExecuteScalar();
+            con.Close();
             return role;
         }
 
@@ -289,6 +313,7 @@ namespace GUI_IT
             SqlConnection con = Connect();
             String query = "INSERT INTO RegisteredUsers(Username, Name, First_Name, Last_Name, Password, Email, Role) VALUES('" + user.ToString() + "', '" + name.ToString() + "', '" + first.ToString() + "', '" + last.ToString() + "','" + pass.ToString() + "', '" + email.ToString() + "', '" + role.ToString() + "');";
             SqlCommand cmd = new SqlCommand(query, con);
+            con.Close();
             cmd.ExecuteNonQuery();
             con.Close();
         }
@@ -299,6 +324,7 @@ namespace GUI_IT
             String query = "SELECT top 1 Password FROM Registration;";
             SqlCommand cmd = new SqlCommand(query, con);
             string pass = (string)cmd.ExecuteScalar();
+            con.Close();
             return pass;
         }
 
@@ -326,6 +352,7 @@ namespace GUI_IT
             String query = "SELECT Count(Id) FROM Tickets;";
             SqlCommand cmd = new SqlCommand(query, con);
             int pass = (int)cmd.ExecuteScalar();
+            con.Close();
             return pass;
         }
 
@@ -335,6 +362,7 @@ namespace GUI_IT
             String query = "INSERT INTO Login(Username) VALUES('" + user.ToString() + "');";
             SqlCommand cmd = new SqlCommand(query, con);
             int pass = (int)cmd.ExecuteScalar();
+            con.Close();
         }
 
         public static int countC(int id)
@@ -343,6 +371,7 @@ namespace GUI_IT
             String query = "SELECT Num_Of_Coll FROM Tickets where ID = '" + id + "' ;";
             SqlCommand cmd = new SqlCommand(query, con);
             int pass = (int)cmd.ExecuteScalar();
+            con.Close();
             return pass;
         }
 
@@ -352,6 +381,7 @@ namespace GUI_IT
             String query = "SELECT Collaborators FROM Tickets where ID = '" + id + "' ;";
             SqlCommand cmd = new SqlCommand(query, con);
             string pass = (string)cmd.ExecuteScalar();
+            con.Close();
             return pass;
         }
 
@@ -407,6 +437,7 @@ namespace GUI_IT
             String query = "SELECT Count(Id) FROM SharedTickets;";
             SqlCommand cmd = new SqlCommand(query, con);
             int pass = (int)cmd.ExecuteScalar();
+            con.Close();
             return pass;
         }
 
@@ -416,6 +447,7 @@ namespace GUI_IT
             String query = "SELECT Username FROM Tickets where Id = '" + id + "';";
             SqlCommand cmd = new SqlCommand(query, con);
             string pass = (string)cmd.ExecuteScalar();
+            con.Close();
             return pass;
         }
 
@@ -425,6 +457,7 @@ namespace GUI_IT
             String query = "SELECT Email FROM Tickets where Id = '" + id + "';";
             SqlCommand cmd = new SqlCommand(query, con);
             string pass = (string)cmd.ExecuteScalar();
+            con.Close();
             return pass;
         }
 
@@ -457,6 +490,7 @@ namespace GUI_IT
             String query = "SELECT Count(Id) FROM Report;";
             SqlCommand cmd = new SqlCommand(query, con);
             int pass = (int)cmd.ExecuteScalar();
+            con.Close();
             return pass;
         }
 
@@ -475,7 +509,7 @@ namespace GUI_IT
             DataRow item = dt.NewRow();
             item[1] = "Select Name";
             dt.Rows.InsertAt(item, 0);
-
+            con.Close();
             return dt;
         }
 
@@ -494,7 +528,7 @@ namespace GUI_IT
             DataRow item = dt.NewRow();
             item[1] = "Select Name";
             dt.Rows.InsertAt(item, 0);
-
+            con.Close();
             return dt;
         }
 
@@ -512,7 +546,7 @@ namespace GUI_IT
             DataRow item = dt.NewRow();
             item[1] = "Select ID";
             dt.Rows.InsertAt(item, 0);
-
+            con.Close();
             return dt;
         }
 
@@ -530,7 +564,7 @@ namespace GUI_IT
             DataRow item = dt.NewRow();
             item[1] = "Select ID";
             dt.Rows.InsertAt(item, 0);
-
+            con.Close();
             return dt;
         }
 
@@ -550,7 +584,7 @@ namespace GUI_IT
             DataRow item = dt.NewRow();
             item[1] = "Select ID";
             dt.Rows.InsertAt(item, 0);
-
+            con.Close();
             return dt;
         }
         public static string tickpro(int id)
@@ -559,6 +593,7 @@ namespace GUI_IT
             String query = "SELECT Description FROM Tickets where Id = '" + id + "';";
             SqlCommand cmd = new SqlCommand(query, con);
             string pass = (string)cmd.ExecuteScalar();
+            con.Close();
             return pass;
         }
 
@@ -568,6 +603,7 @@ namespace GUI_IT
             String query = "SELECT UsernameIT FROM Solved_Tickets where Id = '" + id + "';";
             SqlCommand cmd = new SqlCommand(query, con);
             string pass = (string)cmd.ExecuteScalar();
+            con.Close();
             return pass;
         }
         public static string solution(int id)
@@ -576,6 +612,7 @@ namespace GUI_IT
             String query = "SELECT Solution FROM Solved_Tickets where Id = '" + id + "';";
             SqlCommand cmd = new SqlCommand(query, con);
             string pass = (string)cmd.ExecuteScalar();
+            con.Close();
             return pass;
         }
         public static void reraise(int id, string user, string email, string reason, string info)
@@ -612,6 +649,60 @@ namespace GUI_IT
             string query5 = "DELETE FROM Solved_Tickets where ID = '" + id + "'; ";
             SqlCommand cmd5 = new SqlCommand(query5, con);
             cmd5.ExecuteNonQuery();
+            con.Close();
+        }
+
+        public static bool ResetPassword(string user)
+        {
+            SqlConnection con = Connect();
+            string pass = Sql.GeneratePassword(user);
+            bool exists = AccountExists(user);
+            if (exists == true)
+            {
+                String query = "UPDATE RegisteredUsers SET Password = '" + pass + "' WHERE Username = '" + user + "'; ";
+                SqlCommand sqlCommand = new SqlCommand(query, con);
+                sqlCommand.ExecuteNonQuery();
+                bool SuccessfulEmail = Email.sendEmail("Password Reset", user, 0);
+                con.Close();
+                return true;
+            }
+            else
+            {
+                con.Close();
+                return false;
+            }
+        }
+
+        public static string GeneratePassword(string user) 
+        {
+            Random res = new Random();
+            String str = "ABCDEFGHIJOPQRSTUVWXsYZ0123489!@#$%^&*?><abcdefghijklmnopqrswxyz0123456789";
+            int size = 8;
+            String randomstring = "";
+            for (int i = 0; i < size; i++)
+            {
+                int x = res.Next(str.Length);
+                randomstring = randomstring + str[x];
+            }
+            string pass = randomstring.ToString();
+            return pass;
+        }
+
+        private static bool AccountExists(string user)
+        {
+            SqlConnection con = Connect();
+            String query = "Select Count(1) from RegisteredUsers WHERE Username = '" + user + "';";
+            SqlCommand cmd = new SqlCommand(query, con);
+            int Exists = (int) cmd.ExecuteScalar();
+            if (Exists == 0)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+
         }
     }
 }

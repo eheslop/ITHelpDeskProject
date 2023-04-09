@@ -106,7 +106,7 @@ namespace GUI_IT
             string j = txtSolution.Text.ToString();
             Sql.solve(y, newUser_.Username, z, k, j);
             MessageBox.Show("Your solution for the ticket of your choosing has now been submitted, thank you.", "Ticket Solved Successfully!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            Email.sendEmail("Solved Ticket", newUser_.Username, 0, x);
+            Email.sendEmail("Solved Ticket", newUser_.Username, 0, Convert.ToInt32(x));
         }
 
         private void btnShare_Click(object sender, EventArgs e)

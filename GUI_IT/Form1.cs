@@ -158,16 +158,7 @@ namespace GUI_IT
             Boolean validEmail = Email.isValid(email);
             if (accountExists == false && validEmail == true)
             {
-                Random res = new Random();
-                String str = "ABCDEFGHIJOPQRSTUVWXsYZ0123489!@#$%^&*?><abcdefghijklmnopqrswxyz0123456789";
-                int size = 8;
-                String randomstring = "";
-                for (int i = 0; i < size; i++)
-                {
-                    int x = res.Next(str.Length);
-                    randomstring = randomstring + str[x];
-                }
-                string pass = randomstring.ToString();
+                string pass = Sql.GeneratePassword(user);
                 Sql.Register(user, name, first, last, pass, email, role, time);
                 int kk = 1;
                 Email.sendEmail("Registration", user, kk);
@@ -239,9 +230,18 @@ namespace GUI_IT
             this.Text = "IT Help Desk Forgot Password";
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnPassReset_Click(object sender, EventArgs e)
         {
-
+            bool resetStatus = false;
+            resetStatus = Sql.ResetPassword(txtPassReset.Text.ToString());
+            if(resetStatus == true)
+            {
+                MessageBox.Show("Success. Please check the email associated with your account for more details.", "Successful Reset!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Failure. There was an error when attempting to reset your password. Please check the username entered.", "Failed Reset!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
 
@@ -287,9 +287,9 @@ namespace GUI_IT
             RP = new Rectangle(lblRememebr.Location.X, lblRememebr.Location.Y, lblRememebr.Width, lblRememebr.Height);
             LabelEmail2 = new Rectangle(label1.Location.X, label1.Location.Y, label1.Width, label1.Height);
             Picture3 = new Rectangle(pictureBox5.Location.X, pictureBox5.Location.Y, pictureBox5.Width, pictureBox5.Height);
-            TextEmail2 = new Rectangle(textBox1.Location.X, textBox1.Location.Y, textBox1.Width, textBox1.Height);
+            TextEmail2 = new Rectangle(txtPassReset.Location.X, txtPassReset.Location.Y, txtPassReset.Width, txtPassReset.Height);
             SendVerification = new Rectangle(label2.Location.X, label2.Location.Y, label2.Width, label2.Height);
-            Send = new Rectangle(button1.Location.X, button1.Location.Y, button1.Width, button1.Height);
+            Send = new Rectangle(btnPassReset.Location.X, btnPassReset.Location.Y, btnPassReset.Width, btnPassReset.Height);
 
             originaRegRectangleFSize = btnRegisterAccount.Font.Size;
             originalLabelDHAASize = lblRegisterAccount.Font.Size;
@@ -391,13 +391,13 @@ namespace GUI_IT
             resizecontroltwo(RP, lblRememebr);
             resizecontroltwo(buttonRegRect3, btnBacktoLogin);
             resizecontroltwo(Picture3, pictureBox5);
-            resizecontroltwo(TextEmail2, textBox1);
+            resizecontroltwo(TextEmail2, txtPassReset);
             resizecontroltwo(LabelEmail2, label1);
-            resizecontroltwo(Send, button1);
+            resizecontroltwo(Send, btnPassReset);
             resizecontroltwo(SendVerification, label2);
         }
 
-        
+
         private void btnOpenEye_Click(object sender, EventArgs e)
         {
             btnOpenEye.Visible = false;
