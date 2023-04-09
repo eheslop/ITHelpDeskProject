@@ -112,6 +112,14 @@ namespace GUI_IT
                         + "Ticket Description: " + Sql.getTicketDescription(tID) + "\n\n"
                         + "More information can be found within the Reg Agents IT Helpdesk Interface.";
             }
+            if(template == "Solved Ticket")
+            {
+                data[0] = "Notice: Ticket Solved";
+                data[1] = "Hello " + Sql.getName(user)
+                        + "!\n\nIT Ticket " + tID + " has been marked as solved." + "\n\n"
+                        + "The following solution was provided: " + Sql.get
+                        + ""
+            }
             return data;
         }
         /* 

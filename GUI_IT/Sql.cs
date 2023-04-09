@@ -195,6 +195,15 @@ namespace GUI_IT
             return description;
         }
 
+        public static string getTicketSolution(int tID)
+        {
+            SqlConnection con = Connect();
+            String query = "SELECT Description FROM Tickets WHERE Id = '" + tID.ToString() + "';";
+            SqlCommand cmd = new SqlCommand(query, con);
+            string description = (string)cmd.ExecuteScalar();
+            return description;
+        }
+
         public static DataTable FILL()
         {
             SqlConnection con = Connect();
