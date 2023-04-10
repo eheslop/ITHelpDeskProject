@@ -30,15 +30,10 @@ namespace GUI_IT
             lblUser.Text = newUser_.FirstName + "!";
             Fill();
             Fill1();
-            combo();
+            /*combo();
             combo1();
             combo2();
-            combo3();
-        }
-
-        private void frmAdmin_Load(object sender, EventArgs e)
-        {
-
+            combo3();*/
         }
 
         private void btnRegistration_Click(object sender, EventArgs e)
@@ -57,7 +52,7 @@ namespace GUI_IT
             lblAdminHeader.Location = new Point(459, 101);
         }
 
-        private void combo()
+        /*private void combo()
         {
             cbxn.DataSource = Sql.ITname();
             cbxn.DisplayMember = "Name";
@@ -68,6 +63,7 @@ namespace GUI_IT
             cbxp.DataSource = Sql.PMname();
             cbxp.DisplayMember = "Name";
         }
+
         private void combo2()
         {
             cbxu.DataSource = Sql.ITname();
@@ -78,7 +74,8 @@ namespace GUI_IT
         {
             cbxuu.DataSource = Sql.PMname();
             cbxuu.DisplayMember = "Name";
-        }
+        }*/
+
         private void btnLogout_Click(object sender, EventArgs e)
         {
             FrmLogin LoginScreen = new FrmLogin();
@@ -107,12 +104,8 @@ namespace GUI_IT
 
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
 
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        /*private void button1_Click(object sender, EventArgs e)
         {
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
             builder.DataSource = "redagents.database.windows.net";
@@ -127,7 +120,7 @@ namespace GUI_IT
             da.Fill(dt);
             DGVR.DataSource = dt;
             con.Close();
-        }
+        }*/
 
         private void Fill()
         {
@@ -148,12 +141,8 @@ namespace GUI_IT
 
         }
 
-        private void tabExisting_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void btnSubmit_Click(object sender, EventArgs e)
+        /*private void btnSubmit_Click(object sender, EventArgs e)
         {
 
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
@@ -168,7 +157,7 @@ namespace GUI_IT
             SqlDataAdapter da = new SqlDataAdapter(query, con);
             da.Update(dt);
             this.DGVR.Refresh();
-        }
+        }*/
 
 
         private void ProfilePictureBox_Click(object sender, EventArgs e)
@@ -227,7 +216,7 @@ namespace GUI_IT
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            string x = txtTicketIDSolve.Text.ToString();
+            /*string x = txtTicketIDSolve.Text.ToString();
             int y = System.Convert.ToInt32(x);
             string b = cbxn.Text.ToString();
             string c = cbxurg1.Text.ToString();
@@ -236,43 +225,10 @@ namespace GUI_IT
             string l = txtTicketDetailSolved.Text.ToString();
             string f = txtTicketDescribeSolved.Text.ToString();
             string h = "Solved";
-            Sql.report(y, c, b, d, g, f, l, newUser_.Username, h);
+            Sql.report(y, c, b, d, g, f, l, newUser_.Username, h);*/
             MessageBox.Show("Your report regarded the solved ticket of your choosing has been successfully submitted.", "Solved Ticket Report Submitted!", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void btnSubmitUnsolved_Click(object sender, EventArgs e)
-        {
-            string x = txtTicketID.Text.ToString();
-            int y = System.Convert.ToInt32(x);
-            string b = cbxu.Text.ToString();
-            string c = cbxurg.Text.ToString();
-            string d = cbxuu.Text.ToString();
-            string g = cbxcat.Text.ToString();
-            string f = txtTicketSummary.Text.ToString();
-            string l = txtUnsolvedExplain.Text.ToString();
-            string h = "Unsolved";
-            Sql.report(y, c, b, d, g, f, l, newUser_.Username, h);
-            MessageBox.Show("Your report regarded the unsolved ticket of your choosing has been successfully submitted.", "Unsolved Ticket Report Submitted!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnReportClear_Click_1(object sender, EventArgs e)
-        {
-            txtTicketIDSolve.Clear();
-            txtTicketDescribeSolved.Clear();
-            txtTicketDetailSolved.Clear();
-        }
-
-        private void btnClearUnsolved_Click_1(object sender, EventArgs e)
-        {
-            txtTicketID.Clear();
-            txtTicketSummary.Clear();
-            txtUnsolvedExplain.Clear();
-        }
 
         private void btnrefre_Click_1(object sender, EventArgs e)
         {
@@ -283,6 +239,21 @@ namespace GUI_IT
         {
             frmstatusUpdate UpdateUserStatus = new frmstatusUpdate();
             UpdateUserStatus.ShowDialog();
+        }
+
+        private void btnSubmitUnsolved_Click(object sender, EventArgs e)
+        {
+            /*string x = txtTicketID.Text.ToString();
+            int y = System.Convert.ToInt32(x);
+            string b = cbxu.Text.ToString();
+            string c = cbxurg.Text.ToString();
+            string d = cbxuu.Text.ToString();
+            string g = cbxcat.Text.ToString();
+            string f = txtTicketSummary.Text.ToString();
+            string l = txtUnsolvedExplain.Text.ToString();
+            string h = "Unsolved";
+            Sql.report(y, c, b, d, g, f, l, newUser_.Username, h);*/
+            MessageBox.Show("Your report regarded the unsolved ticket of your choosing has been successfully submitted.", "Unsolved Ticket Report Submitted!", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
