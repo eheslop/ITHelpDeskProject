@@ -59,12 +59,14 @@
             DGVV = new DataGridView();
             label8 = new Label();
             tabReport = new TabPage();
+            cbxSolvedID = new ComboBox();
+            cbxUnsolvedID = new ComboBox();
+            btnSubmitUnsolved = new Button();
+            label17 = new Label();
             dataGridView1 = new DataGridView();
             pictureBox3 = new PictureBox();
             label3 = new Label();
             label10 = new Label();
-            btnSubmitUnsolved = new Button();
-            label17 = new Label();
             button1 = new Button();
             btnSubmitSolved = new Button();
             btnClearSolved = new Button();
@@ -76,8 +78,6 @@
             lblLoggedIn = new Label();
             pictureBox6 = new PictureBox();
             btnrefre = new Button();
-            cbxUnsolvedID = new ComboBox();
-            cbxSolvedID = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Rectangle1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)DGVR).BeginInit();
@@ -274,11 +274,11 @@
             // 
             label7.AutoSize = true;
             label7.BackColor = Color.White;
-            label7.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(355, 288);
+            label7.Font = new Font("Microsoft YaHei UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label7.Location = new Point(339, 285);
             label7.Margin = new Padding(2, 0, 2, 0);
             label7.Name = "label7";
-            label7.Size = new Size(809, 120);
+            label7.Size = new Size(812, 124);
             label7.TabIndex = 82;
             label7.Text = resources.GetString("label7.Text");
             // 
@@ -286,25 +286,25 @@
             // 
             label5.AutoSize = true;
             label5.BackColor = Color.White;
-            label5.Font = new Font("Microsoft YaHei UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(326, 110);
+            label5.Font = new Font("Microsoft YaHei UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.Location = new Point(331, 111);
             label5.Margin = new Padding(2, 0, 2, 0);
             label5.Name = "label5";
-            label5.Size = new Size(850, 108);
+            label5.Size = new Size(814, 108);
             label5.TabIndex = 81;
-            label5.Text = resources.GetString("label5.Text");
+            label5.Text = "This page allows for you to view all tickets in a table format. \r\nThe Unsolved Tickets are in one table, and the Solved \r\nTickets another. \r\n";
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.BackColor = Color.White;
             label4.Font = new Font("Segoe UI", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label4.Location = new Point(31, 322);
+            label4.Location = new Point(49, 324);
             label4.Margin = new Padding(2, 0, 2, 0);
             label4.Name = "label4";
-            label4.Size = new Size(322, 38);
+            label4.Size = new Size(246, 38);
             label4.TabIndex = 78;
-            label4.Text = "Unsolved Ticket Report";
+            label4.Text = "Generate Reports";
             // 
             // pictureBox13
             // 
@@ -331,12 +331,12 @@
             label6.AutoSize = true;
             label6.BackColor = Color.White;
             label6.Font = new Font("Segoe UI", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label6.Location = new Point(34, 142);
+            label6.Location = new Point(78, 140);
             label6.Margin = new Padding(2, 0, 2, 0);
             label6.Name = "label6";
-            label6.Size = new Size(288, 38);
+            label6.Size = new Size(182, 38);
             label6.TabIndex = 80;
-            label6.Text = "Solved Ticket Report";
+            label6.Text = "View Tickets";
             // 
             // pictureBox12
             // 
@@ -493,6 +493,50 @@
             tabReport.TabIndex = 1;
             tabReport.Text = "Generate Reports";
             // 
+            // cbxSolvedID
+            // 
+            cbxSolvedID.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbxSolvedID.FormattingEnabled = true;
+            cbxSolvedID.Location = new Point(39, 284);
+            cbxSolvedID.Name = "cbxSolvedID";
+            cbxSolvedID.Size = new Size(295, 36);
+            cbxSolvedID.TabIndex = 149;
+            // 
+            // cbxUnsolvedID
+            // 
+            cbxUnsolvedID.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbxUnsolvedID.FormattingEnabled = true;
+            cbxUnsolvedID.Location = new Point(42, 105);
+            cbxUnsolvedID.Name = "cbxUnsolvedID";
+            cbxUnsolvedID.Size = new Size(294, 36);
+            cbxUnsolvedID.TabIndex = 148;
+            // 
+            // btnSubmitUnsolved
+            // 
+            btnSubmitUnsolved.BackColor = Color.FromArgb(64, 0, 0);
+            btnSubmitUnsolved.FlatStyle = FlatStyle.Popup;
+            btnSubmitUnsolved.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSubmitUnsolved.ForeColor = Color.White;
+            btnSubmitUnsolved.Location = new Point(39, 155);
+            btnSubmitUnsolved.Margin = new Padding(2);
+            btnSubmitUnsolved.Name = "btnSubmitUnsolved";
+            btnSubmitUnsolved.Size = new Size(296, 47);
+            btnSubmitUnsolved.TabIndex = 139;
+            btnSubmitUnsolved.Text = "Generate Unsolved Report";
+            btnSubmitUnsolved.UseVisualStyleBackColor = false;
+            btnSubmitUnsolved.Click += btnSubmitUnsolved_Click;
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.BackColor = Color.DarkGray;
+            label17.Location = new Point(23, 69);
+            label17.Margin = new Padding(2, 0, 2, 0);
+            label17.Name = "label17";
+            label17.Size = new Size(388, 28);
+            label17.TabIndex = 131;
+            label17.Text = "Choose Ticket ID of an Unsolved Ticket:";
+            // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -536,32 +580,6 @@
             label10.Size = new Size(352, 28);
             label10.TabIndex = 142;
             label10.Text = "Choose Ticket ID of a Solved Ticket:";
-            // 
-            // btnSubmitUnsolved
-            // 
-            btnSubmitUnsolved.BackColor = Color.FromArgb(64, 0, 0);
-            btnSubmitUnsolved.FlatStyle = FlatStyle.Popup;
-            btnSubmitUnsolved.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnSubmitUnsolved.ForeColor = Color.White;
-            btnSubmitUnsolved.Location = new Point(39, 155);
-            btnSubmitUnsolved.Margin = new Padding(2);
-            btnSubmitUnsolved.Name = "btnSubmitUnsolved";
-            btnSubmitUnsolved.Size = new Size(296, 47);
-            btnSubmitUnsolved.TabIndex = 139;
-            btnSubmitUnsolved.Text = "Generate Unsolved Report";
-            btnSubmitUnsolved.UseVisualStyleBackColor = false;
-            btnSubmitUnsolved.Click += btnSubmitUnsolved_Click;
-            // 
-            // label17
-            // 
-            label17.AutoSize = true;
-            label17.BackColor = Color.DarkGray;
-            label17.Location = new Point(23, 69);
-            label17.Margin = new Padding(2, 0, 2, 0);
-            label17.Name = "label17";
-            label17.Size = new Size(388, 28);
-            label17.TabIndex = 131;
-            label17.Text = "Choose Ticket ID of an Unsolved Ticket:";
             // 
             // button1
             // 
@@ -704,24 +722,6 @@
             btnrefre.Text = "Refresh";
             btnrefre.UseVisualStyleBackColor = false;
             btnrefre.Click += btnrefre_Click_1;
-            // 
-            // cbxUnsolvedID
-            // 
-            cbxUnsolvedID.DropDownStyle = ComboBoxStyle.DropDownList;
-            cbxUnsolvedID.FormattingEnabled = true;
-            cbxUnsolvedID.Location = new Point(42, 105);
-            cbxUnsolvedID.Name = "cbxUnsolvedID";
-            cbxUnsolvedID.Size = new Size(294, 36);
-            cbxUnsolvedID.TabIndex = 148;
-            // 
-            // cbxSolvedID
-            // 
-            cbxSolvedID.DropDownStyle = ComboBoxStyle.DropDownList;
-            cbxSolvedID.FormattingEnabled = true;
-            cbxSolvedID.Location = new Point(39, 284);
-            cbxSolvedID.Name = "cbxSolvedID";
-            cbxSolvedID.Size = new Size(295, 36);
-            cbxSolvedID.TabIndex = 149;
             // 
             // frmAdmin
             // 
