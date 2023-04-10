@@ -38,21 +38,8 @@ namespace GUI_IT
 
         private void Fill()
         {
-            SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-            builder.DataSource = "redagents.database.windows.net";
-            builder.UserID = "kwekwe";
-            builder.Password = "Password1!";
-            builder.InitialCatalog = "red_Agents";
-            SqlConnection con = new SqlConnection(builder.ConnectionString);
-            con.Open();
-            string x = User;
-            string query = "Select * from Tickets where Username = '" + User + "'";
-            SqlDataAdapter da = new SqlDataAdapter(query, con);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            DGVM.DataSource = dt;
+            DGVM.DataSource = Sql.tickets(User);
             DGVM.EditMode = DataGridViewEditMode.EditOnEnter;
-            con.Close();
         }
 
 
