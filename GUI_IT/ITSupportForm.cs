@@ -33,7 +33,7 @@ namespace GUI_IT
         private void Fill1()
         {
             string x = newUser_.Username;
-            string y = "Unsolved";
+            string y = "Solved";
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
             builder.DataSource = "redagents.database.windows.net";
             builder.UserID = "kwekwe";
@@ -41,7 +41,7 @@ namespace GUI_IT
             builder.InitialCatalog = "red_Agents";
             SqlConnection con = new SqlConnection(builder.ConnectionString);
             con.Open();
-            string query = "Select Distinct Tickets.Id, Name, Username, Category, Description, Category, Priority, Collaborators, AssignedTo FROM Tickets inner join SharedTickets  ON ( Tickets.Id = SharedTickets.Id ) Where AssignedTo = '" + x + "' AND Status = '" + y + "' OR SharedWith = '" + x + "' AND Status = '" + y + "'; ";
+            string query = "Select Distinct Tickets.Id, Name, Username, Category, Description, Category, Priority, Collaborators, AssignedTo FROM Tickets inner join SharedTickets  ON ( Tickets.Id = SharedTickets.Id ) Where AssignedTo = '" + x + "' OR SharedWith = '" + x + "' AND Status != '" + y + "'; ";
             SqlDataAdapter da = new SqlDataAdapter(query, con);
             DataTable dt = new DataTable();
             da.Fill(dt);
@@ -60,7 +60,7 @@ namespace GUI_IT
         private void Fill2()
         {
             string x = newUser_.Username;
-            string y = "Unsolved";
+            string y = "Solved";
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
             builder.DataSource = "redagents.database.windows.net";
             builder.UserID = "kwekwe";
@@ -68,7 +68,7 @@ namespace GUI_IT
             builder.InitialCatalog = "red_Agents";
             SqlConnection con = new SqlConnection(builder.ConnectionString);
             con.Open();
-            string query = "Select * from Tickets where AssignedTo = '" + x + "' and Status = '" + y + "'; ";
+            string query = "Select * from Tickets where AssignedTo = '" + x + "' and Status != '" + y + "'; ";
             SqlDataAdapter da = new SqlDataAdapter(query, con);
             DataTable dt = new DataTable();
             da.Fill(dt);
@@ -81,13 +81,13 @@ namespace GUI_IT
 
         private void combo1()
         {
-            cbxid.DataSource = Sql.tickets(newUser_.Username);
+            cbxid.DataSource = Sql.tickets2(newUser_.Username);
             cbxid.DisplayMember = "Id";
         }
 
         private void combo2()
         {
-            cbxid2.DataSource = Sql.tickets(newUser_.Username);
+            cbxid2.DataSource = Sql.tickets2(newUser_.Username);
             cbxid2.DisplayMember = "Id";
         }
 
