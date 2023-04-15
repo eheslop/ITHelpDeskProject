@@ -41,12 +41,12 @@ namespace GUI_IT
             builder.InitialCatalog = "red_Agents";
             SqlConnection con = new SqlConnection(builder.ConnectionString);
             con.Open();
-            string query = "Select Distinct Tickets.Id, Name, Username, Category, Description, Category, Priority, Collaborators, AssignedTo FROM Tickets inner join SharedTickets  ON ( Tickets.Id = SharedTickets.Id ) Where AssignedTo = '" + x + "' OR SharedWith = '" + x + "' AND Status != '" + y + "'; ";
+            string query = "Select Distinct Tickets.Id, Name, Username, Category, Description, Category, Priority, Collaborators, AssignedTo FROM Tickets inner join SharedTickets  ON ( Tickets.Id = SharedTickets.Id ) Where SharedWith = '" + x + "' AND Status != '" + y + "'; ";
             SqlDataAdapter da = new SqlDataAdapter(query, con);
             DataTable dt = new DataTable();
             da.Fill(dt);
-            DGVS.DataSource = dt;
-            DGVS.EditMode = DataGridViewEditMode.EditOnEnter;
+            Shared.DataSource = dt;
+           //GVS.EditMode = DataGridViewEditMode.EditOnEnter;
             con.Close();
 
         }
@@ -72,6 +72,7 @@ namespace GUI_IT
             SqlDataAdapter da = new SqlDataAdapter(query, con);
             DataTable dt = new DataTable();
             da.Fill(dt);
+            DGVS.DataSource = dt;
             DGVShare.DataSource = dt;
             DGVShare.EditMode = DataGridViewEditMode.EditOnEnter;
             con.Close();
@@ -149,6 +150,11 @@ namespace GUI_IT
             txtSolution.Clear();
             cbxid.ResetText();
             cbxid.SelectedIndex = -1;
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

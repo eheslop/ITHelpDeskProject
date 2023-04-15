@@ -32,6 +32,7 @@ namespace GUI_IT
             Fill1();
             combo();
             combo1();
+            Fill9();
             /*combo2();
             combo3();*/
         }
@@ -188,6 +189,11 @@ namespace GUI_IT
         private void btnSolvedView_Click(object sender, EventArgs e)
         {
             Fill2();
+        }
+
+        private void Fill9()
+        {
+            DGVGR.DataSource = Sql.Report();
         }
 
         private void button1_Click_1(object sender, EventArgs e)

@@ -369,6 +369,15 @@ namespace GUI_IT
             con.Close();
         }
 
+        public static void addinfo(string user, int id)
+        {
+            SqlConnection con = Connect();
+            String query = "UPDATE Report SET Additional_Info = '" + user.ToString() + "' where TicketID = '" + id + "';";
+            SqlCommand cmd = new SqlCommand(query, con);
+            cmd.ExecuteNonQuery();
+            con.Close();
+        }
+
         public static int count()
         {
             SqlConnection con = Connect();
