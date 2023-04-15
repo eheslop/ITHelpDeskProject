@@ -12,7 +12,7 @@ namespace GUI_IT
 {
     public partial class generatedReport : Form
     {
-        public generatedReport()
+        public generatedReport(int x)
         {
             InitializeComponent();
         }

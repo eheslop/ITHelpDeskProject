@@ -81,13 +81,13 @@ namespace GUI_IT
 
         private void combo1()
         {
-            cbxid.DataSource = Sql.tickets2(newUser_.Username);
+            cbxid.DataSource = Sql.ticketsSolved(newUser_.Username);
             cbxid.DisplayMember = "Id";
         }
 
         private void combo2()
         {
-            cbxid2.DataSource = Sql.tickets2(newUser_.Username);
+            cbxid2.DataSource = Sql.ticketsSolved(newUser_.Username);
             cbxid2.DisplayMember = "Id";
         }
 

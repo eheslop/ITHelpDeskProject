@@ -38,7 +38,7 @@ namespace GUI_IT
 
         private void Fill()
         {
-            DGVM.DataSource = Sql.tickets(User);
+            DGVM.DataSource = Sql.Raisedtickets(User);
             DGVM.EditMode = DataGridViewEditMode.EditOnEnter;
         }
 

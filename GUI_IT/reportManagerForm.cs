@@ -56,48 +56,28 @@ namespace GUI_IT
 
         private void Fill1()
         {
-            string x = "Unsolved";
-            SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-            builder.DataSource = "redagents.database.windows.net";
-            builder.UserID = "kwekwe";
-            builder.Password = "Password1!";
-            builder.InitialCatalog = "red_Agents";
-            SqlConnection con = new SqlConnection(builder.ConnectionString);
-            con.Open();
-            string query = "Select * from Tickets where Status = '" + x + "';";
-            SqlDataAdapter da = new SqlDataAdapter(query, con);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            DGVAssign.DataSource = dt;
+            
+            DGVAssign.DataSource = Sql.ticketsUnsolved();
             DGVAssign.EditMode = DataGridViewEditMode.EditOnEnter;
-            con.Close();
-
         }
 
         private void Fill2()
         {
-            string x = "Solved";
-            string y = "Re-opened";
-            SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-            builder.DataSource = "redagents.database.windows.net";
-            builder.UserID = "kwekwe";
-            builder.Password = "Password1!";
-            builder.InitialCatalog = "red_Agents";
-            SqlConnection con = new SqlConnection(builder.ConnectionString);
-            con.Open();
-            string query = "Select * from Tickets where Status = '" + x + "' or Status = '" + y + "';";
-            SqlDataAdapter da = new SqlDataAdapter(query, con);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            DGVT.DataSource = dt;
+            
+            DGVT.DataSource = Sql.ticketssolvedAll();
             DGVAssign.EditMode = DataGridViewEditMode.EditOnEnter;
-            con.Close();
+        }
 
+        private void Fill3()
+        {
+
+            DGVT.DataSource = Sql.ticketsRe();
+            DGVAssign.EditMode = DataGridViewEditMode.EditOnEnter;
         }
 
         private void combo1()
         {
-            cbxid.DataSource = Sql.tickets1();
+           cbxid.DataSource = Sql.SelectTick();
             cbxid.DisplayMember = "Id";
         }
 
@@ -154,12 +134,12 @@ namespace GUI_IT
 
         private void btnViewReopenedTable_Click(object sender, EventArgs e)
         {
-
+            Fill3();
         }
 
         private void btnReOpened_Click(object sender, EventArgs e)
         {
-
+            Fill3();
         }
     }
 }
