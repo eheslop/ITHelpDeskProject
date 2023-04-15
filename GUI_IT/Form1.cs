@@ -417,5 +417,10 @@ namespace GUI_IT
         {
 
         }
+
+        private void pnlForgotPassword_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
