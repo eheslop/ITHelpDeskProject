@@ -463,7 +463,7 @@
             btnViewUnsolvedTable.FlatStyle = FlatStyle.Popup;
             btnViewUnsolvedTable.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnViewUnsolvedTable.ForeColor = Color.White;
-            btnViewUnsolvedTable.Location = new Point(916, 9);
+            btnViewUnsolvedTable.Location = new Point(916, 12);
             btnViewUnsolvedTable.Margin = new Padding(1, 2, 1, 2);
             btnViewUnsolvedTable.Name = "btnViewUnsolvedTable";
             btnViewUnsolvedTable.Size = new Size(139, 42);
@@ -480,6 +480,7 @@
             cbxid.Name = "cbxid";
             cbxid.Size = new Size(443, 36);
             cbxid.TabIndex = 92;
+            cbxid.SelectedIndexChanged += cbxid_SelectedIndexChanged;
             // 
             // cbxn
             // 
@@ -495,7 +496,7 @@
             btnViewReopenedTable.FlatStyle = FlatStyle.Popup;
             btnViewReopenedTable.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnViewReopenedTable.ForeColor = Color.White;
-            btnViewReopenedTable.Location = new Point(1086, 8);
+            btnViewReopenedTable.Location = new Point(1086, 11);
             btnViewReopenedTable.Margin = new Padding(1, 2, 1, 2);
             btnViewReopenedTable.Name = "btnViewReopenedTable";
             btnViewReopenedTable.Size = new Size(151, 42);
@@ -507,12 +508,12 @@
             // DGVAssign
             // 
             DGVAssign.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            DGVAssign.Location = new Point(696, 68);
+            DGVAssign.Location = new Point(711, 73);
             DGVAssign.Margin = new Padding(1, 2, 1, 2);
             DGVAssign.Name = "DGVAssign";
             DGVAssign.RowHeadersWidth = 62;
             DGVAssign.RowTemplate.Height = 33;
-            DGVAssign.Size = new Size(541, 372);
+            DGVAssign.Size = new Size(526, 367);
             DGVAssign.TabIndex = 88;
             // 
             // btnAssign

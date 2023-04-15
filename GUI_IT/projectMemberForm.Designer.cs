@@ -445,7 +445,7 @@
             tabMyTickets.Location = new Point(4, 37);
             tabMyTickets.Margin = new Padding(1, 2, 1, 2);
             tabMyTickets.Name = "tabMyTickets";
-            tabMyTickets.Size = new Size(1281, 454);
+            tabMyTickets.Size = new Size(1281, 453);
             tabMyTickets.TabIndex = 2;
             tabMyTickets.Text = "My Tickets";
             // 
@@ -514,7 +514,7 @@
             tabRaiseTicket.Margin = new Padding(1, 2, 1, 2);
             tabRaiseTicket.Name = "tabRaiseTicket";
             tabRaiseTicket.Padding = new Padding(1, 2, 1, 2);
-            tabRaiseTicket.Size = new Size(1281, 454);
+            tabRaiseTicket.Size = new Size(1281, 453);
             tabRaiseTicket.TabIndex = 0;
             tabRaiseTicket.Text = "Raise Tickets";
             // 
@@ -656,7 +656,7 @@
             tabReopenTicket.Margin = new Padding(1, 2, 1, 2);
             tabReopenTicket.Name = "tabReopenTicket";
             tabReopenTicket.Padding = new Padding(1, 2, 1, 2);
-            tabReopenTicket.Size = new Size(1281, 454);
+            tabReopenTicket.Size = new Size(1281, 453);
             tabReopenTicket.TabIndex = 1;
             tabReopenTicket.Text = "Re-open Tickets";
             // 

@@ -86,7 +86,7 @@ namespace GUI_IT
             this.Close();
         }
 
-        private void Rectangle1_Click(object sender, EventArgs e)
+        /*private void Rectangle1_Click(object sender, EventArgs e)
         {
 
         }
@@ -104,7 +104,7 @@ namespace GUI_IT
         private void pnlRegistration_Paint(object sender, PaintEventArgs e)
         {
 
-        }
+        }*/
 
 
         /*private void button1_Click(object sender, EventArgs e)
@@ -211,7 +211,7 @@ namespace GUI_IT
                 string c = Sql.getTicketPriority(y);
                 string d = Sql.getTicketUser(y);
                 string g = Sql.getTicketCategory(y);
-                string l = Sql.solution(y); 
+                string l = Sql.solution(y);
                 string f = Sql.getTicketDescription(y);
                 string h = "Solved";
                 string n = Sql.getColl(y);
@@ -252,7 +252,7 @@ namespace GUI_IT
                 string f = Sql.getTicketDescription(y);
                 string h = Sql.getTicketStat(y);
                 string n = Sql.getColl(y);
-                Sql.report(y, c, b, d, g, f, l, newUser_.Username, h,n);
+                Sql.report(y, c, b, d, g, f, l, newUser_.Username, h, n);
             }
             generatedReport report = new generatedReport(y);
             report.ShowDialog();

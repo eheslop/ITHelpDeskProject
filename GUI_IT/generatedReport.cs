@@ -31,10 +31,15 @@ namespace GUI_IT
         {
             string x = txtExtra.Text;
             Sql.addinfo(x, id);
-            MessageBox.Show("You have updated this tickets information!");
+            MessageBox.Show("You have successfully added extra information to this ticket!", "Ticket Successfully Updated!", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtUrgency_TextChanged(object sender, EventArgs e)
         {
 
         }

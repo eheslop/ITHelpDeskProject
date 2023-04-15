@@ -90,7 +90,7 @@ namespace GUI_IT
             cbxUrgency.ResetText();
             cbxUrgency.SelectedIndex = -1;
             txtProblemDescribe.Clear();
-           
+
         }
 
         private void btnRefresh_Click(object sender, EventArgs e)

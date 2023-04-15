@@ -33,7 +33,7 @@ namespace GUI_IT
         private void Fill1()
         {
             string x = newUser_.Username;
-            
+
             Shared.DataSource = Sql.Sharedd(x);
             //GVS.EditMode = DataGridViewEditMode.EditOnEnter;
 
@@ -45,7 +45,7 @@ namespace GUI_IT
             cbxn.DisplayMember = "Name";
         }
 
-       private void Fill2()
+        private void Fill2()
         {
             string x = newUser_.Username;
             string y = "Solved";
@@ -81,11 +81,6 @@ namespace GUI_IT
         }
 
 
-        private void DGVShare_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void btnLogout_Click(object sender, EventArgs e)
         {
             FrmLogin LoginScreen = new FrmLogin();
@@ -100,7 +95,7 @@ namespace GUI_IT
             UserProfile.ShowDialog();
         }
 
-        private void btnSolveClear_Click_1(object sender, EventArgs e)
+        private void btnSolveClear_Click(object sender, EventArgs e)
         {
             txtSolution.Clear();
             cbxid.ResetText();
