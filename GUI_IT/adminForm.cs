@@ -257,7 +257,7 @@ namespace GUI_IT
                 string h = Sql.getTicketStat(y);
             string h = "Unsolved";
             Sql.report(y, c, b, d, g, f, l, newUser_.Username, h);*/
-            MessageBox.Show(y.ToString());
+            
             // MessageBox.Show("Your report regarded the unsolved ticket of your choosing has been successfully submitted.", "Unsolved Ticket Report Submitted!", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
