@@ -175,7 +175,7 @@ namespace GUI_IT
 
         private void Fill2()
         {
-           
+
             DGVV.DataSource = Sql.ticketssolvedAll();
             DGVV.EditMode = DataGridViewEditMode.EditOnEnter;
         }
@@ -230,23 +230,23 @@ namespace GUI_IT
         {
             string x = cbxUnsolvedID.Text.ToString();
             int y = System.Convert.ToInt32(x);
-             if (Sql.Exists1(y) == true)
-             {
+            if (Sql.Exists1(y) == true)
+            {
 
-             }
-             else
-             {
-                 string b = Sql.getTicketassign(y);
-                 string c = Sql.getTicketPriority(y);
-                 string d = Sql.getTicketUser(y);
-                 string g = Sql.getTicketCategory(y);
+            }
+            else
+            {
+                string b = Sql.getTicketassign(y);
+                string c = Sql.getTicketPriority(y);
+                string d = Sql.getTicketUser(y);
+                string g = Sql.getTicketCategory(y);
                 string l = "NONE";
-                 string f = Sql.getTicketDescription(y);
-                 string h = Sql.getTicketStat(y);
-                 Sql.report(y, c, b, d, g, f, l, newUser_.Username, h);
-             }
-             generatedReport report = new generatedReport(y);
-             report.ShowDialog();
+                string f = Sql.getTicketDescription(y);
+                string h = Sql.getTicketStat(y);
+                Sql.report(y, c, b, d, g, f, l, newUser_.Username, h);
+            }
+            generatedReport report = new generatedReport(y);
+            report.ShowDialog();
             /*string x = txtTicketID.Text.ToString();
             string b = Sql.getTicketassign(y);
                 string c = Sql.getTicketPriority(y);
@@ -257,8 +257,13 @@ namespace GUI_IT
                 string h = Sql.getTicketStat(y);
             string h = "Unsolved";
             Sql.report(y, c, b, d, g, f, l, newUser_.Username, h);*/
-            
+
             // MessageBox.Show("Your report regarded the unsolved ticket of your choosing has been successfully submitted.", "Unsolved Ticket Report Submitted!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void DGVGR_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

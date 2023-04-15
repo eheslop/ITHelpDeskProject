@@ -63,7 +63,7 @@
             cbxUnsolvedID = new ComboBox();
             btnSubmitUnsolved = new Button();
             label17 = new Label();
-            dataGridView1 = new DataGridView();
+            DGVGR = new DataGridView();
             pictureBox3 = new PictureBox();
             label3 = new Label();
             label10 = new Label();
@@ -93,7 +93,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)DGVV).BeginInit();
             tabReport.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)DGVGR).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox16).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ProfilePictureBox).BeginInit();
@@ -476,7 +476,7 @@
             tabReport.Controls.Add(cbxUnsolvedID);
             tabReport.Controls.Add(btnSubmitUnsolved);
             tabReport.Controls.Add(label17);
-            tabReport.Controls.Add(dataGridView1);
+            tabReport.Controls.Add(DGVGR);
             tabReport.Controls.Add(pictureBox3);
             tabReport.Controls.Add(label3);
             tabReport.Controls.Add(label10);
@@ -537,16 +537,17 @@
             label17.TabIndex = 131;
             label17.Text = "Choose Ticket ID of an Unsolved Ticket:";
             // 
-            // dataGridView1
+            // DGVGR
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(434, 89);
-            dataGridView1.Margin = new Padding(2);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.RowTemplate.Height = 33;
-            dataGridView1.Size = new Size(801, 319);
-            dataGridView1.TabIndex = 146;
+            DGVGR.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            DGVGR.Location = new Point(434, 89);
+            DGVGR.Margin = new Padding(2);
+            DGVGR.Name = "DGVGR";
+            DGVGR.RowHeadersWidth = 62;
+            DGVGR.RowTemplate.Height = 33;
+            DGVGR.Size = new Size(801, 319);
+            DGVGR.TabIndex = 146;
+            DGVGR.CellContentClick += DGVGR_CellContentClick;
             // 
             // pictureBox3
             // 
@@ -766,7 +767,7 @@
             ((System.ComponentModel.ISupportInitialize)DGVV).EndInit();
             tabReport.ResumeLayout(false);
             tabReport.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)DGVGR).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox16).EndInit();
             ((System.ComponentModel.ISupportInitialize)ProfilePictureBox).EndInit();
@@ -824,7 +825,7 @@
         private TextBox textBox7;
         private Button btnSubmitUnsolved;
         private Label label17;
-        private DataGridView dataGridView1;
+        private DataGridView DGVGR;
         private PictureBox pictureBox3;
         private Label label3;
         private Label label10;

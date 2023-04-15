@@ -51,16 +51,16 @@
             pictureBox2 = new PictureBox();
             lblTicketSummary = new Label();
             lblExtra = new Label();
-            lblID = new Label();
-            lblSummary = new Label();
-            lblITMember = new Label();
-            lblTicketUrgency = new Label();
-            lblUser = new Label();
-            lblTicketCategory = new Label();
-            lblDetail = new Label();
             pictureBox12 = new PictureBox();
             lblTicketStatus = new Label();
-            lblStatus = new Label();
+            txtID = new TextBox();
+            txtCategory = new TextBox();
+            txtITMem = new TextBox();
+            txtStatus = new TextBox();
+            txtUrgency = new TextBox();
+            txtRaisedUser = new TextBox();
+            txtSummary = new TextBox();
+            txtExtra = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureboxIcon).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -173,7 +173,7 @@
             pictureBox6.Location = new Point(39, 245);
             pictureBox6.Margin = new Padding(2);
             pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(460, 58);
+            pictureBox6.Size = new Size(566, 58);
             pictureBox6.TabIndex = 82;
             pictureBox6.TabStop = false;
             // 
@@ -236,7 +236,7 @@
             lblRaisedUser.AutoSize = true;
             lblRaisedUser.BackColor = Color.Gainsboro;
             lblRaisedUser.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblRaisedUser.Location = new Point(49, 194);
+            lblRaisedUser.Location = new Point(43, 194);
             lblRaisedUser.Margin = new Padding(2, 0, 2, 0);
             lblRaisedUser.Name = "lblRaisedUser";
             lblRaisedUser.Size = new Size(224, 25);
@@ -248,7 +248,7 @@
             lblitName.AutoSize = true;
             lblitName.BackColor = Color.Gainsboro;
             lblitName.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblitName.Location = new Point(51, 261);
+            lblitName.Location = new Point(43, 261);
             lblitName.Margin = new Padding(2, 0, 2, 0);
             lblitName.Name = "lblitName";
             lblitName.Size = new Size(291, 25);
@@ -302,7 +302,7 @@
             lblTicketSummary.AutoSize = true;
             lblTicketSummary.BackColor = Color.Gainsboro;
             lblTicketSummary.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblTicketSummary.Location = new Point(51, 333);
+            lblTicketSummary.Location = new Point(43, 322);
             lblTicketSummary.Margin = new Padding(2, 0, 2, 0);
             lblTicketSummary.Name = "lblTicketSummary";
             lblTicketSummary.Size = new Size(162, 25);
@@ -314,90 +314,20 @@
             lblExtra.AutoSize = true;
             lblExtra.BackColor = Color.Gainsboro;
             lblExtra.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblExtra.Location = new Point(52, 486);
+            lblExtra.Location = new Point(43, 477);
             lblExtra.Margin = new Padding(2, 0, 2, 0);
             lblExtra.Name = "lblExtra";
             lblExtra.Size = new Size(293, 25);
             lblExtra.TabIndex = 108;
             lblExtra.Text = "Extra Information about Ticket:";
             // 
-            // lblID
-            // 
-            lblID.AutoSize = true;
-            lblID.BackColor = Color.Gainsboro;
-            lblID.Location = new Point(139, 125);
-            lblID.Name = "lblID";
-            lblID.Size = new Size(30, 25);
-            lblID.TabIndex = 114;
-            lblID.Text = "ID";
-            // 
-            // lblSummary
-            // 
-            lblSummary.AutoSize = true;
-            lblSummary.BackColor = Color.Gainsboro;
-            lblSummary.Location = new Point(205, 333);
-            lblSummary.Name = "lblSummary";
-            lblSummary.Size = new Size(138, 25);
-            lblSummary.TabIndex = 116;
-            lblSummary.Text = "Ticket Summary";
-            // 
-            // lblITMember
-            // 
-            lblITMember.AutoSize = true;
-            lblITMember.BackColor = Color.Gainsboro;
-            lblITMember.Location = new Point(330, 261);
-            lblITMember.Name = "lblITMember";
-            lblITMember.Size = new Size(129, 25);
-            lblITMember.TabIndex = 117;
-            lblITMember.Text = "Ticket Member";
-            // 
-            // lblTicketUrgency
-            // 
-            lblTicketUrgency.AutoSize = true;
-            lblTicketUrgency.BackColor = Color.Gainsboro;
-            lblTicketUrgency.Location = new Point(765, 193);
-            lblTicketUrgency.Name = "lblTicketUrgency";
-            lblTicketUrgency.Size = new Size(77, 25);
-            lblTicketUrgency.TabIndex = 118;
-            lblTicketUrgency.Text = "Urgency";
-            // 
-            // lblUser
-            // 
-            lblUser.AutoSize = true;
-            lblUser.BackColor = Color.Gainsboro;
-            lblUser.Location = new Point(267, 194);
-            lblUser.Name = "lblUser";
-            lblUser.Size = new Size(47, 25);
-            lblUser.TabIndex = 119;
-            lblUser.Text = "User";
-            // 
-            // lblTicketCategory
-            // 
-            lblTicketCategory.AutoSize = true;
-            lblTicketCategory.BackColor = Color.Gainsboro;
-            lblTicketCategory.Location = new Point(600, 126);
-            lblTicketCategory.Name = "lblTicketCategory";
-            lblTicketCategory.Size = new Size(84, 25);
-            lblTicketCategory.TabIndex = 120;
-            lblTicketCategory.Text = "Category";
-            // 
-            // lblDetail
-            // 
-            lblDetail.AutoSize = true;
-            lblDetail.BackColor = Color.Gainsboro;
-            lblDetail.Location = new Point(338, 486);
-            lblDetail.Name = "lblDetail";
-            lblDetail.Size = new Size(108, 25);
-            lblDetail.TabIndex = 121;
-            lblDetail.Text = "Extra Details";
-            // 
             // pictureBox12
             // 
             pictureBox12.BackColor = Color.Gainsboro;
-            pictureBox12.Location = new Point(516, 246);
+            pictureBox12.Location = new Point(613, 246);
             pictureBox12.Margin = new Padding(2);
             pictureBox12.Name = "pictureBox12";
-            pictureBox12.Size = new Size(383, 58);
+            pictureBox12.Size = new Size(286, 58);
             pictureBox12.TabIndex = 122;
             pictureBox12.TabStop = false;
             // 
@@ -406,38 +336,99 @@
             lblTicketStatus.AutoSize = true;
             lblTicketStatus.BackColor = Color.Gainsboro;
             lblTicketStatus.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblTicketStatus.Location = new Point(521, 263);
+            lblTicketStatus.Location = new Point(634, 262);
             lblTicketStatus.Margin = new Padding(2, 0, 2, 0);
             lblTicketStatus.Name = "lblTicketStatus";
             lblTicketStatus.Size = new Size(131, 25);
             lblTicketStatus.TabIndex = 123;
             lblTicketStatus.Text = "Ticket Status:";
             // 
-            // lblStatus
+            // txtID
             // 
-            lblStatus.AutoSize = true;
-            lblStatus.BackColor = Color.Gainsboro;
-            lblStatus.Location = new Point(644, 263);
-            lblStatus.Name = "lblStatus";
-            lblStatus.Size = new Size(60, 25);
-            lblStatus.TabIndex = 124;
-            lblStatus.Text = "Status";
+            txtID.Location = new Point(146, 122);
+            txtID.Name = "txtID";
+            txtID.ReadOnly = true;
+            txtID.Size = new Size(272, 31);
+            txtID.TabIndex = 125;
+            // 
+            // txtCategory
+            // 
+            txtCategory.Location = new Point(609, 123);
+            txtCategory.Name = "txtCategory";
+            txtCategory.ReadOnly = true;
+            txtCategory.Size = new Size(280, 31);
+            txtCategory.TabIndex = 126;
+            // 
+            // txtITMem
+            // 
+            txtITMem.Location = new Point(337, 259);
+            txtITMem.Name = "txtITMem";
+            txtITMem.ReadOnly = true;
+            txtITMem.Size = new Size(254, 31);
+            txtITMem.TabIndex = 127;
+            // 
+            // txtStatus
+            // 
+            txtStatus.Location = new Point(770, 259);
+            txtStatus.Name = "txtStatus";
+            txtStatus.ReadOnly = true;
+            txtStatus.Size = new Size(120, 31);
+            txtStatus.TabIndex = 130;
+            // 
+            // txtUrgency
+            // 
+            txtUrgency.Location = new Point(770, 189);
+            txtUrgency.Name = "txtUrgency";
+            txtUrgency.ReadOnly = true;
+            txtUrgency.Size = new Size(119, 31);
+            txtUrgency.TabIndex = 131;
+            // 
+            // txtRaisedUser
+            // 
+            txtRaisedUser.Location = new Point(268, 190);
+            txtRaisedUser.Name = "txtRaisedUser";
+            txtRaisedUser.ReadOnly = true;
+            txtRaisedUser.Size = new Size(323, 31);
+            txtRaisedUser.TabIndex = 132;
+            // 
+            // txtSummary
+            // 
+            txtSummary.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            txtSummary.Location = new Point(49, 350);
+            txtSummary.Margin = new Padding(1, 2, 1, 2);
+            txtSummary.MaxLength = 500;
+            txtSummary.Multiline = true;
+            txtSummary.Name = "txtSummary";
+            txtSummary.ReadOnly = true;
+            txtSummary.Size = new Size(838, 97);
+            txtSummary.TabIndex = 133;
+            // 
+            // txtExtra
+            // 
+            txtExtra.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            txtExtra.Location = new Point(49, 504);
+            txtExtra.Margin = new Padding(1, 2, 1, 2);
+            txtExtra.MaxLength = 500;
+            txtExtra.Multiline = true;
+            txtExtra.Name = "txtExtra";
+            txtExtra.Size = new Size(838, 78);
+            txtExtra.TabIndex = 134;
             // 
             // generatedReport
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(933, 639);
-            Controls.Add(lblStatus);
+            Controls.Add(txtExtra);
+            Controls.Add(txtSummary);
+            Controls.Add(txtRaisedUser);
+            Controls.Add(txtUrgency);
+            Controls.Add(txtStatus);
+            Controls.Add(txtITMem);
+            Controls.Add(txtCategory);
+            Controls.Add(txtID);
             Controls.Add(lblTicketStatus);
             Controls.Add(pictureBox12);
-            Controls.Add(lblDetail);
-            Controls.Add(lblTicketCategory);
-            Controls.Add(lblUser);
-            Controls.Add(lblTicketUrgency);
-            Controls.Add(lblITMember);
-            Controls.Add(lblSummary);
-            Controls.Add(lblID);
             Controls.Add(lblCategory);
             Controls.Add(lblTicketID);
             Controls.Add(lblRaisedUser);
@@ -507,15 +498,15 @@
         private PictureBox pictureBox2;
         private Label lblTicketSummary;
         private Label lblExtra;
-        private Label lblID;
-        private Label lblSummary;
-        private Label lblITMember;
-        private Label lblTicketUrgency;
-        private Label lblUser;
-        private Label lblTicketCategory;
-        private Label lblDetail;
         private PictureBox pictureBox12;
         private Label lblTicketStatus;
-        private Label lblStatus;
+        private TextBox txtID;
+        private TextBox txtCategory;
+        private TextBox txtITMem;
+        private TextBox txtStatus;
+        private TextBox txtUrgency;
+        private TextBox txtRaisedUser;
+        private TextBox txtSummary;
+        private TextBox txtExtra;
     }
 }
