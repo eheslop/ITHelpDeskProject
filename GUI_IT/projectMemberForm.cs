@@ -58,7 +58,7 @@ namespace GUI_IT
             int y = System.Convert.ToInt32(x);
             string ema = emaill;
             Sql.reraise(y, User, ema, reason, info);
-            Email.sendEmail("Re-Opened", User, 0, x)
+            Email.sendEmail("Re-Opened", User, 0, Convert.ToInt32(cbxid));
         }
 
 

@@ -781,9 +781,9 @@ namespace GUI_IT
             SqlConnection con = Connect();
             String query = "SELECT Reraised_Reason FROM ReopenedTickets WHERE Id = '" + tID.ToString() + "';";
             SqlCommand cmd = new SqlCommand(query, con);
-            string description = (string)cmd.ExecuteScalar();
+            string problem = (string)cmd.ExecuteScalar();
             con.Close();
-            return description;
+            return problem;
         }
 
         public static bool ResetPassword(string user)
