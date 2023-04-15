@@ -776,6 +776,16 @@ namespace GUI_IT
             con.Close();
         }
 
+        public static string getReTicketProblem(string tID)
+        {
+            SqlConnection con = Connect();
+            String query = "SELECT Reraised_Reason FROM ReopenedTickets WHERE Id = '" + tID.ToString() + "';";
+            SqlCommand cmd = new SqlCommand(query, con);
+            string description = (string)cmd.ExecuteScalar();
+            con.Close();
+            return description;
+        }
+
         public static bool ResetPassword(string user)
         {
             SqlConnection con = Connect();
