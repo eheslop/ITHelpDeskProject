@@ -62,6 +62,9 @@
             this.txtSummary = new System.Windows.Forms.TextBox();
             this.txtExtra = new System.Windows.Forms.TextBox();
             this.btnsubmit = new System.Windows.Forms.Button();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureboxIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -75,6 +78,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             this.SuspendLayout();
             // 
             // lblHeader
@@ -153,30 +157,30 @@
             // pictureBox9
             // 
             this.pictureBox9.BackColor = System.Drawing.Color.Gainsboro;
-            this.pictureBox9.Location = new System.Drawing.Point(31, 142);
+            this.pictureBox9.Location = new System.Drawing.Point(31, 137);
             this.pictureBox9.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(453, 46);
+            this.pictureBox9.Size = new System.Drawing.Size(453, 37);
             this.pictureBox9.TabIndex = 93;
             this.pictureBox9.TabStop = false;
             // 
             // pictureBox8
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.Gainsboro;
-            this.pictureBox8.Location = new System.Drawing.Point(490, 142);
+            this.pictureBox8.Location = new System.Drawing.Point(488, 137);
             this.pictureBox8.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(229, 46);
+            this.pictureBox8.Size = new System.Drawing.Size(229, 37);
             this.pictureBox8.TabIndex = 83;
             this.pictureBox8.TabStop = false;
             // 
             // pictureBox6
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Gainsboro;
-            this.pictureBox6.Location = new System.Drawing.Point(31, 196);
+            this.pictureBox6.Location = new System.Drawing.Point(31, 179);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(453, 46);
+            this.pictureBox6.Size = new System.Drawing.Size(453, 47);
             this.pictureBox6.TabIndex = 82;
             this.pictureBox6.TabStop = false;
             // 
@@ -193,7 +197,7 @@
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox4.Location = new System.Drawing.Point(19, 82);
+            this.pictureBox4.Location = new System.Drawing.Point(11, 73);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(710, 411);
@@ -240,7 +244,7 @@
             this.lblRaisedUser.AutoSize = true;
             this.lblRaisedUser.BackColor = System.Drawing.Color.Gainsboro;
             this.lblRaisedUser.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblRaisedUser.Location = new System.Drawing.Point(34, 155);
+            this.lblRaisedUser.Location = new System.Drawing.Point(34, 148);
             this.lblRaisedUser.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblRaisedUser.Name = "lblRaisedUser";
             this.lblRaisedUser.Size = new System.Drawing.Size(186, 19);
@@ -252,7 +256,7 @@
             this.lblitName.AutoSize = true;
             this.lblitName.BackColor = System.Drawing.Color.Gainsboro;
             this.lblitName.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblitName.Location = new System.Drawing.Point(34, 209);
+            this.lblitName.Location = new System.Drawing.Point(30, 195);
             this.lblitName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblitName.Name = "lblitName";
             this.lblitName.Size = new System.Drawing.Size(240, 19);
@@ -264,7 +268,7 @@
             this.lblUrgency.AutoSize = true;
             this.lblUrgency.BackColor = System.Drawing.Color.Gainsboro;
             this.lblUrgency.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblUrgency.Location = new System.Drawing.Point(498, 154);
+            this.lblUrgency.Location = new System.Drawing.Point(494, 148);
             this.lblUrgency.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblUrgency.Name = "lblUrgency";
             this.lblUrgency.Size = new System.Drawing.Size(126, 19);
@@ -274,10 +278,10 @@
             // pictureBox10
             // 
             this.pictureBox10.BackColor = System.Drawing.Color.Gainsboro;
-            this.pictureBox10.Location = new System.Drawing.Point(30, 253);
+            this.pictureBox10.Location = new System.Drawing.Point(30, 281);
             this.pictureBox10.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(689, 114);
+            this.pictureBox10.Size = new System.Drawing.Size(689, 99);
             this.pictureBox10.TabIndex = 102;
             this.pictureBox10.TabStop = false;
             // 
@@ -294,10 +298,10 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Gainsboro;
-            this.pictureBox2.Location = new System.Drawing.Point(30, 376);
+            this.pictureBox2.Location = new System.Drawing.Point(30, 384);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(689, 100);
+            this.pictureBox2.Size = new System.Drawing.Size(689, 92);
             this.pictureBox2.TabIndex = 104;
             this.pictureBox2.TabStop = false;
             // 
@@ -306,7 +310,7 @@
             this.lblTicketSummary.AutoSize = true;
             this.lblTicketSummary.BackColor = System.Drawing.Color.Gainsboro;
             this.lblTicketSummary.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTicketSummary.Location = new System.Drawing.Point(34, 258);
+            this.lblTicketSummary.Location = new System.Drawing.Point(34, 287);
             this.lblTicketSummary.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTicketSummary.Name = "lblTicketSummary";
             this.lblTicketSummary.Size = new System.Drawing.Size(135, 19);
@@ -318,7 +322,7 @@
             this.lblExtra.AutoSize = true;
             this.lblExtra.BackColor = System.Drawing.Color.Gainsboro;
             this.lblExtra.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblExtra.Location = new System.Drawing.Point(34, 382);
+            this.lblExtra.Location = new System.Drawing.Point(34, 393);
             this.lblExtra.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblExtra.Name = "lblExtra";
             this.lblExtra.Size = new System.Drawing.Size(245, 19);
@@ -328,7 +332,7 @@
             // pictureBox12
             // 
             this.pictureBox12.BackColor = System.Drawing.Color.Gainsboro;
-            this.pictureBox12.Location = new System.Drawing.Point(490, 197);
+            this.pictureBox12.Location = new System.Drawing.Point(488, 180);
             this.pictureBox12.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(229, 46);
@@ -340,7 +344,7 @@
             this.lblTicketStatus.AutoSize = true;
             this.lblTicketStatus.BackColor = System.Drawing.Color.Gainsboro;
             this.lblTicketStatus.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTicketStatus.Location = new System.Drawing.Point(507, 210);
+            this.lblTicketStatus.Location = new System.Drawing.Point(494, 191);
             this.lblTicketStatus.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTicketStatus.Name = "lblTicketStatus";
             this.lblTicketStatus.Size = new System.Drawing.Size(109, 19);
@@ -367,7 +371,7 @@
             // 
             // txtITMem
             // 
-            this.txtITMem.Location = new System.Drawing.Point(270, 207);
+            this.txtITMem.Location = new System.Drawing.Point(262, 191);
             this.txtITMem.Margin = new System.Windows.Forms.Padding(2);
             this.txtITMem.Name = "txtITMem";
             this.txtITMem.ReadOnly = true;
@@ -376,7 +380,7 @@
             // 
             // txtStatus
             // 
-            this.txtStatus.Location = new System.Drawing.Point(616, 207);
+            this.txtStatus.Location = new System.Drawing.Point(607, 187);
             this.txtStatus.Margin = new System.Windows.Forms.Padding(2);
             this.txtStatus.Name = "txtStatus";
             this.txtStatus.ReadOnly = true;
@@ -385,16 +389,16 @@
             // 
             // txtUrgency
             // 
-            this.txtUrgency.Location = new System.Drawing.Point(616, 151);
+            this.txtUrgency.Location = new System.Drawing.Point(624, 144);
             this.txtUrgency.Margin = new System.Windows.Forms.Padding(2);
             this.txtUrgency.Name = "txtUrgency";
             this.txtUrgency.ReadOnly = true;
-            this.txtUrgency.Size = new System.Drawing.Size(96, 27);
+            this.txtUrgency.Size = new System.Drawing.Size(80, 27);
             this.txtUrgency.TabIndex = 131;
             // 
             // txtRaisedUser
             // 
-            this.txtRaisedUser.Location = new System.Drawing.Point(214, 152);
+            this.txtRaisedUser.Location = new System.Drawing.Point(224, 144);
             this.txtRaisedUser.Margin = new System.Windows.Forms.Padding(2);
             this.txtRaisedUser.Name = "txtRaisedUser";
             this.txtRaisedUser.ReadOnly = true;
@@ -404,29 +408,29 @@
             // txtSummary
             // 
             this.txtSummary.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtSummary.Location = new System.Drawing.Point(39, 280);
+            this.txtSummary.Location = new System.Drawing.Point(34, 308);
             this.txtSummary.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.txtSummary.MaxLength = 500;
             this.txtSummary.Multiline = true;
             this.txtSummary.Name = "txtSummary";
             this.txtSummary.ReadOnly = true;
-            this.txtSummary.Size = new System.Drawing.Size(671, 78);
+            this.txtSummary.Size = new System.Drawing.Size(666, 57);
             this.txtSummary.TabIndex = 133;
             // 
             // txtExtra
             // 
             this.txtExtra.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtExtra.Location = new System.Drawing.Point(39, 403);
+            this.txtExtra.Location = new System.Drawing.Point(39, 414);
             this.txtExtra.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.txtExtra.MaxLength = 500;
             this.txtExtra.Multiline = true;
             this.txtExtra.Name = "txtExtra";
-            this.txtExtra.Size = new System.Drawing.Size(538, 60);
+            this.txtExtra.Size = new System.Drawing.Size(538, 49);
             this.txtExtra.TabIndex = 134;
             // 
             // btnsubmit
             // 
-            this.btnsubmit.Location = new System.Drawing.Point(596, 404);
+            this.btnsubmit.Location = new System.Drawing.Point(596, 414);
             this.btnsubmit.Name = "btnsubmit";
             this.btnsubmit.Size = new System.Drawing.Size(94, 39);
             this.btnsubmit.TabIndex = 135;
@@ -434,11 +438,46 @@
             this.btnsubmit.UseVisualStyleBackColor = true;
             this.btnsubmit.Click += new System.EventHandler(this.btnsubmit_Click);
             // 
+            // pictureBox13
+            // 
+            this.pictureBox13.BackColor = System.Drawing.Color.Gainsboro;
+            this.pictureBox13.Location = new System.Drawing.Point(30, 230);
+            this.pictureBox13.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(687, 46);
+            this.pictureBox13.TabIndex = 136;
+            this.pictureBox13.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Gainsboro;
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(39, 243);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(163, 19);
+            this.label1.TabIndex = 137;
+            this.label1.Text = "Ticket Collaborators:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(202, 239);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(502, 27);
+            this.textBox1.TabIndex = 138;
+            // 
             // generatedReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(746, 511);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox13);
             this.Controls.Add(this.btnsubmit);
             this.Controls.Add(this.txtExtra);
             this.Controls.Add(this.txtSummary);
@@ -492,6 +531,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -532,5 +572,8 @@
         private TextBox txtSummary;
         private TextBox txtExtra;
         private Button btnsubmit;
+        private PictureBox pictureBox13;
+        private Label label1;
+        private TextBox textBox1;
     }
 }

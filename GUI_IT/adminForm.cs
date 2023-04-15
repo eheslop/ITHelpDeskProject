@@ -211,10 +211,11 @@ namespace GUI_IT
                 string c = Sql.getTicketPriority(y);
                 string d = Sql.getTicketUser(y);
                 string g = Sql.getTicketCategory(y);
-                string l = Sql.solution(y);
+                string l = Sql.solution(y); 
                 string f = Sql.getTicketDescription(y);
                 string h = "Solved";
-                Sql.report(y, c, b, d, g, f, l, newUser_.Username, h);
+                string n = Sql.getColl(y);
+                Sql.report(y, c, b, d, g, f, l, newUser_.Username, h, n);
             }
             generatedReport report = new generatedReport(y);
             report.ShowDialog();
@@ -250,7 +251,8 @@ namespace GUI_IT
                 string l = "NONE";
                 string f = Sql.getTicketDescription(y);
                 string h = Sql.getTicketStat(y);
-                Sql.report(y, c, b, d, g, f, l, newUser_.Username, h);
+                string n = Sql.getColl(y);
+                Sql.report(y, c, b, d, g, f, l, newUser_.Username, h,n);
             }
             generatedReport report = new generatedReport(y);
             report.ShowDialog();
