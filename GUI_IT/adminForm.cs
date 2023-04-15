@@ -64,6 +64,7 @@ namespace GUI_IT
             cbxUnsolvedID.DataSource = Sql.SelectTick();
             cbxUnsolvedID.DisplayMember = "Id";
         }
+
         /*
         private void combo2()
         {

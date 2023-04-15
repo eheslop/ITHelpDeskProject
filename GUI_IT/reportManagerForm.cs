@@ -56,14 +56,14 @@ namespace GUI_IT
 
         private void Fill1()
         {
-            
+
             DGVAssign.DataSource = Sql.ticketsUnsolved();
             DGVAssign.EditMode = DataGridViewEditMode.EditOnEnter;
         }
 
         private void Fill2()
         {
-            
+
             DGVT.DataSource = Sql.ticketssolvedAll();
             DGVAssign.EditMode = DataGridViewEditMode.EditOnEnter;
         }
@@ -77,7 +77,7 @@ namespace GUI_IT
 
         private void combo1()
         {
-           cbxid.DataSource = Sql.SelectTick();
+            cbxid.DataSource = Sql.SelectTick();
             cbxid.DisplayMember = "Id";
         }
 
