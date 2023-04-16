@@ -1217,6 +1217,9 @@ the ID, urgency level, problem type and description of problem. You can track th
         AioAAKMIqAAAjCKgAgAwioAKAMAoAioAAKMIqAAAjPKHP/zh1f8Bq0ktH5JL8f0AAAAASUVORK5CYII=
 </value>
   </data>
+  <metadata name="pictureBox14.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="pictureBox14.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAqgAAANwCAYAAADjopiqAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
@@ -1482,6 +1485,9 @@ the ID, urgency level, problem type and description of problem. You can track th
         AioAAKMIqAAAjCKgAgAwioAKAMAoAioAAKMIqAAAjPKHP/zh1f8Bq0ktH5JL8f0AAAAASUVORK5CYII=
 </value>
   </data>
+  <metadata name="pictureBox15.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="pictureBox15.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAqYAAANtCAYAAABCI7lcAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
@@ -1952,6 +1958,9 @@ the ID, urgency level, problem type and description of problem. You can track th
         MJUkSdIWDKaSJEnagsFUkiRJWzCYSpIkaQsGU0mSJG3hn/7pnz7+//5Z0dBwPNdoAAAAAElFTkSuQmCC
 </value>
   </data>
+  <metadata name="pictureBox18.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="pictureBox18.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAqUAAANtCAYAAACpFAJfAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
@@ -2130,6 +2139,9 @@ the ID, urgency level, problem type and description of problem. You can track th
         RK5CYII=
 </value>
   </data>
+  <metadata name="pictureBox19.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="pictureBox19.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAqYAAANvCAYAAAAP6xhXAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS

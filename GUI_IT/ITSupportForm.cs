@@ -134,5 +134,10 @@ namespace GUI_IT
             Sql.add2(b, y, c);
             MessageBox.Show("The ticket you wished to share has now been sent to the user of your choosing.", "Ticket Shared Successfully!", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void frmITSupport_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -660,6 +660,7 @@
             Margin = new Padding(1, 2, 1, 2);
             Name = "frmITSupport";
             Text = "IT Help Desk IT Support Team Ticket Dashboard";
+            Load += frmITSupport_Load;
             ((System.ComponentModel.ISupportInitialize)pictureLogo).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)Rectangle1).EndInit();
