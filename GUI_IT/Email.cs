@@ -119,7 +119,7 @@ namespace GUI_IT
                 data[0] = "Notice: Ticket Solved";
                 data[1] = "Hello " + Sql.getName(user)
                         + "!\n\nIT Ticket " + tID + " has been marked as solved." + "\n\n"
-                        + "The following solution was provided: " + Sql.getTicketSolution(tID) + "\n\n"
+                        + "The following solution was provided: " + Sql.solution(tID) + "\n\n"
                         + "-Red Agents IT";
             }
             if(template == "Password Reset")

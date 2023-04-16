@@ -29,458 +29,472 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(generatedReport));
-            lblHeader = new Label();
-            pictureBox5 = new PictureBox();
-            pictureboxIcon = new PictureBox();
-            pictureBox3 = new PictureBox();
-            lblNameUser = new Label();
-            lblTicketID = new Label();
-            pictureBox9 = new PictureBox();
-            pictureBox8 = new PictureBox();
-            pictureBox6 = new PictureBox();
-            pictureBox7 = new PictureBox();
-            pictureBox4 = new PictureBox();
-            pictureBox1 = new PictureBox();
-            Header = new Label();
-            lblCategory = new Label();
-            lblRaisedUser = new Label();
-            lblitName = new Label();
-            lblUrgency = new Label();
-            pictureBox10 = new PictureBox();
-            pictureBox11 = new PictureBox();
-            pictureBox2 = new PictureBox();
-            lblTicketSummary = new Label();
-            lblExtra = new Label();
-            lblID = new Label();
-            lblSummary = new Label();
-            lblITMember = new Label();
-            lblTicketUrgency = new Label();
-            lblUser = new Label();
-            lblTicketCategory = new Label();
-            lblDetail = new Label();
-            pictureBox12 = new PictureBox();
-            lblTicketStatus = new Label();
-            lblStatus = new Label();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureboxIcon).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
-            SuspendLayout();
+            this.lblHeader = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureboxIcon = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.lblNameUser = new System.Windows.Forms.Label();
+            this.lblTicketID = new System.Windows.Forms.Label();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Header = new System.Windows.Forms.Label();
+            this.lblCategory = new System.Windows.Forms.Label();
+            this.lblRaisedUser = new System.Windows.Forms.Label();
+            this.lblitName = new System.Windows.Forms.Label();
+            this.lblUrgency = new System.Windows.Forms.Label();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.lblTicketSummary = new System.Windows.Forms.Label();
+            this.lblExtra = new System.Windows.Forms.Label();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.lblTicketStatus = new System.Windows.Forms.Label();
+            this.txtID = new System.Windows.Forms.TextBox();
+            this.txtCategory = new System.Windows.Forms.TextBox();
+            this.txtITMem = new System.Windows.Forms.TextBox();
+            this.txtStatus = new System.Windows.Forms.TextBox();
+            this.txtUrgency = new System.Windows.Forms.TextBox();
+            this.txtRaisedUser = new System.Windows.Forms.TextBox();
+            this.txtSummary = new System.Windows.Forms.TextBox();
+            this.txtExtra = new System.Windows.Forms.TextBox();
+            this.btnsubmit = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureboxIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            this.SuspendLayout();
             // 
             // lblHeader
             // 
-            lblHeader.AutoSize = true;
-            lblHeader.BackColor = Color.FromArgb(64, 0, 0);
-            lblHeader.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Bold, GraphicsUnit.Point);
-            lblHeader.ForeColor = Color.White;
-            lblHeader.Location = new Point(3, 6);
-            lblHeader.Margin = new Padding(2, 0, 2, 0);
-            lblHeader.Name = "lblHeader";
-            lblHeader.Size = new Size(280, 26);
-            lblHeader.TabIndex = 63;
-            lblHeader.Text = "Red Agents IT Help Desk";
+            this.lblHeader.AutoSize = true;
+            this.lblHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblHeader.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblHeader.ForeColor = System.Drawing.Color.White;
+            this.lblHeader.Location = new System.Drawing.Point(2, 5);
+            this.lblHeader.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblHeader.Name = "lblHeader";
+            this.lblHeader.Size = new System.Drawing.Size(245, 24);
+            this.lblHeader.TabIndex = 63;
+            this.lblHeader.Text = "Red Agents IT Help Desk";
             // 
             // pictureBox5
             // 
-            pictureBox5.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            pictureBox5.BackColor = Color.FromArgb(64, 0, 0);
-            pictureBox5.Location = new Point(-7, -2);
-            pictureBox5.Margin = new Padding(2);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(1004, 41);
-            pictureBox5.TabIndex = 62;
-            pictureBox5.TabStop = false;
+            this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.pictureBox5.Location = new System.Drawing.Point(-6, -2);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(803, 33);
+            this.pictureBox5.TabIndex = 62;
+            this.pictureBox5.TabStop = false;
             // 
             // pictureboxIcon
             // 
-            pictureboxIcon.BackColor = Color.Black;
-            pictureboxIcon.Image = Properties.Resources.redAgentsLogo;
-            pictureboxIcon.Location = new Point(8, 43);
-            pictureboxIcon.Margin = new Padding(2);
-            pictureboxIcon.Name = "pictureboxIcon";
-            pictureboxIcon.Size = new Size(38, 32);
-            pictureboxIcon.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureboxIcon.TabIndex = 61;
-            pictureboxIcon.TabStop = false;
+            this.pictureboxIcon.BackColor = System.Drawing.Color.Black;
+            this.pictureboxIcon.Image = global::GUI_IT.Properties.Resources.redAgentsLogo;
+            this.pictureboxIcon.Location = new System.Drawing.Point(6, 34);
+            this.pictureboxIcon.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureboxIcon.Name = "pictureboxIcon";
+            this.pictureboxIcon.Size = new System.Drawing.Size(30, 26);
+            this.pictureboxIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureboxIcon.TabIndex = 61;
+            this.pictureboxIcon.TabStop = false;
             // 
             // pictureBox3
             // 
-            pictureBox3.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            pictureBox3.BackColor = Color.Black;
-            pictureBox3.Location = new Point(-11, 34);
-            pictureBox3.Margin = new Padding(2);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(1027, 50);
-            pictureBox3.TabIndex = 60;
-            pictureBox3.TabStop = false;
+            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox3.BackColor = System.Drawing.Color.Black;
+            this.pictureBox3.Location = new System.Drawing.Point(-9, 27);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(822, 40);
+            this.pictureBox3.TabIndex = 60;
+            this.pictureBox3.TabStop = false;
             // 
             // lblNameUser
             // 
-            lblNameUser.AutoSize = true;
-            lblNameUser.BackColor = Color.Gainsboro;
-            lblNameUser.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            lblNameUser.ForeColor = Color.Black;
-            lblNameUser.Location = new Point(118, 185);
-            lblNameUser.Margin = new Padding(2, 0, 2, 0);
-            lblNameUser.Name = "lblNameUser";
-            lblNameUser.Size = new Size(0, 24);
-            lblNameUser.TabIndex = 95;
+            this.lblNameUser.AutoSize = true;
+            this.lblNameUser.BackColor = System.Drawing.Color.Gainsboro;
+            this.lblNameUser.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblNameUser.ForeColor = System.Drawing.Color.Black;
+            this.lblNameUser.Location = new System.Drawing.Point(94, 148);
+            this.lblNameUser.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNameUser.Name = "lblNameUser";
+            this.lblNameUser.Size = new System.Drawing.Size(0, 20);
+            this.lblNameUser.TabIndex = 95;
             // 
             // lblTicketID
             // 
-            lblTicketID.AutoSize = true;
-            lblTicketID.BackColor = Color.Gainsboro;
-            lblTicketID.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblTicketID.Location = new Point(51, 126);
-            lblTicketID.Margin = new Padding(2, 0, 2, 0);
-            lblTicketID.Name = "lblTicketID";
-            lblTicketID.Size = new Size(100, 25);
-            lblTicketID.TabIndex = 94;
-            lblTicketID.Text = "Ticket ID: ";
+            this.lblTicketID.AutoSize = true;
+            this.lblTicketID.BackColor = System.Drawing.Color.Gainsboro;
+            this.lblTicketID.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTicketID.Location = new System.Drawing.Point(41, 101);
+            this.lblTicketID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTicketID.Name = "lblTicketID";
+            this.lblTicketID.Size = new System.Drawing.Size(83, 19);
+            this.lblTicketID.TabIndex = 94;
+            this.lblTicketID.Text = "Ticket ID: ";
             // 
             // pictureBox9
             // 
-            pictureBox9.BackColor = Color.Gainsboro;
-            pictureBox9.Location = new Point(39, 177);
-            pictureBox9.Margin = new Padding(2);
-            pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(566, 58);
-            pictureBox9.TabIndex = 93;
-            pictureBox9.TabStop = false;
+            this.pictureBox9.BackColor = System.Drawing.Color.Gainsboro;
+            this.pictureBox9.Location = new System.Drawing.Point(31, 142);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(453, 46);
+            this.pictureBox9.TabIndex = 93;
+            this.pictureBox9.TabStop = false;
             // 
             // pictureBox8
             // 
-            pictureBox8.BackColor = Color.Gainsboro;
-            pictureBox8.Location = new Point(613, 177);
-            pictureBox8.Margin = new Padding(2);
-            pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(286, 58);
-            pictureBox8.TabIndex = 83;
-            pictureBox8.TabStop = false;
+            this.pictureBox8.BackColor = System.Drawing.Color.Gainsboro;
+            this.pictureBox8.Location = new System.Drawing.Point(490, 142);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(229, 46);
+            this.pictureBox8.TabIndex = 83;
+            this.pictureBox8.TabStop = false;
             // 
             // pictureBox6
             // 
-            pictureBox6.BackColor = Color.Gainsboro;
-            pictureBox6.Location = new Point(39, 245);
-            pictureBox6.Margin = new Padding(2);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(460, 58);
-            pictureBox6.TabIndex = 82;
-            pictureBox6.TabStop = false;
+            this.pictureBox6.BackColor = System.Drawing.Color.Gainsboro;
+            this.pictureBox6.Location = new System.Drawing.Point(31, 196);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(453, 46);
+            this.pictureBox6.TabIndex = 82;
+            this.pictureBox6.TabStop = false;
             // 
             // pictureBox7
             // 
-            pictureBox7.BackColor = Color.Gainsboro;
-            pictureBox7.Location = new Point(38, 111);
-            pictureBox7.Margin = new Padding(2);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(393, 55);
-            pictureBox7.TabIndex = 80;
-            pictureBox7.TabStop = false;
+            this.pictureBox7.BackColor = System.Drawing.Color.Gainsboro;
+            this.pictureBox7.Location = new System.Drawing.Point(30, 89);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(314, 44);
+            this.pictureBox7.TabIndex = 80;
+            this.pictureBox7.TabStop = false;
             // 
             // pictureBox4
             // 
-            pictureBox4.BackColor = Color.Silver;
-            pictureBox4.Location = new Point(24, 102);
-            pictureBox4.Margin = new Padding(2);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(887, 514);
-            pictureBox4.TabIndex = 78;
-            pictureBox4.TabStop = false;
+            this.pictureBox4.BackColor = System.Drawing.Color.Silver;
+            this.pictureBox4.Location = new System.Drawing.Point(19, 82);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(710, 411);
+            this.pictureBox4.TabIndex = 78;
+            this.pictureBox4.TabStop = false;
             // 
             // pictureBox1
             // 
-            pictureBox1.BackColor = Color.FromArgb(64, 64, 64);
-            pictureBox1.Location = new Point(12, 91);
-            pictureBox1.Margin = new Padding(2);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(910, 540);
-            pictureBox1.TabIndex = 77;
-            pictureBox1.TabStop = false;
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.pictureBox1.Location = new System.Drawing.Point(10, 73);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(728, 432);
+            this.pictureBox1.TabIndex = 77;
+            this.pictureBox1.TabStop = false;
             // 
             // Header
             // 
-            Header.AutoSize = true;
-            Header.BackColor = Color.Black;
-            Header.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            Header.ForeColor = Color.White;
-            Header.Location = new Point(51, 50);
-            Header.Name = "Header";
-            Header.Size = new Size(193, 25);
-            Header.TabIndex = 96;
-            Header.Text = "Generated Reports";
+            this.Header.AutoSize = true;
+            this.Header.BackColor = System.Drawing.Color.Black;
+            this.Header.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Header.ForeColor = System.Drawing.Color.White;
+            this.Header.Location = new System.Drawing.Point(41, 40);
+            this.Header.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Header.Name = "Header";
+            this.Header.Size = new System.Drawing.Size(168, 20);
+            this.Header.TabIndex = 96;
+            this.Header.Text = "Generated Reports";
             // 
             // lblCategory
             // 
-            lblCategory.AutoSize = true;
-            lblCategory.BackColor = Color.Gainsboro;
-            lblCategory.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblCategory.Location = new Point(452, 126);
-            lblCategory.Margin = new Padding(2, 0, 2, 0);
-            lblCategory.Name = "lblCategory";
-            lblCategory.Size = new Size(156, 25);
-            lblCategory.TabIndex = 97;
-            lblCategory.Text = "Ticket Category:";
+            this.lblCategory.AutoSize = true;
+            this.lblCategory.BackColor = System.Drawing.Color.Gainsboro;
+            this.lblCategory.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblCategory.Location = new System.Drawing.Point(362, 101);
+            this.lblCategory.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCategory.Name = "lblCategory";
+            this.lblCategory.Size = new System.Drawing.Size(131, 19);
+            this.lblCategory.TabIndex = 97;
+            this.lblCategory.Text = "Ticket Category:";
             // 
             // lblRaisedUser
             // 
-            lblRaisedUser.AutoSize = true;
-            lblRaisedUser.BackColor = Color.Gainsboro;
-            lblRaisedUser.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblRaisedUser.Location = new Point(49, 194);
-            lblRaisedUser.Margin = new Padding(2, 0, 2, 0);
-            lblRaisedUser.Name = "lblRaisedUser";
-            lblRaisedUser.Size = new Size(224, 25);
-            lblRaisedUser.TabIndex = 98;
-            lblRaisedUser.Text = "User who Raised Ticket:";
+            this.lblRaisedUser.AutoSize = true;
+            this.lblRaisedUser.BackColor = System.Drawing.Color.Gainsboro;
+            this.lblRaisedUser.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblRaisedUser.Location = new System.Drawing.Point(34, 155);
+            this.lblRaisedUser.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblRaisedUser.Name = "lblRaisedUser";
+            this.lblRaisedUser.Size = new System.Drawing.Size(186, 19);
+            this.lblRaisedUser.TabIndex = 98;
+            this.lblRaisedUser.Text = "User who Raised Ticket:";
             // 
             // lblitName
             // 
-            lblitName.AutoSize = true;
-            lblitName.BackColor = Color.Gainsboro;
-            lblitName.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblitName.Location = new Point(51, 261);
-            lblitName.Margin = new Padding(2, 0, 2, 0);
-            lblitName.Name = "lblitName";
-            lblitName.Size = new Size(291, 25);
-            lblitName.TabIndex = 100;
-            lblitName.Text = "IT Member Assigned to Ticket: ";
+            this.lblitName.AutoSize = true;
+            this.lblitName.BackColor = System.Drawing.Color.Gainsboro;
+            this.lblitName.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblitName.Location = new System.Drawing.Point(34, 209);
+            this.lblitName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblitName.Name = "lblitName";
+            this.lblitName.Size = new System.Drawing.Size(240, 19);
+            this.lblitName.TabIndex = 100;
+            this.lblitName.Text = "IT Member Assigned to Ticket: ";
             // 
             // lblUrgency
             // 
-            lblUrgency.AutoSize = true;
-            lblUrgency.BackColor = Color.Gainsboro;
-            lblUrgency.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblUrgency.Location = new Point(622, 193);
-            lblUrgency.Margin = new Padding(2, 0, 2, 0);
-            lblUrgency.Name = "lblUrgency";
-            lblUrgency.Size = new Size(150, 25);
-            lblUrgency.TabIndex = 101;
-            lblUrgency.Text = "Ticket Urgency:";
+            this.lblUrgency.AutoSize = true;
+            this.lblUrgency.BackColor = System.Drawing.Color.Gainsboro;
+            this.lblUrgency.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblUrgency.Location = new System.Drawing.Point(498, 154);
+            this.lblUrgency.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblUrgency.Name = "lblUrgency";
+            this.lblUrgency.Size = new System.Drawing.Size(126, 19);
+            this.lblUrgency.TabIndex = 101;
+            this.lblUrgency.Text = "Ticket Urgency:";
             // 
             // pictureBox10
             // 
-            pictureBox10.BackColor = Color.Gainsboro;
-            pictureBox10.Location = new Point(38, 316);
-            pictureBox10.Margin = new Padding(2);
-            pictureBox10.Name = "pictureBox10";
-            pictureBox10.Size = new Size(861, 143);
-            pictureBox10.TabIndex = 102;
-            pictureBox10.TabStop = false;
+            this.pictureBox10.BackColor = System.Drawing.Color.Gainsboro;
+            this.pictureBox10.Location = new System.Drawing.Point(30, 253);
+            this.pictureBox10.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(689, 114);
+            this.pictureBox10.TabIndex = 102;
+            this.pictureBox10.TabStop = false;
             // 
             // pictureBox11
             // 
-            pictureBox11.BackColor = Color.Gainsboro;
-            pictureBox11.Location = new Point(444, 111);
-            pictureBox11.Margin = new Padding(2);
-            pictureBox11.Name = "pictureBox11";
-            pictureBox11.Size = new Size(455, 55);
-            pictureBox11.TabIndex = 103;
-            pictureBox11.TabStop = false;
+            this.pictureBox11.BackColor = System.Drawing.Color.Gainsboro;
+            this.pictureBox11.Location = new System.Drawing.Point(355, 89);
+            this.pictureBox11.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(364, 44);
+            this.pictureBox11.TabIndex = 103;
+            this.pictureBox11.TabStop = false;
             // 
             // pictureBox2
             // 
-            pictureBox2.BackColor = Color.Gainsboro;
-            pictureBox2.Location = new Point(38, 470);
-            pictureBox2.Margin = new Padding(2);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(861, 125);
-            pictureBox2.TabIndex = 104;
-            pictureBox2.TabStop = false;
+            this.pictureBox2.BackColor = System.Drawing.Color.Gainsboro;
+            this.pictureBox2.Location = new System.Drawing.Point(30, 376);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(689, 100);
+            this.pictureBox2.TabIndex = 104;
+            this.pictureBox2.TabStop = false;
             // 
             // lblTicketSummary
             // 
-            lblTicketSummary.AutoSize = true;
-            lblTicketSummary.BackColor = Color.Gainsboro;
-            lblTicketSummary.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblTicketSummary.Location = new Point(51, 333);
-            lblTicketSummary.Margin = new Padding(2, 0, 2, 0);
-            lblTicketSummary.Name = "lblTicketSummary";
-            lblTicketSummary.Size = new Size(162, 25);
-            lblTicketSummary.TabIndex = 107;
-            lblTicketSummary.Text = "Ticket Summary:";
+            this.lblTicketSummary.AutoSize = true;
+            this.lblTicketSummary.BackColor = System.Drawing.Color.Gainsboro;
+            this.lblTicketSummary.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTicketSummary.Location = new System.Drawing.Point(34, 258);
+            this.lblTicketSummary.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTicketSummary.Name = "lblTicketSummary";
+            this.lblTicketSummary.Size = new System.Drawing.Size(135, 19);
+            this.lblTicketSummary.TabIndex = 107;
+            this.lblTicketSummary.Text = "Ticket Summary:";
             // 
             // lblExtra
             // 
-            lblExtra.AutoSize = true;
-            lblExtra.BackColor = Color.Gainsboro;
-            lblExtra.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblExtra.Location = new Point(52, 486);
-            lblExtra.Margin = new Padding(2, 0, 2, 0);
-            lblExtra.Name = "lblExtra";
-            lblExtra.Size = new Size(293, 25);
-            lblExtra.TabIndex = 108;
-            lblExtra.Text = "Extra Information about Ticket:";
-            // 
-            // lblID
-            // 
-            lblID.AutoSize = true;
-            lblID.BackColor = Color.Gainsboro;
-            lblID.Location = new Point(139, 125);
-            lblID.Name = "lblID";
-            lblID.Size = new Size(30, 25);
-            lblID.TabIndex = 114;
-            lblID.Text = "ID";
-            // 
-            // lblSummary
-            // 
-            lblSummary.AutoSize = true;
-            lblSummary.BackColor = Color.Gainsboro;
-            lblSummary.Location = new Point(205, 333);
-            lblSummary.Name = "lblSummary";
-            lblSummary.Size = new Size(138, 25);
-            lblSummary.TabIndex = 116;
-            lblSummary.Text = "Ticket Summary";
-            // 
-            // lblITMember
-            // 
-            lblITMember.AutoSize = true;
-            lblITMember.BackColor = Color.Gainsboro;
-            lblITMember.Location = new Point(330, 261);
-            lblITMember.Name = "lblITMember";
-            lblITMember.Size = new Size(129, 25);
-            lblITMember.TabIndex = 117;
-            lblITMember.Text = "Ticket Member";
-            // 
-            // lblTicketUrgency
-            // 
-            lblTicketUrgency.AutoSize = true;
-            lblTicketUrgency.BackColor = Color.Gainsboro;
-            lblTicketUrgency.Location = new Point(765, 193);
-            lblTicketUrgency.Name = "lblTicketUrgency";
-            lblTicketUrgency.Size = new Size(77, 25);
-            lblTicketUrgency.TabIndex = 118;
-            lblTicketUrgency.Text = "Urgency";
-            // 
-            // lblUser
-            // 
-            lblUser.AutoSize = true;
-            lblUser.BackColor = Color.Gainsboro;
-            lblUser.Location = new Point(267, 194);
-            lblUser.Name = "lblUser";
-            lblUser.Size = new Size(47, 25);
-            lblUser.TabIndex = 119;
-            lblUser.Text = "User";
-            // 
-            // lblTicketCategory
-            // 
-            lblTicketCategory.AutoSize = true;
-            lblTicketCategory.BackColor = Color.Gainsboro;
-            lblTicketCategory.Location = new Point(600, 126);
-            lblTicketCategory.Name = "lblTicketCategory";
-            lblTicketCategory.Size = new Size(84, 25);
-            lblTicketCategory.TabIndex = 120;
-            lblTicketCategory.Text = "Category";
-            // 
-            // lblDetail
-            // 
-            lblDetail.AutoSize = true;
-            lblDetail.BackColor = Color.Gainsboro;
-            lblDetail.Location = new Point(338, 486);
-            lblDetail.Name = "lblDetail";
-            lblDetail.Size = new Size(108, 25);
-            lblDetail.TabIndex = 121;
-            lblDetail.Text = "Extra Details";
+            this.lblExtra.AutoSize = true;
+            this.lblExtra.BackColor = System.Drawing.Color.Gainsboro;
+            this.lblExtra.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblExtra.Location = new System.Drawing.Point(34, 382);
+            this.lblExtra.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblExtra.Name = "lblExtra";
+            this.lblExtra.Size = new System.Drawing.Size(245, 19);
+            this.lblExtra.TabIndex = 108;
+            this.lblExtra.Text = "Extra Information about Ticket:";
             // 
             // pictureBox12
             // 
-            pictureBox12.BackColor = Color.Gainsboro;
-            pictureBox12.Location = new Point(516, 246);
-            pictureBox12.Margin = new Padding(2);
-            pictureBox12.Name = "pictureBox12";
-            pictureBox12.Size = new Size(383, 58);
-            pictureBox12.TabIndex = 122;
-            pictureBox12.TabStop = false;
+            this.pictureBox12.BackColor = System.Drawing.Color.Gainsboro;
+            this.pictureBox12.Location = new System.Drawing.Point(490, 197);
+            this.pictureBox12.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(229, 46);
+            this.pictureBox12.TabIndex = 122;
+            this.pictureBox12.TabStop = false;
             // 
             // lblTicketStatus
             // 
-            lblTicketStatus.AutoSize = true;
-            lblTicketStatus.BackColor = Color.Gainsboro;
-            lblTicketStatus.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblTicketStatus.Location = new Point(521, 263);
-            lblTicketStatus.Margin = new Padding(2, 0, 2, 0);
-            lblTicketStatus.Name = "lblTicketStatus";
-            lblTicketStatus.Size = new Size(131, 25);
-            lblTicketStatus.TabIndex = 123;
-            lblTicketStatus.Text = "Ticket Status:";
+            this.lblTicketStatus.AutoSize = true;
+            this.lblTicketStatus.BackColor = System.Drawing.Color.Gainsboro;
+            this.lblTicketStatus.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTicketStatus.Location = new System.Drawing.Point(507, 210);
+            this.lblTicketStatus.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTicketStatus.Name = "lblTicketStatus";
+            this.lblTicketStatus.Size = new System.Drawing.Size(109, 19);
+            this.lblTicketStatus.TabIndex = 123;
+            this.lblTicketStatus.Text = "Ticket Status:";
             // 
-            // lblStatus
+            // txtID
             // 
-            lblStatus.AutoSize = true;
-            lblStatus.BackColor = Color.Gainsboro;
-            lblStatus.Location = new Point(644, 263);
-            lblStatus.Name = "lblStatus";
-            lblStatus.Size = new Size(60, 25);
-            lblStatus.TabIndex = 124;
-            lblStatus.Text = "Status";
+            this.txtID.Location = new System.Drawing.Point(117, 98);
+            this.txtID.Margin = new System.Windows.Forms.Padding(2);
+            this.txtID.Name = "txtID";
+            this.txtID.ReadOnly = true;
+            this.txtID.Size = new System.Drawing.Size(218, 27);
+            this.txtID.TabIndex = 125;
+            // 
+            // txtCategory
+            // 
+            this.txtCategory.Location = new System.Drawing.Point(494, 98);
+            this.txtCategory.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCategory.Name = "txtCategory";
+            this.txtCategory.ReadOnly = true;
+            this.txtCategory.Size = new System.Drawing.Size(225, 27);
+            this.txtCategory.TabIndex = 126;
+            // 
+            // txtITMem
+            // 
+            this.txtITMem.Location = new System.Drawing.Point(270, 207);
+            this.txtITMem.Margin = new System.Windows.Forms.Padding(2);
+            this.txtITMem.Name = "txtITMem";
+            this.txtITMem.ReadOnly = true;
+            this.txtITMem.Size = new System.Drawing.Size(204, 27);
+            this.txtITMem.TabIndex = 127;
+            // 
+            // txtStatus
+            // 
+            this.txtStatus.Location = new System.Drawing.Point(616, 207);
+            this.txtStatus.Margin = new System.Windows.Forms.Padding(2);
+            this.txtStatus.Name = "txtStatus";
+            this.txtStatus.ReadOnly = true;
+            this.txtStatus.Size = new System.Drawing.Size(97, 27);
+            this.txtStatus.TabIndex = 130;
+            // 
+            // txtUrgency
+            // 
+            this.txtUrgency.Location = new System.Drawing.Point(616, 151);
+            this.txtUrgency.Margin = new System.Windows.Forms.Padding(2);
+            this.txtUrgency.Name = "txtUrgency";
+            this.txtUrgency.ReadOnly = true;
+            this.txtUrgency.Size = new System.Drawing.Size(96, 27);
+            this.txtUrgency.TabIndex = 131;
+            // 
+            // txtRaisedUser
+            // 
+            this.txtRaisedUser.Location = new System.Drawing.Point(214, 152);
+            this.txtRaisedUser.Margin = new System.Windows.Forms.Padding(2);
+            this.txtRaisedUser.Name = "txtRaisedUser";
+            this.txtRaisedUser.ReadOnly = true;
+            this.txtRaisedUser.Size = new System.Drawing.Size(259, 27);
+            this.txtRaisedUser.TabIndex = 132;
+            // 
+            // txtSummary
+            // 
+            this.txtSummary.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtSummary.Location = new System.Drawing.Point(39, 280);
+            this.txtSummary.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
+            this.txtSummary.MaxLength = 500;
+            this.txtSummary.Multiline = true;
+            this.txtSummary.Name = "txtSummary";
+            this.txtSummary.ReadOnly = true;
+            this.txtSummary.Size = new System.Drawing.Size(671, 78);
+            this.txtSummary.TabIndex = 133;
+            // 
+            // txtExtra
+            // 
+            this.txtExtra.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtExtra.Location = new System.Drawing.Point(39, 403);
+            this.txtExtra.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
+            this.txtExtra.MaxLength = 500;
+            this.txtExtra.Multiline = true;
+            this.txtExtra.Name = "txtExtra";
+            this.txtExtra.Size = new System.Drawing.Size(538, 60);
+            this.txtExtra.TabIndex = 134;
+            // 
+            // btnsubmit
+            // 
+            this.btnsubmit.Location = new System.Drawing.Point(596, 404);
+            this.btnsubmit.Name = "btnsubmit";
+            this.btnsubmit.Size = new System.Drawing.Size(94, 39);
+            this.btnsubmit.TabIndex = 135;
+            this.btnsubmit.Text = "Submit";
+            this.btnsubmit.UseVisualStyleBackColor = true;
+            this.btnsubmit.Click += new System.EventHandler(this.btnsubmit_Click);
             // 
             // generatedReport
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(933, 639);
-            Controls.Add(lblStatus);
-            Controls.Add(lblTicketStatus);
-            Controls.Add(pictureBox12);
-            Controls.Add(lblDetail);
-            Controls.Add(lblTicketCategory);
-            Controls.Add(lblUser);
-            Controls.Add(lblTicketUrgency);
-            Controls.Add(lblITMember);
-            Controls.Add(lblSummary);
-            Controls.Add(lblID);
-            Controls.Add(lblCategory);
-            Controls.Add(lblTicketID);
-            Controls.Add(lblRaisedUser);
-            Controls.Add(lblUrgency);
-            Controls.Add(lblitName);
-            Controls.Add(lblExtra);
-            Controls.Add(lblTicketSummary);
-            Controls.Add(pictureBox2);
-            Controls.Add(pictureBox10);
-            Controls.Add(Header);
-            Controls.Add(lblNameUser);
-            Controls.Add(pictureBox9);
-            Controls.Add(pictureBox8);
-            Controls.Add(pictureBox6);
-            Controls.Add(pictureBox7);
-            Controls.Add(lblHeader);
-            Controls.Add(pictureBox5);
-            Controls.Add(pictureboxIcon);
-            Controls.Add(pictureBox3);
-            Controls.Add(pictureBox11);
-            Controls.Add(pictureBox4);
-            Controls.Add(pictureBox1);
-            FormBorderStyle = FormBorderStyle.FixedSingle;
-            Icon = (Icon)resources.GetObject("$this.Icon");
-            MaximizeBox = false;
-            MinimizeBox = false;
-            Name = "generatedReport";
-            Text = "Red Agents IT Help Desk Reports";
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureboxIcon).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(746, 511);
+            this.Controls.Add(this.btnsubmit);
+            this.Controls.Add(this.txtExtra);
+            this.Controls.Add(this.txtSummary);
+            this.Controls.Add(this.txtRaisedUser);
+            this.Controls.Add(this.txtUrgency);
+            this.Controls.Add(this.txtStatus);
+            this.Controls.Add(this.txtITMem);
+            this.Controls.Add(this.txtCategory);
+            this.Controls.Add(this.txtID);
+            this.Controls.Add(this.lblTicketStatus);
+            this.Controls.Add(this.pictureBox12);
+            this.Controls.Add(this.lblCategory);
+            this.Controls.Add(this.lblTicketID);
+            this.Controls.Add(this.lblRaisedUser);
+            this.Controls.Add(this.lblUrgency);
+            this.Controls.Add(this.lblitName);
+            this.Controls.Add(this.lblExtra);
+            this.Controls.Add(this.lblTicketSummary);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox10);
+            this.Controls.Add(this.Header);
+            this.Controls.Add(this.lblNameUser);
+            this.Controls.Add(this.pictureBox9);
+            this.Controls.Add(this.pictureBox8);
+            this.Controls.Add(this.pictureBox6);
+            this.Controls.Add(this.pictureBox7);
+            this.Controls.Add(this.lblHeader);
+            this.Controls.Add(this.pictureBox5);
+            this.Controls.Add(this.pictureboxIcon);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox11);
+            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "generatedReport";
+            this.Text = "Red Agents IT Help Desk Reports";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureboxIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
@@ -507,15 +521,16 @@
         private PictureBox pictureBox2;
         private Label lblTicketSummary;
         private Label lblExtra;
-        private Label lblID;
-        private Label lblSummary;
-        private Label lblITMember;
-        private Label lblTicketUrgency;
-        private Label lblUser;
-        private Label lblTicketCategory;
-        private Label lblDetail;
         private PictureBox pictureBox12;
         private Label lblTicketStatus;
-        private Label lblStatus;
+        private TextBox txtID;
+        private TextBox txtCategory;
+        private TextBox txtITMem;
+        private TextBox txtStatus;
+        private TextBox txtUrgency;
+        private TextBox txtRaisedUser;
+        private TextBox txtSummary;
+        private TextBox txtExtra;
+        private Button btnsubmit;
     }
 }

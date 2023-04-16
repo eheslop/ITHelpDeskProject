@@ -88,6 +88,19 @@ namespace GUI_IT
                 return true;
         }
 
+        public static Boolean Exists1(int x)
+        {
+            SqlConnection con = Connect();
+            String query = "SELECT * FROM Report WHERE TicketID = '" + x + "';";
+            SqlCommand cmd = new SqlCommand(query, con);
+            object role = cmd.ExecuteScalar();
+            con.Close();
+            if (role == null)
+                return false;
+            else
+                return true;
+        }
+
         public static string getName(string user)
         {
             SqlConnection con = Connect();
@@ -178,7 +191,7 @@ namespace GUI_IT
         public static string getTicketCategory(int tID)
         {
             SqlConnection con = Connect();
-            String query = "SELECT Category FROM Tickets WHERE Id = '" + tID.ToString() + "';";
+            String query = "SELECT Category FROM Tickets WHERE Id = '" + tID + "';";
             SqlCommand cmd = new SqlCommand(query, con);
             string category = (string)cmd.ExecuteScalar();
             con.Close();
@@ -188,7 +201,17 @@ namespace GUI_IT
         public static string getTicketPriority(int tID)
         {
             SqlConnection con = Connect();
-            String query = "SELECT Priority FROM Tickets WHERE Id = '" + tID.ToString() + "';";
+            String query = "SELECT Priority FROM Tickets WHERE Id = '" + tID + "';";
+            SqlCommand cmd = new SqlCommand(query, con);
+            string priority = (string)cmd.ExecuteScalar();
+            con.Close();
+            return priority;
+        }
+
+        public static string getTicketassign(int tID)
+        {
+            SqlConnection con = Connect();
+            String query = "SELECT AssignedTo FROM Tickets WHERE Id = '" + tID + "';";
             SqlCommand cmd = new SqlCommand(query, con);
             string priority = (string)cmd.ExecuteScalar();
             con.Close();
@@ -197,7 +220,7 @@ namespace GUI_IT
         public static string getTicketUser(int tID)
         {
             SqlConnection con = Connect();
-            String query = "SELECT Username FROM Tickets WHERE Id = '" + tID.ToString() + "';";
+            String query = "SELECT Username FROM Tickets WHERE Id = '" + tID + "';";
             SqlCommand cmd = new SqlCommand(query, con);
             string user = (string)cmd.ExecuteScalar();
             con.Close();
@@ -207,17 +230,17 @@ namespace GUI_IT
         public static string getTicketDescription(int tID)
         {
             SqlConnection con = Connect();
-            String query = "SELECT Description FROM Tickets WHERE Id = '" + tID.ToString() + "';";
+            String query = "SELECT Description FROM Tickets WHERE Id = '" + tID + "';";
             SqlCommand cmd = new SqlCommand(query, con);
             string description = (string)cmd.ExecuteScalar();
             con.Close();
             return description;
         }
 
-        public static string getTicketSolution(int tID)
+        public static string getTicketStat(int tID)
         {
             SqlConnection con = Connect();
-            String query = "SELECT Description FROM Tickets WHERE Id = '" + tID.ToString() + "';";
+            String query = "SELECT Status FROM Tickets WHERE Id = '" + tID.ToString() + "';";
             SqlCommand cmd = new SqlCommand(query, con);
             string description = (string)cmd.ExecuteScalar();
             con.Close();
@@ -341,6 +364,15 @@ namespace GUI_IT
         {
             SqlConnection con = Connect();
             String query = "UPDATE RegisteredUsers SET Password = '" + newpass + "' where Username = '" + user + "';";
+            SqlCommand cmd = new SqlCommand(query, con);
+            cmd.ExecuteNonQuery();
+            con.Close();
+        }
+
+        public static void addinfo(string user, int id)
+        {
+            SqlConnection con = Connect();
+            String query = "UPDATE Report SET Additional_Info = '" + user.ToString() + "' where TicketID = '" + id + "';";
             SqlCommand cmd = new SqlCommand(query, con);
             cmd.ExecuteNonQuery();
             con.Close();
@@ -532,6 +564,43 @@ namespace GUI_IT
             return dt;
         }
 
+        public static DataTable SelectTick()
+        {
+            string x = "Solved";
+            SqlConnection con = Connect();
+            string query = "Select * from Tickets where Status != '" + x + "'; ";
+            SqlCommand cmd = new SqlCommand(query, con);
+            cmd.ExecuteNonQuery();
+            SqlDataAdapter da = new SqlDataAdapter();
+            da.SelectCommand = cmd;
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+
+            DataRow item = dt.NewRow();
+            item[1] = "Select ID";
+            dt.Rows.InsertAt(item, 0);
+            con.Close();
+            return dt;
+        }
+
+        public static DataTable SelectSol()
+        {
+            string x = "Solved";
+            SqlConnection con = Connect();
+            string query = "Select * from Tickets where Status = '" + x + "'; ";
+            SqlCommand cmd = new SqlCommand(query, con);
+            cmd.ExecuteNonQuery();
+            SqlDataAdapter da = new SqlDataAdapter();
+            da.SelectCommand = cmd;
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+
+            DataRow item = dt.NewRow();
+            item[1] = "Select ID";
+            dt.Rows.InsertAt(item, 0);
+            con.Close();
+            return dt;
+        }
         public static DataTable Solved(string user)
         {
             SqlConnection con = Connect();
@@ -544,13 +613,13 @@ namespace GUI_IT
             da.Fill(dt);
 
             DataRow item = dt.NewRow();
-            item[1] = "Select ID";
+            item[1] = "Select Name";
             dt.Rows.InsertAt(item, 0);
             con.Close();
             return dt;
         }
 
-        public static DataTable tickets(string user)
+        public static DataTable Raisedtickets(string user)
         {
             SqlConnection con = Connect();
             string query = "Select * from Tickets where Username = '" + user + "'; ";
@@ -560,15 +629,11 @@ namespace GUI_IT
             da.SelectCommand = cmd;
             DataTable dt = new DataTable();
             da.Fill(dt);
-
-            DataRow item = dt.NewRow();
-            item[1] = "Select ID";
-            dt.Rows.InsertAt(item, 0);
             con.Close();
             return dt;
         }
 
-        public static DataTable tickets1()
+        public static DataTable ticketsUnsolvedAll()
         {
             string x = "Unsolved";
             string y = "Re-opened";
@@ -580,10 +645,69 @@ namespace GUI_IT
             da.SelectCommand = cmd;
             DataTable dt = new DataTable();
             da.Fill(dt);
+            con.Close();
+            return dt;
+        }
 
-            DataRow item = dt.NewRow();
-            item[1] = "Select ID";
-            dt.Rows.InsertAt(item, 0);
+        public static DataTable ticketsUnsolved()
+        {
+            string x = "Unsolved";
+            
+            SqlConnection con = Connect();
+            string query = "Select * from Tickets where Status = '" + x + "';";
+            SqlCommand cmd = new SqlCommand(query, con);
+            cmd.ExecuteNonQuery();
+            SqlDataAdapter da = new SqlDataAdapter();
+            da.SelectCommand = cmd;
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            con.Close();
+            return dt;
+        }
+
+        public static DataTable ticketsRe()
+        {
+            string x = "Re-opened";
+
+            SqlConnection con = Connect();
+            string query = "Select * from Tickets where Status = '" + x + "';";
+            SqlCommand cmd = new SqlCommand(query, con);
+            cmd.ExecuteNonQuery();
+            SqlDataAdapter da = new SqlDataAdapter();
+            da.SelectCommand = cmd;
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            con.Close();
+            return dt;
+        }
+
+        public static DataTable ticketssolvedAll()
+        {
+            string x = "Solved";
+            
+            SqlConnection con = Connect();
+            string query = "Select * from Tickets where Status = '" + x + "';";
+            SqlCommand cmd = new SqlCommand(query, con);
+            cmd.ExecuteNonQuery();
+            SqlDataAdapter da = new SqlDataAdapter();
+            da.SelectCommand = cmd;
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            con.Close();
+            return dt;
+        }
+
+        public static DataTable Report()
+        {
+
+            SqlConnection con = Connect();
+            string query = "Select * from Report;";
+            SqlCommand cmd = new SqlCommand(query, con);
+            cmd.ExecuteNonQuery();
+            SqlDataAdapter da = new SqlDataAdapter();
+            da.SelectCommand = cmd;
+            DataTable dt = new DataTable();
+            da.Fill(dt);
             con.Close();
             return dt;
         }
@@ -705,7 +829,7 @@ namespace GUI_IT
 
         }
 
-        public static DataTable tickets2(string user)
+        public static DataTable ticketsSolved(string user)
         {
             SqlConnection con = Connect();
             string x = user.ToString();
