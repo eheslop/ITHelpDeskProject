@@ -84,6 +84,18 @@
             this.lblTicket = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pnlProblemList = new System.Windows.Forms.Panel();
+            this.pictureBox17 = new System.Windows.Forms.PictureBox();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.ptrbxPasswordQ = new System.Windows.Forms.PictureBox();
+            this.ptrbxGeneralQSmall = new System.Windows.Forms.PictureBox();
+            this.lnklblTicketQ = new System.Windows.Forms.LinkLabel();
+            this.lnklblEmailQ = new System.Windows.Forms.LinkLabel();
+            this.lnklblPasswordQ = new System.Windows.Forms.LinkLabel();
+            this.lnklblGeneralQ = new System.Windows.Forms.LinkLabel();
+            this.lblTicketQ = new System.Windows.Forms.Label();
+            this.lblEmailQ = new System.Windows.Forms.Label();
+            this.lblPasswordQ = new System.Windows.Forms.Label();
+            this.lblGeneral = new System.Windows.Forms.Label();
             this.lblProblem = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.lblOnlineHelp = new System.Windows.Forms.Label();
@@ -91,10 +103,18 @@
             this.lblHeader = new System.Windows.Forms.Label();
             this.lblLoggedIn = new System.Windows.Forms.Label();
             this.ProfilePictureBox = new System.Windows.Forms.PictureBox();
-            this.tabEmail = new System.Windows.Forms.TabPage();
-            this.tabReportGeneration = new System.Windows.Forms.TabControl();
-            this.tabPassword = new System.Windows.Forms.TabPage();
-            this.tabTickets = new System.Windows.Forms.TabPage();
+            this.pnlGeneralQ = new System.Windows.Forms.Panel();
+            this.btnBackGeneral = new System.Windows.Forms.Button();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.pnlTicketQ = new System.Windows.Forms.Panel();
+            this.btnBackTicket = new System.Windows.Forms.Button();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.pnlEmailQ = new System.Windows.Forms.Panel();
+            this.brnBackEmail = new System.Windows.Forms.Button();
+            this.pictureBox18 = new System.Windows.Forms.PictureBox();
+            this.pnlPasswordQ = new System.Windows.Forms.Panel();
+            this.btnPasswordBack = new System.Windows.Forms.Button();
+            this.pictureBox19 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Rectangle1)).BeginInit();
@@ -116,10 +136,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.pnlProblemList.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptrbxPasswordQ)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptrbxGeneralQSmall)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ProfilePictureBox)).BeginInit();
-            this.tabReportGeneration.SuspendLayout();
+            this.pnlGeneralQ.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            this.pnlTicketQ.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            this.pnlEmailQ.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
+            this.pnlPasswordQ.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureLogo
@@ -180,13 +211,14 @@
             this.btnTickets.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnTickets.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.btnTickets.ForeColor = System.Drawing.Color.White;
-            this.btnTickets.Location = new System.Drawing.Point(317, 30);
+            this.btnTickets.Location = new System.Drawing.Point(321, 34);
             this.btnTickets.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.btnTickets.Name = "btnTickets";
             this.btnTickets.Size = new System.Drawing.Size(151, 38);
             this.btnTickets.TabIndex = 36;
             this.btnTickets.Text = "Ticket Dashboard";
             this.btnTickets.UseVisualStyleBackColor = false;
+            this.btnTickets.Click += new System.EventHandler(this.btnTickets_Click_1);
             // 
             // btnProblemList
             // 
@@ -223,10 +255,10 @@
             this.pnlTickets.Controls.Add(this.tabProjectMem);
             this.pnlTickets.Controls.Add(this.lblTicket);
             this.pnlTickets.Controls.Add(this.pictureBox3);
-            this.pnlTickets.Location = new System.Drawing.Point(0, 72);
+            this.pnlTickets.Location = new System.Drawing.Point(0, 77);
             this.pnlTickets.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.pnlTickets.Name = "pnlTickets";
-            this.pnlTickets.Size = new System.Drawing.Size(1029, 445);
+            this.pnlTickets.Size = new System.Drawing.Size(1029, 440);
             this.pnlTickets.TabIndex = 45;
             // 
             // tabProjectMem
@@ -236,11 +268,11 @@
             this.tabProjectMem.Controls.Add(this.tabRaiseTicket);
             this.tabProjectMem.Controls.Add(this.tabReopenTicket);
             this.tabProjectMem.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.tabProjectMem.Location = new System.Drawing.Point(-7, 54);
+            this.tabProjectMem.Location = new System.Drawing.Point(-7, 360);
             this.tabProjectMem.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.tabProjectMem.Name = "tabProjectMem";
             this.tabProjectMem.SelectedIndex = 0;
-            this.tabProjectMem.Size = new System.Drawing.Size(1031, 396);
+            this.tabProjectMem.Size = new System.Drawing.Size(1031, 90);
             this.tabProjectMem.TabIndex = 50;
             // 
             // tabHome
@@ -264,7 +296,7 @@
             this.tabHome.Location = new System.Drawing.Point(4, 32);
             this.tabHome.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.tabHome.Name = "tabHome";
-            this.tabHome.Size = new System.Drawing.Size(1023, 360);
+            this.tabHome.Size = new System.Drawing.Size(1023, 54);
             this.tabHome.TabIndex = 3;
             this.tabHome.Text = "Ticket Homepage";
             // 
@@ -444,7 +476,7 @@
             this.tabMyTickets.Location = new System.Drawing.Point(4, 32);
             this.tabMyTickets.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.tabMyTickets.Name = "tabMyTickets";
-            this.tabMyTickets.Size = new System.Drawing.Size(1023, 360);
+            this.tabMyTickets.Size = new System.Drawing.Size(1023, 54);
             this.tabMyTickets.TabIndex = 2;
             this.tabMyTickets.Text = "My Tickets";
             // 
@@ -512,7 +544,7 @@
             this.tabRaiseTicket.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.tabRaiseTicket.Name = "tabRaiseTicket";
             this.tabRaiseTicket.Padding = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.tabRaiseTicket.Size = new System.Drawing.Size(1023, 360);
+            this.tabRaiseTicket.Size = new System.Drawing.Size(1023, 54);
             this.tabRaiseTicket.TabIndex = 0;
             this.tabRaiseTicket.Text = "Raise Tickets";
             // 
@@ -662,7 +694,7 @@
             this.tabReopenTicket.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.tabReopenTicket.Name = "tabReopenTicket";
             this.tabReopenTicket.Padding = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.tabReopenTicket.Size = new System.Drawing.Size(1023, 360);
+            this.tabReopenTicket.Size = new System.Drawing.Size(1023, 54);
             this.tabReopenTicket.TabIndex = 1;
             this.tabReopenTicket.Text = "Re-open Tickets";
             // 
@@ -819,13 +851,150 @@
             // 
             // pnlProblemList
             // 
+            this.pnlProblemList.Controls.Add(this.pictureBox17);
+            this.pnlProblemList.Controls.Add(this.pictureBox16);
+            this.pnlProblemList.Controls.Add(this.ptrbxPasswordQ);
+            this.pnlProblemList.Controls.Add(this.ptrbxGeneralQSmall);
+            this.pnlProblemList.Controls.Add(this.lnklblTicketQ);
+            this.pnlProblemList.Controls.Add(this.lnklblEmailQ);
+            this.pnlProblemList.Controls.Add(this.lnklblPasswordQ);
+            this.pnlProblemList.Controls.Add(this.lnklblGeneralQ);
+            this.pnlProblemList.Controls.Add(this.lblTicketQ);
+            this.pnlProblemList.Controls.Add(this.lblEmailQ);
+            this.pnlProblemList.Controls.Add(this.lblPasswordQ);
+            this.pnlProblemList.Controls.Add(this.lblGeneral);
             this.pnlProblemList.Controls.Add(this.lblProblem);
             this.pnlProblemList.Controls.Add(this.pictureBox4);
-            this.pnlProblemList.Location = new System.Drawing.Point(-3, 70);
+            this.pnlProblemList.Location = new System.Drawing.Point(-3, 75);
             this.pnlProblemList.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.pnlProblemList.Name = "pnlProblemList";
-            this.pnlProblemList.Size = new System.Drawing.Size(1015, 464);
+            this.pnlProblemList.Size = new System.Drawing.Size(1015, 459);
             this.pnlProblemList.TabIndex = 45;
+            // 
+            // pictureBox17
+            // 
+            this.pictureBox17.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox17.BackgroundImage")));
+            this.pictureBox17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox17.Location = new System.Drawing.Point(813, 110);
+            this.pictureBox17.Name = "pictureBox17";
+            this.pictureBox17.Size = new System.Drawing.Size(190, 291);
+            this.pictureBox17.TabIndex = 57;
+            this.pictureBox17.TabStop = false;
+            // 
+            // pictureBox16
+            // 
+            this.pictureBox16.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox16.BackgroundImage")));
+            this.pictureBox16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox16.Location = new System.Drawing.Point(556, 110);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(190, 291);
+            this.pictureBox16.TabIndex = 56;
+            this.pictureBox16.TabStop = false;
+            this.pictureBox16.Click += new System.EventHandler(this.pictureBox16_Click);
+            // 
+            // ptrbxPasswordQ
+            // 
+            this.ptrbxPasswordQ.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ptrbxPasswordQ.BackgroundImage")));
+            this.ptrbxPasswordQ.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ptrbxPasswordQ.Location = new System.Drawing.Point(276, 110);
+            this.ptrbxPasswordQ.Name = "ptrbxPasswordQ";
+            this.ptrbxPasswordQ.Size = new System.Drawing.Size(205, 291);
+            this.ptrbxPasswordQ.TabIndex = 55;
+            this.ptrbxPasswordQ.TabStop = false;
+            // 
+            // ptrbxGeneralQSmall
+            // 
+            this.ptrbxGeneralQSmall.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ptrbxGeneralQSmall.BackgroundImage")));
+            this.ptrbxGeneralQSmall.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ptrbxGeneralQSmall.Location = new System.Drawing.Point(13, 110);
+            this.ptrbxGeneralQSmall.Name = "ptrbxGeneralQSmall";
+            this.ptrbxGeneralQSmall.Size = new System.Drawing.Size(202, 291);
+            this.ptrbxGeneralQSmall.TabIndex = 54;
+            this.ptrbxGeneralQSmall.TabStop = false;
+            // 
+            // lnklblTicketQ
+            // 
+            this.lnklblTicketQ.AutoSize = true;
+            this.lnklblTicketQ.Location = new System.Drawing.Point(814, 82);
+            this.lnklblTicketQ.Name = "lnklblTicketQ";
+            this.lnklblTicketQ.Size = new System.Drawing.Size(177, 20);
+            this.lnklblTicketQ.TabIndex = 53;
+            this.lnklblTicketQ.TabStop = true;
+            this.lnklblTicketQ.Text = "MaximizeTicketQuestions";
+            this.lnklblTicketQ.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnklblTicketQ_LinkClicked);
+            // 
+            // lnklblEmailQ
+            // 
+            this.lnklblEmailQ.AutoSize = true;
+            this.lnklblEmailQ.Location = new System.Drawing.Point(556, 82);
+            this.lnklblEmailQ.Name = "lnklblEmailQ";
+            this.lnklblEmailQ.Size = new System.Drawing.Size(175, 20);
+            this.lnklblEmailQ.TabIndex = 52;
+            this.lnklblEmailQ.TabStop = true;
+            this.lnklblEmailQ.Text = "MaximizeEmailQuestions";
+            this.lnklblEmailQ.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnklblEmailQ_LinkClicked);
+            // 
+            // lnklblPasswordQ
+            // 
+            this.lnklblPasswordQ.AutoSize = true;
+            this.lnklblPasswordQ.Location = new System.Drawing.Point(276, 82);
+            this.lnklblPasswordQ.Name = "lnklblPasswordQ";
+            this.lnklblPasswordQ.Size = new System.Drawing.Size(199, 20);
+            this.lnklblPasswordQ.TabIndex = 51;
+            this.lnklblPasswordQ.TabStop = true;
+            this.lnklblPasswordQ.Text = "MaximizePasswordQuestions";
+            this.lnklblPasswordQ.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnklblPasswordQ_LinkClicked);
+            // 
+            // lnklblGeneralQ
+            // 
+            this.lnklblGeneralQ.AutoSize = true;
+            this.lnklblGeneralQ.Location = new System.Drawing.Point(15, 82);
+            this.lnklblGeneralQ.Name = "lnklblGeneralQ";
+            this.lnklblGeneralQ.Size = new System.Drawing.Size(189, 20);
+            this.lnklblGeneralQ.TabIndex = 50;
+            this.lnklblGeneralQ.TabStop = true;
+            this.lnklblGeneralQ.Text = "MaximizeGeneralQuestions";
+            this.lnklblGeneralQ.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnklblGeneralQ_LinkClicked);
+            // 
+            // lblTicketQ
+            // 
+            this.lblTicketQ.AutoSize = true;
+            this.lblTicketQ.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTicketQ.Location = new System.Drawing.Point(813, 54);
+            this.lblTicketQ.Name = "lblTicketQ";
+            this.lblTicketQ.Size = new System.Drawing.Size(155, 28);
+            this.lblTicketQ.TabIndex = 49;
+            this.lblTicketQ.Text = "Ticket Questions";
+            // 
+            // lblEmailQ
+            // 
+            this.lblEmailQ.AutoSize = true;
+            this.lblEmailQ.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblEmailQ.Location = new System.Drawing.Point(556, 54);
+            this.lblEmailQ.Name = "lblEmailQ";
+            this.lblEmailQ.Size = new System.Drawing.Size(151, 28);
+            this.lblEmailQ.TabIndex = 48;
+            this.lblEmailQ.Text = "Email Questions";
+            // 
+            // lblPasswordQ
+            // 
+            this.lblPasswordQ.AutoSize = true;
+            this.lblPasswordQ.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblPasswordQ.Location = new System.Drawing.Point(276, 54);
+            this.lblPasswordQ.Name = "lblPasswordQ";
+            this.lblPasswordQ.Size = new System.Drawing.Size(185, 28);
+            this.lblPasswordQ.TabIndex = 47;
+            this.lblPasswordQ.Text = "Password Questions";
+            // 
+            // lblGeneral
+            // 
+            this.lblGeneral.AutoSize = true;
+            this.lblGeneral.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblGeneral.Location = new System.Drawing.Point(15, 54);
+            this.lblGeneral.Name = "lblGeneral";
+            this.lblGeneral.Size = new System.Drawing.Size(171, 28);
+            this.lblGeneral.TabIndex = 46;
+            this.lblGeneral.Text = "General Questions";
             // 
             // lblProblem
             // 
@@ -919,48 +1088,134 @@
             this.ProfilePictureBox.TabIndex = 4;
             this.ProfilePictureBox.TabStop = false;
             // 
-            // tabEmail
+            // pnlGeneralQ
             // 
-            this.tabEmail.BackColor = System.Drawing.Color.LightGray;
-            this.tabEmail.Location = new System.Drawing.Point(4, 32);
-            this.tabEmail.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.tabEmail.Name = "tabEmail";
-            this.tabEmail.Size = new System.Drawing.Size(1011, 398);
-            this.tabEmail.TabIndex = 3;
-            this.tabEmail.Text = "Email Questions";
+            this.pnlGeneralQ.AutoScroll = true;
+            this.pnlGeneralQ.Controls.Add(this.btnBackGeneral);
+            this.pnlGeneralQ.Controls.Add(this.pictureBox14);
+            this.pnlGeneralQ.Location = new System.Drawing.Point(1, 121);
+            this.pnlGeneralQ.Name = "pnlGeneralQ";
+            this.pnlGeneralQ.Size = new System.Drawing.Size(1008, 395);
+            this.pnlGeneralQ.TabIndex = 49;
             // 
-            // tabReportGeneration
+            // btnBackGeneral
             // 
-            this.tabReportGeneration.Controls.Add(this.tabEmail);
-            this.tabReportGeneration.Controls.Add(this.tabPassword);
-            this.tabReportGeneration.Controls.Add(this.tabTickets);
-            this.tabReportGeneration.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.tabReportGeneration.Location = new System.Drawing.Point(-1, 124);
-            this.tabReportGeneration.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.tabReportGeneration.Name = "tabReportGeneration";
-            this.tabReportGeneration.SelectedIndex = 0;
-            this.tabReportGeneration.Size = new System.Drawing.Size(1019, 434);
-            this.tabReportGeneration.TabIndex = 49;
+            this.btnBackGeneral.Location = new System.Drawing.Point(15, 10);
+            this.btnBackGeneral.Name = "btnBackGeneral";
+            this.btnBackGeneral.Size = new System.Drawing.Size(114, 44);
+            this.btnBackGeneral.TabIndex = 1;
+            this.btnBackGeneral.Text = "Back";
+            this.btnBackGeneral.UseVisualStyleBackColor = true;
+            this.btnBackGeneral.Click += new System.EventHandler(this.btnBackGeneral_Click);
             // 
-            // tabPassword
+            // pictureBox14
             // 
-            this.tabPassword.BackColor = System.Drawing.Color.LightGray;
-            this.tabPassword.Location = new System.Drawing.Point(4, 32);
-            this.tabPassword.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.tabPassword.Name = "tabPassword";
-            this.tabPassword.Size = new System.Drawing.Size(1011, 398);
-            this.tabPassword.TabIndex = 4;
-            this.tabPassword.Text = "Password Questions";
+            this.pictureBox14.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox14.BackgroundImage")));
+            this.pictureBox14.Location = new System.Drawing.Point(188, 0);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(716, 652);
+            this.pictureBox14.TabIndex = 0;
+            this.pictureBox14.TabStop = false;
+            this.pictureBox14.Click += new System.EventHandler(this.pictureBox14_Click);
             // 
-            // tabTickets
+            // pnlTicketQ
             // 
-            this.tabTickets.BackColor = System.Drawing.Color.LightGray;
-            this.tabTickets.Location = new System.Drawing.Point(4, 32);
-            this.tabTickets.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.tabTickets.Name = "tabTickets";
-            this.tabTickets.Size = new System.Drawing.Size(1011, 398);
-            this.tabTickets.TabIndex = 5;
-            this.tabTickets.Text = "Tickets Questions";
+            this.pnlTicketQ.AutoScroll = true;
+            this.pnlTicketQ.Controls.Add(this.btnBackTicket);
+            this.pnlTicketQ.Controls.Add(this.pictureBox15);
+            this.pnlTicketQ.Location = new System.Drawing.Point(0, 121);
+            this.pnlTicketQ.Name = "pnlTicketQ";
+            this.pnlTicketQ.Size = new System.Drawing.Size(1010, 393);
+            this.pnlTicketQ.TabIndex = 50;
+            // 
+            // btnBackTicket
+            // 
+            this.btnBackTicket.Location = new System.Drawing.Point(12, 5);
+            this.btnBackTicket.Name = "btnBackTicket";
+            this.btnBackTicket.Size = new System.Drawing.Size(122, 47);
+            this.btnBackTicket.TabIndex = 1;
+            this.btnBackTicket.Text = "Back";
+            this.btnBackTicket.UseVisualStyleBackColor = true;
+            this.btnBackTicket.Click += new System.EventHandler(this.btnBackTicket_Click);
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox15.BackgroundImage")));
+            this.pictureBox15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox15.Location = new System.Drawing.Point(218, 0);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(596, 662);
+            this.pictureBox15.TabIndex = 0;
+            this.pictureBox15.TabStop = false;
+            // 
+            // pnlEmailQ
+            // 
+            this.pnlEmailQ.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlEmailQ.AutoScroll = true;
+            this.pnlEmailQ.Controls.Add(this.brnBackEmail);
+            this.pnlEmailQ.Controls.Add(this.pictureBox18);
+            this.pnlEmailQ.Location = new System.Drawing.Point(0, 121);
+            this.pnlEmailQ.Name = "pnlEmailQ";
+            this.pnlEmailQ.Size = new System.Drawing.Size(1014, 392);
+            this.pnlEmailQ.TabIndex = 51;
+            // 
+            // brnBackEmail
+            // 
+            this.brnBackEmail.Location = new System.Drawing.Point(10, 7);
+            this.brnBackEmail.Name = "brnBackEmail";
+            this.brnBackEmail.Size = new System.Drawing.Size(128, 48);
+            this.brnBackEmail.TabIndex = 1;
+            this.brnBackEmail.Text = "Back";
+            this.brnBackEmail.UseVisualStyleBackColor = true;
+            this.brnBackEmail.Click += new System.EventHandler(this.brnBackEmail_Click);
+            // 
+            // pictureBox18
+            // 
+            this.pictureBox18.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox18.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox18.BackgroundImage")));
+            this.pictureBox18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox18.Location = new System.Drawing.Point(264, 4);
+            this.pictureBox18.Name = "pictureBox18";
+            this.pictureBox18.Size = new System.Drawing.Size(501, 723);
+            this.pictureBox18.TabIndex = 0;
+            this.pictureBox18.TabStop = false;
+            // 
+            // pnlPasswordQ
+            // 
+            this.pnlPasswordQ.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlPasswordQ.AutoScroll = true;
+            this.pnlPasswordQ.Controls.Add(this.btnPasswordBack);
+            this.pnlPasswordQ.Controls.Add(this.pictureBox19);
+            this.pnlPasswordQ.Location = new System.Drawing.Point(2, 121);
+            this.pnlPasswordQ.Name = "pnlPasswordQ";
+            this.pnlPasswordQ.Size = new System.Drawing.Size(1009, 388);
+            this.pnlPasswordQ.TabIndex = 52;
+            // 
+            // btnPasswordBack
+            // 
+            this.btnPasswordBack.Location = new System.Drawing.Point(26, 4);
+            this.btnPasswordBack.Name = "btnPasswordBack";
+            this.btnPasswordBack.Size = new System.Drawing.Size(124, 48);
+            this.btnPasswordBack.TabIndex = 1;
+            this.btnPasswordBack.Text = "Back ";
+            this.btnPasswordBack.UseVisualStyleBackColor = true;
+            this.btnPasswordBack.Click += new System.EventHandler(this.btnPasswordBack_Click);
+            // 
+            // pictureBox19
+            // 
+            this.pictureBox19.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox19.BackgroundImage")));
+            this.pictureBox19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox19.Location = new System.Drawing.Point(210, -2);
+            this.pictureBox19.Name = "pictureBox19";
+            this.pictureBox19.Size = new System.Drawing.Size(631, 706);
+            this.pictureBox19.TabIndex = 0;
+            this.pictureBox19.TabStop = false;
             // 
             // frmProjectMember
             // 
@@ -981,7 +1236,10 @@
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Rectangle1);
-            this.Controls.Add(this.tabReportGeneration);
+            this.Controls.Add(this.pnlPasswordQ);
+            this.Controls.Add(this.pnlEmailQ);
+            this.Controls.Add(this.pnlTicketQ);
+            this.Controls.Add(this.pnlGeneralQ);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.Name = "frmProjectMember";
@@ -1013,10 +1271,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.pnlProblemList.ResumeLayout(false);
             this.pnlProblemList.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptrbxPasswordQ)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptrbxGeneralQSmall)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ProfilePictureBox)).EndInit();
-            this.tabReportGeneration.ResumeLayout(false);
+            this.pnlGeneralQ.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            this.pnlTicketQ.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            this.pnlEmailQ.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
+            this.pnlPasswordQ.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1089,11 +1358,31 @@
         private Label label11;
         private PictureBox pictureBox4;
         private Button btnRefresh;
-        private TabPage tabEmail;
-        private TabControl tabReportGeneration;
-        private TabPage tabPassword;
-        private TabPage tabTickets;
         private PictureBox pictureBox7;
         private ComboBox cbxid;
+        private PictureBox pictureBox17;
+        private PictureBox pictureBox16;
+        private PictureBox ptrbxPasswordQ;
+        private PictureBox ptrbxGeneralQSmall;
+        private LinkLabel lnklblTicketQ;
+        private LinkLabel lnklblEmailQ;
+        private LinkLabel lnklblPasswordQ;
+        private LinkLabel lnklblGeneralQ;
+        private Label lblTicketQ;
+        private Label lblEmailQ;
+        private Label lblPasswordQ;
+        private Label lblGeneral;
+        private Panel pnlGeneralQ;
+        private PictureBox pictureBox14;
+        private Button btnBackGeneral;
+        private Panel pnlTicketQ;
+        private Button btnBackTicket;
+        private PictureBox pictureBox15;
+        private Panel pnlEmailQ;
+        private Button brnBackEmail;
+        private PictureBox pictureBox18;
+        private Panel pnlPasswordQ;
+        private Button btnPasswordBack;
+        private PictureBox pictureBox19;
     }
 }

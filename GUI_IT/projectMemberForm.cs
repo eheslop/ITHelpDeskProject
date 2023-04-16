@@ -138,5 +138,101 @@ namespace GUI_IT
             frmUserProf UserProfile = new frmUserProf(newUser_);
             UserProfile.ShowDialog();
         }
+
+        private void pictureBox16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnTickets_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lnklblEmailQ_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            pnlTickets.Visible = false;
+            pnlProblemList.Visible = false;
+            pnlEmailQ.Visible = true;
+            pnlGeneralQ.Visible = false;
+            pnlPasswordQ.Visible = false;
+            pnlTicketQ.Visible = false;
+            
+        }
+
+        private void lnklblTicketQ_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            pnlTickets.Visible = false;
+            pnlProblemList.Visible = false;
+            pnlEmailQ.Visible = false;
+            pnlGeneralQ.Visible = false;
+            pnlPasswordQ.Visible = false;
+            pnlTicketQ.Visible = true;
+        }
+
+        private void lnklblPasswordQ_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            pnlTickets.Visible = false;
+            pnlProblemList.Visible = false;
+            pnlEmailQ.Visible = false;
+            pnlGeneralQ.Visible = false;
+            pnlPasswordQ.Visible = true;
+            pnlTicketQ.Visible = false;
+        }
+
+        private void lnklblGeneralQ_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            pnlTickets.Visible = false;
+            pnlProblemList.Visible = false;
+            pnlEmailQ.Visible = false;
+            pnlGeneralQ.Visible = true;
+            pnlPasswordQ.Visible = false;
+            pnlTicketQ.Visible = false;
+        }
+
+        private void btnPasswordBack_Click(object sender, EventArgs e)
+        {
+            pnlTickets.Visible = false;
+            pnlProblemList.Visible = true;
+            pnlEmailQ.Visible = false;
+            pnlGeneralQ.Visible = false;
+            pnlPasswordQ.Visible = false;
+            pnlTicketQ.Visible = false;
+        }
+
+        private void brnBackEmail_Click(object sender, EventArgs e)
+        {
+            pnlTickets.Visible = false;
+            pnlProblemList.Visible = true;
+            pnlEmailQ.Visible = false;
+            pnlGeneralQ.Visible = false;
+            pnlPasswordQ.Visible = false;
+            pnlTicketQ.Visible = false;
+        }
+
+        private void btnBackTicket_Click(object sender, EventArgs e)
+        {
+            pnlTickets.Visible = false;
+            pnlProblemList.Visible = true;
+            pnlEmailQ.Visible = false;
+            pnlGeneralQ.Visible = false;
+            pnlPasswordQ.Visible = false;
+            pnlTicketQ.Visible = false;
+        }
+
+        private void btnBackGeneral_Click(object sender, EventArgs e)
+        {
+            pnlTickets.Visible = false;
+            pnlProblemList.Visible = true;
+            pnlEmailQ.Visible = false;
+            pnlGeneralQ.Visible = false;
+            pnlPasswordQ.Visible = false;
+            pnlTicketQ.Visible = false;
+        }
     }
 }
