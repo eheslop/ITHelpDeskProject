@@ -72,6 +72,12 @@ namespace GUI_IT
             DGVAssign.EditMode = DataGridViewEditMode.EditOnEnter;
         }
 
+        private void Fill4()
+        {
+            DGVAssign.DataSource = Sql.ticketsRe();
+            DGVAssign.EditMode = DataGridViewEditMode.EditOnEnter;
+        }
+
         private void combo1()
         {
             cbxid.DataSource = Sql.SelectTick();
@@ -126,12 +132,12 @@ namespace GUI_IT
 
         private void btnViewUnsolvedTable_Click(object sender, EventArgs e)
         {
-            Fill();
+            Fill1();
         }
 
         private void btnViewReopenedTable_Click(object sender, EventArgs e)
         {
-            Fill3();
+            Fill4();
         }
 
         private void btnReOpened_Click(object sender, EventArgs e)

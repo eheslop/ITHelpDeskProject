@@ -46,19 +46,32 @@
           }
         }
       },
-      "MailKit/3.6.0": {
+      "BouncyCastle.Cryptography/2.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/BouncyCastle.Cryptography.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/BouncyCastle.Cryptography.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MailKit/4.0.0": {
         "type": "package",
         "dependencies": {
-          "MimeKit": "3.6.0"
+          "MimeKit": "4.0.0"
         },
         "compile": {
           "lib/net6.0/MailKit.dll": {
-            "related": ".pdb;.xml"
+            "related": ".dll.config;.pdb;.xml"
           }
         },
         "runtime": {
           "lib/net6.0/MailKit.dll": {
-            "related": ".pdb;.xml"
+            "related": ".dll.config;.pdb;.xml"
           }
         }
       },
@@ -353,35 +366,22 @@
           }
         }
       },
-      "MimeKit/3.6.1": {
+      "MimeKit/4.0.0": {
         "type": "package",
         "dependencies": {
-          "Portable.BouncyCastle": "1.9.0",
+          "BouncyCastle.Cryptography": "2.1.1",
           "System.Runtime.CompilerServices.Unsafe": "6.0.0",
           "System.Security.Cryptography.Pkcs": "6.0.2",
           "System.Text.Encoding.CodePages": "6.0.0"
         },
         "compile": {
           "lib/net6.0/MimeKit.dll": {
-            "related": ".pdb;.xml"
+            "related": ".dll.config;.pdb;.xml"
           }
         },
         "runtime": {
           "lib/net6.0/MimeKit.dll": {
-            "related": ".pdb;.xml"
-          }
-        }
-      },
-      "Portable.BouncyCastle/1.9.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/BouncyCastle.Crypto.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/BouncyCastle.Crypto.dll": {
-            "related": ".xml"
+            "related": ".dll.config;.pdb;.xml"
           }
         }
       },
@@ -919,33 +919,59 @@
         "lib/netstandard2.0/Azure.Identity.xml"
       ]
     },
-    "MailKit/3.6.0": {
-      "sha512": "P7sL/bWj6girXBYlmZmCQnS6Y0DHMe947iiH+Dzl3vlJJiFUcnhxJei/gnrIARuaFUpPoYoFjVqguHwOT4Myzg==",
+    "BouncyCastle.Cryptography/2.1.1": {
+      "sha512": "NNQaa4eyf5YjSdLKUWGPzq5HXZQc3yGybfIOkR6UY1C/rRFWdo0UhSzBqqnxwGnq3ie4vkN0JlzhhANjfTIJIQ==",
       "type": "package",
-      "path": "mailkit/3.6.0",
+      "path": "bouncycastle.cryptography/2.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "bouncycastle.cryptography.2.1.1.nupkg.sha512",
+        "bouncycastle.cryptography.nuspec",
+        "lib/net461/BouncyCastle.Cryptography.dll",
+        "lib/net461/BouncyCastle.Cryptography.xml",
+        "lib/net6.0/BouncyCastle.Cryptography.dll",
+        "lib/net6.0/BouncyCastle.Cryptography.xml",
+        "lib/netstandard2.0/BouncyCastle.Cryptography.dll",
+        "lib/netstandard2.0/BouncyCastle.Cryptography.xml",
+        "packageIcon.png"
+      ]
+    },
+    "MailKit/4.0.0": {
+      "sha512": "vtP6nUU0ByEZTnpbtsfdxyRvcssNSgIml4zi2hpBOV4gYNoaYSt+4VCx28MMnfaO/9J1IzcG+Hc8kXMkWX6iRQ==",
+      "type": "package",
+      "path": "mailkit/4.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "icons/mailkit-50.png",
         "lib/net462/MailKit.dll",
+        "lib/net462/MailKit.dll.config",
         "lib/net462/MailKit.pdb",
         "lib/net462/MailKit.xml",
         "lib/net47/MailKit.dll",
+        "lib/net47/MailKit.dll.config",
         "lib/net47/MailKit.pdb",
         "lib/net47/MailKit.xml",
         "lib/net48/MailKit.dll",
+        "lib/net48/MailKit.dll.config",
         "lib/net48/MailKit.pdb",
         "lib/net48/MailKit.xml",
         "lib/net6.0/MailKit.dll",
+        "lib/net6.0/MailKit.dll.config",
         "lib/net6.0/MailKit.pdb",
         "lib/net6.0/MailKit.xml",
         "lib/netstandard2.0/MailKit.dll",
+        "lib/netstandard2.0/MailKit.dll.config",
         "lib/netstandard2.0/MailKit.pdb",
         "lib/netstandard2.0/MailKit.xml",
         "lib/netstandard2.1/MailKit.dll",
+        "lib/netstandard2.1/MailKit.dll.config",
         "lib/netstandard2.1/MailKit.pdb",
         "lib/netstandard2.1/MailKit.xml",
-        "mailkit.3.6.0.nupkg.sha512",
+        "mailkit.4.0.0.nupkg.sha512",
         "mailkit.nuspec"
       ]
     },
@@ -1422,49 +1448,40 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "MimeKit/3.6.1": {
-      "sha512": "1Dz7OunFfocmlPpA77Qq8oG7eP9js3edY5SGhYVf3rUy2vYhwBoCB+/jUn97F5XynPKxNXApZl5bVoKdYoDbIQ==",
+    "MimeKit/4.0.0": {
+      "sha512": "AIyj//7nDutepZjMlYFbc19PguEl+35lryQJX2YVr486G7ihfB4X4lPXjNUyjCcclr3Wq0P2yiQ6+Sonqc7z5A==",
       "type": "package",
-      "path": "mimekit/3.6.1",
+      "path": "mimekit/4.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "icons/mimekit-50.png",
         "lib/net462/MimeKit.dll",
+        "lib/net462/MimeKit.dll.config",
         "lib/net462/MimeKit.pdb",
         "lib/net462/MimeKit.xml",
         "lib/net47/MimeKit.dll",
+        "lib/net47/MimeKit.dll.config",
         "lib/net47/MimeKit.pdb",
         "lib/net47/MimeKit.xml",
         "lib/net48/MimeKit.dll",
+        "lib/net48/MimeKit.dll.config",
         "lib/net48/MimeKit.pdb",
         "lib/net48/MimeKit.xml",
         "lib/net6.0/MimeKit.dll",
+        "lib/net6.0/MimeKit.dll.config",
         "lib/net6.0/MimeKit.pdb",
         "lib/net6.0/MimeKit.xml",
         "lib/netstandard2.0/MimeKit.dll",
+        "lib/netstandard2.0/MimeKit.dll.config",
         "lib/netstandard2.0/MimeKit.pdb",
         "lib/netstandard2.0/MimeKit.xml",
         "lib/netstandard2.1/MimeKit.dll",
+        "lib/netstandard2.1/MimeKit.dll.config",
         "lib/netstandard2.1/MimeKit.pdb",
         "lib/netstandard2.1/MimeKit.xml",
-        "mimekit.3.6.1.nupkg.sha512",
+        "mimekit.4.0.0.nupkg.sha512",
         "mimekit.nuspec"
-      ]
-    },
-    "Portable.BouncyCastle/1.9.0": {
-      "sha512": "eZZBCABzVOek+id9Xy04HhmgykF0wZg9wpByzrWN7q8qEI0Qen9b7tfd7w8VA3dOeesumMG7C5ZPy0jk7PSRHw==",
-      "type": "package",
-      "path": "portable.bouncycastle/1.9.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net40/BouncyCastle.Crypto.dll",
-        "lib/net40/BouncyCastle.Crypto.xml",
-        "lib/netstandard2.0/BouncyCastle.Crypto.dll",
-        "lib/netstandard2.0/BouncyCastle.Crypto.xml",
-        "portable.bouncycastle.1.9.0.nupkg.sha512",
-        "portable.bouncycastle.nuspec"
       ]
     },
     "runtime.native.System.Data.SqlClient.sni/4.7.0": {
@@ -2476,26 +2493,31 @@
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
-      "MailKit >= 3.6.0",
+      "MailKit >= 4.0.0",
       "Microsoft.Data.SqlClient >= 5.1.1",
-      "MimeKit >= 3.6.1",
+      "MimeKit >= 4.0.0",
       "System.Data.SqlClient >= 4.8.5"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\annav\\.nuget\\packages\\": {}
+    "C:\\Users\\kwkye\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\annav\\source\\repos\\SE361_ITHelpDesk_Spring2023\\GUI_IT\\GUI_IT.csproj",
+      "projectUniqueName": "C:\\Users\\kwkye\\source\\repos\\avadella\\SE361_ITHelpDesk2023\\GUI_IT\\GUI_IT.csproj",
       "projectName": "GUI_IT",
-      "projectPath": "C:\\Users\\annav\\source\\repos\\SE361_ITHelpDesk_Spring2023\\GUI_IT\\GUI_IT.csproj",
-      "packagesPath": "C:\\Users\\annav\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\annav\\source\\repos\\SE361_ITHelpDesk_Spring2023\\GUI_IT\\obj\\",
+      "projectPath": "C:\\Users\\kwkye\\source\\repos\\avadella\\SE361_ITHelpDesk2023\\GUI_IT\\GUI_IT.csproj",
+      "packagesPath": "C:\\Users\\kwkye\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\kwkye\\source\\repos\\avadella\\SE361_ITHelpDesk2023\\GUI_IT\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\annav\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\kwkye\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2523,7 +2545,7 @@
         "dependencies": {
           "MailKit": {
             "target": "Package",
-            "version": "[3.6.0, )"
+            "version": "[4.0.0, )"
           },
           "Microsoft.Data.SqlClient": {
             "target": "Package",
@@ -2531,7 +2553,7 @@
           },
           "MimeKit": {
             "target": "Package",
-            "version": "[3.6.1, )"
+            "version": "[4.0.0, )"
           },
           "System.Data.SqlClient": {
             "target": "Package",
@@ -2557,7 +2579,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
