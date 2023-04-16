@@ -77,15 +77,15 @@ namespace GUI_IT
         private static string[] emailBody(string template, string user, int tID = 0)
         {
             string[] data = {string.Empty, string.Empty};
-            if(template == "Registration")
+            if (template == "Registration")
             {
                 data[0] = "Successful Registration";
                 data[1] = "Hello " + Sql.getNamee(user)
-                          + "! Your access is pending administrative approval.\n You will be notified " 
+                          + "! Your access is pending administrative approval.\n You will be notified "
                           + "when your registration status has been reviewed by our Administrative Team.\n\n"
                           + "If you have any concerns or questions, please respond to this email or reach us at redagentsit@gmail.com\n\n-Red Agents IT";
             }
-            if(template == "Registration Accepted")
+            else if (template == "Registration Accepted")
             {
                 data[0] = "Account Registration Accepted";
                 data[1] = "Hello " + Sql.getNamee(user)
@@ -94,7 +94,7 @@ namespace GUI_IT
                         + "Username: " + user + "\n" + "Password: " + Sql.getPasss(user) + "\n\n"
                         + "Please do not share your credentials with anyone!\n\n-Red Agents IT";
             }
-            if(template == "Registration Denied")
+            else if (template == "Registration Denied")
             {
                 data[0] = "Account Registration Denied";
                 data[1] = "Hello " + Sql.getNamee(user)
@@ -102,7 +102,7 @@ namespace GUI_IT
                         + "If you believe we have made an error, please respond to this email or "
                         + "reach us at redagentsit@gmail.com\n\n-Reg Agents IT";
             }
-            if(template == "Raised Ticket")
+            else if (template == "Raised Ticket")
             {
                 data[0] = "Notice: New Ticket Raised";
                 data[1] = "Hello " + Sql.getName(user)
@@ -114,7 +114,7 @@ namespace GUI_IT
                         + "Ticket Description: " + Sql.getTicketDescription(tID) + "\n\n"
                         + "More information can be found within the Reg Agents IT Helpdesk Interface.";
             }
-            if(template == "Solved Ticket")
+            else if (template == "Solved Ticket")
             {
                 data[0] = "Notice: Ticket Solved";
                 data[1] = "Hello " + Sql.getName(user)
@@ -122,14 +122,25 @@ namespace GUI_IT
                         + "The following solution was provided: " + Sql.solution(tID) + "\n\n"
                         + "-Red Agents IT";
             }
-            if(template == "Password Reset")
+            else if (template == "Password Reset")
             {
                 data[0] = "Password Reset";
                 data[1] = "Hello " + Sql.getName(user)
                         + "\n\nYou have requested to reset your password. Below is your new login credential."
                         + "\n\nPassword: " + Sql.getPass(user) + "\n\n"
                         + "-Red Agents IT";
-            }           
+            }
+            else if (template == "Re-Opened")
+            {
+                data[0] = "Notice: Ticket Re-Opened!";
+                data[1] = "Hello " + Sql.getName(user)
+                        + "\n\nIT Ticket " + tID + " has been re-opened. \n\n"
+                        + "The following reason was given: " + Sql.getReTicketProblem + "!";
+            }
+            else
+            {
+                //empty else.            
+            }
             return data;
         }
     }

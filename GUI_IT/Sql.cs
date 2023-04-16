@@ -506,11 +506,11 @@ namespace GUI_IT
             con.Close();
         }
 
-        public static void report(int id, string urg, string email1, string email2, string category, string summary, string solution, string username, string status) 
+        public static void report(int id, string urg, string email1, string email2, string category, string summary, string solution, string username, string status, string coll)
         {
             int x = countrep();
             SqlConnection con = Connect();
-            String query2 = "INSERT INTO Report(Id, TicketID, Urgency, NameA, NameR, Category, Summary, Solution, Username, Status) VALUES('"+x+"', '" + id + "', '" + urg.ToString() + "','" + email1.ToString() + "', '" + email2.ToString() + "', '" + category.ToString() + "', ' " +summary.ToString()+ "', '" +solution.ToString()+ "', '" + username.ToString() + "', '" + status.ToString() + "' );";
+            String query2 = "INSERT INTO Report(Id, TicketID, Urgency, NameA, NameR, Category, Summary, Solution, Username, Status, Collaborators) VALUES('"+x+"', '" + id + "', '" + urg.ToString() + "','" + email1.ToString() + "', '" + email2.ToString() + "', '" + category.ToString() + "', ' " +summary.ToString()+ "', '" +solution.ToString()+ "', '" + username.ToString() + "', '" + status.ToString() + "', '"+coll.ToString()+"' );";
             SqlCommand cmd2 = new SqlCommand(query2, con);
             cmd2.ExecuteNonQuery();
             con.Close();
@@ -612,9 +612,41 @@ namespace GUI_IT
             DataTable dt = new DataTable();
             da.Fill(dt);
 
+            con.Close();
+            return dt;
+        }
+
+        public static DataTable Sharedd(string user)
+        {
+            SqlConnection con = Connect();
+            string y = "Solved";
+           
+            string query = "Select Distinct Tickets.Id, Name, Username, Category, Description, Category, Priority, Collaborators, AssignedTo, SharedWith FROM Tickets left join SharedTickets  ON ( Tickets.Id = SharedTickets.Id ) Where SharedWith = '" + user.ToString() + "' OR AssignedTo = '" + user.ToString() + "' AND Status != '" + y + "'; ";
+            SqlDataAdapter da = new SqlDataAdapter(query, con);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+
+            con.Close();
+            return dt;
+        }
+
+        public static DataTable Shareddd(string user)
+        {
+            SqlConnection con = Connect();
+            string y = "Solved";
+
+            string query = "Select Distinct Tickets.Id, Name, Username, Category, Description, Category, Priority, Collaborators, AssignedTo, SharedWith FROM Tickets left join SharedTickets  ON ( Tickets.Id = SharedTickets.Id ) Where SharedWith = '" + user.ToString() + "' OR AssignedTo = '" + user.ToString() + "' AND Status != '" + y + "'; ";
+            SqlCommand cmd = new SqlCommand(query, con);
+            cmd.ExecuteNonQuery();
+            SqlDataAdapter da = new SqlDataAdapter();
+            da.SelectCommand = cmd;
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+
             DataRow item = dt.NewRow();
-            item[1] = "Select Name";
+            item[1] = "Select";
             dt.Rows.InsertAt(item, 0);
+
             con.Close();
             return dt;
         }
@@ -770,10 +802,24 @@ namespace GUI_IT
             SqlCommand cmd4 = new SqlCommand(query4, con);
             cmd4.ExecuteNonQuery();
 
+            string query9 = "UPDATE Report SET Status = '" + y + "' where ID = '" + id + "'; ";
+            SqlCommand cmd9 = new SqlCommand(query9, con);
+            cmd9.ExecuteNonQuery();
+
             string query5 = "DELETE FROM Solved_Tickets where ID = '" + id + "'; ";
             SqlCommand cmd5 = new SqlCommand(query5, con);
             cmd5.ExecuteNonQuery();
             con.Close();
+        }
+
+        public static string getReTicketProblem(string tID)
+        {
+            SqlConnection con = Connect();
+            String query = "SELECT Reraised_Reason FROM ReopenedTickets WHERE Id = '" + tID.ToString() + "';";
+            SqlCommand cmd = new SqlCommand(query, con);
+            string problem = (string)cmd.ExecuteScalar();
+            con.Close();
+            return problem;
         }
 
         public static bool ResetPassword(string user)

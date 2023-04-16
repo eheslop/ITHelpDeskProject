@@ -58,6 +58,8 @@ namespace GUI_IT
             int y = System.Convert.ToInt32(x);
             string ema = emaill;
             Sql.reraise(y, User, ema, reason, info);
+            Email.sendEmail("Re-Opened", User, 0, y);
+            MessageBox.Show("Your ticket was re-opened successfully, and you will recieve email updates regarding the status of your ticket.", "Ticket Successfully Re-opened!", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
 
@@ -88,6 +90,7 @@ namespace GUI_IT
             cbxUrgency.ResetText();
             cbxUrgency.SelectedIndex = -1;
             txtProblemDescribe.Clear();
+
         }
 
         private void btnRefresh_Click(object sender, EventArgs e)

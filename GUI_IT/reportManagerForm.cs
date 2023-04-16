@@ -56,21 +56,18 @@ namespace GUI_IT
 
         private void Fill1()
         {
-
             DGVAssign.DataSource = Sql.ticketsUnsolved();
             DGVAssign.EditMode = DataGridViewEditMode.EditOnEnter;
         }
 
         private void Fill2()
         {
-
             DGVT.DataSource = Sql.ticketssolvedAll();
             DGVAssign.EditMode = DataGridViewEditMode.EditOnEnter;
         }
 
         private void Fill3()
         {
-
             DGVT.DataSource = Sql.ticketsRe();
             DGVAssign.EditMode = DataGridViewEditMode.EditOnEnter;
         }
@@ -140,6 +137,11 @@ namespace GUI_IT
         private void btnReOpened_Click(object sender, EventArgs e)
         {
             Fill3();
+        }
+
+        private void cbxid_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

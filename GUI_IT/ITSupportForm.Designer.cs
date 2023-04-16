@@ -57,8 +57,6 @@
             btnSolveTicket = new Button();
             txtSolution = new TextBox();
             pictureBox6 = new PictureBox();
-            DGVS = new DataGridView();
-            lblSolve = new Label();
             lblTicketID = new Label();
             pictureBox9 = new PictureBox();
             tabShare = new TabPage();
@@ -88,7 +86,6 @@
             tabSolve.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)Shared).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)DGVS).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             tabShare.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)DGVShare).BeginInit();
@@ -350,8 +347,6 @@
             tabSolve.Controls.Add(btnSolveTicket);
             tabSolve.Controls.Add(txtSolution);
             tabSolve.Controls.Add(pictureBox6);
-            tabSolve.Controls.Add(DGVS);
-            tabSolve.Controls.Add(lblSolve);
             tabSolve.Controls.Add(lblTicketID);
             tabSolve.Controls.Add(pictureBox9);
             tabSolve.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
@@ -376,29 +371,29 @@
             btnSolveClear.TabIndex = 74;
             btnSolveClear.Text = "Clear";
             btnSolveClear.UseVisualStyleBackColor = false;
-            btnSolveClear.Click += btnSolveClear_Click_1;
+            btnSolveClear.Click += btnSolveClear_Click;
             // 
             // label9
             // 
             label9.AutoSize = true;
             label9.BackColor = Color.Transparent;
-            label9.Font = new Font("Segoe UI", 10F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label9.Location = new Point(5, 162);
+            label9.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label9.Location = new Point(4, 5);
             label9.Margin = new Padding(1, 0, 1, 0);
             label9.Name = "label9";
-            label9.Size = new Size(158, 28);
+            label9.Size = new Size(273, 32);
             label9.TabIndex = 73;
-            label9.Text = "Shared with Me";
+            label9.Text = "Tickets Shared with Me";
             // 
             // Shared
             // 
             Shared.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            Shared.Location = new Point(7, 193);
+            Shared.Location = new Point(8, 42);
             Shared.Margin = new Padding(1, 2, 1, 2);
             Shared.Name = "Shared";
             Shared.RowHeadersWidth = 62;
             Shared.RowTemplate.Height = 33;
-            Shared.Size = new Size(1022, 119);
+            Shared.Size = new Size(1022, 226);
             Shared.TabIndex = 72;
             // 
             // cbxid
@@ -429,48 +424,25 @@
             // txtSolution
             // 
             txtSolution.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            txtSolution.Location = new Point(18, 339);
+            txtSolution.Location = new Point(19, 304);
             txtSolution.Margin = new Padding(1, 2, 1, 2);
             txtSolution.MaxLength = 500;
             txtSolution.Multiline = true;
             txtSolution.Name = "txtSolution";
             txtSolution.PlaceholderText = "Explain the solution to this ticket in 500 characters or less.";
-            txtSolution.Size = new Size(1016, 111);
+            txtSolution.Size = new Size(1016, 140);
             txtSolution.TabIndex = 59;
             // 
             // pictureBox6
             // 
             pictureBox6.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox6.BackColor = Color.FromArgb(64, 0, 0);
-            pictureBox6.Location = new Point(10, 331);
+            pictureBox6.Location = new Point(10, 292);
             pictureBox6.Margin = new Padding(1, 2, 1, 2);
             pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(1035, 125);
+            pictureBox6.Size = new Size(1035, 164);
             pictureBox6.TabIndex = 58;
             pictureBox6.TabStop = false;
-            // 
-            // DGVS
-            // 
-            DGVS.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            DGVS.Location = new Point(5, 29);
-            DGVS.Margin = new Padding(1, 2, 1, 2);
-            DGVS.Name = "DGVS";
-            DGVS.RowHeadersWidth = 62;
-            DGVS.RowTemplate.Height = 33;
-            DGVS.Size = new Size(1018, 129);
-            DGVS.TabIndex = 56;
-            // 
-            // lblSolve
-            // 
-            lblSolve.AutoSize = true;
-            lblSolve.BackColor = Color.Transparent;
-            lblSolve.Font = new Font("Segoe UI", 10F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            lblSolve.Location = new Point(6, -2);
-            lblSolve.Margin = new Padding(1, 0, 1, 0);
-            lblSolve.Name = "lblSolve";
-            lblSolve.Size = new Size(111, 28);
-            lblSolve.TabIndex = 55;
-            lblSolve.Text = "My Tickets";
             // 
             // lblTicketID
             // 
@@ -519,7 +491,7 @@
             // cbxid2
             // 
             cbxid2.FormattingEnabled = true;
-            cbxid2.Location = new Point(19, 108);
+            cbxid2.Location = new Point(19, 104);
             cbxid2.Margin = new Padding(4, 5, 4, 5);
             cbxid2.Name = "cbxid2";
             cbxid2.Size = new Size(443, 36);
@@ -528,7 +500,7 @@
             // cbxn
             // 
             cbxn.FormattingEnabled = true;
-            cbxn.Location = new Point(19, 198);
+            cbxn.Location = new Point(19, 197);
             cbxn.Margin = new Padding(2);
             cbxn.Name = "cbxn";
             cbxn.Size = new Size(600, 36);
@@ -544,7 +516,6 @@
             DGVShare.RowTemplate.Height = 33;
             DGVShare.Size = new Size(499, 392);
             DGVShare.TabIndex = 79;
-            DGVShare.CellContentClick += DGVShare_CellContentClick;
             // 
             // btnShare
             // 
@@ -591,7 +562,7 @@
             // txtEmail
             // 
             txtEmail.Anchor = AnchorStyles.None;
-            txtEmail.Location = new Point(22, 288);
+            txtEmail.Location = new Point(21, 294);
             txtEmail.Margin = new Padding(2);
             txtEmail.MaxLength = 50;
             txtEmail.Name = "txtEmail";
@@ -603,7 +574,7 @@
             label7.AutoSize = true;
             label7.BackColor = Color.DarkGray;
             label7.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
-            label7.Location = new Point(19, 258);
+            label7.Location = new Point(17, 258);
             label7.Margin = new Padding(1, 0, 1, 0);
             label7.Name = "label7";
             label7.Size = new Size(397, 30);
@@ -704,7 +675,6 @@
             tabSolve.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)Shared).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-            ((System.ComponentModel.ISupportInitialize)DGVS).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             tabShare.ResumeLayout(false);
             tabShare.PerformLayout();
@@ -727,9 +697,7 @@
         private TabControl tabControl1;
         private TabPage tabSolve;
         private TabPage tabShare;
-        private Label lblSolve;
         private Label lblShare;
-        private DataGridView DGVS;
         private TextBox txtSolution;
         private PictureBox pictureBox6;
         private Button btnSolveTicket;

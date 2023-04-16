@@ -23,6 +23,7 @@ namespace GUI_IT
             txtStatus.Text = Sql.getTicketStat(x);
             txtUrgency.Text = Sql.getTicketPriority(x);
             txtSummary.Text = Sql.getTicketDescription(x);
+            textBox1.Text = Sql.getColl(x);
             id = x;
         }
 
@@ -30,8 +31,17 @@ namespace GUI_IT
         {
             string x = txtExtra.Text;
             Sql.addinfo(x, id);
+            MessageBox.Show("You have successfully added extra information to this ticket!", "Ticket Successfully Updated!", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-       
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtUrgency_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

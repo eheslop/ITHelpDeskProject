@@ -33,21 +33,9 @@ namespace GUI_IT
         private void Fill1()
         {
             string x = newUser_.Username;
-            string y = "Solved";
-            SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-            builder.DataSource = "redagents.database.windows.net";
-            builder.UserID = "kwekwe";
-            builder.Password = "Password1!";
-            builder.InitialCatalog = "red_Agents";
-            SqlConnection con = new SqlConnection(builder.ConnectionString);
-            con.Open();
-            string query = "Select Distinct Tickets.Id, Name, Username, Category, Description, Category, Priority, Collaborators, AssignedTo FROM Tickets inner join SharedTickets  ON ( Tickets.Id = SharedTickets.Id ) Where SharedWith = '" + x + "' AND Status != '" + y + "'; ";
-            SqlDataAdapter da = new SqlDataAdapter(query, con);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            Shared.DataSource = dt;
+
+            Shared.DataSource = Sql.Sharedd(x);
             //GVS.EditMode = DataGridViewEditMode.EditOnEnter;
-            con.Close();
 
         }
 
@@ -72,7 +60,7 @@ namespace GUI_IT
             SqlDataAdapter da = new SqlDataAdapter(query, con);
             DataTable dt = new DataTable();
             da.Fill(dt);
-            DGVS.DataSource = dt;
+            //DGVS.DataSource = dt;
             DGVShare.DataSource = dt;
             DGVShare.EditMode = DataGridViewEditMode.EditOnEnter;
             con.Close();
@@ -82,7 +70,7 @@ namespace GUI_IT
 
         private void combo1()
         {
-            cbxid.DataSource = Sql.ticketsSolved(newUser_.Username);
+            cbxid.DataSource = Sql.Shareddd(newUser_.Username);
             cbxid.DisplayMember = "Id";
         }
 
@@ -92,11 +80,6 @@ namespace GUI_IT
             cbxid2.DisplayMember = "Id";
         }
 
-
-        private void DGVShare_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
@@ -112,7 +95,7 @@ namespace GUI_IT
             UserProfile.ShowDialog();
         }
 
-        private void btnSolveClear_Click_1(object sender, EventArgs e)
+        private void btnSolveClear_Click(object sender, EventArgs e)
         {
             txtSolution.Clear();
             cbxid.ResetText();
