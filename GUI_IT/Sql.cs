@@ -336,7 +336,7 @@ namespace GUI_IT
             SqlConnection con = Connect();
             String query = "INSERT INTO RegisteredUsers(Username, Name, First_Name, Last_Name, Password, Email, Role) VALUES('" + user.ToString() + "', '" + name.ToString() + "', '" + first.ToString() + "', '" + last.ToString() + "','" + pass.ToString() + "', '" + email.ToString() + "', '" + role.ToString() + "');";
             SqlCommand cmd = new SqlCommand(query, con);
-            con.Close();
+            
             cmd.ExecuteNonQuery();
             con.Close();
         }

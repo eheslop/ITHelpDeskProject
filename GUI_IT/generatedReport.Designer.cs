@@ -65,6 +65,8 @@
             pictureBox13 = new PictureBox();
             label1 = new Label();
             textBox1 = new TextBox();
+            txtSolution = new TextBox();
+            lblSolution = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureboxIcon).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -342,7 +344,7 @@
             lblTicketStatus.AutoSize = true;
             lblTicketStatus.BackColor = Color.Gainsboro;
             lblTicketStatus.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblTicketStatus.Location = new Point(615, 241);
+            lblTicketStatus.Location = new Point(615, 243);
             lblTicketStatus.Margin = new Padding(2, 0, 2, 0);
             lblTicketStatus.Name = "lblTicketStatus";
             lblTicketStatus.Size = new Size(131, 25);
@@ -378,7 +380,7 @@
             // 
             // txtStatus
             // 
-            txtStatus.Location = new Point(748, 238);
+            txtStatus.Location = new Point(747, 239);
             txtStatus.Margin = new Padding(2);
             txtStatus.Name = "txtStatus";
             txtStatus.ReadOnly = true;
@@ -407,7 +409,7 @@
             // txtSummary
             // 
             txtSummary.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            txtSummary.Location = new Point(52, 386);
+            txtSummary.Location = new Point(52, 387);
             txtSummary.Margin = new Padding(1, 2, 1, 2);
             txtSummary.MaxLength = 750;
             txtSummary.Multiline = true;
@@ -434,7 +436,7 @@
             btnsubmit.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
             btnsubmit.ForeColor = Color.White;
             btnsubmit.Location = new Point(770, 521);
-            btnsubmit.Margin = new Padding(4, 4, 4, 4);
+            btnsubmit.Margin = new Padding(4);
             btnsubmit.Name = "btnsubmit";
             btnsubmit.Size = new Size(118, 49);
             btnsubmit.TabIndex = 135;
@@ -467,18 +469,46 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(238, 301);
+            textBox1.Location = new Point(238, 302);
             textBox1.Margin = new Padding(2);
             textBox1.Name = "textBox1";
             textBox1.ReadOnly = true;
             textBox1.Size = new Size(644, 31);
             textBox1.TabIndex = 138;
             // 
+            // txtSolution
+            // 
+            txtSolution.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            txtSolution.Location = new Point(51, 514);
+            txtSolution.Margin = new Padding(1, 2, 1, 2);
+            txtSolution.MaxLength = 500;
+            txtSolution.Multiline = true;
+            txtSolution.Name = "txtSolution";
+            txtSolution.ReadOnly = true;
+            txtSolution.Size = new Size(707, 66);
+            txtSolution.TabIndex = 139;
+            txtSolution.Visible = false;
+            // 
+            // lblSolution
+            // 
+            lblSolution.AutoSize = true;
+            lblSolution.BackColor = Color.Gainsboro;
+            lblSolution.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            lblSolution.Location = new Point(45, 487);
+            lblSolution.Margin = new Padding(2, 0, 2, 0);
+            lblSolution.Name = "lblSolution";
+            lblSolution.Size = new Size(151, 25);
+            lblSolution.TabIndex = 140;
+            lblSolution.Text = "Ticket Solution:";
+            lblSolution.Visible = false;
+            // 
             // generatedReport
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(932, 639);
+            Controls.Add(lblSolution);
+            Controls.Add(txtSolution);
             Controls.Add(textBox1);
             Controls.Add(label1);
             Controls.Add(pictureBox13);
@@ -578,5 +608,7 @@
         private PictureBox pictureBox13;
         private Label label1;
         private TextBox textBox1;
+        private TextBox txtSolution;
+        private Label lblSolution;
     }
 }

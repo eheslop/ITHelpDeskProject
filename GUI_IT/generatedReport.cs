@@ -13,7 +13,7 @@ namespace GUI_IT
     public partial class generatedReport : Form
     {
         public int id { get; set; }
-        public generatedReport(int x)
+        public generatedReport(int x, int z)
         {
             InitializeComponent();
             txtID.Text = x.ToString();
@@ -24,7 +24,25 @@ namespace GUI_IT
             txtUrgency.Text = Sql.getTicketPriority(x);
             txtSummary.Text = Sql.getTicketDescription(x);
             textBox1.Text = Sql.getColl(x);
+            txtSolution.Text = Sql.solution(x);
             id = x;
+            if (z == 0)
+            {
+                txtSolution.Visible = true;
+                txtExtra.Visible = false;
+                btnsubmit.Visible = false;
+                lblExtra.Visible = false;
+                lblSolution.Visible = true;
+            }
+            else
+            {
+                txtSolution.Visible = false;
+                txtExtra.Visible = true;
+                btnsubmit.Visible = true;
+                lblExtra.Visible = true;
+                lblSolution.Visible = false;
+
+            }
         }
 
         private void btnsubmit_Click(object sender, EventArgs e)

@@ -47,6 +47,7 @@ namespace GUI_IT
             con.Close();
         }
 
+
         private void combo()
         {
             cbxn.DataSource = Sql.ITname();
@@ -60,17 +61,20 @@ namespace GUI_IT
             DGVAssign.EditMode = DataGridViewEditMode.EditOnEnter;
         }
 
+
         private void Fill2()
         {
             DGVT.DataSource = Sql.ticketssolvedAll();
             DGVAssign.EditMode = DataGridViewEditMode.EditOnEnter;
         }
 
+
         private void Fill3()
         {
             DGVT.DataSource = Sql.ticketsRe();
             DGVAssign.EditMode = DataGridViewEditMode.EditOnEnter;
         }
+
 
         private void Fill4()
         {
@@ -93,11 +97,13 @@ namespace GUI_IT
             this.Close();
         }
 
+
         private void ProfilePictureBox_Click(object sender, EventArgs e)
         {
             frmUserProf UserProfile = new frmUserProf(newUser_);
             UserProfile.ShowDialog();
         }
+
 
         private void btnClear_Click(object sender, EventArgs e)
         {
@@ -107,6 +113,7 @@ namespace GUI_IT
             cbxid.ResetText();
             cbxid.SelectedIndex = -1;
         }
+
 
         private void btnAssign_Click(object sender, EventArgs e)
         {
@@ -120,34 +127,34 @@ namespace GUI_IT
             MessageBox.Show("The ticket has been successfully assigned to the designated user.", "Ticket Assigned!", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
+
         private void btnUnsolved_Click(object sender, EventArgs e)
         {
             Fill();
         }
+
 
         private void btnSolved_Click(object sender, EventArgs e)
         {
             Fill2();
         }
 
+
         private void btnViewUnsolvedTable_Click(object sender, EventArgs e)
         {
             Fill1();
         }
+
 
         private void btnViewReopenedTable_Click(object sender, EventArgs e)
         {
             Fill4();
         }
 
+
         private void btnReOpened_Click(object sender, EventArgs e)
         {
             Fill3();
-        }
-
-        private void cbxid_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

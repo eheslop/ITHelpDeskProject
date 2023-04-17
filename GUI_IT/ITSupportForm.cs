@@ -39,11 +39,13 @@ namespace GUI_IT
 
         }
 
+
         private void combo()
         {
             cbxn.DataSource = Sql.ITname();
             cbxn.DisplayMember = "Name";
         }
+
 
         private void Fill2()
         {
@@ -74,6 +76,7 @@ namespace GUI_IT
             cbxid.DisplayMember = "Id";
         }
 
+
         private void combo2()
         {
             cbxid2.DataSource = Sql.ticketsSolved(newUser_.Username);
@@ -89,11 +92,13 @@ namespace GUI_IT
             this.Close();
         }
 
+
         private void ProfilePictureBox_Click(object sender, EventArgs e)
         {
             frmUserProf UserProfile = new frmUserProf(newUser_);
             UserProfile.ShowDialog();
         }
+
 
         private void btnSolveClear_Click(object sender, EventArgs e)
         {
@@ -101,6 +106,7 @@ namespace GUI_IT
             cbxid.ResetText();
             cbxid.SelectedIndex = -1;
         }
+
 
         private void btnSolveTicket_Click(object sender, EventArgs e)
         {
@@ -114,6 +120,7 @@ namespace GUI_IT
             Email.sendEmail("Solved Ticket", newUser_.Username, 0, Convert.ToInt32(x));
         }
 
+
         private void btnClear_Click(object sender, EventArgs e)
         {
             txtEmail.Clear();
@@ -122,6 +129,7 @@ namespace GUI_IT
             cbxn.ResetText();
             cbxn.SelectedIndex = -1;
         }
+
 
         private void btnShare_Click(object sender, EventArgs e)
         {
@@ -134,6 +142,7 @@ namespace GUI_IT
             Sql.add2(b, y, c);
             MessageBox.Show("The ticket you wished to share has now been sent to the user of your choosing.", "Ticket Shared Successfully!", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
 
         private void frmITSupport_Load(object sender, EventArgs e)
         {

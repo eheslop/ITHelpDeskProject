@@ -140,7 +140,6 @@ namespace GUI_IT
             DGVR.DataSource = dt;
             DGVR.EditMode = DataGridViewEditMode.EditOnEnter;
             con.Close();
-
         }
 
 
@@ -201,6 +200,7 @@ namespace GUI_IT
         {
             string x = cbxSolvedID.Text.ToString();
             int y = System.Convert.ToInt32(x);
+            int z = 0;
             if (Sql.Exists1(y) == true)
             {
 
@@ -217,7 +217,7 @@ namespace GUI_IT
                 string n = Sql.getColl(y);
                 Sql.report(y, c, b, d, g, f, l, newUser_.Username, h, n);
             }
-            generatedReport report = new generatedReport(y);
+            generatedReport report = new generatedReport(y,z);
             report.ShowDialog();
             // MessageBox.Show("Your report regarded the solved ticket of your choosing has been successfully submitted.", "Solved Ticket Report Submitted!", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
@@ -234,10 +234,12 @@ namespace GUI_IT
             UpdateUserStatus.ShowDialog();
         }
 
+
         private void btnSubmitUnsolved_Click(object sender, EventArgs e)
         {
             string x = cbxUnsolvedID.Text.ToString();
             int y = System.Convert.ToInt32(x);
+            int z = 1;
             if (Sql.Exists1(y) == true)
             {
 
@@ -254,8 +256,9 @@ namespace GUI_IT
                 string n = Sql.getColl(y);
                 Sql.report(y, c, b, d, g, f, l, newUser_.Username, h, n);
             }
-            generatedReport report = new generatedReport(y);
+            generatedReport report = new generatedReport(y,z);
             report.ShowDialog();
+            
             /*string x = txtTicketID.Text.ToString();
             string b = Sql.getTicketassign(y);
                 string c = Sql.getTicketPriority(y);

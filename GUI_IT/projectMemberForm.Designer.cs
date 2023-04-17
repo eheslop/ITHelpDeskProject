@@ -224,7 +224,7 @@
             btnTickets.TabIndex = 36;
             btnTickets.Text = "Ticket Dashboard";
             btnTickets.UseVisualStyleBackColor = false;
-            btnTickets.Click += btnTickets_Click_1;
+            btnTickets.Click += btnTickets_Click;
             // 
             // btnProblemList
             // 
@@ -233,7 +233,7 @@
             btnProblemList.FlatStyle = FlatStyle.Popup;
             btnProblemList.Font = new Font("Segoe UI", 10F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             btnProblemList.ForeColor = Color.White;
-            btnProblemList.Location = new Point(77, 41);
+            btnProblemList.Location = new Point(78, 41);
             btnProblemList.Margin = new Padding(1, 2, 1, 2);
             btnProblemList.Name = "btnProblemList";
             btnProblemList.Size = new Size(149, 48);
@@ -247,10 +247,10 @@
             pnlTickets.Controls.Add(tabProjectMem);
             pnlTickets.Controls.Add(lblTicket);
             pnlTickets.Controls.Add(pictureBox3);
-            pnlTickets.Location = new Point(0, 88);
+            pnlTickets.Location = new Point(0, 90);
             pnlTickets.Margin = new Padding(1, 2, 1, 2);
             pnlTickets.Name = "pnlTickets";
-            pnlTickets.Size = new Size(1286, 557);
+            pnlTickets.Size = new Size(1286, 556);
             pnlTickets.TabIndex = 45;
             // 
             // tabProjectMem
@@ -260,11 +260,11 @@
             tabProjectMem.Controls.Add(tabRaiseTicket);
             tabProjectMem.Controls.Add(tabReopenTicket);
             tabProjectMem.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            tabProjectMem.Location = new Point(-9, 69);
+            tabProjectMem.Location = new Point(-9, 68);
             tabProjectMem.Margin = new Padding(1, 2, 1, 2);
             tabProjectMem.Name = "tabProjectMem";
             tabProjectMem.SelectedIndex = 0;
-            tabProjectMem.Size = new Size(1289, 493);
+            tabProjectMem.Size = new Size(1289, 490);
             tabProjectMem.TabIndex = 50;
             // 
             // tabHome
@@ -288,7 +288,7 @@
             tabHome.Location = new Point(4, 37);
             tabHome.Margin = new Padding(1, 2, 1, 2);
             tabHome.Name = "tabHome";
-            tabHome.Size = new Size(1281, 452);
+            tabHome.Size = new Size(1281, 449);
             tabHome.TabIndex = 3;
             tabHome.Text = "Ticket Homepage";
             // 
@@ -467,7 +467,7 @@
             tabMyTickets.Location = new Point(4, 37);
             tabMyTickets.Margin = new Padding(1, 2, 1, 2);
             tabMyTickets.Name = "tabMyTickets";
-            tabMyTickets.Size = new Size(1281, 452);
+            tabMyTickets.Size = new Size(1281, 241);
             tabMyTickets.TabIndex = 2;
             tabMyTickets.Text = "My Tickets";
             // 
@@ -536,7 +536,7 @@
             tabRaiseTicket.Margin = new Padding(1, 2, 1, 2);
             tabRaiseTicket.Name = "tabRaiseTicket";
             tabRaiseTicket.Padding = new Padding(1, 2, 1, 2);
-            tabRaiseTicket.Size = new Size(1281, 452);
+            tabRaiseTicket.Size = new Size(1281, 241);
             tabRaiseTicket.TabIndex = 0;
             tabRaiseTicket.Text = "Raise Tickets";
             // 
@@ -678,7 +678,7 @@
             tabReopenTicket.Margin = new Padding(1, 2, 1, 2);
             tabReopenTicket.Name = "tabReopenTicket";
             tabReopenTicket.Padding = new Padding(1, 2, 1, 2);
-            tabReopenTicket.Size = new Size(1281, 452);
+            tabReopenTicket.Size = new Size(1281, 241);
             tabReopenTicket.TabIndex = 1;
             tabReopenTicket.Text = "Re-open Tickets";
             // 
@@ -853,7 +853,6 @@
             pnlProblemList.Name = "pnlProblemList";
             pnlProblemList.Size = new Size(1269, 580);
             pnlProblemList.TabIndex = 45;
-            pnlProblemList.Paint += pnlProblemList_Paint;
             // 
             // pictureBox17
             // 
@@ -870,10 +869,10 @@
             // 
             pictureBox23.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox23.BackColor = Color.FromArgb(64, 0, 0);
-            pictureBox23.Location = new Point(977, 134);
+            pictureBox23.Location = new Point(978, 134);
             pictureBox23.Margin = new Padding(1, 2, 1, 2);
             pictureBox23.Name = "pictureBox23";
-            pictureBox23.Size = new Size(274, 387);
+            pictureBox23.Size = new Size(274, 388);
             pictureBox23.TabIndex = 61;
             pictureBox23.TabStop = false;
             // 
@@ -887,16 +886,15 @@
             pictureBox16.Size = new Size(258, 364);
             pictureBox16.TabIndex = 56;
             pictureBox16.TabStop = false;
-            pictureBox16.Click += pictureBox16_Click;
             // 
             // pictureBox22
             // 
             pictureBox22.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox22.BackColor = Color.FromArgb(64, 0, 0);
-            pictureBox22.Location = new Point(657, 134);
+            pictureBox22.Location = new Point(658, 134);
             pictureBox22.Margin = new Padding(1, 2, 1, 2);
             pictureBox22.Name = "pictureBox22";
-            pictureBox22.Size = new Size(274, 387);
+            pictureBox22.Size = new Size(274, 388);
             pictureBox22.TabIndex = 60;
             pictureBox22.TabStop = false;
             // 
@@ -904,7 +902,7 @@
             // 
             ptrbxPasswordQ.BackgroundImage = (Image)resources.GetObject("ptrbxPasswordQ.BackgroundImage");
             ptrbxPasswordQ.BackgroundImageLayout = ImageLayout.Stretch;
-            ptrbxPasswordQ.Location = new Point(345, 147);
+            ptrbxPasswordQ.Location = new Point(345, 148);
             ptrbxPasswordQ.Margin = new Padding(4);
             ptrbxPasswordQ.Name = "ptrbxPasswordQ";
             ptrbxPasswordQ.Size = new Size(256, 364);
@@ -915,7 +913,7 @@
             // 
             ptrbxGeneralQSmall.BackgroundImage = (Image)resources.GetObject("ptrbxGeneralQSmall.BackgroundImage");
             ptrbxGeneralQSmall.BackgroundImageLayout = ImageLayout.Stretch;
-            ptrbxGeneralQSmall.Location = new Point(23, 145);
+            ptrbxGeneralQSmall.Location = new Point(22, 145);
             ptrbxGeneralQSmall.Margin = new Padding(4);
             ptrbxGeneralQSmall.Name = "ptrbxGeneralQSmall";
             ptrbxGeneralQSmall.Size = new Size(252, 364);
@@ -939,7 +937,7 @@
             // 
             lnklblEmailQ.AutoSize = true;
             lnklblEmailQ.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            lnklblEmailQ.Location = new Point(678, 107);
+            lnklblEmailQ.Location = new Point(678, 108);
             lnklblEmailQ.Margin = new Padding(4, 0, 4, 0);
             lnklblEmailQ.Name = "lnklblEmailQ";
             lnklblEmailQ.Size = new Size(226, 24);
@@ -981,7 +979,7 @@
             pictureBox20.Location = new Point(12, 135);
             pictureBox20.Margin = new Padding(1, 2, 1, 2);
             pictureBox20.Name = "pictureBox20";
-            pictureBox20.Size = new Size(274, 387);
+            pictureBox20.Size = new Size(274, 388);
             pictureBox20.TabIndex = 58;
             pictureBox20.TabStop = false;
             // 
@@ -1061,7 +1059,7 @@
             pictureBox21.Location = new Point(336, 135);
             pictureBox21.Margin = new Padding(1, 2, 1, 2);
             pictureBox21.Name = "pictureBox21";
-            pictureBox21.Size = new Size(274, 387);
+            pictureBox21.Size = new Size(274, 388);
             pictureBox21.TabIndex = 59;
             pictureBox21.TabStop = false;
             // 
@@ -1134,10 +1132,10 @@
             pnlGeneralQ.AutoScroll = true;
             pnlGeneralQ.Controls.Add(btnBackGeneral);
             pnlGeneralQ.Controls.Add(pictureBox14);
-            pnlGeneralQ.Location = new Point(1, 151);
+            pnlGeneralQ.Location = new Point(1, 149);
             pnlGeneralQ.Margin = new Padding(4);
             pnlGeneralQ.Name = "pnlGeneralQ";
-            pnlGeneralQ.Size = new Size(1260, 494);
+            pnlGeneralQ.Size = new Size(1260, 496);
             pnlGeneralQ.TabIndex = 49;
             // 
             // btnBackGeneral
@@ -1149,7 +1147,7 @@
             btnBackGeneral.Location = new Point(56, 22);
             btnBackGeneral.Margin = new Padding(4);
             btnBackGeneral.Name = "btnBackGeneral";
-            btnBackGeneral.Size = new Size(217, 74);
+            btnBackGeneral.Size = new Size(218, 74);
             btnBackGeneral.TabIndex = 1;
             btnBackGeneral.Text = "Return to Frequently Asked Questions";
             btnBackGeneral.UseVisualStyleBackColor = false;
@@ -1162,20 +1160,19 @@
             pictureBox14.Location = new Point(294, 11);
             pictureBox14.Margin = new Padding(4);
             pictureBox14.Name = "pictureBox14";
-            pictureBox14.Size = new Size(703, 815);
+            pictureBox14.Size = new Size(702, 815);
             pictureBox14.TabIndex = 0;
             pictureBox14.TabStop = false;
-            pictureBox14.Click += pictureBox14_Click;
             // 
             // pnlTicketQ
             // 
             pnlTicketQ.AutoScroll = true;
             pnlTicketQ.Controls.Add(btnBackTicket);
             pnlTicketQ.Controls.Add(pictureBox15);
-            pnlTicketQ.Location = new Point(0, 149);
+            pnlTicketQ.Location = new Point(0, 153);
             pnlTicketQ.Margin = new Padding(4);
             pnlTicketQ.Name = "pnlTicketQ";
-            pnlTicketQ.Size = new Size(1262, 493);
+            pnlTicketQ.Size = new Size(1262, 488);
             pnlTicketQ.TabIndex = 50;
             // 
             // btnBackTicket
@@ -1206,14 +1203,13 @@
             // 
             // pnlEmailQ
             // 
-            pnlEmailQ.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             pnlEmailQ.AutoScroll = true;
             pnlEmailQ.Controls.Add(brnBackEmail);
             pnlEmailQ.Controls.Add(pictureBox18);
             pnlEmailQ.Location = new Point(0, 149);
             pnlEmailQ.Margin = new Padding(4);
             pnlEmailQ.Name = "pnlEmailQ";
-            pnlEmailQ.Size = new Size(1261, 487);
+            pnlEmailQ.Size = new Size(1261, 488);
             pnlEmailQ.TabIndex = 51;
             // 
             // brnBackEmail
@@ -1233,7 +1229,6 @@
             // 
             // pictureBox18
             // 
-            pictureBox18.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox18.BackgroundImage = (Image)resources.GetObject("pictureBox18.BackgroundImage");
             pictureBox18.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox18.Location = new Point(330, 20);
@@ -1249,10 +1244,10 @@
             pnlPasswordQ.AutoScroll = true;
             pnlPasswordQ.Controls.Add(btnPasswordBack);
             pnlPasswordQ.Controls.Add(pictureBox19);
-            pnlPasswordQ.Location = new Point(2, 149);
+            pnlPasswordQ.Location = new Point(2, 153);
             pnlPasswordQ.Margin = new Padding(4);
             pnlPasswordQ.Name = "pnlPasswordQ";
-            pnlPasswordQ.Size = new Size(1261, 487);
+            pnlPasswordQ.Size = new Size(1261, 484);
             pnlPasswordQ.TabIndex = 52;
             // 
             // btnPasswordBack
@@ -1261,10 +1256,10 @@
             btnPasswordBack.FlatStyle = FlatStyle.Popup;
             btnPasswordBack.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnPasswordBack.ForeColor = Color.White;
-            btnPasswordBack.Location = new Point(30, 37);
+            btnPasswordBack.Location = new Point(30, 38);
             btnPasswordBack.Margin = new Padding(4);
             btnPasswordBack.Name = "btnPasswordBack";
-            btnPasswordBack.Size = new Size(217, 68);
+            btnPasswordBack.Size = new Size(218, 68);
             btnPasswordBack.TabIndex = 1;
             btnPasswordBack.Text = "Return to Frequently Asked Questions";
             btnPasswordBack.UseVisualStyleBackColor = false;
@@ -1274,7 +1269,7 @@
             // 
             pictureBox19.BackgroundImage = (Image)resources.GetObject("pictureBox19.BackgroundImage");
             pictureBox19.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox19.Location = new Point(277, 24);
+            pictureBox19.Location = new Point(278, 24);
             pictureBox19.Margin = new Padding(4);
             pictureBox19.Name = "pictureBox19";
             pictureBox19.Size = new Size(745, 792);
@@ -1300,9 +1295,9 @@
             Controls.Add(pictureBox1);
             Controls.Add(Rectangle1);
             Controls.Add(pnlPasswordQ);
-            Controls.Add(pnlEmailQ);
             Controls.Add(pnlTicketQ);
             Controls.Add(pnlGeneralQ);
+            Controls.Add(pnlEmailQ);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(1, 2, 1, 2);
             Name = "frmProjectMember";
