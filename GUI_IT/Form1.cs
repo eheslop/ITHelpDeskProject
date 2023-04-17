@@ -104,7 +104,6 @@ namespace GUI_IT
 
         private void FrmLogin_Load(object sender, EventArgs e)
         {
-
             OriginalFormSize = new Rectangle(this.Location.X, this.Location.Y, this.Size.Width, this.Size.Height);
             buttonRegRect = new Rectangle(btnRegisterAccount.Location.X, btnRegisterAccount.Location.Y, btnRegisterAccount.Width, btnRegisterAccount.Height);
             textBoxUsername = new Rectangle(txtUsername.Location.X, txtUsername.Location.Y, txtUsername.Width, txtUsername.Height);

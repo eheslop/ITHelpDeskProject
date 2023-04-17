@@ -817,7 +817,7 @@ namespace GUI_IT
             SqlConnection con = Connect();
             String query = "SELECT Reraised_Reason FROM ReopenedTickets WHERE Id = '" + tID + "';";
             SqlCommand cmd = new SqlCommand(query, con);
-            string problem = (string)cmd.ExecuteScalar();
+            string problem = (string) cmd.ExecuteScalar();
             con.Close();
             return problem;
         }
