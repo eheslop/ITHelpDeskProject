@@ -812,10 +812,10 @@ namespace GUI_IT
             con.Close();
         }
 
-        public static string getReTicketProblem(string tID)
+        public static string getReTicketProblem(int tID)
         {
             SqlConnection con = Connect();
-            String query = "SELECT Reraised_Reason FROM ReopenedTickets WHERE Id = '" + tID.ToString() + "';";
+            String query = "SELECT Reraised_Reason FROM ReopenedTickets WHERE Id = '" + tID + "';";
             SqlCommand cmd = new SqlCommand(query, con);
             string problem = (string)cmd.ExecuteScalar();
             con.Close();

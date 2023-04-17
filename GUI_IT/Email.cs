@@ -135,7 +135,7 @@ namespace GUI_IT
                 data[0] = "Notice: Ticket Re-Opened!";
                 data[1] = "Hello " + Sql.getName(user)
                         + "\n\nIT Ticket " + tID + " has been re-opened. \n\n"
-                        + "The following reason was given: " + Sql.getReTicketProblem + "!";
+                        + "The following reason was given: " + Sql.getReTicketProblem(tID) + "!";
             }
             else
             {
