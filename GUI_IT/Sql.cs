@@ -265,7 +265,7 @@ namespace GUI_IT
             string x = "Unsolved";
             int y = 0;
             string z = "NONE";
-            String query = "INSERT INTO Tickets(id, Name, Username, Category, Description, Status, Email, Priority, Collaborators, Num_Of_Coll, AssignedTo) VALUES('" + id + "',  '" + name.ToString() + "', '" + username.ToString() + "', '" + Category.ToString() + "', '" + Description.ToString() + "', '" +x+ "',  '" + email.ToString() + "', '" + Priority.ToString() + "', '" +z+ "', '" +y+ "','"+z+"');";
+            String query = "INSERT INTO Tickets(id, Name, Username, Category, Description, Status, Email, Priority, Collaborators, Num_Of_Coll, AssignedTo) VALUES('" + id + "',  '" + name.ToString() + "', '" + username.ToString() + "', '" + Category.ToString() + "', '" + Description.ToString() + "', '" + x + "',  '" + email.ToString() + "', '" + Priority.ToString() + "', '" + z + "', '" + y + "','" + z + "');";
             SqlCommand cmd = new SqlCommand(query, con);
             cmd.ExecuteNonQuery();
             con.Close();
