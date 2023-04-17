@@ -125,6 +125,12 @@ namespace GUI_IT
             Sql.Addcoll(z, y);
             Sql.add2(z, y, f);
             MessageBox.Show("The ticket has been successfully assigned to the designated user.", "Ticket Assigned!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            txtEmail.Clear();
+            cbxn.ResetText();
+            cbxn.SelectedIndex = -1;
+            cbxid.ResetText();
+            cbxid.SelectedIndex = -1;
         }
 
 

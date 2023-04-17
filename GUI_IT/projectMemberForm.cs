@@ -160,6 +160,12 @@ namespace GUI_IT
             Sql.reraise(y, User, ema, reason, info);
             Email.sendEmail("Re-Opened", User, 0, y);
             MessageBox.Show("Your ticket was re-opened successfully, and you will recieve email updates regarding the status of your ticket.", "Ticket Successfully Re-opened!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            cbxReopenReason.ResetText();
+            cbxReopenReason.SelectedIndex = -1;
+            txtReopenTicket.Clear();
+            cbxid.ResetText();
+            cbxid.SelectedIndex = -1;
         }
 
 

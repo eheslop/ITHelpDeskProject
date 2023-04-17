@@ -33,6 +33,8 @@ namespace GUI_IT
                 btnsubmit.Visible = false;
                 lblExtra.Visible = false;
                 lblSolution.Visible = true;
+                pnlExpandTicket.Visible = false;
+                lblViewHeader.Visible = false;
             }
             else
             {
@@ -41,6 +43,8 @@ namespace GUI_IT
                 btnsubmit.Visible = true;
                 lblExtra.Visible = true;
                 lblSolution.Visible = false;
+                pnlExpandTicket.Visible = false;
+                lblViewHeader.Visible = false;
 
             }
         }

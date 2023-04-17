@@ -118,6 +118,10 @@ namespace GUI_IT
             Sql.solve(y, newUser_.Username, z, k, j);
             MessageBox.Show("Your solution for the ticket of your choosing has now been submitted, thank you.", "Ticket Solved Successfully!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             Email.sendEmail("Solved Ticket", newUser_.Username, 0, Convert.ToInt32(x));
+
+            txtSolution.Clear();
+            cbxid.ResetText();
+            cbxid.SelectedIndex = -1;
         }
 
 
@@ -141,6 +145,12 @@ namespace GUI_IT
             Sql.Addcoll(b, y);
             Sql.add2(b, y, c);
             MessageBox.Show("The ticket you wished to share has now been sent to the user of your choosing.", "Ticket Shared Successfully!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            txtEmail.Clear();
+            cbxid2.ResetText();
+            cbxid2.SelectedIndex = -1;
+            cbxn.ResetText();
+            cbxn.SelectedIndex = -1;
         }
 
 

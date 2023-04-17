@@ -220,6 +220,9 @@ namespace GUI_IT
             generatedReport report = new generatedReport(y,z);
             report.ShowDialog();
             // MessageBox.Show("Your report regarded the solved ticket of your choosing has been successfully submitted.", "Solved Ticket Report Submitted!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            cbxSolvedID.ResetText();
+            cbxSolvedID.SelectedIndex = -1;
         }
 
 
@@ -258,7 +261,7 @@ namespace GUI_IT
             }
             generatedReport report = new generatedReport(y,z);
             report.ShowDialog();
-            
+
             /*string x = txtTicketID.Text.ToString();
             string b = Sql.getTicketassign(y);
                 string c = Sql.getTicketPriority(y);
@@ -271,6 +274,9 @@ namespace GUI_IT
             Sql.report(y, c, b, d, g, f, l, newUser_.Username, h);*/
 
             // MessageBox.Show("Your report regarded the unsolved ticket of your choosing has been successfully submitted.", "Unsolved Ticket Report Submitted!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            cbxUnsolvedID.ResetText();
+            cbxUnsolvedID.SelectedIndex = -1;
         }
 
         private void DGVGR_CellContentClick(object sender, DataGridViewCellEventArgs e)

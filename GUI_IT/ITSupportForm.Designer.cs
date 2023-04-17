@@ -73,6 +73,9 @@
             pictureBox5 = new PictureBox();
             ProfilePictureBox = new PictureBox();
             lblLoggedIn = new Label();
+            btnExpandTicket = new Button();
+            btnShareRefresh = new Button();
+            btnSolveRefresh = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureLogo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Rectangle1).BeginInit();
@@ -340,6 +343,8 @@
             // tabSolve
             // 
             tabSolve.BackColor = Color.LightGray;
+            tabSolve.Controls.Add(btnSolveRefresh);
+            tabSolve.Controls.Add(btnExpandTicket);
             tabSolve.Controls.Add(btnSolveClear);
             tabSolve.Controls.Add(label9);
             tabSolve.Controls.Add(Shared);
@@ -388,7 +393,7 @@
             // Shared
             // 
             Shared.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            Shared.Location = new Point(8, 42);
+            Shared.Location = new Point(13, 46);
             Shared.Margin = new Padding(1, 2, 1, 2);
             Shared.Name = "Shared";
             Shared.RowHeadersWidth = 62;
@@ -469,6 +474,7 @@
             // tabShare
             // 
             tabShare.BackColor = Color.LightGray;
+            tabShare.Controls.Add(btnShareRefresh);
             tabShare.Controls.Add(cbxid2);
             tabShare.Controls.Add(cbxn);
             tabShare.Controls.Add(DGVShare);
@@ -500,7 +506,7 @@
             // cbxn
             // 
             cbxn.FormattingEnabled = true;
-            cbxn.Location = new Point(19, 197);
+            cbxn.Location = new Point(19, 200);
             cbxn.Margin = new Padding(2);
             cbxn.Name = "cbxn";
             cbxn.Size = new Size(600, 36);
@@ -523,7 +529,7 @@
             btnShare.FlatStyle = FlatStyle.Popup;
             btnShare.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnShare.ForeColor = Color.White;
-            btnShare.Location = new Point(210, 392);
+            btnShare.Location = new Point(416, 393);
             btnShare.Margin = new Padding(1, 2, 1, 2);
             btnShare.Name = "btnShare";
             btnShare.Size = new Size(166, 52);
@@ -552,7 +558,7 @@
             label8.AutoSize = true;
             label8.BackColor = Color.DarkGray;
             label8.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
-            label8.Location = new Point(16, 162);
+            label8.Location = new Point(16, 167);
             label8.Margin = new Padding(1, 0, 1, 0);
             label8.Name = "label8";
             label8.Size = new Size(606, 30);
@@ -577,9 +583,9 @@
             label7.Location = new Point(17, 258);
             label7.Margin = new Padding(1, 0, 1, 0);
             label7.Name = "label7";
-            label7.Size = new Size(397, 30);
+            label7.Size = new Size(509, 30);
             label7.TabIndex = 72;
-            label7.Text = "Enter the above user's email address:";
+            label7.Text = "(Optional) Enter the above user's email address:";
             // 
             // label6
             // 
@@ -640,6 +646,48 @@
             lblLoggedIn.Size = new Size(171, 28);
             lblLoggedIn.TabIndex = 6;
             lblLoggedIn.Text = "Logged in as: User";
+            // 
+            // btnExpandTicket
+            // 
+            btnExpandTicket.BackColor = Color.FromArgb(64, 0, 0);
+            btnExpandTicket.FlatStyle = FlatStyle.Popup;
+            btnExpandTicket.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnExpandTicket.ForeColor = Color.White;
+            btnExpandTicket.Location = new Point(1050, 144);
+            btnExpandTicket.Margin = new Padding(1, 2, 1, 2);
+            btnExpandTicket.Name = "btnExpandTicket";
+            btnExpandTicket.Size = new Size(200, 62);
+            btnExpandTicket.TabIndex = 75;
+            btnExpandTicket.Text = "Expand Ticket Details";
+            btnExpandTicket.UseVisualStyleBackColor = false;
+            // 
+            // btnShareRefresh
+            // 
+            btnShareRefresh.BackColor = Color.FromArgb(64, 0, 0);
+            btnShareRefresh.FlatStyle = FlatStyle.Popup;
+            btnShareRefresh.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnShareRefresh.ForeColor = Color.White;
+            btnShareRefresh.Location = new Point(213, 392);
+            btnShareRefresh.Margin = new Padding(1, 2, 1, 2);
+            btnShareRefresh.Name = "btnShareRefresh";
+            btnShareRefresh.Size = new Size(166, 52);
+            btnShareRefresh.TabIndex = 84;
+            btnShareRefresh.Text = "Refresh Table";
+            btnShareRefresh.UseVisualStyleBackColor = false;
+            // 
+            // btnSolveRefresh
+            // 
+            btnSolveRefresh.BackColor = Color.FromArgb(64, 0, 0);
+            btnSolveRefresh.FlatStyle = FlatStyle.Popup;
+            btnSolveRefresh.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSolveRefresh.ForeColor = Color.White;
+            btnSolveRefresh.Location = new Point(1050, 218);
+            btnSolveRefresh.Margin = new Padding(1, 2, 1, 2);
+            btnSolveRefresh.Name = "btnSolveRefresh";
+            btnSolveRefresh.Size = new Size(200, 42);
+            btnSolveRefresh.TabIndex = 79;
+            btnSolveRefresh.Text = "Refresh Table";
+            btnSolveRefresh.UseVisualStyleBackColor = false;
             // 
             // frmITSupport
             // 
@@ -732,5 +780,8 @@
         private DataGridView Shared;
         private Label label9;
         private Button btnSolveClear;
+        private Button btnExpandTicket;
+        private Button btnShareRefresh;
+        private Button btnSolveRefresh;
     }
 }

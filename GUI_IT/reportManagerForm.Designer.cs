@@ -29,664 +29,674 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmReportManage));
-            this.pictureLogo = new System.Windows.Forms.PictureBox();
-            this.btnLogout = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Rectangle1 = new System.Windows.Forms.PictureBox();
-            this.lblHeader = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabHome = new System.Windows.Forms.TabPage();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.lblDescribeHome = new System.Windows.Forms.Label();
-            this.lblUser = new System.Windows.Forms.Label();
-            this.lblWelcomeMessage = new System.Windows.Forms.Label();
-            this.tabMonitor = new System.Windows.Forms.TabPage();
-            this.btnReOpened = new System.Windows.Forms.Button();
-            this.btnSolved = new System.Windows.Forms.Button();
-            this.btnUnsolved = new System.Windows.Forms.Button();
-            this.lblMonitor = new System.Windows.Forms.Label();
-            this.DGVT = new System.Windows.Forms.DataGridView();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.tabAssign = new System.Windows.Forms.TabPage();
-            this.btnViewUnsolvedTable = new System.Windows.Forms.Button();
-            this.cbxid = new System.Windows.Forms.ComboBox();
-            this.cbxn = new System.Windows.Forms.ComboBox();
-            this.btnViewReopenedTable = new System.Windows.Forms.Button();
-            this.DGVAssign = new System.Windows.Forms.DataGridView();
-            this.btnAssign = new System.Windows.Forms.Button();
-            this.btnClear = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtEmail = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.lblAssign = new System.Windows.Forms.Label();
-            this.lblLoggedIn = new System.Windows.Forms.Label();
-            this.ProfilePictureBox = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Rectangle1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.tabControl1.SuspendLayout();
-            this.tabHome.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            this.tabMonitor.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DGVT)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.tabAssign.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DGVAssign)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ProfilePictureBox)).BeginInit();
-            this.SuspendLayout();
+            pictureLogo = new PictureBox();
+            btnLogout = new Button();
+            pictureBox1 = new PictureBox();
+            Rectangle1 = new PictureBox();
+            lblHeader = new Label();
+            label1 = new Label();
+            pictureBox2 = new PictureBox();
+            tabControl1 = new TabControl();
+            tabHome = new TabPage();
+            label5 = new Label();
+            label4 = new Label();
+            label3 = new Label();
+            label2 = new Label();
+            pictureBox4 = new PictureBox();
+            pictureBox11 = new PictureBox();
+            pictureBox3 = new PictureBox();
+            pictureBox8 = new PictureBox();
+            lblDescribeHome = new Label();
+            lblUser = new Label();
+            lblWelcomeMessage = new Label();
+            tabMonitor = new TabPage();
+            btnReOpened = new Button();
+            btnSolved = new Button();
+            btnUnsolved = new Button();
+            lblMonitor = new Label();
+            DGVT = new DataGridView();
+            pictureBox5 = new PictureBox();
+            tabAssign = new TabPage();
+            btnViewUnsolvedTable = new Button();
+            cbxid = new ComboBox();
+            cbxn = new ComboBox();
+            btnViewReopenedTable = new Button();
+            DGVAssign = new DataGridView();
+            btnAssign = new Button();
+            btnClear = new Button();
+            label8 = new Label();
+            txtEmail = new TextBox();
+            label7 = new Label();
+            label6 = new Label();
+            pictureBox6 = new PictureBox();
+            lblAssign = new Label();
+            lblLoggedIn = new Label();
+            ProfilePictureBox = new PictureBox();
+            btnAssignRefresh = new Button();
+            ((System.ComponentModel.ISupportInitialize)pictureLogo).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Rectangle1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            tabControl1.SuspendLayout();
+            tabHome.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            tabMonitor.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)DGVT).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            tabAssign.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)DGVAssign).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)ProfilePictureBox).BeginInit();
+            SuspendLayout();
             // 
             // pictureLogo
             // 
-            this.pictureLogo.BackColor = System.Drawing.Color.Black;
-            this.pictureLogo.Image = global::GUI_IT.Properties.Resources.redAgentsLogo;
-            this.pictureLogo.Location = new System.Drawing.Point(7, 34);
-            this.pictureLogo.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.pictureLogo.Name = "pictureLogo";
-            this.pictureLogo.Size = new System.Drawing.Size(40, 34);
-            this.pictureLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureLogo.TabIndex = 40;
-            this.pictureLogo.TabStop = false;
+            pictureLogo.BackColor = Color.Black;
+            pictureLogo.Image = Properties.Resources.redAgentsLogo;
+            pictureLogo.Location = new Point(9, 42);
+            pictureLogo.Margin = new Padding(1, 2, 1, 2);
+            pictureLogo.Name = "pictureLogo";
+            pictureLogo.Size = new Size(50, 42);
+            pictureLogo.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureLogo.TabIndex = 40;
+            pictureLogo.TabStop = false;
             // 
             // btnLogout
             // 
-            this.btnLogout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLogout.AutoSize = true;
-            this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnLogout.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnLogout.ForeColor = System.Drawing.Color.White;
-            this.btnLogout.Location = new System.Drawing.Point(913, -3);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(95, 38);
-            this.btnLogout.TabIndex = 36;
-            this.btnLogout.Text = "Log Out";
-            this.btnLogout.UseVisualStyleBackColor = false;
-            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            btnLogout.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnLogout.AutoSize = true;
+            btnLogout.BackColor = Color.FromArgb(64, 0, 0);
+            btnLogout.FlatStyle = FlatStyle.Popup;
+            btnLogout.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            btnLogout.ForeColor = Color.White;
+            btnLogout.Location = new Point(1141, -4);
+            btnLogout.Margin = new Padding(1, 2, 1, 2);
+            btnLogout.Name = "btnLogout";
+            btnLogout.Size = new Size(119, 48);
+            btnLogout.TabIndex = 36;
+            btnLogout.Text = "Log Out";
+            btnLogout.UseVisualStyleBackColor = false;
+            btnLogout.Click += btnLogout_Click;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.pictureBox1.Location = new System.Drawing.Point(-5, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1015, 34);
-            this.pictureBox1.TabIndex = 35;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            pictureBox1.BackColor = Color.FromArgb(64, 0, 0);
+            pictureBox1.Location = new Point(-6, 0);
+            pictureBox1.Margin = new Padding(1, 2, 1, 2);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(1269, 42);
+            pictureBox1.TabIndex = 35;
+            pictureBox1.TabStop = false;
             // 
             // Rectangle1
             // 
-            this.Rectangle1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Rectangle1.BackColor = System.Drawing.Color.Black;
-            this.Rectangle1.Location = new System.Drawing.Point(-7, 34);
-            this.Rectangle1.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.Rectangle1.Name = "Rectangle1";
-            this.Rectangle1.Size = new System.Drawing.Size(1032, 46);
-            this.Rectangle1.TabIndex = 33;
-            this.Rectangle1.TabStop = false;
+            Rectangle1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            Rectangle1.BackColor = Color.Black;
+            Rectangle1.Location = new Point(-9, 42);
+            Rectangle1.Margin = new Padding(1, 2, 1, 2);
+            Rectangle1.Name = "Rectangle1";
+            Rectangle1.Size = new Size(1290, 58);
+            Rectangle1.TabIndex = 33;
+            Rectangle1.TabStop = false;
             // 
             // lblHeader
             // 
-            this.lblHeader.AutoSize = true;
-            this.lblHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblHeader.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblHeader.ForeColor = System.Drawing.Color.White;
-            this.lblHeader.Location = new System.Drawing.Point(1, 6);
-            this.lblHeader.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.lblHeader.Name = "lblHeader";
-            this.lblHeader.Size = new System.Drawing.Size(255, 25);
-            this.lblHeader.TabIndex = 42;
-            this.lblHeader.Text = "Red Agents IT Help Desk";
+            lblHeader.AutoSize = true;
+            lblHeader.BackColor = Color.FromArgb(64, 0, 0);
+            lblHeader.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblHeader.ForeColor = Color.White;
+            lblHeader.Location = new Point(1, 8);
+            lblHeader.Margin = new Padding(1, 0, 1, 0);
+            lblHeader.Name = "lblHeader";
+            lblHeader.Size = new Size(307, 29);
+            lblHeader.TabIndex = 42;
+            lblHeader.Text = "Red Agents IT Help Desk";
             // 
             // label1
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(373, 74);
-            this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(282, 40);
-            this.label1.TabIndex = 49;
-            this.label1.Text = "Ticket Dashboard";
+            label1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            label1.AutoSize = true;
+            label1.BackColor = Color.FromArgb(64, 0, 0);
+            label1.Font = new Font("Microsoft YaHei UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(466, 92);
+            label1.Margin = new Padding(1, 0, 1, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(340, 47);
+            label1.TabIndex = 49;
+            label1.Text = "Ticket Dashboard";
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.pictureBox2.Location = new System.Drawing.Point(-17, 74);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1063, 54);
-            this.pictureBox2.TabIndex = 48;
-            this.pictureBox2.TabStop = false;
+            pictureBox2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            pictureBox2.BackColor = Color.FromArgb(64, 0, 0);
+            pictureBox2.Location = new Point(-21, 92);
+            pictureBox2.Margin = new Padding(1, 2, 1, 2);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(1329, 68);
+            pictureBox2.TabIndex = 48;
+            pictureBox2.TabStop = false;
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabHome);
-            this.tabControl1.Controls.Add(this.tabMonitor);
-            this.tabControl1.Controls.Add(this.tabAssign);
-            this.tabControl1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.tabControl1.Location = new System.Drawing.Point(-5, 114);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1031, 406);
-            this.tabControl1.TabIndex = 50;
+            tabControl1.Controls.Add(tabHome);
+            tabControl1.Controls.Add(tabMonitor);
+            tabControl1.Controls.Add(tabAssign);
+            tabControl1.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            tabControl1.Location = new Point(-6, 142);
+            tabControl1.Margin = new Padding(1, 2, 1, 2);
+            tabControl1.Name = "tabControl1";
+            tabControl1.SelectedIndex = 0;
+            tabControl1.Size = new Size(1289, 508);
+            tabControl1.TabIndex = 50;
             // 
             // tabHome
             // 
-            this.tabHome.BackColor = System.Drawing.Color.LightGray;
-            this.tabHome.Controls.Add(this.label5);
-            this.tabHome.Controls.Add(this.label4);
-            this.tabHome.Controls.Add(this.label3);
-            this.tabHome.Controls.Add(this.label2);
-            this.tabHome.Controls.Add(this.pictureBox4);
-            this.tabHome.Controls.Add(this.pictureBox11);
-            this.tabHome.Controls.Add(this.pictureBox3);
-            this.tabHome.Controls.Add(this.pictureBox8);
-            this.tabHome.Controls.Add(this.lblDescribeHome);
-            this.tabHome.Controls.Add(this.lblUser);
-            this.tabHome.Controls.Add(this.lblWelcomeMessage);
-            this.tabHome.Location = new System.Drawing.Point(4, 32);
-            this.tabHome.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.tabHome.Name = "tabHome";
-            this.tabHome.Size = new System.Drawing.Size(1023, 370);
-            this.tabHome.TabIndex = 2;
-            this.tabHome.Text = "Ticket Homepage";
+            tabHome.BackColor = Color.LightGray;
+            tabHome.Controls.Add(label5);
+            tabHome.Controls.Add(label4);
+            tabHome.Controls.Add(label3);
+            tabHome.Controls.Add(label2);
+            tabHome.Controls.Add(pictureBox4);
+            tabHome.Controls.Add(pictureBox11);
+            tabHome.Controls.Add(pictureBox3);
+            tabHome.Controls.Add(pictureBox8);
+            tabHome.Controls.Add(lblDescribeHome);
+            tabHome.Controls.Add(lblUser);
+            tabHome.Controls.Add(lblWelcomeMessage);
+            tabHome.Location = new Point(4, 37);
+            tabHome.Margin = new Padding(1, 2, 1, 2);
+            tabHome.Name = "tabHome";
+            tabHome.Size = new Size(1281, 467);
+            tabHome.TabIndex = 2;
+            tabHome.Text = "Ticket Homepage";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.White;
-            this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(199, 238);
-            this.label5.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(769, 81);
-            this.label5.TabIndex = 74;
-            this.label5.Text = resources.GetString("label5.Text");
+            label5.AutoSize = true;
+            label5.BackColor = Color.White;
+            label5.Font = new Font("Microsoft YaHei UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.Location = new Point(249, 298);
+            label5.Margin = new Padding(1, 0, 1, 0);
+            label5.Name = "label5";
+            label5.Size = new Size(923, 93);
+            label5.TabIndex = 74;
+            label5.Text = resources.GetString("label5.Text");
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(213, 82);
-            this.label4.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(784, 100);
-            this.label4.TabIndex = 73;
-            this.label4.Text = resources.GetString("label4.Text");
+            label4.AutoSize = true;
+            label4.BackColor = Color.White;
+            label4.Font = new Font("Microsoft YaHei UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Location = new Point(266, 102);
+            label4.Margin = new Padding(1, 0, 1, 0);
+            label4.Name = "label4";
+            label4.Size = new Size(895, 120);
+            label4.TabIndex = 73;
+            label4.Text = resources.GetString("label4.Text");
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(31, 258);
-            this.label3.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(174, 32);
-            this.label3.TabIndex = 66;
-            this.label3.Text = "Assign Tickets";
+            label3.AutoSize = true;
+            label3.BackColor = Color.White;
+            label3.Font = new Font("Segoe UI", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label3.Location = new Point(39, 322);
+            label3.Margin = new Padding(1, 0, 1, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(204, 38);
+            label3.TabIndex = 66;
+            label3.Text = "Assign Tickets";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(27, 112);
-            this.label2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(189, 32);
-            this.label2.TabIndex = 65;
-            this.label2.Text = "Monitor Tickets";
+            label2.AutoSize = true;
+            label2.BackColor = Color.White;
+            label2.Font = new Font("Segoe UI", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label2.Location = new Point(34, 140);
+            label2.Margin = new Padding(1, 0, 1, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(221, 38);
+            label2.TabIndex = 65;
+            label2.Text = "Monitor Tickets";
             // 
             // pictureBox4
             // 
-            this.pictureBox4.BackColor = System.Drawing.Color.White;
-            this.pictureBox4.Location = new System.Drawing.Point(17, 226);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(928, 106);
-            this.pictureBox4.TabIndex = 64;
-            this.pictureBox4.TabStop = false;
+            pictureBox4.BackColor = Color.White;
+            pictureBox4.Location = new Point(21, 282);
+            pictureBox4.Margin = new Padding(1, 2, 1, 2);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(1160, 132);
+            pictureBox4.TabIndex = 64;
+            pictureBox4.TabStop = false;
             // 
             // pictureBox11
             // 
-            this.pictureBox11.BackColor = System.Drawing.Color.White;
-            this.pictureBox11.Location = new System.Drawing.Point(17, 78);
-            this.pictureBox11.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(928, 106);
-            this.pictureBox11.TabIndex = 63;
-            this.pictureBox11.TabStop = false;
+            pictureBox11.BackColor = Color.White;
+            pictureBox11.Location = new Point(21, 98);
+            pictureBox11.Margin = new Padding(1, 2, 1, 2);
+            pictureBox11.Name = "pictureBox11";
+            pictureBox11.Size = new Size(1160, 132);
+            pictureBox11.TabIndex = 63;
+            pictureBox11.TabStop = false;
             // 
             // pictureBox3
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.pictureBox3.Location = new System.Drawing.Point(9, 218);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(944, 126);
-            this.pictureBox3.TabIndex = 59;
-            this.pictureBox3.TabStop = false;
+            pictureBox3.BackColor = Color.FromArgb(64, 0, 0);
+            pictureBox3.Location = new Point(11, 272);
+            pictureBox3.Margin = new Padding(1, 2, 1, 2);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(1180, 158);
+            pictureBox3.TabIndex = 59;
+            pictureBox3.TabStop = false;
             // 
             // pictureBox8
             // 
-            this.pictureBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.pictureBox8.Location = new System.Drawing.Point(9, 68);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(944, 126);
-            this.pictureBox8.TabIndex = 58;
-            this.pictureBox8.TabStop = false;
+            pictureBox8.BackColor = Color.FromArgb(64, 0, 0);
+            pictureBox8.Location = new Point(11, 85);
+            pictureBox8.Margin = new Padding(1, 2, 1, 2);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(1180, 158);
+            pictureBox8.TabIndex = 58;
+            pictureBox8.TabStop = false;
             // 
             // lblDescribeHome
             // 
-            this.lblDescribeHome.AutoSize = true;
-            this.lblDescribeHome.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblDescribeHome.Location = new System.Drawing.Point(5, 34);
-            this.lblDescribeHome.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.lblDescribeHome.Name = "lblDescribeHome";
-            this.lblDescribeHome.Size = new System.Drawing.Size(1016, 23);
-            this.lblDescribeHome.TabIndex = 5;
-            this.lblDescribeHome.Text = "Listed below are the different functionalities offered to you via your ticket das" +
-    "hboard, as well as a brief description of each. \r\n";
+            lblDescribeHome.AutoSize = true;
+            lblDescribeHome.Font = new Font("Microsoft YaHei UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            lblDescribeHome.Location = new Point(6, 42);
+            lblDescribeHome.Margin = new Padding(1, 0, 1, 0);
+            lblDescribeHome.Name = "lblDescribeHome";
+            lblDescribeHome.Size = new Size(1186, 27);
+            lblDescribeHome.TabIndex = 5;
+            lblDescribeHome.Text = "Listed below are the different functionalities offered to you via your ticket dashboard, as well as a brief description of each. \r\n";
             // 
             // lblUser
             // 
-            this.lblUser.AutoSize = true;
-            this.lblUser.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblUser.Location = new System.Drawing.Point(329, 6);
-            this.lblUser.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.lblUser.Name = "lblUser";
-            this.lblUser.Size = new System.Drawing.Size(61, 28);
-            this.lblUser.TabIndex = 4;
-            this.lblUser.Text = "User!";
+            lblUser.AutoSize = true;
+            lblUser.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblUser.Location = new Point(411, 8);
+            lblUser.Margin = new Padding(1, 0, 1, 0);
+            lblUser.Name = "lblUser";
+            lblUser.Size = new Size(73, 32);
+            lblUser.TabIndex = 4;
+            lblUser.Text = "User!";
             // 
             // lblWelcomeMessage
             // 
-            this.lblWelcomeMessage.AutoSize = true;
-            this.lblWelcomeMessage.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblWelcomeMessage.Location = new System.Drawing.Point(-1, 6);
-            this.lblWelcomeMessage.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.lblWelcomeMessage.Name = "lblWelcomeMessage";
-            this.lblWelcomeMessage.Size = new System.Drawing.Size(357, 28);
-            this.lblWelcomeMessage.TabIndex = 1;
-            this.lblWelcomeMessage.Text = "Welcome to your Ticket Homepage, ";
+            lblWelcomeMessage.AutoSize = true;
+            lblWelcomeMessage.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblWelcomeMessage.Location = new Point(-1, 8);
+            lblWelcomeMessage.Margin = new Padding(1, 0, 1, 0);
+            lblWelcomeMessage.Name = "lblWelcomeMessage";
+            lblWelcomeMessage.Size = new Size(430, 32);
+            lblWelcomeMessage.TabIndex = 1;
+            lblWelcomeMessage.Text = "Welcome to your Ticket Homepage, ";
             // 
             // tabMonitor
             // 
-            this.tabMonitor.BackColor = System.Drawing.Color.LightGray;
-            this.tabMonitor.Controls.Add(this.btnReOpened);
-            this.tabMonitor.Controls.Add(this.btnSolved);
-            this.tabMonitor.Controls.Add(this.btnUnsolved);
-            this.tabMonitor.Controls.Add(this.lblMonitor);
-            this.tabMonitor.Controls.Add(this.DGVT);
-            this.tabMonitor.Controls.Add(this.pictureBox5);
-            this.tabMonitor.Location = new System.Drawing.Point(4, 32);
-            this.tabMonitor.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.tabMonitor.Name = "tabMonitor";
-            this.tabMonitor.Padding = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.tabMonitor.Size = new System.Drawing.Size(1023, 370);
-            this.tabMonitor.TabIndex = 0;
-            this.tabMonitor.Text = "Monitor Tickets";
+            tabMonitor.BackColor = Color.LightGray;
+            tabMonitor.Controls.Add(btnReOpened);
+            tabMonitor.Controls.Add(btnSolved);
+            tabMonitor.Controls.Add(btnUnsolved);
+            tabMonitor.Controls.Add(lblMonitor);
+            tabMonitor.Controls.Add(DGVT);
+            tabMonitor.Controls.Add(pictureBox5);
+            tabMonitor.Location = new Point(4, 37);
+            tabMonitor.Margin = new Padding(1, 2, 1, 2);
+            tabMonitor.Name = "tabMonitor";
+            tabMonitor.Padding = new Padding(1, 2, 1, 2);
+            tabMonitor.Size = new Size(1281, 467);
+            tabMonitor.TabIndex = 0;
+            tabMonitor.Text = "Monitor Tickets";
             // 
             // btnReOpened
             // 
-            this.btnReOpened.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnReOpened.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnReOpened.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnReOpened.ForeColor = System.Drawing.Color.White;
-            this.btnReOpened.Location = new System.Drawing.Point(859, 278);
-            this.btnReOpened.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.btnReOpened.Name = "btnReOpened";
-            this.btnReOpened.Size = new System.Drawing.Size(143, 54);
-            this.btnReOpened.TabIndex = 57;
-            this.btnReOpened.Text = "View Re-Opened Tickets";
-            this.btnReOpened.UseVisualStyleBackColor = false;
-            this.btnReOpened.Click += new System.EventHandler(this.btnReOpened_Click);
+            btnReOpened.BackColor = Color.FromArgb(64, 0, 0);
+            btnReOpened.FlatStyle = FlatStyle.Popup;
+            btnReOpened.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            btnReOpened.ForeColor = Color.White;
+            btnReOpened.Location = new Point(1074, 348);
+            btnReOpened.Margin = new Padding(1, 2, 1, 2);
+            btnReOpened.Name = "btnReOpened";
+            btnReOpened.Size = new Size(179, 68);
+            btnReOpened.TabIndex = 57;
+            btnReOpened.Text = "View Re-Opened Tickets";
+            btnReOpened.UseVisualStyleBackColor = false;
+            btnReOpened.Click += btnReOpened_Click;
             // 
             // btnSolved
             // 
-            this.btnSolved.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnSolved.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSolved.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnSolved.ForeColor = System.Drawing.Color.White;
-            this.btnSolved.Location = new System.Drawing.Point(859, 174);
-            this.btnSolved.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.btnSolved.Name = "btnSolved";
-            this.btnSolved.Size = new System.Drawing.Size(143, 54);
-            this.btnSolved.TabIndex = 56;
-            this.btnSolved.Text = "View Solved Tickets";
-            this.btnSolved.UseVisualStyleBackColor = false;
-            this.btnSolved.Click += new System.EventHandler(this.btnSolved_Click);
+            btnSolved.BackColor = Color.FromArgb(64, 0, 0);
+            btnSolved.FlatStyle = FlatStyle.Popup;
+            btnSolved.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSolved.ForeColor = Color.White;
+            btnSolved.Location = new Point(1074, 218);
+            btnSolved.Margin = new Padding(1, 2, 1, 2);
+            btnSolved.Name = "btnSolved";
+            btnSolved.Size = new Size(179, 68);
+            btnSolved.TabIndex = 56;
+            btnSolved.Text = "View Solved Tickets";
+            btnSolved.UseVisualStyleBackColor = false;
+            btnSolved.Click += btnSolved_Click;
             // 
             // btnUnsolved
             // 
-            this.btnUnsolved.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnUnsolved.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnUnsolved.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnUnsolved.ForeColor = System.Drawing.Color.White;
-            this.btnUnsolved.Location = new System.Drawing.Point(857, 62);
-            this.btnUnsolved.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.btnUnsolved.Name = "btnUnsolved";
-            this.btnUnsolved.Size = new System.Drawing.Size(145, 54);
-            this.btnUnsolved.TabIndex = 55;
-            this.btnUnsolved.Text = "View Unsolved Tickets";
-            this.btnUnsolved.UseVisualStyleBackColor = false;
-            this.btnUnsolved.Click += new System.EventHandler(this.btnUnsolved_Click);
+            btnUnsolved.BackColor = Color.FromArgb(64, 0, 0);
+            btnUnsolved.FlatStyle = FlatStyle.Popup;
+            btnUnsolved.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            btnUnsolved.ForeColor = Color.White;
+            btnUnsolved.Location = new Point(1071, 78);
+            btnUnsolved.Margin = new Padding(1, 2, 1, 2);
+            btnUnsolved.Name = "btnUnsolved";
+            btnUnsolved.Size = new Size(181, 68);
+            btnUnsolved.TabIndex = 55;
+            btnUnsolved.Text = "View Unsolved Tickets";
+            btnUnsolved.UseVisualStyleBackColor = false;
+            btnUnsolved.Click += btnUnsolved_Click;
             // 
             // lblMonitor
             // 
-            this.lblMonitor.AutoSize = true;
-            this.lblMonitor.BackColor = System.Drawing.Color.Transparent;
-            this.lblMonitor.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.lblMonitor.Location = new System.Drawing.Point(1, 6);
-            this.lblMonitor.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.lblMonitor.Name = "lblMonitor";
-            this.lblMonitor.Size = new System.Drawing.Size(158, 28);
-            this.lblMonitor.TabIndex = 54;
-            this.lblMonitor.Text = "Monitor Tickets";
+            lblMonitor.AutoSize = true;
+            lblMonitor.BackColor = Color.Transparent;
+            lblMonitor.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            lblMonitor.Location = new Point(1, 8);
+            lblMonitor.Margin = new Padding(1, 0, 1, 0);
+            lblMonitor.Name = "lblMonitor";
+            lblMonitor.Size = new Size(189, 32);
+            lblMonitor.TabIndex = 54;
+            lblMonitor.Text = "Monitor Tickets";
             // 
             // DGVT
             // 
-            this.DGVT.AllowUserToAddRows = false;
-            this.DGVT.AllowUserToDeleteRows = false;
-            this.DGVT.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGVT.Location = new System.Drawing.Point(9, 40);
-            this.DGVT.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.DGVT.Name = "DGVT";
-            this.DGVT.ReadOnly = true;
-            this.DGVT.RowHeadersWidth = 62;
-            this.DGVT.RowTemplate.Height = 33;
-            this.DGVT.Size = new System.Drawing.Size(825, 318);
-            this.DGVT.TabIndex = 0;
+            DGVT.AllowUserToAddRows = false;
+            DGVT.AllowUserToDeleteRows = false;
+            DGVT.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            DGVT.Location = new Point(11, 50);
+            DGVT.Margin = new Padding(1, 2, 1, 2);
+            DGVT.Name = "DGVT";
+            DGVT.ReadOnly = true;
+            DGVT.RowHeadersWidth = 62;
+            DGVT.RowTemplate.Height = 33;
+            DGVT.Size = new Size(1031, 398);
+            DGVT.TabIndex = 0;
             // 
             // pictureBox5
             // 
-            this.pictureBox5.BackColor = System.Drawing.Color.DarkGray;
-            this.pictureBox5.Location = new System.Drawing.Point(849, 40);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(160, 318);
-            this.pictureBox5.TabIndex = 58;
-            this.pictureBox5.TabStop = false;
+            pictureBox5.BackColor = Color.DarkGray;
+            pictureBox5.Location = new Point(1061, 50);
+            pictureBox5.Margin = new Padding(1, 2, 1, 2);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(200, 398);
+            pictureBox5.TabIndex = 58;
+            pictureBox5.TabStop = false;
             // 
             // tabAssign
             // 
-            this.tabAssign.BackColor = System.Drawing.Color.LightGray;
-            this.tabAssign.Controls.Add(this.btnViewUnsolvedTable);
-            this.tabAssign.Controls.Add(this.cbxid);
-            this.tabAssign.Controls.Add(this.cbxn);
-            this.tabAssign.Controls.Add(this.btnViewReopenedTable);
-            this.tabAssign.Controls.Add(this.DGVAssign);
-            this.tabAssign.Controls.Add(this.btnAssign);
-            this.tabAssign.Controls.Add(this.btnClear);
-            this.tabAssign.Controls.Add(this.label8);
-            this.tabAssign.Controls.Add(this.txtEmail);
-            this.tabAssign.Controls.Add(this.label7);
-            this.tabAssign.Controls.Add(this.label6);
-            this.tabAssign.Controls.Add(this.pictureBox6);
-            this.tabAssign.Controls.Add(this.lblAssign);
-            this.tabAssign.Location = new System.Drawing.Point(4, 32);
-            this.tabAssign.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.tabAssign.Name = "tabAssign";
-            this.tabAssign.Padding = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.tabAssign.Size = new System.Drawing.Size(1023, 370);
-            this.tabAssign.TabIndex = 1;
-            this.tabAssign.Text = "Assign Tickets";
+            tabAssign.BackColor = Color.LightGray;
+            tabAssign.Controls.Add(btnAssignRefresh);
+            tabAssign.Controls.Add(btnViewUnsolvedTable);
+            tabAssign.Controls.Add(cbxid);
+            tabAssign.Controls.Add(cbxn);
+            tabAssign.Controls.Add(btnViewReopenedTable);
+            tabAssign.Controls.Add(DGVAssign);
+            tabAssign.Controls.Add(btnAssign);
+            tabAssign.Controls.Add(btnClear);
+            tabAssign.Controls.Add(label8);
+            tabAssign.Controls.Add(txtEmail);
+            tabAssign.Controls.Add(label7);
+            tabAssign.Controls.Add(label6);
+            tabAssign.Controls.Add(pictureBox6);
+            tabAssign.Controls.Add(lblAssign);
+            tabAssign.Location = new Point(4, 37);
+            tabAssign.Margin = new Padding(1, 2, 1, 2);
+            tabAssign.Name = "tabAssign";
+            tabAssign.Padding = new Padding(1, 2, 1, 2);
+            tabAssign.Size = new Size(1281, 467);
+            tabAssign.TabIndex = 1;
+            tabAssign.Text = "Assign Tickets";
             // 
             // btnViewUnsolvedTable
             // 
-            this.btnViewUnsolvedTable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnViewUnsolvedTable.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnViewUnsolvedTable.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnViewUnsolvedTable.ForeColor = System.Drawing.Color.White;
-            this.btnViewUnsolvedTable.Location = new System.Drawing.Point(733, 10);
-            this.btnViewUnsolvedTable.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.btnViewUnsolvedTable.Name = "btnViewUnsolvedTable";
-            this.btnViewUnsolvedTable.Size = new System.Drawing.Size(111, 34);
-            this.btnViewUnsolvedTable.TabIndex = 93;
-            this.btnViewUnsolvedTable.Text = "Unsolved";
-            this.btnViewUnsolvedTable.UseVisualStyleBackColor = false;
-            this.btnViewUnsolvedTable.Click += new System.EventHandler(this.btnViewUnsolvedTable_Click);
+            btnViewUnsolvedTable.BackColor = Color.FromArgb(64, 0, 0);
+            btnViewUnsolvedTable.FlatStyle = FlatStyle.Popup;
+            btnViewUnsolvedTable.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnViewUnsolvedTable.ForeColor = Color.White;
+            btnViewUnsolvedTable.Location = new Point(916, 12);
+            btnViewUnsolvedTable.Margin = new Padding(1, 2, 1, 2);
+            btnViewUnsolvedTable.Name = "btnViewUnsolvedTable";
+            btnViewUnsolvedTable.Size = new Size(139, 42);
+            btnViewUnsolvedTable.TabIndex = 93;
+            btnViewUnsolvedTable.Text = "Unsolved";
+            btnViewUnsolvedTable.UseVisualStyleBackColor = false;
+            btnViewUnsolvedTable.Click += btnViewUnsolvedTable_Click;
             // 
             // cbxid
             // 
-            this.cbxid.FormattingEnabled = true;
-            this.cbxid.Location = new System.Drawing.Point(17, 90);
-            this.cbxid.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.cbxid.Name = "cbxid";
-            this.cbxid.Size = new System.Drawing.Size(355, 31);
-            this.cbxid.TabIndex = 92;
+            cbxid.FormattingEnabled = true;
+            cbxid.Location = new Point(21, 112);
+            cbxid.Margin = new Padding(4, 5, 4, 5);
+            cbxid.Name = "cbxid";
+            cbxid.Size = new Size(443, 36);
+            cbxid.TabIndex = 92;
             // 
             // cbxn
             // 
-            this.cbxn.FormattingEnabled = true;
-            this.cbxn.Location = new System.Drawing.Point(17, 162);
-            this.cbxn.Margin = new System.Windows.Forms.Padding(2);
-            this.cbxn.Name = "cbxn";
-            this.cbxn.Size = new System.Drawing.Size(485, 31);
-            this.cbxn.TabIndex = 91;
+            cbxn.FormattingEnabled = true;
+            cbxn.Location = new Point(21, 202);
+            cbxn.Margin = new Padding(2);
+            cbxn.Name = "cbxn";
+            cbxn.Size = new Size(605, 36);
+            cbxn.TabIndex = 91;
             // 
             // btnViewReopenedTable
             // 
-            this.btnViewReopenedTable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnViewReopenedTable.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnViewReopenedTable.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnViewReopenedTable.ForeColor = System.Drawing.Color.White;
-            this.btnViewReopenedTable.Location = new System.Drawing.Point(869, 9);
-            this.btnViewReopenedTable.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.btnViewReopenedTable.Name = "btnViewReopenedTable";
-            this.btnViewReopenedTable.Size = new System.Drawing.Size(121, 34);
-            this.btnViewReopenedTable.TabIndex = 90;
-            this.btnViewReopenedTable.Text = "Re-opened";
-            this.btnViewReopenedTable.UseVisualStyleBackColor = false;
-            this.btnViewReopenedTable.Click += new System.EventHandler(this.btnViewReopenedTable_Click);
+            btnViewReopenedTable.BackColor = Color.FromArgb(64, 0, 0);
+            btnViewReopenedTable.FlatStyle = FlatStyle.Popup;
+            btnViewReopenedTable.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnViewReopenedTable.ForeColor = Color.White;
+            btnViewReopenedTable.Location = new Point(1086, 11);
+            btnViewReopenedTable.Margin = new Padding(1, 2, 1, 2);
+            btnViewReopenedTable.Name = "btnViewReopenedTable";
+            btnViewReopenedTable.Size = new Size(151, 42);
+            btnViewReopenedTable.TabIndex = 90;
+            btnViewReopenedTable.Text = "Re-opened";
+            btnViewReopenedTable.UseVisualStyleBackColor = false;
+            btnViewReopenedTable.Click += btnViewReopenedTable_Click;
             // 
             // DGVAssign
             // 
-            this.DGVAssign.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGVAssign.Location = new System.Drawing.Point(569, 58);
-            this.DGVAssign.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.DGVAssign.Name = "DGVAssign";
-            this.DGVAssign.RowHeadersWidth = 62;
-            this.DGVAssign.RowTemplate.Height = 33;
-            this.DGVAssign.Size = new System.Drawing.Size(421, 294);
-            this.DGVAssign.TabIndex = 88;
+            DGVAssign.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            DGVAssign.Location = new Point(711, 72);
+            DGVAssign.Margin = new Padding(1, 2, 1, 2);
+            DGVAssign.Name = "DGVAssign";
+            DGVAssign.RowHeadersWidth = 62;
+            DGVAssign.RowTemplate.Height = 33;
+            DGVAssign.Size = new Size(526, 368);
+            DGVAssign.TabIndex = 88;
             // 
             // btnAssign
             // 
-            this.btnAssign.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnAssign.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAssign.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnAssign.ForeColor = System.Drawing.Color.White;
-            this.btnAssign.Location = new System.Drawing.Point(189, 314);
-            this.btnAssign.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.btnAssign.Name = "btnAssign";
-            this.btnAssign.Size = new System.Drawing.Size(129, 42);
-            this.btnAssign.TabIndex = 87;
-            this.btnAssign.Text = "Assign Ticket";
-            this.btnAssign.UseVisualStyleBackColor = false;
-            this.btnAssign.Click += new System.EventHandler(this.btnAssign_Click);
+            btnAssign.BackColor = Color.FromArgb(64, 0, 0);
+            btnAssign.FlatStyle = FlatStyle.Popup;
+            btnAssign.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnAssign.ForeColor = Color.White;
+            btnAssign.Location = new Point(212, 392);
+            btnAssign.Margin = new Padding(1, 2, 1, 2);
+            btnAssign.Name = "btnAssign";
+            btnAssign.Size = new Size(161, 52);
+            btnAssign.TabIndex = 87;
+            btnAssign.Text = "Assign Ticket";
+            btnAssign.UseVisualStyleBackColor = false;
+            btnAssign.Click += btnAssign_Click;
             // 
             // btnClear
             // 
-            this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnClear.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnClear.ForeColor = System.Drawing.Color.White;
-            this.btnClear.Location = new System.Drawing.Point(16, 314);
-            this.btnClear.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(129, 42);
-            this.btnClear.TabIndex = 86;
-            this.btnClear.Text = "Clear";
-            this.btnClear.UseVisualStyleBackColor = false;
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            btnClear.BackColor = Color.FromArgb(64, 0, 0);
+            btnClear.FlatStyle = FlatStyle.Popup;
+            btnClear.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnClear.ForeColor = Color.White;
+            btnClear.Location = new Point(20, 392);
+            btnClear.Margin = new Padding(1, 2, 1, 2);
+            btnClear.Name = "btnClear";
+            btnClear.Size = new Size(161, 52);
+            btnClear.TabIndex = 86;
+            btnClear.Text = "Clear";
+            btnClear.UseVisualStyleBackColor = false;
+            btnClear.Click += btnClear_Click;
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.DarkGray;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(11, 138);
-            this.label8.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(522, 25);
-            this.label8.TabIndex = 83;
-            this.label8.Text = "Enter username of the IT member you wish to assign it to:";
+            label8.AutoSize = true;
+            label8.BackColor = Color.DarkGray;
+            label8.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label8.Location = new Point(14, 172);
+            label8.Margin = new Padding(1, 0, 1, 0);
+            label8.Name = "label8";
+            label8.Size = new Size(612, 30);
+            label8.TabIndex = 83;
+            label8.Text = "Enter username of the IT member you wish to assign it to:";
             // 
             // txtEmail
             // 
-            this.txtEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtEmail.Location = new System.Drawing.Point(15, 242);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.txtEmail.MaxLength = 50;
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(489, 30);
-            this.txtEmail.TabIndex = 82;
+            txtEmail.Anchor = AnchorStyles.None;
+            txtEmail.Location = new Point(19, 302);
+            txtEmail.Margin = new Padding(6, 5, 6, 5);
+            txtEmail.MaxLength = 50;
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(610, 34);
+            txtEmail.TabIndex = 82;
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.DarkGray;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(17, 214);
-            this.label7.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(337, 25);
-            this.label7.TabIndex = 81;
-            this.label7.Text = "Enter the above user\'s email address:";
+            label7.AutoSize = true;
+            label7.BackColor = Color.DarkGray;
+            label7.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.Location = new Point(21, 268);
+            label7.Margin = new Padding(1, 0, 1, 0);
+            label7.Name = "label7";
+            label7.Size = new Size(397, 30);
+            label7.TabIndex = 81;
+            label7.Text = "Enter the above user's email address:";
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.DarkGray;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(14, 58);
-            this.label6.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(397, 25);
-            this.label6.TabIndex = 79;
-            this.label6.Text = "Enter Ticket ID of ticket you want to assign:";
+            label6.AutoSize = true;
+            label6.BackColor = Color.DarkGray;
+            label6.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.Location = new Point(18, 72);
+            label6.Margin = new Padding(1, 0, 1, 0);
+            label6.Name = "label6";
+            label6.Size = new Size(465, 30);
+            label6.TabIndex = 79;
+            label6.Text = "Enter Ticket ID of ticket you want to assign:";
             // 
             // pictureBox6
             // 
-            this.pictureBox6.BackColor = System.Drawing.Color.DarkGray;
-            this.pictureBox6.Location = new System.Drawing.Point(8, 42);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(523, 262);
-            this.pictureBox6.TabIndex = 85;
-            this.pictureBox6.TabStop = false;
+            pictureBox6.BackColor = Color.DarkGray;
+            pictureBox6.Location = new Point(10, 52);
+            pictureBox6.Margin = new Padding(1, 2, 1, 2);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(654, 328);
+            pictureBox6.TabIndex = 85;
+            pictureBox6.TabStop = false;
             // 
             // lblAssign
             // 
-            this.lblAssign.AutoSize = true;
-            this.lblAssign.BackColor = System.Drawing.Color.Transparent;
-            this.lblAssign.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.lblAssign.Location = new System.Drawing.Point(5, 6);
-            this.lblAssign.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.lblAssign.Name = "lblAssign";
-            this.lblAssign.Size = new System.Drawing.Size(145, 28);
-            this.lblAssign.TabIndex = 55;
-            this.lblAssign.Text = "Assign Tickets";
+            lblAssign.AutoSize = true;
+            lblAssign.BackColor = Color.Transparent;
+            lblAssign.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            lblAssign.Location = new Point(6, 8);
+            lblAssign.Margin = new Padding(1, 0, 1, 0);
+            lblAssign.Name = "lblAssign";
+            lblAssign.Size = new Size(174, 32);
+            lblAssign.TabIndex = 55;
+            lblAssign.Text = "Assign Tickets";
             // 
             // lblLoggedIn
             // 
-            this.lblLoggedIn.AutoSize = true;
-            this.lblLoggedIn.BackColor = System.Drawing.Color.Black;
-            this.lblLoggedIn.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblLoggedIn.ForeColor = System.Drawing.Color.White;
-            this.lblLoggedIn.Location = new System.Drawing.Point(779, 42);
-            this.lblLoggedIn.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.lblLoggedIn.Name = "lblLoggedIn";
-            this.lblLoggedIn.Size = new System.Drawing.Size(150, 23);
-            this.lblLoggedIn.TabIndex = 5;
-            this.lblLoggedIn.Text = "Logged in as: User";
+            lblLoggedIn.AutoSize = true;
+            lblLoggedIn.BackColor = Color.Black;
+            lblLoggedIn.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            lblLoggedIn.ForeColor = Color.White;
+            lblLoggedIn.Location = new Point(974, 52);
+            lblLoggedIn.Margin = new Padding(1, 0, 1, 0);
+            lblLoggedIn.Name = "lblLoggedIn";
+            lblLoggedIn.Size = new Size(171, 28);
+            lblLoggedIn.TabIndex = 5;
+            lblLoggedIn.Text = "Logged in as: User";
             // 
             // ProfilePictureBox
             // 
-            this.ProfilePictureBox.BackColor = System.Drawing.Color.Black;
-            this.ProfilePictureBox.BackgroundImage = global::GUI_IT.Properties.Resources.Profile_Picture;
-            this.ProfilePictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ProfilePictureBox.Location = new System.Drawing.Point(961, 38);
-            this.ProfilePictureBox.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.ProfilePictureBox.Name = "ProfilePictureBox";
-            this.ProfilePictureBox.Size = new System.Drawing.Size(39, 28);
-            this.ProfilePictureBox.TabIndex = 6;
-            this.ProfilePictureBox.TabStop = false;
-            this.ProfilePictureBox.Click += new System.EventHandler(this.ProfilePictureBox_Click);
+            ProfilePictureBox.BackColor = Color.Black;
+            ProfilePictureBox.BackgroundImage = Properties.Resources.Profile_Picture;
+            ProfilePictureBox.BackgroundImageLayout = ImageLayout.Zoom;
+            ProfilePictureBox.Location = new Point(1201, 48);
+            ProfilePictureBox.Margin = new Padding(1, 2, 1, 2);
+            ProfilePictureBox.Name = "ProfilePictureBox";
+            ProfilePictureBox.Size = new Size(49, 35);
+            ProfilePictureBox.TabIndex = 6;
+            ProfilePictureBox.TabStop = false;
+            ProfilePictureBox.Click += ProfilePictureBox_Click;
+            // 
+            // btnAssignRefresh
+            // 
+            btnAssignRefresh.BackColor = Color.FromArgb(64, 0, 0);
+            btnAssignRefresh.FlatStyle = FlatStyle.Popup;
+            btnAssignRefresh.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnAssignRefresh.ForeColor = Color.White;
+            btnAssignRefresh.Location = new Point(404, 392);
+            btnAssignRefresh.Margin = new Padding(1, 2, 1, 2);
+            btnAssignRefresh.Name = "btnAssignRefresh";
+            btnAssignRefresh.Size = new Size(166, 52);
+            btnAssignRefresh.TabIndex = 94;
+            btnAssignRefresh.Text = "Refresh Table";
+            btnAssignRefresh.UseVisualStyleBackColor = false;
             // 
             // frmReportManage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1009, 514);
-            this.Controls.Add(this.lblLoggedIn);
-            this.Controls.Add(this.ProfilePictureBox);
-            this.Controls.Add(this.tabControl1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.lblHeader);
-            this.Controls.Add(this.pictureLogo);
-            this.Controls.Add(this.btnLogout);
-            this.Controls.Add(this.Rectangle1);
-            this.Controls.Add(this.pictureBox1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.Name = "frmReportManage";
-            this.Text = "IT Help Desk Report Manager Ticket Dashboard";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Rectangle1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.tabControl1.ResumeLayout(false);
-            this.tabHome.ResumeLayout(false);
-            this.tabHome.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            this.tabMonitor.ResumeLayout(false);
-            this.tabMonitor.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DGVT)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.tabAssign.ResumeLayout(false);
-            this.tabAssign.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DGVAssign)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ProfilePictureBox)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1261, 642);
+            Controls.Add(lblLoggedIn);
+            Controls.Add(ProfilePictureBox);
+            Controls.Add(tabControl1);
+            Controls.Add(label1);
+            Controls.Add(pictureBox2);
+            Controls.Add(lblHeader);
+            Controls.Add(pictureLogo);
+            Controls.Add(btnLogout);
+            Controls.Add(Rectangle1);
+            Controls.Add(pictureBox1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(1, 2, 1, 2);
+            Name = "frmReportManage";
+            Text = "IT Help Desk Report Manager Ticket Dashboard";
+            ((System.ComponentModel.ISupportInitialize)pictureLogo).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Rectangle1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            tabControl1.ResumeLayout(false);
+            tabHome.ResumeLayout(false);
+            tabHome.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            tabMonitor.ResumeLayout(false);
+            tabMonitor.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)DGVT).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            tabAssign.ResumeLayout(false);
+            tabAssign.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)DGVAssign).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)ProfilePictureBox).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -735,5 +745,6 @@
         private ComboBox cbxn;
         private ComboBox cbxid;
         private Button btnViewUnsolvedTable;
+        private Button btnAssignRefresh;
     }
 }
