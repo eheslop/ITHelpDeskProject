@@ -616,6 +616,21 @@ namespace GUI_IT
             return dt;
         }
 
+        public static DataTable ShowRegis()
+        {
+            SqlConnection con = Connect();
+            string query = "Select * from Registration; ";
+            SqlCommand cmd = new SqlCommand(query, con);
+            cmd.ExecuteNonQuery();
+            SqlDataAdapter da = new SqlDataAdapter();
+            da.SelectCommand = cmd;
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+
+            con.Close();
+            return dt;
+        }
+
         public static DataTable Sharedd(string user)
         {
             SqlConnection con = Connect();
