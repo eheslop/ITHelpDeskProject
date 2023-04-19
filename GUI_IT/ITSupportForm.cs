@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.CodeAnalysis;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -49,6 +50,7 @@ namespace GUI_IT
 
         private void Fill2()
         {
+            // Move to SQL Class
             string x = newUser_.Username;
             string y = "Solved";
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
@@ -72,7 +74,7 @@ namespace GUI_IT
 
         private void combo1()
         {
-            cbxid.DataSource = Sql.Shareddd(newUser_.Username);
+            cbxid.DataSource = Sql.Sharedd(newUser_.Username);
             cbxid.DisplayMember = "Id";
         }
 
@@ -122,6 +124,7 @@ namespace GUI_IT
             txtSolution.Clear();
             cbxid.ResetText();
             cbxid.SelectedIndex = -1;
+            Fill1();
         }
 
 
@@ -151,12 +154,40 @@ namespace GUI_IT
             cbxid2.SelectedIndex = -1;
             cbxn.ResetText();
             cbxn.SelectedIndex = -1;
+            Fill2();
         }
 
 
         private void frmITSupport_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnSolveRefresh_Click(object sender, EventArgs e)
+        {
+            Fill1();
+
+        }
+
+        private void btnShareRefresh_Click(object sender, EventArgs e)
+        {
+            Fill2();
+        }
+
+        private void btnExpandTicket_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string x = cbxid.Text.ToString();
+                int tID = System.Convert.ToInt32(x);
+                generatedReport frmTickDetails = new generatedReport(tID, 0);
+                frmTickDetails.ShowDialog();
+
+            }
+            catch(System.FormatException ex)
+            {
+                MessageBox.Show("Please select a ticket!");
+            }
         }
     }
 }

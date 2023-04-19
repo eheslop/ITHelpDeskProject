@@ -50,6 +50,8 @@
             lblUser = new Label();
             lblWelcomeMessage = new Label();
             tabSolve = new TabPage();
+            btnSolveRefresh = new Button();
+            btnExpandTicket = new Button();
             btnSolveClear = new Button();
             label9 = new Label();
             Shared = new DataGridView();
@@ -60,6 +62,7 @@
             lblTicketID = new Label();
             pictureBox9 = new PictureBox();
             tabShare = new TabPage();
+            btnShareRefresh = new Button();
             cbxid2 = new ComboBox();
             cbxn = new ComboBox();
             DGVShare = new DataGridView();
@@ -73,9 +76,6 @@
             pictureBox5 = new PictureBox();
             ProfilePictureBox = new PictureBox();
             lblLoggedIn = new Label();
-            btnExpandTicket = new Button();
-            btnShareRefresh = new Button();
-            btnSolveRefresh = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureLogo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Rectangle1).BeginInit();
@@ -363,6 +363,36 @@
             tabSolve.TabIndex = 0;
             tabSolve.Text = "Solve Tickets";
             // 
+            // btnSolveRefresh
+            // 
+            btnSolveRefresh.BackColor = Color.FromArgb(64, 0, 0);
+            btnSolveRefresh.FlatStyle = FlatStyle.Popup;
+            btnSolveRefresh.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSolveRefresh.ForeColor = Color.White;
+            btnSolveRefresh.Location = new Point(1050, 218);
+            btnSolveRefresh.Margin = new Padding(1, 2, 1, 2);
+            btnSolveRefresh.Name = "btnSolveRefresh";
+            btnSolveRefresh.Size = new Size(200, 42);
+            btnSolveRefresh.TabIndex = 79;
+            btnSolveRefresh.Text = "Refresh Table";
+            btnSolveRefresh.UseVisualStyleBackColor = false;
+            btnSolveRefresh.Click += btnSolveRefresh_Click;
+            // 
+            // btnExpandTicket
+            // 
+            btnExpandTicket.BackColor = Color.FromArgb(64, 0, 0);
+            btnExpandTicket.FlatStyle = FlatStyle.Popup;
+            btnExpandTicket.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnExpandTicket.ForeColor = Color.White;
+            btnExpandTicket.Location = new Point(1050, 144);
+            btnExpandTicket.Margin = new Padding(1, 2, 1, 2);
+            btnExpandTicket.Name = "btnExpandTicket";
+            btnExpandTicket.Size = new Size(200, 62);
+            btnExpandTicket.TabIndex = 75;
+            btnExpandTicket.Text = "Expand Ticket Details";
+            btnExpandTicket.UseVisualStyleBackColor = false;
+            btnExpandTicket.Click += btnExpandTicket_Click;
+            // 
             // btnSolveClear
             // 
             btnSolveClear.BackColor = Color.FromArgb(64, 0, 0);
@@ -494,6 +524,21 @@
             tabShare.TabIndex = 1;
             tabShare.Text = "Share Tickets";
             // 
+            // btnShareRefresh
+            // 
+            btnShareRefresh.BackColor = Color.FromArgb(64, 0, 0);
+            btnShareRefresh.FlatStyle = FlatStyle.Popup;
+            btnShareRefresh.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnShareRefresh.ForeColor = Color.White;
+            btnShareRefresh.Location = new Point(213, 392);
+            btnShareRefresh.Margin = new Padding(1, 2, 1, 2);
+            btnShareRefresh.Name = "btnShareRefresh";
+            btnShareRefresh.Size = new Size(166, 52);
+            btnShareRefresh.TabIndex = 84;
+            btnShareRefresh.Text = "Refresh Table";
+            btnShareRefresh.UseVisualStyleBackColor = false;
+            btnShareRefresh.Click += btnShareRefresh_Click;
+            // 
             // cbxid2
             // 
             cbxid2.FormattingEnabled = true;
@@ -568,7 +613,7 @@
             // txtEmail
             // 
             txtEmail.Anchor = AnchorStyles.None;
-            txtEmail.Location = new Point(21, 294);
+            txtEmail.Location = new Point(21, 295);
             txtEmail.Margin = new Padding(2);
             txtEmail.MaxLength = 50;
             txtEmail.Name = "txtEmail";
@@ -646,48 +691,6 @@
             lblLoggedIn.Size = new Size(171, 28);
             lblLoggedIn.TabIndex = 6;
             lblLoggedIn.Text = "Logged in as: User";
-            // 
-            // btnExpandTicket
-            // 
-            btnExpandTicket.BackColor = Color.FromArgb(64, 0, 0);
-            btnExpandTicket.FlatStyle = FlatStyle.Popup;
-            btnExpandTicket.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnExpandTicket.ForeColor = Color.White;
-            btnExpandTicket.Location = new Point(1050, 144);
-            btnExpandTicket.Margin = new Padding(1, 2, 1, 2);
-            btnExpandTicket.Name = "btnExpandTicket";
-            btnExpandTicket.Size = new Size(200, 62);
-            btnExpandTicket.TabIndex = 75;
-            btnExpandTicket.Text = "Expand Ticket Details";
-            btnExpandTicket.UseVisualStyleBackColor = false;
-            // 
-            // btnShareRefresh
-            // 
-            btnShareRefresh.BackColor = Color.FromArgb(64, 0, 0);
-            btnShareRefresh.FlatStyle = FlatStyle.Popup;
-            btnShareRefresh.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnShareRefresh.ForeColor = Color.White;
-            btnShareRefresh.Location = new Point(213, 392);
-            btnShareRefresh.Margin = new Padding(1, 2, 1, 2);
-            btnShareRefresh.Name = "btnShareRefresh";
-            btnShareRefresh.Size = new Size(166, 52);
-            btnShareRefresh.TabIndex = 84;
-            btnShareRefresh.Text = "Refresh Table";
-            btnShareRefresh.UseVisualStyleBackColor = false;
-            // 
-            // btnSolveRefresh
-            // 
-            btnSolveRefresh.BackColor = Color.FromArgb(64, 0, 0);
-            btnSolveRefresh.FlatStyle = FlatStyle.Popup;
-            btnSolveRefresh.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnSolveRefresh.ForeColor = Color.White;
-            btnSolveRefresh.Location = new Point(1050, 218);
-            btnSolveRefresh.Margin = new Padding(1, 2, 1, 2);
-            btnSolveRefresh.Name = "btnSolveRefresh";
-            btnSolveRefresh.Size = new Size(200, 42);
-            btnSolveRefresh.TabIndex = 79;
-            btnSolveRefresh.Text = "Refresh Table";
-            btnSolveRefresh.UseVisualStyleBackColor = false;
             // 
             // frmITSupport
             // 

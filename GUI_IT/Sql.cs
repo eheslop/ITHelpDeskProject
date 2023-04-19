@@ -621,7 +621,7 @@ namespace GUI_IT
             SqlConnection con = Connect();
             string y = "Solved";
            
-            string query = "Select Distinct Tickets.Id, Name, Username, Category, Description, Category, Priority, Collaborators, AssignedTo, SharedWith FROM Tickets left join SharedTickets  ON ( Tickets.Id = SharedTickets.Id ) Where SharedWith = '" + user.ToString() + "' OR AssignedTo = '" + user.ToString() + "' AND Status != '" + y + "'; ";
+            string query = "Select Distinct Tickets.Id, Name, Username, Category, Description, Category, Priority, Collaborators, AssignedTo FROM Tickets left join SharedTickets  ON ( Tickets.Id = SharedTickets.Id ) Where (SharedWith = '" + user.ToString() + "' OR AssignedTo = '" + user.ToString() + "') AND (Status != '" + y + "'); ";
             SqlDataAdapter da = new SqlDataAdapter(query, con);
             DataTable dt = new DataTable();
             da.Fill(dt);
@@ -635,7 +635,7 @@ namespace GUI_IT
             SqlConnection con = Connect();
             string y = "Solved";
 
-            string query = "Select Distinct Tickets.Id, Name, Username, Category, Description, Category, Priority, Collaborators, AssignedTo, SharedWith FROM Tickets left join SharedTickets  ON ( Tickets.Id = SharedTickets.Id ) Where SharedWith = '" + user.ToString() + "' OR AssignedTo = '" + user.ToString() + "' AND Status != '" + y + "'; ";
+            string query = "Select Distinct Tickets.Id, Name, Username, Category, Description, Category, Priority, Collaborators, AssignedTo, SharedWith FROM Tickets left join SharedTickets  ON ( Tickets.Id = SharedTickets.Id ) Where (SharedWith = '" + user.ToString() + "' OR AssignedTo = '" + user.ToString() + "') AND (Status != '" + y + "'); ";
             SqlCommand cmd = new SqlCommand(query, con);
             cmd.ExecuteNonQuery();
             SqlDataAdapter da = new SqlDataAdapter();

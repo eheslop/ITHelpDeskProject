@@ -57,6 +57,7 @@
             DGVT = new DataGridView();
             pictureBox5 = new PictureBox();
             tabAssign = new TabPage();
+            btnAssignRefresh = new Button();
             btnViewUnsolvedTable = new Button();
             cbxid = new ComboBox();
             cbxn = new ComboBox();
@@ -72,7 +73,6 @@
             lblAssign = new Label();
             lblLoggedIn = new Label();
             ProfilePictureBox = new PictureBox();
-            btnAssignRefresh = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureLogo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Rectangle1).BeginInit();
@@ -459,6 +459,21 @@
             tabAssign.TabIndex = 1;
             tabAssign.Text = "Assign Tickets";
             // 
+            // btnAssignRefresh
+            // 
+            btnAssignRefresh.BackColor = Color.FromArgb(64, 0, 0);
+            btnAssignRefresh.FlatStyle = FlatStyle.Popup;
+            btnAssignRefresh.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnAssignRefresh.ForeColor = Color.White;
+            btnAssignRefresh.Location = new Point(404, 392);
+            btnAssignRefresh.Margin = new Padding(1, 2, 1, 2);
+            btnAssignRefresh.Name = "btnAssignRefresh";
+            btnAssignRefresh.Size = new Size(166, 52);
+            btnAssignRefresh.TabIndex = 94;
+            btnAssignRefresh.Text = "Refresh Table";
+            btnAssignRefresh.UseVisualStyleBackColor = false;
+            btnAssignRefresh.Click += btnAssignRefresh_Click;
+            // 
             // btnViewUnsolvedTable
             // 
             btnViewUnsolvedTable.BackColor = Color.FromArgb(64, 0, 0);
@@ -641,20 +656,6 @@
             ProfilePictureBox.TabIndex = 6;
             ProfilePictureBox.TabStop = false;
             ProfilePictureBox.Click += ProfilePictureBox_Click;
-            // 
-            // btnAssignRefresh
-            // 
-            btnAssignRefresh.BackColor = Color.FromArgb(64, 0, 0);
-            btnAssignRefresh.FlatStyle = FlatStyle.Popup;
-            btnAssignRefresh.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnAssignRefresh.ForeColor = Color.White;
-            btnAssignRefresh.Location = new Point(404, 392);
-            btnAssignRefresh.Margin = new Padding(1, 2, 1, 2);
-            btnAssignRefresh.Name = "btnAssignRefresh";
-            btnAssignRefresh.Size = new Size(166, 52);
-            btnAssignRefresh.TabIndex = 94;
-            btnAssignRefresh.Text = "Refresh Table";
-            btnAssignRefresh.UseVisualStyleBackColor = false;
             // 
             // frmReportManage
             // 

@@ -31,6 +31,7 @@ namespace GUI_IT
 
         private void Fill()
         {
+            //Move to SQL Class
             string x = "Unsolved";
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
             builder.DataSource = "redagents.database.windows.net";
@@ -160,6 +161,12 @@ namespace GUI_IT
 
         private void btnReOpened_Click(object sender, EventArgs e)
         {
+            Fill3();
+        }
+
+        private void btnAssignRefresh_Click(object sender, EventArgs e)
+        {
+            Fill1();
             Fill3();
         }
     }

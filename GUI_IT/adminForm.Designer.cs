@@ -402,7 +402,7 @@
             tabView.Location = new Point(4, 37);
             tabView.Margin = new Padding(2);
             tabView.Name = "tabView";
-            tabView.Size = new Size(1276, 715);
+            tabView.Size = new Size(1276, 698);
             tabView.TabIndex = 4;
             tabView.Text = "View Tickets";
             // 
@@ -489,7 +489,7 @@
             tabReport.Margin = new Padding(2);
             tabReport.Name = "tabReport";
             tabReport.Padding = new Padding(2);
-            tabReport.Size = new Size(1276, 715);
+            tabReport.Size = new Size(1276, 698);
             tabReport.TabIndex = 1;
             tabReport.Text = "Generate Reports";
             // 

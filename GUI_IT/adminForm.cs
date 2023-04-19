@@ -105,27 +105,9 @@ namespace GUI_IT
         {
 
         }*/
-
-
-        /*private void button1_Click(object sender, EventArgs e)
-        {
-            SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-            builder.DataSource = "redagents.database.windows.net";
-            builder.UserID = "kwekwe";
-            builder.Password = "Password1!";
-            builder.InitialCatalog = "red_Agents";
-            SqlConnection con = new SqlConnection(builder.ConnectionString);
-            con.Open();
-            string query = "Select * from Registration";
-            SqlDataAdapter da = new SqlDataAdapter(query, con);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            DGVR.DataSource = dt;
-            con.Close();
-        }*/
-
         private void Fill()
         {
+            //Move to SQL Class
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
             builder.DataSource = "redagents.database.windows.net";
             builder.UserID = "kwekwe";
@@ -141,25 +123,6 @@ namespace GUI_IT
             DGVR.EditMode = DataGridViewEditMode.EditOnEnter;
             con.Close();
         }
-
-
-        /*private void btnSubmit_Click(object sender, EventArgs e)
-        {
-
-            SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-            builder.DataSource = "redagents.database.windows.net";
-            builder.UserID = "kwekwe";
-            builder.Password = "Password1!";
-            builder.InitialCatalog = "red_Agents";
-            SqlConnection con = new SqlConnection(builder.ConnectionString);
-            con.Open();
-            DataTable dt = new DataTable();
-            string query = "UPDATE Registration";
-            SqlDataAdapter da = new SqlDataAdapter(query, con);
-            da.Update(dt);
-            this.DGVR.Refresh();
-        }*/
-
 
         private void ProfilePictureBox_Click(object sender, EventArgs e)
         {
@@ -217,7 +180,7 @@ namespace GUI_IT
                 string n = Sql.getColl(y);
                 Sql.report(y, c, b, d, g, f, l, newUser_.Username, h, n);
             }
-            generatedReport report = new generatedReport(y,z);
+            generatedReport report = new generatedReport(y, z);
             report.ShowDialog();
             // MessageBox.Show("Your report regarded the solved ticket of your choosing has been successfully submitted.", "Solved Ticket Report Submitted!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -259,7 +222,7 @@ namespace GUI_IT
                 string n = Sql.getColl(y);
                 Sql.report(y, c, b, d, g, f, l, newUser_.Username, h, n);
             }
-            generatedReport report = new generatedReport(y,z);
+            generatedReport report = new generatedReport(y, z);
             report.ShowDialog();
 
             /*string x = txtTicketID.Text.ToString();

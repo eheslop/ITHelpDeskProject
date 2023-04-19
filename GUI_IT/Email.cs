@@ -108,13 +108,13 @@ namespace GUI_IT
             {
                 data[0] = "Notice: New Ticket Raised";
                 data[1] = "Hello " + Sql.getName(user)
-                        + "!\n\nA new ticket has been raised on the Reg Agents IT Help Desk. Below are the details:\n"
+                        + "!\n\nA new ticket has been raised on the Red Agents IT Help Desk. Below are the details:\n"
                         + "Ticket ID: " + tID + "\n"
                         + "Ticket Category " + Sql.getTicketCategory(tID) + "\n"
                         + "Ticket Priority " + Sql.getTicketPriority(tID) + "\n"
                         + "Ticket Created By: " + Sql.getTicketUser(tID) + "\n"
                         + "Ticket Description: " + Sql.getTicketDescription(tID) + "\n\n"
-                        + "More information can be found within the Reg Agents IT Helpdesk Interface. \n\n"
+                        + "More information can be found within the Red Agents IT Helpdesk Interface. \n\n"
                         + "-Red Agents IT";
             }
             else if (template == "Solved Ticket")
