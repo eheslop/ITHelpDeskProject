@@ -902,5 +902,17 @@ namespace GUI_IT
             da.Fill(dt);
             return dt;
         }
+        
+        public static DataTable showunsolved(string user) 
+        {
+            SqlConnection con = Connect();
+            string x = user.ToString();
+            string y = "Solved";
+            string query = "Select * from Tickets where AssignedTo = '" + x + "' and Status != '" + y + "'; ";
+            SqlDataAdapter da = new SqlDataAdapter(query, con);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
     }
 }

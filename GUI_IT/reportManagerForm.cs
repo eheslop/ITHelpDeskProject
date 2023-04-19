@@ -30,22 +30,8 @@ namespace GUI_IT
 
 
         private void Fill()
-        {
-            //Move to SQL Class
-            string x = "Unsolved";
-            SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-            builder.DataSource = "redagents.database.windows.net";
-            builder.UserID = "kwekwe";
-            builder.Password = "Password1!";
-            builder.InitialCatalog = "red_Agents";
-            SqlConnection con = new SqlConnection(builder.ConnectionString);
-            con.Open();
-            string query = "Select * from Tickets where Status = '" + x + "'; ";
-            SqlDataAdapter da = new SqlDataAdapter(query, con);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            DGVT.DataSource = dt;
-            con.Close();
+        {            
+            DGVT.DataSource = Sql.ticketsUnsolved();
         }
 
 

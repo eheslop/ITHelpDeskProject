@@ -107,21 +107,9 @@ namespace GUI_IT
         }*/
         private void Fill()
         {
-            //Move to SQL Class
-            SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-            builder.DataSource = "redagents.database.windows.net";
-            builder.UserID = "kwekwe";
-            builder.Password = "Password1!";
-            builder.InitialCatalog = "red_Agents";
-            SqlConnection con = new SqlConnection(builder.ConnectionString);
-            con.Open();
-            string query = "Select * from Registration";
-            SqlDataAdapter da = new SqlDataAdapter(query, con);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            DGVR.DataSource = dt;
+            DGVR.DataSource = Sql.ShowRegis();
             DGVR.EditMode = DataGridViewEditMode.EditOnEnter;
-            con.Close();
+
         }
 
         private void ProfilePictureBox_Click(object sender, EventArgs e)
@@ -182,7 +170,6 @@ namespace GUI_IT
             }
             generatedReport report = new generatedReport(y, z);
             report.ShowDialog();
-            // MessageBox.Show("Your report regarded the solved ticket of your choosing has been successfully submitted.", "Solved Ticket Report Submitted!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             cbxSolvedID.ResetText();
             cbxSolvedID.SelectedIndex = -1;
@@ -224,19 +211,6 @@ namespace GUI_IT
             }
             generatedReport report = new generatedReport(y, z);
             report.ShowDialog();
-
-            /*string x = txtTicketID.Text.ToString();
-            string b = Sql.getTicketassign(y);
-                string c = Sql.getTicketPriority(y);
-                string d = Sql.getTicketUser(y);
-                string g = Sql.getTicketCategory(y);
-                string l = Sql.solution(y);
-                string f = Sql.getTicketDescription(y);
-                string h = Sql.getTicketStat(y);
-            string h = "Unsolved";
-            Sql.report(y, c, b, d, g, f, l, newUser_.Username, h);*/
-
-            // MessageBox.Show("Your report regarded the unsolved ticket of your choosing has been successfully submitted.", "Unsolved Ticket Report Submitted!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             cbxUnsolvedID.ResetText();
             cbxUnsolvedID.SelectedIndex = -1;

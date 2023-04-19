@@ -547,7 +547,7 @@
             DGVGR.RowTemplate.Height = 33;
             DGVGR.Size = new Size(801, 319);
             DGVGR.TabIndex = 146;
-            DGVGR.CellContentClick += DGVGR_CellContentClick;
+           // DGVGR.CellContentClick += DGVGR_CellContentClick;
             // 
             // pictureBox3
             // 

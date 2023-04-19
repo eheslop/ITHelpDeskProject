@@ -50,25 +50,8 @@ namespace GUI_IT
 
         private void Fill2()
         {
-            // Move to SQL Class
-            string x = newUser_.Username;
-            string y = "Solved";
-            SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-            builder.DataSource = "redagents.database.windows.net";
-            builder.UserID = "kwekwe";
-            builder.Password = "Password1!";
-            builder.InitialCatalog = "red_Agents";
-            SqlConnection con = new SqlConnection(builder.ConnectionString);
-            con.Open();
-            string query = "Select * from Tickets where AssignedTo = '" + x + "' and Status != '" + y + "'; ";
-            SqlDataAdapter da = new SqlDataAdapter(query, con);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            //DGVS.DataSource = dt;
-            DGVShare.DataSource = dt;
+            DGVShare.DataSource = Sql.showunsolved(newUser_.Username);
             DGVShare.EditMode = DataGridViewEditMode.EditOnEnter;
-            con.Close();
-
         }
 
 
