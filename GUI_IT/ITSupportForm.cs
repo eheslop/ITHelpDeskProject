@@ -180,7 +180,7 @@ namespace GUI_IT
             {
                 string x = cbxid.Text.ToString();
                 int tID = System.Convert.ToInt32(x);
-                generatedReport frmTickDetails = new generatedReport(tID, 0);
+                generatedReport frmTickDetails = new generatedReport(tID, 2);
                 frmTickDetails.ShowDialog();
 
             }
