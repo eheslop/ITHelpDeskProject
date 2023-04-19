@@ -17,12 +17,17 @@ namespace GUI_IT
         {
             InitializeComponent();
             txtID.Text = tID.ToString();
+            txtViewID.Text = tID.ToString();
             txtCategory.Text = Sql.getTicketCategory(tID);
+            txtViewCategory.Text = Sql.getTicketCategory(tID);
             txtITMem.Text = Sql.getTicketassign(tID);
             txtRaisedUser.Text = Sql.getTicketUser(tID);
+            txtViewRaised.Text = Sql.getTicketUser(tID);
             txtStatus.Text = Sql.getTicketStat(tID);
             txtUrgency.Text = Sql.getTicketPriority(tID);
+            txtViewUrgency.Text = Sql.getTicketPriority(tID);
             txtSummary.Text = Sql.getTicketDescription(tID);
+            txtTicketProblem.Text = Sql.getTicketDescription(tID);
             textBox1.Text = Sql.getColl(tID);
             txtSolution.Text = Sql.solution(tID);
             id = tID;
@@ -36,7 +41,7 @@ namespace GUI_IT
                 pnlExpandTicket.Visible = false;
                 lblViewHeader.Visible = false;
             }
-            else
+            else if (z == 1)
             {
                 txtSolution.Visible = false;
                 txtExtra.Visible = true;
@@ -45,7 +50,12 @@ namespace GUI_IT
                 lblSolution.Visible = false;
                 pnlExpandTicket.Visible = false;
                 lblViewHeader.Visible = false;
-
+            }
+            else
+            {
+                pnlExpandTicket.Visible = true;
+                pnlExpandTicket.BringToFront();
+                lblViewHeader.Visible = true;
             }
         }
 
