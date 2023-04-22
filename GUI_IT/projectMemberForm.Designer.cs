@@ -211,10 +211,10 @@
             this.btnTickets.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnTickets.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.btnTickets.ForeColor = System.Drawing.Color.White;
-            this.btnTickets.Location = new System.Drawing.Point(321, 34);
+            this.btnTickets.Location = new System.Drawing.Point(307, 37);
             this.btnTickets.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.btnTickets.Name = "btnTickets";
-            this.btnTickets.Size = new System.Drawing.Size(151, 38);
+            this.btnTickets.Size = new System.Drawing.Size(117, 32);
             this.btnTickets.TabIndex = 36;
             this.btnTickets.Text = "Ticket Dashboard";
             this.btnTickets.UseVisualStyleBackColor = false;
@@ -255,11 +255,12 @@
             this.pnlTickets.Controls.Add(this.tabProjectMem);
             this.pnlTickets.Controls.Add(this.lblTicket);
             this.pnlTickets.Controls.Add(this.pictureBox3);
-            this.pnlTickets.Location = new System.Drawing.Point(0, 77);
+            this.pnlTickets.Location = new System.Drawing.Point(0, 70);
             this.pnlTickets.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.pnlTickets.Name = "pnlTickets";
-            this.pnlTickets.Size = new System.Drawing.Size(1029, 440);
+            this.pnlTickets.Size = new System.Drawing.Size(1029, 447);
             this.pnlTickets.TabIndex = 45;
+            this.pnlTickets.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlTickets_Paint_1);
             // 
             // tabProjectMem
             // 
@@ -268,11 +269,11 @@
             this.tabProjectMem.Controls.Add(this.tabRaiseTicket);
             this.tabProjectMem.Controls.Add(this.tabReopenTicket);
             this.tabProjectMem.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.tabProjectMem.Location = new System.Drawing.Point(-7, 360);
+            this.tabProjectMem.Location = new System.Drawing.Point(-7, 50);
             this.tabProjectMem.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.tabProjectMem.Name = "tabProjectMem";
             this.tabProjectMem.SelectedIndex = 0;
-            this.tabProjectMem.Size = new System.Drawing.Size(1031, 90);
+            this.tabProjectMem.Size = new System.Drawing.Size(1031, 400);
             this.tabProjectMem.TabIndex = 50;
             // 
             // tabHome
@@ -296,7 +297,7 @@
             this.tabHome.Location = new System.Drawing.Point(4, 32);
             this.tabHome.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.tabHome.Name = "tabHome";
-            this.tabHome.Size = new System.Drawing.Size(1023, 54);
+            this.tabHome.Size = new System.Drawing.Size(1023, 364);
             this.tabHome.TabIndex = 3;
             this.tabHome.Text = "Ticket Homepage";
             // 
@@ -865,10 +866,10 @@
             this.pnlProblemList.Controls.Add(this.lblGeneral);
             this.pnlProblemList.Controls.Add(this.lblProblem);
             this.pnlProblemList.Controls.Add(this.pictureBox4);
-            this.pnlProblemList.Location = new System.Drawing.Point(-3, 75);
+            this.pnlProblemList.Location = new System.Drawing.Point(-3, 72);
             this.pnlProblemList.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.pnlProblemList.Name = "pnlProblemList";
-            this.pnlProblemList.Size = new System.Drawing.Size(1015, 459);
+            this.pnlProblemList.Size = new System.Drawing.Size(1015, 462);
             this.pnlProblemList.TabIndex = 45;
             // 
             // pictureBox17
@@ -1016,10 +1017,10 @@
             this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.pictureBox4.Location = new System.Drawing.Point(1, -2);
+            this.pictureBox4.Location = new System.Drawing.Point(1, 0);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(1013, 54);
+            this.pictureBox4.Size = new System.Drawing.Size(1013, 52);
             this.pictureBox4.TabIndex = 44;
             this.pictureBox4.TabStop = false;
             // 

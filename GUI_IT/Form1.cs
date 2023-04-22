@@ -422,5 +422,10 @@ namespace GUI_IT
         {
 
         }
+
+        private void lblRegisterAccount_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

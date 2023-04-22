@@ -234,12 +234,13 @@
             this.lblRegisterAccount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblRegisterAccount.AutoSize = true;
             this.lblRegisterAccount.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblRegisterAccount.Location = new System.Drawing.Point(494, 83);
+            this.lblRegisterAccount.Location = new System.Drawing.Point(469, 82);
             this.lblRegisterAccount.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblRegisterAccount.Name = "lblRegisterAccount";
             this.lblRegisterAccount.Size = new System.Drawing.Size(159, 19);
             this.lblRegisterAccount.TabIndex = 15;
             this.lblRegisterAccount.Text = "Don\'t Have An Account?";
+            this.lblRegisterAccount.Click += new System.EventHandler(this.lblRegisterAccount_Click);
             // 
             // pnlSignUp
             // 
@@ -353,7 +354,7 @@
             this.lblSignIn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblSignIn.AutoSize = true;
             this.lblSignIn.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblSignIn.Location = new System.Drawing.Point(479, 11);
+            this.lblSignIn.Location = new System.Drawing.Point(451, 8);
             this.lblSignIn.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSignIn.Name = "lblSignIn";
             this.lblSignIn.Size = new System.Drawing.Size(171, 19);
@@ -461,7 +462,7 @@
             this.pnlForgotPassword.Controls.Add(this.label1);
             this.pnlForgotPassword.Location = new System.Drawing.Point(6, 75);
             this.pnlForgotPassword.Name = "pnlForgotPassword";
-            this.pnlForgotPassword.Size = new System.Drawing.Size(760, 436);
+            this.pnlForgotPassword.Size = new System.Drawing.Size(760, 434);
             this.pnlForgotPassword.TabIndex = 12;
             this.pnlForgotPassword.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlForgotPassword_Paint);
             // 
@@ -470,7 +471,7 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(271, 182);
+            this.label2.Location = new System.Drawing.Point(271, 181);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(202, 31);
             this.label2.TabIndex = 6;
@@ -481,7 +482,7 @@
             this.lblRememebr.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblRememebr.AutoSize = true;
             this.lblRememebr.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblRememebr.Location = new System.Drawing.Point(501, 8);
+            this.lblRememebr.Location = new System.Drawing.Point(479, 10);
             this.lblRememebr.Name = "lblRememebr";
             this.lblRememebr.Size = new System.Drawing.Size(143, 19);
             this.lblRememebr.TabIndex = 5;
@@ -490,7 +491,7 @@
             // txtPassReset
             // 
             this.txtPassReset.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtPassReset.Location = new System.Drawing.Point(242, 226);
+            this.txtPassReset.Location = new System.Drawing.Point(242, 225);
             this.txtPassReset.Name = "txtPassReset";
             this.txtPassReset.PlaceholderText = "Enter Username";
             this.txtPassReset.Size = new System.Drawing.Size(266, 27);
@@ -501,7 +502,7 @@
             this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox5.BackgroundImage = global::GUI_IT.Properties.Resources.redAgentsLogo;
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Location = new System.Drawing.Point(323, 72);
+            this.pictureBox5.Location = new System.Drawing.Point(323, 71);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(111, 106);
             this.pictureBox5.TabIndex = 3;
@@ -530,7 +531,7 @@
             this.btnPassReset.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnPassReset.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnPassReset.ForeColor = System.Drawing.Color.White;
-            this.btnPassReset.Location = new System.Drawing.Point(294, 267);
+            this.btnPassReset.Location = new System.Drawing.Point(294, 266);
             this.btnPassReset.Name = "btnPassReset";
             this.btnPassReset.Size = new System.Drawing.Size(167, 49);
             this.btnPassReset.TabIndex = 1;
@@ -542,7 +543,7 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(92, 225);
+            this.label1.Location = new System.Drawing.Point(92, 224);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(149, 28);
             this.label1.TabIndex = 0;

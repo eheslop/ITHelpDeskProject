@@ -237,5 +237,15 @@ namespace GUI_IT
             pnlPasswordQ.Visible = false;
             pnlTicketQ.Visible = false;
         }
+
+        private void pnlTickets_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pnlTickets_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
