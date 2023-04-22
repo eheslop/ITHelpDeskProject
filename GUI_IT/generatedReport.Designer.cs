@@ -68,6 +68,7 @@
             this.txtSolution = new System.Windows.Forms.TextBox();
             this.lblSolution = new System.Windows.Forms.Label();
             this.pnlExpandTicket = new System.Windows.Forms.Panel();
+            this.txtSol = new System.Windows.Forms.TextBox();
             this.btnSolveTicket = new System.Windows.Forms.Button();
             this.btnSolveClear = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -91,7 +92,6 @@
             this.pictureBox19 = new System.Windows.Forms.PictureBox();
             this.pictureBox20 = new System.Windows.Forms.PictureBox();
             this.lblViewHeader = new System.Windows.Forms.Label();
-            this.txtSol = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureboxIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -236,7 +236,7 @@
             this.pictureBox4.Location = new System.Drawing.Point(18, 82);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(710, 411);
+            this.pictureBox4.Size = new System.Drawing.Size(710, 609);
             this.pictureBox4.TabIndex = 78;
             this.pictureBox4.TabStop = false;
             // 
@@ -246,7 +246,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(10, 73);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(728, 432);
+            this.pictureBox1.Size = new System.Drawing.Size(728, 630);
             this.pictureBox1.TabIndex = 77;
             this.pictureBox1.TabStop = false;
             // 
@@ -317,7 +317,7 @@
             this.pictureBox10.Location = new System.Drawing.Point(30, 281);
             this.pictureBox10.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(689, 99);
+            this.pictureBox10.Size = new System.Drawing.Size(689, 184);
             this.pictureBox10.TabIndex = 102;
             this.pictureBox10.TabStop = false;
             // 
@@ -334,10 +334,10 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Gainsboro;
-            this.pictureBox2.Location = new System.Drawing.Point(30, 384);
+            this.pictureBox2.Location = new System.Drawing.Point(28, 473);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(689, 92);
+            this.pictureBox2.Size = new System.Drawing.Size(689, 204);
             this.pictureBox2.TabIndex = 104;
             this.pictureBox2.TabStop = false;
             // 
@@ -358,7 +358,7 @@
             this.lblExtra.AutoSize = true;
             this.lblExtra.BackColor = System.Drawing.Color.Gainsboro;
             this.lblExtra.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblExtra.Location = new System.Drawing.Point(34, 389);
+            this.lblExtra.Location = new System.Drawing.Point(35, 477);
             this.lblExtra.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblExtra.Name = "lblExtra";
             this.lblExtra.Size = new System.Drawing.Size(245, 19);
@@ -398,47 +398,47 @@
             // 
             // txtCategory
             // 
-            this.txtCategory.Location = new System.Drawing.Point(482, 99);
+            this.txtCategory.Location = new System.Drawing.Point(492, 99);
             this.txtCategory.Margin = new System.Windows.Forms.Padding(2);
             this.txtCategory.Name = "txtCategory";
             this.txtCategory.ReadOnly = true;
-            this.txtCategory.Size = new System.Drawing.Size(232, 27);
+            this.txtCategory.Size = new System.Drawing.Size(222, 27);
             this.txtCategory.TabIndex = 126;
             // 
             // txtITMem
             // 
-            this.txtITMem.Location = new System.Drawing.Point(264, 190);
+            this.txtITMem.Location = new System.Drawing.Point(267, 190);
             this.txtITMem.Margin = new System.Windows.Forms.Padding(2);
             this.txtITMem.Name = "txtITMem";
             this.txtITMem.ReadOnly = true;
-            this.txtITMem.Size = new System.Drawing.Size(212, 27);
+            this.txtITMem.Size = new System.Drawing.Size(209, 27);
             this.txtITMem.TabIndex = 127;
             // 
             // txtStatus
             // 
-            this.txtStatus.Location = new System.Drawing.Point(598, 191);
+            this.txtStatus.Location = new System.Drawing.Point(605, 191);
             this.txtStatus.Margin = new System.Windows.Forms.Padding(2);
             this.txtStatus.Name = "txtStatus";
             this.txtStatus.ReadOnly = true;
-            this.txtStatus.Size = new System.Drawing.Size(110, 27);
+            this.txtStatus.Size = new System.Drawing.Size(103, 27);
             this.txtStatus.TabIndex = 130;
             // 
             // txtUrgency
             // 
-            this.txtUrgency.Location = new System.Drawing.Point(612, 143);
+            this.txtUrgency.Location = new System.Drawing.Point(623, 143);
             this.txtUrgency.Margin = new System.Windows.Forms.Padding(2);
             this.txtUrgency.Name = "txtUrgency";
             this.txtUrgency.ReadOnly = true;
-            this.txtUrgency.Size = new System.Drawing.Size(92, 27);
+            this.txtUrgency.Size = new System.Drawing.Size(81, 27);
             this.txtUrgency.TabIndex = 131;
             // 
             // txtRaisedUser
             // 
-            this.txtRaisedUser.Location = new System.Drawing.Point(213, 143);
+            this.txtRaisedUser.Location = new System.Drawing.Point(219, 143);
             this.txtRaisedUser.Margin = new System.Windows.Forms.Padding(2);
             this.txtRaisedUser.Name = "txtRaisedUser";
             this.txtRaisedUser.ReadOnly = true;
-            this.txtRaisedUser.Size = new System.Drawing.Size(263, 27);
+            this.txtRaisedUser.Size = new System.Drawing.Size(257, 27);
             this.txtRaisedUser.TabIndex = 132;
             // 
             // txtSummary
@@ -450,18 +450,18 @@
             this.txtSummary.Multiline = true;
             this.txtSummary.Name = "txtSummary";
             this.txtSummary.ReadOnly = true;
-            this.txtSummary.Size = new System.Drawing.Size(666, 60);
+            this.txtSummary.Size = new System.Drawing.Size(666, 141);
             this.txtSummary.TabIndex = 133;
             // 
             // txtExtra
             // 
             this.txtExtra.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtExtra.Location = new System.Drawing.Point(41, 411);
+            this.txtExtra.Location = new System.Drawing.Point(37, 520);
             this.txtExtra.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.txtExtra.MaxLength = 500;
             this.txtExtra.Multiline = true;
             this.txtExtra.Name = "txtExtra";
-            this.txtExtra.Size = new System.Drawing.Size(566, 54);
+            this.txtExtra.Size = new System.Drawing.Size(566, 120);
             this.txtExtra.TabIndex = 134;
             // 
             // btnsubmit
@@ -470,7 +470,7 @@
             this.btnsubmit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnsubmit.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnsubmit.ForeColor = System.Drawing.Color.White;
-            this.btnsubmit.Location = new System.Drawing.Point(616, 417);
+            this.btnsubmit.Location = new System.Drawing.Point(611, 542);
             this.btnsubmit.Name = "btnsubmit";
             this.btnsubmit.Size = new System.Drawing.Size(94, 39);
             this.btnsubmit.TabIndex = 135;
@@ -501,23 +501,23 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(190, 242);
+            this.textBox1.Location = new System.Drawing.Point(201, 242);
             this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(516, 27);
+            this.textBox1.Size = new System.Drawing.Size(505, 27);
             this.textBox1.TabIndex = 138;
             // 
             // txtSolution
             // 
             this.txtSolution.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtSolution.Location = new System.Drawing.Point(41, 411);
+            this.txtSolution.Location = new System.Drawing.Point(37, 498);
             this.txtSolution.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.txtSolution.MaxLength = 500;
             this.txtSolution.Multiline = true;
             this.txtSolution.Name = "txtSolution";
             this.txtSolution.ReadOnly = true;
-            this.txtSolution.Size = new System.Drawing.Size(566, 54);
+            this.txtSolution.Size = new System.Drawing.Size(669, 164);
             this.txtSolution.TabIndex = 139;
             this.txtSolution.Visible = false;
             // 
@@ -526,13 +526,14 @@
             this.lblSolution.AutoSize = true;
             this.lblSolution.BackColor = System.Drawing.Color.Gainsboro;
             this.lblSolution.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblSolution.Location = new System.Drawing.Point(36, 390);
+            this.lblSolution.Location = new System.Drawing.Point(37, 477);
             this.lblSolution.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSolution.Name = "lblSolution";
             this.lblSolution.Size = new System.Drawing.Size(125, 19);
             this.lblSolution.TabIndex = 140;
             this.lblSolution.Text = "Ticket Solution:";
             this.lblSolution.Visible = false;
+            this.lblSolution.Click += new System.EventHandler(this.lblSolution_Click);
             // 
             // pnlExpandTicket
             // 
@@ -562,9 +563,18 @@
             this.pnlExpandTicket.Location = new System.Drawing.Point(-6, 63);
             this.pnlExpandTicket.Margin = new System.Windows.Forms.Padding(2);
             this.pnlExpandTicket.Name = "pnlExpandTicket";
-            this.pnlExpandTicket.Size = new System.Drawing.Size(752, 650);
+            this.pnlExpandTicket.Size = new System.Drawing.Size(752, 649);
             this.pnlExpandTicket.TabIndex = 141;
             this.pnlExpandTicket.Visible = false;
+            // 
+            // txtSol
+            // 
+            this.txtSol.Location = new System.Drawing.Point(43, 410);
+            this.txtSol.Multiline = true;
+            this.txtSol.Name = "txtSol";
+            this.txtSol.PlaceholderText = "Enter the solution in 500 characters or less.";
+            this.txtSol.Size = new System.Drawing.Size(666, 124);
+            this.txtSol.TabIndex = 168;
             // 
             // btnSolveTicket
             // 
@@ -820,15 +830,6 @@
             this.lblViewHeader.TabIndex = 97;
             this.lblViewHeader.Text = "View Ticket Details";
             this.lblViewHeader.Visible = false;
-            // 
-            // txtSol
-            // 
-            this.txtSol.Location = new System.Drawing.Point(43, 410);
-            this.txtSol.Multiline = true;
-            this.txtSol.Name = "txtSol";
-            this.txtSol.PlaceholderText = "Enter the solution in 500 characters or less.";
-            this.txtSol.Size = new System.Drawing.Size(666, 124);
-            this.txtSol.TabIndex = 168;
             // 
             // generatedReport
             // 

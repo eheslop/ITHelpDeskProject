@@ -92,5 +92,10 @@ namespace GUI_IT
             
 
         }
+
+        private void lblSolution_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
