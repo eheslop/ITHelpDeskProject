@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Org.BouncyCastle.Asn1.Ocsp;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,7 +14,8 @@ namespace GUI_IT
     public partial class generatedReport : Form
     {
         public int id { get; set; }
-        public generatedReport(int tID, int z)
+        public string username{ get; set; }
+        public generatedReport(int tID, int z, string user)
         {
             InitializeComponent();
             txtID.Text = tID.ToString();
@@ -30,6 +32,7 @@ namespace GUI_IT
             txtTicketProblem.Text = Sql.getTicketDescription(tID);
             textBox1.Text = Sql.getColl(tID);
             txtSolution.Text = Sql.solution(tID);
+            username = user;
             id = tID;
             if (z == 0)
             {
@@ -73,6 +76,20 @@ namespace GUI_IT
 
         private void txtUrgency_TextChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void btnSolveTicket_Click(object sender, EventArgs e)
+        {
+            string z = Sql.tickuser(id);
+            string k = Sql.tickemail(id);
+            string j = txtSol.Text.ToString();
+            Sql.solve(id, username, z, k, j);
+            MessageBox.Show("Your solution for this ticket has been submitted, thank you.", "Ticket Solved Successfully!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Email.sendEmail("Solved Ticket", username, 0, id);
+
+            txtSol.Clear();
+            
 
         }
     }

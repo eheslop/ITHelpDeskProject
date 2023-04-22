@@ -168,7 +168,8 @@ namespace GUI_IT
                 string n = Sql.getColl(y);
                 Sql.report(y, c, b, d, g, f, l, newUser_.Username, h, n);
             }
-            generatedReport report = new generatedReport(y, z);
+            string userr = "";
+            generatedReport report = new generatedReport(y, z, userr );
             report.ShowDialog();
 
             cbxSolvedID.ResetText();
@@ -209,7 +210,8 @@ namespace GUI_IT
                 string n = Sql.getColl(y);
                 Sql.report(y, c, b, d, g, f, l, newUser_.Username, h, n);
             }
-            generatedReport report = new generatedReport(y, z);
+            string userr = " ";
+            generatedReport report = new generatedReport(y, z,userr);
             report.ShowDialog();
 
             cbxUnsolvedID.ResetText();
