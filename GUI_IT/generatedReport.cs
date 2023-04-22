@@ -14,7 +14,7 @@ namespace GUI_IT
     public partial class generatedReport : Form
     {
         public int id { get; set; }
-        public string username{ get; set; }
+        public string username { get; set; }
         public generatedReport(int tID, int z, string user)
         {
             InitializeComponent();
@@ -79,6 +79,12 @@ namespace GUI_IT
 
         }
 
+
+        private void lblSolution_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnSolveTicket_Click(object sender, EventArgs e)
         {
             string z = Sql.tickuser(id);
@@ -89,13 +95,11 @@ namespace GUI_IT
             Email.sendEmail("Solved Ticket", username, 0, id);
 
             txtSol.Clear();
-            
-
         }
 
-        private void lblSolution_Click(object sender, EventArgs e)
+        private void btnSolveClear_Click(object sender, EventArgs e)
         {
-
+            txtSol.Clear();
         }
     }
 }
