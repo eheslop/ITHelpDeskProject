@@ -83,7 +83,8 @@ namespace GUI_IT
                 data[1] = "Hello " + Sql.getNamee(user)
                           + "! Your access is pending administrative approval.\n You will be notified "
                           + "when your registration status has been reviewed by our Administrative Team.\n\n"
-                          + "If you have any concerns or questions, please respond to this email or reach us at redagentsit@gmail.com\n\n-Red Agents IT";
+                          + "If you have any concerns or questions, please respond to this email or reach us at redagentsit@gmail.com\n\n" 
+                          + "-Red Agents IT";
             }
             else if (template == "Registration Accepted")
             {
@@ -92,7 +93,8 @@ namespace GUI_IT
                         + "! \n\nCongratulations! Your account registration has been accepted.\n\n"
                         + "Below are your login credentials for the Red Agents IT Ticketing System.\n"
                         + "Username: " + user + "\n" + "Password: " + Sql.getPasss(user) + "\n\n"
-                        + "Please do not share your credentials with anyone!\n\n-Red Agents IT";
+                        + "Please do not share your credentials with anyone!\n\n"
+                        + "-Red Agents IT";
             }
             else if (template == "Registration Denied")
             {
@@ -100,19 +102,20 @@ namespace GUI_IT
                 data[1] = "Hello " + Sql.getNamee(user)
                         + "! \n\nYour account registration has been denied.\n\n"
                         + "If you believe we have made an error, please respond to this email or "
-                        + "reach us at redagentsit@gmail.com\n\n-Reg Agents IT";
+                        + "reach us at redagentsit@gmail.com\n\n-Red Agents IT";
             }
             else if (template == "Raised Ticket")
             {
                 data[0] = "Notice: New Ticket Raised";
                 data[1] = "Hello " + Sql.getName(user)
-                        + "!\n\nA new ticket has been raised on the Reg Agents IT Help Desk. Below are the details:\n"
+                        + "!\n\nA new ticket has been raised on the Red Agents IT Help Desk. Below are the details:\n"
                         + "Ticket ID: " + tID + "\n"
                         + "Ticket Category " + Sql.getTicketCategory(tID) + "\n"
                         + "Ticket Priority " + Sql.getTicketPriority(tID) + "\n"
                         + "Ticket Created By: " + Sql.getTicketUser(tID) + "\n"
                         + "Ticket Description: " + Sql.getTicketDescription(tID) + "\n\n"
-                        + "More information can be found within the Reg Agents IT Helpdesk Interface.";
+                        + "More information can be found within the Red Agents IT Helpdesk Interface. \n\n"
+                        + "-Red Agents IT";
             }
             else if (template == "Solved Ticket")
             {
@@ -135,7 +138,8 @@ namespace GUI_IT
                 data[0] = "Notice: Ticket Re-Opened!";
                 data[1] = "Hello " + Sql.getName(user)
                         + "\n\nIT Ticket " + tID + " has been re-opened. \n\n"
-                        + "The following reason was given: " + Sql.getReTicketProblem + "!";
+                        + "The following reason was given: " + Sql.getReTicketProblem(tID) + "! \n\n"
+                        + "-Red Agents IT";
             }
             else
             {

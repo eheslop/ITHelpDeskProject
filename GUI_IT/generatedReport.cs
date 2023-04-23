@@ -13,18 +13,50 @@ namespace GUI_IT
     public partial class generatedReport : Form
     {
         public int id { get; set; }
-        public generatedReport(int x)
+        public generatedReport(int tID, int z)
         {
             InitializeComponent();
-            txtID.Text = x.ToString();
-            txtCategory.Text = Sql.getTicketCategory(x);
-            txtITMem.Text = Sql.getTicketassign(x);
-            txtRaisedUser.Text = Sql.getTicketUser(x);
-            txtStatus.Text = Sql.getTicketStat(x);
-            txtUrgency.Text = Sql.getTicketPriority(x);
-            txtSummary.Text = Sql.getTicketDescription(x);
-            textBox1.Text = Sql.getColl(x);
-            id = x;
+            txtID.Text = tID.ToString();
+            txtViewID.Text = tID.ToString();
+            txtCategory.Text = Sql.getTicketCategory(tID);
+            txtViewCategory.Text = Sql.getTicketCategory(tID);
+            txtITMem.Text = Sql.getTicketassign(tID);
+            txtRaisedUser.Text = Sql.getTicketUser(tID);
+            txtViewRaised.Text = Sql.getTicketUser(tID);
+            txtStatus.Text = Sql.getTicketStat(tID);
+            txtUrgency.Text = Sql.getTicketPriority(tID);
+            txtViewUrgency.Text = Sql.getTicketPriority(tID);
+            txtSummary.Text = Sql.getTicketDescription(tID);
+            txtTicketProblem.Text = Sql.getTicketDescription(tID);
+            textBox1.Text = Sql.getColl(tID);
+            txtSolution.Text = Sql.solution(tID);
+            id = tID;
+            if (z == 0)
+            {
+                txtSolution.Visible = true;
+                txtExtra.Visible = false;
+                btnsubmit.Visible = false;
+                lblExtra.Visible = false;
+                lblSolution.Visible = true;
+                pnlExpandTicket.Visible = false;
+                lblViewHeader.Visible = false;
+            }
+            else if (z == 1)
+            {
+                txtSolution.Visible = false;
+                txtExtra.Visible = true;
+                btnsubmit.Visible = true;
+                lblExtra.Visible = true;
+                lblSolution.Visible = false;
+                pnlExpandTicket.Visible = false;
+                lblViewHeader.Visible = false;
+            }
+            else
+            {
+                pnlExpandTicket.Visible = true;
+                pnlExpandTicket.BringToFront();
+                lblViewHeader.Visible = true;
+            }
         }
 
         private void btnsubmit_Click(object sender, EventArgs e)

@@ -458,6 +458,21 @@
             this.tabAssign.TabIndex = 1;
             this.tabAssign.Text = "Assign Tickets";
             // 
+            // btnAssignRefresh
+            // 
+            btnAssignRefresh.BackColor = Color.FromArgb(64, 0, 0);
+            btnAssignRefresh.FlatStyle = FlatStyle.Popup;
+            btnAssignRefresh.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnAssignRefresh.ForeColor = Color.White;
+            btnAssignRefresh.Location = new Point(404, 392);
+            btnAssignRefresh.Margin = new Padding(1, 2, 1, 2);
+            btnAssignRefresh.Name = "btnAssignRefresh";
+            btnAssignRefresh.Size = new Size(166, 52);
+            btnAssignRefresh.TabIndex = 94;
+            btnAssignRefresh.Text = "Refresh Table";
+            btnAssignRefresh.UseVisualStyleBackColor = false;
+            btnAssignRefresh.Click += btnAssignRefresh_Click;
+            // 
             // btnViewUnsolvedTable
             // 
             this.btnViewUnsolvedTable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -726,5 +741,6 @@
         private ComboBox cbxn;
         private ComboBox cbxid;
         private Button btnViewUnsolvedTable;
+        private Button btnAssignRefresh;
     }
 }

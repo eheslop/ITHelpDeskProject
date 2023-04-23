@@ -30,22 +30,10 @@ namespace GUI_IT
 
 
         private void Fill()
-        {
-            string x = "Unsolved";
-            SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-            builder.DataSource = "redagents.database.windows.net";
-            builder.UserID = "kwekwe";
-            builder.Password = "Password1!";
-            builder.InitialCatalog = "red_Agents";
-            SqlConnection con = new SqlConnection(builder.ConnectionString);
-            con.Open();
-            string query = "Select * from Tickets where Status = '" + x + "'; ";
-            SqlDataAdapter da = new SqlDataAdapter(query, con);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            DGVT.DataSource = dt;
-            con.Close();
+        {            
+            DGVT.DataSource = Sql.ticketsUnsolved();
         }
+
 
         private void combo()
         {
@@ -60,15 +48,24 @@ namespace GUI_IT
             DGVAssign.EditMode = DataGridViewEditMode.EditOnEnter;
         }
 
+
         private void Fill2()
         {
             DGVT.DataSource = Sql.ticketssolvedAll();
             DGVAssign.EditMode = DataGridViewEditMode.EditOnEnter;
         }
 
+
         private void Fill3()
         {
             DGVT.DataSource = Sql.ticketsRe();
+            DGVAssign.EditMode = DataGridViewEditMode.EditOnEnter;
+        }
+
+
+        private void Fill4()
+        {
+            DGVAssign.DataSource = Sql.ticketsRe();
             DGVAssign.EditMode = DataGridViewEditMode.EditOnEnter;
         }
 
@@ -87,11 +84,13 @@ namespace GUI_IT
             this.Close();
         }
 
+
         private void ProfilePictureBox_Click(object sender, EventArgs e)
         {
             frmUserProf UserProfile = new frmUserProf(newUser_);
             UserProfile.ShowDialog();
         }
+
 
         private void btnClear_Click(object sender, EventArgs e)
         {
@@ -101,6 +100,7 @@ namespace GUI_IT
             cbxid.ResetText();
             cbxid.SelectedIndex = -1;
         }
+
 
         private void btnAssign_Click(object sender, EventArgs e)
         {
@@ -112,36 +112,48 @@ namespace GUI_IT
             Sql.Addcoll(z, y);
             Sql.add2(z, y, f);
             MessageBox.Show("The ticket has been successfully assigned to the designated user.", "Ticket Assigned!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            txtEmail.Clear();
+            cbxn.ResetText();
+            cbxn.SelectedIndex = -1;
+            cbxid.ResetText();
+            cbxid.SelectedIndex = -1;
         }
+
 
         private void btnUnsolved_Click(object sender, EventArgs e)
         {
             Fill();
         }
 
+
         private void btnSolved_Click(object sender, EventArgs e)
         {
             Fill2();
         }
 
+
         private void btnViewUnsolvedTable_Click(object sender, EventArgs e)
         {
-            Fill();
+            Fill1();
         }
+
 
         private void btnViewReopenedTable_Click(object sender, EventArgs e)
         {
-            Fill3();
+            Fill4();
         }
+
 
         private void btnReOpened_Click(object sender, EventArgs e)
         {
             Fill3();
         }
 
-        private void cbxid_SelectedIndexChanged(object sender, EventArgs e)
+        private void btnAssignRefresh_Click(object sender, EventArgs e)
         {
-
+            Fill1();
+            Fill3();
         }
     }
 }

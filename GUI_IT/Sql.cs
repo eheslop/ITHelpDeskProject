@@ -265,7 +265,7 @@ namespace GUI_IT
             string x = "Unsolved";
             int y = 0;
             string z = "NONE";
-            String query = "INSERT INTO Tickets(id, Name, Username, Category, Description, Status, Email, Priority, Collaborators, Num_Of_Coll, AssignedTo) VALUES('" + id + "',  '" + name.ToString() + "', '" + username.ToString() + "', '" + Category.ToString() + "', '" + Description.ToString() + "', '" +x+ "',  '" + email.ToString() + "', '" + Priority.ToString() + "', '" +z+ "', '" +y+ "','"+z+"');";
+            String query = "INSERT INTO Tickets(id, Name, Username, Category, Description, Status, Email, Priority, Collaborators, Num_Of_Coll, AssignedTo) VALUES('" + id + "',  '" + name.ToString() + "', '" + username.ToString() + "', '" + Category.ToString() + "', '" + Description.ToString() + "', '" + x + "',  '" + email.ToString() + "', '" + Priority.ToString() + "', '" + z + "', '" + y + "','" + z + "');";
             SqlCommand cmd = new SqlCommand(query, con);
             cmd.ExecuteNonQuery();
             con.Close();
@@ -336,7 +336,7 @@ namespace GUI_IT
             SqlConnection con = Connect();
             String query = "INSERT INTO RegisteredUsers(Username, Name, First_Name, Last_Name, Password, Email, Role) VALUES('" + user.ToString() + "', '" + name.ToString() + "', '" + first.ToString() + "', '" + last.ToString() + "','" + pass.ToString() + "', '" + email.ToString() + "', '" + role.ToString() + "');";
             SqlCommand cmd = new SqlCommand(query, con);
-            con.Close();
+            
             cmd.ExecuteNonQuery();
             con.Close();
         }
@@ -616,12 +616,27 @@ namespace GUI_IT
             return dt;
         }
 
+        public static DataTable ShowRegis()
+        {
+            SqlConnection con = Connect();
+            string query = "Select * from Registration; ";
+            SqlCommand cmd = new SqlCommand(query, con);
+            cmd.ExecuteNonQuery();
+            SqlDataAdapter da = new SqlDataAdapter();
+            da.SelectCommand = cmd;
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+
+            con.Close();
+            return dt;
+        }
+
         public static DataTable Sharedd(string user)
         {
             SqlConnection con = Connect();
             string y = "Solved";
            
-            string query = "Select Distinct Tickets.Id, Name, Username, Category, Description, Category, Priority, Collaborators, AssignedTo, SharedWith FROM Tickets left join SharedTickets  ON ( Tickets.Id = SharedTickets.Id ) Where SharedWith = '" + user.ToString() + "' OR AssignedTo = '" + user.ToString() + "' AND Status != '" + y + "'; ";
+            string query = "Select Distinct Tickets.Id, Name, Username, Category, Description, Category, Priority, Collaborators, AssignedTo FROM Tickets left join SharedTickets  ON ( Tickets.Id = SharedTickets.Id ) Where (SharedWith = '" + user.ToString() + "' OR AssignedTo = '" + user.ToString() + "') AND (Status != '" + y + "'); ";
             SqlDataAdapter da = new SqlDataAdapter(query, con);
             DataTable dt = new DataTable();
             da.Fill(dt);
@@ -635,7 +650,7 @@ namespace GUI_IT
             SqlConnection con = Connect();
             string y = "Solved";
 
-            string query = "Select Distinct Tickets.Id, Name, Username, Category, Description, Category, Priority, Collaborators, AssignedTo, SharedWith FROM Tickets left join SharedTickets  ON ( Tickets.Id = SharedTickets.Id ) Where SharedWith = '" + user.ToString() + "' OR AssignedTo = '" + user.ToString() + "' AND Status != '" + y + "'; ";
+            string query = "Select Distinct Tickets.Id, Name, Username, Category, Description, Category, Priority, Collaborators, AssignedTo, SharedWith FROM Tickets left join SharedTickets  ON ( Tickets.Id = SharedTickets.Id ) Where (SharedWith = '" + user.ToString() + "' OR AssignedTo = '" + user.ToString() + "') AND (Status != '" + y + "'); ";
             SqlCommand cmd = new SqlCommand(query, con);
             cmd.ExecuteNonQuery();
             SqlDataAdapter da = new SqlDataAdapter();
@@ -812,12 +827,12 @@ namespace GUI_IT
             con.Close();
         }
 
-        public static string getReTicketProblem(string tID)
+        public static string getReTicketProblem(int tID)
         {
             SqlConnection con = Connect();
-            String query = "SELECT Reraised_Reason FROM ReopenedTickets WHERE Id = '" + tID.ToString() + "';";
+            String query = "SELECT Reraised_Reason FROM ReopenedTickets WHERE Id = '" + tID + "';";
             SqlCommand cmd = new SqlCommand(query, con);
-            string problem = (string)cmd.ExecuteScalar();
+            string problem = (string) cmd.ExecuteScalar();
             con.Close();
             return problem;
         }
@@ -897,6 +912,18 @@ namespace GUI_IT
             SqlConnection con = Connect();
             string x = user;
             string query = "Select * from Tickets where Username = '" + user + "'";
+            SqlDataAdapter da = new SqlDataAdapter(query, con);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
+        
+        public static DataTable showunsolved(string user) 
+        {
+            SqlConnection con = Connect();
+            string x = user.ToString();
+            string y = "Solved";
+            string query = "Select * from Tickets where AssignedTo = '" + x + "' and Status != '" + y + "'; ";
             SqlDataAdapter da = new SqlDataAdapter(query, con);
             DataTable dt = new DataTable();
             da.Fill(dt);
