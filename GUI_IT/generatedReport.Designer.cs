@@ -231,10 +231,10 @@
             // pictureBox4
             // 
             pictureBox4.BackColor = Color.Silver;
-            pictureBox4.Location = new Point(22, 102);
+            pictureBox4.Location = new Point(22, 96);
             pictureBox4.Margin = new Padding(2);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(888, 575);
+            pictureBox4.Size = new Size(888, 565);
             pictureBox4.TabIndex = 78;
             pictureBox4.TabStop = false;
             // 
@@ -332,7 +332,7 @@
             // pictureBox2
             // 
             pictureBox2.BackColor = Color.Gainsboro;
-            pictureBox2.Location = new Point(37, 514);
+            pictureBox2.Location = new Point(37, 498);
             pictureBox2.Margin = new Padding(2);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(862, 156);
@@ -356,7 +356,7 @@
             lblExtra.AutoSize = true;
             lblExtra.BackColor = Color.Gainsboro;
             lblExtra.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblExtra.Location = new Point(44, 520);
+            lblExtra.Location = new Point(42, 503);
             lblExtra.Margin = new Padding(2, 0, 2, 0);
             lblExtra.Name = "lblExtra";
             lblExtra.Size = new Size(293, 25);
@@ -454,7 +454,7 @@
             // txtExtra
             // 
             txtExtra.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            txtExtra.Location = new Point(46, 550);
+            txtExtra.Location = new Point(46, 530);
             txtExtra.Margin = new Padding(1, 2, 1, 2);
             txtExtra.MaxLength = 500;
             txtExtra.Multiline = true;
@@ -468,7 +468,7 @@
             btnsubmit.FlatStyle = FlatStyle.Popup;
             btnsubmit.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
             btnsubmit.ForeColor = Color.White;
-            btnsubmit.Location = new Point(759, 569);
+            btnsubmit.Location = new Point(759, 558);
             btnsubmit.Margin = new Padding(4);
             btnsubmit.Name = "btnsubmit";
             btnsubmit.Size = new Size(126, 60);
@@ -510,13 +510,13 @@
             // txtSolution
             // 
             txtSolution.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            txtSolution.Location = new Point(46, 547);
+            txtSolution.Location = new Point(46, 527);
             txtSolution.Margin = new Padding(1, 2, 1, 2);
             txtSolution.MaxLength = 500;
             txtSolution.Multiline = true;
             txtSolution.Name = "txtSolution";
             txtSolution.ReadOnly = true;
-            txtSolution.Size = new Size(843, 117);
+            txtSolution.Size = new Size(845, 117);
             txtSolution.TabIndex = 139;
             txtSolution.Visible = false;
             // 
@@ -525,7 +525,7 @@
             lblSolution.AutoSize = true;
             lblSolution.BackColor = Color.Gainsboro;
             lblSolution.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblSolution.Location = new Point(43, 520);
+            lblSolution.Location = new Point(43, 503);
             lblSolution.Margin = new Padding(2, 0, 2, 0);
             lblSolution.Name = "lblSolution";
             lblSolution.Size = new Size(151, 25);
@@ -562,7 +562,7 @@
             pnlExpandTicket.Location = new Point(-8, 78);
             pnlExpandTicket.Margin = new Padding(2);
             pnlExpandTicket.Name = "pnlExpandTicket";
-            pnlExpandTicket.Size = new Size(940, 586);
+            pnlExpandTicket.Size = new Size(940, 603);
             pnlExpandTicket.TabIndex = 141;
             pnlExpandTicket.Visible = false;
             // 
@@ -801,10 +801,10 @@
             // pictureBox19
             // 
             pictureBox19.BackColor = Color.Silver;
-            pictureBox19.Location = new Point(25, 18);
+            pictureBox19.Location = new Point(25, 20);
             pictureBox19.Margin = new Padding(2);
             pictureBox19.Name = "pictureBox19";
-            pictureBox19.Size = new Size(888, 578);
+            pictureBox19.Size = new Size(888, 565);
             pictureBox19.TabIndex = 140;
             pictureBox19.TabStop = false;
             // 
