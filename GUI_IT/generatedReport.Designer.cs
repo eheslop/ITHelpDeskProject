@@ -68,6 +68,11 @@
             txtSolution = new TextBox();
             lblSolution = new Label();
             pnlExpandTicket = new Panel();
+            btnSolveClear = new Button();
+            btnSolveTicket = new Button();
+            txtSol = new TextBox();
+            label2 = new Label();
+            pictureBox16 = new PictureBox();
             lblViewCategory = new Label();
             txtViewCategory = new TextBox();
             txtViewUrgency = new TextBox();
@@ -102,6 +107,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
             pnlExpandTicket.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox16).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox21).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox17).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
@@ -175,7 +181,7 @@
             lblTicketID.AutoSize = true;
             lblTicketID.BackColor = Color.Gainsboro;
             lblTicketID.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblTicketID.Location = new Point(43, 127);
+            lblTicketID.Location = new Point(42, 128);
             lblTicketID.Margin = new Padding(2, 0, 2, 0);
             lblTicketID.Name = "lblTicketID";
             lblTicketID.Size = new Size(100, 25);
@@ -225,20 +231,20 @@
             // pictureBox4
             // 
             pictureBox4.BackColor = Color.Silver;
-            pictureBox4.Location = new Point(23, 102);
+            pictureBox4.Location = new Point(22, 102);
             pictureBox4.Margin = new Padding(2);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(888, 514);
+            pictureBox4.Size = new Size(888, 575);
             pictureBox4.TabIndex = 78;
             pictureBox4.TabStop = false;
             // 
             // pictureBox1
             // 
             pictureBox1.BackColor = Color.FromArgb(64, 64, 64);
-            pictureBox1.Location = new Point(12, 91);
+            pictureBox1.Location = new Point(11, 91);
             pictureBox1.Margin = new Padding(2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(910, 540);
+            pictureBox1.Size = new Size(910, 590);
             pictureBox1.TabIndex = 77;
             pictureBox1.TabStop = false;
             // 
@@ -260,7 +266,7 @@
             lblCategory.AutoSize = true;
             lblCategory.BackColor = Color.Gainsboro;
             lblCategory.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblCategory.Location = new Point(446, 127);
+            lblCategory.Location = new Point(446, 128);
             lblCategory.Margin = new Padding(2, 0, 2, 0);
             lblCategory.Name = "lblCategory";
             lblCategory.Size = new Size(156, 25);
@@ -309,7 +315,7 @@
             pictureBox10.Location = new Point(38, 351);
             pictureBox10.Margin = new Padding(2);
             pictureBox10.Name = "pictureBox10";
-            pictureBox10.Size = new Size(861, 124);
+            pictureBox10.Size = new Size(861, 139);
             pictureBox10.TabIndex = 102;
             pictureBox10.TabStop = false;
             // 
@@ -326,10 +332,10 @@
             // pictureBox2
             // 
             pictureBox2.BackColor = Color.Gainsboro;
-            pictureBox2.Location = new Point(38, 480);
+            pictureBox2.Location = new Point(37, 514);
             pictureBox2.Margin = new Padding(2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(861, 115);
+            pictureBox2.Size = new Size(862, 156);
             pictureBox2.TabIndex = 104;
             pictureBox2.TabStop = false;
             // 
@@ -338,7 +344,7 @@
             lblTicketSummary.AutoSize = true;
             lblTicketSummary.BackColor = Color.Gainsboro;
             lblTicketSummary.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblTicketSummary.Location = new Point(42, 357);
+            lblTicketSummary.Location = new Point(44, 357);
             lblTicketSummary.Margin = new Padding(2, 0, 2, 0);
             lblTicketSummary.Name = "lblTicketSummary";
             lblTicketSummary.Size = new Size(162, 25);
@@ -350,7 +356,7 @@
             lblExtra.AutoSize = true;
             lblExtra.BackColor = Color.Gainsboro;
             lblExtra.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblExtra.Location = new Point(42, 486);
+            lblExtra.Location = new Point(44, 520);
             lblExtra.Margin = new Padding(2, 0, 2, 0);
             lblExtra.Name = "lblExtra";
             lblExtra.Size = new Size(293, 25);
@@ -372,7 +378,7 @@
             lblTicketStatus.AutoSize = true;
             lblTicketStatus.BackColor = Color.Gainsboro;
             lblTicketStatus.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblTicketStatus.Location = new Point(615, 243);
+            lblTicketStatus.Location = new Point(615, 242);
             lblTicketStatus.Margin = new Padding(2, 0, 2, 0);
             lblTicketStatus.Name = "lblTicketStatus";
             lblTicketStatus.Size = new Size(131, 25);
@@ -381,7 +387,7 @@
             // 
             // txtID
             // 
-            txtID.Location = new Point(139, 123);
+            txtID.Location = new Point(139, 122);
             txtID.Margin = new Padding(2);
             txtID.Name = "txtID";
             txtID.ReadOnly = true;
@@ -390,71 +396,70 @@
             // 
             // txtCategory
             // 
-            txtCategory.Location = new Point(602, 124);
+            txtCategory.Location = new Point(615, 124);
             txtCategory.Margin = new Padding(2);
             txtCategory.Name = "txtCategory";
             txtCategory.ReadOnly = true;
-            txtCategory.Size = new Size(289, 31);
+            txtCategory.Size = new Size(276, 31);
             txtCategory.TabIndex = 126;
             // 
             // txtITMem
             // 
-            txtITMem.Location = new Point(330, 238);
+            txtITMem.Location = new Point(334, 238);
             txtITMem.Margin = new Padding(2);
             txtITMem.Name = "txtITMem";
             txtITMem.ReadOnly = true;
-            txtITMem.Size = new Size(264, 31);
+            txtITMem.Size = new Size(260, 31);
             txtITMem.TabIndex = 127;
             // 
             // txtStatus
             // 
-            txtStatus.Location = new Point(747, 239);
+            txtStatus.Location = new Point(756, 239);
             txtStatus.Margin = new Padding(2);
             txtStatus.Name = "txtStatus";
             txtStatus.ReadOnly = true;
-            txtStatus.Size = new Size(136, 31);
+            txtStatus.Size = new Size(128, 31);
             txtStatus.TabIndex = 130;
             // 
             // txtUrgency
             // 
-            txtUrgency.Location = new Point(765, 179);
+            txtUrgency.Location = new Point(779, 179);
             txtUrgency.Margin = new Padding(2);
             txtUrgency.Name = "txtUrgency";
             txtUrgency.ReadOnly = true;
-            txtUrgency.Size = new Size(114, 31);
+            txtUrgency.Size = new Size(100, 31);
             txtUrgency.TabIndex = 131;
-            txtUrgency.TextChanged += txtUrgency_TextChanged;
             // 
             // txtRaisedUser
             // 
-            txtRaisedUser.Location = new Point(266, 179);
+            txtRaisedUser.Location = new Point(274, 179);
             txtRaisedUser.Margin = new Padding(2);
             txtRaisedUser.Name = "txtRaisedUser";
             txtRaisedUser.ReadOnly = true;
-            txtRaisedUser.Size = new Size(328, 31);
+            txtRaisedUser.Size = new Size(320, 31);
             txtRaisedUser.TabIndex = 132;
             // 
             // txtSummary
             // 
             txtSummary.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            txtSummary.Location = new Point(52, 387);
+            txtSummary.Location = new Point(47, 385);
             txtSummary.Margin = new Padding(1, 2, 1, 2);
             txtSummary.MaxLength = 750;
             txtSummary.Multiline = true;
             txtSummary.Name = "txtSummary";
             txtSummary.ReadOnly = true;
-            txtSummary.Size = new Size(832, 74);
+            txtSummary.Size = new Size(842, 97);
             txtSummary.TabIndex = 133;
             // 
             // txtExtra
             // 
             txtExtra.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            txtExtra.Location = new Point(51, 514);
+            txtExtra.Location = new Point(46, 550);
             txtExtra.Margin = new Padding(1, 2, 1, 2);
             txtExtra.MaxLength = 500;
             txtExtra.Multiline = true;
             txtExtra.Name = "txtExtra";
-            txtExtra.Size = new Size(707, 66);
+            txtExtra.Size = new Size(700, 111);
             txtExtra.TabIndex = 134;
             // 
             // btnsubmit
@@ -463,14 +468,13 @@
             btnsubmit.FlatStyle = FlatStyle.Popup;
             btnsubmit.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
             btnsubmit.ForeColor = Color.White;
-            btnsubmit.Location = new Point(770, 521);
+            btnsubmit.Location = new Point(759, 569);
             btnsubmit.Margin = new Padding(4);
             btnsubmit.Name = "btnsubmit";
-            btnsubmit.Size = new Size(118, 49);
+            btnsubmit.Size = new Size(126, 60);
             btnsubmit.TabIndex = 135;
             btnsubmit.Text = "Submit";
             btnsubmit.UseVisualStyleBackColor = false;
-            btnsubmit.Click += btnsubmit_Click;
             // 
             // pictureBox13
             // 
@@ -493,27 +497,26 @@
             label1.Size = new Size(197, 25);
             label1.TabIndex = 137;
             label1.Text = "Ticket Collaborators:";
-            label1.Click += label1_Click;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(238, 302);
+            textBox1.Location = new Point(251, 302);
             textBox1.Margin = new Padding(2);
             textBox1.Name = "textBox1";
             textBox1.ReadOnly = true;
-            textBox1.Size = new Size(644, 31);
+            textBox1.Size = new Size(630, 31);
             textBox1.TabIndex = 138;
             // 
             // txtSolution
             // 
             txtSolution.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            txtSolution.Location = new Point(51, 514);
+            txtSolution.Location = new Point(46, 547);
             txtSolution.Margin = new Padding(1, 2, 1, 2);
             txtSolution.MaxLength = 500;
             txtSolution.Multiline = true;
             txtSolution.Name = "txtSolution";
             txtSolution.ReadOnly = true;
-            txtSolution.Size = new Size(707, 66);
+            txtSolution.Size = new Size(843, 117);
             txtSolution.TabIndex = 139;
             txtSolution.Visible = false;
             // 
@@ -522,16 +525,22 @@
             lblSolution.AutoSize = true;
             lblSolution.BackColor = Color.Gainsboro;
             lblSolution.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblSolution.Location = new Point(45, 487);
+            lblSolution.Location = new Point(43, 520);
             lblSolution.Margin = new Padding(2, 0, 2, 0);
             lblSolution.Name = "lblSolution";
             lblSolution.Size = new Size(151, 25);
             lblSolution.TabIndex = 140;
             lblSolution.Text = "Ticket Solution:";
             lblSolution.Visible = false;
+            lblSolution.Click += lblSolution_Click;
             // 
             // pnlExpandTicket
             // 
+            pnlExpandTicket.Controls.Add(btnSolveClear);
+            pnlExpandTicket.Controls.Add(btnSolveTicket);
+            pnlExpandTicket.Controls.Add(txtSol);
+            pnlExpandTicket.Controls.Add(label2);
+            pnlExpandTicket.Controls.Add(pictureBox16);
             pnlExpandTicket.Controls.Add(lblViewCategory);
             pnlExpandTicket.Controls.Add(txtViewCategory);
             pnlExpandTicket.Controls.Add(txtViewUrgency);
@@ -550,18 +559,81 @@
             pnlExpandTicket.Controls.Add(pictureBox18);
             pnlExpandTicket.Controls.Add(pictureBox19);
             pnlExpandTicket.Controls.Add(pictureBox20);
-            pnlExpandTicket.Location = new Point(-8, 79);
+            pnlExpandTicket.Location = new Point(-8, 78);
+            pnlExpandTicket.Margin = new Padding(2);
             pnlExpandTicket.Name = "pnlExpandTicket";
-            pnlExpandTicket.Size = new Size(940, 568);
+            pnlExpandTicket.Size = new Size(940, 586);
             pnlExpandTicket.TabIndex = 141;
             pnlExpandTicket.Visible = false;
+            // 
+            // btnSolveClear
+            // 
+            btnSolveClear.BackColor = Color.FromArgb(64, 0, 0);
+            btnSolveClear.FlatStyle = FlatStyle.Popup;
+            btnSolveClear.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSolveClear.ForeColor = Color.White;
+            btnSolveClear.Location = new Point(727, 511);
+            btnSolveClear.Margin = new Padding(4);
+            btnSolveClear.Name = "btnSolveClear";
+            btnSolveClear.Size = new Size(158, 48);
+            btnSolveClear.TabIndex = 170;
+            btnSolveClear.Text = "Clear";
+            btnSolveClear.UseVisualStyleBackColor = false;
+            btnSolveClear.Click += btnSolveClear_Click;
+            // 
+            // btnSolveTicket
+            // 
+            btnSolveTicket.BackColor = Color.FromArgb(64, 0, 0);
+            btnSolveTicket.FlatStyle = FlatStyle.Popup;
+            btnSolveTicket.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSolveTicket.ForeColor = Color.White;
+            btnSolveTicket.Location = new Point(727, 443);
+            btnSolveTicket.Margin = new Padding(4);
+            btnSolveTicket.Name = "btnSolveTicket";
+            btnSolveTicket.Size = new Size(156, 55);
+            btnSolveTicket.TabIndex = 169;
+            btnSolveTicket.Text = "Solve Ticket";
+            btnSolveTicket.UseVisualStyleBackColor = false;
+            btnSolveTicket.Click += btnSolveTicket_Click;
+            // 
+            // txtSol
+            // 
+            txtSol.Location = new Point(52, 440);
+            txtSol.Margin = new Padding(4);
+            txtSol.Multiline = true;
+            txtSol.Name = "txtSol";
+            txtSol.PlaceholderText = "Enter the solution in 500 characters or less.";
+            txtSol.Size = new Size(667, 129);
+            txtSol.TabIndex = 168;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.Gainsboro;
+            label2.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Location = new Point(46, 412);
+            label2.Margin = new Padding(2, 0, 2, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(151, 25);
+            label2.TabIndex = 165;
+            label2.Text = "Ticket Solution:";
+            // 
+            // pictureBox16
+            // 
+            pictureBox16.BackColor = Color.Gainsboro;
+            pictureBox16.Location = new Point(40, 406);
+            pictureBox16.Margin = new Padding(2);
+            pictureBox16.Name = "pictureBox16";
+            pictureBox16.Size = new Size(861, 173);
+            pictureBox16.TabIndex = 163;
+            pictureBox16.TabStop = false;
             // 
             // lblViewCategory
             // 
             lblViewCategory.AutoSize = true;
             lblViewCategory.BackColor = Color.Gainsboro;
             lblViewCategory.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblViewCategory.Location = new Point(44, 178);
+            lblViewCategory.Location = new Point(44, 172);
             lblViewCategory.Margin = new Padding(2, 0, 2, 0);
             lblViewCategory.Name = "lblViewCategory";
             lblViewCategory.Size = new Size(156, 25);
@@ -570,16 +642,16 @@
             // 
             // txtViewCategory
             // 
-            txtViewCategory.Location = new Point(201, 175);
+            txtViewCategory.Location = new Point(201, 169);
             txtViewCategory.Margin = new Padding(2);
             txtViewCategory.Name = "txtViewCategory";
             txtViewCategory.ReadOnly = true;
-            txtViewCategory.Size = new Size(687, 31);
+            txtViewCategory.Size = new Size(686, 31);
             txtViewCategory.TabIndex = 159;
             // 
             // txtViewUrgency
             // 
-            txtViewUrgency.Location = new Point(593, 46);
+            txtViewUrgency.Location = new Point(592, 42);
             txtViewUrgency.Margin = new Padding(2);
             txtViewUrgency.Name = "txtViewUrgency";
             txtViewUrgency.ReadOnly = true;
@@ -591,7 +663,7 @@
             lblViewUrgency.AutoSize = true;
             lblViewUrgency.BackColor = Color.Gainsboro;
             lblViewUrgency.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblViewUrgency.Location = new Point(444, 49);
+            lblViewUrgency.Location = new Point(444, 45);
             lblViewUrgency.Margin = new Padding(2, 0, 2, 0);
             lblViewUrgency.Name = "lblViewUrgency";
             lblViewUrgency.Size = new Size(150, 25);
@@ -603,7 +675,7 @@
             lblViewRaised.AutoSize = true;
             lblViewRaised.BackColor = Color.Gainsboro;
             lblViewRaised.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblViewRaised.Location = new Point(44, 111);
+            lblViewRaised.Location = new Point(44, 107);
             lblViewRaised.Margin = new Padding(2, 0, 2, 0);
             lblViewRaised.Name = "lblViewRaised";
             lblViewRaised.Size = new Size(224, 25);
@@ -612,7 +684,7 @@
             // 
             // txtViewRaised
             // 
-            txtViewRaised.Location = new Point(268, 107);
+            txtViewRaised.Location = new Point(268, 104);
             txtViewRaised.Margin = new Padding(2);
             txtViewRaised.Name = "txtViewRaised";
             txtViewRaised.ReadOnly = true;
@@ -622,7 +694,7 @@
             // pictureBox21
             // 
             pictureBox21.BackColor = Color.Gainsboro;
-            pictureBox21.Location = new Point(438, 34);
+            pictureBox21.Location = new Point(438, 30);
             pictureBox21.Margin = new Padding(2);
             pictureBox21.Name = "pictureBox21";
             pictureBox21.Size = new Size(458, 55);
@@ -632,7 +704,7 @@
             // pictureBox17
             // 
             pictureBox17.BackColor = Color.Gainsboro;
-            pictureBox17.Location = new Point(40, 96);
+            pictureBox17.Location = new Point(40, 92);
             pictureBox17.Margin = new Padding(2);
             pictureBox17.Name = "pictureBox17";
             pictureBox17.Size = new Size(856, 55);
@@ -642,7 +714,7 @@
             // pictureBox14
             // 
             pictureBox14.BackColor = Color.Gainsboro;
-            pictureBox14.Location = new Point(40, 162);
+            pictureBox14.Location = new Point(40, 156);
             pictureBox14.Margin = new Padding(2);
             pictureBox14.Name = "pictureBox14";
             pictureBox14.Size = new Size(861, 55);
@@ -652,18 +724,18 @@
             // txtTicketProblem
             // 
             txtTicketProblem.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            txtTicketProblem.Location = new Point(54, 275);
+            txtTicketProblem.Location = new Point(51, 256);
             txtTicketProblem.Margin = new Padding(1, 2, 1, 2);
             txtTicketProblem.MaxLength = 750;
             txtTicketProblem.Multiline = true;
             txtTicketProblem.Name = "txtTicketProblem";
             txtTicketProblem.ReadOnly = true;
-            txtTicketProblem.Size = new Size(832, 231);
+            txtTicketProblem.Size = new Size(832, 125);
             txtTicketProblem.TabIndex = 152;
             // 
             // txtViewID
             // 
-            txtViewID.Location = new Point(141, 47);
+            txtViewID.Location = new Point(141, 43);
             txtViewID.Margin = new Padding(2);
             txtViewID.Name = "txtViewID";
             txtViewID.ReadOnly = true;
@@ -675,7 +747,7 @@
             lblViewID.AutoSize = true;
             lblViewID.BackColor = Color.Gainsboro;
             lblViewID.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblViewID.Location = new Point(45, 51);
+            lblViewID.Location = new Point(45, 45);
             lblViewID.Margin = new Padding(2, 0, 2, 0);
             lblViewID.Name = "lblViewID";
             lblViewID.Size = new Size(100, 25);
@@ -687,7 +759,7 @@
             lblTicketProblem.AutoSize = true;
             lblTicketProblem.BackColor = Color.Gainsboro;
             lblTicketProblem.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblTicketProblem.Location = new Point(46, 242);
+            lblTicketProblem.Location = new Point(46, 227);
             lblTicketProblem.Margin = new Padding(2, 0, 2, 0);
             lblTicketProblem.Name = "lblTicketProblem";
             lblTicketProblem.Size = new Size(178, 25);
@@ -697,10 +769,10 @@
             // pictureBox15
             // 
             pictureBox15.BackColor = Color.Gainsboro;
-            pictureBox15.Location = new Point(40, 234);
+            pictureBox15.Location = new Point(40, 221);
             pictureBox15.Margin = new Padding(2);
             pictureBox15.Name = "pictureBox15";
-            pictureBox15.Size = new Size(861, 291);
+            pictureBox15.Size = new Size(861, 176);
             pictureBox15.TabIndex = 148;
             pictureBox15.TabStop = false;
             // 
@@ -719,7 +791,7 @@
             // pictureBox18
             // 
             pictureBox18.BackColor = Color.Gainsboro;
-            pictureBox18.Location = new Point(40, 34);
+            pictureBox18.Location = new Point(40, 29);
             pictureBox18.Margin = new Padding(2);
             pictureBox18.Name = "pictureBox18";
             pictureBox18.Size = new Size(392, 55);
@@ -729,20 +801,20 @@
             // pictureBox19
             // 
             pictureBox19.BackColor = Color.Silver;
-            pictureBox19.Location = new Point(25, 25);
+            pictureBox19.Location = new Point(25, 18);
             pictureBox19.Margin = new Padding(2);
             pictureBox19.Name = "pictureBox19";
-            pictureBox19.Size = new Size(888, 514);
+            pictureBox19.Size = new Size(888, 578);
             pictureBox19.TabIndex = 140;
             pictureBox19.TabStop = false;
             // 
             // pictureBox20
             // 
             pictureBox20.BackColor = Color.FromArgb(64, 64, 64);
-            pictureBox20.Location = new Point(14, 14);
+            pictureBox20.Location = new Point(14, 9);
             pictureBox20.Margin = new Padding(2);
             pictureBox20.Name = "pictureBox20";
-            pictureBox20.Size = new Size(910, 540);
+            pictureBox20.Size = new Size(910, 589);
             pictureBox20.TabIndex = 139;
             pictureBox20.TabStop = false;
             // 
@@ -764,7 +836,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(932, 639);
+            ClientSize = new Size(932, 678);
             Controls.Add(lblViewHeader);
             Controls.Add(pnlExpandTicket);
             Controls.Add(lblSolution);
@@ -828,6 +900,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
             pnlExpandTicket.ResumeLayout(false);
             pnlExpandTicket.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox16).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox21).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox17).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
@@ -899,5 +972,10 @@
         private PictureBox pictureBox18;
         private PictureBox pictureBox19;
         private PictureBox pictureBox20;
+        private Label label2;
+        private PictureBox pictureBox16;
+        private TextBox txtSol;
+        private Button btnSolveClear;
+        private Button btnSolveTicket;
     }
 }

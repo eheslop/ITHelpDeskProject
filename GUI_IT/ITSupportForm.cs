@@ -87,7 +87,7 @@ namespace GUI_IT
 
         private void btnSolveClear_Click(object sender, EventArgs e)
         {
-            txtSolution.Clear();
+            
             cbxid.ResetText();
             cbxid.SelectedIndex = -1;
         }
@@ -95,19 +95,7 @@ namespace GUI_IT
 
         private void btnSolveTicket_Click(object sender, EventArgs e)
         {
-            string x = cbxid.Text.ToString();
-            int y = System.Convert.ToInt32(x);
-            string z = Sql.tickuser(y);
-            string k = Sql.tickemail(y);
-            string j = txtSolution.Text.ToString();
-            Sql.solve(y, newUser_.Username, z, k, j);
-            MessageBox.Show("Your solution for the ticket of your choosing has now been submitted, thank you.", "Ticket Solved Successfully!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            Email.sendEmail("Solved Ticket", newUser_.Username, 0, Convert.ToInt32(x));
-
-            txtSolution.Clear();
-            cbxid.ResetText();
-            cbxid.SelectedIndex = -1;
-            Fill1();
+           
         }
 
 
@@ -163,7 +151,7 @@ namespace GUI_IT
             {
                 string x = cbxid.Text.ToString();
                 int tID = System.Convert.ToInt32(x);
-                generatedReport frmTickDetails = new generatedReport(tID, 2);
+                generatedReport frmTickDetails = new generatedReport(tID, 2, newUser_.Username);
                 frmTickDetails.ShowDialog();
 
             }
