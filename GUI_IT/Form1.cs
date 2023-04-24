@@ -260,19 +260,6 @@ namespace GUI_IT
 
         }
 
-        private void btnPassReset_Click(object sender, EventArgs e)
-        {
-            bool resetStatus = false;
-            resetStatus = Sql.ResetPassword(txtPassReset.Text.ToString());
-            if (resetStatus == true)
-            {
-                MessageBox.Show("Success. Please check the email associated with your account for more details.", "Successful Reset!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                MessageBox.Show("Failure. There was an error when attempting to reset your password. Please check the username entered.", "Failed Reset!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
 
         private void btnBacktoLogin_Click(object sender, EventArgs e)
         {
@@ -431,6 +418,20 @@ namespace GUI_IT
         private void lblRegisterAccount_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnPassReset_Click(object sender, EventArgs e)
+        {
+           bool resetStatus = false;
+           resetStatus = Sql.ResetPassword(txtPassReset.Text.ToString());
+           if (resetStatus == true)
+           {
+               MessageBox.Show("Success. Please check the email associated with your account for more details.", "Successful Reset!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+           }
+           else
+           {
+               MessageBox.Show("Failure. There was an error when attempting to reset your password. Please check the username entered.", "Failed Reset!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+           }
         }
     }
 }

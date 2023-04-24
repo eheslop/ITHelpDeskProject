@@ -84,22 +84,22 @@
             pictureBox3 = new PictureBox();
             pnlProblemList = new Panel();
             pictureBox17 = new PictureBox();
-            pictureBox23 = new PictureBox();
             pictureBox16 = new PictureBox();
-            pictureBox22 = new PictureBox();
             ptrbxPasswordQ = new PictureBox();
             ptrbxGeneralQSmall = new PictureBox();
             lnklblTicketQ = new LinkLabel();
             lnklblEmailQ = new LinkLabel();
             lnklblPasswordQ = new LinkLabel();
             lnklblGeneralQ = new LinkLabel();
-            pictureBox20 = new PictureBox();
             lblTicketQ = new Label();
             lblEmailQ = new Label();
             lblPasswordQ = new Label();
             lblGeneral = new Label();
             lblProblem = new Label();
             pictureBox4 = new PictureBox();
+            pictureBox23 = new PictureBox();
+            pictureBox22 = new PictureBox();
+            pictureBox20 = new PictureBox();
             pictureBox21 = new PictureBox();
             lblOnlineHelp = new Label();
             pictureBox5 = new PictureBox();
@@ -140,13 +140,13 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             pnlProblemList.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox17).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox23).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox16).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox22).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ptrbxPasswordQ).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ptrbxGeneralQSmall).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox20).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox23).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox22).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox20).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox21).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ProfilePictureBox).BeginInit();
@@ -212,19 +212,19 @@
             // 
             // btnTickets
             // 
-            this.btnTickets.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnTickets.BackColor = System.Drawing.Color.Black;
-            this.btnTickets.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnTickets.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.btnTickets.ForeColor = System.Drawing.Color.White;
-            this.btnTickets.Location = new System.Drawing.Point(307, 37);
-            this.btnTickets.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.btnTickets.Name = "btnTickets";
-            this.btnTickets.Size = new System.Drawing.Size(117, 32);
-            this.btnTickets.TabIndex = 36;
-            this.btnTickets.Text = "Ticket Dashboard";
-            this.btnTickets.UseVisualStyleBackColor = false;
-            this.btnTickets.Click += new System.EventHandler(this.btnTickets_Click_1);
+            btnTickets.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnTickets.BackColor = Color.Black;
+            btnTickets.FlatStyle = FlatStyle.Popup;
+            btnTickets.Font = new Font("Segoe UI", 10F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            btnTickets.ForeColor = Color.White;
+            btnTickets.Location = new Point(219, 44);
+            btnTickets.Margin = new Padding(1, 2, 1, 2);
+            btnTickets.Name = "btnTickets";
+            btnTickets.Size = new Size(207, 41);
+            btnTickets.TabIndex = 36;
+            btnTickets.Text = "Ticket Dashboard";
+            btnTickets.UseVisualStyleBackColor = false;
+            btnTickets.Click += btnTickets_Click;
             // 
             // btnProblemList
             // 
@@ -244,54 +244,54 @@
             // 
             // pnlTickets
             // 
-            this.pnlTickets.Controls.Add(this.tabProjectMem);
-            this.pnlTickets.Controls.Add(this.lblTicket);
-            this.pnlTickets.Controls.Add(this.pictureBox3);
-            this.pnlTickets.Location = new System.Drawing.Point(0, 70);
-            this.pnlTickets.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.pnlTickets.Name = "pnlTickets";
-            this.pnlTickets.Size = new System.Drawing.Size(1029, 447);
-            this.pnlTickets.TabIndex = 45;
-            this.pnlTickets.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlTickets_Paint_1);
+            pnlTickets.Controls.Add(tabProjectMem);
+            pnlTickets.Controls.Add(lblTicket);
+            pnlTickets.Controls.Add(pictureBox3);
+            pnlTickets.Location = new Point(0, 90);
+            pnlTickets.Margin = new Padding(1, 2, 1, 2);
+            pnlTickets.Name = "pnlTickets";
+            pnlTickets.Size = new Size(1265, 555);
+            pnlTickets.TabIndex = 45;
+            pnlTickets.Paint += pnlTickets_Paint_1;
             // 
             // tabProjectMem
             // 
-            this.tabProjectMem.Controls.Add(this.tabHome);
-            this.tabProjectMem.Controls.Add(this.tabMyTickets);
-            this.tabProjectMem.Controls.Add(this.tabRaiseTicket);
-            this.tabProjectMem.Controls.Add(this.tabReopenTicket);
-            this.tabProjectMem.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.tabProjectMem.Location = new System.Drawing.Point(-7, 50);
-            this.tabProjectMem.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.tabProjectMem.Name = "tabProjectMem";
-            this.tabProjectMem.SelectedIndex = 0;
-            this.tabProjectMem.Size = new System.Drawing.Size(1031, 400);
-            this.tabProjectMem.TabIndex = 50;
+            tabProjectMem.Controls.Add(tabHome);
+            tabProjectMem.Controls.Add(tabMyTickets);
+            tabProjectMem.Controls.Add(tabRaiseTicket);
+            tabProjectMem.Controls.Add(tabReopenTicket);
+            tabProjectMem.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            tabProjectMem.Location = new Point(-7, 64);
+            tabProjectMem.Margin = new Padding(1, 2, 1, 2);
+            tabProjectMem.Name = "tabProjectMem";
+            tabProjectMem.SelectedIndex = 0;
+            tabProjectMem.Size = new Size(1281, 491);
+            tabProjectMem.TabIndex = 50;
             // 
             // tabHome
             // 
-            this.tabHome.BackColor = System.Drawing.Color.LightGray;
-            this.tabHome.Controls.Add(this.label11);
-            this.tabHome.Controls.Add(this.label10);
-            this.tabHome.Controls.Add(this.label9);
-            this.tabHome.Controls.Add(this.label8);
-            this.tabHome.Controls.Add(this.pictureBox13);
-            this.tabHome.Controls.Add(this.pictureBox12);
-            this.tabHome.Controls.Add(this.label6);
-            this.tabHome.Controls.Add(this.label7);
-            this.tabHome.Controls.Add(this.pictureBox11);
-            this.tabHome.Controls.Add(this.pictureBox10);
-            this.tabHome.Controls.Add(this.pictureBox9);
-            this.tabHome.Controls.Add(this.pictureBox8);
-            this.tabHome.Controls.Add(this.lblUser);
-            this.tabHome.Controls.Add(this.lblDescribeHome);
-            this.tabHome.Controls.Add(this.lblWelcomeMessage);
-            this.tabHome.Location = new System.Drawing.Point(4, 32);
-            this.tabHome.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.tabHome.Name = "tabHome";
-            this.tabHome.Size = new System.Drawing.Size(1023, 364);
-            this.tabHome.TabIndex = 3;
-            this.tabHome.Text = "Ticket Homepage";
+            tabHome.BackColor = Color.LightGray;
+            tabHome.Controls.Add(label11);
+            tabHome.Controls.Add(label10);
+            tabHome.Controls.Add(label9);
+            tabHome.Controls.Add(label8);
+            tabHome.Controls.Add(pictureBox13);
+            tabHome.Controls.Add(pictureBox12);
+            tabHome.Controls.Add(label6);
+            tabHome.Controls.Add(label7);
+            tabHome.Controls.Add(pictureBox11);
+            tabHome.Controls.Add(pictureBox10);
+            tabHome.Controls.Add(pictureBox9);
+            tabHome.Controls.Add(pictureBox8);
+            tabHome.Controls.Add(lblUser);
+            tabHome.Controls.Add(lblDescribeHome);
+            tabHome.Controls.Add(lblWelcomeMessage);
+            tabHome.Location = new Point(4, 37);
+            tabHome.Margin = new Padding(1, 2, 1, 2);
+            tabHome.Name = "tabHome";
+            tabHome.Size = new Size(1273, 450);
+            tabHome.TabIndex = 3;
+            tabHome.Text = "Ticket Homepage";
             // 
             // label11
             // 
@@ -468,7 +468,7 @@
             tabMyTickets.Location = new Point(4, 37);
             tabMyTickets.Margin = new Padding(1, 2, 1, 2);
             tabMyTickets.Name = "tabMyTickets";
-            tabMyTickets.Size = new Size(1281, 241);
+            tabMyTickets.Size = new Size(1273, 450);
             tabMyTickets.TabIndex = 2;
             tabMyTickets.Text = "My Tickets";
             // 
@@ -537,7 +537,7 @@
             tabRaiseTicket.Margin = new Padding(1, 2, 1, 2);
             tabRaiseTicket.Name = "tabRaiseTicket";
             tabRaiseTicket.Padding = new Padding(1, 2, 1, 2);
-            tabRaiseTicket.Size = new Size(1281, 241);
+            tabRaiseTicket.Size = new Size(1273, 450);
             tabRaiseTicket.TabIndex = 0;
             tabRaiseTicket.Text = "Raise Tickets";
             // 
@@ -619,7 +619,7 @@
             pictureBox2.Location = new Point(11, 168);
             pictureBox2.Margin = new Padding(1, 2, 1, 2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(1041, 262);
+            pictureBox2.Size = new Size(1042, 262);
             pictureBox2.TabIndex = 55;
             pictureBox2.TabStop = false;
             // 
@@ -679,7 +679,7 @@
             tabReopenTicket.Margin = new Padding(1, 2, 1, 2);
             tabReopenTicket.Name = "tabReopenTicket";
             tabReopenTicket.Padding = new Padding(1, 2, 1, 2);
-            tabReopenTicket.Size = new Size(1281, 241);
+            tabReopenTicket.Size = new Size(1273, 450);
             tabReopenTicket.TabIndex = 1;
             tabReopenTicket.Text = "Re-open Tickets";
             // 
@@ -773,10 +773,10 @@
             // 
             pictureBox6.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox6.BackColor = Color.FromArgb(64, 0, 0);
-            pictureBox6.Location = new Point(11, 182);
+            pictureBox6.Location = new Point(12, 182);
             pictureBox6.Margin = new Padding(1, 2, 1, 2);
             pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(1061, 252);
+            pictureBox6.Size = new Size(1056, 252);
             pictureBox6.TabIndex = 56;
             pictureBox6.TabStop = false;
             // 
@@ -811,7 +811,7 @@
             lblTicket.BackColor = Color.FromArgb(64, 0, 0);
             lblTicket.Font = new Font("Microsoft YaHei UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblTicket.ForeColor = Color.White;
-            lblTicket.Location = new Point(476, 8);
+            lblTicket.Location = new Point(480, 6);
             lblTicket.Margin = new Padding(1, 0, 1, 0);
             lblTicket.Name = "lblTicket";
             lblTicket.Size = new Size(340, 47);
@@ -825,31 +825,31 @@
             pictureBox3.Location = new Point(0, -4);
             pictureBox3.Margin = new Padding(1, 2, 1, 2);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(1274, 69);
+            pictureBox3.Size = new Size(1264, 69);
             pictureBox3.TabIndex = 44;
             pictureBox3.TabStop = false;
             // 
             // pnlProblemList
             // 
-            this.pnlProblemList.Controls.Add(this.pictureBox17);
-            this.pnlProblemList.Controls.Add(this.pictureBox16);
-            this.pnlProblemList.Controls.Add(this.ptrbxPasswordQ);
-            this.pnlProblemList.Controls.Add(this.ptrbxGeneralQSmall);
-            this.pnlProblemList.Controls.Add(this.lnklblTicketQ);
-            this.pnlProblemList.Controls.Add(this.lnklblEmailQ);
-            this.pnlProblemList.Controls.Add(this.lnklblPasswordQ);
-            this.pnlProblemList.Controls.Add(this.lnklblGeneralQ);
-            this.pnlProblemList.Controls.Add(this.lblTicketQ);
-            this.pnlProblemList.Controls.Add(this.lblEmailQ);
-            this.pnlProblemList.Controls.Add(this.lblPasswordQ);
-            this.pnlProblemList.Controls.Add(this.lblGeneral);
-            this.pnlProblemList.Controls.Add(this.lblProblem);
-            this.pnlProblemList.Controls.Add(this.pictureBox4);
-            this.pnlProblemList.Location = new System.Drawing.Point(-3, 72);
-            this.pnlProblemList.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.pnlProblemList.Name = "pnlProblemList";
-            this.pnlProblemList.Size = new System.Drawing.Size(1015, 462);
-            this.pnlProblemList.TabIndex = 45;
+            pnlProblemList.Controls.Add(pictureBox17);
+            pnlProblemList.Controls.Add(pictureBox16);
+            pnlProblemList.Controls.Add(ptrbxPasswordQ);
+            pnlProblemList.Controls.Add(ptrbxGeneralQSmall);
+            pnlProblemList.Controls.Add(lnklblTicketQ);
+            pnlProblemList.Controls.Add(lnklblEmailQ);
+            pnlProblemList.Controls.Add(lnklblPasswordQ);
+            pnlProblemList.Controls.Add(lnklblGeneralQ);
+            pnlProblemList.Controls.Add(lblTicketQ);
+            pnlProblemList.Controls.Add(lblEmailQ);
+            pnlProblemList.Controls.Add(lblPasswordQ);
+            pnlProblemList.Controls.Add(lblGeneral);
+            pnlProblemList.Controls.Add(lblProblem);
+            pnlProblemList.Controls.Add(pictureBox4);
+            pnlProblemList.Location = new Point(-3, 88);
+            pnlProblemList.Margin = new Padding(1, 2, 1, 2);
+            pnlProblemList.Name = "pnlProblemList";
+            pnlProblemList.Size = new Size(1268, 446);
+            pnlProblemList.TabIndex = 45;
             // 
             // pictureBox17
             // 
@@ -862,17 +862,6 @@
             pictureBox17.TabIndex = 57;
             pictureBox17.TabStop = false;
             // 
-            // pictureBox23
-            // 
-            pictureBox23.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            pictureBox23.BackColor = Color.FromArgb(64, 0, 0);
-            pictureBox23.Location = new Point(978, 134);
-            pictureBox23.Margin = new Padding(1, 2, 1, 2);
-            pictureBox23.Name = "pictureBox23";
-            pictureBox23.Size = new Size(274, 388);
-            pictureBox23.TabIndex = 61;
-            pictureBox23.TabStop = false;
-            // 
             // pictureBox16
             // 
             pictureBox16.BackgroundImage = (Image)resources.GetObject("pictureBox16.BackgroundImage");
@@ -883,17 +872,6 @@
             pictureBox16.Size = new Size(258, 364);
             pictureBox16.TabIndex = 56;
             pictureBox16.TabStop = false;
-            // 
-            // pictureBox22
-            // 
-            pictureBox22.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            pictureBox22.BackColor = Color.FromArgb(64, 0, 0);
-            pictureBox22.Location = new Point(658, 134);
-            pictureBox22.Margin = new Padding(1, 2, 1, 2);
-            pictureBox22.Name = "pictureBox22";
-            pictureBox22.Size = new Size(274, 388);
-            pictureBox22.TabIndex = 60;
-            pictureBox22.TabStop = false;
             // 
             // ptrbxPasswordQ
             // 
@@ -969,17 +947,6 @@
             lnklblGeneralQ.Text = "MaximizeGeneralQuestions";
             lnklblGeneralQ.LinkClicked += lnklblGeneralQ_LinkClicked;
             // 
-            // pictureBox20
-            // 
-            pictureBox20.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            pictureBox20.BackColor = Color.FromArgb(64, 0, 0);
-            pictureBox20.Location = new Point(12, 135);
-            pictureBox20.Margin = new Padding(1, 2, 1, 2);
-            pictureBox20.Name = "pictureBox20";
-            pictureBox20.Size = new Size(274, 388);
-            pictureBox20.TabIndex = 58;
-            pictureBox20.TabStop = false;
-            // 
             // lblTicketQ
             // 
             lblTicketQ.AutoSize = true;
@@ -1040,15 +1007,55 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.pictureBox4.Location = new System.Drawing.Point(1, 0);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(1013, 52);
-            this.pictureBox4.TabIndex = 44;
-            this.pictureBox4.TabStop = false;
+            pictureBox4.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            pictureBox4.BackColor = Color.FromArgb(64, 0, 0);
+            pictureBox4.Location = new Point(1, 0);
+            pictureBox4.Margin = new Padding(1, 2, 1, 2);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(1266, 62);
+            pictureBox4.TabIndex = 44;
+            pictureBox4.TabStop = false;
+            // 
+            // pictureBox23
+            // 
+            pictureBox23.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            pictureBox23.BackColor = Color.FromArgb(64, 0, 0);
+            pictureBox23.Location = new Point(978, 134);
+            pictureBox23.Margin = new Padding(1, 2, 1, 2);
+            pictureBox23.Name = "pictureBox23";
+            pictureBox23.Size = new Size(274, 388);
+            pictureBox23.TabIndex = 61;
+            pictureBox23.TabStop = false;
+            // 
+            // pictureBox22
+            // 
+            pictureBox22.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            pictureBox22.BackColor = Color.FromArgb(64, 0, 0);
+            pictureBox22.Location = new Point(658, 134);
+            pictureBox22.Margin = new Padding(1, 2, 1, 2);
+            pictureBox22.Name = "pictureBox22";
+            pictureBox22.Size = new Size(274, 388);
+            pictureBox22.TabIndex = 60;
+            pictureBox22.TabStop = false;
+            // 
+            // pictureBox20
+            // 
+            pictureBox20.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            pictureBox20.BackColor = Color.FromArgb(64, 0, 0);
+            pictureBox20.Location = new Point(12, 135);
+            pictureBox20.Margin = new Padding(1, 2, 1, 2);
+            pictureBox20.Name = "pictureBox20";
+            pictureBox20.Size = new Size(274, 388);
+            pictureBox20.TabIndex = 58;
+            pictureBox20.TabStop = false;
+            // 
+            // pictureBox21
+            // 
+            pictureBox21.Location = new Point(0, 0);
+            pictureBox21.Name = "pictureBox21";
+            pictureBox21.Size = new Size(100, 50);
+            pictureBox21.TabIndex = 0;
+            pictureBox21.TabStop = false;
             // 
             // lblOnlineHelp
             // 
@@ -1317,13 +1324,13 @@
             pnlProblemList.ResumeLayout(false);
             pnlProblemList.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox17).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox23).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox16).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox22).EndInit();
             ((System.ComponentModel.ISupportInitialize)ptrbxPasswordQ).EndInit();
             ((System.ComponentModel.ISupportInitialize)ptrbxGeneralQSmall).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox20).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox23).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox22).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox20).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox21).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)ProfilePictureBox).EndInit();

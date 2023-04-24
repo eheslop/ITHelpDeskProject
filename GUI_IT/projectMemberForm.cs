@@ -72,13 +72,6 @@ namespace GUI_IT
         }
 
 
-        private void btnTickets_Click(object sender, EventArgs e)
-        {
-            pnlTickets.Visible = true;
-            pnlProblemList.Visible = false;
-            this.Text = "IT Help Desk Project Member Ticket Dashboard";
-        }
-
 
         private void btnProblemList_Click(object sender, EventArgs e)
         {
@@ -265,6 +258,13 @@ namespace GUI_IT
         private void pnlTickets_Paint_1(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnTickets_Click(object sender, EventArgs e)
+        {
+            pnlTickets.Visible = true;
+            pnlProblemList.Visible = false;
+            this.Text = "IT Help Desk Project Member Ticket Dashboard";
         }
     }
 }

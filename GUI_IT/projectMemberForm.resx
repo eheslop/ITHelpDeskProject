@@ -79,7 +79,7 @@ the ID, urgency level, problem type and description of problem. You can track th
   <data name="pictureBox17.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAsgAAAN2CAYAAADkHH/HAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
-        cgAAEnIBXmVb4wAAiTdJREFUeF7t/b2OJGe6nX+/R6NToKMDaFfABngADJ+OHLpqYxzJGNAZ0NhGQxiD
+        cQAAEnEB89x6jgAAiTdJREFUeF7t/b2OJGe6nX+/R6NToKMDaFfABngADJ+OHLpqYxzJGNAZ0NhGQxiD
         kMMBZNCQQ0AWZcqVu0+D/7rqrdV78Z4n8qMyqzuz8jJ+qIjnO56MylydlV31//uv//W//vEf/sN/kCRJ
         kvTEgCxJkiQVA7IkSZJUDMiSJElSMSBLkiRJxYAsSZIkFQOyJEmSVAzIkiRJUjEgS5IkScWALEmSJBUD
         siRJklQMyJIkSVIxIEuSJEnFgCxJkiQVA7IkSZJUDMiSJElSMSBLkiRJxYAsSZIkFQOyJEmSVAzIkiRJ
@@ -671,7 +671,7 @@ the ID, urgency level, problem type and description of problem. You can track th
   <data name="pictureBox16.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAskAAANsCAYAAACpkzUEAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
-        cgAAEnIBXmVb4wAAWcRJREFUeF7t3b+OHPe6Hezvas4tKHFsMDWwAV2AO1fiRKkV7MQOBCUHCgVjB4IT
+        cQAAEnEB89x6jgAAWcRJREFUeF7t3b+OHPe6Hezvas4tKHFsMDWwAV2AO1fiRKkV7MQOBCUHCgVjB4IT
         bcCBAicCHMmhU6fnNmguflw8735PVbOHM0MO2U/woKt+/6uqZ3pNsTjz//2X//JfXv/TP/0TAADwjpAM
         AACLkAwAAIuQDAAAi5AMAACLkAwAAIuQDAAAi5AMAACLkAwAAIuQDAAAi5AMAACLkAwAAIuQDAAAi5AM
         AACLkAwAAIuQDAAAi5AMAACLkAwAAIuQDAAAi5AMAACLkAwAAIuQDAAAi5AMAACLkAwAAIuQDAAAi5AM
@@ -1060,7 +1060,7 @@ the ID, urgency level, problem type and description of problem. You can track th
   <data name="ptrbxPasswordQ.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAscAAANyCAYAAACOhmZcAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
-        cgAAEnIBXmVb4wAAchBJREFUeF7t3T2SJMeanm0uYtbALcD4fVxAq5SwgJM6FCpQB+pQGINyDCKMEowK
+        cQAAEnEB89x6jgAAchBJREFUeF7t3T2SJMeanm0uYtbALcD4fVxAq5SwgJM6FCpQB+pQGINyDCKMEowK
         BAoQRoHZSKBIlepso9l3jz/gc97jkRn1091ZnbdwWUT4v3tERrwVld31H/7pn/7pvSRJkqR/ev8xOP6P
         //E/SpIkSQ/P4FiSJElaDI4lSZKkxeBYkiRJWgyOJUmSpMXgWJIkSVoMjiVJkqTF4FiSJElaDI4lSZKk
         xeBYkiRJWgyOJUmSpMXgWJIkSVoMjiVJkqTF4FiSJElaDI4lSZKkxeBYkiRJWgyOJUmSpMXgWJIkSVoM
@@ -1553,7 +1553,7 @@ the ID, urgency level, problem type and description of problem. You can track th
   <data name="ptrbxGeneralQSmall.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAscAAAOCCAYAAACbFH9FAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
-        cgAAEnIBXmVb4wAAap1JREFUeF7t3a2SZce6Hup1AbbR5naEw/sWFOccX4CokZjR5CImohaVkcgOgQ0U
+        cQAAEnEB89x6jgAAap1JREFUeF7t3a2SZce6Hup1AbbR5naEw/sWFOccX4CokZjR5CImohaVkcgOgQ0U
         RgoTAQMBE0UYydDUdN9Gn3575yt/K1eOWVXd1b/1gCfmGPmfOcac+dWo2dV/+Rf/4l+8gof8y3/5LwG4
         8K/+1b8CvhB/+Y//8T++AgAA/uOrv/zrf/2vXwEAAP/61V/+zb/5N68AAIB/8+ov//bf/ttXAADAvxUc
         AwBA/eXf/bt/9woAAPh3gmMAAKi//P3f//0rAADg7wXHAABQgmMAAFgExwAAsAiOAQBgERwDAMAiOAYA
@@ -2017,7 +2017,7 @@ the ID, urgency level, problem type and description of problem. You can track th
   <data name="pictureBox14.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAscAAAOCCAYAAACbFH9FAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
-        cgAAEnIBXmVb4wAAap1JREFUeF7t3a2SZce6Hup1AbbR5naEw/sWFOccX4CokZjR5CImohaVkcgOgQ0U
+        cQAAEnEB89x6jgAAap1JREFUeF7t3a2SZce6Hup1AbbR5naEw/sWFOccX4CokZjR5CImohaVkcgOgQ0U
         RgoTAQMBE0UYydDUdN9Gn3575yt/K1eOWVXd1b/1gCfmGPmfOcac+dWo2dV/+Rf/4l+8gof8y3/5LwG4
         8K/+1b8CvhB/+Y//8T++AgAA/uOrv/zrf/2vXwEAAP/61V/+zb/5N68AAIB/8+ov//bf/ttXAADAvxUc
         AwBA/eXf/bt/9woAAPh3gmMAAKi//P3f//0rAADg7wXHAABQgmMAAFgExwAAsAiOAQBgERwDAMAiOAYA
@@ -2481,7 +2481,7 @@ the ID, urgency level, problem type and description of problem. You can track th
   <data name="pictureBox15.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAsgAAAN2CAYAAADkHH/HAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
-        cgAAEnIBXmVb4wAAiTdJREFUeF7t/b2OJGe6nX+/R6NToKMDaFfABngADJ+OHLpqYxzJGNAZ0NhGQxiD
+        cQAAEnEB89x6jgAAiTdJREFUeF7t/b2OJGe6nX+/R6NToKMDaFfABngADJ+OHLpqYxzJGNAZ0NhGQxiD
         kMMBZNCQQ0AWZcqVu0+D/7rqrdV78Z4n8qMyqzuz8jJ+qIjnO56MylydlV31//uv//W//vEf/sN/kCRJ
         kvTEgCxJkiQVA7IkSZJUDMiSJElSMSBLkiRJxYAsSZIkFQOyJEmSVAzIkiRJUjEgS5IkScWALEmSJBUD
         siRJklQMyJIkSVIxIEuSJEnFgCxJkiQVA7IkSZJUDMiSJElSMSBLkiRJxYAsSZIkFQOyJEmSVAzIkiRJ
@@ -3076,7 +3076,7 @@ the ID, urgency level, problem type and description of problem. You can track th
   <data name="pictureBox18.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAskAAANsCAYAAACpkzUEAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
-        cgAAEnIBXmVb4wAAWcRJREFUeF7t3b+OHPe6Hezvas4tKHFsMDWwAV2AO1fiRKkV7MQOBCUHCgVjB4IT
+        cQAAEnEB89x6jgAAWcRJREFUeF7t3b+OHPe6Hezvas4tKHFsMDWwAV2AO1fiRKkV7MQOBCUHCgVjB4IT
         bcCBAicCHMmhU6fnNmguflw8735PVbOHM0MO2U/woKt+/6uqZ3pNsTjz//2X//JfXv/TP/0TAADwjpAM
         AACLkAwAAIuQDAAAi5AMAACLkAwAAIuQDAAAi5AMAACLkAwAAIuQDAAAi5AMAACLkAwAAIuQDAAAi5AM
         AACLkAwAAIuQDAAAi5AMAACLkAwAAIuQDAAAi5AMAACLkAwAAIuQDAAAi5AMAACLkAwAAIuQDAAAi5AM
@@ -3468,7 +3468,7 @@ the ID, urgency level, problem type and description of problem. You can track th
   <data name="pictureBox19.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAscAAANyCAYAAACOhmZcAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
-        cgAAEnIBXmVb4wAAchBJREFUeF7t3T2SJMeanm0uYtbALcD4fVxAq5SwgJM6FCpQB+pQGINyDCKMEowK
+        cQAAEnEB89x6jgAAchBJREFUeF7t3T2SJMeanm0uYtbALcD4fVxAq5SwgJM6FCpQB+pQGINyDCKMEowK
         BAoQRoHZSKBIlepso9l3jz/gc97jkRn1091ZnbdwWUT4v3tERrwVld31H/7pn/7pvSRJkqR/ev8xOP6P
         //E/SpIkSQ/P4FiSJElaDI4lSZKkxeBYkiRJWgyOJUmSpMXgWJIkSVoMjiVJkqTF4FiSJElaDI4lSZKk
         xeBYkiRJWgyOJUmSpMXgWJIkSVoMjiVJkqTF4FiSJElaDI4lSZKkxeBYkiRJWgyOJUmSpMXgWJIkSVoM
